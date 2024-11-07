@@ -54,7 +54,7 @@ export class ServicesComponent {
             perView: 1,
             spacing: 50,
           },
-        },
+        } ,
         "(min-width: 768px)": {
           slides: {
             perView: 2,
