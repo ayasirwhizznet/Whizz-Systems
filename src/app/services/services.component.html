@@ -1,0 +1,43 @@
+<div class="px-[5%]">
+    <div class="p-10">
+        <div class="flex items-center justify-between">
+            <h2 class="text-3xl font-semibold mb-8">Services</h2>
+            <div class="flex items-center gap-2">
+                <app-cbutton class=" border border-light-teal rounded-md" heading="All Services"
+                    icon="../../assets/services/right-arrow.svg"></app-cbutton>
+                <div class=" border border-light-teal rounded-md p-3 cursor-pointer">
+                    <img class="object-cover w-4" src="../../assets/services/left-arrow.svg" alt="left-arrow">
+                </div>
+                <div class=" border border-light-teal rounded-md p-3 cursor-pointer">
+                    <img class="object-cover w-4" src="../../assets/services/right-arrow.svg" alt="right=arrow">
+                </div>
+            </div>
+        </div>
+        <p class="mb-12">With complete, in-house expertise, we provide flexible, customized support— <br> whether you’re
+            starting from a concept or refining a product for the market.</p>
+        <swiper-container [breakpoints]="{
+            '640': {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            '768': {
+              slidesPerView: 2,
+              spaceBetween: 40
+            },
+            '1024': {
+              slidesPerView: 4,
+              spaceBetween: 50
+            }
+          }" class="flex">
+            <swiper-slide *ngFor="let card of cards">
+                <app-services-card [imageUrl]="card.imgUrl" [title]="card.title"
+                    [content]="card.content"></app-services-card>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+</div>
+
+
+<script>
+
+</script>

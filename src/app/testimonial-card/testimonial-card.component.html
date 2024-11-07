@@ -1,0 +1,11 @@
+<div class="p-6 rounded-md border border-1 border-card-border bg-gary bg:gray hover:bg-white hover:shadow-xl">
+    <p class="mb-20">{{desc}}</p>
+    <hr class="border border-light-teal border-t-1 mb-2">
+    <div class="flex items-center gap-3">
+        <img *ngIf="imageUrl" [src]="imageUrl" class="w-14 object-cover rounded-full" alt="profile-image">
+        <div class="flex flex-col justify-between items-start">
+            <h4 class="font-semibold">{{name}}</h4>
+            <p class="text-sm">{{designation}}</p>
+        </div>
+    </div>
+</div>

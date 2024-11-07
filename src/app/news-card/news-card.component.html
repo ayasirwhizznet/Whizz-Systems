@@ -1,0 +1,22 @@
+<div class="relative group p-6 border border-1 border-card-border bg-gray rounded-md">
+    <div class="flex flex-col items-center mb-20">
+        <img 
+          *ngIf="imageUrl" 
+          [src]="imageUrl" 
+          class="object-auto w-full rounded-md mb-6 transform origin-top group-hover:scale-y-[60%] group-hover:translate-y-[-10px] transition-transform duration-300 ease-in-out" 
+          alt="Card-image">
+        
+        <div class="content transform group-hover:translate-y-[-40px] transition-transform duration-300 ease-in-out">
+            <div class="flex gap-2 text-xs">
+                <a class="p-1 border border-1 border-slate-600 rounded-md cursor-pointer" routerLink="">Heatsink</a>
+                <a class="p-1 border border-1 border-slate-600 rounded-md cursor-pointer" routerLink="">Thermal Management</a>
+            </div>
+            <p class="text-sm my-6">{{ date }}</p>
+            <h3 class="text-lg font-semibold">{{ title }}</h3>
+        </div>
+    </div>
+    
+    <button class="absolute left-0 bottom-[-50px] w-full p-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-[-40px] text-white bg-dark-gray rounded-md transition-all duration-300 ease-in-out">
+      Read More
+    </button>
+</div>

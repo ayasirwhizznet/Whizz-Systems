@@ -1,0 +1,9 @@
+<div class="py-10">
+    <h2 class="text-3xl font-semibold text-center mb-6">Trusted by</h2>
+    <p class="text-base text-center mb-10">Partnering with leading companies to redefine what’s possible.</p>
+    <swiper-container autoplay-delay="500" slides-per-view="5" space-between="10" loop="true" speed="300" class="flex">
+        <swiper-slide *ngFor="let company of companies">
+            <img class="w-[80%] object-cover " [src]="company" alt="Company logo">
+        </swiper-slide>
+    </swiper-container>
+</div>

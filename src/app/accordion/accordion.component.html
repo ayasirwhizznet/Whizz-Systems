@@ -1,0 +1,51 @@
+<div class="">
+    <div *ngFor="let item of menuItems" class="mb-2">
+      <div (click)="toggleMenu(item)" class="flex items-center cursor-pointer">
+        <span>{{ item.label }}</span>
+        <span class="ml-auto" *ngIf="item.dropdown">{{ item.open ? '▼' : '►' }}</span>
+      </div>
+  
+      <div *ngIf="item.open" class="ml-4">
+        <div *ngIf="item.dropdown" class="flex items-center cursor-pointer mb-2" (click)="item.open = false">
+          <span class="mr-1">← </span>
+        </div>
+  
+        <ng-container *ngIf="item.dropdown === 'service'">
+          <div *ngFor="let section of serviceSections" class="mb-2">
+            <div (click)="toggleSection(section)" class="flex items-center cursor-pointer">
+              <span>{{ section.title }}</span>
+              <span class="ml-auto">{{ section.open ? '▼' : '►' }}</span>
+            </div>
+  
+            <div *ngIf="section.open" class="ml-4">
+              <div class="flex items-center cursor-pointer" (click)="section.open = false">
+                <span class="mr-1">← </span>
+              </div>
+              <div *ngFor="let subItem of section.items" class="mb-1">
+                <a [routerLink]="subItem.link" class="block">
+                  {{ subItem.label }}
+                </a>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+  
+        <ng-container *ngIf="item.dropdown === 'featured'">
+          <div *ngFor="let featured of featuredProductItems" class="mb-1">
+            <a [routerLink]="featured.link" class="block">
+              {{ featured.label }}
+            </a>
+          </div>
+        </ng-container>
+  
+        <ng-container *ngIf="item.dropdown === 'blog'">
+          <div *ngFor="let blog of blogItems" class="mb-1">
+            <a [routerLink]="blog.link" class="block">
+              {{ blog.label }}
+            </a>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  

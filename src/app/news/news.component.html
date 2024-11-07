@@ -1,0 +1,36 @@
+<div class="px-[5%] pt-10 pb-20">
+    <div>
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-3xl font-semibold mb-8">Latest News & Insights</h2>
+            <div class="flex items-center gap-2">
+                <app-cbutton class=" border border-light-teal rounded-md" heading="See all" icon="../../assets/services/right-arrow.svg"></app-cbutton>
+                <div class=" border border-light-teal rounded-md p-3 cursor-pointer">
+                    <img  class="object-cover w-4" src="../../assets/services/left-arrow.svg" alt="left-arrow">
+                </div>
+                <div class=" border border-light-teal rounded-md p-3 cursor-pointer">
+                    <img class="object-cover w-4" src="../../assets/services/right-arrow.svg" alt="right=arrow">
+                </div>
+            </div>
+        </div>
+        <swiper-container [breakpoints]="{
+            '640': {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            '768': {
+              slidesPerView: 2,
+              spaceBetween: 40
+            },
+            '1024': {
+              slidesPerView: 3,
+              spaceBetween: 50
+            }
+          }" class="flex gap-10" >
+            <swiper-slide *ngFor="let card of cards">
+                <app-news-card [imageUrl]="card.imageUrl"  [date]="card.date" [title]="card.title">
+                </app-news-card>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+</div>
+
