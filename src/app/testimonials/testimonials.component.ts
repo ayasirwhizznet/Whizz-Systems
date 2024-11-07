@@ -3,7 +3,6 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angul
 import { TestimonialCardComponent } from '../testimonial-card/testimonial-card.component';
 import { NgFor } from '@angular/common';
 import { CbuttonComponent } from "../cbutton/cbutton.component";
-import Swiper from 'swiper';
 
 @Component({
   selector: 'app-testimonials',
@@ -14,7 +13,6 @@ import Swiper from 'swiper';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TestimonialsComponent {
-  swiper!: Swiper;
   cards = [
     {
       desc: 'Sed suscipit, augue id rutrum efficitur, mi enim malesuada risus, non laoreet nulla ante in nulla. Suspendisse vel tincidunt augue. Proin sed risus venenatis, luctus arcu non, tempor dolor. Phasellus sed posuere risus, luctus hendrerit sapien. Nunc vel ornare diam. Cras finibus massa quis erat ultrices faucibus. Fusce sed justo finibus, interdum urna laoreet, sagittis erat. Mauris in semper dui.',
@@ -36,6 +34,7 @@ export class TestimonialsComponent {
     },
 
   ];
+
   @ViewChild("sliderRef") sliderRef = {} as ElementRef;
 
   slider: any = null;

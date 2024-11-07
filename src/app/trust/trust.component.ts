@@ -1,7 +1,6 @@
 import KeenSlider from 'keen-slider';
 import { CommonModule } from '@angular/common';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angular/core';
-import Swiper from 'swiper';
 
 const animation = { duration: 10000, easing: (t: number) => t }
 const sanimation = { duration: 4000, easing: (t: number) => t }
@@ -14,7 +13,6 @@ const sanimation = { duration: 4000, easing: (t: number) => t }
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TrustComponent {
-  swiper!: Swiper;
 
   companies = [
     '../../assets/trust/altera.png',

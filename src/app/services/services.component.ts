@@ -2,10 +2,8 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, Input, OnInit, ViewChild
 import { ServicesCardComponent } from "../services-card/services-card.component";
 import { NgFor } from '@angular/common';
 import { CbuttonComponent } from "../cbutton/cbutton.component";
-import { Swiper } from 'swiper';
 import KeenSlider from "keen-slider";
 
-// const animation = { duration: 10000, easing: (t: number) => t }
 
 @Component({
   selector: 'app-services',
@@ -16,7 +14,6 @@ import KeenSlider from "keen-slider";
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ServicesComponent {
-  swiper!: Swiper;
   cards = [
     {
       imgUrl: '../../assets/services/engg.&design.png',

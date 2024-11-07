@@ -3,10 +3,6 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angul
 import { NewsCardComponent } from '../news-card/news-card.component';
 import { NgFor } from '@angular/common';
 import { CbuttonComponent } from '../cbutton/cbutton.component';
-import { Swiper } from 'swiper';
-
-
-
 
 @Component({
   selector: 'app-news',
@@ -17,7 +13,6 @@ import { Swiper } from 'swiper';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class NewsComponent {
-  swiper!: Swiper;
   cards:any[] = [
     {
       imageUrl: '../../assets/news/img1.png',
