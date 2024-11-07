@@ -1,61 +1,23 @@
 <div class="px-[5%] py-10">
     <div>
-      <div class="flex justify-between">
-        <h2 class="text-3xl font-semibold mb-8">Testimonials</h2>
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-3xl font-semibold">Testimonials</h2>
         <div class="flex items-center gap-2">
-          <button id="js-prev1" class="border border-light-teal rounded-md p-3 cursor-pointer">
+          <button (click)="prevSlide()" class="border border-light-teal rounded-md p-3 cursor-pointer">
             <img class="object-cover w-4" src="../../assets/services/left-arrow.svg" alt="left-arrow">
           </button>
-          <button id="js-next1"  class="border border-light-teal rounded-md p-3 cursor-pointer">
+          <button (click)="nextSlide()"  class="border border-light-teal rounded-md p-3 cursor-pointer">
             <img class="object-cover w-4" src="../../assets/services/right-arrow.svg" alt="right-arrow">
           </button>
         </div>
       </div>
   
-      <swiper-container [breakpoints]="{
-        '640': {
-          slidesPerView: 1,
-          spaceBetween: 20
-        },
-        '768': {
-          slidesPerView: 2,
-          spaceBetween: 40
-        },
-        '1024': {
-          slidesPerView: 3,
-          spaceBetween: 50
-        }
-      }">
-        <swiper-slide *ngFor="let card of cards">
+      <div class="keen-slider" #sliderRef>
+        <div class="keen-slider__slide" *ngFor="let card of cards">
           <app-testimonial-card [desc]="card.desc" [imageUrl]="card.imageUrl" [name]="card.name" [designation]="card.designation">
           </app-testimonial-card>
-        </swiper-slide>
-      </swiper-container>
+        </div>
+      </div>
     </div>
     <img class="object-cover mx-auto mt-16 px-20" src="../../assets/ideas/section-divider.png" alt="img">
   </div>
-  
-
-  
-  <script>
-   const mySwiper = new Swiper ('swiper-container', {
-    
-    loop: true, 
-    
-	  slidesPerView: 'auto',
-	  centeredSlides: true,
-    
-    a11y: true,
-    keyboardControl: true,
-    grabCursor: true,
-    
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    
-    nextButton: '#js-prev1',
-    prevButton: '#js-next1',
-    
-  });
-
-  </script>
-  

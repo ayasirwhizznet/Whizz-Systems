@@ -1,7 +1,13 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { ServicesCardComponent } from "../services-card/services-card.component";
 import { NgFor } from '@angular/common';
 import { CbuttonComponent } from "../cbutton/cbutton.component";
+import { Swiper } from 'swiper';
+import KeenSlider from "keen-slider";
+import "keen-slider/keen-slider.min.css";
+
+// const animation = { duration: 10000, easing: (t: number) => t }
+
 @Component({
   selector: 'app-services',
   standalone: true,
@@ -11,6 +17,7 @@ import { CbuttonComponent } from "../cbutton/cbutton.component";
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ServicesComponent {
+  swiper!: Swiper;
   cards = [
     {
       imgUrl: '../../assets/services/engg.&design.png',
@@ -34,5 +41,45 @@ export class ServicesComponent {
     },
   ];
 
+  @ViewChild("sliderRef") sliderRef = {} as ElementRef;
 
+  slider: any = null;
+
+  ngAfterViewInit() {
+    this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+
+      breakpoints: {
+        "(min-width: 640px)": {
+          slides: {
+            perView: 1,
+            spacing: 50,
+          },
+        },
+        "(min-width: 768px)": {
+          slides: {
+            perView: 2,
+            spacing: 50,
+          },
+        },
+        "(min-width: 1200px)": {
+          loop: true,
+          mode: "snap",
+          slides: {
+            perView: 4,
+            spacing: 50,
+          },
+        
+        },
+      },
+    });
+  }
+  ngOnDestroy() {
+    if (this.slider) this.slider.destroy();
+  }
+  nextSlide() {
+    this.slider.next();
+  }
+  prevSlide() {
+    this.slider.prev();
+  }
 }

@@ -1,7 +1,9 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import KeenSlider from 'keen-slider';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angular/core';
 import { TestimonialCardComponent } from '../testimonial-card/testimonial-card.component';
 import { NgFor } from '@angular/common';
 import { CbuttonComponent } from "../cbutton/cbutton.component";
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-testimonials',
@@ -12,6 +14,7 @@ import { CbuttonComponent } from "../cbutton/cbutton.component";
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TestimonialsComponent {
+  swiper!: Swiper;
   cards = [
     {
       desc: 'Sed suscipit, augue id rutrum efficitur, mi enim malesuada risus, non laoreet nulla ante in nulla. Suspendisse vel tincidunt augue. Proin sed risus venenatis, luctus arcu non, tempor dolor. Phasellus sed posuere risus, luctus hendrerit sapien. Nunc vel ornare diam. Cras finibus massa quis erat ultrices faucibus. Fusce sed justo finibus, interdum urna laoreet, sagittis erat. Mauris in semper dui.',
@@ -33,5 +36,45 @@ export class TestimonialsComponent {
     },
 
   ];
-  
+  @ViewChild("sliderRef") sliderRef = {} as ElementRef;
+
+  slider: any = null;
+
+  ngAfterViewInit() {
+    this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+
+      breakpoints: {
+        "(min-width: 640px)": {
+          slides: {
+            perView: 1,
+            spacing: 50,
+          },
+        },
+        "(min-width: 768px)": {
+          slides: {
+            perView: 2,
+            spacing: 50,
+          },
+        },
+        "(min-width: 1200px)": {
+          loop: true,
+          mode: "snap",
+          slides: {
+            perView: 3,
+            spacing: 50,
+          },
+        
+        },
+      },
+    });
+  }
+  ngOnDestroy() {
+    if (this.slider) this.slider.destroy();
+  }
+  nextSlide() {
+    this.slider.next();
+  }
+  prevSlide() {
+    this.slider.prev();
+  }
 }

@@ -1,8 +1,12 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import  KeenSlider  from 'keen-slider';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angular/core';
 import { NewsCardComponent } from '../news-card/news-card.component';
 import { NgFor } from '@angular/common';
 import { CbuttonComponent } from '../cbutton/cbutton.component';
-import { TestimonialCardComponent } from "../testimonial-card/testimonial-card.component";
+import { Swiper } from 'swiper';
+
+
+
 
 @Component({
   selector: 'app-news',
@@ -13,6 +17,7 @@ import { TestimonialCardComponent } from "../testimonial-card/testimonial-card.c
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class NewsComponent {
+  swiper!: Swiper;
   cards:any[] = [
     {
       imageUrl: '../../assets/news/img1.png',
@@ -30,4 +35,45 @@ export class NewsComponent {
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
   ];
+
+  @ViewChild("sliderRef") sliderRef = {} as ElementRef;
+
+  slider: any = null;
+
+  ngAfterViewInit() {
+    this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+
+      breakpoints: {
+        "(min-width: 640px)": {
+          slides: {
+            perView: 1,
+            spacing: 50,
+          },
+        },
+        "(min-width: 768px)": {
+          slides: {
+            perView: 2,
+            spacing: 50,
+          },
+        },
+        "(min-width: 1200px)": {
+          loop: true,
+          slides: {
+            perView: 3,
+            spacing: 50,
+          },
+       
+        },
+      },
+    });
+  }
+  ngOnDestroy() {
+    if (this.slider) this.slider.destroy();
+  }
+  nextSlide() {
+    this.slider.next();
+  }
+  prevSlide() {
+    this.slider.prev();
+  }
 }

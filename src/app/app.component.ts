@@ -8,6 +8,7 @@ import { TrustComponent } from './trust/trust.component';
 import { TestimonialsComponent } from "./testimonials/testimonials.component";
 import { NewsComponent } from "./news/news.component";
 import { register } from 'swiper/element/bundle';
+import 'keen-slider/keen-slider.min.css'
 register();
 
 @Component({
