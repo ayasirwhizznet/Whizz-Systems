@@ -6,7 +6,7 @@ import 'keen-slider/keen-slider.css'
 import KeenSlider from "keen-slider";
 
 @Component({
-  selector: 'app-services',
+  selector: 'app-cservices',
   standalone: true,
   imports: [ServicesCardComponent, NgFor, CbuttonComponent],
   templateUrl: './services.component.html',

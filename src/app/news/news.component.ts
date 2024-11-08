@@ -3,11 +3,12 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angul
 import { NewsCardComponent } from '../news-card/news-card.component';
 import { NgFor } from '@angular/common';
 import { CbuttonComponent } from '../cbutton/cbutton.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-news',
+  selector: 'app-cnews',
   standalone: true,
-  imports: [NewsCardComponent, NgFor, CbuttonComponent, NewsCardComponent],
+  imports: [NewsCardComponent, NgFor, CbuttonComponent, NewsCardComponent, RouterLink],
   templateUrl: './news.component.html',
   styleUrl: './news.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

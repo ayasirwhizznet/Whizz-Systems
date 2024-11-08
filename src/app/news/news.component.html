@@ -2,12 +2,12 @@
     <div>
         <div class="flex items-center justify-between mb-8">
             <h2 class="text-3xl font-semibold ">Latest News & Insights</h2>
-            <div class="flex items-center gap-5 ">
-                <app-cbutton class="hidden sm:block border border-light-teal rounded-md next-1 " heading="All Services"
+            <div class="flex items-center gap-2 ">
+                <app-cbutton [routerLink]="'/news'" class="hidden sm:block border border-light-teal rounded-md next-1 " heading="See more"
                     icon="../../assets/services/right-arrow.svg"></app-cbutton>
 
                 <button (click)="prevSlide()"
-                    class="relative overflow-hidden px-4 py-3 rounded-md  bg-gray border border-light-teal cursor-pointer group">
+                    class="relative overflow-hidden px-4 py-3 rounded-md  bg-white border border-light-teal cursor-pointer group">
                     <span
                         class="absolute inset-0 transition-transform bg-medium-teal transform translate-x-full group-hover:translate-x-0 duration-300"></span>
                     <span class="relative z-10 flex items-center">
@@ -16,7 +16,7 @@
                     </span>
                 </button>
                 <button (click)="nextSlide()"
-                    class="relative overflow-hidden px-4 py-3 rounded-md  bg-gray border border-light-teal cursor-pointer group">
+                    class="relative overflow-hidden px-4 py-3 rounded-md  bg-white border border-light-teal cursor-pointer group">
                     <span
                         class="absolute inset-0 transition-transform bg-medium-teal transform -translate-x-full group-hover:translate-x-0 duration-300"></span>
                     <span class="relative z-10 flex items-center">
