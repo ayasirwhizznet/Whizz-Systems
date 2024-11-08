@@ -1,26 +1,40 @@
-<div class= "px-[5%] ">
+<div class="px-[5%] ">
     <div class="">
         <div class="flex items-center justify-between mb-8">
-            <h2  class="text-3xl font-semibold  nextt">Services</h2>
-            <div class="flex items-center gap-2 ">
-                <app-cbutton   class="hidden sm:block border border-light-teal rounded-md next-1" heading="All Services"
+            <h2 class="text-3xl font-semibold  nextt">Services</h2>
+            <div class="flex items-center gap-5 ">
+                <app-cbutton class="hidden sm:block border border-light-teal rounded-md next-1 " heading="All Services"
                     icon="../../assets/services/right-arrow.svg"></app-cbutton>
-                <div  (click)="prevSlide()"  class=" border border-light-teal rounded-md p-3 cursor-pointer btn-next ">
-                    <img class="object-cover w-4" src="../../assets/services/left-arrow.svg" alt="left-arrow">
-                </div>
-                <div (click)="nextSlide()" class=" border border-light-teal rounded-md p-3 cursor-pointer ">
-                    <img class="object-cover w-4" src="../../assets/services/right-arrow.svg" alt="right=arrow">
-                </div>
+
+                <button (click)="prevSlide()"
+                    class="relative overflow-hidden px-4 py-3 rounded-md  bg-gray border border-light-teal cursor-pointer group">
+                    <span
+                        class="absolute inset-0 transition-transform bg-medium-teal transform translate-x-full group-hover:translate-x-0 duration-300"></span>
+                    <span class="relative z-10 flex items-center">
+                        <img class="object-cover w-4 h-4" src="../../assets/services/left-arrow.svg"
+                            alt="right-arrow" />
+                    </span>
+                </button>
+                <button (click)="nextSlide()"
+                    class="relative overflow-hidden px-4 py-3 rounded-md  bg-gray border border-light-teal cursor-pointer group">
+                    <span
+                        class="absolute inset-0 transition-transform bg-medium-teal transform -translate-x-full group-hover:translate-x-0 duration-300"></span>
+                    <span class="relative z-10 flex items-center">
+                        <img class="object-cover w-4 h-4" src="../../assets/services/right-arrow.svg"
+                            alt="right-arrow" />
+                    </span>
+                </button>
             </div>
         </div>
-        <p class="mb-12">With complete, in-house expertise, we provide flexible, customized support— <br class="hidden lg:block"> whether you’re
+        <p class="mb-12">With complete, in-house expertise, we provide flexible, customized support— <br
+                class="hidden lg:block"> whether you’re
             starting from a concept or refining a product for the market.</p>
         <div class="keen-slider" #sliderRef>
             <div class="keen-slider__slide" *ngFor="let card of cards">
                 <app-services-card [imageUrl]="card.imgUrl" [title]="card.title"
                     [content]="card.content"></app-services-card>
             </div>
-           
+
         </div>
     </div>
 </div>

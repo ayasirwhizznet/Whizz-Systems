@@ -4,7 +4,9 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
+   
     extend: {
+  
       backgroundImage:{
       "ideas":"url('../src/assets/ideas/bg-img.jpg')"
       },

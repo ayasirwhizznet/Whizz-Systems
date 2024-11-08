@@ -17,10 +17,10 @@ export class IdeasComponent {
  ];
 
  certifications = [
-  {imgUrl: '../../assets/ideas/certification1.png'},
-  {imgUrl: '../../assets/ideas/certification2.png'},
-  {imgUrl: '../../assets/ideas/certification3.png'},
-  {imgUrl: '../../assets/ideas/certification4.png'},
-  {imgUrl: '../../assets/ideas/certification5.png'},
+  {imgUrl: '../../assets/ideas/certification1.svg'},
+  {imgUrl: '../../assets/ideas/certification2.svg'},
+  {imgUrl: '../../assets/ideas/certification3.svg'},
+  {imgUrl: '../../assets/ideas/certification4.svg'},
+  {imgUrl: '../../assets/ideas/certification5.svg'},
  ];
 }
