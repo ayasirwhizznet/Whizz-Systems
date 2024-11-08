@@ -8,7 +8,7 @@ import { TrustComponent } from './trust/trust.component';
 import { TestimonialsComponent } from "./testimonials/testimonials.component";
 import { NewsComponent } from "./news/news.component";
 import { FooterComponent } from './footer/footer.component';
-
+import 'keen-slider/keen-slider.min.css'
 @Component({
   selector: 'app-root',
   standalone: true,
