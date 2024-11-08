@@ -3,7 +3,6 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angul
 import { TestimonialCardComponent } from '../testimonial-card/testimonial-card.component';
 import { NgFor } from '@angular/common';
 import { CbuttonComponent } from "../cbutton/cbutton.component";
-import 'keen-slider/keen-slider.min.css';
 
 @Component({
   selector: 'app-testimonials',
