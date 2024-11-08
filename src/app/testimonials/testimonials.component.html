@@ -19,7 +19,7 @@
       </div>
   
       <div class="keen-slider" #sliderRef>
-        <div class="keen-slider__slide" *ngFor="let card of cards">
+        <div class="keen-slider__slide hover:shadow-lg" *ngFor="let card of cards">
           <app-testimonial-card [desc]="card.desc" [imageUrl]="card.imageUrl" [name]="card.name" [designation]="card.designation">
           </app-testimonial-card>
         </div>

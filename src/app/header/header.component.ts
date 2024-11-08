@@ -23,9 +23,13 @@ export class HeaderComponent {
     this.isAccordionOpen = this.isMenuOpen;
   }
 
+  closeMenu() {
+    this.activeBottomSection = ''
+    this.activeMenuItem = ''
+  }
+
   menuItems = [
-    { label: 'Home', link: '/', dropdown: '' },
-    { label: 'About Us', link: '/', dropdown: '' },
+    { label: 'About', link: '/', dropdown: '' },
     { label: 'Services', dropdown: 'service', link: '/' },
     { label: 'Featured Products', dropdown: 'featured', link: '/' },
     { label: 'Blog', dropdown: 'blog', link: '/' },

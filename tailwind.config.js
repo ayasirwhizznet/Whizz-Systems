@@ -20,6 +20,7 @@ module.exports = {
         'light-teal': '#7BD4CF',
         'medium-teal': '#55C2BC',
         
+      
       },
     },
   },
