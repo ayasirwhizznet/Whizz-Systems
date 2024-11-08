@@ -2,8 +2,8 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, Input, OnInit, ViewChild
 import { ServicesCardComponent } from "../services-card/services-card.component";
 import { NgFor } from '@angular/common';
 import { CbuttonComponent } from "../cbutton/cbutton.component";
-import KeenSlider from "keen-slider";
 import 'keen-slider/keen-slider.min.css'
+import KeenSlider from "keen-slider";
 
 @Component({
   selector: 'app-services',
