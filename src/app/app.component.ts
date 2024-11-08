@@ -7,7 +7,6 @@ import { IdeasComponent } from './ideas/ideas.component';
 import { TrustComponent } from './trust/trust.component';
 import { TestimonialsComponent } from "./testimonials/testimonials.component";
 import { NewsComponent } from "./news/news.component";
-import 'keen-slider/keen-slider.min.css'
 import { FooterComponent } from './footer/footer.component';
 
 @Component({

@@ -1,6 +1,7 @@
 import KeenSlider from 'keen-slider';
 import { CommonModule } from '@angular/common';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angular/core';
+import 'keen-slider/keen-slider.min.css';
 
 const animation = { duration: 10000, easing: (t: number) => t }
 const sanimation = { duration: 4000, easing: (t: number) => t }
