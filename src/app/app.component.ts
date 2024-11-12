@@ -10,16 +10,6 @@ import { PreloaderService } from './preloader.service';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit, AfterViewInit {
+export class AppComponent {
   title = 'Whizz';
-
-  constructor(private preloader: PreloaderService) {}
-
-
-  ngOnInit() {
-  }
-
-  ngAfterViewInit() {
-    this.preloader.hide();
-  }
 }
