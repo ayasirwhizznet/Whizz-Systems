@@ -1,22 +1,22 @@
 <div class="px-[5%] pt-10 py-10">
     <div>
         <div class="flex items-center justify-between mb-8">
-            <h2 class="text-3xl font-semibold ">Latest News & Insights</h2>
+            <h2 class="text-5xl font-bold text-dark-blue">Latest News & Insights</h2>
             <div class="flex items-center gap-2 ">
-                <app-cbutton [routerLink]="'/news'" class="hidden sm:block border border-light-teal rounded-md next-1 " heading="See more"
+                <app-cbutton [routerLink]="'/news'" [size]="'medium'" class="hidden sm:block border border-light-teal rounded-md next-1 " heading="See more"
                     icon="../../assets/services/right-arrow.svg"></app-cbutton>
 
-                <button (click)="prevSlide()"
-                    class="relative overflow-hidden px-4 py-3 rounded-md  bg-white border border-light-teal cursor-pointer group">
-                    <span
-                        class="absolute inset-0 transition-transform bg-medium-teal transform translate-x-full group-hover:translate-x-0 duration-300"></span>
-                    <span class="relative z-10 flex items-center">
-                        <img class="object-cover w-4 h-4" src="../../assets/services/left-arrow.svg"
-                            alt="right-arrow" />
-                    </span>
-                </button>
+                    <button (click)="prevSlide()"
+                    class="diagonal-swipe relative overflow-hidden rounded-md bg-white cursor-pointer group">
+                <span class="absolute inset-0 transition-transform bg-medium-teal transform translate-x-full group-hover:translate-x-0 duration-300"></span>
+                <span class="relative z-10 flex items-center">
+                    <img class="object-cover w-4 h-4" src="../../assets/services/left-arrow.svg" alt="left-arrow" />
+                </span>
+                <span class="diagonal-cut"></span> <!-- Add this span for the diagonal cut effect -->
+            </button>
+            
                 <button (click)="nextSlide()"
-                    class="relative overflow-hidden px-4 py-3 rounded-md  bg-white border border-light-teal cursor-pointer group">
+                    class="diagonal-swipe relative overflow-hidden px-5 py-4 rounded-md  bg-white border border-light-teal cursor-pointer group">
                     <span
                         class="absolute inset-0 transition-transform bg-medium-teal transform -translate-x-full group-hover:translate-x-0 duration-300"></span>
                     <span class="relative z-10 flex items-center">

@@ -5,7 +5,7 @@ import { CbuttonComponent } from "../cbutton/cbutton.component";
 @Component({
   selector: 'app-services-card',
   standalone: true,
-  imports: [NgIf, CbuttonComponent],
+  imports: [NgIf],
   templateUrl: './services-card.component.html',
   styleUrl: './services-card.component.scss'
 })

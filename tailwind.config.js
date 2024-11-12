@@ -8,10 +8,12 @@ module.exports = {
     extend: {
   
       backgroundImage:{
-      "ideas":"url('../src/assets/ideas/bg-img.jpg')"
+      "ideas":"url('../src/assets/ideas/bg-img.jpg')",
+      "lines":"url('../src/assets/services/line.png')"
       },
       colors: {
         'card-border': '#ddd',
+        'light-gray1': '#D9D9D9',
         'gray': '#f8f8f8',
         'light-gray': '#EEEEEE',
         'medium-gray': '#B9B9B9',

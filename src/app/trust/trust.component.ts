@@ -32,12 +32,13 @@ export class TrustComponent {
 
   ngAfterViewInit() {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
-
+      
       breakpoints: {
         
         "(min-width: 640px)": {
           loop: true,
-          mode: "snap",
+          mode: "free",
+         
           slides: {
             perView: 3,
             spacing: 50,
@@ -72,10 +73,14 @@ export class TrustComponent {
         "(min-width: 1200px)": {
           loop: true,
           mode: "snap",
+        slideChanged(){
+
+        },
           slides: {
             perView: 7,
             spacing: 50,
           },
+          
           created(s) {
             s.moveToIdx(5, true, animation)
           },
@@ -99,4 +104,6 @@ export class TrustComponent {
   prevSlide() {
     this.slider.prev();
   }
+
+  
 }

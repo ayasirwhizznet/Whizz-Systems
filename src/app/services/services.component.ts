@@ -18,7 +18,7 @@ export class ServicesComponent {
     {
       imgUrl: '../../assets/services/engg.&design.png',
       title: 'Engineering & design',
-      content: 'Innovating Designs for the Next Generation of Electronics ensuring quality and efficiency.'
+      content: 'Innovating Designs for the Next Generation of Electronics.'
     },
     {
       imgUrl: '../../assets/services/npi.png',
@@ -32,7 +32,7 @@ export class ServicesComponent {
     },
     {
       imgUrl: '../../assets/services/lab-test.png',
-      title: 'Lab Tsting Solutions',
+      title: 'Lab Testing Solutions',
       content: 'Ensuring product reliability and compliance through comprehensive validation.'
     },
   ];

@@ -1,3 +1,129 @@
-<div class="h-[100vh] text-black flex justify-center items-center">
-    <h1 class="text-2xl font-bold">Comming Soon!</h1>
+<div class="px-[3%]">
+    <div class="p-10 bg-dark-blue rounded-md text-white flex items-center">
+        <div class="w-1/2">
+            <p class="mb-2">May 29, 2024</p>
+            <div class="flex items-center gap-2 font-medium ">
+                <a class="inline-block p-1 rounded-md bg-gray bg-transparent text-xs border border-1 text-medium-gray"
+                    routerLink="">Thermal Management</a>
+                <a class="inline-block p-1 rounded-md bg-gray bg-transparent text-xs border border-1 text-medium-gray"
+                    routerLink="">All Services</a>
+            </div>
+            <h1 class="text-5xl font-bold my-4">HEATSINKS: <br> Considerations, guidance, <br> and best practices.</h1>
+            <div  class="flex items-center gap-5">
+              
+                    <a *ngFor="let link of links" routerLink="item.link" class="inline-block">
+                        <img class="w-12 object-cover cursor-pointer" [src]="link.img" alt="img">
+                    </a>
+              
+            </div>
+
+        </div>
+        <div class="w-1/2">
+            <img class="object-cover" src="../../../assets/hero/here-img2.png" alt="img">
+        </div>
+    </div>
+</div>
+
+
+<div class="px-[5%] pb-10 text-dark-blue">
+    <div class="flex gap-44 relative">
+        <!-- Main Content Area -->
+        <div class="w-3/5">
+            <div class="p-8 bg-gray rounded-md">
+                <h2 class="text-3xl font-bold mb-5">Key Takeaways</h2>
+                <ul class="list-outside list-decimal text-xl marker:text-light-teal ml-10">
+                    <li class="mb-5" *ngFor="let takeAway of keyTakeAways">
+                        <div class="ml-3">
+                            <h4 class="text-xl font-bold mb-3">{{takeAway.title}}</h4>
+                            <p class="text-base">{{takeAway.desc}}</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Additional Content Sections -->
+            <div class="my-5">
+                <h2 class="text-2xl font-bold mb-6">Consequences of Overheating</h2>
+                <p class="mb-4">When a device overheats, it can lead to performance issues, unexpected shutdowns, and
+                    even permanent damage to the inside components. There are several techniques for cooling, including
+                    different styles of heatsinks, thermoelectric coolers, forced air systems, fans, and heat channels.
+                    In power electronics, cooling systems must evacuate excess heat to maintain reliability and power
+                    density. So, electronic components should always operate within their rated operating temperature
+                    range, the safe operating area (SOA). [2]</p>
+                <p class="my-4">Overheating can happen for different reasons, including intemperate utilization, poor
+                    ventilation, and defective cooling systems. Extreme heat can slow and even damage devices [3].</p>
+
+                <h2 class="text-2xl font-bold mb-6">Working Principle and Concept</h2>
+                <p class="mb-4">Heatsinks operate on the fundamental principle that heat transfer from a hot to a cool
+                    region is proportional to the available surface area, as governed by the second law of
+                    thermodynamics. Heatsinks conduct heat away from critical electronic components, maintaining them
+                    within their rated operating temperature range. The absorbed heat is then removed through natural or
+                    forced air convection.</p>
+                <p class="my-4">Heatsinks function either passively through natural convection or actively using
+                    mechanisms like fans or liquid cooling to improve heat dissipation. Key performance factors for
+                    heatsink design include:</p>
+
+                <ul class="list-outside list-disc ml-10">
+                    <li>Surface area</li>
+                    <li>Material choice</li>
+                    <li>Fin geometry</li>
+                    <li>Base dimensions</li>
+                    <li>Innovative elements like varying sizes, scales, and protrusions</li>
+                </ul>
+
+                <p class="my-4">Optimizing these parameters will enhance heat exchange efficiency or thermal
+                    conductivity, resulting improvement of heat transfer coefficient.</p>
+
+                <h2 class="text-2xl font-bold mb-6">Active and Passive Heatsink</h2>
+                <p class="my-4">Heatsinks are classified into passive and active cooling methods. Passive cooling relies
+                    on natural convection and radiation for heat dissipation without external assistance. On the other
+                    hand, active cooling employs external devices like fans, pumps, or thermoelectric coolers (TECs) to
+                    boost heat transfer and cooling efficiency. The choice of a heatsink is determined by the necessary
+                    resistance to meet component thermal requirements with active solutions such as forced air or liquid
+                    cooling offering tailored thermal management solutions at different levels. (See Fig. 1) [5]</p>
+
+                <!-- Images with Captions -->
+                <figure>
+                    <img class="object-cover" src="../../../assets/services/heatsink.png" alt="img">
+                    <figcaption class="text-center my-5"><b>Figure 1:&nbsp;</b> Natural vs. Forced Convection
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="object-cover" src="../../../assets/services/table.png" alt="img">
+                    <figcaption class="text-center my-5"><b>Table 1:&nbsp;</b> Heatsinks High-Level Summary</figcaption>
+                </figure>
+                <h2 class="text-2xl font-bold mb-6">Active and Passive Heatsink</h2>
+                <p class="my-4">Heatsinks are classified into passive and active cooling methods. Passive cooling relies
+                    on natural convection and radiation for heat dissipation without external assistance. On the other
+                    hand, active cooling employs external devices like fans, pumps, or thermoelectric coolers (TECs) to
+                    boost heat transfer and cooling efficiency. The choice of a heatsink is determined by the necessary
+                    resistance to meet component thermal requirements with active solutions such as forced air or liquid
+                    cooling offering tailored thermal management solutions at different levels. (See Fig. 1) [5]</p>
+            </div>
+        </div>
+
+        <!-- Sidebar Area (Sticky) -->
+        <div class="w-2/5">
+            <div class="sticky top-28 h-[calc(100vh-20px)] overflow-auto right-0 ">
+                <div class="p-10 bg-gray rounded-md mb-5">
+                    <h2 class="text-3xl font-bold mb-5">Subscribe to our newsletter!</h2>
+                    <p class="mb-3">Get updates on the latest news & insights</p>
+                    <div class="flex items-center gap-4">
+                        <input type="email" placeholder="Enter Your Email"
+                            class="text-xs px-3 py-2 rounded-md border border-dark-blue">
+                        <a class="inline-block px-3 py-2 text-xs text-white rounded-md bg-light-teal" routerLink="">All
+                            Services</a>
+                    </div>
+                </div>
+
+                <div class="p-10 bg-light-teal rounded-md">
+                    <h2 class="text-white text-3xl font-bold mb-5">Learn more about Whizz Systems</h2>
+                    <div class="flex items-center gap-2 font-medium">
+                        <a class="inline-block px-2 py-1 rounded-md bg-gray" routerLink="">Thermal Management</a>
+                        <a class="inline-block px-2 py-1 rounded-md bg-gray" routerLink="">All Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

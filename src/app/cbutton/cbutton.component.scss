@@ -1,0 +1,37 @@
+.diagonal-swipe {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    overflow: hidden;
+    border: 0px solid #7BD4CF;
+    background-color: #fff;
+    color: #2c353a;
+    cursor: pointer;
+    transition: color 0.5s;
+    z-index: 1; /* Ensure text stays on top */
+  }
+  
+  .diagonal-swipe span {
+    position: relative;
+    z-index: 2; /* Text stays on top of the overlay */
+  }
+  
+  .diagonal-swipe:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #55C2BC transparent transparent transparent;
+    // border-width: 0 0 0 0;
+    transition: border-width 0.5s;
+    z-index: 1; /* Swipe effect stays behind the text */
+  }
+  
+  .diagonal-swipe:hover:after {
+    border-width: 250px 250px 0 0;
+    z-index: -1; /* Ensure swipe effect stays behind text */
+  }
+  

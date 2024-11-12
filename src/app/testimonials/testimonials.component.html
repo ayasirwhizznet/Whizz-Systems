@@ -1,29 +1,35 @@
-<div class="px-[5%] py-10">
-    <div>
-      <div class="flex items-center justify-between mb-8">
-        <h2 class="text-3xl font-semibold">Testimonials</h2>
-        <div class="flex items-center gap-2">
-          <button (click)="prevSlide()" class="relative overflow-hidden px-4 py-3 rounded-md  bg-white border border-light-teal cursor-pointer group">
-            <span class="absolute inset-0 transition-transform bg-medium-teal transform translate-x-full group-hover:translate-x-0 duration-300"></span>
-            <span class="relative z-10 flex items-center">
-                <img class="object-cover w-4 h-4" src="../../assets/services/left-arrow.svg" alt="right-arrow" />
-            </span>
-        </button>
-        <button (click)="nextSlide()" class="relative overflow-hidden px-4 py-3 rounded-md  bg-white border border-light-teal cursor-pointer group">
-          <span class="absolute inset-0 transition-transform bg-medium-teal transform -translate-x-full group-hover:translate-x-0 duration-300"></span>
+<div class="px-[6%] py-10">
+  <div>
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-5xl font-bold text-dark-blue">Testimonials</h2>
+      <div class="flex items-center gap-2">
+        <button (click)="prevSlide()"
+          class="relative overflow-hidden px-5 py-4 rounded-md  bg-white border border-light-teal cursor-pointer group">
+          <span
+            class="absolute inset-0 transition-transform bg-medium-teal transform translate-x-full group-hover:translate-x-0 duration-300"></span>
           <span class="relative z-10 flex items-center">
-              <img class="object-cover w-4 h-4" src="../../assets/services/right-arrow.svg" alt="right-arrow" />
+            <img class="object-cover w-4 h-4" src="../../assets/services/left-arrow.svg" alt="right-arrow" />
           </span>
-      </button>
-        </div>
-      </div>
-  
-      <div class="keen-slider" #sliderRef>
-        <div class="keen-slider__slide hover:shadow-lg" *ngFor="let card of cards">
-          <app-testimonial-card [desc]="card.desc" [imageUrl]="card.imageUrl" [name]="card.name" [designation]="card.designation">
-          </app-testimonial-card>
-        </div>
+        </button>
+        <button (click)="nextSlide()"
+          class="relative overflow-hidden px-5 py-4 rounded-md  bg-white border border-light-teal cursor-pointer group">
+          <span
+            class="absolute inset-0 transition-transform bg-medium-teal transform -translate-x-full group-hover:translate-x-0 duration-300"></span>
+          <span class="relative z-10 flex items-center">
+            <img class="object-cover w-4 h-4" src="../../assets/services/right-arrow.svg" alt="right-arrow" />
+          </span>
+        </button>
       </div>
     </div>
-    <img class="object-cover mx-auto mt-16 px-20" src="../../assets/ideas/section-divider.png" alt="img">
   </div>
+</div>
+<div class="pl-[6%]">
+  <div class="keen-slider" #sliderRef>
+    <div class="keen-slider__slide hover:shadow-lg" *ngFor="let card of cards">
+      <app-testimonial-card [desc]="card.desc" [imageUrl]="card.imageUrl" [name]="card.name"
+        [designation]="card.designation">
+      </app-testimonial-card>
+    </div>
+  </div>
+</div>
+<img class="object-cover mx-auto mt-16 px-36" src="../../assets/ideas/section-divider.png" alt="img">

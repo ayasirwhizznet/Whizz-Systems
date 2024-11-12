@@ -32,6 +32,18 @@ export class TestimonialsComponent {
       name: 'Stevan Logan',
       designation: 'Marketing at Xilinix'
     },
+    {
+      desc: 'Integer pellentesque nisi feugiat enim consectetur iaculis. Phasellus nec elit fringilla, pulvinar leo at, ultricies leo. Mauris tortor mi, ornare eget bibendum quis, aliquet et lectus. Nam vitae libero sem. Donec facilisis diam vitae iaculis aliquet. Sed suscipit ex et lacus placerat volutpat. Morbi consectetur quam ac est tristique, a pulvinar enim placerat. Sed pulvinar malesuada ex a porta.',
+      imageUrl: '../../assets/testimonials/profile.jpg',
+      name: 'Stevan Logan',
+      designation: 'Marketing at Xilinix'
+    },
+    {
+      desc: 'Integer pellentesque nisi feugiat enim consectetur iaculis. Phasellus nec elit fringilla, pulvinar leo at, ultricies leo. Mauris tortor mi, ornare eget bibendum quis, aliquet et lectus. Nam vitae libero sem. Donec facilisis diam vitae iaculis aliquet. Sed suscipit ex et lacus placerat volutpat. Morbi consectetur quam ac est tristique, a pulvinar enim placerat. Sed pulvinar malesuada ex a porta.',
+      imageUrl: '../../assets/testimonials/profile.jpg',
+      name: 'Stevan Logan',
+      designation: 'Marketing at Xilinix'
+    },
 
   ];
 
@@ -59,7 +71,7 @@ export class TestimonialsComponent {
           loop: true,
           mode: "snap",
           slides: {
-            perView: 3,
+            perView: 2.7,
             spacing: 50,
           },
         

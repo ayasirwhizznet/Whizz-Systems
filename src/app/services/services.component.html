@@ -1,40 +1,37 @@
-<div class="px-[5%] ">
-    <div class="">
-        <div class="flex items-center justify-between mb-8">
-            <h2 class="text-3xl font-semibold  nextt">Services</h2>
-            <div class="flex items-center gap-2 ">
-                <app-cbutton [routerLink]="'/services'"
-                    class="hidden sm:block border border-light-teal rounded-md next-1 " heading="All Services"
-                    icon="../../assets/services/right-arrow.svg"></app-cbutton>
-                <button (click)="prevSlide()"
-                    class="relative overflow-hidden px-4 py-3 rounded-md  bg-white border border-light-teal cursor-pointer group">
-                    <span
-                        class="absolute inset-0 transition-transform bg-medium-teal transform translate-x-full group-hover:translate-x-0 duration-300"></span>
-                    <span class="relative z-10 flex items-center">
-                        <img class="object-cover w-4 h-4" src="../../assets/services/left-arrow.svg"
-                            alt="right-arrow" />
-                    </span>
-                </button>
-                <button (click)="nextSlide()"
-                    class="relative overflow-hidden px-4 py-3 rounded-md  bg-white border border-light-teal cursor-pointer group">
-                    <span
-                        class="absolute inset-0 transition-transform bg-medium-teal transform -translate-x-full group-hover:translate-x-0 duration-300"></span>
-                    <span class="relative z-10 flex items-center">
-                        <img class="object-cover w-4 h-4" src="../../assets/services/right-arrow.svg"
-                            alt="right-arrow" />
-                    </span>
-                </button>
-            </div>
+<div class="px-[6%] text-dark-blue">
+    <div class="flex items-center justify-between mb-8">
+        <h2 class="text-5xl font-bold  nextt">Services</h2>
+        <div class="flex items-center gap-2">
+            <app-cbutton [size]="'medium'" [routerLink]="'/services'" class="hidden sm:block border border-light-teal rounded-md next-1 "
+                heading="All Services" icon="../../assets/services/right-arrow.svg"></app-cbutton>
+            <button (click)="prevSlide()"
+                class="diagonal-swipe relative overflow-hidden px-5 py-4 rounded-md  bg-white border border-light-teal cursor-pointer group">
+                <span
+                    class="absolute inset-0 transition-transform bg-medium-teal transform translate-x-full group-hover:translate-x-0 duration-300"></span>
+                <span class="relative z-10 flex items-center">
+                    <img class="object-cover w-4 h-4" src="../../assets/services/left-arrow.svg" alt="right-arrow" />
+                </span>
+            </button>
+            <button (click)="nextSlide()"
+                class="diagonal-swipe relative overflow-hidden px-5 py-4 rounded-md  bg-white border border-light-teal cursor-pointer group">
+                <span
+                    class="absolute inset-0 transition-transform bg-medium-teal transform -translate-x-full group-hover:translate-x-0 duration-300"></span>
+                <span class="relative z-10 flex items-center">
+                    <img class="object-cover w-4 h-4" src="../../assets/services/right-arrow.svg" alt="right-arrow" />
+                </span>
+            </button>
         </div>
-        <p class="mb-12">With complete, in-house expertise, we provide flexible, customized support— <br
-                class="hidden lg:block"> whether you’re
-            starting from a concept or refining a product for the market.</p>
-        <div class="keen-slider" #sliderRef>
-            <div class="keen-slider__slide" *ngFor="let card of cards">
-                <app-services-card [imageUrl]="card.imgUrl" [title]="card.title"
-                    [content]="card.content"></app-services-card>
-            </div>
-
+    </div>
+    <p class="mb-16 text-lg">With complete, in-house expertise, we provide flexible, customized support— <br
+            class="hidden lg:block"> whether you’re
+        starting from a concept or refining a product for the market.</p>
+</div>
+<div class="pl-[6%]">
+    <div class="keen-slider" #sliderRef>
+        <div class="keen-slider__slide" *ngFor="let card of cards">
+            <app-services-card [imageUrl]="card.imgUrl" [title]="card.title" [content]="card.content"></app-services-card>
         </div>
     </div>
 </div>
+<img class="object-cover mx-auto mt-10 px-36" src="../../assets/ideas/section-divider.png" alt="img">
+
