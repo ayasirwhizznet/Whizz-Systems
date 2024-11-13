@@ -1,34 +1,34 @@
 <div class="px-[3%]">
-    <div class="p-10 bg-dark-blue rounded-md text-white flex items-center">
+    <div class="pl-20 pt-10 bg-dark-blue rounded-md flex items-center">
         <div class="w-1/2">
-            <p class="mb-2">May 29, 2024</p>
-            <div class="flex items-center gap-2 font-medium ">
-                <a class="inline-block p-1 rounded-md bg-gray bg-transparent text-xs border border-1 text-medium-gray"
+            <p class="mb-2 text-medium-gray">May 29, 2024</p>
+            <div class="flex items-center gap-2 font-medium">
+                <a class="inline-block p-1 rounded-md bg-gray bg-transparent text-xs border border-1 text-medium-gray cursor-pointer"
+                    routerLink="">Heatsink</a>
+                <a class="inline-block p-1 rounded-md bg-gray bg-transparent text-xs border border-1 text-medium-gray cursor-pointer"
                     routerLink="">Thermal Management</a>
-                <a class="inline-block p-1 rounded-md bg-gray bg-transparent text-xs border border-1 text-medium-gray"
-                    routerLink="">All Services</a>
             </div>
-            <h1 class="text-5xl font-bold my-4">HEATSINKS: <br> Considerations, guidance, <br> and best practices.</h1>
-            <div  class="flex items-center gap-5">
-              
-                    <a *ngFor="let link of links" routerLink="item.link" class="inline-block">
-                        <img class="w-12 object-cover cursor-pointer" [src]="link.img" alt="img">
-                    </a>
-              
+            <h1 class="text-5xl font-bold mt-6 mb-8 text-white">Whizz Systems' Guide to <br> PCIe-6</h1>
+            <div class="flex items-center gap-3">
+                <a *ngFor="let link of links" routerLink="item.link" class="inline-block">
+                    <img class="w-8 object-cover cursor-pointer" [src]="link.img" alt="img">
+                </a>
             </div>
-
         </div>
-        <div class="w-1/2">
-            <img class="object-cover" src="../../../assets/hero/here-img2.png" alt="img">
+
+        <div class="w-1/2 relative">
+            <img class="transform -translate-x-48 translate-y-6" src="../../../assets/hero/here-img2.png" alt="img">
         </div>
     </div>
 </div>
 
+<img class="object-cover mx-auto py-20 px-36" src="../../../assets/services/section-divider.png" alt="img">
 
-<div class="px-[5%] pb-10 text-dark-blue">
-    <div class="flex gap-44 relative">
-        <!-- Main Content Area -->
-        <div class="w-3/5">
+<app-cnews></app-cnews>
+
+<div class="px-[10%] pb-10 text-dark-blue">
+    <div class="flex justify-between gap-40 relative">
+        <div class="max-w-xl">
             <div class="p-8 bg-gray rounded-md">
                 <h2 class="text-3xl font-bold mb-5">Key Takeaways</h2>
                 <ul class="list-outside list-decimal text-xl marker:text-light-teal ml-10">
@@ -40,8 +40,6 @@
                     </li>
                 </ul>
             </div>
-
-            <!-- Additional Content Sections -->
             <div class="my-5">
                 <h2 class="text-2xl font-bold mb-6">Consequences of Overheating</h2>
                 <p class="mb-4">When a device overheats, it can lead to performance issues, unexpected shutdowns, and
@@ -101,26 +99,22 @@
                     cooling offering tailored thermal management solutions at different levels. (See Fig. 1) [5]</p>
             </div>
         </div>
-
-        <!-- Sidebar Area (Sticky) -->
-        <div class="w-2/5">
-            <div class="sticky top-28 h-[calc(100vh-20px)] overflow-auto right-0 ">
+        <div class="max-w-sm">
+            <div class="sticky top-28 mt-5 h-[calc(75vh-20px)] overflow-auto right-0 ">
                 <div class="p-10 bg-gray rounded-md mb-5">
-                    <h2 class="text-3xl font-bold mb-5">Subscribe to our newsletter!</h2>
+                    <h2 class="text-4xl font-bold mb-5">Subscribe to our newsletter!</h2>
                     <p class="mb-3">Get updates on the latest news & insights</p>
                     <div class="flex items-center gap-4">
                         <input type="email" placeholder="Enter Your Email"
-                            class="text-xs px-3 py-2 rounded-md border border-dark-blue">
-                        <a class="inline-block px-3 py-2 text-xs text-white rounded-md bg-light-teal" routerLink="">All
-                            Services</a>
+                            class="w-full text-xs px-3 py-3 block rounded-md border border-dark-blue bg-transparent">
+                        <app-cbutton1 heading="Subscribe"></app-cbutton1>
                     </div>
                 </div>
-
-                <div class="p-10 bg-light-teal rounded-md">
-                    <h2 class="text-white text-3xl font-bold mb-5">Learn more about Whizz Systems</h2>
+                <div class="p-10 bg-medium-teal rounded-md">
+                    <h2 class="text-white text-4xl font-bold mb-5">Learn more about <br> Whizz Systems</h2>
                     <div class="flex items-center gap-2 font-medium">
-                        <a class="inline-block px-2 py-1 rounded-md bg-gray" routerLink="">Thermal Management</a>
-                        <a class="inline-block px-2 py-1 rounded-md bg-gray" routerLink="">All Services</a>
+                         <app-cbutton2 heading="Thermal Management"></app-cbutton2>
+                         <app-cbutton2 heading="All Services"></app-cbutton2>
                     </div>
                 </div>
             </div>

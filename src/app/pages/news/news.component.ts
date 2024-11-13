@@ -24,12 +24,13 @@ export class NewsComponent {
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting
                       from a concept or refining a product for the market.`,
       items: [
-        { label: 'System Design / Schematics' },
+        { label: 'System Design/Schematics' },
         { label: 'FPGA Design' },
         { label: 'PCB Layout' },
-        { label: '3D Modeling / Mechanical Engineering' },
+        { label: '3D Modeling/Mechanical Engineering' },
+        { label: 'Signal Integrity Simulation' },
         { label: 'Power Delivery Network Simulations' },
-        { label: 'Thermal Management / Thermal Simulation' }
+        { label: 'Signal Integrity Simulation' },
       ]
     },
 
@@ -38,8 +39,8 @@ export class NewsComponent {
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
       items: [
         { label: 'System Level Architecture' },
-        { label: 'Engineering & Design' },
         { label: 'Prototyping' },
+        { label: 'Signal Integrity Simulation' },
         { label: 'Testing' },
         { label: 'Compliance and Certification' }
       ]
@@ -49,7 +50,7 @@ export class NewsComponent {
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
       items: [
         { label: 'DFX Analysis' },
-        { label: 'FMEA (Failure Mode & Effects Analysis)' },
+        { label: 'Failure Mode & Effects Analysis (FMEA)' },
         { label: 'Thermal Profiling and Reflow Soldering Optimization' },
         { label: 'Mechanical System Build' },
         { label: 'Packaging Design' },
@@ -80,7 +81,7 @@ export class NewsComponent {
         { label: 'BOM Management' },
         { label: 'EOL Management' },
         { label: 'AVL Management' },
-        { label: 'Second Sourcing / Risk Buying' },
+        { label: 'Second Sourcing/Risk Buying' },
       ]
     },
   ]

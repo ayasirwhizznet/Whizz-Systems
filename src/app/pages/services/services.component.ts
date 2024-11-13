@@ -1,11 +1,14 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
-import { NewsComponent } from '../news/news.component';
+import { Cbutton1Component } from '../../cbutton1/cbutton1.component';
+import { CbuttonComponent } from "../../cbutton/cbutton.component";
+import { Cbutton2Component } from '../../cbutton2/cbutton2.component';
+import { NewsComponent } from '../../news/news.component';
 
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, Cbutton1Component, Cbutton2Component, NewsComponent],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss'
 })

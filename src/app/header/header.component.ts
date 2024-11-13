@@ -32,7 +32,7 @@ export class HeaderComponent {
     { label: 'About', link: '/', dropdown: '' },
     { label: 'Services', dropdown: 'service', link: '/' },
     { label: 'Featured Products', dropdown: 'featured', link: '/' },
-    { label: 'Blog', dropdown: 'blog', link: '/' },
+    { label: 'Resources', dropdown: 'resources', link: '/' },
   ];
 
   serviceSections = [
@@ -102,10 +102,10 @@ export class HeaderComponent {
     { label: 'USB 3/2', link: '/' },
   ];
 
-  blogItems = [
-    { label: 'News & Events', link: '/' },
+  resourceItems = [
     { label: 'Whitepapers', link: '/' },
-    { label: 'Customer Stories', link: '/' },
+    { label: 'Case Studies', link: '/' },
+    { label: 'News', link: '/' },
     { label: 'FAQ', link: '/' },
   ];
 

@@ -20,7 +20,7 @@ export class CbuttonComponent {
   get sizeClass(): string {
     switch (this.size) {
       case 'small':
-        return 'px-3 py-1 text-sm';  // Smaller padding and text size
+        return 'px-2 py-1 text-sm ';  // Smaller padding and text size
       case 'medium':
         return 'px-5 py-3 text-md'; // Default size
       case 'large':

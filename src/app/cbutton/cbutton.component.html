@@ -1,15 +1,11 @@
-<button
-  [routerLink]="routerLink"
-  class="diagonal-swipe relative overflow-hidden rounded-md text-black bg-white border border-black cursor-pointer group {{ sizeClass }} diagonal-swipe"
->
-  <span
-    class="absolute inset-0 transition-transform transform -translate-x-full -translate-y-full bg-yellow group-hover:translate-x-0 group-hover:translate-y-0 duration-500"
-  ></span>
+<button [routerLink]="routerLink" class="diagonal-swipe relative overflow-hidden rounded-md text-black bg-white border border-black cursor-pointer group {{ sizeClass }}">
 
-  <span class="relative z-10 font-medium flex justify-between items-center">
+  <span class="absolute inset-0 transition-transform transform -translate-x-full -translate-y-full bg-yellow group-hover:translate-x-0 group-hover:translate-y-0 duration-500"></span>
+
+  <span class="relative -z-10 font-medium flex justify-between items-center">
     {{ heading }}
     <ng-container *ngIf="icon">
-      <img [src]="icon" alt="icon" class="ml-8 w-4 h-4" />
+      <img [src]="icon" alt="icon" class="ml-5 w-4 h-4" />
     </ng-container>
   </span>
 </button>
