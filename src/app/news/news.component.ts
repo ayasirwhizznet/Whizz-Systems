@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-cnews',
   standalone: true,
-  imports: [NewsCardComponent, NgFor, CbuttonComponent, NewsCardComponent, RouterLink],
+  imports: [NewsCardComponent, NgFor, CbuttonComponent, RouterLink],
   templateUrl: './news.component.html',
   styleUrl: './news.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

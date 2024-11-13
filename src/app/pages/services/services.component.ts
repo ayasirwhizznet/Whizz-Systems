@@ -1,29 +1,88 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
-import { Cbutton1Component } from '../../cbutton1/cbutton1.component';
-import { CbuttonComponent } from "../../cbutton/cbutton.component";
-import { Cbutton2Component } from '../../cbutton2/cbutton2.component';
-import { NewsComponent } from '../../news/news.component';
 
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [NgFor, Cbutton1Component, Cbutton2Component, NewsComponent],
+  imports: [NgFor],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss'
 })
 export class ServicesComponent {
-  
-  keyTakeAways = [
-    {title: 'Importance of Heat Sinks', desc: 'Heatsinks are essential for managing heat in electronic devices, preventing overheating that can lead to performance issues and damage. They facilitate effective heat transfer from hot components to cooler areas, ensuring devices operate within their safe temperature ranges.'},
-    {title: 'Types and Mechanisms', desc: 'Heat Sinks are essential for managing heat in electronic devices, preventing overheating that can lead to performance issues and damage. They facilitate effective heat transfer from hot components to cooler areas, ensuring devices operate within their safe temperature ranges.'},
-    {title: 'Selection Criteria', desc: 'Heat Sinks are essential for managing heat in electronic devices, preventing overheating that can lead to performance issues and damage. They facilitate effective heat transfer from hot components to cooler areas, ensuring devices operate within their safe temperature ranges.'},
+  servicesNavbar = [
+    { title: 'Engineering & Design', url: '' },
+    { title: 'NPI', imgUrl: '' },
+    { title: 'Advanced Manufacturing', url: '' },
+    { title: 'Lab Testing Solutions', url: '' },
+    { title: 'Supply Chain Management', url: '' },
+    { title: 'Sustaining Engineering & Obsolescence Management', url: '' },
   ];
 
-  links = [
-    {img: '../../../assets/services/whizzicon.png', imgUrl:''},
-    {img: '../../../assets/services/whizz.png', imgUrl:''},
-    {img: '../../../assets/services/linkedIn.png', imgUrl:''},
-    {img: '../../../assets/services/youtube.png', imgUrl:''},
-  ];
+  servicesTab = [
+    {
+      title: "Engineering & Design",
+      description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting
+                      from a concept or refining a product for the market.`,
+      items: [
+        { label: 'System Design/Schematics' },
+        { label: 'FPGA Design' },
+        { label: 'PCB Layout' },
+        { label: '3D Modeling/Mechanical Engineering' },
+        { label: 'Signal Integrity Simulation' },
+        { label: 'Power Delivery Network Simulations' },
+        { label: 'Signal Integrity Simulation' },
+      ]
+    },
+
+    {
+      title: "NPI",
+      description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
+      items: [
+        { label: 'System Level Architecture' },
+        { label: 'Prototyping' },
+        { label: 'Signal Integrity Simulation' },
+        { label: 'Testing' },
+        { label: 'Compliance and Certification' }
+      ]
+    },
+    {
+      title: "Advanced Manufacturing",
+      description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
+      items: [
+        { label: 'DFX Analysis' },
+        { label: 'Failure Mode & Effects Analysis (FMEA)' },
+        { label: 'Thermal Profiling and Reflow Soldering Optimization' },
+        { label: 'Mechanical System Build' },
+        { label: 'Packaging Design' },
+      ]
+    },
+    {
+      title: "Lab Testing Solutions",
+      description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
+      items: [
+        { label: 'Board Bring Up' },
+        { label: 'Validation' },
+        { label: 'Characterization' },
+      ]
+    },
+    {
+      title: "Supply Chain Management",
+      description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
+      items: [
+        { label: 'Component Engineering' },
+        { label: 'Compliance Engineering' },
+        { label: 'Procurement Engineering' },
+      ]
+    },
+    {
+      title: "Sustaining Engineering & Obsolescence Management",
+      description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
+      items: [
+        { label: 'BOM Management' },
+        { label: 'EOL Management' },
+        { label: 'AVL Management' },
+        { label: 'Second Sourcing/Risk Buying' },
+      ]
+    },
+  ]
 }
