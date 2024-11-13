@@ -80,16 +80,32 @@
                     resistance to meet component thermal requirements with active solutions such as forced air or liquid
                     cooling offering tailored thermal management solutions at different levels. (See Fig. 1) [5]</p>
 
-                <!-- Images with Captions -->
                 <figure>
                     <img class="object-cover" src="../../../assets/services/heatsink.png" alt="img">
-                    <figcaption class="text-center my-5"><b>Figure 1:&nbsp;</b> Natural vs. Forced Convection
+                    <figcaption class="text-center mt-3 mb-10"><b>Figure 1:&nbsp;</b> Natural vs. Forced Convection
                     </figcaption>
                 </figure>
-                <figure>
-                    <img class="object-cover" src="../../../assets/services/table.png" alt="img">
-                    <figcaption class="text-center my-5"><b>Table 1:&nbsp;</b> Heatsinks High-Level Summary</figcaption>
-                </figure>
+
+                <table class="w-full border-collapse table-fixed">
+                    <caption class="mt-3 mb-10 caption-bottom">
+                      <b>Table 1: </b>Heatsinks High-Level Summary
+                    </caption>
+                    <ng-container *ngFor="let section of data.sections">
+                      <thead class="bg-medium-gray">
+                        <tr>
+                          <th class="border-[3px] p-3 text-left">{{ section.title }}</th>
+                          <th class="border-[3px] p-3 text-left">Description</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let item of section.items">
+                          <td class="border-[3px] p-3 text-sm">{{ item.type }}</td>
+                          <td class="border-[3px] p-3 text-sm">{{ item.description }}</td>
+                        </tr>
+                      </tbody>
+                    </ng-container>
+                  </table>
+                 
 
                 <h2 class="text-2xl font-bold mb-6">Active and Passive Heatsink</h2>
                 <p class="my-4">Heatsinks are classified into passive and active cooling methods. Passive cooling relies
@@ -114,8 +130,8 @@
                 <div class="p-10 bg-medium-teal rounded-md">
                     <h2 class="text-white text-4xl font-bold mb-5">Learn more about <br> Whizz Systems</h2>
                     <div class="flex items-center gap-2 font-medium">
-                         <app-cbutton2 heading="Thermal Management"></app-cbutton2>
-                         <app-cbutton2 heading="All Services"></app-cbutton2>
+                        <app-cbutton2 heading="Thermal Management"></app-cbutton2>
+                        <app-cbutton2 heading="All Services"></app-cbutton2>
                     </div>
                 </div>
             </div>

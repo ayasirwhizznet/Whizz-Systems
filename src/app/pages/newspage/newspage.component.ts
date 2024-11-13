@@ -25,21 +25,23 @@ export class NewspageComponent {
     {img: '../../../assets/services/youtube.png', imgUrl:''},
   ];
 
-  heatsinkData: any[] = [
-    {
-      category: 'Heatsink Type',
-      items: [
-        { type: 'Pin Fin', description: 'details' },
-        { type: 'Plate Fin', description: 'details' },
-        { type: 'Stacked Fin', description: 'details' }
-      ]
-    },
-    {
-      category: 'Fin Geometry',
-      items: [
-        { type: 'Straight Fins', description: 'details' },
-        { type: 'Extruded Fins', description: 'details' }
-      ]
-    }
-  ];
+  data = {
+    sections: [
+      {
+        title: "Heatsink Type",
+        items: [
+          { type: "Pin Fin", description: "Dense arrangemnt of protuding pins for increased surface area and aairflow ideal for forced convection (per case studies). [14]" },
+          { type: "Plate Fin", description: "Most common type with flat, parallel fins extending from a base plate. Fin shapes can vary. Suitable for natural or forced convection." },
+          { type: "Stacked Fin", description: "Multiple layers of thin fins stacked together for high surface area in space-limited applications like CPUs and GPUs." }
+        ]
+      },
+      {
+        title: "Fin Geometry",
+        items: [
+          { type: "Straight Fins", description: "Most common design, parallel fins extending perpendiculary from the heatsink baase." },
+          { type: "Extruded Fins", description: "Cost-effective way to create simple shapes by pushing aluminium through a die to form fins. " }
+        ]
+      }
+    ]
+  };
 }
