@@ -9,15 +9,21 @@ import { Component } from '@angular/core';
   styleUrl: './services.component.scss'
 })
 export class ServicesComponent {
-  servicesNavbar = [
-    { title: 'Engineering & Design', url: '' },
-    { title: 'NPI', imgUrl: '' },
-    { title: 'Advanced Manufacturing', url: '' },
-    { title: 'Lab Testing Solutions', url: '' },
-    { title: 'Supply Chain Management', url: '' },
-    { title: 'Sustaining Engineering & Obsolescence Management', url: '' },
-  ];
-
+  toTop(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 200;  // Adjust this value to match the height of your header
+      const topPosition = element.offsetTop - offset;
+  
+      window.scrollTo({
+        top: topPosition,
+        behavior: 'smooth',
+      });
+    }
+  }
+  
+  
+ 
   servicesTab = [
     {
       title: "Engineering & Design",
@@ -85,4 +91,5 @@ export class ServicesComponent {
       ]
     },
   ]
+  
 }

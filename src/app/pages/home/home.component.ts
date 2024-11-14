@@ -10,7 +10,7 @@ import { FooterComponent } from '../../footer/footer.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ HeroComponent, ServicesComponent, IdeasComponent, TrustComponent, TestimonialsComponent, NewsComponent, FooterComponent],
+  imports: [HeroComponent, ServicesComponent, IdeasComponent, TrustComponent, TestimonialsComponent, NewsComponent, FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CbuttonComponent } from "../cbutton/cbutton.component";
+import { Cbutton1Component } from '../cbutton1/cbutton1.component';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CbuttonComponent],
+  imports: [Cbutton1Component],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })

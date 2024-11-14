@@ -4,7 +4,10 @@
     <div class="flex items-center">
         <div class="keen-slider pointer-events-none" #sliderRef>
             <div class="keen-slider__slide" *ngFor="let company of companies">
-                <img class="w-[80%] h-[50%] object-cover " [src]="company" alt="Company logo">
+                <div class="w-32 h-32 flex justify-center items-center">
+
+                    <img class=" object-contain " [src]="company" alt="Company logo">
+                </div>
             </div>
         </div>
     </div>

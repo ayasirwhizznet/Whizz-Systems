@@ -9,7 +9,8 @@ module.exports = {
   
       backgroundImage:{
       "ideas":"url('../src/assets/ideas/bg-img.jpg')",
-      "lines":"url('../src/assets/services/line.png')"
+      "lines":"url('../src/assets/services/line.png')",
+      "section-divider":"url('../src/assets/services/section-divider.png')",
       },
       colors: {
         'card-border': '#ddd',
