@@ -30,19 +30,19 @@
       <p class="text-lg">{{ item.description }}</p>
     </div>
     <div class="w-2/3">
-      <div class="grid grid-cols-2 gap-4">
-        <div *ngFor="let subitem of item.items" class="h-32  bg-lines hover:bg-none relative group col-span-1 bg-contain bg-no-repeat bg-transparent bg-gray hover:border-none border border-light-gray1 rounded-md flex justify-start items-center overflow-hidden transition-transform duration-500 ease-in-out">
+      <div class="grid grid-cols-2  gap-4">
+        <div *ngFor="let subitem of item.items" class="h-32  bg-lines hover:bg-none relative group col-span-1 bg-contain bg-no-repeat hover:border-none border border-light-gray1 rounded-md flex justify-start items-center overflow-hidden transition-transform duration-300 ease-in-out bg-gray hover:bg-transparent">
           
           <!-- Title and text (static) -->
-          <h1 class="pl-5 pr-28 py-14 flex font-bold text-lg z-10 group-hover:text-white">{{ subitem.label }}</h1>
+          <h1 class="pl-5 pr-28 py-16 flex font-bold text-lg z-10 group-hover:text-white">{{ subitem.label }}</h1>
           
           <!-- Divs that will appear on hover -->
-          <div class=" absolute -z-10   top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100  flex gap-3 transition-all duration-500">
+          <div class=" absolute -z-10   top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100  flex gap-3 transition-all duration-200 ease-in-out">
             <!-- Left Div (Shrinks to the left on hover) -->
-            <div class="w-full group-hover:w-[88%]  bg-contain bg-no-repeat bg-bottom bg-lines  bg-dark-blue h-full rounded-md transition-all duration-500 ease-in-out"></div>
+            <div class="w-full group-hover:w-[88%]  bg-contain bg-no-repeat bg-bottom bg-lines  bg-dark-blue h-full rounded-md transition-all duration-200 ease-in-out"></div>
 
             <!-- Right Div (Expands from the right) -->
-            <div class="w-0  group-hover:w-[12%] opacity-0 group-hover:opacity-100 bg-light-teal h-full rounded-md flex justify-center items-center transition-all duration-500 ease-in-out">
+            <div class="w-0  group-hover:w-[12%] opacity-0 group-hover:opacity-100 bg-light-teal h-full rounded-md flex justify-center items-center transition-all duration-200 ease-in-out">
               <img class="w-5 h-5 transition-opacity duration-300" src="../../../assets/services/right-arrow.svg" alt="">
             </div>
           </div>
