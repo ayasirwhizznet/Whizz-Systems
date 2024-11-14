@@ -22,6 +22,9 @@ export class TrustComponent {
     '../../assets/trust/microsoft.png',
     '../../assets/trust/keysight.png',
     '../../assets/trust/google.png',
+    '../../assets/trust/advantest.png',
+    '../../assets/trust/paypal.png',
+    '../../assets/trust/broadcom.png',
   ];
   @ViewChild("sliderRef") sliderRef = {} as ElementRef;
 
