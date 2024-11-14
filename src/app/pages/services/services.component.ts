@@ -12,7 +12,7 @@ export class ServicesComponent {
   toTop(id: string) {
     const element = document.getElementById(id);
     if (element) {
-      const offset = 200;  // Adjust this value to match the height of your header
+      const offset = 220;  // Adjust this value to match the height of your header
       const topPosition = element.offsetTop - offset;
   
       window.scrollTo({
