@@ -4,11 +4,13 @@ import { NgFor } from '@angular/common';
 import { CbuttonComponent } from "../cbutton/cbutton.component";
 import 'keen-slider/keen-slider.css'
 import KeenSlider from "keen-slider";
+import { RarrowbuttonComponent } from "../rarrowbutton/rarrowbutton.component";
+import { LarrowbuttonComponent } from "../larrowbutton/larrowbutton.component";
 
 @Component({
   selector: 'app-cservices',
   standalone: true,
-  imports: [ServicesCardComponent, NgFor, CbuttonComponent],
+  imports: [ServicesCardComponent, NgFor, CbuttonComponent, RarrowbuttonComponent, LarrowbuttonComponent],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
@@ -61,8 +63,8 @@ export class ServicesComponent {
           loop: true,
           mode: "snap",
           slides: {
-            perView: 4,
-            spacing: 50,
+            perView: 3,
+            spacing: 60,
           },
         
         },

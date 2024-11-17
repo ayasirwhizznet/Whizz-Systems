@@ -1,8 +1,17 @@
-<button [routerLink]="routerLink" class="diagonal-swipe relative overflow-hidden rounded-md border cursor-pointer group">
-    <span class="absolute inset-0 transition-transform transform -translate-x-full -translate-y-full bg-yellow group-hover:translate-x-0 group-hover:translate-y-0 duration-500"></span>
-  
-    <span class="btn-text relative -z-10 font-medium flex justify-between items-center text-sm group-hover:text-white">
-      {{ heading }}
-    </span>
+<button [routerLink]="routerLink"
+  class="diagonal-swipe relative overflow-hidden rounded-md border cursor-pointer group flex gap-10">
+  <span
+    class="absolute inset-0 transition-transform transform -translate-x-full -translate-y-full bg-yellow group-hover:translate-x-0 group-hover:translate-y-0 duration-500"></span>
+
+  <span class="relative -z-10 font-medium flex justify-between items-center text-sm group-hover:text-white">
+    {{ heading }}
+    <ng-container *ngIf="icon">
+      <img [src]="isHovered ? hoverIcon : icon"
+           alt="icon"
+           class="ml-5 w-8 h-8"
+           (mouseenter)="isHovered = true"
+           (mouseleave)="isHovered = false"/>
+    </ng-container>
+  </span>
 </button>
 

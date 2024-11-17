@@ -1,0 +1,56 @@
+.diagonal-swipe {
+    padding: 12px;
+    border: 1px solid #7BD4CF;
+    background-color: #f8f8f8;
+    color: #2c353a;
+    transition: color 0.5s;
+    z-index: 1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+}
+
+.diagonal-swipe span {
+    position: relative;
+    z-index: 2;
+}
+
+.diagonal-swipe:after {
+    content: '';
+    position: absolute;
+    bottom: 0;  /* Set from the bottom */
+    right: 0;   /* Set from the right */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent #7BD4CF transparent; /* Border starts from bottom-right */
+    transition: border-width 0.5s;
+    z-index: 1;
+}
+
+.diagonal-swipe:hover:after {
+    border-width: 0 0 250px 250px; /* Reverse the direction of the border expansion */
+    z-index: -1;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive size adjustments based on button size */
+.diagonal-swipe.small .icon {
+    width: 16px;
+    height: 16px;
+}
+
+.diagonal-swipe.medium .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.diagonal-swipe.large .icon {
+    width: 28px;
+    height: 28px;
+}

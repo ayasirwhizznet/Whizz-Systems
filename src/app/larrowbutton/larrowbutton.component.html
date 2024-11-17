@@ -1,10 +1,7 @@
 <button [routerLink]="routerLink" class="diagonal-swipe relative overflow-hidden rounded-lg cursor-pointer {{ sizeClass }}">
-  <span></span>
-
-  <span class="font-medium flex justify-between items-center">
-    {{ heading }}
+    <span></span>
     <ng-container *ngIf="icon">
-      <img [src]="icon" alt="icon" class="ml-5 w-4 h-4" />
+      <img [src]="icon" alt="icon" class="icon" />
     </ng-container>
-  </span>
-</button>
+  </button>
+  

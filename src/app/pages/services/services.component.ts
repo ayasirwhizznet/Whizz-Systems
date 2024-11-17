@@ -30,13 +30,13 @@ export class ServicesComponent {
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting
                       from a concept or refining a product for the market.`,
       items: [
-        { label: 'System Design/Schematics' },
-        { label: 'FPGA Design' },
-        { label: 'PCB Layout' },
-        { label: '3D Modeling/Mechanical Engineering' },
-        { label: 'Signal Integrity Simulation' },
-        { label: 'Power Delivery Network Simulations' },
-        { label: 'Signal Integrity Simulation' },
+        { label: 'System Design/Schematics', link: '' },
+        { label: 'FPGA Design', link: '' },
+        { label: 'PCB Layout', link: '' },
+        { label: '3D Modeling/Mechanical Engineering', link: '' },
+        { label: 'Signal Integrity Simulation', link: '' },
+        { label: 'Power Delivery Network Simulations', link: '' },
+        { label: 'Signal Integrity Simulation', link: '' },
       ]
     },
 
@@ -44,50 +44,50 @@ export class ServicesComponent {
       title: "NPI",
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
       items: [
-        { label: 'System Level Architecture' },
-        { label: 'Prototyping' },
-        { label: 'Signal Integrity Simulation' },
+        { label: 'System Level Architecture', link: '' },
+        { label: 'Prototyping', link: '' },
+        { label: 'Signal Integrity Simulation', link: '' },
         { label: 'Testing' },
-        { label: 'Compliance and Certification' }
+        { label: 'Compliance and Certification', link: '' }
       ]
     },
     {
       title: "Advanced Manufacturing",
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
       items: [
-        { label: 'DFX Analysis' },
-        { label: 'Failure Mode & Effects Analysis (FMEA)' },
-        { label: 'Thermal Profiling and Reflow Soldering Optimization' },
-        { label: 'Mechanical System Build' },
-        { label: 'Packaging Design' },
+        { label: 'DFX Analysis', link: '' },
+        { label: 'Failure Mode & Effects Analysis (FMEA)', link: '' },
+        { label: 'Thermal Profiling and Reflow Soldering Optimization', link: '' },
+        { label: 'Mechanical System Build', link: '' },
+        { label: 'Packaging Design', link: '' },
       ]
     },
     {
       title: "Lab Testing Solutions",
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
       items: [
-        { label: 'Board Bring Up' },
-        { label: 'Validation' },
-        { label: 'Characterization' },
+        { label: 'Board Bring Up', link: '' },
+        { label: 'Validation', link: '' },
+        { label: 'Characterization', link: '' },
       ]
     },
     {
       title: "Supply Chain Management",
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
       items: [
-        { label: 'Component Engineering' },
-        { label: 'Compliance Engineering' },
-        { label: 'Procurement Engineering' },
+        { label: 'Component Engineering', link: '' },
+        { label: 'Compliance Engineering', link: '' },
+        { label: 'Procurement Engineering', link: '' },
       ]
     },
     {
       title: "Sustaining Engineering & Obsolescence Management",
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
       items: [
-        { label: 'BOM Management' },
-        { label: 'EOL Management' },
-        { label: 'AVL Management' },
-        { label: 'Second Sourcing/Risk Buying' },
+        { label: 'BOM Management', link: '' },
+        { label: 'EOL Management', link: '' },
+        { label: 'AVL Management', link: '' },
+        { label: 'Second Sourcing/Risk Buying', link: '' },
       ]
     },
   ]

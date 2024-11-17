@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LArrowButtonComponent } from './l-arrow-button.component';
+import { LarrowbuttonComponent } from './larrowbutton.component';
 
-describe('LArrowButtonComponent', () => {
-  let component: LArrowButtonComponent;
-  let fixture: ComponentFixture<LArrowButtonComponent>;
+describe('LarrowbuttonComponent', () => {
+  let component: LarrowbuttonComponent;
+  let fixture: ComponentFixture<LarrowbuttonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LArrowButtonComponent]
+      imports: [LarrowbuttonComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LArrowButtonComponent);
+    fixture = TestBed.createComponent(LarrowbuttonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -54,11 +54,6 @@ img.hover_img {
 }
 
 
-.learn_more:hover{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
 /* Tailwind's default config does not have rotate-x, so we need to extend it */
 @layer utilities {
   .rotate-x-180 {

@@ -2,13 +2,15 @@ import  KeenSlider  from 'keen-slider';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angular/core';
 import { NewsCardComponent } from '../news-card/news-card.component';
 import { NgFor } from '@angular/common';
-import { CbuttonComponent } from '../cbutton/cbutton.component';
 import { RouterLink } from '@angular/router';
+import { RarrowbuttonComponent } from '../rarrowbutton/rarrowbutton.component';
+import { LarrowbuttonComponent } from '../larrowbutton/larrowbutton.component';
+import { CbuttonComponent } from '../cbutton/cbutton.component';
 
 @Component({
   selector: 'app-cnews',
   standalone: true,
-  imports: [NewsCardComponent, NgFor, CbuttonComponent, RouterLink],
+  imports: [NewsCardComponent, NgFor, RouterLink, CbuttonComponent ,RarrowbuttonComponent, LarrowbuttonComponent],
   templateUrl: './news.component.html',
   styleUrl: './news.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

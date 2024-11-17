@@ -1,57 +1,60 @@
-<div class="px-[3%]">
-  <div class="px-20 pt-5 bg-dark-blue flex">
-      <div class="w-1/2">
-          <h2 class="text-5xl font-bold text-white mt-40">We Empower your Business <br> by
-              Engineering the Future</h2>
-      </div>
-      <div class="w-1/2 flex justify-center relative">
-          <img class="h-[34rem] w-[90rem] transform translate-y-6" src="../../../assets/hero/here-img2.png" alt="img">
-      </div>
+<div class="px-[5%]">
+  <div class="px-20 pt-10 bg-dark-gray2 flex rounded-br-2xl  rounded-bl-2xl">
+    <div class="w-1/2">
+      <h2 class="text-5xl font-bold text-white mt-40">We Empower your Business <br> by
+        Engineering the Future</h2>
+    </div>
+    <div class="w-1/2 flex justify-center relative">
+      <img class="h-[33rem] w-[90rem] transform translate-y-6" src="../../../assets/hero/here-img2.png" alt="img">
+    </div>
   </div>
 </div>
 
 
 
 <!-- Services Navbar -->
-<div class="px-[3%] z-20  sticky top-[88px]">
-  <div class="p-8 flex gap-5  text-center text-xs  my-16 bg-white z-50">
-      <a *ngFor="let link of servicesTab"
-      (click)="toTop(link.title)"
-          class=" w-64 h-16 flex cursor-pointer justify-center items-center bg-dark-gray hover:bg-dark-blue text-white font-medium rounded-md"
-          routerLink="link.url">{{link.title}}</a>
+<div class="px-[5%] z-20  sticky top-[88px]">
+  <div class="p-8 flex gap-3  text-center text-xs  my-16 bg-white z-50">
+    <a *ngFor="let link of servicesTab" (click)="toTop(link.title)"
+      class=" w-64 h-16 flex cursor-pointer justify-center items-center bg-dark-gray1 hover:bg-dark-gray2 text-white font-medium rounded-md"
+      routerLink="link.url">{{link.title}}</a>
   </div>
 </div>
 
 
-<div class="px-[3%] text-dark-blue">
-  <div *ngFor="let item of servicesTab" class="p-10 flex gap-20">
-    <div [id]="item.title" class="w-1/3">
-      <h1 class="font-bold text-5xl mb-3">{{ item.title }}</h1>
-      <p class="text-lg">{{ item.description }}</p>
+<div class="px-[5%] ">
+  <div *ngFor="let item of servicesTab" class="p-10 grid grid-cols-10 gap-20">
+    <div [id]="item.title" class="col-span-4">
+      <h1 class="font-bold text-5xl mb-8 text-dark-gray2">{{ item.title }}</h1>
+      <p class="text-lg text-dark-gray2">{{ item.description }}</p>
     </div>
-    <div class="w-2/3">
-      <div class="grid grid-cols-2  gap-4">
-        <div *ngFor="let subitem of item.items" class="h-32  bg-lines hover:bg-none relative group col-span-1 bg-contain bg-no-repeat hover:border-none border border-light-gray1 rounded-md flex justify-start items-center overflow-hidden transition-transform duration-300 ease-in-out bg-gray hover:bg-transparent">
-          
-          <!-- Title and text (static) -->
-          <h1 class="pl-5 pr-28 py-16 flex font-bold text-lg z-10 group-hover:text-white">{{ subitem.label }}</h1>
-          
-          <!-- Divs that will appear on hover -->
-          <div class=" absolute -z-10   top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100  flex gap-3 transition-all duration-200 ease-in-out">
-            <!-- Left Div (Shrinks to the left on hover) -->
-            <div class="w-full group-hover:w-[88%]  bg-contain bg-no-repeat bg-bottom bg-lines  bg-dark-blue h-full rounded-md transition-all duration-200 ease-in-out"></div>
+    <div class="col-span-6">
+      <div class="grid grid-cols-2  gap-3">
+        <div *ngFor="let subitem of item.items"
+     class="h-32 bg-lines hover:bg-none relative group col-span-1 bg-contain bg-no-repeat hover:border-none border border-light-gray1 rounded-md flex justify-start items-center overflow-hidden transition-transform duration-500 ease-in-out bg-card-gray hover:bg-transparent">
+  <a class="cursor-pointer" routerLink="subitem.link">
+    <!-- Title and text (static) -->
+    <h1 class="pl-6 pr-20  py-16 flex font-bold text-lg z-10 group-hover:text-white transition-colors duration-500 ease-in-out">
+      {{ subitem.label }}
+    </h1>
 
-            <!-- Right Div (Expands from the right) -->
-            <div class="w-0  group-hover:w-[12%] opacity-0 group-hover:opacity-100 bg-light-teal h-full rounded-md flex justify-center items-center transition-all duration-200 ease-in-out">
-              <img class="w-5 h-5 transition-opacity duration-300" src="../../../assets/services/right-arrow.svg" alt="">
-            </div>
-          </div>
-  
-          <!-- Hidden background image flip on hover -->
-          <div class="absolute inset-0 bg-cover bg-center group-hover:rotate-x-180"></div>
-        </div>
+    <!-- Divs that will appear on hover -->
+    <div class="absolute -z-20 top-0 left-0 w-full h-full flex gap-0 group-hover:gap-3 transition-all duration-500 ease-in-out">
+
+      <!-- Left Div (Shrinks to the left on hover) -->
+      <div class="left-div w-full bg-contain bg-no-repeat bg-bottom bg-lines bg-dark-gray1 h-full rounded-md transition-all duration-500 ease-in-out group-hover:w-[88%] z-10">
+      </div>
+
+      <!-- Right Div (Expands from the right) -->
+      <div class="right-div w-0 opacity-0 group-hover:w-[12%] group-hover:opacity-100 bg-teal1 h-full rounded-md flex justify-center items-center transition-all duration-500 ease-in-out z-10">
+        <img class="w-5 h-5 transition-opacity duration-500" src="../../../assets/services/right-arrow.svg" alt="img">
+      </div>
+    </div>
+  </a>
+</div>
+
+
       </div>
     </div>
   </div>
 </div>
-

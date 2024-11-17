@@ -1,17 +1,17 @@
-<div class="px-[3%]">
-    <div class="px-20 pt-5 bg-dark-blue rounded-md flex items-center">
+<div class="px-[5%]">
+    <div class="px-20 pt-5 bg-dark-gray2 rounded-br-2xl rounded-bl-2xl flex items-center">
         <div class="w-1/2">
-            <p class="mb-2 text-medium-gray">May 29, 2024</p>
-            <div class="flex items-center gap-2 font-medium">
-                <a class="inline-block p-1 rounded-md bg-gray bg-transparent text-xs border border-1 text-medium-gray cursor-pointer"
+            <p class="mb-2 text-light-gray1">May 29, 2024</p>
+            <div class="flex items-center gap-2 font-medium text-sm text-light-gray1">
+                <a class="inline-block p-1 rounded-md border border-1 border-light-gray1 cursor-pointer"
                     routerLink="">Heatsink</a>
-                <a class="inline-block p-1 rounded-md bg-gray bg-transparent text-xs border border-1 text-medium-gray cursor-pointer"
+                <a class="inline-block p-1 rounded-md border border-1 border-light-gray1 cursor-pointer"
                     routerLink="">Thermal Management</a>
             </div>
             <h1 class="text-5xl font-bold mt-6 mb-8 text-white">Whizz Systems' Guide to <br> PCIe-6</h1>
             <div class="flex items-center gap-3">
                 <a *ngFor="let link of links" routerLink="item.link" class="inline-block">
-                    <img class="w-8 object-cover cursor-pointer" [src]="link.img" alt="img">
+                    <img class="w-10 cursor-pointer" [src]="link.img" alt="img">
                 </a>
             </div>
         </div>
@@ -22,20 +22,20 @@
     </div>
 </div>
 
-<img class="object-cover mx-auto py-20 px-36" src="../../../assets/services/section-divider.png" alt="img">
+<img class="object-cover mx-auto py-20 px-44" src="../../../assets/services/section-divider.png" alt="img">
 
 <app-cnews></app-cnews>
 
-<div class="px-[10%] pb-10 text-dark-blue">
-    <div class="flex justify-between gap-40 relative">
-        <div class="max-w-xl">
-            <div class="p-8 bg-gray rounded-md">
-                <h2 class="text-3xl font-bold mb-5">Key Takeaways</h2>
-                <ul class="list-outside list-decimal text-xl marker:text-light-teal ml-10">
+<div class="px-[9%] pb-10 text-dark-gray2">
+    <div class="grid grid-cols-9 gap-28 relative">
+        <div class="col-span-5">
+            <div class="p-12 bg-card-gray border border-1 border-light-gray1 rounded-lg text-dark-gray2">
+                <h2 class="text-5xl font-bold mb-12">Key Takeaways</h2>
+                <ul class="list-outside list-decimal text-xl marker:text-teal1 ml-10">
                     <li class="mb-5" *ngFor="let takeAway of keyTakeAways">
                         <div class="ml-3">
                             <h4 class="text-xl font-bold mb-3">{{takeAway.title}}</h4>
-                            <p class="text-base">{{takeAway.desc}}</p>
+                            <p class="font-light text-base">{{takeAway.desc}}</p>
                         </div>
                     </li>
                 </ul>
@@ -81,7 +81,7 @@
                     cooling offering tailored thermal management solutions at different levels. (See Fig. 1) [5]</p>
 
                 <figure>
-                    <img class="object-cover" src="../../../assets/services/heatsink.png" alt="img">
+                    <img class="object-cover" src="../../../assets/news/heatsink.png" alt="img">
                     <figcaption class="text-center mt-3 mb-10"><b>Figure 1:&nbsp;</b> Natural vs. Forced Convection
                     </figcaption>
                 </figure>
@@ -116,22 +116,21 @@
                     cooling offering tailored thermal management solutions at different levels. (See Fig. 1) [5]</p>
             </div>
         </div>
-        <div class="max-w-sm">
-            <div class="sticky top-28 mt-5 h-[calc(75vh-20px)] overflow-auto right-0 ">
-                <div class="p-10 bg-gray rounded-md mb-5">
-                    <h2 class="text-4xl font-bold mb-5">Subscribe to our newsletter!</h2>
-                    <p class="mb-3">Get updates on the latest news & insights</p>
-                    <div class="flex items-center gap-4">
+        <div class="col-span-4">
+            <div class="sticky top-28 mt-5 h-[calc(95vh-20px)] overflow-auto right-0">
+                <div class="p-12 bg-card-gray rounded-xl border border-1 border-light-gray1 mb-5">
+                    <h2 class="text-5xl font-bold text-dark-gray2">Subscribe to our newsletter!</h2>
+                    <p class="font-light text-xl my-8 text-dark-gray2">Get updates on the latest news & insights</p>
+                    <div class="flex items-center gap-6">
                         <input type="email" placeholder="Enter Your Email"
-                            class="w-full text-xs px-3 py-3 block rounded-md border border-dark-blue bg-transparent">
+                            class="w-full text-xs px-4 py-3 block rounded-lg border border-1 border-dark-gray2 focus:outline-none focus:border-teal1  bg-transparent">
                         <app-cbutton1 heading="Subscribe"></app-cbutton1>
                     </div>
                 </div>
-                <div class="p-10 bg-medium-teal rounded-md">
-                    <h2 class="text-white text-4xl font-bold mb-5">Learn more about <br> Whizz Systems</h2>
+                <div class="p-12 bg-teal1 rounded-lg">
+                    <h2 class="text-white text-5xl font-bold mb-8">Learn more about Whizz Systems</h2>
                     <div class="flex items-center gap-2 font-medium">
-                        <app-cbutton2 heading="Thermal Management"></app-cbutton2>
-                        <app-cbutton2 heading="All Services"></app-cbutton2>
+                        <app-cbutton2 heading="All services" size="medium"></app-cbutton2>
                     </div>
                 </div>
             </div>

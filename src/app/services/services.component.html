@@ -1,37 +1,26 @@
-<div class="px-[6%] text-dark-blue">
+<div class="px-[9%] text-dark-gray2">
     <div class="flex items-center justify-between mb-8">
-        <h2 class="text-5xl font-bold  nextt">Services</h2>
-        <div class="flex items-center gap-2">
-            <app-cbutton [size]="'medium'" [routerLink]="'/services'" class="hidden sm:block border border-light-teal rounded-md next-1 "
-                heading="All Services" icon="../../assets/services/right-arrow.svg"></app-cbutton>
-            <button (click)="prevSlide()"
-                class="diagonal-swipe relative overflow-hidden px-5 py-4 rounded-md  bg-white border border-light-teal cursor-pointer group">
-                <span
-                    class="absolute inset-0 transition-transform bg-medium-teal transform translate-x-full group-hover:translate-x-0 duration-300"></span>
-                <span class="relative z-10 flex items-center">
-                    <img class="object-cover w-4 h-4" src="../../assets/services/left-arrow.svg" alt="right-arrow" />
-                </span>
-            </button>
-            <button (click)="nextSlide()"
-                class="diagonal-swipe relative overflow-hidden px-5 py-4 rounded-md  bg-white border border-light-teal cursor-pointer group">
-                <span
-                    class="absolute inset-0 transition-transform bg-medium-teal transform -translate-x-full group-hover:translate-x-0 duration-300"></span>
-                <span class="relative z-10 flex items-center">
-                    <img class="object-cover w-4 h-4" src="../../assets/services/right-arrow.svg" alt="right-arrow" />
-                </span>
-            </button>
+        <h2 class="text-5xl font-bold">Services</h2>
+        <div class="flex items-center gap-4">
+            <app-cbutton [size]="'medium'" [routerLink]="'/services'"
+                class="hidden sm:block border border-light-teal rounded-md next-1 " heading="All services"
+                icon="../../assets/services/r-arrow.svg" class="border border-1 border-teal2 rounded-lg"></app-cbutton>
+            <app-larrowbutton (click)="prevSlide()" icon="../../assets/services/l-arrow.svg"
+                size="medium"></app-larrowbutton>
+            <app-rarrowbutton (click)="nextSlide()" icon="../../assets/services/r-arrow.svg"
+                size="medium"></app-rarrowbutton>
         </div>
     </div>
-    <p class="mb-16 text-lg">With complete, in-house expertise, we provide flexible, customized support— <br
-            class="hidden lg:block"> whether you’re
+    <p class="mb-16 text-lg text-dark-gray1">With complete, in-house expertise, we provide flexible, customized support—
+        <br class="hidden lg:block"> whether you’re
         starting from a concept or refining a product for the market.</p>
 </div>
-<div class="pl-[6%]">
+<div class="pl-[9%]">
     <div class="keen-slider" #sliderRef>
         <div class="keen-slider__slide" *ngFor="let card of cards">
-            <app-services-card [imageUrl]="card.imgUrl" [title]="card.title" [content]="card.content"></app-services-card>
+            <app-services-card [imageUrl]="card.imgUrl" [title]="card.title"
+                [content]="card.content"></app-services-card>
         </div>
     </div>
 </div>
-<img class="object-cover mx-auto mt-0 px-36" src="../../assets/ideas/section-divider.png" alt="img">
-
+<img class="object-cover mx-auto mt-0 px-52" src="../../assets/ideas/section-divider1.png" alt="img">
