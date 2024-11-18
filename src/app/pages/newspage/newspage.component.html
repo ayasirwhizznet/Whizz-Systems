@@ -17,7 +17,8 @@
         </div>
 
         <div class="w-1/2 relative">
-            <img class="w-[100rem] h-[32rem] transform translate-y-6" src="../../../assets/hero/here-img2.png" alt="img">
+            <img class="w-[100rem] h-[32rem] transform translate-y-6" src="../../../assets/hero/here-img2.png"
+                alt="img">
         </div>
     </div>
 </div>
@@ -40,81 +41,89 @@
                     </li>
                 </ul>
             </div>
-            <div class="my-5">
-                <h2 class="text-2xl font-bold mb-6">Consequences of Overheating</h2>
-                <p class="mb-4">When a device overheats, it can lead to performance issues, unexpected shutdowns, and
-                    even permanent damage to the inside components. There are several techniques for cooling, including
-                    different styles of heatsinks, thermoelectric coolers, forced air systems, fans, and heat channels.
-                    In power electronics, cooling systems must evacuate excess heat to maintain reliability and power
-                    density. So, electronic components should always operate within their rated operating temperature
-                    range, the safe operating area (SOA). [2]</p>
-                <p class="my-4">Overheating can happen for different reasons, including intemperate utilization, poor
-                    ventilation, and defective cooling systems. Extreme heat can slow and even damage devices [3].</p>
 
-                <h2 class="text-2xl font-bold mb-6">Working Principle and Concept</h2>
-                <p class="mb-4">Heatsinks operate on the fundamental principle that heat transfer from a hot to a cool
-                    region is proportional to the available surface area, as governed by the second law of
-                    thermodynamics. Heatsinks conduct heat away from critical electronic components, maintaining them
-                    within their rated operating temperature range. The absorbed heat is then removed through natural or
-                    forced air convection.</p>
-                <p class="my-4">Heatsinks function either passively through natural convection or actively using
-                    mechanisms like fans or liquid cooling to improve heat dissipation. Key performance factors for
-                    heatsink design include:</p>
+            <h3 (click)="isVisible = !isVisible" class="text-dark-gray1 text-2xl font-semibold my-8 cursor-pointer"
+                [ngClass]="{'text-teal1': !isVisible, 'text-dark-gray1': isVisible}">
+                Section Header
+                <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]"
+                    [ngClass]="{'rotate-135 text-dark-gray1': isVisible, '-rotate-180 text-teal1': !isVisible}"></i>
+            </h3>
+            <div *ngIf="isVisible">
+                <h4 class="text-dark-gray2 text-lg font-medium mb-4">Section Subheader</h4>
+                <p class="text-base text-dark-gray2 font-light mb-4">Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                    voluptas sit aspernatur aut odit aut fugit,e laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                    voluptatem
+                    quia voluptas sit aspernatur aut odit aut fugit,</p>
 
-                <ul class="list-outside list-disc ml-10">
-                    <li>Surface area</li>
-                    <li>Material choice</li>
-                    <li>Fin geometry</li>
-                    <li>Base dimensions</li>
-                    <li>Innovative elements like varying sizes, scales, and protrusions</li>
+                <div class="relative left-3  border-l-2  border-teal1">
+                    <!-- Loop through timeline items -->
+                    <div *ngFor="let item of timelines" class="mb-7 relative">
+                        <!-- Circle -->
+                        <div
+                            class="absolute -left-2 top-1 transform translate-y-0 w-4 h-4 bg-white border-2 border-teal1 rounded-full">
+                        </div>
+                        <!-- Heading -->
+                        <h3 class="text-base font-light text-dark-gray2 ml-5">{{ item.title }}</h3>
+                    </div>
+                </div>
+
+                <h4 class="text-dark-gray2 text-lg font-medium mb-4">Section Subheader</h4>
+                <p class="text-base text-dark-gray2 font-light mb-4">Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                    voluptas sit aspernatur aut odit aut fugit,e laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                    voluptatem
+                    quia voluptas sit aspernatur aut odit aut fugit,</p>
+                <ul *ngFor="let item of bulletpoints">
+                    <li class="mb-7 text-dark-gray2 flex items-center"><img class="w-2 h-2 mr-4"
+                            src="../../../assets/news/list2-img.png" alt="img"><b>{{item.title}}: &nbsp;</b><span
+                            class="font-light">{{item.desc}}</span></li>
                 </ul>
 
-                <p class="my-4">Optimizing these parameters will enhance heat exchange efficiency or thermal
-                    conductivity, resulting improvement of heat transfer coefficient.</p>
+                <h4 class="text-dark-gray2 text-lg font-medium mb-4">Section Subheader</h4>
+                <p class="text-base text-dark-gray2 font-light mb-4">Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                    voluptas sit aspernatur aut odit aut fugit,e laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                    voluptatem
+                    quia voluptas sit aspernatur aut odit aut fugit,</p>
+            </div>
+            <div class="border border-1 border-light-gray1 bg-card-gray rounded-lg p-16">
+                <img src="../../../assets/news/quotation.png" alt="img">
+                <blockquote class="text-4xl font-light text-light-gray2 my-8">This is where you could put a relevant
+                    quote that is referenced in the blog.</blockquote>
+                <h3 class="font-semibold text-light-gray2">Steven Logan</h3>
+                <p class="text-light-gray2">Marketing at Xilinix</p>
+            </div>
 
-                <h2 class="text-2xl font-bold mb-6">Active and Passive Heatsink</h2>
-                <p class="my-4">Heatsinks are classified into passive and active cooling methods. Passive cooling relies
-                    on natural convection and radiation for heat dissipation without external assistance. On the other
-                    hand, active cooling employs external devices like fans, pumps, or thermoelectric coolers (TECs) to
-                    boost heat transfer and cooling efficiency. The choice of a heatsink is determined by the necessary
-                    resistance to meet component thermal requirements with active solutions such as forced air or liquid
-                    cooling offering tailored thermal management solutions at different levels. (See Fig. 1) [5]</p>
-
+            <h3 (click)="isVisible = !isVisible" class="text-dark-gray1 text-2xl font-semibold my-8 cursor-pointer"
+                [ngClass]="{'text-teal1': !isVisible, 'text-dark-gray1': isVisible}">
+                Section Header
+                <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]"
+                    [ngClass]="{'rotate-135 text-dark-gray1': isVisible, '-rotate-180 text-teal1': !isVisible}"></i>
+            </h3>
+            <div *ngIf="isVisible">
+                <div *ngFor="let item of subheadings">
+                    <h4 class="text-dark-gray2 text-lg font-medium mb-4">{{item.title}}</h4>
+                    <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc}}</p>
+                </div>
+            </div>
+            <div class="border border-1 border-light-gray1 bg-card-gray rounded-lg p-16">
                 <figure>
-                    <img class="object-cover" src="../../../assets/news/heatsink.png" alt="img">
-                    <figcaption class="text-center mt-3 mb-10"><b>Figure 1:&nbsp;</b> Natural vs. Forced Convection
+                    <img class="object-cover mb-4 rounded-lg" src="../../../assets/news/image.png" alt="img">
+                    <figcaption class="font-light text-light-gray2">
+                        <span class="text-teal2 font-bold">Fig. 1.1:&nbsp;</span> Description of image above
                     </figcaption>
                 </figure>
-
-                <table class="w-full border-collapse table-fixed">
-                    <caption class="mt-3 mb-10 caption-bottom">
-                      <b>Table 1: </b>Heatsinks High-Level Summary
-                    </caption>
-                    <ng-container *ngFor="let section of data.sections">
-                      <thead class="bg-medium-gray">
-                        <tr>
-                          <th class="border-[3px] p-3 text-left">{{ section.title }}</th>
-                          <th class="border-[3px] p-3 text-left">Description</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr *ngFor="let item of section.items">
-                          <td class="border-[3px] p-3 text-sm">{{ item.type }}</td>
-                          <td class="border-[3px] p-3 text-sm">{{ item.description }}</td>
-                        </tr>
-                      </tbody>
-                    </ng-container>
-                  </table>
-                 
-
-                <h2 class="text-2xl font-bold mb-6">Active and Passive Heatsink</h2>
-                <p class="my-4">Heatsinks are classified into passive and active cooling methods. Passive cooling relies
-                    on natural convection and radiation for heat dissipation without external assistance. On the other
-                    hand, active cooling employs external devices like fans, pumps, or thermoelectric coolers (TECs) to
-                    boost heat transfer and cooling efficiency. The choice of a heatsink is determined by the necessary
-                    resistance to meet component thermal requirements with active solutions such as forced air or liquid
-                    cooling offering tailored thermal management solutions at different levels. (See Fig. 1) [5]</p>
             </div>
+
+
+
         </div>
         <div class="col-span-4">
             <div class="sticky top-28 mt-5 h-[calc(95vh-20px)] overflow-auto right-0">

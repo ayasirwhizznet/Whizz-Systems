@@ -29,5 +29,5 @@ export class Cbutton2Component {
 
   isHovered:boolean = false;
   icon:string | null = '../../assets/news/right-arrow.svg';  // default icon
-  hoverIcon:string = '../../assets/news/rwhite-arrow.png'; // hover icon
+  hoverIcon:string = '../../assets/news/whitearrow.png'; // hover icon
 }

@@ -12,7 +12,7 @@
                         class="text-lg text-dark-gray1" [routerLink]="item.link">
                         {{ item.label }}
                         <i *ngIf="item.dropdown" 
-                        class="fa-solid fa-chevron-down text-sm transition-transform duration-100 ease-[cubic-bezier(1,0.25,0.25,.8)]" 
+                        class="fa-solid fa-chevron-down text-sm transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]" 
                         [ngClass]="{
                           '-rotate-180 text-teal1': activeMenuItem === item.label && item.dropdown,
                           'rotate-135 text-dark-gray1': activeMenuItem !== item.label && item.dropdown
