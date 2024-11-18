@@ -11,6 +11,7 @@ module.exports = {
       "ideas":"url('../src/assets/ideas/bg-img.jpg')",
       "lines":"url('../src/assets/services/line.png')",
       "section-divider":"url('../src/assets/services/section-divider.png')",
+      "subscribe":"url('../src/assets/news/subscribe.png')"
       },
       colors: {
         'light-gray1': '#D9D9D9',

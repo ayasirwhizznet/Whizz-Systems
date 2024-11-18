@@ -57,14 +57,12 @@
                     inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
                     voluptatem
                     quia voluptas sit aspernatur aut odit aut fugit,</p>
-
-                <div class="relative left-3  border-l-2  border-teal1">
+                    <div class="relative left-3">
+                    <div class="w-[2px] h-[90%] mt-2 bg-teal1 absolute  "></div>
                     <!-- Loop through timeline items -->
                     <div *ngFor="let item of timelines" class="mb-7 relative">
                         <!-- Circle -->
-                        <div
-                            class="absolute -left-2 top-1 transform translate-y-0 w-4 h-4 bg-white border-2 border-teal1 rounded-full">
-                        </div>
+                        <div class="absolute -left-2  transform translate-y-0 w-4 h-4 bg-white border-2 border-teal1 rounded-full"></div>
                         <!-- Heading -->
                         <h3 class="text-base font-light text-dark-gray2 ml-5">{{ item.title }}</h3>
                     </div>
@@ -136,10 +134,10 @@
                         <app-cbutton1 heading="Subscribe"></app-cbutton1>
                     </div>
                 </div>
-                <div class="p-12 bg-teal1 rounded-lg">
+                <div class="p-12 bg-subscribe rounded-lg bg-cover">
                     <h2 class="text-white text-5xl font-bold mb-8">Learn more about Whizz Systems</h2>
                     <div class="flex items-center gap-2 font-medium">
-                        <app-cbutton2 heading="All services" size="medium"></app-cbutton2>
+                        <app-cbutton2 routerLink="/services" heading="All services" size="medium"></app-cbutton2>
                     </div>
                 </div>
             </div>
