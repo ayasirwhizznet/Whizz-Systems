@@ -43,10 +43,10 @@
             </div>
 
             <h3 (click)="isVisible = !isVisible" class="text-dark-gray1 text-2xl font-semibold my-8 cursor-pointer"
-                [ngClass]="{'text-teal1': !isVisible, 'text-dark-gray1': isVisible}">
+                [ngClass]="{'text-teal2': !isVisible, 'text-dark-gray1': isVisible}">
                 Section Header
                 <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]"
-                    [ngClass]="{'rotate-135 text-dark-gray1': isVisible, '-rotate-180 text-teal1': !isVisible}"></i>
+                    [ngClass]="{'rotate-135 text-dark-gray1': isVisible, '-rotate-180 text-teal2': !isVisible}"></i>
             </h3>
             <div *ngIf="isVisible">
                 <h4 class="text-dark-gray2 text-lg font-medium mb-4">Section Subheader</h4>
@@ -100,10 +100,10 @@
             </div>
 
             <h3 (click)="isVisible = !isVisible" class="text-dark-gray1 text-2xl font-semibold my-8 cursor-pointer"
-                [ngClass]="{'text-teal1': !isVisible, 'text-dark-gray1': isVisible}">
+                [ngClass]="{'text-teal2': !isVisible, 'text-dark-gray1': isVisible}">
                 Section Header
                 <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]"
-                    [ngClass]="{'rotate-135 text-dark-gray1': isVisible, '-rotate-180 text-teal1': !isVisible}"></i>
+                    [ngClass]="{'rotate-135 text-dark-gray1': isVisible, '-rotate-180 text-teal2': !isVisible}"></i>
             </h3>
             <div *ngIf="isVisible">
                 <div *ngFor="let item of subheadings">
