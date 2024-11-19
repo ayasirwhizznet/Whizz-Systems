@@ -3,7 +3,7 @@
   border: 1px solid #7BD4CF;
   background-color: #f8f8f8;
   color: #2c353a;
-  transition: color 0.5s;
+  transition: color 1.5s;
   z-index: 1;
   display: inline-flex;
   justify-content: center;
@@ -24,7 +24,7 @@
   height: 0;
   border-style: solid;
   border-color: #7BD4CF transparent transparent transparent;
-  transition: border-width 0.5s;
+  transition: border-width 1.5s;
   z-index: 1;
 }
 
@@ -36,6 +36,7 @@
 .icon {
   width: 22px;
   height: 22px;
+  z-index: 2;
 }
 
 /* Responsive size adjustments based on button size */

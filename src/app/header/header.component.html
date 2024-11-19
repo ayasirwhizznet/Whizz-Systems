@@ -8,12 +8,12 @@
                 <div class="relative cursor-pointer">
                     <a [ngClass]="{ 'text-teal1': activeMenuItem === item.label && item.dropdown,
                         'text-dark-gray1': activeMenuItem !== item.label && item.dropdown}"
-                        (click)="toggleBottomSection(item.dropdown, item.label)"
-                        class="text-lg text-dark-gray1" [routerLink]="item.link">
+                        (click)="toggleBottomSection(item.dropdown, item.label)" class="text-lg text-dark-gray1"
+                        [routerLink]="item.link">
                         {{ item.label }}
-                        <i *ngIf="item.dropdown" 
-                        class="fa-solid fa-chevron-down text-base transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]" 
-                        [ngClass]="{
+                        <i *ngIf="item.dropdown"
+                            class="fa-solid fa-chevron-down text-base transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]"
+                            [ngClass]="{
                           '-rotate-180 text-teal1': activeMenuItem === item.label && item.dropdown,
                           'rotate-135 text-dark-gray1': activeMenuItem !== item.label && item.dropdown
                         }"></i>
@@ -40,7 +40,8 @@
                         <div class="bg-dark-gray2 p-6 pb-0 rounded-lg">
                             <h3 class="text-light-gray1 text-base font-semibold text-nowrap mb-8">Featured Article</h3>
                             <div class="p-6 pb-0 bg-white rounded-tl-lg rounded-tr-lg">
-                                <h3 class="text-2xl font-bold text-dark-blue text-nowrap mb-5">Interesting Blog Title that <br> Can Fit On Two Lines</h3>
+                                <h3 class="text-2xl font-bold text-dark-blue text-nowrap mb-5">Interesting Blog Title
+                                    that <br> Can Fit On Two Lines</h3>
                                 <img class="object-cover" src="../../assets/header/resources.png" alt="img">
                             </div>
                         </div>
@@ -51,10 +52,11 @@
 
         <div class="flex items-center gap-2">
             <div class="flex items-center gap-2 rounded-lg border-light-gray border-solid border-2 px-3 py-2 bg-white">
-                  <img src="../../assets/header/search.svg" alt="search-icon">
+                <img src="../../assets/header/search.svg" alt="search-icon">
                 <input class="outline-none w-32" type="text" placeholder="Search">
             </div>
-            <app-cbutton class="border border-1 border-teal1 rounded-lg" heading="Contact us" icon="../../assets/header/r-arrow.svg" [size]="'medium'"></app-cbutton>
+            <app-cbutton class="border border-1 border-teal1 rounded-lg" heading="Contact us"
+                icon="../../assets/header/r-arrow.svg" [size]="'medium'"></app-cbutton>
         </div>
     </div>
 
@@ -65,17 +67,24 @@
                     <div class="w-2/3 rounded-lg bg-white border border-1 border-light-gray1">
                         <app-header-section class="" [sections]="serviceSections"></app-header-section>
                     </div>
-                    <div class="w-1/3 p-6 rounded-lg bg-dark-gray2">
-                        <h3 class="text-base font-semibold mb-4 text-light-gray1">Industries</h3>
-                        <div class="flex items-center flex-wrap gap-1 space-y-1 mb-24">
-                            <div *ngFor="let item of industryItems">
-                                <a class="text-white bg-dark-gray1 p-2 rounded-lg text-sm" routerLink="item.link">{{item.label}}</a>
+                    <div class="w-1/3 p-6 rounded-lg bg-dark-gray2 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-base font-semibold mb-4 text-light-gray1">Industries</h3>
+                            <div class="flex items-center flex-wrap gap-1 space-y-1">
+                                <div *ngFor="let item of industryItems">
+                                    <a class="text-white bg-dark-gray1 p-2 rounded-lg text-sm"
+                                        routerLink="item.link">{{item.label}}</a>
+                                </div>
                             </div>
                         </div>
-                        <h3 class="text-base font-semibold mb-4 text-light-gray1 text-nowrap">Featured Blog</h3>
-                        <div class="bg-white p-5 pb-1 rounded-lg">
-                            <h2 class="text-2xl font-bold text-dark-gray2 mb-6">Interesting Blog Title that <br> can Fit On Two Lines</h2>
-                            <img class="object-contain w-full" src="../../assets/header/featured-blog.png" alt="blog-img">
+                        <div>
+                            <h3 class="text-base font-semibold mb-4 text-light-gray1 text-nowrap">Featured Blog</h3>
+                            <div class="bg-white p-5 pb-1 rounded-lg">
+                                <h2 class="text-2xl font-bold text-dark-gray2 mb-6">Interesting Blog Title that <br> can
+                                    Fit On Two Lines</h2>
+                                <img class="object-contain w-full" src="../../assets/header/featured-blog.png"
+                                    alt="blog-img">
+                            </div>
                         </div>
                     </div>
                 </div>

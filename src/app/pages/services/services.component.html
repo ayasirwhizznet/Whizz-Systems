@@ -31,27 +31,27 @@
     <div class="col-span-6">
       <div class="grid grid-cols-2  gap-3">
         <div *ngFor="let subitem of item.items"
-     class="h-32 bg-lines hover:bg-none relative group col-span-1 bg-contain bg-no-repeat hover:border-none border border-light-gray1 rounded-md flex justify-start items-center overflow-hidden transition-transform duration-500 ease-in-out bg-card-gray hover:bg-transparent">
-  <a class="cursor-pointer" routerLink="subitem.link">
-    <!-- Title and text (static) -->
-    <h1 class="pl-6 pr-20  py-16 flex font-bold text-lg z-10 group-hover:text-white transition-colors duration-500 ease-in-out">
-      {{ subitem.label }}
-    </h1>
+          class="h-32 bg-lines hover:bg-none relative group col-span-1 bg-contain bg-no-repeat hover:border-none border border-light-gray1 rounded-md flex justify-start items-center overflow-hidden transition-transform duration-500 ease-in-out bg-card-gray hover:bg-transparent">
+          <a class="cursor-pointer" routerLink="subitem.link">
+            <!-- Title and text (static) -->
+            <h1 class="pl-6 pr-20  py-16 flex font-bold text-lg z-10 group-hover:text-white transition-colors duration-500 ease-in-out">
+              {{ subitem.label }}
+            </h1>
 
-    <!-- Divs that will appear on hover -->
-    <div class="absolute -z-20 top-0 left-0 w-full h-full flex gap-0 group-hover:gap-3 transition-all duration-500 ease-in-out">
+            <!-- Divs that will appear on hover -->
+            <div class="absolute -z-20 top-0 left-0 w-full h-full flex gap-0 group-hover:gap-3 transition-all duration-500 ease-in-out">
 
-      <!-- Left Div (Shrinks to the left on hover) -->
-      <div class="left-div w-full bg-contain bg-no-repeat bg-bottom bg-lines bg-dark-gray1 h-full rounded-md transition-all duration-500 ease-in-out group-hover:w-[88%] z-10">
-      </div>
+              <!-- Left Div (Shrinks to the left on hover) -->
+              <div class="left-div w-full bg-contain bg-no-repeat bg-bottom bg-lines bg-dark-gray1 h-full rounded-md transition-all duration-500 ease-in-out group-hover:w-[88%] z-10"></div>
 
-      <!-- Right Div (Expands from the right) -->
-      <div class="right-div w-0 opacity-0 group-hover:w-[12%] group-hover:opacity-100 bg-teal1 h-full rounded-md flex justify-center items-center transition-all duration-500 ease-in-out z-10">
-        <img class="w-5 h-5 transition-opacity duration-500" src="../../../assets/services/r-arrow.svg" alt="img">
-      </div>
-    </div>
-  </a>
-</div>
+              <!-- Right Div (Expands from the right) -->
+              <div class="right-div w-0 opacity-0 group-hover:w-[12%] group-hover:opacity-100 bg-teal1 h-full rounded-md flex justify-center items-center transition-all duration-500 ease-in-out z-10">
+                <img class="w-5 h-5 transition-opacity duration-500" src="../../../assets/services/r-arrow.svg"
+                  alt="img">
+              </div>
+            </div>
+          </a>
+        </div>
 
 
       </div>

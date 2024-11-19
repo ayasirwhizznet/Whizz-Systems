@@ -1,11 +1,11 @@
 <div class="px-[5%]">
-    <div class="px-20 pt-5 bg-dark-gray2 rounded-br-2xl rounded-bl-2xl flex items-center">
+    <div class="pl-24 bg-dark-gray2 rounded-br-2xl rounded-bl-2xl flex items-center">
         <div class="w-1/2">
-            <p class="mb-2 text-light-gray1">May 29, 2024</p>
+            <p class="mb-2 text-white text-base">May 29, 2024</p>
             <div class="flex items-center gap-2 font-medium text-sm text-light-gray1">
-                <a class="inline-block p-1 rounded-md border border-1 border-light-gray1 cursor-pointer"
+                <a class="inline-block px-2 py-1 rounded-md border border-1 border-light-gray1 cursor-pointer"
                     routerLink="">Heatsink</a>
-                <a class="inline-block p-1 rounded-md border border-1 border-light-gray1 cursor-pointer"
+                <a class="inline-block px-2 py-1 rounded-md border border-1 border-light-gray1 cursor-pointer"
                     routerLink="">Thermal Management</a>
             </div>
             <h1 class="text-5xl font-bold mt-6 mb-8 text-white">Whizz Systems' Guide to <br> PCIe-6</h1>
@@ -16,131 +16,124 @@
             </div>
         </div>
 
-        <div class="w-1/2 relative">
-            <img class="w-[100rem] h-[32rem] transform translate-y-6" src="../../../assets/hero/here-img2.png"
-                alt="img">
+        <div class="w-1/2">
+            <img class="object-cover" src="../../../assets/news/hero-img.png" alt="img">
         </div>
     </div>
 </div>
 
 <img class="object-cover mx-auto py-20 px-44" src="../../../assets/services/section-divider.png" alt="img">
 
-<app-cnews></app-cnews>
-
-<div class="px-[9%] pb-10 text-dark-gray2">
-    <div class="grid grid-cols-9 gap-28 relative">
-        <div class="col-span-5">
-            <div class="p-12 bg-card-gray border border-1 border-light-gray1 rounded-lg text-dark-gray2">
-                <h2 class="text-5xl font-bold mb-12">Key Takeaways</h2>
-                <ul class="list-outside list-decimal font-bold text-xl marker:text-teal1 ml-10">
-                    <li class="mb-5" *ngFor="let takeAway of keyTakeAways">
-                        <div class="ml-3">
-                            <h4 class="text-xl font-bold mb-3">{{takeAway.title}}</h4>
-                            <p class="font-light text-base">{{takeAway.desc}}</p>
-                        </div>
+<div class="px-[5%] pb-10">
+    <div class="grid grid-cols-10 gap-20">
+        <div class="col-span-6">
+            <div class="max-w-xl p-12 bg-card-gray border border-1 border-light-gray1 rounded-lg text-dark-gray2">
+                <h2 class="text-5xl font-bold mb-8">In This Article</h2>
+                <ul class="list-outside list-decimal font-bold text-xl marker:text-teal1 ml-9">
+                    <li class="mb-8" *ngFor="let item of articlesummary">
+                        <h4 class="ml-3 text-xl font-light">{{item.title}}</h4>
                     </li>
                 </ul>
             </div>
 
-            <h3 (click)="isVisible = !isVisible" class="text-dark-gray1 text-2xl font-semibold my-8 cursor-pointer"
-                [ngClass]="{'text-teal2': !isVisible, 'text-dark-gray1': isVisible}">
-                Section Header
+            <h3 (click)="toggleVisibility('signalIntegrity')"
+                class="text-dark-gray1 text-2xl font-semibold my-4 cursor-pointer"
+                [ngClass]="{'text-teal2': !sectionVisibility.signalIntegrity, 'text-dark-gray1': sectionVisibility.signalIntegrity}">
+                Signal Integrity
                 <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]"
-                    [ngClass]="{'rotate-135 text-dark-gray1': isVisible, '-rotate-180 text-teal2': !isVisible}"></i>
+                    [ngClass]="{'rotate-135 text-dark-gray1': sectionVisibility.signalIntegrity, '-rotate-180 text-teal2': !sectionVisibility.signalIntegrity}"></i>
             </h3>
-            <div *ngIf="isVisible">
-                <h4 class="text-dark-gray2 text-lg font-medium mb-4">Section Subheader</h4>
-                <p class="text-base text-dark-gray2 font-light mb-4">Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                    voluptas sit aspernatur aut odit aut fugit,e laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem
-                    quia voluptas sit aspernatur aut odit aut fugit,</p>
-                    <div class="relative left-3">
-                    <div class="w-[2px] h-[90%] mt-2 bg-teal1 absolute  "></div>
-                    <!-- Loop through timeline items -->
-                    <div *ngFor="let item of timelines" class="mb-7 relative">
-                        <!-- Circle -->
-                        <div class="absolute -left-[7px]  transform translate-y-0 w-4 h-4 bg-white border-2 border-teal1 rounded-full"></div>
-                        <!-- Heading -->
-                        <h3 class="text-base font-light text-dark-gray2 ml-5">{{ item.title }}</h3>
-                    </div>
-                </div>
-
-                <h4 class="text-dark-gray2 text-lg font-medium mb-4">Section Subheader</h4>
-                <p class="text-base text-dark-gray2 font-light mb-4">Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                    voluptas sit aspernatur aut odit aut fugit,e laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem
-                    quia voluptas sit aspernatur aut odit aut fugit,</p>
-                <ul *ngFor="let item of bulletpoints">
-                    <li class="mb-7 text-dark-gray2 flex items-center"><img class="w-2 h-2 mr-4"
-                            src="../../../assets/news/list2-img.png" alt="img"><b>{{item.title}}: &nbsp;</b><span
-                            class="font-light">{{item.desc}}</span></li>
-                </ul>
-
-                <h4 class="text-dark-gray2 text-lg font-medium mb-4">Section Subheader</h4>
-                <p class="text-base text-dark-gray2 font-light mb-4">Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                    voluptas sit aspernatur aut odit aut fugit,e laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem
-                    quia voluptas sit aspernatur aut odit aut fugit,</p>
-            </div>
-            <div class="border border-1 border-light-gray1 bg-card-gray rounded-lg p-16">
-                <img src="../../../assets/news/quotation.png" alt="img">
-                <blockquote class="text-4xl font-light text-light-gray2 my-8">This is where you could put a relevant
-                    quote that is referenced in the blog.</blockquote>
-                <h3 class="font-semibold text-light-gray2">Steven Logan</h3>
-                <p class="text-light-gray2">Marketing at Xilinix</p>
-            </div>
-
-            <h3 (click)="isVisible = !isVisible" class="text-dark-gray1 text-2xl font-semibold my-8 cursor-pointer"
-                [ngClass]="{'text-teal2': !isVisible, 'text-dark-gray1': isVisible}">
-                Section Header
-                <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]"
-                    [ngClass]="{'rotate-135 text-dark-gray1': isVisible, '-rotate-180 text-teal2': !isVisible}"></i>
-            </h3>
-            <div *ngIf="isVisible">
-                <div *ngFor="let item of subheadings">
+            <div *ngIf="sectionVisibility.signalIntegrity">
+                <div *ngFor="let item of question1">
                     <h4 class="text-dark-gray2 text-lg font-medium mb-4">{{item.title}}</h4>
-                    <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc}}</p>
+                    <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc1}}</p>
+                    <figure class="p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4">
+                        <img class="object-cover rounded-lg" [src]="item.img1" alt="img">
+                        <figcaption class="text-bas3e font-bold text-teal2 mt-4 text-center">{{item.img1caption}}
+                        </figcaption>
+                    </figure>
+                    <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc2}}</p>
+                    <figure class="p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4">
+                        <img class="object-cover rounded-lg" [src]="item.img2" alt="img">
+                        <figcaption class="text-bas3e font-bold text-teal2 mt-4 text-center">{{item.img2caption}}
+                        </figcaption>
+                    </figure>
+                    <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc3}}</p>
+                    <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc4}}</p>
+                    <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc5}}</p>
+                    <figure class="p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4">
+                        <img class="object-cover rounded-lg" [src]="item.img3" alt="img">
+                        <figcaption class="text-bas3e font-bold text-teal2 mt-4 text-center">{{item.img3caption}}
+                        </figcaption>
+                    </figure>
+                </div>
+                <div *ngFor="let item of question2">
+                    <h4 class="text-dark-gray2 text-lg font-medium mb-4">{{item.title}}</h4>
+                    <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc1}}</p>
+                    <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc2}}</p>
+                    <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc3}}</p>
+                    <figure class="p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4">
+                        <img class="object-cover rounded-lg" [src]="item.img1" alt="img">
+                        <figcaption class="text-base font-bold text-teal2 mt-4 text-center">{{item.img1caption}}
+                        </figcaption>
+                    </figure>
+                </div>
+                <div *ngFor="let item of question3">
+                    <h4 class="text-dark-gray2 text-lg font-medium mb-4">{{item.title}}</h4>
+                    <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc1}}</p>
+                    <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc2}}</p>
+                    <figure class="p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4">
+                        <img class="object-cover rounded-lg" [src]="item.img1" alt="img">
+                        <figcaption class="text-base font-bold text-teal2 mt-4 text-center">{{item.img1caption}}
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
-            <div class="border border-1 border-light-gray1 bg-card-gray rounded-lg p-16">
-                <figure>
-                    <img class="object-cover mb-4 rounded-lg" src="../../../assets/news/image.png" alt="img">
-                    <figcaption class="font-light text-light-gray2">
-                        <span class="text-teal2 font-bold">Fig. 1.1:&nbsp;</span> Description of image above
-                    </figcaption>
-                </figure>
+
+            <h3 (click)="toggleVisibility('power')" class="text-dark-gray1 text-2xl font-semibold mb-4 cursor-pointer"
+                [ngClass]="{'text-teal2': !sectionVisibility.power, 'text-dark-gray1': sectionVisibility.power}">
+                Power
+                <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]"
+                    [ngClass]="{'rotate-135 text-dark-gray1': sectionVisibility.power, '-rotate-180 text-teal2': !sectionVisibility.power}"></i>
+            </h3>
+            <div *ngIf="sectionVisibility.power">
+                <div *ngFor="let item of question4">
+                    <h4 class="text-dark-gray2 text-lg font-medium mb-4">{{item.title}}</h4>
+                    <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc1}}</p>
+                    <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc2}}</p>
+                    <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc3}}</p>
+                </div>
+                <div *ngFor="let item of question5">
+                    <h4 class="text-dark-gray2 text-lg font-medium mb-4">{{item.title}}</h4>
+                    <p class="text-base text-dark-gray2 font-light my-4">{{item.desc1}}</p>
+                    <p class="text-base text-dark-gray2 font-light my-4">{{item.desc2}}</p>
+                    <figure class="p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray">
+                        <img class="object-cover rounded-lg" [src]="item.img1" alt="img">
+                        <figcaption class="text-base font-bold text-teal2 mt-4 text-center">{{item.img1caption}}
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
-
-
-
         </div>
+
         <div class="col-span-4">
-            <div class="sticky top-28 mt-5 h-[calc(95vh-20px)] overflow-auto right-0">
+            <div class="sticky top-28 mt-5 h-[calc(90vh-20px)] right-0 overflow-auto ">
                 <div class="p-12 bg-card-gray rounded-xl border border-1 border-light-gray1 mb-5">
                     <h2 class="text-5xl font-bold text-dark-gray2">Subscribe to our newsletter!</h2>
                     <p class="font-light text-xl my-8 text-dark-gray2">Get updates on the latest news & insights</p>
-                    <div class="flex items-center gap-6">
+                    <div class="flex items-center gap-8">
                         <input type="email" placeholder="Enter Your Email"
-                            class="w-full text-xs px-4 py-3 block rounded-lg border border-1 border-dark-gray2 focus:outline-none focus:border-teal1  bg-transparent">
+                            class="w-full text-base px-5 py-4 block rounded-lg border-[1px] border-dark-gray1 focus:outline-none focus:border-teal1  bg-transparent placeholder:light-gray2 focus:placeholder-transparent">
                         <app-cbutton1 heading="Subscribe"></app-cbutton1>
                     </div>
                 </div>
                 <div class="p-12 bg-subscribe rounded-lg bg-cover">
                     <h2 class="text-white text-5xl font-bold mb-8">Learn more about Whizz Systems</h2>
-                    <div class="flex items-center gap-2 font-medium">
-                        <app-cbutton2 routerLink="/services" heading="All services" size="medium"></app-cbutton2>
-                    </div>
+                    <app-cbutton2 routerLink="/services" heading="All services" size="medium"></app-cbutton2>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<app-cnews></app-cnews>

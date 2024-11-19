@@ -1,13 +1,13 @@
 .diagonal-swipe {
     position: relative;
     display: inline-block;
-    padding: 10px 16px;
+    padding: 14px 18px;
     overflow: hidden;
     border: 1px solid #2C353A ;
     background-color: #F8F8F8;
-    color: #2C353A;
+    color: #2A494C;
     cursor: pointer;
-    transition: color 0.5s;
+    transition: color 1s;
     z-index: 1; /* Ensure text stays on top */
   }
   
@@ -25,7 +25,7 @@
     height: 0;
     border-style: solid;
     border-color: #2C353A transparent transparent transparent;
-    transition: border-width 0.5s;
+    transition: border-width 1s;
     z-index: 1; /* Swipe effect stays behind the text */
   }
   
