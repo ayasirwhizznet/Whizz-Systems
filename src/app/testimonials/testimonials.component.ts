@@ -62,7 +62,7 @@ a great track record with us`,
         "(min-width: 1200px)": {
           loop: true,
           slides: {
-            perView: 3,
+            perView: 2.7,
             spacing: 60,
           },
         
