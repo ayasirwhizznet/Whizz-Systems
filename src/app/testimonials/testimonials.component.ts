@@ -46,7 +46,6 @@ a great track record with us`,
     
       breakpoints: {
         "(min-width: 640px)": {
-          drag: false,
           loop: true,
           slides: {
             perView: 1,
@@ -54,7 +53,6 @@ a great track record with us`,
           },
         } ,
         "(min-width: 768px)": {
-          drag: false,
           loop: true,
           slides: {
             perView: 2,
@@ -62,7 +60,6 @@ a great track record with us`,
           },
         },
         "(min-width: 1200px)": {
-          drag: false,
           loop: true,
           slides: {
             perView: 3,
