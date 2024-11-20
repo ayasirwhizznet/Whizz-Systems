@@ -3,9 +3,9 @@
     display: inline-block;
     padding: 14px 18px;
     overflow: hidden;
-    border: 1px solid #2C353A ;
-    background-color: #F8F8F8;
-    color: #2A494C;
+    // border: 1px solid #2C353A ;
+    background-color: #7BD4CF;
+    color: white;
     cursor: pointer;
     transition: color 1s;
     z-index: 1; /* Ensure text stays on top */
@@ -24,7 +24,7 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-color: #2C353A transparent transparent transparent;
+    border-color:#55C2BC transparent transparent transparent;
     transition: border-width 1s;
     z-index: 1; /* Swipe effect stays behind the text */
   }

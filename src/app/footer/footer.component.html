@@ -1,6 +1,6 @@
 <footer class="relative text-dark-gray2  px-[4%] py-10 mx-aut0">
     <!-- Background Video -->
-    <video class="absolute inset-0 w-full h-full object-cover z-0" autoplay loop muted>
+    <video class="absolute inset-0 w-full h-full object-cover z-0" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
         <source src="../../assets/hero/waves1.mp4" type="video/mp4">
     </video>
     
@@ -72,7 +72,7 @@
                 <div class="p-8 bg-white border border-light-gray1 rounded-lg">
                     <h1 class="text-3xl font-bold">Subscribe to our <br> newsletter!</h1>
                     <p class="mt-5 mb-8 text-lg">Get updates on the<br /> latest news & insights</p>
-                    <app-cbutton1 heading="Subscribe"></app-cbutton1>
+                    <app-cbutton1 heading="Subscribe" size="medium"></app-cbutton1>
                 </div>
             </div>
         </div>
