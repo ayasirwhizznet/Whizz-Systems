@@ -62,8 +62,8 @@ a great track record with us`,
         "(min-width: 1200px)": {
           loop: true,
           slides: {
-            perView: 2.7,
-            spacing: 60,
+            perView: 2.8,
+            spacing: 50,
           },
         
         },
