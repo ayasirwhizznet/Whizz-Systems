@@ -4,12 +4,12 @@ import { NgClass, NgFor, NgIf } from '@angular/common';
 import { HeaderSectionComponent } from '../header-section/header-section.component';
 import { AccordionComponent } from '../accordion/accordion.component';
 import { CbuttonComponent } from '../cbutton/cbutton.component';
-import { Cbutton1Component } from "../cbutton1/cbutton1.component";
+import { Cbutton3Component } from '../cbutton3/cbutton3.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, NgIf, NgFor, NgClass, HeaderSectionComponent, AccordionComponent, CbuttonComponent, Cbutton1Component],
+  imports: [RouterLink, NgIf, NgFor, NgClass, HeaderSectionComponent, AccordionComponent, CbuttonComponent, Cbutton3Component],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
