@@ -2,12 +2,13 @@ import { NgClass, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { Cbutton1Component } from '../../cbutton1/cbutton1.component';
 import { NewsComponent } from "../../news/news.component";
+import { Cbutton3Component } from '../../cbutton3/cbutton3.component';
 import { Cbutton2Component } from '../../cbutton2/cbutton2.component';
 
 @Component({
   selector: 'app-newspage',
   standalone: true,
-  imports: [NgFor, NgIf, NgClass, Cbutton1Component, Cbutton2Component, NewsComponent],
+  imports: [NgFor, NgIf, NgClass, Cbutton2Component, Cbutton3Component, NewsComponent],
   templateUrl: './newspage.component.html',
   styleUrl: './newspage.component.scss'
 })
