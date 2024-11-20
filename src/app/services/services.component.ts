@@ -48,7 +48,6 @@ export class ServicesComponent {
 
       breakpoints: {
         "(min-width: 640px)": {
-          drag: false,
           loop: true,
           slides: {
             perView: 1,
@@ -56,7 +55,6 @@ export class ServicesComponent {
           },
         } ,
         "(min-width: 768px)": {
-          drag: false,
           loop: true,
           slides: {
             perView: 2,
@@ -64,7 +62,6 @@ export class ServicesComponent {
           },
         },
         "(min-width: 1200px)": {
-          drag: false,
           loop: true,
           slides: {
             perView: 3,

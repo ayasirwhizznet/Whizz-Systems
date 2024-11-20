@@ -43,21 +43,20 @@ export class NewsComponent {
 
       breakpoints: {
         "(min-width: 640px)": {
-          drag: false,
+          loop: true,
           slides: {
             perView: 1,
             spacing: 50,
           },
         },
         "(min-width: 768px)": {
-          drag: false,
+          loop: true,
           slides: {
             perView: 2,
             spacing: 50,
           },
         },
         "(min-width: 1200px)": {
-          drag: false,
           loop: true,
           slides: {
             perView: 3,
