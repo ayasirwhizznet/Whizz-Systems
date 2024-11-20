@@ -35,14 +35,14 @@ export class TrustComponent {
       
       breakpoints: {
         
-        "(min-width: 640px)": {
+        "(min-width:0px)": {
           loop: true,
-          mode: "free",
+          mode: "snap",
           drag: false,
           rtl:false,
           slides: {
             perView: 3,
-            spacing: 50,
+            spacing: 30,
           },
           created(s) {
             s.moveToIdx(5, true, animation)

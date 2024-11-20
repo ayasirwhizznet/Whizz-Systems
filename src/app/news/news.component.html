@@ -1,10 +1,12 @@
-<div class="px-[9%] pt-16">
+<div class="px-[4%] sm:px-[9%] pt-10 py-10">
     <div>
-        <div class="flex items-center justify-between mb-8">
-            <h2 class="text-5xl font-bold text-dark-gray2">Latest News & Insights</h2>
-            <div class="flex items-center gap-6">
+        <div class="flex flex-col gap-6 lg:gap-0 lg:flex-row items-center justify-between mb-8">
+            <div class="self-start">
+                <h2 class="text-5xl font-bold text-dark-gray2">Latest News & Insights</h2>
+            </div>
+            <div class="self-end flex items-center gap-6">
                 <app-cbutton [routerLink]="'/news'" [size]="'medium'"
-                    class="hidden sm:block" heading="See more"
+                    class=" next-1 " heading="See more"
                     icon="../../assets/services/r-arrow.svg"></app-cbutton>
 
                 <app-larrowbutton (click)="prevSlide()" icon="../../assets/services/l-arrow.svg"
