@@ -1,13 +1,14 @@
-<div class="py-16">
+<div class="py-16 ">
     <h2 class="text-5xl font-bold text-center mb-6 text-dark-gray2">Trusted by</h2>
     <p class="text-lg text-center mb-10 text-dark-gray1">Partnering with leading companies to redefine what’s possible.</p>
     <div class="flex items-center">
         <div class="keen-slider " #sliderRef>
             <div class="keen-slider__slide" *ngFor="let company of companies">
-                <div class="w-72 h-44 flex justify-center items-center ">
+                <div class="w-60 h-44 flex justify-center items-center ">
                     <img class="object-contain " [src]="company" alt="Company logo">
                 </div>
             </div>
         </div>
     </div>
 </div>
+<img class="object-cover mx-auto px-52" src="../../assets/testimonials/section-divider2.png" alt="img">

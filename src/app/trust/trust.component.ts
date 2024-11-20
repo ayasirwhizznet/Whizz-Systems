@@ -39,7 +39,7 @@ export class TrustComponent {
           loop: true,
           mode: "free",
           drag: false,
-          rtl:true,
+          rtl:false,
           slides: {
             perView: 3,
             spacing: 50,
@@ -58,7 +58,7 @@ export class TrustComponent {
           loop: true,
           mode: "snap",
           drag: false,
-          rtl:true,
+          rtl:false,
           slides: {
             perView: 3,
             spacing: 30,
@@ -77,9 +77,8 @@ export class TrustComponent {
           loop: true,
           mode: "snap",
           drag: false,
-          rtl: true,
+          rtl: false,
         slideChanged(){
-
         },
           slides: {
             perView: 5,

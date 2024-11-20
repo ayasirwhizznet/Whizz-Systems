@@ -16,34 +16,23 @@ import { LarrowbuttonComponent } from '../larrowbutton/larrowbutton.component';
 export class TestimonialsComponent {
   cards = [
     {
-      desc: 'Sed suscipit, augue id rutrum efficitur, mi enim malesuada risus, non laoreet nulla ante in nulla. Suspendisse vel tincidunt augue. Proin sed risus venenatis, luctus arcu non, tempor dolor. Phasellus sed posuere risus, luctus hendrerit sapien. Nunc vel ornare diam. Cras finibus massa quis erat ultrices faucibus. Fusce sed justo finibus, interdum urna laoreet, sagittis erat. Mauris in semper dui.',
+      desc: 'When I needed a board customization in a hurry, Whizz was there for me. They were able to get the boards back to me the next day. I get my demos up running quickly.',
       imageUrl: '../../assets/testimonials/profile.jpg',
       name: 'Stevan Logan',
       designation: 'Marketing at Xilinix'
     },
     {
-      desc: 'Aenean ultricies est at ipsum aliquet dapibus. Vestibulum eget feugiat ipsum. In hac habitasse platea dictumst. Nam eget pretium orci, fermentum egestas felis.',
+      desc: `NVIDIA works closely with Whizz to build our Tegra mobile reference platforms. These platforms are very complex and we demand extremely quick turn times and high yield which is always delivered on time with the high quality we expect. . Whizz Team is extremely competent, easy to work with and very customer focused. They have
+a great track record with us`,
       imageUrl: '../../assets/testimonials/profile.jpg',
-      name: 'Stevan Logan',
-      designation: 'Marketing at Xilinix'
+      name: 'David Weigand',
+      designation: 'VP of Engineering at NVIDIA'
     },
     {
-      desc: 'Integer pellentesque nisi feugiat enim consectetur iaculis. Phasellus nec elit fringilla, pulvinar leo at, ultricies leo. Mauris tortor mi, ornare eget bibendum quis, aliquet et lectus. Nam vitae libero sem. Donec facilisis diam vitae iaculis aliquet. Sed suscipit ex et lacus placerat volutpat. Morbi consectetur quam ac est tristique, a pulvinar enim placerat. Sed pulvinar malesuada ex a porta.',
+      desc: 'I have been working with them and again wonderful service, I know what I am going to get, there is no surprises, they deliver on time and their rates are good and they are low cost so I can use them all the time. It’s a just a wonderful relationship and I refer all my clients to them, I refer all my companies to them and will be using them for a long time…',
       imageUrl: '../../assets/testimonials/profile.jpg',
-      name: 'Stevan Logan',
-      designation: 'Marketing at Xilinix'
-    },
-    {
-      desc: 'Aenean ultricies est at ipsum aliquet dapibus. Vestibulum eget feugiat ipsum. In hac habitasse platea dictumst. Nam eget pretium orci, fermentum egestas felis. ',
-      imageUrl: '../../assets/testimonials/profile.jpg',
-      name: 'Stevan Logan',
-      designation: 'Marketing at Xilinix'
-    },
-    {
-      desc: 'Integer pellentesque nisi feugiat enim consectetur iaculis. Phasellus nec elit fringilla, pulvinar leo at, ultricies leo. Mauris tortor mi, ornare eget bibendum quis, aliquet et lectus. Nam vitae libero sem. Donec facilisis diam vitae iaculis aliquet. Sed suscipit ex et lacus placerat volutpat. Morbi consectetur quam ac est tristique, a pulvinar enim placerat. Sed pulvinar malesuada ex a porta.',
-      imageUrl: '../../assets/testimonials/profile.jpg',
-      name: 'Stevan Logan',
-      designation: 'Marketing at Xilinix'
+      name: 'Neil Mammen',
+      designation: 'Industry Expert'
     },
   ];
 
@@ -71,7 +60,7 @@ export class TestimonialsComponent {
           loop: true,
           mode: "snap",
           slides: {
-            perView: 2.6,
+            perView: 2.8,
             spacing: 60,
           },
         

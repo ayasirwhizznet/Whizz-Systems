@@ -4,11 +4,12 @@ import { NgClass, NgFor, NgIf } from '@angular/common';
 import { HeaderSectionComponent } from '../header-section/header-section.component';
 import { AccordionComponent } from '../accordion/accordion.component';
 import { CbuttonComponent } from '../cbutton/cbutton.component';
+import { Cbutton1Component } from "../cbutton1/cbutton1.component";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, NgIf, NgFor, NgClass, HeaderSectionComponent, AccordionComponent, CbuttonComponent],
+  imports: [RouterLink, NgIf, NgFor, NgClass, HeaderSectionComponent, AccordionComponent, CbuttonComponent, Cbutton1Component],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
@@ -16,14 +17,24 @@ export class HeaderComponent {
   activeBottomSection: string | null = null;
   activeMenuItem: string | null = null;
 
+  isSearchbaropen:boolean = false;
+
+  toggleSearchbar() {
+        this.activeBottomSection = ''
+    this.activeMenuItem = ''
+    this.isSearchbaropen = !this.isSearchbaropen;
+  }
+
   isMenuOpen: boolean = false;
   isAccordionOpen = false;
   toggleMenu() {
+    this.isSearchbaropen = !this.isSearchbaropen;
     this.isMenuOpen = !this.isMenuOpen;
     this.isAccordionOpen = this.isMenuOpen;
   }
 
   closeMenu() {
+    this.isSearchbaropen = !this.isSearchbaropen;
     this.activeBottomSection = ''
     this.activeMenuItem = ''
   }
@@ -124,6 +135,7 @@ export class HeaderComponent {
   ];
 
   toggleBottomSection(type: string | null, menuItemLabel: string) {
+    this.isSearchbaropen = false
     this.activeBottomSection = this.activeBottomSection === type ? null : type;
     this.activeMenuItem = this.activeBottomSection ? menuItemLabel : null;
   }

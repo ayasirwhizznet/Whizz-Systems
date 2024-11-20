@@ -1,4 +1,4 @@
-<div class="px-[9%] py-10">
+<div class="px-[9%] pt-16 ">
   <div>
     <div class="flex items-center justify-between mb-8">
       <h2 class="text-5xl font-bold text-dark-gray2">Testimonials</h2>
@@ -11,13 +11,12 @@
     </div>
   </div>
 </div>
-<div class="pl-[9%]">
+<div class="pl-[9%] pb-16">
   <div class="keen-slider" #sliderRef>
-    <div class="keen-slider__slide hover:shadow-lg" *ngFor="let card of cards">
+    <div class="keen-slider__slide hover:shadow-lg transition-all duration-300 ease-in-out" *ngFor="let card of cards">
       <app-testimonial-card [desc]="card.desc" [imageUrl]="card.imageUrl" [name]="card.name"
         [designation]="card.designation">
       </app-testimonial-card>
     </div>
   </div>
 </div>
-<img class="object-cover mx-auto mt-16 px-52" src="../../assets/testimonials/section-divider2.png" alt="img">

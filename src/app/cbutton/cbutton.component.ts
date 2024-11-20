@@ -20,9 +20,9 @@ export class CbuttonComponent {
       case 'small':
         return 'px-2 py-1 text-sm';
       case 'medium':
-        return 'px-[12px] py-[10px] text-md font-semibold'
+        return 'px-[18px] py-[14px] text-base font-semibold border-[1px] border-teal2'
       case 'large':
-        return 'px-[18px] py-[14px] text-lg font-semibold';
+        return 'px-[18px] py-[14px] text-lg font-semibold border-[1px] border-teal2';
       default:
         return 'px-4 py-2 text-base';
     }

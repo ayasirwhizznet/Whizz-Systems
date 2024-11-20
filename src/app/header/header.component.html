@@ -1,4 +1,4 @@
-<header class="shadow-md px-[2%] bg-white fixed left-0 right-0 z-50">
+<header class="hidden lg:block shadow-md px-[2%] bg-white fixed left-0 right-0 z-50">
     <div class="py-5 flex justify-between items-center gap-12">
         <a routerLink="/">
             <img class="w-44 object-cover cursor-pointer" src="../../assets/header/blogo.png" alt="logo">
@@ -30,7 +30,7 @@
                     </div>
 
                     <div *ngIf="activeBottomSection === 'resources' && item.dropdown ==='resources'"
-                        class="flex gap-2 bg-card-gray  absolute left-1/2 transform -translate-x-1/2 top-[68px] p-2 z-20 rounded-br-lg rounded-bl-lg">
+                        class="flex gap-2 bg-card-gray  absolute left-0 transform -translate-x-[70%] top-[68px] p-2 z-20 rounded-br-lg rounded-bl-lg w-[40rem]">
                         <div class="bg-white border border-1 border-light-gray1 p-6 text-xs text-nowrap rounded-lg">
                             <div *ngFor="let item of resourceItems">
                                 <a class="inline-block my-1 text-dark-gray2 hover:text-light-teal font-medium cursor-pointer"
@@ -40,8 +40,8 @@
                         <div class="bg-dark-gray2 p-6 pb-0 rounded-lg">
                             <h3 class="text-light-gray1 text-base font-semibold text-nowrap mb-8">Featured Article</h3>
                             <div class="p-6 pb-0 bg-white rounded-tl-lg rounded-tr-lg">
-                                <h3 class="text-2xl font-bold text-dark-blue text-nowrap mb-5">Interesting Blog Title
-                                    that <br> Can Fit On Two Lines</h3>
+                                <h3 class="text-2xl font-bold text-dark-blue mb-5">Interesting Blog Title
+                                    that Can Fit On Two Lines</h3>
                                 <img class="object-cover" src="../../assets/header/resources.png" alt="img">
                             </div>
                         </div>
@@ -50,14 +50,38 @@
             </ng-container>
         </div>
 
-        <div class="flex items-center gap-2">
-            <div class="flex items-center gap-2 rounded-lg border-light-gray border-solid border-2 px-3 py-2 bg-white">
-                <img src="../../assets/header/search.svg" alt="search-icon">
-                <input class="outline-none w-32" type="text" placeholder="Search">
+        <div class="flex items-center gap-4">
+            <svg (click)="toggleSearchbar()" xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                fill="currentColor" class="bi bi-search cursor-pointer hover:text-teal1 " viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+            <!-- Search bar container -->
+            <div *ngIf="isSearchbaropen"
+                class=" flex items-center gap-8 px-20 py-8  bg-white absolute left-1/2 transform -translate-x-1/2 top-28 -z-20 rounded-br-lg rounded-bl-lg w-[72%]">
+                <div
+                    class="w-[80%] flex items-center gap-4 rounded-lg border-[1px] border-dark-gray2  bg-card-gray px-5 py-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.60098 9.75392C1.60098 5.52732 5.02732 2.10098 9.25392 2.10098C13.4805 2.10098 16.9069 5.52732 16.9069 9.75392C16.9069 13.9805 13.4805 17.4069 9.25392 17.4069C5.02732 17.4069 1.60098 13.9805 1.60098 9.75392ZM9.25392 0.500977C4.14366 0.500977 0.000976562 4.64366 0.000976562 9.75392C0.000976562 14.8642 4.14366 19.0069 9.25392 19.0069C11.4247 19.0069 13.4209 18.2593 14.9991 17.0076L21.1791 23.1876C21.5956 23.6041 22.271 23.6041 22.6876 23.1876C23.1041 22.771 23.1041 22.0956 22.6876 21.6791L16.5076 15.4991C17.7593 13.9209 18.5069 11.9247 18.5069 9.75392C18.5069 4.64366 14.3642 0.500977 9.25392 0.500977Z"
+                            fill="#D9D9D9" />
+                    </svg>
+                    <input type="search" placeholder="Search"
+                        class="w-full py-2 text-base bg-transparent focus:outline-none placeholder:light-gray2 focus:placeholder-transparent">
+                </div>
+                <app-cbutton1 heading="Search"></app-cbutton1>
+                <svg (click)="toggleSearchbar()" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    fill="currentColor" class="bi bi-x-lg hover:text-teal1 cursor-pointer" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
             </div>
-            <app-cbutton class="border border-1 border-teal1 rounded-lg" heading="Contact us"
-                icon="../../assets/header/r-arrow.svg" [size]="'medium'"></app-cbutton>
+
+            <!-- Contact button -->
+            <app-cbutton heading="Contact us"
+                icon="../../assets/header/r-arrow.svg" [size]="'large'"></app-cbutton>
         </div>
+
     </div>
 
     <div *ngIf="activeBottomSection" class="absolute left-1/2 transform -translate-x-1/2 pb-1 z-20 w-[90%]">
@@ -94,6 +118,7 @@
 </header>
 
 <div *ngIf="activeBottomSection" (onclick)="closeMenu()" class=" fixed h-full w-full z-10  bg-[#00000040]"></div>
+<div *ngIf="isSearchbaropen"  class=" fixed h-full w-full z-10  bg-[#00000040]"></div>
 
 
 

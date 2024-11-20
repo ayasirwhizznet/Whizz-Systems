@@ -1,6 +1,6 @@
 <div class="px-[5%]">
-    <div class="pl-24 bg-dark-gray2 rounded-br-2xl rounded-bl-2xl flex items-center">
-        <div class="w-1/2">
+    <div class="pl-24 bg-dark-gray2 rounded-2xl flex items-center gap-20">
+        <div class="w-[45%]">
             <p class="mb-2 text-white text-base">May 29, 2024</p>
             <div class="flex items-center gap-2 font-medium text-sm text-light-gray1">
                 <a class="inline-block px-2 py-1 rounded-md border border-1 border-light-gray1 cursor-pointer"
@@ -8,7 +8,7 @@
                 <a class="inline-block px-2 py-1 rounded-md border border-1 border-light-gray1 cursor-pointer"
                     routerLink="">Thermal Management</a>
             </div>
-            <h1 class="text-5xl font-bold mt-6 mb-8 text-white">Whizz Systems' Guide to <br> PCIe-6</h1>
+            <h1 class="text-5xl font-bold mt-6 mb-8 text-white">Whizz Systems' Guide to PCIe-6</h1>
             <div class="flex items-center gap-3">
                 <a *ngFor="let link of links" routerLink="item.link" class="inline-block">
                     <img class="w-10 cursor-pointer" [src]="link.img" alt="img">
@@ -16,8 +16,8 @@
             </div>
         </div>
 
-        <div class="w-1/2">
-            <img class="object-cover" src="../../../assets/news/hero-img.png" alt="img">
+        <div class="w-[55%]">
+            <img class="object-contain" src="../../../assets/news/hero-img.png" alt="img">
         </div>
     </div>
 </div>
@@ -124,12 +124,12 @@
                     <div class="flex items-center gap-8">
                         <input type="email" placeholder="Enter Your Email"
                             class="w-full text-base px-5 py-4 block rounded-lg border-[1px] border-dark-gray1 focus:outline-none focus:border-teal1  bg-transparent placeholder:light-gray2 focus:placeholder-transparent">
-                        <app-cbutton1 heading="Subscribe"></app-cbutton1>
+                        <app-cbutton1 heading="Subscribe" size="medium"></app-cbutton1>
                     </div>
                 </div>
                 <div class="p-12 bg-subscribe rounded-lg bg-cover">
                     <h2 class="text-white text-5xl font-bold mb-8">Learn more about Whizz Systems</h2>
-                    <app-cbutton2 routerLink="/services" heading="All services" size="medium"></app-cbutton2>
+                    <app-cbutton2 routerLink="/services" heading="All services" [size]="'medium'"></app-cbutton2>
                 </div>
             </div>
         </div>

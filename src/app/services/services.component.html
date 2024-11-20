@@ -1,10 +1,10 @@
-<div class="px-[9%] text-dark-gray2">
+<div class="px-[9%] text-dark-gray2 pt-16">
     <div class="flex items-center justify-between mb-8">
         <h2 class="text-5xl font-bold">Services</h2>
         <div class="flex items-center gap-6">
             <app-cbutton [size]="'medium'" [routerLink]="'/services'"
                 class="hidden sm:block border border-light-teal rounded-md next-1 " heading="All services"
-                icon="../../assets/services/r-arrow.svg" class="border border-1 border-teal2 rounded-lg"></app-cbutton>
+                icon="../../assets/services/r-arrow.svg"></app-cbutton>
             <app-larrowbutton (click)="prevSlide()" icon="../../assets/services/l-arrow.svg"
                 size="medium"></app-larrowbutton>
             <app-rarrowbutton (click)="nextSlide()" icon="../../assets/services/r-arrow.svg"
@@ -23,4 +23,3 @@
         </div>
     </div>
 </div>
-<img class="object-cover mx-auto mt-0 px-52" src="../../assets/ideas/section-divider1.png" alt="img">
