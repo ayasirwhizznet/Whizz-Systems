@@ -43,24 +43,29 @@ a great track record with us`,
   ngAfterViewInit() {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
 
+    
       breakpoints: {
         "(min-width: 640px)": {
+          drag: false,
+          loop: true,
           slides: {
             perView: 1,
             spacing: 50,
           },
-        },
+        } ,
         "(min-width: 768px)": {
+          drag: false,
+          loop: true,
           slides: {
             perView: 2,
             spacing: 50,
           },
         },
         "(min-width: 1200px)": {
+          drag: false,
           loop: true,
-          mode: "snap",
           slides: {
-            perView: 2.8,
+            perView: 3,
             spacing: 60,
           },
         
