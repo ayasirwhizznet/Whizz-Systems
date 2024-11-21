@@ -1,0 +1,10 @@
+<button [routerLink]="routerLink" class="diagonal-swipe  w-full  relative overflow-hidden rounded-lg cursor-pointer text-nowrap {{ sizeClass }}">
+    <span></span>
+  
+    <span class="font-semibold flex justify-between items-center">
+      {{ heading }}
+      <ng-container *ngIf="icon">
+        <img [src]="icon" alt="icon" class=" w-6 h-6" />
+      </ng-container>
+    </span>
+  </button>

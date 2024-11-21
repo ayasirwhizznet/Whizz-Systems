@@ -3,12 +3,18 @@ import { HomeComponent } from './pages/home/home.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { NewspageComponent } from './pages/newspage/newspage.component';
 import { BlogsComponent } from './pages/blogs/blogs.component';
+import { AboutComponent } from './about/about.component';
 
 export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
     title: 'Whizz Systems',
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
+    title: 'About',
   },
   {
     path: 'services',

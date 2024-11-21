@@ -19,8 +19,8 @@ module.exports = {
       colors: {
         "light-gray1": "#D9D9D9",
         "light-gray2": "#B9B9B9",
-        teal1: "#55C2BC",
-        teal2: "#7BD4CF",
+        "teal1": "#55C2BC",
+        "teal2": "#7BD4CF",
         "dark-gray1": "#2A494C",
         "dark-gray2": "#2C353A",
         "card-gray": "#F8F8F8",

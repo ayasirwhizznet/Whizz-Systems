@@ -3,14 +3,15 @@ import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-larrowbutton',
+  selector: 'app-cbutton4',
   standalone: true,
-  imports: [NgIf, RouterLink],
-  templateUrl: './larrowbutton.component.html',
-  styleUrl: './larrowbutton.component.scss'
+  imports: [RouterLink, NgIf],
+  templateUrl: './cbutton4.component.html',
+  styleUrl: './cbutton4.component.scss'
 })
-export class LarrowbuttonComponent {
+export class Cbutton4Component {
   @Input() routerLink!: string;
+  @Input() heading: string = '';
   @Input() icon: string | null = null;
   @Input() size: 'small' | 'medium' | 'large' = 'small';
 
@@ -19,7 +20,7 @@ export class LarrowbuttonComponent {
       case 'small':
         return 'px-2 py-1 text-sm';
       case 'medium':
-        return 'px-[18px] py-[15px] text-base font-semibold border-[1px] border-teal2'
+        return 'px-[18px] py-[14px] text-base font-semibold border-[1px] border-teal2'
       case 'large':
         return 'px-[18px] py-[14px] text-lg font-semibold border-[1px] border-teal2';
       default:

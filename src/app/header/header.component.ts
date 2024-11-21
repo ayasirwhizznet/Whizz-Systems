@@ -1,46 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { HeaderSectionComponent } from '../header-section/header-section.component';
 import { AccordionComponent } from '../accordion/accordion.component';
 import { CbuttonComponent } from '../cbutton/cbutton.component';
 import { Cbutton3Component } from '../cbutton3/cbutton3.component';
+import { Cbutton4Component } from '../cbutton4/cbutton4.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, NgIf, NgFor, NgClass, HeaderSectionComponent, AccordionComponent, CbuttonComponent, Cbutton3Component],
+  imports: [RouterLink, NgIf, NgFor, NgClass, HeaderSectionComponent, AccordionComponent, CbuttonComponent, Cbutton3Component,Cbutton4Component],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   activeBottomSection: string | null = null;
   activeMenuItem: string | null = null;
+  currentRoute: string = ''; // To track the current route
 
-  isSearchbaropen:boolean = false;
-
-  toggleSearchbar() {
-        this.activeBottomSection = ''
-    this.activeMenuItem = ''
-    this.isSearchbaropen = !this.isSearchbaropen;
-  }
-
+  isSearchbaropen: boolean = false;
   isMenuOpen: boolean = false;
   isAccordionOpen = false;
-  toggleMenu() {
-    this.isSearchbaropen = !this.isSearchbaropen;
-    this.isMenuOpen = !this.isMenuOpen;
-    this.isAccordionOpen = this.isMenuOpen;
-  }
 
-  closeMenu() {
-    this.isSearchbaropen = !this.isSearchbaropen;
-    this.activeBottomSection = ''
-    this.activeMenuItem = ''
-  }
-
+  // Menu items definition
   menuItems = [
-    { label: 'About', link: '/', dropdown: '' },
+    { label: 'About', link: '/about', dropdown: '' },
     { label: 'Services', dropdown: 'service', link: '/' },
     { label: 'Featured Products', dropdown: 'featured', link: '/' },
     { label: 'Resources', dropdown: 'resources', link: '/' },
@@ -106,6 +92,7 @@ export class HeaderComponent {
     },
   ];
 
+
   featuredProductItems = [
     { label: '5G ORU Open Radio Unit', link: '/' },
     { label: 'Loopback Cards', link: '/' },
@@ -134,9 +121,63 @@ export class HeaderComponent {
     { label: 'Network', link: '/' },
   ];
 
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    // Track the current route on navigation
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.currentRoute = event.urlAfterRedirects;  // Store the current route
+        this.updateActiveMenuItem();  // Update active menu item based on route
+      }
+    });
+  }
+
+  // Updates the active menu item based on the current route
+  updateActiveMenuItem(): void {
+    // Set active menu item based on the route
+    if (this.currentRoute === '/about') {
+      this.activeMenuItem = 'About';
+    } else if (this.currentRoute === '/services') {
+      this.activeMenuItem = 'Services';
+    } else if (this.currentRoute === '/featured') {
+      this.activeMenuItem = 'Featured Products';
+    } else if (this.currentRoute === '/resources') {
+      this.activeMenuItem = 'Resources';
+    } else {
+      this.activeMenuItem = null;  // Reset if no match
+    }
+  }
+
+  // Handle menu item click (sets active item and closes dropdowns)
+  menu(menuItemLabel: string) {
+    this.isSearchbaropen = false;
+    this.activeMenuItem = menuItemLabel;
+    this.activeBottomSection = null;  // Close the dropdown section
+  }
+
+  // Handle dropdown section toggling
   toggleBottomSection(type: string | null, menuItemLabel: string) {
-    this.isSearchbaropen = false
+    this.isSearchbaropen = false;
     this.activeBottomSection = this.activeBottomSection === type ? null : type;
     this.activeMenuItem = this.activeBottomSection ? menuItemLabel : null;
+  }
+
+  toggleSearchbar() {
+    this.activeBottomSection = '';
+    this.activeMenuItem = '';
+    this.isSearchbaropen = !this.isSearchbaropen;
+  }
+
+  toggleMenu() {
+    this.isSearchbaropen = !this.isSearchbaropen;
+    this.isMenuOpen = !this.isMenuOpen;
+    this.isAccordionOpen = this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isSearchbaropen = !this.isSearchbaropen;
+    this.activeBottomSection = '';
+    this.activeMenuItem = '';
   }
 }
