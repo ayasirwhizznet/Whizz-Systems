@@ -32,7 +32,7 @@
         <div class="grid grid-cols-10 gap-3 bg-card-gray text-dark-blue p-7 rounded-lg text-center md:text-left">
             <!-- Get in touch -->
             <div class="col-span-10 md:col-span-5 lg:col-span-2">
-                <h3 class="text-base mb-7 font-semibold">Get in touch</h3>
+                <h3 class="text-base mb-2 lg:mb-7 font-semibold">Get in touch</h3>
 
                 <h4 class="font-semibold">North America <br /> Silicon Valley HQ</h4>
                 <p>3240 Scott Blvd. <br> Santa Clara, CA 9501</p>
@@ -48,23 +48,23 @@
             </div>
             <!-- Services -->
             <div class="col-span-10 md:col-span-5 lg:col-span-2">
-                <h3 class="text-base mb-6 font-semibold">Services</h3>
+                <h3 class="text-base mb-2 lg:mb-6 font-semibold">Services</h3>
                 <div *ngFor="let item of services">
-                    <a class="mb-4 inline-block cursor-pointer" routerLink="item.link">{{item.label}}</a>
+                    <a class="mb-2 lg:mb-4 inline-block cursor-pointer" routerLink="item.link">{{item.label}}</a>
                 </div>
             </div>
             <!-- Blog -->
             <div class="col-span-10  md:col-span-5 lg:col-span-1">
-                <h3 class="text-base mb-6 font-semibold">Blog</h3>
+                <h3 class="text-base mb-2 lg:mb-6 font-semibold">Blog</h3>
                 <div *ngFor="let item of blog">
-                    <a class="mb-4 inline-block cursor-pointer " routerLink="item.link">{{item.label}}</a>
+                    <a class="mb-2 lg:mb-4 inline-block cursor-pointer " routerLink="item.link">{{item.label}}</a>
                 </div>
             </div>
             <!-- Social media -->
             <div class="col-span-10 md:col-span-5 lg:col-span-1">
-                <h3 class="text-base mb-6 font-semibold text-nowrap">Social Media</h3>
+                <h3 class="text-base mb-2 lg:mb-6 font-semibold text-nowrap">Social Media</h3>
                 <div *ngFor="let item of socailMedia">
-                    <a class="mb-4 inline-block cursor-pointer" routerLink="item.link"><i [class]="item.icon" aria-hidden="true"></i>
+                    <a class="mb-2 lg:mb-4 inline-block cursor-pointer" routerLink="item.link"><i [class]="item.icon" aria-hidden="true"></i>
                         &nbsp; {{item.label}}</a>
                 </div>
             </div>

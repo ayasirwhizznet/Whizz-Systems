@@ -41,7 +41,7 @@ export class TrustComponent {
           drag: false,
           rtl:false,
           slides: {
-            perView: 3,
+            perView: 2,
             spacing: 30,
           },
           created(s) {
