@@ -18,7 +18,7 @@ export class FooterComponent {
   ];
 
   services:any[] = [
-    {label: 'Eengineering & Design', link: ''},
+    {label: 'Engineering & Design', link: ''},
     {label: 'NPI', link:''},
     {label: 'Advanced Manufacturing', link: ''},
     {label: 'Lab Testing Solutions', link: ''},
@@ -39,8 +39,8 @@ export class FooterComponent {
   ];
 
   contacts:any[] = [
-    {label: 'Direct: 408-980-400', link: 'tel:+408-980-400'},
-    {label: 'Sales: 408-409-6801', link: 'tel:+408-980-400'},
+    {label: 'Direct: 408-980-0400', link: 'tel:408-980-0400'},
+    {label: 'Sales:408-409-6801', link: 'tel:408-409-6801'},
     {label: 'sales@whizzsystems.com', link: 'mailto:sales@whizzsystems.com'},
   ];
 }

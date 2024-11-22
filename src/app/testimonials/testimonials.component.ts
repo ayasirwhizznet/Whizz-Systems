@@ -29,7 +29,7 @@ a great track record with us`,
       designation: 'VP of Engineering at NVIDIA'
     },
     {
-      desc: 'I have been working with them and again wonderful service, I know what I am going to get, there is no surprises, they deliver on time and their rates are good and they are low cost so I can use them all the time. It’s a just a wonderful relationship and I refer all my clients to them, I refer all my companies to them and will be using them for a long time…',
+      desc: 'I have been working with them and again wonderful service, I know what I am going to get, there is no surprises, they deliver on time and their rates are good and they are low cost so I can use them all the time. It’s a just a wonderful relationship and I refer all my clients to them, I refer all my companies to them and will be using them for a long time.',
       imageUrl: '../../assets/testimonials/profile.jpg',
       name: 'Neil Mammen',
       designation: 'Industry Expert'
@@ -63,7 +63,7 @@ a great track record with us`,
           loop: true,
           slides: {
             perView: 2.8,
-            spacing: 50,
+            spacing: 80,
           },
         
         },

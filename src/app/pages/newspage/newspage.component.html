@@ -1,22 +1,23 @@
 <div class="px-[4%] sm:px-[5%]">
-    <div class="px-10 py-20 lg:px-0 lg:py-0 lg:pl-24 bg-dark-gray2 rounded-2xl flex items-center gap-20">
-        <div class="w-full lg:w-[45%]">
+    <div class=" bg-dark-gray2 rounded-2xl flex items-center gap-16">
+        <div class="px-10 py-16 lg:px-0 lg:py-0 lg:pl-16 w-full lg:w-[47%]">
             <p class="mb-2 text-white text-base">May 29, 2024</p>
             <div class="flex items-center gap-2 font-medium text-sm text-light-gray1">
-                <a class="inline-block px-2 py-1 rounded-md border border-1 border-light-gray1 cursor-pointer"
+                <a class="inline-block px-2 py-1 rounded-md border-[1px] border-light-gray1 cursor-pointer"
                     routerLink="">Heatsink</a>
-                <a class="inline-block px-2 py-1 rounded-md border border-1 border-light-gray1 cursor-pointer"
+                <a class="inline-block px-2 py-1 rounded-md border-[1px] border-light-gray1 cursor-pointer"
                     routerLink="">Thermal Management</a>
             </div>
-            <h1 class="text-5xl font-bold mt-6 mb-8 text-white">Whizz Systems' Guide to PCIe-6</h1>
+            <h1 class="text-5xl font-bold my-6 text-white">Whizz Systems' Guide to PCIe-6</h1>
+            <p class="text-lg font-thin text-white mb-8">Expert insight from Whizz systems</p>
             <div class="flex items-center gap-3">
-                <a *ngFor="let link of links" routerLink="item.link" class="inline-block">
-                    <img class="w-10 cursor-pointer" [src]="link.img" alt="img">
+                <a class="cursor-pointer" *ngFor="let link of links" routerLink="item.link" class="inline-block">
+                    <img [src]="link.img" alt="img">
                 </a>
             </div>
         </div>
 
-        <div class="hidden lg:block w-[55%]">
+        <div class="hidden lg:block w-[53%]">
             <img class="object-contain" src="../../../assets/news/hero-img.png" alt="img">
         </div>
     </div>
@@ -24,11 +25,12 @@
 
 <img class="object-cover mx-auto py-10 lg:py-20 px-6 md:px-28 lg:px-44 " src="../../../assets/services/section-divider.png" alt="img">
 
-<div class="px-[4%] sm:px-[5%] pb-10">
+<div class="px-[4%] sm:px-[9%] pb-10">
     <div class="grid grid-cols-9 gap-0 lg:gap-20">
-        <div class="col-span-9 xl:col-span-5">
+        <!-- left div -->
+        <div class="col-span-9 lg:col-span-5">
             <div class="max-w-md lg:max-w-lg p-6 sm:p-8 lg:p-12 bg-card-gray border border-1 border-light-gray1 rounded-lg text-dark-gray2">
-                <h2 class="text-3xl lg:text-5xl font-bold mb-8">In This Article</h2>
+                <h2 class="text-3xl xl:text-5xl font-bold mb-8">In This Article</h2>
                 <ul class="list-outside list-decimal font-bold text-xl marker:text-teal1 ml-4 lg:ml-9">
                     <li class="mb-8" *ngFor="let item of articlesummary">
                         <h4 class="ml-3 text-xl font-light">{{item.title}}</h4>
@@ -116,22 +118,20 @@
             </div>
         </div>
 
-        <div class="col-span-9 xl:col-span-4">
-            <div class="lg:sticky top-28 mt-5 lg:h-[calc(90vh-20px)] right-0 overflow-auto ">
-                <div class="p-6 lg:p-12 bg-card-gray rounded-xl border border-1 border-light-gray1 mb-5">
-                    <h2 class="text-3xl lg:text-5xl font-bold text-dark-gray2">Subscribe to our newsletter!</h2>
+        <!-- right div -->
+        <div class="col-span-9 lg:col-span-4">
+            <div class="lg:sticky top-28 lg:h-[calc(100vh-20px)] right-0 overflow-auto ">
+                <div class="max-w-lg p-6 xl:p-12 bg-card-gray rounded-xl border border-1 border-light-gray1 mb-8">
+                    <h2 class="text-3xl xl:text-5xl font-bold text-dark-gray2">Subscribe to our newsletter!</h2>
                     <p class="font-light text-xl my-8 text-dark-gray2">Get updates on the latest news & insights</p>
-                    <div class="flex flex-col md:flex-row gap-8">
+                    <div class="flex items-center flex-col md:flex-row gap-8">
                         <input type="email" placeholder="Enter Your Email"
-                            class="w-full text-base px-5 py-4 block rounded-lg border-[1px] border-dark-gray1 focus:outline-none focus:border-teal1  bg-transparent placeholder:light-gray2 focus:placeholder-transparent">
-                          
+                            class="w-full text-base px-4 py-3 block rounded-lg border-[1px] border-dark-gray1 focus:outline-none focus:border-teal1  bg-transparent placeholder:light-gray2 focus:placeholder-transparent">
                                 <app-cbutton3  heading="Subscribe" size="medium"></app-cbutton3>
-                           
-                    
                     </div>
                 </div>
-                <div class="p-6 lg:p-12 bg-subscribe rounded-lg bg-cover">
-                    <h2 class="text-white text-3xl lg:text-5xl font-bold mb-8">Learn more about Whizz Systems</h2>
+                <div class="max-w-lg p-6 xl:p-12  bg-subscribe rounded-lg bg-cover">
+                    <h2 class="text-white text-3xl xl:text-5xl font-bold mb-8">Learn more about Whizz Systems</h2>
                     <app-cbutton2 routerLink="/services" heading="All services" [size]="'medium'"></app-cbutton2>
                 </div>
             </div>

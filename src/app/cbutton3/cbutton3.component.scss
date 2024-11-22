@@ -1,12 +1,12 @@
 .diagonal-swipe {
     position: relative;
     display: inline-block;
-    padding: 14px 18px;
+    padding: 12px 20px;
     overflow: hidden;
     border: 1px solid #2C353A ;
     background-color: #f8f8f8;
     color: #2A494C;
-    font-weight: 700;
+    font-weight: 500;
     cursor: pointer;
     transition: color 1s;
     z-index: 1; /* Ensure text stays on top */

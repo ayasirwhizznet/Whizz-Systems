@@ -23,10 +23,10 @@ export class NewspageComponent {
   }
 
   links = [
-    { img: '../../../assets/news/whizzicon.png', imgUrl: '' },
-    { img: '../../../assets/news/whizz.png', imgUrl: '' },
-    { img: '../../../assets/news/linkedIn.png', imgUrl: '' },
-    { img: '../../../assets/news/youtube.png', imgUrl: '' },
+    { img: '../../../assets/news/whizzicon.svg', imgUrl: '' },
+    { img: '../../../assets/news/whizz.svg', imgUrl: '' },
+    { img: '../../../assets/news/linkedin.svg', imgUrl: '' },
+    { img: '../../../assets/news/youtube.svg', imgUrl: '' },
   ];
 
   articlesummary = [

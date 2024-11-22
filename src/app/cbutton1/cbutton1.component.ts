@@ -17,7 +17,7 @@ export class Cbutton1Component {
   get sizeClass(): string {
     switch (this.size) {
       case 'small':
-        return 'px-[10x] py-[12px] text-base font-semibold';
+        return 'px-[16px] py-[10px] text-base font-semibold';
       case 'medium':
         return 'px-[18px] py-[14px] text-base font-semibold'
       case 'large':

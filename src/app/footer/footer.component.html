@@ -1,4 +1,4 @@
-<footer class="relative text-dark-gray2  px-[4%] py-10 mx-aut0">
+<footer class="relative text-dark-gray2  px-14 py-10 lg:px-24 lg:py-16 mx-aut0">
     <!-- Background Video -->
     <video class="absolute inset-0 w-full h-full object-cover z-0" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
         <source src="../../assets/hero/waves1.mp4" type="video/mp4">
@@ -8,11 +8,11 @@
     <div class="absolute inset-0 bg-[#00a99f] opacity-70 z-10"></div>
 
     <!-- Content -->
-    <div class="relative z-20 flex flex-col lg:flex-row gap-5 text-sm">
+    <div class="relative z-20 flex flex-col lg:flex-row gap-8 text-sm">
         <!-- left -->
         <div
             class="p-7 flex flex-col items-center bg-card-gray text-dark-blue rounded-lg justify-between text-center lg:text-left">
-            <div class="max-w-72">
+            <div class="">
                 <div class="mb-48">
                     <img class="w-28 object-cover" src="../../assets/footer/blogo.png" alt="Whizz_Logo">
                 </div>
@@ -29,19 +29,19 @@
             </div>
         </div>
         <!-- right -->
-        <div class="grid grid-cols-10 gap-3 bg-card-gray text-dark-blue p-7 rounded-lg text-center md:text-left">
+        <div class="grid grid-cols-10 gap-3 bg-card-gray text-dark-gray2 p-7 rounded-lg text-center md:text-left">
             <!-- Get in touch -->
             <div class="col-span-10 md:col-span-5 lg:col-span-2">
                 <h3 class="text-base mb-2 lg:mb-7 font-semibold">Get in touch</h3>
 
-                <h4 class="font-semibold">North America <br /> Silicon Valley HQ</h4>
-                <p>3240 Scott Blvd. <br> Santa Clara, CA 9501</p>
+                <h4 class="text-sm font-semibold">North America <br /> Silicon Valley HQ</h4>
+                <p>3240 Scott Blvd. <br> Santa Clara, CA 95051</p>
 
-                <h4 class="font-semibold mt-5 mb-1">Global Office</h4>
+                <h4 class="text-sm font-semibold mt-5 mb-1">Global Office</h4>
                 <p>Lot 8, SMI Park Phase 2 <br> Jalan Hi-Tech 4 Sambungan <br> Kulim Hi-Tech Park
                     09000 <br> Kulim, KEDHA Malaysia</p>
 
-                <h4 class="font-semibold mt-5 mb-1">Contact:</h4>
+                <h4 class="text-sm font-semibold mt-5 mb-1">Contact:</h4>
                 <div *ngFor="let item of contacts">
                     <a class="underline cursor-pointer" routerLink="item.link">{{item.label}}</a>
                 </div>
