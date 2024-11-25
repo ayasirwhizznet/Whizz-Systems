@@ -1,16 +1,23 @@
-<div class="px-[5%] pb-10">
-    <div class="pl-24 bg-dark-gray2 rounded-br-2xl rounded-bl-2xl flex items-center">
-        <div class="w-1/2">
-            <h1 class="text-5xl font-bold text-white mb-6">Whizz Bytes: Expert Views and Breaking News</h1>
-            <p class="text-lg font-light text-white">Get informed with expert opinions, industry news, and deep dives
-                into the latest in technology</p>
-        </div>
-
-        <div class="w-1/2">
-            <img class="object-cover" src="../../../assets/blogs/hero-img.png" alt="img">
-        </div>
+<div class="px-[4%] sm:px-[5%] mb-16">
+    <div class="px-8 py-12 lg:px-0 lg:py-0 lg:pl-12 bg-dark-gray2 rounded-2xl flex items-center gap-10">
+      <div class="w-full lg:w-[50%]">
+        <h2 class="text-4xl lg:text-[52px] lg:leading-[67px] font-bold text-white mb-6">Whizz Bytes: Expert Views and Breaking News</h2>
+        <p class="text-lg font-300 text-light-gray1">Get informed with expert opinions, industry news, and deep dives into the latest in technology</p>
+      </div>
+      <div class="hidden lg:block w-[53%] relative rounded-tl-[100px] ">
+        <!-- Background Video -->
+        <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-tl-[100px] rounded-tr-lg rounded-bl-[100px] rounded-br-lg" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
+          <source src="../../assets/hero/waves1.mp4" type="video/mp4">
+      </video>
+      
+      <!-- Teal Overlay -->
+      <div class="absolute inset-0 bg-[#00a99f] opacity-70 z-10 rounded-tl-[100px] rounded-tr-lg rounded-bl-[100px] rounded-br-lg"></div>
+  
+      <!-- Content -->
+        <p class="relative z-20 grid place-items-center h-[40rem]"></p>
+      </div>
     </div>
-</div>
+  </div>
 
 <div class="px-[5%]">
     <h3 class="text-4xl font-bold text-dark-gray2 mb-8">Featured Blogs</h3>

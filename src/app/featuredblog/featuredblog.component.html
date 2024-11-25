@@ -1,16 +1,30 @@
-<button class="group flex items-center gap-6 mb-20">
-        <div class="p-8 bg-card-gray flex items-center gap-10">
-            <div class="w-1/2">
-                    <img class="transition-width duration-300 ease-in-out w-full group-hover:w-[90%] h-80" src="../../assets/blogs/blogimg.png" alt="">
+<a routerLink="/news" *ngFor="let item of blogData; let i = index" class="cursor-pointer bg-blue-200">
+    <!-- blogitem -->
+    <div class="group">
+        <div class="flex items-center gap-0 group-hover:gap-6 mb-20"
+            [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">
+            <!-- Left side with image and text -->
+            <div class="p-8 bg-card-gray flex items-center gap-8 w-full rounded-lg border-[1px] border-light-gray1" [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">
+                <div class="w-1/2">
+                    <img class="transition-width duration-300 ease-in-out w-full group-hover:w-[93%] h-80 rounded-lg"
+                    
+                        src="../../assets/blogs/blogimg.png" alt="">
+                </div>
+                <div
+                    class="w-1/2  transition-transform duration-300 ease-in-out"
+                    [ngClass]="i % 2 === 0 ? 'group-hover:-translate-x-[7%]' : 'group-hover:translate-x-[0%]'">
+                    <app-newsbutton heading="Heatsink" [routerLink]="'routerLink'" class="mr-2"></app-newsbutton>
+                    <app-newsbutton heading="Thermal Management" [routerLink]="'routerLink'"></app-newsbutton>
+                    <p class="mt-5 mb-2 text-dark-gray2 text-sm font-semibold">{{item.date}}</p>
+                    <p class="text-2xl font-bold">{{item.blogTitle}}</p>
+                </div>
             </div>
-            <div class="w-1/2">
-                <a href="">Heatsink</a>
-                <a href="">Heatsink</a>
-                <p>date</p>
-                <p>title</p>
+
+            <!-- Arrow section with background (conditionally placed left or right) -->
+            <div
+                class="rounded-lg bg-teal1 h-96 grid place-items-center transition-width duration-300 ease-in-out w-0 opacity-0 group-hover:w-[7%] group-hover:opacity-100 flex-grow">
+                <img src="../../assets/services/r-arrow.svg" alt="">
             </div>
         </div>
-    <div class="bg-teal1 h-full grid place-items-center transition-width duration-300 ease-in-out w-0 opacity-0 group-hover:w-[10%] group-hover:opacity-100">
-        <img src="../../assets/services/r-arrow.svg" alt="">
     </div>
-</button>
+</a>
