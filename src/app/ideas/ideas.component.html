@@ -10,16 +10,16 @@
 
     <!-- Content -->
     <div class="relative z-20 rounded-md text-white">
-      <h2 class="text-3xl sm:text-5xl font-bold">
+      <h2 class="text-3xl sm:text-5xl font-bold mb-8">
         Transforming Ideas into <br class="hidden lg:inline"> Market-Ready Products
       </h2>
-      <app-cbutton class="my-14 inline-block" size="medium" heading="Get in touch"></app-cbutton>
-      <img class="max-w-[20rem] md:max-w-[30rem] lg:max-w-[44rem] mb-14" src="../../assets/ideas/line.png" alt="line-img">
+      <app-cbutton class=" inline-block" size="medium" heading="Get in touch"></app-cbutton>
+      <img class="max-w-[20rem] md:max-w-[30rem] lg:max-w-[44rem] mt-14 mb-8" src="../../assets/ideas/line.png" alt="line-img">
 
       <div class="flex flex-col lg:flex-row justify-between items-center gap-10">
-        <div class="flex  gap-6 sm:gap-14">
-          <div *ngFor="let item of achievemnets" class="flex flex-col mt-0 lg:mt-12">
-            <h3 class="text-4xl font-bold mb-1">{{item.quantity}}</h3>
+        <div class="flex  gap-6 sm:gap-16 mt-10">
+          <div *ngFor="let item of achievemnets" class="flex flex-col ">
+            <h3 class="text-4xl font-bold mb-1">{{item.quantity}}<span class="text-3xl font-bold mb-1">+</span></h3>
             <p class="text-base font-light">{{item.desc}}</p>
           </div>
         </div> 

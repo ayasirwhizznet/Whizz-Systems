@@ -37,6 +37,16 @@ export class ServicesComponent {
       title: 'Lab Testing Solutions',
       content: 'Ensuring product reliability and compliance through comprehensive validation.'
     },
+    {
+      imgUrl: '../../assets/services/supply-chain.jfif',
+      title: 'Supply Chain Management & Design',
+      content: 'Streamlining your supply chain with integrated sourcing, compliance, and procurement solutions, so you can rely on a single, trusted partner.'
+    },
+    {
+      imgUrl: '../../assets/services/sustainable.jfif',
+      title: 'Sustaining Engineering & Obsolescence Management',
+      content: 'Keeping your product lines future-proof with proactive support and obsolescence solutions.'
+    },
   ];
 
   @ViewChild("sliderRef") sliderRef = {} as ElementRef;

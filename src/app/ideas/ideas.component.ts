@@ -11,9 +11,9 @@ import { CbuttonComponent } from "../cbutton/cbutton.component";
 })
 export class IdeasComponent {
  achievemnets = [
-  {quantity: '25+', desc: 'Years of building growth'},
-  {quantity: '10+', desc: 'Industries served'},
-  {quantity: 'XX+', desc: 'Projects completed'},
+  {quantity: '25', desc: 'Years of building growth'},
+  {quantity: '10', desc: 'Industries served'},
+  {quantity: 'xx', desc: 'Projects completed'},
  ];
 
  certifications = [
