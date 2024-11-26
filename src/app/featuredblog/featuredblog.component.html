@@ -1,11 +1,11 @@
-<div class="grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 gap-x-6 mx-auto sm:hidden">
+<div class="grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 gap-x-6 mx-auto md:hidden">
     <div *ngFor=" let card of blogData">
       <app-news-card [imageUrl]="card.imageUrl" [date]="card.date" [title]=" card.title"></app-news-card>
     </div>
   </div>
   
 
-<a routerLink="/news" *ngFor="let item of blogData; let i = index" class="cursor-pointer hidden sm:block">
+<a routerLink="/news" *ngFor="let item of blogData; let i = index" class="cursor-pointer hidden md:block">
     <!-- blogitem -->
     <div class="group">
         <div class="flex items-center gap-0 group-hover:gap-6 mb-6"
