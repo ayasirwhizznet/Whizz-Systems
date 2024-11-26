@@ -1,25 +1,46 @@
 <div class="px-[4%] sm:px-[5%] mb-16">
-    <div class="px-8 py-12 lg:px-0 lg:py-0 lg:pl-12 bg-dark-gray2 rounded-2xl flex items-center gap-10">
-      <div class="w-full lg:w-[50%]">
-        <h2 class="text-4xl lg:text-[52px] lg:leading-[67px] font-bold text-white mb-6">Whizz Bytes: Expert Views and Breaking News</h2>
-        <p class="text-lg font-300 text-light-gray1">Get informed with expert opinions, industry news, and deep dives into the latest in technology</p>
-      </div>
-      <div class="hidden lg:block w-[53%] relative rounded-tl-[100px] ">
-        <!-- Background Video -->
-        <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-tl-[100px] rounded-tr-lg rounded-bl-[100px] rounded-br-lg" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
-          <source src="../../assets/hero/waves1.mp4" type="video/mp4">
+  <div class="px-8 py-12 lg:px-0 lg:py-0 lg:pl-12 bg-dark-gray2 rounded-2xl flex items-center gap-10">
+    <div class="w-full lg:w-[50%]">
+      <h2 class="text-4xl lg:text-[52px] lg:leading-[67px] font-bold text-white mb-6">Whizz Bytes: Expert Views and
+        Breaking News</h2>
+      <p class="text-lg font-300 text-light-gray1">Get informed with expert opinions, industry news, and deep dives into
+        the latest in technology</p>
+    </div>
+    <div class="hidden lg:block w-[53%] relative rounded-tl-[100px] ">
+      <!-- Background Video -->
+      <video
+        class="absolute inset-0 w-full h-full object-cover z-0 rounded-tl-[100px] rounded-tr-lg rounded-bl-[100px] rounded-br-lg"
+        loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
+        <source src="../../assets/hero/waves1.mp4" type="video/mp4">
       </video>
-      
+
       <!-- Teal Overlay -->
-      <div class="absolute inset-0 bg-[#00a99f] opacity-70 z-10 rounded-tl-[100px] rounded-tr-lg rounded-bl-[100px] rounded-br-lg"></div>
-  
-      <!-- Content -->
-        <p class="relative z-20 grid place-items-center h-[40rem]"></p>
+      <div
+        class="absolute inset-0 bg-[#00a99f] opacity-70 z-10 rounded-tl-[100px] rounded-tr-lg rounded-bl-[100px] rounded-br-lg">
       </div>
+
+      <!-- Content -->
+      <p class="relative z-20 grid place-items-center h-[40rem]"></p>
     </div>
   </div>
-
-<div class="px-[5%]">
-    <h3 class="text-4xl font-bold text-dark-gray2 mb-8">Featured Blogs</h3>
-    <app-featuredblog class="mb-20"></app-featuredblog>
 </div>
+
+<div class="px-[4%] sm:px-[9%]">
+  <h3 class="text-3xl sm:text-5xl font-bold text-dark-gray2 mb-8">Featured Blogs</h3>
+  <app-featuredblog></app-featuredblog>
+
+  
+</div>
+
+<div class="px-[4%] sm:px-[9%]" *ngIf="isBlogVisible">
+  <img class="object-cover mx-auto px-16 my-16" src="../../assets/ideas/section-divider1.png"
+    alt="img">
+  <h3 class="text-3xl sm:text-5xl font-bold text-dark-gray2 mb-8">All Blogs</h3>
+
+  <div class="grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 gap-x-6 mx-auto">
+    <div *ngFor=" let card of cards">
+      <app-news-card [imageUrl]="card.imageUrl" [date]="card.date" [title]=" card.title"></app-news-card>
+    </div>
+  </div>
+</div>
+<app-cbutton (click)="loadBlogs()" class="flex justify-center mt-8 mb-16" [size]="'medium'" [routerLink]="'routerLink'" [heading]="'See more'"></app-cbutton>

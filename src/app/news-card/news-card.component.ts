@@ -1,11 +1,12 @@
 import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { CbuttonComponent } from "../cbutton/cbutton.component";
+import { NewsbuttonComponent } from "../newsbutton/newsbutton.component";
 
 @Component({
   selector: 'app-news-card',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, NewsbuttonComponent],
   templateUrl: './news-card.component.html',
   styleUrl: './news-card.component.scss'
 })
