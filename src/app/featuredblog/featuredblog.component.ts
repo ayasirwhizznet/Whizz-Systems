@@ -16,7 +16,6 @@ export class FeaturedblogComponent {
   @Input() blogTitle: string | null = null;
 
   blogData:any[] = [
-
     {
       imageUrl: '../../assets/news/img1.png',
       date: 'July 9, 2024',
