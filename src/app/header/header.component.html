@@ -1,4 +1,5 @@
-<header class="hidden lg:block shadow-md px-[2%] bg-white fixed left-0 right-0 z-50"
+<!-- Desktop header -->
+<header class="desktop-header hidden lg:block shadow-md px-[2%] bg-white fixed left-0 right-0 z-50"
 [class.hidden]="!isHeaderVisible">
   <div class="py-5 flex justify-between items-center gap-12">
     <a routerLink="/">
@@ -144,9 +145,9 @@
   class="hidden lg:block fixed h-full w-full z-10 bg-[#00000040]"></div>
 <div *ngIf="isSearchbaropen" class="hidden lg:block fixed h-full w-full z-10 bg-[#00000040]"></div>
 
-<!--For Mobile -->
 
-<header class=" block lg:hidden shadow-sm px-[3%] overflow-hidden">
+<!-- Mobile header -->
+<header class="mobile-header block lg:hidden shadow-sm px-[3%] overflow-hidden">
   <div class="py-5 flex justify-between items-center">
     <a routerLink="/">
       <img class="w-32 object-cover cursor-pointer" src="../../assets/header/blogo.png" alt="logo" />

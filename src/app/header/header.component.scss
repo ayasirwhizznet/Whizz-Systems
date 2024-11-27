@@ -9,3 +9,22 @@ header {
     opacity: 0; /* Make header invisible */
   }
   
+  /* Initially show the desktop header on lg screens and hide below */
+header.desktop-header {
+  display: block; /* Show the desktop header */
+}
+
+header.mobile-header {
+  display: none; /* Hide the mobile header on large screens */
+}
+
+/* For screens smaller than lg (below lg) */
+@media (max-width: 1024px) {
+  header.desktop-header {
+      display: none; /* Hide the desktop header below lg */
+  }
+
+  header.mobile-header {
+      display: block; /* Show the mobile header below lg */
+  }
+}
