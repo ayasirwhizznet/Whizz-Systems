@@ -6,7 +6,7 @@
   
 
 <a routerLink="/news" *ngFor="let item of blogData; let i = index" class="cursor-pointer hidden md:block">
-    <div class="group">
+    <div class="group overflow-x-scroll no-scrollbar w-[78rem]">
         <div class="flex items-center gap-0 group-hover:gap-6 mb-6"
             [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">
             <!-- Left side with image and text -->
