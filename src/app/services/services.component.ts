@@ -74,17 +74,10 @@ export class ServicesComponent {
         "(min-width: 1200px)": {
           loop: true,
           slides: {
-            perView: 3,
+            perView: 3.5,
             spacing: 40,
           },
         },
-        "(min-width: 1700px)": {
-          loop: true,
-          slides: {
-            perView: 4,
-            spacing: 40,
-          }
-        }
       },
     });
   }
