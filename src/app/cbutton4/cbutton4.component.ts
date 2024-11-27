@@ -22,7 +22,7 @@ export class Cbutton4Component {
       case 'medium':
         return 'px-[18px] py-[14px] text-base font-semibold border-[1px] border-teal2'
       case 'large':
-        return 'px-[18px] py-[14px] text-lg font-semibold border-[1px] border-teal2';
+        return 'px-[18px] py-[11px] text-lg font-medium border-[1px] border-teal2';
       default:
         return 'px-4 py-2 text-base';
     }
