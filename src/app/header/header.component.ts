@@ -131,6 +131,9 @@ export class HeaderComponent implements OnInit {
         this.updateActiveMenuItem();  // Update active menu item based on route
       }
     });
+
+     // Listen for scroll events
+     window.addEventListener('scroll', this.onScroll.bind(this));
   }
 
   // Updates the active menu item based on the current route
@@ -176,8 +179,30 @@ export class HeaderComponent implements OnInit {
   }
 
   closeMenu() {
-    this.isSearchbaropen = !this.isSearchbaropen;
+    // this.isSearchbaropen = !this.isSearchbaropen;
     this.activeBottomSection = '';
     this.activeMenuItem = '';
+  }
+
+  lastScrollTop = 0;
+  isHeaderVisible = true; 
+
+  ngOnDestroy(): void {
+    // Remove event listener when component is destroyed
+    window.removeEventListener('scroll', this.onScroll.bind(this));
+  }
+
+  onScroll(): void {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    // If the user scrolls down, hide the header
+    if (currentScroll > this.lastScrollTop && currentScroll > 50) {
+      this.isHeaderVisible = false;
+    } else if (currentScroll < this.lastScrollTop && currentScroll < 100) {
+      // If the user scrolls up, show the header
+      this.isHeaderVisible = true;
+    }
+
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Ensure scroll position doesn’t go negative
   }
 }
