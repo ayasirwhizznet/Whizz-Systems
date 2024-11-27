@@ -1,5 +1,5 @@
-<div class="relative group overflow-hidden hover_div ">
-  <div class="p-8 mb-8 border border-1 border-light-gray1 bg-card-gray rounded-lg">
+<div class="relative group overflow-y-scroll no-scrollbar h-[30rem] mb-[1.4rem] hover_div ">
+  <div class="p-8 mb-8 border border-1 border-light-gray1 bg-card-gray rounded-lg ">
     <div class="flex flex-col items-center">
       <img class="hover_img rounded-lg mb-8" *ngIf="imageUrl" [src]="imageUrl" alt="Card image">
       <div class="mb-20 h-[6rem]">
@@ -10,7 +10,7 @@
   </div>
 
   <button
-    class="learn_more flex items-center justify-between font-semibold bg-dark-gray1 w-full p-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 text-white rounded-lg transition-all duration-500 ease-in-out">
+    class="learn_more flex items-center justify-between font-semibold bg-dark-gray1 p-3 w-full opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 text-white rounded-lg transition-all duration-500 ease-in-out">
     Learn more 
     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>

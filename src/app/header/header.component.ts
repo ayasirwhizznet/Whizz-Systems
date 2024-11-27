@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { NgClass, NgFor, NgIf } from '@angular/common';
@@ -131,9 +131,6 @@ export class HeaderComponent implements OnInit {
         this.updateActiveMenuItem();  // Update active menu item based on route
       }
     });
-
-     // Listen for scroll events
-     window.addEventListener('scroll', this.onScroll.bind(this));
   }
 
   // Updates the active menu item based on the current route
@@ -184,25 +181,22 @@ export class HeaderComponent implements OnInit {
     this.activeMenuItem = '';
   }
 
-  lastScrollTop = 0;
-  isHeaderVisible = true; 
+  lastScrollTop = 0;  // To track the last scroll position
+  isHeaderVisible = true;  // To control header visibility
 
-  ngOnDestroy(): void {
-    // Remove event listener when component is destroyed
-    window.removeEventListener('scroll', this.onScroll.bind(this));
-  }
-
-  onScroll(): void {
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-    // If the user scrolls down, hide the header
-    if (currentScroll > this.lastScrollTop && currentScroll > 50) {
-      this.isHeaderVisible = false;
-    } else if (currentScroll < this.lastScrollTop && currentScroll < 100) {
-      // If the user scrolls up, show the header
-      this.isHeaderVisible = true;
+  // Listen to window scroll event
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const currentScroll = document.documentElement.scrollTop;
+    
+    // If scrolling down and current scroll position is greater than last scroll position, hide the header
+    if (currentScroll > this.lastScrollTop && currentScroll > 100) {
+      this.isHeaderVisible = false; // Hide the header
+    } else if (currentScroll < this.lastScrollTop && currentScroll > 100) {
+      this.isHeaderVisible = true; // Show the header
     }
 
-    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Ensure scroll position doesn’t go negative
+    // Update the last scroll position
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
   }
 }

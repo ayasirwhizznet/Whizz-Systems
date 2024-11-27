@@ -1,10 +1,11 @@
-.hidden {
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
+/* Initial visibility */
+header {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
   }
   
-  .header-visible {
-    transform: translateY(0);
-    transition: transform 0.3s ease-in-out;
+  /* Hide the header by moving it out of the viewport */
+  header.hidden {
+    transform: translateY(-100%); /* Move header out of view */
+    opacity: 0; /* Make header invisible */
   }
   
