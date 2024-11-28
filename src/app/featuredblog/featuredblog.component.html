@@ -5,7 +5,7 @@
   </div>
   
 
-<a routerLink="/news" *ngFor="let item of blogData; let i = index" class="cursor-pointer hidden md:block">
+  <a routerLink="/news" *ngFor="let item of blogData; let i = index" class="cursor-pointer hidden md:block">
     <div class="group">
         <div class="flex items-center gap-0 group-hover:gap-6 mb-6"
             [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">
@@ -13,10 +13,13 @@
             <div class="p-8 bg-card-gray flex items-center gap-8 w-full rounded-lg border-[1px] border-light-gray1"
                 [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">
                 <div class="w-1/2">
-                    <!-- shrinking image -->
+                    <!-- shrinking image with ngStyle for transform-origin -->
                     <img class="transition-all duration-300 ease-in-out w-full group-hover:w-[93%] h-[17rem] rounded-lg"
                          src="../../assets/blogs/blogimg.png" alt="img"
-                         [ngClass]="i % 2 === 0 ? 'group-hover:w-[93%]' : 'group-hover:w-[100%]'">
+                         [ngClass]="i % 2 === 0 ? 'group-hover:w-[93%]' : 'group-hover:w-[100%]'"
+                         [ngStyle]="{
+                             'transform-origin': i % 2 === 0 ? 'right' : 'left'
+                         }">
                 </div>
                 <div class="w-1/2 transition-transform duration-300 ease-in-out"
                     [ngClass]="i % 2 === 0 ? 'group-hover:-translate-x-[7%]' : 'group-hover:translate-x-[0%]'">
@@ -33,4 +36,5 @@
             </div>
         </div>
     </div>
-</a>    
+</a>
+    
