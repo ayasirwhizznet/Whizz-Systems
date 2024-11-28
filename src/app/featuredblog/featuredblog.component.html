@@ -18,7 +18,7 @@
                          [ngClass]="i % 2 === 0 ? 'group-hover:w-[93%]' : 'group-hover:w-[100%]'">
                 </div>
                 <div class="w-1/2 transition-transform duration-300 ease-in-out"
-                    [ngClass]="i % 2 === 0 ? 'group-hover:-translate-x-[7%]' : 'group-hover:translate-x-[7%]'">
+                    [ngClass]="i % 2 === 0 ? 'group-hover:-translate-x-[7%]' : 'group-hover:translate-x-[0%]'">
                     <app-newsbutton heading="Heatsink" [routerLink]="'routerLink'" class="mr-2"></app-newsbutton>
                     <app-newsbutton heading="Thermal Management" [routerLink]="'routerLink'"></app-newsbutton>
                     <p class="mt-5 mb-2 text-dark-gray2 text-sm font-medium">{{item.date}}</p>
