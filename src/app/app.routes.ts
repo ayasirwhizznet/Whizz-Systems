@@ -4,6 +4,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { NewspageComponent } from './pages/newspage/newspage.component';
 import { BlogsComponent } from './pages/blogs/blogs.component';
 import { AboutComponent } from './about/about.component';
+import { ModelingComponent } from './pages/modeling/modeling.component';
 
 export const routes: Routes = [
   {
@@ -30,6 +31,11 @@ export const routes: Routes = [
     path: 'blogs',
     component: BlogsComponent,
     title: 'Blogs'
+  },
+  {
+    path: '3D Modeling/Mechanical Engineering',
+    component: ModelingComponent,
+    title: '3D Modeling/Mechanical Engineering'
   }
 
 ];

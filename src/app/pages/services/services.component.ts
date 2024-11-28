@@ -21,9 +21,7 @@ export class ServicesComponent {
       });
     }
   }
-  
-  
- 
+
   servicesTab = [
     {
       title: "Engineering & Design",
@@ -33,7 +31,7 @@ export class ServicesComponent {
         { label: 'System Design/Schematics', link: '' },
         { label: 'FPGA Design', link: '' },
         { label: 'PCB Layout', link: '' },
-        { label: '3D Modeling/Mechanical Engineering', link: '' },
+        { label: '3D Modeling/Mechanical Engineering', link: '3D Modeling/Mechanical Engineering' },
         { label: 'Signal Integrity Simulation', link: '' },
         { label: 'Power Delivery Network Simulations', link: '' },
         { label: 'Signal Integrity Simulation', link: '' },
