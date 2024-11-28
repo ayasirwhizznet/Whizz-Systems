@@ -18,7 +18,7 @@
                          src="../../assets/blogs/blogimg.png" alt="img"
                          [ngClass]="i % 2 === 0 ? 'group-hover:w-[93%]' : 'group-hover:w-[100%]'"
                          [ngStyle]="{
-                             'transform-origin': i % 2 === 0 ? 'center right' : 'center left'
+                             'transform-origin': i % 2 !== 0 ? 'center right' : 'center left'
                          }">
                 </div>
                 <div class="w-1/2 transition-transform duration-300 ease-in-out"
