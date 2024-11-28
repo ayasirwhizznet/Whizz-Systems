@@ -1,6 +1,6 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-services',
   standalone: true,
@@ -9,6 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './services.component.scss'
 })
 export class ServicesComponent {
+
+  constructor(private router: Router) { }
+
   toTop(id: string) {
     const element = document.getElementById(id);
     if (element) {
@@ -90,4 +93,13 @@ export class ServicesComponent {
     },
   ]
   
+  onGoToPage2(router: string | undefined) {
+    if (router) {
+      // Navigate to the route if it's defined
+      this.router.navigate(['service',router]); // Pass an array with the route
+    } else {
+      // Handle the case where the route is undefined (optional)
+      console.error('Route is undefined!');
+    }
+  }
 }

@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { HeaderSectionComponent } from '../header-section/header-section.component';
@@ -121,7 +121,14 @@ export class HeaderComponent implements OnInit {
     { label: 'Network', link: '/' },
   ];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        // Reset the header visibility when the route changes
+        this.isHeaderVisible = true;
+      }
+    });
+  }
 
   ngOnInit(): void {
     // Track the current route on navigation
@@ -183,6 +190,8 @@ export class HeaderComponent implements OnInit {
 
   lastScrollTop = 0;  // To track the last scroll position
   isHeaderVisible = true;  // To control header visibility
+
+
 
   // Listen to window scroll event
   @HostListener('window:scroll', [])

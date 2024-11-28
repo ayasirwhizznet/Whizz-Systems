@@ -33,7 +33,7 @@ export const routes: Routes = [
     title: 'Blogs'
   },
   {
-    path: '3D Modeling/Mechanical Engineering',
+    path: 'service/:name',
     component: ModelingComponent,
     title: '3D Modeling/Mechanical Engineering'
   }
