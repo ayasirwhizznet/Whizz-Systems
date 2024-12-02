@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
   activeMenuItem: string | null = null;
   currentRoute: string = ''; // To track the current route
 
-  isSearchbaropen: boolean = false;
+  isSearchbaropen: any = false;
   isMenuOpen: boolean = false;
   isAccordionOpen = false;
 
@@ -183,15 +183,13 @@ export class HeaderComponent implements OnInit {
   }
 
   closeMenu() {
-    // this.isSearchbaropen = !this.isSearchbaropen;
     this.activeBottomSection = '';
     this.activeMenuItem = '';
+    this.isSearchbaropen = '';
   }
 
   lastScrollTop = 0;  // To track the last scroll position
   isHeaderVisible = true;  // To control header visibility
-
-
 
   // Listen to window scroll event
   @HostListener('window:scroll', [])

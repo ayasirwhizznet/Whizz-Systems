@@ -24,25 +24,26 @@ interface ServiceSection {
 })
 
 export class AccordionComponent {
+  activeMenuItem: string | null = null;
+
   menuItems: MenuItem[] = [
-    { label: 'Home', link: '/', open: false },
-    { label: 'About Us', link: '/', open: false },
+    { label: 'About', link: '/', open: false },
     { label: 'Services', dropdown: 'service', link: '/', open: false },
     { label: 'Featured Products', dropdown: 'featured', link: '/', open: false },
-    { label: 'Blog', dropdown: 'blog', link: '/', open: false },
+    { label: 'Resources', dropdown: 'resources', link: '/', open: false },
   ];
 
   serviceSections: ServiceSection[] = [
     {
       title: 'Engineering & Design',
       items: [
-        { label: 'System Design / Schematics', link: '/' },
+        { label: 'System Design/Schematics', link: '/' },
         { label: 'FPGA Design', link: '/' },
         { label: 'PCB Layout', link: '/' },
-        { label: '3D Modeling / Mechanical Engineering', link: '/' },
+        { label: '3D Modeling/Mechanical Engineering', link: '/' },
         { label: 'Signal Integrity Simulations', link: '/' },
         { label: 'Power Delivery Network Simulations', link: '/' },
-        { label: 'Thermal Management / Thermal Simulation', link: '/' },
+        { label: 'Thermal Management/Thermal Simulation', link: '/' },
       ],
       open: false // Track the open state for each service section
     },
@@ -114,16 +115,10 @@ export class AccordionComponent {
   ];
 
   toggleMenu(item: MenuItem) {
-    // If the item is already open, close it
-    if (item.open) {
-      item.open = false;
-    } else {
-      // Close all other menus and their dropdowns
-      this.menuItems.forEach(i => {
-        i.open = false; // Close all other menu items
-      });
-      item.open = true; // Open the selected menu item
-    }
+    // Loop through all menu items and close all except the clicked one
+    this.menuItems.forEach(i => {
+      i.open = (i === item) ? !i.open : false;  // Toggle the clicked item and close others
+    });
   }
   
   toggleSection(section: ServiceSection) {
