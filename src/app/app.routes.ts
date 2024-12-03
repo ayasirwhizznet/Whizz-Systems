@@ -5,6 +5,8 @@ import { NewspageComponent } from './pages/newspage/newspage.component';
 import { BlogsComponent } from './pages/blogs/blogs.component';
 import { AboutComponent } from './about/about.component';
 import { ModelingComponent } from './pages/modeling/modeling.component';
+import { ThermalManagementComponent } from './pages/thermal-management/thermal-management.component';
+import { ServiceDetailsComponent } from './pages/service-details/service-details.component';
 
 export const routes: Routes = [
   {
@@ -33,9 +35,8 @@ export const routes: Routes = [
     title: 'Blogs'
   },
   {
-    path: 'service/:name',
-    component: ModelingComponent,
-    title: '3D Modeling/Mechanical Engineering'
-  }
+    path: 'service/:title',
+    component: ServiceDetailsComponent,
 
+  },
 ];

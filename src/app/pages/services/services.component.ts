@@ -31,13 +31,13 @@ export class ServicesComponent {
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting
                       from a concept or refining a product for the market.`,
       items: [
-        { label: 'System Design/Schematics', link: '' },
-        { label: 'FPGA Design', link: '' },
-        { label: 'PCB Layout', link: '' },
+        { label: 'System Design/Schematics', link: 'System Design/Schematics' },
+        { label: 'FPGA Design', link: 'FPGA Design' },
+        { label: 'PCB Layout', link: 'PCB Layout' },
         { label: '3D Modeling/Mechanical Engineering', link: '3D Modeling/Mechanical Engineering' },
-        { label: 'Signal Integrity Simulation', link: '' },
-        { label: 'Power Delivery Network Simulations', link: '' },
-        { label: 'Signal Integrity Simulation', link: '' },
+        { label: 'Signal Integrity Simulation', link: 'Signal Integrity Simulation' },
+        { label: 'Power Delivery Network Simulations', link: 'Power Delivery Network Simulations' },
+        { label: 'Thermal Management/Thermal Simulation', link: 'Thermal Management/Thermal Simulation' },
       ]
     },
 
@@ -46,8 +46,8 @@ export class ServicesComponent {
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
       items: [
         { label: 'System Level Architecture', link: '' },
+        { label: 'Engineering & Design', link: '' },
         { label: 'Prototyping', link: '' },
-        { label: 'Signal Integrity Simulation', link: '' },
         { label: 'Testing' },
         { label: 'Compliance and Certification', link: '' }
       ]
@@ -58,7 +58,7 @@ export class ServicesComponent {
       items: [
         { label: 'DFX Analysis', link: '' },
         { label: 'Failure Mode & Effects Analysis (FMEA)', link: '' },
-        { label: 'Thermal Profiling and Reflow Soldering Optimization', link: '' },
+        { label: 'Thermal Profiling & Reflow Soldering Optimization', link: '' },
         { label: 'Mechanical System Build', link: '' },
         { label: 'Packaging Design', link: '' },
       ]
@@ -97,7 +97,8 @@ export class ServicesComponent {
     if (router) {
       // Navigate to the route if it's defined
       this.router.navigate(['service',router]); // Pass an array with the route
-    } else {
+     } 
+    else {
       // Handle the case where the route is undefined (optional)
       console.error('Route is undefined!');
     }

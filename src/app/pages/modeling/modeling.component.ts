@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CbuttonComponent } from "../../cbutton/cbutton.component";
-import { NgFor } from '@angular/common';
+import { NgFor} from '@angular/common';
 
 @Component({
   selector: 'app-modeling',
@@ -9,7 +9,8 @@ import { NgFor } from '@angular/common';
   templateUrl: './modeling.component.html',
   styleUrl: './modeling.component.scss'
 })
-export class ModelingComponent {
+export class ModelingComponent  {
+
   coreServices:any[] = [
     {imgUrl: '../../../assets/3D-Modeling/assembly.png', title: '3D Models & 2D Assembly Drawings', desc: 'Detailed, standards-compliant PCB component designs. Custom designs ensuring functionality and durability.'},
     {imgUrl: '../../../assets/3D-Modeling/advanced.png', title: 'Advanced Mechanical Component Design', desc: 'Specialized solutions for I/O brackets, trays, and ingress-protected enclosures. Pole-mounted or wall-mounted solutions.'},
