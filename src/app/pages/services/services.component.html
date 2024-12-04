@@ -1,37 +1,32 @@
-<div class="px-[4%] sm:px-[5%]">
+<div class="px-[4%] sm:px-[5%] mb-10 lg:mb-20 overflow-x-hidden">
   <div class="px-8 py-12 lg:px-0 lg:py-0 lg:pl-12 bg-dark-gray2 rounded-2xl flex items-center gap-10">
     <div class="w-full lg:w-[50%]">
-      <h2 class="text-4xl lg:text-5xl/tight font-bold text-white mb-6">Our Services: Expert Solutions, Tailored to You</h2>
+      <h2 class="text-3xl lg:text-5xl 3xl:text-[56px] lg:leading-[55px] font-bold text-white mb-6">Our Services: Expert Solutions, Tailored to You</h2>
       <p class="text-lg font-300 text-light-gray1">From development to deployment, explore our comprehensive range of in-house tech services designed to drive innovation</p>
     </div>
     <div class="hidden lg:block w-[53%] relative rounded-tl-[100px] ">
-      <!-- Background Video -->
       <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-tl-[100px] rounded-tr-lg rounded-bl-[100px] rounded-br-lg" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
         <source src="../../assets/hero/waves1.mp4" type="video/mp4">
     </video>
-    
-    <!-- Teal Overlay -->
     <div class="absolute inset-0 bg-[#00a99f] opacity-70 z-10 rounded-tl-[100px] rounded-tr-lg rounded-bl-[100px] rounded-br-lg"></div>
-
-    <!-- Content -->
-      <p class="relative z-20 grid place-items-center h-[40rem]"></p>
+      <p class="relative z-20 grid place-items-center h-[48rem] w-[60rem]"></p>
     </div>
   </div>
 </div>
 
 
 <!-- Services Navbar -->
-<div class="hidden lg:block px-[5%] z-20  sticky top-[0px]">
-  <div class="p-8 flex gap-3  text-center text-xs  my-16 bg-white z-50">
+<div class="hidden lg:block px-[5%] z-20  sticky top-[0px] overflow-x-hidden">
+  <div class="p-8 flex justify-center items-center gap-4 text-center text-sm 3xl:text-base bg-white z-50">
     <a *ngFor="let link of servicesTab" (click)="toTop(link.title)"
-      class=" w-64 h-16 flex cursor-pointer justify-center items-center bg-dark-gray1 hover:bg-dark-gray2 text-white font-medium rounded-md"
+      class=" w-64 h-[80px] cursor-pointer flex justify-center items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-white font-medium rounded-lg"
       routerLink="link.url">{{link.title}}</a>
   </div>
 </div>
 
 
 <div class="px-[4%] sm:px-[5%] ">
-  <div *ngFor="let item of servicesTab" class="p-6 md:p-10 grid grid-cols-10 gap-4 md:gap-20 ">
+  <div *ngFor="let item of servicesTab" class="p-6 md:p-10 grid grid-cols-10 gap-8 lg:gap-20 ">
     <div [id]="item.title" class="col-span-10 lg:col-span-4 mt-10 md:mt-0">
       <h1 class="font-bold text-3xl lg:text-5xl mb-8 text-dark-gray2">{{ item.title }}</h1>
       <p class="text-lg text-dark-gray2">{{ item.description }}</p>
@@ -39,21 +34,17 @@
     <div class="col-span-10 lg:col-span-6">
       <div class="grid grid-cols-2  gap-3">
         <div *ngFor="let subitem of item.items"
-          class="h-32 bg-lines hover:bg-none relative group col-span-2 md:col-span-1 bg-contain bg-no-repeat hover:border-none border border-light-gray1 rounded-md flex justify-start items-center overflow-hidden transition-transform duration-500 ease-in-out bg-card-gray hover:bg-transparent">
-          <a class="cursor-pointer" (click)="onGoToPage2(subitem.link)" >
-            <!-- Title and text (static) -->
-            <h1 class="pl-6 pr-20 py-16 flex font-bold text-lg z-10 text-dark-gray2 group-hover:text-white transition-colors duration-500 ease-in-out">
+          class="h-32 3xl:h-40 bg-lines hover:bg-none relative group col-span-2 md:col-span-1 bg-contain bg-no-repeat hover:border-none border border-light-gray1 rounded-md flex justify-start items-center overflow-hidden transition-transform duration-500 ease-in-out bg-card-gray hover:bg-transparent">
+          <a class="cursor-pointer inline-block" (click)="onGoToPage2(subitem.link)" >
+            <h1 class="pl-6 pr-20 flex font-bold text-l 3xl:text-2xl z-10 text-dark-gray2 group-hover:text-white transition-all duration-500 ease-in-out">
               {{ subitem.label }}
             </h1>
-
-            <!-- Divs that will appear on hover -->
             <div class="absolute -z-20 top-0 left-0 w-full h-full flex gap-0 group-hover:gap-3 transition-all duration-500 ease-in-out">
-
-              <!-- Left Div (Shrinks to the left on hover) -->
-              <div class="left-div w-full bg-contain bg-no-repeat bg-bottom bg-lines bg-dark-gray1 h-full rounded-md transition-all duration-500 ease-in-out group-hover:w-[88%] z-10"></div>
-
-              <!-- Right Div (Expands from the right) -->
-              <div class="right-div w-0 opacity-0 group-hover:w-[12%] group-hover:opacity-100 bg-teal1 h-full rounded-md flex justify-center items-center transition-all duration-500 ease-in-out z-10">
+              
+              <!-- hover div -->
+                <div class="left-div w-full bg-lines bg-bottom bg-contain bg-no-repeat bg-dark-gray1 h-full rounded-md transition-all duration-500 ease-in-out group-hover:w-[88%] z-10"></div>
+            
+              <div class="right-div w-0  group-hover:w-[12%]  bg-teal1 h-full rounded-md flex justify-center items-center transition-all duration-500 ease-in-out z-10">
                 <img class="w-5 h-5 transition-opacity duration-500" src="../../../assets/services/r-arrow.svg"
                   alt="img">
               </div>

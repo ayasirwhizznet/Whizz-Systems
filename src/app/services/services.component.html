@@ -6,10 +6,19 @@
         <div class="self-end flex items-center gap-6">
             <app-cbutton [size]="'medium'" [routerLink]="'/services'"
                 heading="All services" icon="../../assets/services/r-arrow.svg"></app-cbutton>
-            <app-larrowbutton (click)="prevSlide()" icon="../../assets/services/l-arrow.svg"
-                size="medium"></app-larrowbutton>
-            <app-rarrowbutton (click)="nextSlide()" icon="../../assets/services/r-arrow.svg"
-                size="medium"></app-rarrowbutton>
+               
+  <div [className]="progress <= 0.22 ? 'pointer-events-none opacity-[0.6]':''">
+      <app-larrowbutton   (click)="prevSlide()" icon="../../assets/services/l-arrow.svg"
+          size="medium"></app-larrowbutton>
+
+
+  </div>
+               
+  <div [className]="progress  > 0.9 ? 'pointer-events-none opacity-[0.6]':''">
+                    <app-rarrowbutton (click)="nextSlide()" icon="../../assets/services/r-arrow.svg"
+                        size="medium"></app-rarrowbutton>
+                        </div>
+                
         </div>
     </div>
     <p class="mb-16 text-lg text-dark-gray1">With complete, in-house expertise, we provide flexible, customized support—
@@ -19,9 +28,9 @@
 </div>
 <div class="pl-[4%] sm:pl-[9%]">
     <div class="keen-slider" #sliderRef>
-        <div class="keen-slider__slide" *ngFor="let card of cards">
+        <div class="keen-slider__slide " *ngFor="let card of cards">
             <app-services-card [imageUrl]="card.imgUrl" [title]="card.title"
-                [content]="card.content"></app-services-card>
+                [content]="card.content" ></app-services-card>
         </div>
     </div>
 </div>

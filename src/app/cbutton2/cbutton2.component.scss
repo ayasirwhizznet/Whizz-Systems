@@ -14,6 +14,7 @@
 .diagonal-swipe span {
   position: relative;
   z-index: 2; /* Text stays on top of the overlay */
+  transition: color 1s;
 }
 
 .diagonal-swipe:after {

@@ -14,6 +14,7 @@ export class LarrowbuttonComponent {
   @Input() icon: string | null = null;
   @Input() size: 'small' | 'medium' | 'large' = 'small';
 
+
   get sizeClass(): string {
     switch (this.size) {
       case 'small':

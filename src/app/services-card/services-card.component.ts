@@ -1,6 +1,5 @@
 import { NgIf } from '@angular/common';
 import { Component, ElementRef, Input, ViewChild } from '@angular/core';
-import { CbuttonComponent } from "../cbutton/cbutton.component";
 
 @Component({
   selector: 'app-services-card',
@@ -14,7 +13,5 @@ export class ServicesCardComponent {
   @Input() imageUrl: string = '';
   @Input() title: string = '';
   @Input() content: string = '';
-
-
-  
+  @Input() RouterLink: string = '';
 }

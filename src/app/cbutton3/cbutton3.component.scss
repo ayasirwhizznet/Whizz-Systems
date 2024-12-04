@@ -10,11 +10,13 @@
     cursor: pointer;
     transition: color 1s;
     z-index: 1; /* Ensure text stays on top */
+    
   }
   
   .diagonal-swipe span {
     position: relative;
     z-index: 2; /* Text stays on top of the overlay */
+    transition: color 1s;
   }
   
   .diagonal-swipe:after {

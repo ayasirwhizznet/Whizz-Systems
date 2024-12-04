@@ -34,6 +34,24 @@ a great track record with us`,
       name: 'Neil Mammen',
       designation: 'Industry Expert'
     },
+    {
+      desc: 'Vivamus nec pulvinar metus. Integer fermentum iaculis purus non ultricies. Vivamus bibendum ipsum condimentum aliquet bibendum. Morbi sed facilisis mauris.',
+      imageUrl: '../../assets/testimonials/profile.png',
+      name: 'Stevan Logan',
+      designation: 'Marketing at Xilinix'
+    },
+    {
+      desc: 'Morbi molestie, quam vel volutpat finibus, libero nisl congue velit, sit amet porta velit felis quis arcu. Fusce nisi risus, placerat in facilisis vel, finibus nec nisl. Fusce porttitor ex erat, quis lacinia erat porttitor eu. In interdum ipsum feugiat libero viverra, id feugiat neque blandit. Donec suscipit pharetra diam a feugiat. Ut vitae urna quis sapien euismod venenatis. Morbi sed libero justo. Quisque pellentesque finibus lacus, ut egestas elit hendrerit nec. Maecenas ultrices, arcu at iaculis tempor, ex magna pellentesque elit, id tempus ipsum dui eu orci. Vivamus a vulputate neque.',
+      imageUrl: '../../assets/testimonials/profile.png',
+      name: 'Stevan Logan',
+      designation: 'Marketing at Xilinix'
+    },
+    {
+      desc: 'Vestibulum gravida libero sem, ut imperdiet nibh viverra non. Nulla vestibulum varius purus non tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
+      imageUrl: '../../assets/testimonials/profile.png',
+      name: 'Stevan Logan',
+      designation: 'Marketing at Xilinix'
+    },
   ];
 
   @ViewChild("sliderRef") sliderRef = {} as ElementRef;
@@ -43,24 +61,20 @@ a great track record with us`,
   ngAfterViewInit() {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
 
-    
       breakpoints: {
         "(min-width: 640px)": {
-          loop: true,
           slides: {
             perView: 1,
             spacing: 50,
           },
         } ,
         "(min-width: 768px)": {
-          loop: true,
           slides: {
             perView: 2,
             spacing: 50,
           },
         },
         "(min-width: 1200px)": {
-          loop: true,
           slides: {
             perView: 2.8,
             spacing: 80,

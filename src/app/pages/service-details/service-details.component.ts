@@ -17,7 +17,6 @@ export class ServiceDetailsComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    // Access the 'title' parameter from the route
     this.route.paramMap.subscribe(params => {
       this.titleSlug = decodeURIComponent(params.get('title') || '');
       document.title=this.titleSlug

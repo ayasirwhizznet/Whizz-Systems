@@ -15,7 +15,7 @@ export class ServicesComponent {
   toTop(id: string) {
     const element = document.getElementById(id);
     if (element) {
-      const offset = 170;  // Adjust this value to match the height of your header
+      const offset = 170;
       const topPosition = element.offsetTop - offset;
   
       window.scrollTo({
@@ -47,7 +47,7 @@ export class ServicesComponent {
       items: [
         { label: 'System Level Architecture', link: '' },
         { label: 'Engineering & Design', link: '' },
-        { label: 'Prototyping', link: '' },
+        { label: 'Protyping', link: '' },
         { label: 'Testing' },
         { label: 'Compliance and Certification', link: '' }
       ]
@@ -95,11 +95,9 @@ export class ServicesComponent {
   
   onGoToPage2(router: string | undefined) {
     if (router) {
-      // Navigate to the route if it's defined
-      this.router.navigate(['service',router]); // Pass an array with the route
+      this.router.navigate(['service',router]);
      } 
     else {
-      // Handle the case where the route is undefined (optional)
       console.error('Route is undefined!');
     }
   }

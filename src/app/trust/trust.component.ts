@@ -1,6 +1,6 @@
 import KeenSlider from 'keen-slider';
 import { CommonModule } from '@angular/common';
-import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 const animation = { duration: 5000, easing: (t: number) => t };
 
@@ -10,8 +10,8 @@ const animation = { duration: 5000, easing: (t: number) => t };
   imports: [CommonModule],
   templateUrl: './trust.component.html',
   styleUrls: ['./trust.component.scss'],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
+
 export class TrustComponent {
 
   companies = [
@@ -33,73 +33,72 @@ export class TrustComponent {
 
   ngAfterViewInit() {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
-      
+
       breakpoints: {
-        
-        "(min-width:0px)": {
+        "(min-width: 0px)": {
           loop: true,
-          mode: "snap", 
+          renderMode: "performance",
           drag: false,
-          // rtl: true,  // Keep rtl: true to indicate right-to-left direction
+
           slides: {
             perView: 2,
             spacing: 30,
           },
           created(s) {
-            s.moveToIdx(5, true, animation);
+            s.moveToIdx(5, true, animation)
           },
           updated(s) {
-            s.moveToIdx(s.track.details.abs + 5, true, animation);
+            s.moveToIdx(s.track.details.abs + 5, true, animation)
           },
           animationEnded(s) {
-            s.moveToIdx(s.track.details.abs + 5, true, animation);
+            s.moveToIdx(s.track.details.abs + 5, true, animation)
           },
         },
         "(min-width: 768px)": {
           loop: true,
-          mode: "snap",
+          renderMode: "performance",
           drag: false,
-          // rtl: true, 
+
           slides: {
             perView: 3,
             spacing: 30,
           },
           created(s) {
-            s.moveToIdx(5, true, animation);
+            s.moveToIdx(5, true, animation)
           },
           updated(s) {
-            s.moveToIdx(s.track.details.abs + 5, true, animation);
+            s.moveToIdx(s.track.details.abs + 5, true, animation)
           },
           animationEnded(s) {
-            s.moveToIdx(s.track.details.abs + 5, true, animation);
+            s.moveToIdx(s.track.details.abs + 5, true, animation)
           },
         },
         "(min-width: 1200px)": {
           loop: true,
-          mode: "snap",
+          renderMode: "performance",
           drag: false,
-          // rtl: true, 
+
           slides: {
             perView: 5,
             spacing: 50,
           },
           created(s) {
-            s.moveToIdx(5, true, animation);
+            s.moveToIdx(5, true, animation)
           },
           updated(s) {
-            s.moveToIdx(s.track.details.abs + 5, true, animation);
+            s.moveToIdx(s.track.details.abs + 5, true, animation)
           },
           animationEnded(s) {
-            s.moveToIdx(s.track.details.abs + 5, true, animation);
+            s.moveToIdx(s.track.details.abs + 5, true, animation)
           },
         },
-        
-      },
-    });
+      }
+
+    })
   }
 
   ngOnDestroy() {
-    if (this.slider) this.slider.destroy();
+    if (this.slider) this.slider.destroy()
   }
 
   nextSlide() {

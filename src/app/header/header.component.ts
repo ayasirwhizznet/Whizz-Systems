@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { Router, NavigationEnd, NavigationStart } from '@angular/router';
+import { Router, NavigationEnd, NavigationStart, ActivatedRoute } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { HeaderSectionComponent } from '../header-section/header-section.component';
@@ -18,13 +18,12 @@ import { Cbutton4Component } from '../cbutton4/cbutton4.component';
 export class HeaderComponent implements OnInit {
   activeBottomSection: string | null = null;
   activeMenuItem: string | null = null;
-  currentRoute: string = ''; // To track the current route
+  currentRoute: string = '';
 
   isSearchbaropen: any = false;
   isMenuOpen: boolean = false;
   isAccordionOpen = false;
 
-  // Menu items definition
   menuItems = [
     { label: 'About', link: '/about', dropdown: '' },
     { label: 'Services', dropdown: 'service', link: '/' },
@@ -36,13 +35,13 @@ export class HeaderComponent implements OnInit {
     {
       title: 'Engineering & Design',
       items: [
-        { label: 'System Design / Schematics', link: '/' },
+        { label: 'System Design/Schematics', link: '/' },
         { label: 'FPGA Design', link: '/' },
         { label: 'PCB Layout', link: '/' },
-        { label: '3D Modeling / Mechanical Engineering', link: '/' },
+        { label: '3D Modeling/Mechanical Engineering', link: '3D Modeling/Mechanical Engineering' },
         { label: 'Signal Integrity Simulations', link: '/' },
         { label: 'Power Delivery Network Simulations', link: '/' },
-        { label: 'Thermal Management / Thermal Simulation', link: '/' },
+        { label: 'Thermal Management/Thermal Simulation', link: 'Thermal Management/Thermal Simulation' },
       ],
     },
     {
@@ -87,7 +86,7 @@ export class HeaderComponent implements OnInit {
         { label: 'BOM Management', link: '/' },
         { label: 'EOL Management', link: '/' },
         { label: 'AVL Management', link: '/' },
-        { label: 'Second Sourcing / Risk Buying', link: '/' },
+        { label: 'Second Sourcing/Risk Buying', link: '/' },
       ],
     },
   ];
@@ -124,23 +123,20 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationStart) {
-        // Reset the header visibility when the route changes
         this.isHeaderVisible = true;
       }
     });
   }
 
   ngOnInit(): void {
-    // Track the current route on navigation
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.currentRoute = event.urlAfterRedirects;  // Store the current route
-        this.updateActiveMenuItem();  // Update active menu item based on route
+        this.currentRoute = event.urlAfterRedirects;  
+        this.updateActiveMenuItem();  
       }
     });
   }
 
-  // Updates the active menu item based on the current route
   updateActiveMenuItem(): void {
     // Set active menu item based on the route
     if (this.currentRoute === '/about') {
@@ -156,14 +152,12 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  // Handle menu item click (sets active item and closes dropdowns)
   menu(menuItemLabel: string) {
     this.isSearchbaropen = false;
     this.activeMenuItem = menuItemLabel;
     this.activeBottomSection = null;  // Close the dropdown section
   }
 
-  // Handle dropdown section toggling
   toggleBottomSection(type: string | null, menuItemLabel: string) {
     this.isSearchbaropen = false;
     this.activeBottomSection = this.activeBottomSection === type ? null : type;
@@ -188,22 +182,20 @@ export class HeaderComponent implements OnInit {
     this.isSearchbaropen = '';
   }
 
-  lastScrollTop = 0;  // To track the last scroll position
-  isHeaderVisible = true;  // To control header visibility
+  lastScrollTop = 0;
+  isHeaderVisible = true;
 
-  // Listen to window scroll event
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const currentScroll = document.documentElement.scrollTop;
     
-    // If scrolling down and current scroll position is greater than last scroll position, hide the header
     if (currentScroll > this.lastScrollTop && currentScroll > 100) {
-      this.isHeaderVisible = false; // Hide the header
+      this.isHeaderVisible = false; 
     } else if (currentScroll < this.lastScrollTop && currentScroll > 100) {
-      this.isHeaderVisible = true; // Show the header
+      this.isHeaderVisible = true; 
     }
 
-    // Update the last scroll position
     this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
   }
+
 }

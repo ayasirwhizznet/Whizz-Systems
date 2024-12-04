@@ -1,16 +1,17 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angular/core';
 import { ServicesCardComponent } from "../services-card/services-card.component";
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { CbuttonComponent } from "../cbutton/cbutton.component";
 import 'keen-slider/keen-slider.css'
 import KeenSlider from "keen-slider";
 import { RarrowbuttonComponent } from "../rarrowbutton/rarrowbutton.component";
 import { LarrowbuttonComponent } from "../larrowbutton/larrowbutton.component";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cservices',
   standalone: true,
-  imports: [ServicesCardComponent, NgFor, CbuttonComponent, RarrowbuttonComponent, LarrowbuttonComponent],
+  imports: [ServicesCardComponent, NgFor, CbuttonComponent, RarrowbuttonComponent, LarrowbuttonComponent, RouterLink,NgIf],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
@@ -30,52 +31,66 @@ export class ServicesComponent {
     {
       imgUrl: '../../assets/services/advanced-manfacuring.png',
       title: 'Advanced Manufacturing',
-      content: 'World-class manufacturing to meet complex demands, ensuring quality and efficiency.'
+      content: 'World-class manufacturing to meet complex demands, ensuring quality and efficiency.',
     },
     {
       imgUrl: '../../assets/services/lab-test.png',
       title: 'Lab Testing Solutions',
-      content: 'Ensuring product reliability and compliance through comprehensive validation.'
+      content: 'Ensuring product reliability and compliance through comprehensive validation.',
     },
     {
       imgUrl: '../../assets/services/supply-chain.jfif',
       title: 'Supply Chain Management & Design',
-      content: 'Streamlining your supply chain with integrated sourcing, compliance, and procurement solutions, so you can rely on a single, trusted partner.'
+      content: 'Streamlining your supply chain with integrated sourcing, compliance, and procurement solutions, so you can rely on a single, trusted partner.',
     },
     {
       imgUrl: '../../assets/services/sustainable.jfif',
       title: 'Sustaining Engineering & Obsolescence Management',
-      content: 'Keeping your product lines future-proof with proactive support and obsolescence solutions.'
+      content: 'Keeping your product lines future-proof with proactive support and obsolescence solutions.',
     },
   ];
 
   @ViewChild("sliderRef") sliderRef = {} as ElementRef;
 
   slider: any = null;
-
+  progress = 0;
+  totalSlides = this.cards.length;
   ngAfterViewInit() {
+
+    this.totalSlides = 6;
+
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+      slideChanged: (slider) => {
+      
+        this.progress = slider.track.details.progress;
+        console.log(this.progress)
+      },
 
       breakpoints: {
         "(min-width: 640px)": {
-          loop: true,
+          
           slides: {
-            perView: 1,
+            perView: 0.96,
             spacing: 30,
           },
+          
         } ,
         "(min-width: 768px)": {
-          loop: true,
           slides: {
-            perView: 2,
-            spacing: 30,
+            perView: 1.96,
+            spacing: 100,
           },
         },
         "(min-width: 1200px)": {
-          loop: true,
           slides: {
-            perView: 3.5,
-            spacing: 40,
+            perView: 2.96,
+            spacing: 90,
+          },
+        },
+        "(min-width: 1700px)": {
+          slides: {
+            perView: 3.96,
+            spacing: 70,
           },
         },
       },
@@ -84,10 +99,17 @@ export class ServicesComponent {
   ngOnDestroy() {
     if (this.slider) this.slider.destroy();
   }
+
   nextSlide() {
-    this.slider.next();
+    if (this.progress < this.totalSlides - 1) {
+      this.slider.next();
+    }
   }
+
   prevSlide() {
-    this.slider.prev();
+    if (this.progress > 0) {
+      this.slider.prev();
+    }
   }
+  
 }
