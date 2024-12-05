@@ -35,8 +35,7 @@ export const routes: Routes = [
     title: 'Blogs'
   },
   {
-    path: 'service/:title',
+    path: 'service/:category/:title',
     component: ServiceDetailsComponent,
-
   },
 ];

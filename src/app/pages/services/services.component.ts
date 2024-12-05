@@ -45,11 +45,11 @@ export class ServicesComponent {
       title: "NPI",
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
       items: [
-        { label: 'System Level Architecture', link: '' },
-        { label: 'Engineering & Design', link: '' },
-        { label: 'Protyping', link: '' },
-        { label: 'Testing' },
-        { label: 'Compliance and Certification', link: '' }
+        { label: 'System Level Architecture', link: 'System Level Architecture' },
+        { label: 'Engineering & Design', link: 'Engineering & Design' },
+        { label: 'Prototyping', link: 'Prototyping' },
+        { label: 'Testing', link: 'Testing' },
+        { label: 'Compliance and Certification', link: 'Compliance and Certification' }
       ]
     },
     {
@@ -93,9 +93,9 @@ export class ServicesComponent {
     },
   ]
   
-  onGoToPage2(router: string | undefined) {
-    if (router) {
-      this.router.navigate(['service',router]);
+  onGoToPage2(category: string | undefined,title:string | undefined) {
+    if (category && title) {
+      this.router.navigate(['service',category,title]);
      } 
     else {
       console.error('Route is undefined!');
