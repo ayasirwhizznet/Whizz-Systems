@@ -1,6 +1,5 @@
 .diagonal-swipe {
     padding: 13px 18px;
-    // border: 1px solid #7BD4CF;
     background-color: #f8f8f8;
     color: #2A494C;
     transition: color 1.5s;
@@ -8,7 +7,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Ensure the pseudo-element is positioned correctly */
+    position: relative;
 }
 
 .diagonal-swipe span {
@@ -19,27 +18,26 @@
 .diagonal-swipe:after {
     content: '';
     position: absolute;
-    bottom: 0;  /* Set from the bottom */
-    right: 0;   /* Set from the right */
+    bottom: 0;
+    right: 0; 
     width: 0;
     height: 0;
     border-style: solid;
-    border-color: transparent transparent #7BD4CF transparent; /* Border starts from bottom-right */
+    border-color: transparent transparent #7BD4CF transparent;
     transition: border-width 1.5s;
-    z-index: 0; /* Make sure the pseudo-element is behind the button content */
+    z-index: 0;
 }
 
 .diagonal-swipe:hover:after {
-    border-width: 0 0 250px 250px; /* Reverse the direction of the border expansion */
+    border-width: 0 0 250px 250px;
 }
 
 .icon {
     width: 19px;
     height: 19px;
-    z-index: 2; /* Ensure the icon stays above the pseudo-element */
+    z-index: 2;
 }
 
-/* Responsive size adjustments based on button size */
 .diagonal-swipe.small .icon {
     width: 16px;
     height: 16px;

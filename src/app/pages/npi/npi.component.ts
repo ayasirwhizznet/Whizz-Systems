@@ -53,13 +53,12 @@ export class NpiComponent {
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-    // Directly access params using snapshot instead of subscribing
     const title = this.route.snapshot.paramMap.get('title');
     const category = this.route.snapshot.paramMap.get('category');
     console.log(title, category);
     if (title) {
       this.titleSlug = decodeURIComponent(title);
-      document.title = this.titleSlug; // Set document title directly here
+      document.title = this.titleSlug;
     }
     if (category) {
       this.categorySlug = decodeURIComponent(category);

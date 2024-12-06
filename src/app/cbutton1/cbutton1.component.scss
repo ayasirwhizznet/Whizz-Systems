@@ -3,17 +3,16 @@
     display: inline-block;
     padding: 10px 20px;
     overflow: hidden;
-    // border: 1px solid #2C353A ;
     background-color: #7BD4CF;
     color: white;
     cursor: pointer;
     transition: color 1s;
-    z-index: 1; /* Ensure text stays on top */
+    z-index: 1;
   }
   
   .diagonal-swipe span {
     position: relative;
-    z-index: 2; /* Text stays on top of the overlay */
+    z-index: 2;
   }
   
   .diagonal-swipe:after {
@@ -26,11 +25,11 @@
     border-style: solid;
     border-color:#55C2BC transparent transparent transparent;
     transition: border-width 1s;
-    z-index: 1; /* Swipe effect stays behind the text */
+    z-index: 1;
   }
   
   .diagonal-swipe:hover:after {
     border-width: 250px 250px 0 0;
-    z-index: -1; /* Ensure swipe effect stays behind text */
+    z-index: -1;
   }
   

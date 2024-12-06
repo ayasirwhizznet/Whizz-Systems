@@ -17,9 +17,8 @@ export class ThermalManagementComponent  implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    // Access the 'title' parameter from the route
     this.route.paramMap.subscribe(params => {
-      this.titleSlug = params.get('title') || ''; // Get the 'title' parameter
+      this.titleSlug = params.get('title') || '';
       
     });
   }

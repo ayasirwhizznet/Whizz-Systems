@@ -1,6 +1,5 @@
 .diagonal-swipe {
   padding: 13px 18px;
-  // border: 1px solid #7BD4CF;
   background-color: #f8f8f8;
   color: #2c353a;
   transition: color 1.5s;
@@ -39,7 +38,6 @@
   z-index: 2;
 }
 
-/* Responsive size adjustments based on button size */
 .diagonal-swipe.small .icon {
   width: 16px;
   height: 16px;

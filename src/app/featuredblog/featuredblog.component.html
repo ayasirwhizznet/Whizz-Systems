@@ -9,11 +9,9 @@
     <div class="group">
         <div class="flex items-center gap-0 group-hover:gap-6 mb-6"
             [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">
-            <!-- Left side with image and text -->
             <div class="p-8 bg-card-gray flex items-center gap-8 w-full rounded-lg border-[1px] border-light-gray1"
                 [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">
                 <div class="w-1/2">
-                    <!-- Shrinking image -->
                     <img class="transition-all duration-300 ease-in-out h-[17rem] rounded-lg"
                          src="../../assets/blogs/blogimg.png" alt="img"
                          [ngClass]="i % 2 === 0 ? 'group-hover:w-[93%]' : 'group-hover:w-[100%]'"
@@ -31,7 +29,6 @@
                 </div>
             </div>
 
-            <!-- Arrow section with background (conditionally placed left or right) -->
             <div class="bg-teal1 rounded-lg h-[21rem] grid place-items-center transition-all duration-500 ease-in-out w-0 opacity-0 group-hover:w-[7%] group-hover:opacity-100 flex-grow">
                 <img class="w-5 h-5" src="../../assets/services/r-arrow.svg" alt="img">
             </div>
