@@ -10,7 +10,7 @@ import { NpiComponent } from '../npi/npi.component';
   standalone: true,
   imports: [CommonModule, ModelingComponent, ThermalManagementComponent, NpiComponent],
   templateUrl: './service-details.component.html',
-  styleUrls: ['./service-details.component.scss'] // Fixed typo to 'styleUrls'
+  styleUrls: ['./service-details.component.scss']
 })
 export class ServiceDetailsComponent implements OnInit {
   titleSlug: string = '';
@@ -19,12 +19,11 @@ export class ServiceDetailsComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    // Directly access params using snapshot instead of subscribing
     const title = this.route.snapshot.paramMap.get('title');
     const category = this.route.snapshot.paramMap.get('category');
     if (title) {
       this.titleSlug = decodeURIComponent(title);
-      document.title = this.titleSlug; // Set document title directly here
+      document.title = this.titleSlug;
     }
     if (category) {
       this.categorySlug = decodeURIComponent(category);
