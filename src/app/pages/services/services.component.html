@@ -23,18 +23,18 @@
   </div>
 </div>
 
-<div class="px-[4%] sm:px-[5%] ">
-  <div *ngFor="let item of servicesTab" class="p-6 md:p-10 grid grid-cols-10 gap-8 lg:gap-20">
-    <div [id]="item.title" class="col-span-10 lg:col-span-4 mt-10 md:mt-0">
+<div class="px-[4%] sm:px-[5%]">
+  <div *ngFor="let item of servicesTab" class="p-6 md:p-11 flex flex-col lg:flex-row gap-8 lg:gap-32 3xl:gap-36">
+    <div [id]="item.title" class="w-full lg:w-[37%] 3xl:w-[29%] mt-10 md:mt-0">
       <h1 class="font-bold text-3xl lg:text-5xl mb-8 text-dark-gray2">{{ item.title }}</h1>
       <p class="text-lg text-dark-gray2">{{ item.description }}</p>
     </div>
-    <div class="col-span-10 lg:col-span-6">
-      <div class="grid grid-cols-2  gap-3">
+    <div class="w-full lg:w-[55%] 3xl:w-[62%]">
+      <div class="grid grid-cols-2 gap-4">
         <div *ngFor="let subitem of item.items" (click)="onGoToPage2(item.title,subitem.link)"
           class="cursor-pointer h-32 3xl:h-40 bg-lines hover:bg-none relative group col-span-2 md:col-span-1 bg-contain bg-no-repeat hover:border-none border border-light-gray1 rounded-md flex justify-start items-center overflow-hidden transition-transform duration-500 ease-in-out bg-card-gray hover:bg-transparent">
-          <a class=" inline-block"  >
-            <h1 class="pl-6 pr-24 flex font-bold text-l 3xl:text-2xl z-10 text-dark-gray2 group-hover:text-white transition-all duration-500 ease-in-out">
+          <a class="inline-block"  >
+            <h1 class="px-6 lg:pl-6 lg:pr-12 3xl:pr-28 flex font-bold text-lg 3xl:text-2xl z-10 text-dark-gray2 group-hover:text-white transition-all duration-500 ease-in-out">
               {{ subitem.label }}
             </h1>
             <div class="absolute -z-20 top-0 left-0 w-full h-full flex gap-0 group-hover:gap-3 transition-all duration-500 ease-in-out">

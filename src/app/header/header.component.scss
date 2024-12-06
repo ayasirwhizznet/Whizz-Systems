@@ -1,30 +1,26 @@
-/* Initial visibility */
 header {
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
   
-  /* Hide the header by moving it out of the viewport */
   header.hidden {
-    transform: translateY(-100%); /* Move header out of view */
-    opacity: 0; /* Make header invisible */
+    transform: translateY(-100%);
+    opacity: 0;
   }
   
-  /* Initially show the desktop header on lg screens and hide below */
 header.desktop-header {
-  display: block; /* Show the desktop header */
+  display: block;
 }
 
 header.mobile-header {
-  display: none; /* Hide the mobile header on large screens */
+  display: none;
 }
 
-/* For screens smaller than lg (below lg) */
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   header.desktop-header {
-      display: none; /* Hide the desktop header below lg */
+      display: none;
   }
 
   header.mobile-header {
-      display: block; /* Show the mobile header below lg */
+      display: block;
   }
 }

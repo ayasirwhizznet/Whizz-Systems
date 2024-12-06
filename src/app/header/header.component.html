@@ -30,7 +30,7 @@
             <div class="flex justify-center items-center gap-2">
               <div class="w-56" *ngFor="let item of featuredProductItems">
                 <div class="bg-white border-[1px] border-light-gray1 pt-8 px-8 rounded-lg text-center cursor-pointer">
-                  <a class="inline-block my-1 text-dark-gray2 hover:text-teal2 text-sm font-semibold   mb-4"
+                  <a class="inline-block my-1 text-dark-gray2 hover:text-teal2 text-sm font-semibold mb-4"
                     routerLink="item.link">{{ item.label }}</a>
                   <img class="rounded-tl-lg rounded-tr-lg" src="../../assets/header/featured-products.png" />
                 </div>
@@ -42,20 +42,20 @@
               activeBottomSection === 'resources' &&
               item.dropdown === 'resources'
             "
-            class="flex gap-2 bg-card-gray absolute left-0 transform -translate-x-[70%] top-[68px] p-2 z-20 rounded-br-lg rounded-bl-lg w-[40rem]">
-            <div class="bg-white border border-1 border-light-gray1 p-6 text-xs text-nowrap rounded-lg">
+            class="flex gap-2 bg-card-gray absolute left-0 transform -translate-x-[70%] top-[68px] p-2 z-20 rounded-br-lg rounded-bl-lg w-[45rem]">
+            <div class="bg-white border border-1 border-light-gray1 p-6 text-sm text-nowrap rounded-lg w-[40rem]">
               <div *ngFor="let item of resourceItems">
                 <a class="inline-block my-1 text-dark-gray2 hover:text-teal2 font-semibold cursor-pointer"
                   routerLink="item.link">{{ item.label }}</a>
               </div>
             </div>
-            <div class="bg-dark-gray2 p-6 pb-0 rounded-lg">
-              <h3 class="text-light-gray1 text-base font-semibold text-nowrap mb-8">
+            <div class="bg-dark-gray2 p-8 pb-0 rounded-lg">
+              <h3 class="text-light-gray1 text-base font-semibold mb-8">
                 Featured Article
               </h3>
               <div class="p-6 pb-0 bg-white rounded-tl-lg rounded-tr-lg">
                 <h3 class="text-2xl font-bold text-dark-blue mb-5">
-                  Interesting Blog Title that Can Fit On Two Lines
+                  Interesting Blog Title that <br> Can Fit On Two Lines
                 </h3>
                 <img class="object-cover" src="../../assets/header/resources.png" alt="img" />
               </div>
@@ -91,9 +91,8 @@
         </svg>
       </div>
 
-      <!-- Contact button -->
       <app-cbutton heading="Contact us" icon="../../assets/header/r-arrow.svg" [size]="'medium'"
-        [routerLink]="'Thermal Management/Thermal Simulation'"></app-cbutton>
+        [routerLink]="''"></app-cbutton>
     </div>
   </div>
 
@@ -138,9 +137,9 @@
   </div>
 </header>
 
-<div *ngIf="activeBottomSection" (click)="closeMenu()" class="hidden lg:block fixed h-full w-full z-20 bg-[#00000040]">
+<div *ngIf="activeBottomSection" (click)="closeMenu()" class="hidden lg:block fixed h-full w-full z-20 bg-[#00000080]">
 </div>
-<div *ngIf="isSearchbaropen" (click)="closeMenu()" class="hidden lg:block fixed h-full w-full z-20 bg-[#00000040]">
+<div *ngIf="isSearchbaropen" (click)="closeMenu()" class="hidden lg:block fixed h-full w-full z-20 bg-[#00000080]">
 </div>
 
 

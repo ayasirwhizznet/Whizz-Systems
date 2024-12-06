@@ -28,8 +28,7 @@ export class ServicesComponent {
   servicesTab = [
     {
       title: "Engineering & Design",
-      description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting
-                      from a concept or refining a product for the market.`,
+      description: `At Whizz Systems, we deliver end-to-end engineering and design solutions with multidomain expertise and world-class manufacturing—all in-house. Our flexible approach allows you to engage with us at any stage of product development, from concept through production and beyond. We take full ownership of the process, providing sustaining engineering support to ensure your product's performance and reliability throughout its entire lifecycle.`,
       items: [
         { label: 'System Design/Schematics', link: 'System Design/Schematics' },
         { label: 'FPGA Design', link: 'FPGA Design' },

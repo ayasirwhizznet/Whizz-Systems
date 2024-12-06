@@ -138,7 +138,6 @@ export class HeaderComponent implements OnInit {
   }
 
   updateActiveMenuItem(): void {
-    // Set active menu item based on the route
     if (this.currentRoute === '/about') {
       this.activeMenuItem = 'About';
     } else if (this.currentRoute === '/services') {
@@ -148,14 +147,14 @@ export class HeaderComponent implements OnInit {
     } else if (this.currentRoute === '/resources') {
       this.activeMenuItem = 'Resources';
     } else {
-      this.activeMenuItem = null;  // Reset if no match
+      this.activeMenuItem = null;
     }
   }
 
   menu(menuItemLabel: string) {
     this.isSearchbaropen = false;
     this.activeMenuItem = menuItemLabel;
-    this.activeBottomSection = null;  // Close the dropdown section
+    this.activeBottomSection = null;
   }
 
   toggleBottomSection(type: string | null, menuItemLabel: string) {
@@ -188,13 +187,11 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const currentScroll = document.documentElement.scrollTop;
-    
     if (currentScroll > this.lastScrollTop && currentScroll > 100) {
       this.isHeaderVisible = false; 
     } else if (currentScroll < this.lastScrollTop && currentScroll > 100) {
       this.isHeaderVisible = true; 
     }
-
     this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
   }
 
