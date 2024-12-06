@@ -1,10 +1,12 @@
-<div class="px-[4%] sm:px-[9%] pt-16 ">
-  <div>
-    <div class="flex flex-col lg:flex-row items-center justify-between mb-8  gap-6 sm:gap-0">
-      <h2 class="self-start text-3xl sm:text-5xl font-bold text-dark-gray2">Testimonials</h2>
-      <div class="self-end flex items-center gap-6">
+<div class="px-[4%] sm:px-[9%] pt-24 ">
+  <div class="flex flex-col lg:flex-row items-center justify-between mb-14 gap-6 sm:gap-0">
+    <h2 class="self-start text-3xl sm:text-5xl font-bold text-dark-gray2">Testimonials</h2>
+    <div class="self-end flex items-center gap-6">
+      <div [className]="progress < 0.16 || progress < 0.15 ? 'pointer-events-none opacity-[0.6]':''">
         <app-larrowbutton (click)="prevSlide()" icon="../../assets/services/l-arrow.svg"
           size="medium"></app-larrowbutton>
+      </div>
+      <div [className]="progress  > 0.88 ? 'pointer-events-none opacity-[0.6]':''">
         <app-rarrowbutton (click)="nextSlide()" icon="../../assets/services/r-arrow.svg"
           size="medium"></app-rarrowbutton>
       </div>

@@ -22,6 +22,10 @@
     }
   }
 
+  //For keen slider
+  .keen-slider__slide{
+    transition: width  0 ease-in-out
+  }
   .keen-slider:not([data-keen-slider-disabled]) {
     align-content: flex-start;
     display: flex;
@@ -49,8 +53,8 @@
   .keen-slider:not([data-keen-slider-disabled])[data-keen-slider-v] {
     flex-wrap: wrap;
   }
-
-
+  
+// For image croping of cards
 .hover_img {
   width: 100%;
   height: 200px;
@@ -65,8 +69,6 @@ img.hover_img {
   object-fit: cover;
 }
 
-
-/* Tailwind's default config does not have rotate-x, so we need to extend it */
 @layer utilities {
   .rotate-x-180 {
     transform: rotateX(180deg);

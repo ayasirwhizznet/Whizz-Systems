@@ -9,11 +9,14 @@
                     class=" next-1 " heading="See more"
                     icon="../../assets/services/r-arrow.svg"></app-cbutton>
 
-                <app-larrowbutton (click)="prevSlide()" icon="../../assets/services/l-arrow.svg"
-                    size="medium"></app-larrowbutton>
-
-                <app-rarrowbutton (click)="nextSlide()" icon="../../assets/services/r-arrow.svg"
-                    size="medium"></app-rarrowbutton>
+                    <div [className]="progress < 0.17 || progress < 0.16 ? 'pointer-events-none opacity-[0.6]':''">
+                        <app-larrowbutton (click)="prevSlide()" icon="../../assets/services/l-arrow.svg"
+                            size="medium"></app-larrowbutton>
+                    </div>
+                    <div [className]="progress  > 0.50 ? 'pointer-events-none opacity-[0.6]':''">
+                        <app-rarrowbutton (click)="nextSlide()" icon="../../assets/services/r-arrow.svg"
+                            size="medium"></app-rarrowbutton>
+                    </div>
             </div>
         </div>
         <div class="keen-slider" #sliderRef>

@@ -57,9 +57,15 @@ a great track record with us`,
   @ViewChild("sliderRef") sliderRef = {} as ElementRef;
 
   slider: any = null;
+  progress = 0;
+  totalSlides = this.cards.length;
 
   ngAfterViewInit() {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+      slideChanged: (slider) => {
+        this.progress = slider.track.details.progress;
+        console.log(this.progress)
+      },
 
       breakpoints: {
         "(min-width: 640px)": {
@@ -77,7 +83,7 @@ a great track record with us`,
         "(min-width: 1200px)": {
           slides: {
             perView: 2.8,
-            spacing: 80,
+            spacing: 90,
           },
         
         },
@@ -87,10 +93,16 @@ a great track record with us`,
   ngOnDestroy() {
     if (this.slider) this.slider.destroy();
   }
+
   nextSlide() {
-    this.slider.next();
+    if (this.progress < this.totalSlides - 1) {
+      this.slider.next();
+    }
   }
+
   prevSlide() {
-    this.slider.prev();
+    if (this.progress > 0) {
+      this.slider.prev();
+    }
   }
 }

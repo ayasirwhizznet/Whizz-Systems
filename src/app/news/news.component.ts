@@ -32,37 +32,60 @@ export class NewsComponent {
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
+    {
+      imageUrl: '../../assets/news/img3.png',
+      date: 'July 9, 2024',
+      title: 'Interesting Blog Title that Can Fit On Two Lines',
+    },
+    {
+      imageUrl: '../../assets/news/img3.png',
+      date: 'July 9, 2024',
+      title: 'Interesting Blog Title that Can Fit On Two Lines',
+    },
+    {
+      imageUrl: '../../assets/news/img3.png',
+      date: 'July 9, 2024',
+      title: 'Interesting Blog Title that Can Fit On Two Lines',
+    },
   ];
 
   @ViewChild("sliderRef") sliderRef = {} as ElementRef;
 
   slider: any = null;
+  progress = 0;
+  totalSlides = this.cards.length;
 
   ngAfterViewInit() {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+      slideChanged: (slider) => {
+        this.progress = slider.track.details.progress;
+        console.log(this.progress)
+      },
 
       breakpoints: {
         "(min-width: 640px)": {
-          loop: true,
           slides: {
             perView: 1,
             spacing: 50,
           },
         },
         "(min-width: 768px)": {
-          loop: true,
           slides: {
             perView: 2,
             spacing: 50,
           },
         },
         "(min-width: 1200px)": {
-          loop: true,
           slides: {
             perView: 3,
             spacing: 50,
           },
-       
+        },
+        "(min-width: 1700px)": {
+          slides: {
+            perView: 3,
+            spacing: 70,
+          },
         },
       },
     });

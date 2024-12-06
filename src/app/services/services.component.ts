@@ -56,14 +56,9 @@ export class ServicesComponent {
   progress = 0;
   totalSlides = this.cards.length;
   ngAfterViewInit() {
-
-    this.totalSlides = 6;
-
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
       slideChanged: (slider) => {
-      
         this.progress = slider.track.details.progress;
-        console.log(this.progress)
       },
 
       breakpoints: {
