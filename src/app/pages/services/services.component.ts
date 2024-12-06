@@ -57,7 +57,7 @@ export class ServicesComponent {
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
       items: [
         { label: 'DFX Analysis', link: '' },
-        { label: 'Failure Mode & Effects Analysis (FMEA)', link: '' },
+        { label: 'Failure Mode and Effects Analysis (FMEA)', link: '' },
         { label: 'Thermal Profiling & Reflow Soldering Optimization', link: '' },
         { label: 'Mechanical System Build', link: '' },
         { label: 'Packaging Design', link: '' },

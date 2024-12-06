@@ -25,9 +25,9 @@ export class ThermalManagementComponent  implements OnInit {
   }
 
   coreServices:any[] = [
-    {imgUrl: '../../../assets/thermal-management/cfd.png', title: 'Thermal and CFD Analysis', desc: ' Simulating airflow and heat distribution to identify hotspots and optimize system performance.'},
+    {imgUrl: '../../../assets/thermal-management/cfd.png', title: 'Thermal and CFD Analysis', desc: 'Simulating airflow and heat distribution to identify hotspots and optimize system performance.'},
     {imgUrl: '../../../assets/thermal-management/custom-designs.png', title: 'Custom Thermal Designs', desc: 'Tailored designs for high-power components and space-limited systems.'},
-    {imgUrl: '../../../assets/thermal-management/cooling-systems.png', title: 'Advanced Cooling Systems', desc: ' Vapor chambers, cold plates, liquid cooling, and integrated heatsink-enclosure designs for complex needs.'},
+    {imgUrl: '../../../assets/thermal-management/cooling-systems.png', title: 'Advanced Cooling Systems', desc: 'Vapor chambers, cold plates, liquid cooling, and integrated heatsink-enclosure designs for complex needs.'},
     {imgUrl: '../../../assets/thermal-management/parametric.png', title: 'Parametric Studies', desc: 'Software-based thermal characterization to ensure optimal performance.'}
   ];
 
