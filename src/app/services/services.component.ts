@@ -73,13 +73,13 @@ export class ServicesComponent {
         "(min-width: 768px)": {
           slides: {
             perView: 1.96,
-            spacing: 100,
+            spacing: 80,
           },
         },
         "(min-width: 1200px)": {
           slides: {
-            perView: 2.96,
-            spacing: 90,
+            perView: 3.6,
+            spacing: 40,
           },
         },
         "(min-width: 1700px)": {

@@ -18,7 +18,7 @@
 <div class="hidden lg:block px-[5%] z-20  sticky top-[0px] overflow-x-hidden">
   <div class="p-8 flex justify-center items-center gap-4 text-center text-sm 3xl:text-base bg-white z-50">
     <a *ngFor="let link of servicesTab" (click)="toTop(link.title)"
-      class=" w-64 h-20 cursor-pointer flex justify-center items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-white font-medium rounded-lg transition-all duration-500 ease-in-out"
+      class=" w-64 h-20 cursor-pointer flex justify-center items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-white font-medium rounded-lg transition-all duration-300 ease-in-out"
       routerLink="link.url">{{link.title}}</a>
   </div>
 </div>
@@ -31,27 +31,30 @@
     </div>
     <div class="w-full lg:w-[55%] 3xl:w-[62%]">
       <div class="grid grid-cols-2 gap-4">
-        <div *ngFor="let subitem of item.items" (click)="onGoToPage2(item.title,subitem.link)"
-          class="cursor-pointer h-32 3xl:h-40 bg-lines hover:bg-none relative group col-span-2 md:col-span-1 bg-contain bg-no-repeat hover:border-none border border-light-gray1 rounded-md flex justify-start items-center overflow-hidden transition-transform duration-500 ease-in-out bg-card-gray hover:bg-transparent">
+        <div *ngFor="let subitem of item.items" (click)="onGoToPage2(item.title, subitem.link)"
+          class="cursor-pointer h-32 3xl:h-40 bg-lines hover:bg-none relative group col-span-2 md:col-span-1 bg-contain bg-no-repeat hover:border-none border border-light-gray1 rounded-md flex justify-start items-center overflow-hidden transition-transform duration-300 ease-in-out bg-card-gray hover:bg-transparent">
           <a class="inline-block">
-            <h1 class="px-6 lg:pl-6 lg:pr-12 3xl:pr-28 flex font-bold text-lg 3xl:text-2xl z-10 text-dark-gray2 group-hover:text-white transition-all duration-500 ease-in-out">
+            <h1 class="px-6 lg:pl-6 lg:pr-12 3xl:pr-28 flex font-bold text-lg 3xl:text-2xl z-10 text-dark-gray2 group-hover:text-white transition-all duration-300 ease-in-out">
               {{ subitem.label }}
             </h1>
             <div class="absolute -z-20 top-0 left-0 w-full h-full flex gap-0 group-hover:gap-3">
-              <div class="left-div w-full bg-lines bg-bottom bg-contain bg-no-repeat bg-dark-gray1 h-full rounded-md 
-                transition-width duration-500 ease-in-out 
-                group-hover:w-[88%] group-hover:bg-dark-gray1 z-10"></div>
-              
-              <div class="right-div w-0 group-hover:w-[12%] bg-teal1 h-full rounded-md flex justify-center items-center
-                transition-width duration-500 ease-in-out z-10">
-                <img class="w-5 h-5 transition-opacity duration-500" src="../../../assets/services/r-arrow.svg" alt="img">
+              <!-- left div -->
+              <div class="w-full relative bg-dark-gray1 h-full rounded-md 
+                transition-all duration-300 ease-in-out 
+                group-hover:w-[88%] group-hover:bg-dark-gray1 z-10">
+              <img class="absolute object-contain bottom-1 right-0 w-60 h-10 pointer-events-none" src="../../../assets/services/line.png"/>
+              </div>
+              <!-- right div -->
+              <div class="w-0 group-hover:w-[12%] bg-teal1 h-full rounded-md flex justify-center items-center
+                transition-all duration-300 ease-in-out z-10">
+                <img class="w-5 h-5 transition-opacity duration-300" src="../../../assets/services/r-arrow.svg" alt="img">
               </div>
             </div>
           </a>
         </div>
       </div>
-      
-      
     </div>
+    
+
   </div>
 </div>

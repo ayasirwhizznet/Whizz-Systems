@@ -13,7 +13,6 @@ module.exports = {
     extend: {
       backgroundImage: {
         lines: "url('../src/assets/services/line.png')",
-        "section-divider": "url('../src/assets/services/section-divider.png')",
         subscribe: "url('../src/assets/news/subscribe.png')",
       },
       colors: {

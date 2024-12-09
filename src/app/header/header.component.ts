@@ -26,7 +26,7 @@ export class HeaderComponent implements OnInit {
 
   menuItems = [
     { label: 'About', link: '/about', dropdown: '' },
-    { label: 'Services', dropdown: 'service', link: '/' },
+    { label: 'Services', dropdown: 'service' },
     { label: 'Featured Products', dropdown: 'featured', link: '/' },
     { label: 'Resources', dropdown: 'resources', link: '/' },
   ];
@@ -120,7 +120,7 @@ export class HeaderComponent implements OnInit {
     { label: 'Network', link: '/' },
   ];
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private route: ActivatedRoute) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationStart) {
         this.isHeaderVisible = true;
@@ -128,13 +128,31 @@ export class HeaderComponent implements OnInit {
     });
   }
 
+  titleSlug: string = '';
+  categorySlug: string = '';
+
   ngOnInit(): void {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.currentRoute = event.urlAfterRedirects;  
         this.updateActiveMenuItem();  
+        this.activeBottomSection = '';
+        this.activeMenuItem = '';
+        this.isSearchbaropen = '';
       }
     });
+
+    const title = this.route.snapshot.paramMap.get('title');
+    const category = this.route.snapshot.paramMap.get('category');
+    if (title) {
+      this.titleSlug = decodeURIComponent(title);
+      document.title = this.titleSlug;
+    }
+    if (category) {
+      this.categorySlug = decodeURIComponent(category);
+    }
+
+   
   }
 
   updateActiveMenuItem(): void {
@@ -194,5 +212,6 @@ export class HeaderComponent implements OnInit {
     }
     this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
   }
+
 
 }

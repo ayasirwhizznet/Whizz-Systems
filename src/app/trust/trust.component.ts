@@ -17,7 +17,7 @@ export class TrustComponent {
   companies = [
     '../../assets/trust/altera.png',
     '../../assets/trust/amd.png',
-    '../../assets/trust/nvidia.png',
+    '../../assets/trust/nvidia.webp',
     '../../assets/trust/amazon.png',
     '../../assets/trust/microsoft.png',
     '../../assets/trust/keysight.png',

@@ -4,7 +4,7 @@
             <h3 class="text-base font-semibold mb-2">{{ section.title }}</h3>
             <ng-container *ngFor="let item of section.items">
                 <a class="inline-block my-1 text-dark-gray2 hover:text-teal1 text-sm cursor-pointer"
-                   [routerLink]="item.link">{{ item.label }}</a><br />
+                   [routerLink]="item.link" (click)="onGoToPage2(section.title, item.link)">{{ item.label }}</a><br />
             </ng-container>
         </div>
     </ng-container>
