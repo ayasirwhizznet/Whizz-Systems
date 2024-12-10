@@ -40,7 +40,7 @@
             <div *ngFor="let service of coreServices">
                 <div class="p-8 bg-card-gray border-[1px] border-light-gray1 rounded-lg">
                     <img class="rounded-lg" [src]="service.imgUrl" alt="img">
-                    <div class=" h-[10rem] sm:h-[15rem] lg:h-[10rem]">
+                    <div class=" h-[12rem] sm:h-[15rem] lg:h-[10rem]">
                         <h3 class="font-bold mt-8 mb-5">{{service.title}}</h3>
                         <p class="font-light">{{service.desc}}</p>
                     </div>
@@ -82,7 +82,7 @@
         <p class="text-dark-gray2 font-light mb-12">Lorem ipsum dolor sit</p>
         <div class="p-8 bg-card-gray rounded-lg">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div *ngFor="let benefit of benefits; let i = index" [ngClass]="{'col-start-2 lg:col-start-2': i === 3}">
+                <div *ngFor="let benefit of benefits; let i = index" [ngClass]="{'col-start-1 sm:col-start-2': i === 3}">
                   <div class="p-8 bg-white border-[1px] border-light-gray1 rounded-lg h-[15rem]">
                     <img class="w-12 h-12" [src]="benefit.imgUrl" alt="img">
                     <h3 class="text-dark-gray2 font-medium my-4">{{benefit.title}}</h3>
