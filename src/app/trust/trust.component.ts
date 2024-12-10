@@ -2,7 +2,7 @@ import KeenSlider from 'keen-slider';
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, ViewChild } from '@angular/core';
 
-const animation = { duration: 5000, easing: (t: number) => t };
+const animation = { duration: 7000, easing: (t: number) => t };
 
 @Component({
   selector: 'app-trust',
@@ -17,7 +17,7 @@ export class TrustComponent {
   companies = [
     '../../assets/trust/altera.png',
     '../../assets/trust/amd.png',
-    '../../assets/trust/nvidia.webp',
+    '../../assets/trust/nvidia.png',
     '../../assets/trust/amazon.png',
     '../../assets/trust/microsoft.png',
     '../../assets/trust/keysight.png',
@@ -27,17 +27,17 @@ export class TrustComponent {
     '../../assets/trust/broadcom.png',
   ];
 
+
   @ViewChild("sliderRef") sliderRef = {} as ElementRef;
 
   slider: any = null;
 
   ngAfterViewInit() {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
-
       breakpoints: {
         "(min-width: 0px)": {
           loop: true,
-          renderMode: "performance",
+          renderMode: "precision",
           drag: false,
 
           slides: {
@@ -56,7 +56,7 @@ export class TrustComponent {
         },
         "(min-width: 768px)": {
           loop: true,
-          renderMode: "performance",
+          renderMode: "precision",
           drag: false,
 
           slides: {
@@ -75,7 +75,7 @@ export class TrustComponent {
         },
         "(min-width: 1200px)": {
           loop: true,
-          renderMode: "performance",
+          renderMode: "precision",
           drag: false,
 
           slides: {
@@ -93,19 +93,10 @@ export class TrustComponent {
           },
         },
       }
-
     })
   }
 
   ngOnDestroy() {
     if (this.slider) this.slider.destroy()
-  }
-
-  nextSlide() {
-    this.slider.next();
-  }
-
-  prevSlide() {
-    this.slider.prev();
   }
 }

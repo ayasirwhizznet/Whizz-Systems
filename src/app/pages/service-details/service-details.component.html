@@ -1,31 +1,19 @@
-<!-- n  bb -->
 <div [ngSwitch]="titleSlug">
-    <div *ngSwitchCase="'3D Modeling/Mechanical Engineering'">
-      <app-modeling></app-modeling>
-    </div>
-  
-    <div *ngSwitchCase="'Thermal Management/Thermal Simulation'">
-      <app-thermal-management></app-thermal-management>
-    </div>
-    <div *ngSwitchCase="'System Level Architecture'">
-      <app-npi></app-npi>
-    </div>
-    <div *ngSwitchCase="'Engineering & Design'">
-      <app-npi></app-npi>
-    </div>
-    <div *ngSwitchCase="'Prototyping'">
-      <app-npi></app-npi>
-    </div>
-    <div *ngSwitchCase="'Testing'">
-      <app-npi></app-npi>
-    </div>
-    <div *ngSwitchCase="'Compliance and Certification'">
-      <app-npi></app-npi>
-    </div>
-  
-    
-    <div *ngSwitchDefault>
-      <h1 class="grid place-items-center h-lvh text-3xl">Services not found.</h1>
-    </div>
+  <div *ngSwitchCase="'System Design/Schematics'">
+    <app-system-design></app-system-design>
   </div>
-  
+  <div *ngSwitchCase="'3D Modeling/Mechanical Engineering'">
+    <app-modeling></app-modeling>
+  </div>
+
+  <div *ngSwitchCase="'Thermal Management/Thermal Simulation'">
+    <app-thermal-management></app-thermal-management>
+  </div>
+  <div *ngSwitchCase="'System Level Architecture'">
+    <app-npi></app-npi>
+  </div>
+
+  <div *ngSwitchDefault>
+    <h1 class="grid place-items-center h-lvh text-3xl">Services not found.</h1>
+  </div>
+</div>
