@@ -52,14 +52,17 @@ export class NewsComponent {
   @ViewChild("sliderRef") sliderRef = {} as ElementRef;
 
   slider: any = null;
-  progress = 0;
+  progress = {
+    maxIdx:6,
+    abs:0,
+  };
   totalSlides = this.cards.length;
 
   ngAfterViewInit() {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
       slideChanged: (slider) => {
-        this.progress = slider.track.details.progress;
-        console.log(this.progress)
+        this.progress = slider.track.details;
+        console.log(this.slider.track.details)
       },
 
       breakpoints: {

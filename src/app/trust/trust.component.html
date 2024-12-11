@@ -1,13 +1,17 @@
 <div class="py-16 ">
     <h2 class="text-4xl sm:text-5xl font-bold text-center mb-6 text-dark-gray2">Trusted by</h2>
     <p class="text-lg text-center mb-10 text-dark-gray1 px-4 sm:px-0">Partnering with leading companies to redefine what’s possible.</p>
-    <div class="flex items-center">
-        <div class="keen-slider " #sliderRef>
-            <div class="keen-slider__slide" *ngFor="let company of companies">
-                <div class="w-36 h-36 lg:w-32 lg:h-32 flex items-center">
-                    <img class="object-contain" [src]="company" alt="Company logo">
-                </div>
+    <div class="slider">
+        <div class="slide-track">
+
+            <div *ngFor="let item of companies" class="slide">
+                <img [src]="item" width="250px" height="100px" class="object-cover" />
             </div>
+
+            <div *ngFor="let item of companies" class="slide">
+                <img [src]="item" width="250px" height="100px" class="object-cover" />
+            </div>
+            
         </div>
     </div>
 </div>

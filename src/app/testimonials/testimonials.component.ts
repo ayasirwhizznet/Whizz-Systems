@@ -41,7 +41,7 @@ a great track record with us`,
       designation: 'Marketing at Xilinix'
     },
     {
-      desc: 'Morbi molestie, quam vel volutpat finibus, libero nisl congue velit, sit amet porta velit felis quis arcu. Fusce nisi risus, placerat in facilisis vel, finibus nec nisl. Fusce porttitor ex erat, quis lacinia erat porttitor eu. In interdum ipsum feugiat libero viverra, id feugiat neque blandit. Donec suscipit pharetra diam a feugiat. Ut vitae urna quis sapien euismod venenatis. Morbi sed libero justo. Quisque pellentesque finibus lacus, ut egestas elit hendrerit nec. Maecenas ultrices, arcu at iaculis tempor, ex magna pellentesque elit, id tempus ipsum dui eu orci. Vivamus a vulputate neque.',
+      desc: 'Morbi molestie, quam vel volutpat finibus, libero nisl congue velit, sit amet porta velit felis quis arcu. Fusce nisi risus, placerat in facilisis vel, finibus nec nisl. Fusce porttitor ex erat, quis lacinia erat porttitor eu. In interdum ipsum feugiat libero viverra, id feugiat neque blandit. Donec suscipit pharetra diam a feugiat.',
       imageUrl: '../../assets/testimonials/profile.png',
       name: 'Stevan Logan',
       designation: 'Marketing at Xilinix'
@@ -57,14 +57,17 @@ a great track record with us`,
   @ViewChild("sliderRef") sliderRef = {} as ElementRef;
 
   slider: any = null;
-  progress = 0;
+  progress = {
+    maxIdx:4,
+    abs:0
+  };
   totalSlides = this.cards.length;
 
   ngAfterViewInit() {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
       slideChanged: (slider) => {
-        this.progress = slider.track.details.progress;
-        console.log(this.progress)
+        this.progress = slider.track.details;
+        console.log(this.slider.track.details)
       },
 
       breakpoints: {
@@ -82,7 +85,8 @@ a great track record with us`,
         },
         "(min-width: 1200px)": {
           slides: {
-            perView: 2.8,
+            perView: 
+            3,
             spacing: 90,
           },
         
@@ -95,14 +99,14 @@ a great track record with us`,
   }
 
   nextSlide() {
-    if (this.progress < this.totalSlides - 1) {
-      this.slider.next();
-    }
-  }
 
-  prevSlide() {
-    if (this.progress > 0) {
-      this.slider.prev();
-    }
-  }
+    this.slider.next();
+ 
+}
+
+prevSlide() {
+ 
+    this.slider.prev();
+
+}
 }

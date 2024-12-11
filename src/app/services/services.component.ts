@@ -53,38 +53,42 @@ export class ServicesComponent {
   @ViewChild("sliderRef") sliderRef = {} as ElementRef;
 
   slider: any = null;
-  progress = 0;
+  progress = {
+    maxIdx:5,
+    abs:0
+  };
   totalSlides = this.cards.length;
+  
   ngAfterViewInit() {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
       slideChanged: (slider) => {
-        this.progress = slider.track.details.progress;
+        this.progress = slider.track.details;
       },
 
       breakpoints: {
         "(min-width: 640px)": {
           
           slides: {
-            perView: 0.96,
+            perView: 1,
             spacing: 30,
           },
           
         } ,
         "(min-width: 768px)": {
           slides: {
-            perView: 1.96,
+            perView:2,
             spacing: 80,
           },
         },
         "(min-width: 1200px)": {
           slides: {
-            perView: 3.6,
+            perView: 4,
             spacing: 40,
           },
         },
         "(min-width: 1700px)": {
           slides: {
-            perView: 3.96,
+            perView: 4,
             spacing: 70,
           },
         },
@@ -96,15 +100,15 @@ export class ServicesComponent {
   }
 
   nextSlide() {
-    if (this.progress < this.totalSlides - 1) {
+
       this.slider.next();
-    }
+   
   }
 
   prevSlide() {
-    if (this.progress > 0) {
+   
       this.slider.prev();
-    }
+ 
   }
   
 }

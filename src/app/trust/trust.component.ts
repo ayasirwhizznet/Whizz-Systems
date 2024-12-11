@@ -45,13 +45,13 @@ export class TrustComponent {
             spacing: 30,
           },
           created(s) {
-            s.moveToIdx(5, true, animation)
+            s.moveToIdx(15, true, animation)
           },
           updated(s) {
-            s.moveToIdx(s.track.details.abs + 5, true, animation)
+            s.moveToIdx(s.track.details.abs + 15, true, animation)
           },
           animationEnded(s) {
-            s.moveToIdx(s.track.details.abs + 5, true, animation)
+            s.moveToIdx(s.track.details.abs + 15, true, animation)
           },
         },
         "(min-width: 768px)": {
@@ -79,8 +79,9 @@ export class TrustComponent {
           drag: false,
 
           slides: {
-            perView: 5,
+            perView: 4.5,
             spacing: 50,
+            
           },
           created(s) {
             s.moveToIdx(5, true, animation)
