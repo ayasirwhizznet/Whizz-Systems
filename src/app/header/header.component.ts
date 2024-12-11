@@ -35,7 +35,7 @@ export class HeaderComponent implements OnInit {
     {
       title: 'Engineering & Design',
       items: [
-        { label: 'System Design/Schematics', link: '/' },
+        { label: 'System Design/Schematics', link: 'System Design/Schematics' },
         { label: 'FPGA Design', link: '/' },
         { label: 'PCB Layout', link: '/' },
         { label: '3D Modeling/Mechanical Engineering', link: '3D Modeling/Mechanical Engineering' },
