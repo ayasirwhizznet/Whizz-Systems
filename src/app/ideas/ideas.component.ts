@@ -13,7 +13,7 @@ export class IdeasComponent {
  achievemnets = [
   {quantity: '25', desc: 'Years of building growth'},
   {quantity: '10', desc: 'Industries served'},
-  {quantity: 'xx', desc: 'Projects completed'},
+  {quantity: '10K', desc: 'Projects completed'},
  ];
 
  certifications = [
