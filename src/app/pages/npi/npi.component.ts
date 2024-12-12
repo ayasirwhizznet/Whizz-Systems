@@ -69,7 +69,6 @@ export class NpiComponent implements OnInit {
     }
     if (category) {
       this.categorySlug = decodeURIComponent(category);
-     
     }
   }
 
