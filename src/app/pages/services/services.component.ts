@@ -45,7 +45,7 @@ export class ServicesComponent {
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
       items: [
         { label: 'System Level Architecture', link: 'System Level Architecture' },
-        { label: 'Engineering & Design', link: 'Engineering & Design' },
+        { label: 'Engineering and Design', link: 'Engineering and Design' },
         { label: 'Prototyping', link: 'Prototyping' },
         { label: 'Testing', link: 'Testing' },
         { label: 'Compliance and Certification', link: 'Compliance and Certification' }

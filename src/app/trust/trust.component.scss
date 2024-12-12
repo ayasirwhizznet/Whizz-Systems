@@ -1,26 +1,36 @@
-$animationSpeed: 10s;
+$animationSpeed: 18s; /* Adjust to your desired speed */
+$gap: 20px; /* Space between slides */
+$slideWidth: 280px; /* Width of each slide */
 
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 10))}
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-1 * ($slideWidth + $gap) * 10));
+    }
 }
 
 .slider {
-	height: 100px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	width: auto;
-	
-	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
-        gap:100px;
-		width: calc(250px * 20);
-	}
-	.slide {
-		height: 100px;
-		width: 250px;
-        
-	}
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Set to your desired width */
+}
+
+.slide-track {
+    display: flex;
+    animation: scroll $animationSpeed linear infinite;
+    gap: $gap;
+    width: calc(($slideWidth + $gap) * 20); /* Total width of 20 slides (10 original + 10 duplicate) */
+}
+
+.slide {
+    height: 100px;
+    width: $slideWidth;
+}
+
+img {
+    object-fit: cover;
 }

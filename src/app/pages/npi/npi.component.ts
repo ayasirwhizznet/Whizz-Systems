@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { CbuttonComponent } from '../../cbutton/cbutton.component';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -10,8 +10,8 @@ import { ActivatedRoute, Router } from '@angular/router';
   templateUrl: './npi.component.html',
   styleUrl: './npi.component.scss'
 })
-export class NpiComponent {
-
+export class NpiComponent implements OnInit {
+  
   npiTab = [
     { title: 'System Level Architecture' },
     { title: 'Engineering and Design' },
@@ -21,7 +21,7 @@ export class NpiComponent {
   ];
 
   toTop(id: string) {
-    const element = document.getElementById(id);
+    const element = document.getElementById(id?.replaceAll(/\s/g,''));
     if (element) {
       const offset = 150;
       const topPosition = element.offsetTop - offset;
@@ -50,18 +50,26 @@ export class NpiComponent {
   titleSlug: string = '';
   categorySlug: string = '';
 
-  constructor(private route: ActivatedRoute, private router: Router) { }
+  constructor(private route: ActivatedRoute, private router: Router,private renderer: Renderer2) { }
 
   ngOnInit(): void {
     const title = this.route.snapshot.paramMap.get('title');
     const category = this.route.snapshot.paramMap.get('category');
-    console.log(title, category);
     if (title) {
       this.titleSlug = decodeURIComponent(title);
       document.title = this.titleSlug;
+     if(category === 'NPI'){
+      console.log(this.titleSlug.replaceAll(/\s/g,''));
+      setTimeout(() => {
+        const element = this.renderer.selectRootElement(`#${`${title}`?.replaceAll(/\s/g,'')}`, true);
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 0);
+      
+     }
     }
     if (category) {
       this.categorySlug = decodeURIComponent(category);
+     
     }
   }
 
