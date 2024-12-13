@@ -48,7 +48,7 @@ export class ServicesComponent {
         { label: 'Engineering and Design', link: 'Engineering and Design' },
         { label: 'Prototyping', link: 'Prototyping' },
         { label: 'Testing', link: 'Testing' },
-        { label: 'Compliance and Certification', link: 'Compliance and Certification' }
+        { label: 'Compliance and Certification', link: 'Compliance' }
       ]
     },
     {
