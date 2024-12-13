@@ -20,14 +20,23 @@ export class ServiceDetailsComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    const title = this.route.snapshot.paramMap.get('title');
-    const category = this.route.snapshot.paramMap.get('category');
-    if (title) {
-      this.titleSlug = decodeURIComponent(title);
-      document.title = this.titleSlug;
-    }
-    if (category) {
-      this.categorySlug = decodeURIComponent(category);
-    }
+    // Subscribe to route parameter changes
+    this.route.paramMap.subscribe(params => {
+      const title = params.get('title');
+      const category = params.get('category');
+
+      if (title) {
+        this.titleSlug = decodeURIComponent(title);
+        document.title = this.titleSlug; 
+      }
+
+      if (category) {
+        this.categorySlug = decodeURIComponent(category);
+      }
+
+     
+    });
   }
+
+ 
 }

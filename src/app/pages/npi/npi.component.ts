@@ -13,11 +13,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class NpiComponent implements OnInit {
   
   npiTab = [
-    { title: 'System Level Architecture' },
-    { title: 'Engineering and Design' },
-    { title: 'Prototyping' },
-    { title: 'Testing' },
-    { title: 'Compliance' },
+    { title: 'System Level Architecture'},
+    { title: 'Engineering and Design'},
+    { title: 'Prototyping'},
+    { title: 'Testing'},
+    { title: 'Compliance'},
   ];
 
   toTop(id: string) {
@@ -50,7 +50,7 @@ export class NpiComponent implements OnInit {
   titleSlug: string = '';
   categorySlug: string = '';
 
-  constructor(private route: ActivatedRoute, private router: Router,private renderer: Renderer2) { }
+  constructor(private route: ActivatedRoute, private router: Router, private renderer: Renderer2) { }
 
   ngOnInit(): void {
     const title = this.route.snapshot.paramMap.get('title');
@@ -64,7 +64,6 @@ export class NpiComponent implements OnInit {
         const element = this.renderer.selectRootElement(`#${`${title}`?.replaceAll(/\s/g,'')}`, true);
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 0);
-      
      }
     }
     if (category) {
