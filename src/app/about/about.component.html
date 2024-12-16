@@ -1,121 +1,133 @@
 <!-- Hero -->
-<div class="px-[4%] sm:px-[5%] mb-10 lg:mb-32 overflow-x-hidden">
-    <div class="px-8 py-12 lg:px-0 lg:py-0 lg:pl-16 bg-dark-gray2 rounded-2xl flex items-center lg:gap-12">
-        <div class="w-full lg:w-1/2 3xl:w-[45%] text-white">
-            <h2 class="text-3xl lg:text-5xl 3xl:text-[56px] lg:leading-[60px] 3xl:leading-[67px] font-bold">Your
-                End-to-End Electronics Design & Manufacturing Partner</h2>
-            <p class="text-xl font-light mt-6 mb-8">Innovative Solutions. Global Expertise. Proven Excellence.</p>
-            <app-cbutton [heading]="'Get Started with us'" [icon]="'../../../assets/services/r-arrow.svg'"
-                [size]="'medium'"></app-cbutton>
-        </div>
-        <div class="hidden lg:block lg:w-1/2 3xl:w-[55%] relative rounded-tl-[100px] ">
-            <video
-                class="absolute inset-0 w-full h-full object-cover z-0 rounded-tl-[100px] rounded-tr-lg rounded-bl-[100px] rounded-br-lg"
-                loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
-                <source src="../../assets/hero/waves1.mp4" type="video/mp4">
-            </video>
-            <div
-                class="absolute inset-0 bg-[#00a99f] opacity-70 z-10 rounded-tl-[100px] rounded-tr-lg rounded-bl-[100px] rounded-br-lg">
-            </div>
-            <p class="relative z-20 grid place-items-center lg:h-[38rem] 3xl:h-[48rem] w-[60rem]"></p>
+<div class="px-[4%] sm:px-[5%] mb-8 lg:mb-32">
+    <div class="relative px-8 lg:px-16 py-12 lg:py-44 3xl:py-56">
+        <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-2xl" loop muted autoplay
+            oncanplay="this.play()" onloadedmetadata="this.muted = true">
+            <source src="../../assets/hero/waves1.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-[#00a99f] opacity-70 z-[5] rounded-2xl"></div>
+        <div class="max-w-xl relative z-10 text-white">
+            <h1 class="text-4xl lg:text-5xl 3xl:text-[56px] lg:leading-[60px] 3xl:leading-[67px] font-bold">Your
+                end-to-end electronics design & manufacturing partner</h1>
+            <p class="text-xl font-light mt-6 mb-8">Innovative solutions. Global expertise. Proven excellence.</p>
+            <app-cbutton [size]="'medium'" heading="Get Started with Us" icon="../../assets/hero/r-arrow.svg"
+                [routerLink]="'routerLink'"></app-cbutton>
         </div>
     </div>
 </div>
 
 
 <div class="px-[4%] sm:px-[8%]">
-    <!-- Main -->
+    <!-- Legacy -->
+    <div class="flex flex-col lg:flex-row items-center gap-96 mb-8 lg:mb-32">
+        <div class="w-1/2">
+            <h2 class="text-3xl lg:text-5xl lg:leading-[57.6px] text-dark-gray2 font-medium">A Legacy of Excellence, A
+                Future of Innovation</h2>
+            <h4 class="text-dark-gray2 text-xl mt-4 mb-4">Delivering Advanced Electronics Solutions Since 1989</h4>
+            <img class="w-52" src="../../assets/about/s-line.png" alt="image">
+            <p class="text-dark-gray2 font-light mt-4 mb-8">Whizz Systems is a leading provider of electronic product
+                design, development, and manufacturing services, proudly located in the heart of Silicon Valley. Since
+                our inception in 1989, we’ve transformed from a specialized PCB design team into a multidisciplinary
+                powerhouse, bringing deep expertise across engineering and design, new product introduction (NPI),
+                advanced manufacturing, lab testing solutions, sustainable engineering, and end-to-end supply chain
+                management.</p>
+            <p class="text-dark-gray2 font-light">We serve a diverse range of industries—including defense and
+                aerospace, medical devices, automotive, consumer electronics, AI computing, and
+                telecommunications—earning the trust of both Fortune 100 companies and innovative startups. For over 30
+                years, we’ve been the go-to partner for turning groundbreaking ideas into market-ready products,
+                delivering exceptional quality, reliability, and innovation at every stage of the product lifecycle.</p>
+        </div>
+        <div class="w-1/2">
+            <img src="../../assets/about/legacy.png" alt="image">
+        </div>
+    </div>
+
     <div>
-        <img class="object-cover mx-auto px-6 sm:px-16 lg:px-20 mt-13 mb-10"
+        <img class="object-cover mx-auto px-6 sm:px-16 lg:px-20 mt-13 mb-16"
             src="../../assets/ideas/section-divider1.png" alt="img">
-        <h2
-            class="text-4xl lg:text-[64px] lg:leading-[76.8px] font-medium text-teal2 text-center mt-16 sm:mt-24 lg:mt-36 mb-8">
-            25+ Years
-        </h2>
-        <p class="text-2xl sm:text-5xl font-medium text-light-gray2 text-center mb-12 sm:mb-20 lg:mb-32">of Building
-            Growth in Electronic <br> Design &
-            Manufacturing
-        </p>
-        <img class="object-cover mx-auto px-6 sm:px-16 lg:px-20" src="../../assets/testimonials/section-divider2.png"
-            alt="img">
     </div>
 
     <!-- 25+ -->
-    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-44 mb-12 lg:mb-32 mt-12 lg:mt-32">
-        <div class="w-full lg:w-1/2 order-2 lg:order-1 p-8 md:p-16 lg:p-0 ">
-            <img class="object-cover" src="../../assets/about/img.png" alt="img">
+    <div class="flex flex-col lg:flex-row items-center gap-32 mb-8 lg:mb-32">
+        <div class="w-1/2 py-20">
+            <h2 class="text-[64px] leading-[76.8px] text-dark-gray2 font-light"><span
+                    class="text-[64px] leading-[76.8px] text-teal2 font-medium">25+ Years</span> of Building Growth in
+                Electronic Design & Manufacturing</h2>
         </div>
-        <div class="w-full lg:w-1/2 order-1 lg:order-0">
-            <h2 class="text-[40px] leading-[48px] text-light-gray2 font-light mb-4 text-center">25+ Years</h2>
-            <p class="text-light-gray2 text-2xl sm:text-3xl font-light text-center px-8 lg:px-5">Pioneering in
-                electronics design and
-                manufacturing since 1999</p>
+        <div class="w-1/2 flex flex-wrap justify-between items-between">
+            <div class="w-1/2 px-10 mb-16 flex justify-start items-start">
+                <div class="text-center">
+                    <h3 class="text-5xl text-dark-gray2 font-bold">{{experience[0].quantity}}<span
+                            class="text-4xl text-dark-gray2 font-bold">{{experience[0].sign}}</span></h3>
+                    <h3 class="text-2xl text-dark-gray2 font-bold">{{experience[0].title}}</h3>
+                    <hr class="max-w-36 mx-auto border border-light-gray1 my-2">
+                    <p class="text-xl text-dark-gray2 font-light">{{experience[0].desc}}</p>
+                </div>
+            </div>
+
+            <div class="w-1/2 px-6 mb-16 flex justify-end items-start">
+                <div class="text-center">
+                    <h3 class="text-5xl text-dark-gray2 font-bold">{{experience[1].quantity}}<span
+                            class="text-4xl text-dark-gray2 font-bold">{{experience[1].sign}}</span></h3>
+                    <h3 class="text-2xl text-dark-gray2 font-bold">{{experience[1].title}}</h3>
+                    <hr class="max-w-36 mx-auto border border-light-gray1 my-2">
+                    <p class="text-xl text-dark-gray2 font-light">{{experience[1].desc}}</p>
+                </div>
+            </div>
+
+            <div class="w-1/2 px-20 flex justify-start items-end">
+                <div class="text-center">
+                    <h3 class="text-5xl text-dark-gray2 font-bold">{{experience[2].quantity}}<span
+                            class="text-4xl text-dark-gray2 font-bold">{{experience[2].sign}}</span></h3>
+                    <h3 class="text-2xl text-dark-gray2 font-bold">{{experience[2].title}}</h3>
+                    <hr class="max-w-36 mx-auto border border-light-gray1 my-2">
+                    <p class="text-xl text-dark-gray2 font-light">{{experience[2].desc}}</p>
+                </div>
+            </div>
+
+            <div class="w-1/2 px-10 flex justify-end items-end">
+                <div class="text-center">
+                    <h3 class="text-5xl text-dark-gray2 font-bold">{{experience[3].quantity}}<span
+                            class="text-4xl text-dark-gray2 font-bold">{{experience[3].sign}}</span></h3>
+                    <h3 class="text-2xl text-dark-gray2 font-bold">{{experience[3].title}}</h3>
+                    <hr class="max-w-36 mx-auto border border-light-gray1 my-2">
+                    <p class="text-xl text-dark-gray2 font-light">{{experience[3].desc}}</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- 10+ -->
-    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-44 mb-12 lg:mb-32">
-        <div class="w-full lg:w-1/2">
-            <h2 class="text-[40px] leading-[48px] text-light-gray2 font-light mb-4 text-center">10+ Industries Served
-            </h2>
-            <p class="text-light-gray2 text-3xl font-light text-center px-8 sm:px-20 lg:px-10 3xl:px-20">Automotive,
-                medical, aerospace, consumer
-                electronics, and more</p>
-        </div>
-        <div class="w-full lg:w-1/2 p-8 md:p-16 lg:p-0 ">
-            <img class="object-cover" src="../../assets/about/img.png" alt="img">
-        </div>
+    <div>
+        <img class="object-cover mx-auto px-6 sm:px-16 lg:px-20 mt-13 mb-16"
+            src="../../assets/testimonials/section-divider2.png" alt="img">
     </div>
 
-    <!-- 10k+ -->
-    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-44 mb-12 lg:mb-32">
-        <div class="w-full lg:w-1/2 order-2 lg:order-1 p-8 md:p-16 lg:p-0 ">
-            <img class="object-cover" src="../../assets/about/img.png" alt="img">
-        </div>
-        <div class="w-full lg:w-1/2 order-1 lg:order-0">
-            <h2 class="text-[40px] leading-[48px] text-light-gray2 font-light mb-4 text-center">10K+ Projects Completed
-            </h2>
-            <p class="text-light-gray2 text-3xl font-light text-center px-32 lg:px-16 3xl:px-[104px]">Trusted globally
-                for delivering complex
-                solutions</p>
-        </div>
+    <div class="px-16 text-center lg:mb-32">
+        <h2 class="text-5xl text-dark-gray2 font-medium">Our Unique Approach to Accelerate Your Product Journey</h2>
+        <h3 class="text-xl text-dark-gray2 my-4">Comprehensive, Expert Solutions Designed to Meet Your Unique Needs</h3>
+        <hr class="max-w-60 mx-auto border border-light-gray1 mb-4">
+        <p class="text-dark-gray2 font-light mx-auto max-w-[38rem]">With decades of experience serving diverse industries, we’ve tailored our approach to provide everything you need for a seamless, efficient product launch. By consolidating design, prototyping, manufacturing, and compliance under one roof, we eliminate bottlenecks and accelerate your path to market.</p>
     </div>
-
-    <!-- 140+ -->
-    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-44 mb-12 lg:mb-32">
-        <div class="w-full lg:w-1/2">
-            <h2 class="text-[40px] leading-[48px] text-light-gray2 font-light mb-4 text-center">140+ Experts</h2>
-            <p class="text-light-gray2 text-3xl font-light text-center px-32 lg:px-14 3xl:px-32">A skilled team driving
-                innovation
-                and excellence</p>
-        </div>
-        <div class="w-full lg:w-1/2 p-8 md:p-16 lg:p-0 ">
-            <img class="object-cover" src="../../assets/about/img.png" alt="img">
-        </div>
-    </div>
-
-    <!-- 450+ -->
-    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-44 mb-12 lg:mb-32">
-        <div class="w-full lg:w-1/2 order-2 lg:order-1 p-8 md:p-16 lg:p-0 ">
-            <img class="object-cover" src="../../assets/about/img.png" alt="img">
-        </div>
-        <div class="w-full lg:w-1/2 order-1 lg:order-0">
-            <h2 class="text-[40px] leading-[48px] text-light-gray2 font-light mb-4 text-center">450+ Customers Worldwide
-            </h2>
-            <p class="text-light-gray2 text-3xl font-light text-center px-28 lg:px-12 3xl:px-24">Supporting a diverse
-                client base of
-                industry leaders</p>
+    <!--Concisely -->
+    <div
+        class="mb-12 lg:mb-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10  sm:gap-y-16 sm:gap-x-20 lg:gap-x-24">
+        <div *ngFor="let item of concisely" class="mx-auto">
+            <div class=" w-[270px] h-[253px] p-8 bg-dark-gray1 rounded-lg text-white text-center ">
+                <img class="w-12 mx-auto object-cover" [src]="item.imgUrl" alt="">
+                <h4 class="font-semibold my-2">{{item.title}}</h4>
+                <p class="font-light">{{item.desc}}</p>
+            </div>
         </div>
     </div>
 
     <!-- Certifications -->
     <div class="mb-12 lg:mb-32">
-        <h2 class="text-3xl sm:text-[40px] leading-[48px] text-light-gray2 font-light text-center">Recognized for
+        <h2 class="text-3xl sm:text-5xl text-dark-gray2 font-medium text-center">Recognized for
             Excellence and
             Compliance</h2>
-        <p class="text-lg text-light-gray2 font-light mt-6 mb-16 text-center">Whizz Systems maintains industry-leading
-            certifications to ensure the highest <br class="hidden sm:block">
-            standards of quality, security, and compliance.</p>
+        <hr class="max-w-52 mx-auto border border-light-gray1 my-4">
+
+        <p class="max-w-[38rem] mx-auto text-dark-gray2 text-center font-light mb-16">We take pride in delivering exceptional solutions that meet the highest standards of quality and reliability. Our excellence has been recognized with numerous industry certifications and prestigious awards, including the <i>Outstanding Supplier Award – Development Systems </i> from Xilinx for our contributions to the launch of the Gen 6 Spartan and Virtex product families.</p>
         <div class="flex justify-center lg:justify-around items-center flex-wrap gap-10 sm:gap-20">
             <div *ngFor="let item of certifications" class="flex flex-col items-center">
                 <img class="w-28 h-28 mb-6" [src]="item.imgUrl" alt="">
@@ -123,35 +135,5 @@
             </div>
         </div>
     </div>
-
-
-
-    <!--Concisely -->
-    <div
-        class="mb-12 lg:mb-32 grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4 gap-y-10  sm:gap-y-16 sm:gap-x-20 lg:gap-x-28 ">
-        <div *ngFor="let item of concisely" class="mx-auto">
-            <div class=" w-[250px] h-[250px] px-[18px] py-[14px] bg-dark-gray1 rounded-lg text-white text-center ">
-                <h4 class="font-semibold mt-16 mb-2">{{item.title}}</h4>
-                <p class="font-light mb-16">{{item.desc}}</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Unique Approach -->
-    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-12 lg:mb-16">
-        <div class="w-full lg:w-[45%] order-2 lg:order-1 p-8 md:p-16 lg:p-0 ">
-            <img class="object-cover" src="../../assets/about/unique-approach.png" alt="img">
-        </div>
-        <div class="w-full lg:w-[50%] order-1 lg:order-0">
-            <h4 class="text-teal1 font-bold">Our Unique Approach</h4>
-            <h3 class="text-dark-gray2 text-2xl font-medium my-4">All under one roof–flexible to engage at any level
-            </h3>
-            <h4 class="text-dark-gray2 text-2xl font-medium mb-4">We are the extension of your hardware team</h4>
-            <p class="text-dark-gray2 font-light">At Whizz Systems, we offer everything under one roof—end-to-end
-                electronics design and manufacturing services. However, we understand every project is unique, which is
-                why we are flexible to engage at any level of the product lifecycle. Whether you need us to handle your
-                entire project or to take over at a specific stage, we ensure you get the results you need, faster and
-                with better quality.</p>
-        </div>
-    </div>
+    
 </div>
