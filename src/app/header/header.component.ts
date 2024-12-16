@@ -47,11 +47,11 @@ export class HeaderComponent implements OnInit {
     {
       title: 'NPI',
       items: [
-        { label: 'System Level Architecture', link: '/' },
-        { label: 'Engineering & Design', link: '/' },
-        { label: 'Prototyping', link: '/' },
-        { label: 'Testing', link: '/' },
-        { label: 'Compliance and Certification', link: '/' },
+        { label: 'System Level Architecture', link: 'System Level Architecture' },
+        { label: 'Engineering & Design', link: 'Engineering and Design' },
+        { label: 'Prototyping', link: 'Prototyping' },
+        { label: 'Testing', link: 'Testing' },
+        { label: 'Compliance and Certification', link: 'Compliance' },
       ],
     },
     {
