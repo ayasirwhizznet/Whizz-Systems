@@ -1,6 +1,5 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
-import { Cbutton1Component } from '../../cbutton1/cbutton1.component';
 import { NewsComponent } from "../../news/news.component";
 import { Cbutton3Component } from '../../cbutton3/cbutton3.component';
 import { Cbutton2Component } from '../../cbutton2/cbutton2.component';
