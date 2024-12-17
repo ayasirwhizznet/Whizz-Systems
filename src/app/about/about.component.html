@@ -1,15 +1,15 @@
 <!-- Hero -->
-<div class="px-[4%] sm:px-[5%] mb-8 lg:mb-32">
-    <div class="relative px-8 lg:px-16 py-12 lg:py-44 3xl:py-56">
+<div class="px-[4%] sm:px-[5%] mb-12 lg:mb-32">
+    <div class="relative px-8 lg:px-16 py-12 lg:py-40 3xl:py-56">
         <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-2xl" loop muted autoplay
             oncanplay="this.play()" onloadedmetadata="this.muted = true">
             <source src="../../assets/hero/waves1.mp4" type="video/mp4">
         </video>
-        <div class="absolute inset-0 bg-[#00a99f] opacity-70 z-[5] rounded-2xl"></div>
+        <div class="absolute inset-0 bg-[#00a99f] opacity-80 z-[5] rounded-2xl"></div>
         <div class="max-w-xl relative z-10 text-white">
-            <h1 class="text-4xl lg:text-5xl 3xl:text-[56px] lg:leading-[60px] 3xl:leading-[67px] font-bold">Your
+            <h1 class="text-4xl lg:text-5xl 3xl:text-[56px] lg:leading-[60px] 3xl:leading-[67.2px] font-bold">Your
                 end-to-end electronics design & manufacturing partner</h1>
-            <p class="text-xl font-light mt-6 mb-8">Innovative solutions. Global expertise. Proven excellence.</p>
+            <p class="text-xl font-extralight mt-6 mb-8">Innovative solutions. Global expertise. Proven excellence.</p>
             <app-cbutton [size]="'medium'" heading="Get Started with Us" icon="../../assets/hero/r-arrow.svg"
                 [routerLink]="'routerLink'"></app-cbutton>
         </div>
@@ -19,13 +19,13 @@
 
 <div class="px-[4%] sm:px-[8%]">
     <!-- Legacy -->
-    <div class="flex flex-col lg:flex-row items-center gap-20 lg:gap-44 3xl:gap-96 mb-8 lg:mb-32">
+    <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-44 3xl:gap-96 mb-12 lg:mb-32">
         <div class="w-full lg:w-1/2">
             <h2 class="text-3xl lg:text-5xl lg:leading-[57.6px] text-dark-gray2 font-medium">A Legacy of Excellence, A
                 Future of Innovation</h2>
             <h4 class="text-dark-gray2 text-xl mt-4 mb-4">Delivering Advanced Electronics Solutions Since 1989</h4>
-            <img class="w-52" src="../../assets/about/s-line.png" alt="image">
-            <p class="text-dark-gray2 font-light mt-4 mb-8">Whizz Systems is a leading provider of electronic product
+            <img class="max-w-52 object-cover" src="../../assets/about/s-line.png" alt="image">
+            <p class="text-dark-gray2 leading-[28px] font-light mt-4 mb-8">Whizz Systems is a leading provider of electronic product
                 design, development, and manufacturing services, proudly located in the heart of Silicon Valley. Since
                 our inception in 1989, we’ve transformed from a specialized PCB design team into a multidisciplinary
                 powerhouse, bringing deep expertise across engineering and design, new product introduction (NPI),
@@ -43,29 +43,30 @@
     </div>
 
     <div>
-        <img class="object-cover mx-auto px-6 sm:px-16 lg:px-20 mt-13 mb-16"
+        <img class="object-cover mx-auto px-6 sm:px-16 lg:px-20 mb-12 lg:mb-24"
             src="../../assets/ideas/section-divider1.png" alt="img">
     </div>
 
     <!-- 25+ -->
-    <div class="flex flex-col lg:flex-row items-center gap-32 mb-10 lg:mb-32">
+    <div class="flex flex-col lg:flex-row items-center gap-20 lg:gap-32 mb-12 lg:mb-32">
         <div class="w-full lg:w-1/2 py-6 lg:py-20">
-            <h2 class="text-5xl lg:text-[64px] lg:leading-[76.8px] text-dark-gray2 font-light text-center lg:text-left"><span
-                    class="text-5xl lg:text-[64px] lg:leading-[76.8px] text-teal2 font-medium">25+ Years</span> of Building Growth in
-                Electronic Design & Manufacturing</h2>
+            <h2 class="text-5xl 3xl:text-[64px] leading-[64px] 3xl:leading-[76.8px] text-dark-gray2 font-light text-center lg:text-left">
+                <span class="text-5xl 3xl:text-[64px] leading-[64px] 3xl:leading-[76.8px] text-teal2 font-medium">25+ Years</span> of
+                Building Growth in
+                Electronic Design & Manufacturing
+            </h2>
         </div>
         <div class="w-full lg:w-1/2 flex flex-wrap justify-between items-between">
-            <div class="w-1/2 px-10 mb-16 flex justify-start items-start">
-                <div class="text-center">
-                    <h3 class="text-5xl text-dark-gray2 font-bold">{{experience[0].quantity}}<span
-                            class="text-4xl text-dark-gray2 font-bold">{{experience[0].sign}}</span></h3>
-                    <h3 class="text-2xl text-dark-gray2 font-bold">{{experience[0].title}}</h3>
-                    <hr class="max-w-36 mx-auto border border-light-gray1 my-2">
-                    <p class="text-xl text-dark-gray2 font-light">{{experience[0].desc}}</p>
+            <div class=" grid grid-cols-1 sm:grid-cols-2 gap-y-10 3xl:gap-y-16 gap-x-20 3xl:gap-x-32">
+                <div class="text-center" *ngFor="let item of experience">
+                    <h3 class="text-5xl text-dark-gray2 font-bold">{{item.quantity}}<span class="text-4xl text-dark-gray2 font-bold">{{item.sign}}</span></h3>
+                    <h3 class="text-2xl text-dark-gray2 font-bold">{{item.title}}</h3>
+                    <img class="max-w-32 mx-auto object-cover my-2" src="../../assets/about/s-line.png" alt="image">
+                    <p class="px-10 sm:px-5 lg:px-1 3xl:px-4 text-xl text-dark-gray2 font-light">{{item.desc}}</p>
                 </div>
             </div>
 
-            <div class="w-1/2 px-6 mb-16 flex justify-end items-start">
+            <!-- <div class="w-1/2 px-6 mb-16 flex justify-end items-start">
                 <div class="text-center">
                     <h3 class="text-5xl text-dark-gray2 font-bold">{{experience[1].quantity}}<span
                             class="text-4xl text-dark-gray2 font-bold">{{experience[1].sign}}</span></h3>
@@ -93,47 +94,113 @@
                     <hr class="max-w-36 mx-auto border border-light-gray1 my-2">
                     <p class="text-xl text-dark-gray2 font-light">{{experience[3].desc}}</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
     <div>
-        <img class="object-cover mx-auto px-6 sm:px-16 lg:px-20 mt-13 mb-16"
+        <img class="object-cover mx-auto px-6 sm:px-16 lg:px-20 mb-12 lg:mb-32"
             src="../../assets/testimonials/section-divider2.png" alt="img">
     </div>
 
-    <div class="px-8 lg:px-16 text-center mb-8 lg:mb-32">
-        <h2 class="text-3xl lg:text-5xl text-dark-gray2 font-medium">Our Unique Approach to Accelerate Your Product Journey</h2>
-        <h3 class="text-xl text-dark-gray2 my-4">Comprehensive, Expert Solutions Designed to Meet Your Unique Needs</h3>
-        <hr class="max-w-60 mx-auto border border-light-gray1 mb-4">
-        <p class="text-dark-gray2 font-light mx-auto  sm:max-w-[38rem]">With decades of experience serving diverse industries, we’ve tailored our approach to provide everything you need for a seamless, efficient product launch. By consolidating design, prototyping, manufacturing, and compliance under one roof, we eliminate bottlenecks and accelerate your path to market.</p>
+    <!-- Unique Approach -->
+    <div class="px-8 lg:px-16 text-center mb-12 lg:mb-32">
+        <h2 class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[57.6px] font-medium">Our Unique Approach to Accelerate Your Product
+            Journey</h2>
+        <h3 class="3xl:text-xl text-dark-gray2 my-4">Comprehensive, Expert Solutions Designed to Meet Your Unique Needs</h3>
+        <img class="max-w-52 object-cover mb-4 mx-auto" src="../../assets/about/s-line.png" alt="image">
+        <p class="text-dark-gray2 font-light mx-auto  sm:max-w-[38rem] leading-[28px]">With decades of experience serving diverse
+            industries, we’ve tailored our approach to provide everything you need for a seamless, efficient product
+            launch. By consolidating design, prototyping, manufacturing, and compliance under one roof, we eliminate
+            bottlenecks and accelerate your path to market.</p>
     </div>
-    <!--Concisely -->
+    
+    <!--Dark Cards -->
     <div
-        class="mb-12 lg:mb-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10  sm:gap-y-16 sm:gap-x-20 lg:gap-x-24">
+        class="mb-12 lg:mb-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10  sm:gap-y-16 sm:gap-x-20 lg:gap-x-24">
         <div *ngFor="let item of concisely" class="mx-auto">
-            <div class=" w-[270px] h-[253px] p-8 bg-dark-gray1 rounded-lg text-white text-center ">
+            <div class=" w-[270px] h-[253px] px-8 py-10 bg-dark-gray1 rounded-lg text-white text-center ">
                 <img class="w-12 mx-auto object-cover" [src]="item.imgUrl" alt="">
                 <h4 class="font-semibold my-2">{{item.title}}</h4>
-                <p class="font-light">{{item.desc}}</p>
+                <p class="font-thin">{{item.desc}}</p>
             </div>
         </div>
     </div>
+
+    <div class="bg-teal2">
+        <div >
+          <ejs-maps [width]="'100%'" [height]="'800px'"
+            id="container"
+            
+            [zoomSettings]="zoomSettings"
+            [layers]="layers"
+            [legendSettings]="legendSettings"
+            [titleSettings]="titleSettings"
+            
+           
+          >
+          </ejs-maps>
+        </div>
+      </div>
 
     <!-- Certifications -->
     <div class="mb-12 lg:mb-32">
-        <h2 class="text-3xl sm:text-5xl text-dark-gray2 font-medium text-center">Recognized for
+        <h2 class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[57.6px] font-medium text-center">Recognized for
             Excellence and
             Compliance</h2>
-        <hr class="max-w-52 mx-auto border border-light-gray1 my-4">
-
-        <p class="max-w-[38rem] mx-auto text-dark-gray2 text-center font-light mb-16">We take pride in delivering exceptional solutions that meet the highest standards of quality and reliability. Our excellence has been recognized with numerous industry certifications and prestigious awards, including the <i>Outstanding Supplier Award – Development Systems </i> from Xilinx for our contributions to the launch of the Gen 6 Spartan and Virtex product families.</p>
-        <div class="flex justify-center lg:justify-around items-center flex-wrap gap-10 sm:gap-20">
+            <img class="max-w-52 object-cover my-4 mx-auto" src="../../assets/about/s-line.png" alt="image">
+        <p class="max-w-[38rem] mx-auto text-dark-gray2 text-center font-light mb-16 leading-[28px]">We take pride in delivering
+            exceptional solutions that meet the highest standards of quality and reliability. Our excellence has been
+            recognized with numerous industry certifications and prestigious awards, including the <i>Outstanding
+                Supplier Award – Development Systems </i> from Xilinx for our contributions to the launch of the Gen 6
+            Spartan and Virtex product families.</p>
+        <div class="flex justify-center lg:justify-between items-center flex-wrap gap-10 px-24">
             <div *ngFor="let item of certifications" class="flex flex-col items-center">
-                <img class="w-28 h-28 mb-6" [src]="item.imgUrl" alt="">
-                <p class="text-2xl font-bold text-center">{{item.name}}</p>
+                <img class="w-20 h-20 3xl:w-28 3xl:h-28 mb-6" [src]="item.imgUrl" alt="img">
+                <p class="text-xl 3xl:text-2xl font-bold text-center">{{item.name}}</p>
             </div>
         </div>
     </div>
-    
+
+    <!-- Collaborations -->
+    <div class="mb-12 lg:mb-32">
+        <h3 class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[57.6px] font-medium text-center mb-8 sm:mb-14">We’ve Collaborated With</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 place-items-center gap-8 lg:gap-y-10 lg:gap-x-16 lg:px-10 3xl:px-40">
+            <div *ngFor="let item of collaborations" class="p-8">
+                <img class="object-cover" [src]="item" alt="img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Passionate -->
+    <div class="mb-12 lg:mb-32">
+        <h3 class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[57.6px] font-medium text-center">Built By Passionate People</h3>
+        <p class="text-xl text-dark-gray2 mt-4 mb-16 text-center">Learn more about our leaders</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-16">
+            <div class="relative" *ngFor="let item of passionate">
+                <img [src]="item.imgUrl" alt="profile-img" class="">
+                <div class="">
+                    <h2 class="text-5xl font-bold">{{item.name}}</h2>
+                    <h3 class="text-5xl font-light my-2">{{item.designation}}</h3>
+                </div>
+                <p class="">{{item.desc}}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Talk To Expert -->
+    <div class="mb-12 lg:mb-16">
+        <div class="relative p-10 lg:p-16 rounded-lg">
+            <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-lg" loop muted autoplay
+                oncanplay="this.play()" onloadedmetadata="this.muted = true">
+                <source src="../../assets/hero/waves2.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-[#00a99f] opacity-80 z-10 rounded-lg"></div>
+            <div class="relative z-20 text-white">
+                <h2 class="text-4xl lg:text-6xl font-bold">Let’s build together.</h2>
+                <p class="text-3xl mt-4 mb-8">Ready to start your next project?</p>
+                <app-cbutton heading="Contact us today" [size]="'large'"></app-cbutton>
+            </div>
+        </div>
+    </div>
 </div>

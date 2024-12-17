@@ -18,6 +18,7 @@
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
+    "@syncfusion/ej2-angular-maps": "^28.1.33",
     "bootstrap-icons": "^1.11.3",
     "gsap": "^3.12.5",
     "keen-slider": "^6.8.6",
