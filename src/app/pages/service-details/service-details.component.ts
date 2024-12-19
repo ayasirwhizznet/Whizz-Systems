@@ -5,11 +5,12 @@ import { ModelingComponent } from "../modeling/modeling.component";
 import { ThermalManagementComponent } from "../thermal-management/thermal-management.component";
 import { NpiComponent } from '../npi/npi.component';
 import { SystemDesignComponent } from "../system-design/system-design.component";
+import { SignalIntegrityComponent } from "../signal-integrity/signal-integrity.component";
 
 @Component({
   selector: 'app-service-details',
   standalone: true,
-  imports: [CommonModule, ModelingComponent, ThermalManagementComponent, NpiComponent, SystemDesignComponent],
+  imports: [CommonModule, ModelingComponent, ThermalManagementComponent, NpiComponent, SystemDesignComponent, SignalIntegrityComponent],
   templateUrl: './service-details.component.html',
   styleUrls: ['./service-details.component.scss']
 })

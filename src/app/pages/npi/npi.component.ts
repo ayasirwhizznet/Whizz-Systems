@@ -11,17 +11,17 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrl: './npi.component.scss'
 })
 export class NpiComponent implements OnInit {
-  
+
   npiTab = [
-    { title: 'System Level Architecture'},
-    { title: 'Engineering and Design'},
-    { title: 'Prototyping'},
-    { title: 'Testing'},
-    { title: 'Compliance'},
+    { title: 'System Level Architecture' },
+    { title: 'Engineering and Design' },
+    { title: 'Prototyping' },
+    { title: 'Testing' },
+    { title: 'Compliance' },
   ];
 
   toTop(id: string) {
-    const element = document.getElementById(id?.replaceAll(/\s/g,''));
+    const element = document.getElementById(id?.replaceAll(/\s/g, ''));
     if (element) {
       const offset = 150;
       const topPosition = element.offsetTop - offset;
@@ -32,8 +32,7 @@ export class NpiComponent implements OnInit {
       });
     }
   }
-
-  enggandDesign = 
+  enggandDesign =
     {
       title: "Engineering and Design",
       items: [
@@ -58,13 +57,13 @@ export class NpiComponent implements OnInit {
     if (title) {
       this.titleSlug = decodeURIComponent(title);
       document.title = this.titleSlug;
-     if(category === 'NPI'){
-      console.log(this.titleSlug.replaceAll(/\s/g,''));
-      setTimeout(() => {
-        const element = this.renderer.selectRootElement(`#${`${title}`?.replaceAll(/\s/g,'')}`, true);
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 0);
-     }
+      if (category === 'NPI') {
+        console.log(this.titleSlug.replaceAll(/\s/g, ''));
+        setTimeout(() => {
+          const element = this.renderer.selectRootElement(`#${`${title}`?.replaceAll(/\s/g, '')}`, true);
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 0);
+      }
     }
     if (category) {
       this.categorySlug = decodeURIComponent(category);

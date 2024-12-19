@@ -39,7 +39,7 @@ export class HeaderComponent implements OnInit {
         { label: 'FPGA Design', link: '/' },
         { label: 'PCB Layout', link: '/' },
         { label: '3D Modeling/Mechanical Engineering', link: '3D Modeling/Mechanical Engineering' },
-        { label: 'Signal Integrity Simulations', link: '/' },
+        { label: 'Signal Integrity Simulations', link: 'Signal Integrity Simulation' },
         { label: 'Power Delivery Network Simulations', link: '/' },
         { label: 'Thermal Management/Thermal Simulation', link: 'Thermal Management/Thermal Simulation' },
       ],
