@@ -1,12 +1,7 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { ServicesComponent } from './pages/services/services.component';
-import { NewspageComponent } from './pages/newspage/newspage.component';
-import { BlogsComponent } from './pages/blogs/blogs.component';
+import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { ModelingComponent } from './pages/modeling/modeling.component';
-import { ThermalManagementComponent } from './pages/thermal-management/thermal-management.component';
-import { ServiceDetailsComponent } from './pages/service-details/service-details.component';
+import { Page404Component } from './page404/page404.component';
 
 export const routes: Routes = [
   {
@@ -21,21 +16,20 @@ export const routes: Routes = [
   },
   {
     path: 'services',
-    component: ServicesComponent,
-    title: 'Services',
+    loadChildren: () => import('./services/routes').then((m) => m.routes)
   },
   {
-    path: 'news',
-    component: NewspageComponent,
-    title: 'News',
+    path: 'news_&_insights',
+    loadChildren: () => import('./news_&_blogs/routes').then((m) => m.routes)
   },
   {
-    path: 'blogs',
-    component: BlogsComponent,
-    title: 'Blogs'
+    path: '404',
+    component: Page404Component,
+    title: '404 Not Found',
   },
   {
-    path: 'service/:category/:title',
-    component: ServiceDetailsComponent,
+    path: '**',
+    redirectTo: '404',
+    pathMatch: 'full',
   },
 ];

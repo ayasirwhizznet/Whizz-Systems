@@ -1,114 +1,94 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angular/core';
-import { ServicesCardComponent } from "../services-card/services-card.component";
-import { NgFor, NgIf } from '@angular/common';
-import { CbuttonComponent } from "../cbutton/cbutton.component";
-import 'keen-slider/keen-slider.css'
-import KeenSlider from "keen-slider";
-import { RarrowbuttonComponent } from "../rarrowbutton/rarrowbutton.component";
-import { LarrowbuttonComponent } from "../larrowbutton/larrowbutton.component";
-import { RouterLink } from '@angular/router';
-
+import { NgFor } from '@angular/common';
+import { Component } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 @Component({
-  selector: 'app-cservices',
+  selector: 'app-services',
   standalone: true,
-  imports: [ServicesCardComponent, NgFor, CbuttonComponent, RarrowbuttonComponent, LarrowbuttonComponent, RouterLink,NgIf],
+  imports: [NgFor,RouterModule],
   templateUrl: './services.component.html',
-  styleUrl: './services.component.scss',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  styleUrl: './services.component.scss'
 })
 export class ServicesComponent {
-  cards = [
-    {
-      imgUrl: '../../assets/services/engg.&design.png',
-      title: 'Engineering & design',
-      content: 'Innovating Designs for the Next Generation of Electronics.'
-    },
-    {
-      imgUrl: '../../assets/services/npi.png',
-      title: 'NPI',
-      content: 'Accelerating your product launch with rapid prototyping and efficient NPI processes.'
-    },
-    {
-      imgUrl: '../../assets/services/advanced-manfacuring.png',
-      title: 'Advanced Manufacturing',
-      content: 'World-class manufacturing to meet complex demands, ensuring quality and efficiency.',
-    },
-    {
-      imgUrl: '../../assets/services/lab-test.png',
-      title: 'Lab Testing Solutions',
-      content: 'Ensuring product reliability and compliance through comprehensive validation.',
-    },
-    {
-      imgUrl: '../../assets/services/supply-chain.jfif',
-      title: 'Supply Chain Management & Design',
-      content: 'Streamlining your supply chain with integrated sourcing, compliance, and procurement solutions, so you can rely on a single, trusted partner.',
-    },
-    {
-      imgUrl: '../../assets/services/sustainable.jfif',
-      title: 'Sustaining Engineering & Obsolescence Management',
-      content: 'Keeping your product lines future-proof with proactive support and obsolescence solutions.',
-    },
-  ];
 
-  @ViewChild("sliderRef") sliderRef = {} as ElementRef;
+  constructor(private router: Router) { }
 
-  slider: any = null;
-  progress = {
-    maxIdx:5,
-    abs:0
-  };
-  totalSlides = this.cards.length;
+  toTop(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 170;
+      const topPosition = element.offsetTop - offset;
   
-  ngAfterViewInit() {
-    this.slider = new KeenSlider(this.sliderRef.nativeElement, {
-      slideChanged: (slider) => {
-        this.progress = slider.track.details;
-      },
-
-      breakpoints: {
-        "(min-width: 640px)": {
-          
-          slides: {
-            perView: 1,
-            spacing: 30,
-          },
-          
-        } ,
-        "(min-width: 768px)": {
-          slides: {
-            perView:2,
-            spacing: 80,
-          },
-        },
-        "(min-width: 1200px)": {
-          slides: {
-            perView: 4,
-            spacing: 40,
-          },
-        },
-        "(min-width: 1700px)": {
-          slides: {
-            perView: 4,
-            spacing: 70,
-          },
-        },
-      },
-    });
-  }
-  ngOnDestroy() {
-    if (this.slider) this.slider.destroy();
+      window.scrollTo({
+        top: topPosition,
+        behavior: 'smooth',
+      });
+    }
   }
 
-  nextSlide() {
+  servicesTab: any = [
+    {
+      title: "Engineering & Design",
+      description: `At Whizz Systems, we deliver end-to-end engineering and design solutions with multidomain expertise and world-class manufacturing—all in-house. Our flexible approach allows you to engage with us at any stage of product development, from concept through production and beyond. We take full ownership of the process, providing sustaining engineering support to ensure your product's performance and reliability throughout its entire lifecycle.`,
+      items: [
+        { label: 'System Design/Schematics', link: '/services/engineering_&_design/system_design_&_schematics' },
+        { label: 'FPGA Design', link: '/404' },
+        { label: 'PCB Layout', link: '/404' },
+        { label: '3D Modeling/Mechanical Engineering', link: '/services/engineering_&_design/3D_modeling' },
+        { label: 'Signal Integrity Simulations', link: '/services/engineering_&_design/signal_integrity_simulations' },
+        { label: 'Power Delivery Network Simulations', link: '/404' },
+        { label: 'Thermal Management/Thermal Simulation', link: '/services/engineering_&_design/thermal_management' },
+      ]
+    },
 
-      this.slider.next();
-   
-  }
-
-  prevSlide() {
-   
-      this.slider.prev();
- 
-  }
-  
+    {
+      title: "NPI",
+      description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
+      items: [
+        { label: 'System Level Architecture', link: '/services/npi', fragment: "SystemLevelArchitecture" },
+        { label: 'Engineering & Design', link: '/services/npi', fragment: "EngineeringandDesign"  },
+        { label: 'Prototyping', link: '/services/npi', fragment: "Prototyping"  },
+        { label: 'Testing', link: '/services/npi', fragment: "Testing"  },
+        { label: 'Compliance and Certification', link: '/services/npi', fragment: "Compliance"  },
+      ],
+    },
+    {
+      title: "Advanced Manufacturing",
+      description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
+      items: [
+        { label: 'DFX Analysis', link: '/404' },
+        { label: 'FMEA (Failure Mode & Effects Analysis)', link: '/404' },
+        { label: 'Thermal Profiling and Reflow Soldering Optimization', link: '/404' },
+        { label: 'Mechanical System Build', link: '/404' },
+        { label: 'Packaging Design', link: '/404' },
+      ],
+    },
+    {
+      title: "Lab Testing Solutions",
+      description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
+      items: [
+        { label: 'Board Bring Up', link: '/404' },
+        { label: 'Validation', link: '/404' },
+        { label: 'Characterization', link: '/404' },
+      ],
+    },
+    {
+      title: "Supply Chain Management",
+      description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
+      items: [
+        { label: 'Component Engineering', link: '/404' },
+        { label: 'Compliance Engineering', link: '/404' },
+        { label: 'Procurement Engineering', link: '/404' },
+      ],
+    },
+    {
+      title: "Sustaining Engineering & Obsolescence Management",
+      description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
+      items: [
+        { label: 'BOM Management', link: '/404' },
+        { label: 'EOL Management', link: '/404' },
+        { label: 'AVL Management', link: '/404' },
+        { label: 'Second Sourcing/Risk Buying', link: '/404' },
+      ],
+    },
+  ]
 }

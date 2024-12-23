@@ -1,0 +1,107 @@
+<!-- Hero -->
+<div class="px-[4%] sm:px-[5%] mb-12 lg:mb-32">
+    <div
+        class="px-8 lg:px-16 py-10 lg:py-[88px] bg-dark-gray1 flex flex-col lg:flex-row items-center gap-10 lg:gap-14 3xl:gap-14 rounded-2xl">
+        <div class="w-full lg:w-1/2 text-white">
+            <p class="text-base">Engineering & Design</p>
+            <h1 class="text-3xl lg:text-5xl 3xl:text-[56px] lg:leading-[60px] 3xl:leading-[67px] font-bold  my-8">Signal
+                Integrity Simulations for High-Performance PCB Designs</h1>
+            <p class="text-xl font-light mb-8">Pre- and Post-Layout Simulations That Drive Precision and Reliability</p>
+            <app-cbutton [heading]="'Optimize Your Design with Whizz'"
+                [icon]="'../../../assets/services/r-arrow.svg'"></app-cbutton>
+        </div>
+        <div class="w-full lg:w-1/2 p-6 sm:p-16 lg:p-0">
+            <img class="object-cover" src="../../../assets/signalIntegrity/hero.png" alt="img">
+        </div>
+    </div>
+</div>
+
+<div class="px-[4%] sm:px-[8%]">
+    <!-- Introduction -->
+    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-12 lg:mb-32">
+        <div class="w-full lg:w-1/2 order-2 lg:order-1 p-8 md:p-16 lg:p-0 ">
+            <img class="object-cover" src="../../../assets/signalIntegrity/introduction.png" alt="img">
+        </div>
+        <div class="w-full lg:w-1/2 order-1 lg:order-0">
+            <h4 class="text-teal1 font-bold">Introduction</h4>
+            <h3 class="text-dark-gray2 text-2xl font-medium my-4">Ensuring Excellence in Signal Integrity</h3>
+            <p class="text-dark-gray2 font-light mb-6">Whizz Systems delivers end-to-end signal integrity simulation
+                services to optimize high-speed PCB designs, ensuring robust performance and cost efficiency. From
+                pre-layout simulations to post-layout analyses, we ensure your design meets modern electronics' demands
+                for speed, reliability, and manufacturability.</p>
+        </div>
+    </div>
+
+    <!-- PCB Performance-->
+    <div class="mb-12 lg:mb-32">
+        <h4 class="text-teal1 font-bold">PCB performance</h4>
+        <h3 class="text-dark-gray2 text-2xl font-medium my-4">Ensuring Excellence in Signal Integrity</h3>
+        <p class="text-dark-gray2 font-light mb-8">Whizz’s pre-layout simulations provide insights into critical
+            factors for optimal</p>
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-x-16 3xl:gap-x-36">
+            <div *ngFor="let performance of pcbPerformance">
+                <div class="p-8 bg-card-gray border-[1px] border-light-gray1 rounded-lg">
+                    <img class="rounded-lg" [src]="performance.imgUrl" alt="img">
+                    <div class=" h-[8rem] sm:h-[8rem] lg:h-[9.5rem]">
+                        <h3 class="font-bold mt-8 mb-5">{{performance.title}}</h3>
+                        <p class="font-light">{{performance.desc}}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Services Overview -->
+    <div class="mb-12 lg:mb-32">
+        <h4 class="text-teal1 font-bold">Core Services Overview</h4>
+        <h3 class="text-dark-gray2 text-2xl font-medium my-4">Post-Layout Simulations: Refining for Perfection</h3>
+        <p class="text-dark-gray2 font-light mb-8">Comprehensive 3D Modeling & Mechanical Design Services</p>
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-x-16 3xl:gap-x-36 md:gap-y-10 lg:gap-y-16">
+            <div *ngFor="let service of coreServices">
+                <div class="p-8 bg-card-gray border-[1px] border-light-gray1 rounded-lg">
+                    <img class="rounded-lg" [src]="service.imgUrl" alt="img">
+                    <div class=" h-[8rem] sm:h-[8rem] lg:h-[9.5rem]">
+                        <h3 class="font-bold mt-8 mb-5">{{service.title}}</h3>
+                        <p class="font-light">{{service.desc}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits -->
+    <div class="mb-12 lg:mb-24">
+        <h4 class="text-teal1 font-bold mb-4">Benefits</h4>
+        <h3 class="text-dark-gray2 text-2xl font-medium mb-12">Why Choose Whizz for Signal Integrity Simulations?</h3>
+        <div class="p-8 bg-card-gray  rounded-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div *ngFor="let benefit of benefits">
+                    <div class="p-8 bg-white border-[1px] border-light-gray1 rounded-lg h-[15rem]">
+                        <img class="w-12 h-12" [src]="benefit.imgUrl" alt="img">
+                        <h3 class="text-dark-gray2 font-medium my-4">{{benefit.title}}</h3>
+                        <p class="text-dark-gray2 font-light">{{benefit.desc}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact PCB Expert -->
+    <div class="mb-12 lg:mb-16">
+        <div class="relative p-10 lg:p-16 rounded-lg">
+            <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-lg" loop muted autoplay
+                oncanplay="this.play()" onloadedmetadata="this.muted = true">
+                <source src="../../assets/hero/waves2.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-[#00a99f] opacity-80 z-10 rounded-lg"></div>
+            <div class="relative z-20 max-w-lg lg:max-w-2xl 3xl:max-w-3xl text-white">
+                <h2 class="text-4xl lg:text-5xl 3xl:text-[64px] lg:leading:[60px] 3xl:leading-[76.8px] font-bold mb-4">Ready to Elevate Your PCB Design?</h2>
+                <p class="text-xl lg:text-2xl 3xl:text-3xl font-medium lg:leading-[40px] 3xl:leading-[48px] mb-12">Discover how Whizz Systems can help you achieve high-performance, signal-integrity-driven PCB designs with precision and efficiency.</p>
+                <app-cbutton heading="Contact our Experts" [size]="'large'"></app-cbutton>
+            </div>
+        </div>
+    </div>
+</div>
