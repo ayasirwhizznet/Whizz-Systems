@@ -45,7 +45,7 @@ export class ServicesComponent {
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
       items: [
         { label: 'System Level Architecture', link: '/services/npi', fragment: "SystemLevelArchitecture" },
-        { label: 'Engineering & Design', link: '/services/npi', fragment: "EngineeringandDesign"  },
+        { label: 'Engineering & Design', link: '/services/npi', fragment: "Engineering&Design"  },
         { label: 'Prototyping', link: '/services/npi', fragment: "Prototyping"  },
         { label: 'Testing', link: '/services/npi', fragment: "Testing"  },
         { label: 'Compliance and Certification', link: '/services/npi', fragment: "Compliance"  },
