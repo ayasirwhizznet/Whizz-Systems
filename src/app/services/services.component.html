@@ -13,7 +13,7 @@
         <source src="../../assets/hero/waves1.mp4" type="video/mp4">
       </video>
       <div
-        class="absolute inset-0 bg-[#00a99f] opacity-70 z-10 rounded-tl-[100px] rounded-tr-lg rounded-bl-[100px] rounded-br-lg">
+        class="absolute inset-0 bg-[#00a99f] opacity-80 z-10 rounded-tl-[100px] rounded-tr-lg rounded-bl-[100px] rounded-br-lg">
       </div>
       <p class="relative z-20 grid place-items-center lg:h-[38rem] 3xl:h-[48rem] w-[60rem]"></p>
     </div>
@@ -25,7 +25,7 @@
   <div class="p-8 flex justify-center items-center gap-4 text-center text-sm 3xl:text-base bg-white z-50">
     <a *ngFor="let link of servicesTab" (click)="toTop(link.title)"
       class=" w-64 h-20 cursor-pointer flex justify-center items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-white font-medium rounded-lg transition-all duration-300 ease-in-out"
-      routerLink="link.url">{{link.title}}</a>
+      >{{link.title}}</a>
   </div>
 </div>
 

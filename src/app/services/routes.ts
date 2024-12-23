@@ -11,7 +11,7 @@ export const routes: Routes = [
             },
             {
                 path: 'engineering_&_design',
-                loadChildren: () => import('./engineering_&_design/routes').then((m) => m.routes)
+                loadChildren: () => import('./engineering_design/routes').then((m) => m.routes)
             },
             {
                 path: 'npi',

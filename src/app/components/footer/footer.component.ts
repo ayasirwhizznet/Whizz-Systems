@@ -18,12 +18,12 @@ export class FooterComponent {
   ];
 
   services:any[] = [
-    {label: 'Engineering & Design', link: ''},
-    {label: 'NPI', link:''},
-    {label: 'Advanced Manufacturing', link: ''},
-    {label: 'Lab Testing Solutions', link: ''},
-    {label: 'Supply Chain Management', link: ''},
-    {label: 'Sustaining Engineering & Obsolescence Management', link: ''},
+    {label: 'Engineering & Design', link: '/404'},
+    {label: 'NPI', link:'/404'},
+    {label: 'Advanced Manufacturing', link: '/404'},
+    {label: 'Lab Testing Solutions', link: '/404'},
+    {label: 'Supply Chain Management', link: '/404'},
+    {label: 'Sustaining Engineering & Obsolescence Management', link: '/404'},
   ];
 
   blog:any[] = [
