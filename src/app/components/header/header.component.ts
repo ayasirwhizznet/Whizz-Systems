@@ -25,10 +25,10 @@ export class HeaderComponent implements OnInit {
   isAccordionOpen = false;
 
   menuItems = [
-    { label: 'About', link: '/about', dropdown: '' },
+    { label: 'About', link: '/about'},
     { label: 'Services', dropdown: 'service' },
-    { label: 'Featured Products', dropdown: 'featured', link: '/' },
-    { label: 'Resources', dropdown: 'resources', link: '/' },
+    { label: 'Featured Products', dropdown: 'featured'},
+    { label: 'Resources', dropdown: 'resources'},
   ];
 
   serviceSections = [
