@@ -10,11 +10,14 @@
   },
   "private": true,
   "dependencies": {
+    "@amcharts/amcharts5": "^5.10.9",
+    "@amcharts/amcharts5-geodata": "^5.1.4",
     "@angular/animations": "^18.2.0",
     "@angular/common": "^18.2.0",
     "@angular/compiler": "^18.2.0",
     "@angular/core": "^18.2.0",
     "@angular/forms": "^18.2.0",
+    "@angular/google-maps": "^17.0.0",
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
@@ -24,6 +27,7 @@
     "geojson-world-map": "^0.0.2",
     "gsap": "^3.12.5",
     "keen-slider": "^6.8.6",
+    "ngx-echarts": "^19.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"

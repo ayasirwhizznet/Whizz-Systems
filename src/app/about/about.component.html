@@ -1,4 +1,5 @@
-<!-- Hero -->
+ 
+
 <div class="px-[4%] sm:px-[5%] mb-12 lg:mb-32">
     <div class="relative px-8 lg:px-16 py-12 lg:py-40 3xl:py-56">
         <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-2xl" loop muted autoplay
@@ -69,36 +70,6 @@
                     <p class="px-10 sm:px-5 lg:px-1 3xl:px-4 text-xl text-dark-gray2 font-light">{{item.desc}}</p>
                 </div>
             </div>
-
-            <!-- <div class="w-1/2 px-6 mb-16 flex justify-end items-start">
-                <div class="text-center">
-                    <h3 class="text-5xl text-dark-gray2 font-bold">{{experience[1].quantity}}<span
-                            class="text-4xl text-dark-gray2 font-bold">{{experience[1].sign}}</span></h3>
-                    <h3 class="text-2xl text-dark-gray2 font-bold">{{experience[1].title}}</h3>
-                    <hr class="max-w-36 mx-auto border border-light-gray1 my-2">
-                    <p class="text-xl text-dark-gray2 font-light">{{experience[1].desc}}</p>
-                </div>
-            </div>
-
-            <div class="w-1/2 px-20 flex justify-start items-end">
-                <div class="text-center">
-                    <h3 class="text-5xl text-dark-gray2 font-bold">{{experience[2].quantity}}<span
-                            class="text-4xl text-dark-gray2 font-bold">{{experience[2].sign}}</span></h3>
-                    <h3 class="text-2xl text-dark-gray2 font-bold">{{experience[2].title}}</h3>
-                    <hr class="max-w-36 mx-auto border border-light-gray1 my-2">
-                    <p class="text-xl text-dark-gray2 font-light">{{experience[2].desc}}</p>
-                </div>
-            </div>
-
-            <div class="w-1/2 px-10 flex justify-end items-end">
-                <div class="text-center">
-                    <h3 class="text-5xl text-dark-gray2 font-bold">{{experience[3].quantity}}<span
-                            class="text-4xl text-dark-gray2 font-bold">{{experience[3].sign}}</span></h3>
-                    <h3 class="text-2xl text-dark-gray2 font-bold">{{experience[3].title}}</h3>
-                    <hr class="max-w-36 mx-auto border border-light-gray1 my-2">
-                    <p class="text-xl text-dark-gray2 font-light">{{experience[3].desc}}</p>
-                </div>
-            </div> -->
         </div>
     </div>
 
@@ -124,7 +95,7 @@
 
     <!--Dark Cards -->
     <div
-        class="mb-12 lg:mb-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10  sm:gap-y-16 sm:gap-x-20 lg:gap-x-24">
+        class="mb-8 lg:mb-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10  sm:gap-y-16 sm:gap-x-20 lg:gap-x-24">
         <div *ngFor="let item of concisely" class="mx-auto">
             <div class=" w-[270px] h-[253px] px-8 py-10 bg-dark-gray1 rounded-lg text-white text-center ">
                 <img class="w-12 mx-auto object-cover" [src]="item.imgUrl" alt="">
@@ -133,10 +104,15 @@
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Address -->
-    <!-- <div echarts [options]="mapOption"></div> -->
+<!-- Address -->
+<div class="w-full mb-8 lg:mb-16 bg-teal2">
+    <h2 class="text-4xl 3xl:text-5xl font-medium leading-[57.6px] text-dark-gray2 text-center pt-10 3xl:pt-16 mb-8">Global Footprint</h2>
+    <div id="chartdiv" class="w-[90%] h-[800px] mx-auto"></div>
+</div> 
 
+<div class="px-[4%] sm:px-[8%]">
     <!-- Certifications -->
     <div class="mb-12 lg:mb-32">
         <h2 class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[57.6px] font-medium text-center">
@@ -173,18 +149,24 @@
 
     <!-- Passionate -->
     <div class="mb-12 lg:mb-32 px-[4%] sm:px-[9%]">
-        <h3 class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[57.6px] font-medium text-center">Built By
+        <h3 class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[57.6px] font-medium text-center">Built
+            By
             Passionate People</h3>
         <p class="text-xl text-dark-gray2 mt-4 mb-16 text-center">Learn more about our leaders</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
             <div class="relative group text-white" *ngFor="let item of passionate">
                 <img [src]="item.imgUrl" alt="profile-img" class=" object-cover">
-                <div class="absolute inset-0 group-hover:bg-black group-hover:bg-opacity-30 rounded-lg transition-all duration-300 ease-in-out"></div>
-                <div class="absolute bottom-16 px-8 sm:px-16 lg:px-12 3xl:px-16 group-hover:-translate-y-[11rem] 3xl:group-hover:-translate-y-[14rem] transition-all duration-300 ease-in-out">
+                <div
+                    class="absolute inset-0 group-hover:bg-black group-hover:bg-opacity-30 rounded-lg transition-all duration-300 ease-in-out">
+                </div>
+                <div
+                    class="absolute bottom-16 px-8 sm:px-16 lg:px-12 3xl:px-16 group-hover:-translate-y-[11rem] 3xl:group-hover:-translate-y-[14rem] transition-all duration-300 ease-in-out">
                     <h2 class="text-4xl 3xl:text-5xl 3xl:leading-[67.2px] font-bold">{{item.name}}</h2>
                     <h3 class="text-4xl 3xl:text-5xl 3xl:leading-[67.2px] font-light my-2">{{item.designation}}</h3>
                 </div>
-                <p class="text-base 3xl:text-xl 3xl:leading-[28px] font-light px-8 sm:px-16 lg:px-12 3xl:px-16 absolute group-hover:-translate-y-[15rem] 3xl:group-hover:-translate-y-[18rem]  transition-all duration-300 ease-in-out">{{item.desc}}</p>
+                <p
+                    class="text-base 3xl:text-xl 3xl:leading-[28px] font-light px-8 sm:px-16 lg:px-12 3xl:px-16 absolute group-hover:-translate-y-[15rem] 3xl:group-hover:-translate-y-[18rem]  transition-all duration-300 ease-in-out">
+                    {{item.desc}}</p>
             </div>
         </div>
     </div>

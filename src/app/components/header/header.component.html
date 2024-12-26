@@ -1,21 +1,21 @@
 <!-- Desktop header -->
-<header class="desktop-header hidden lg:block shadow-md px-[2%] bg-white fixed left-0 right-0 z-50"
+<header class="desktop-header hidden lg:block shadow-md px-[3.3%] bg-white  fixed left-0 right-0 z-50"
   [class.hidden]="!isHeaderVisible">
-  <div class="py-5 flex justify-between items-center gap-12">
+  <div class="py-5 3xl:py-7 flex justify-between items-center">
     <a routerLink="/">
-      <img class="w-44 object-cover cursor-pointer" src="../../assets/header/blogo.png" alt="logo" />
+      <img class="w-44 3xl:w-[220px] object-cover cursor-pointer" src="../../assets/header/blogo.png" alt="logo" />
     </a>
-    <div class="flex items-center gap-10">
+    <div class="flex items-center gap-9 3xl:gap-12 3xl:-ml-20">
       <ng-container *ngFor="let item of menuItems">
         <div class="relative cursor-pointer">
           <a [ngClass]="{
             'text-teal1': (item.label !== 'About' && activeMenuItem === item.label) || (item.label === 'About' && activeMenuItem === 'About' && currentRoute === '/about'),
             'text-dark-gray1': activeMenuItem !== item.label && item.label !== 'About'
           }" (click)="item.dropdown ? toggleBottomSection(item.dropdown, item.label) : menu(item.label)"
-            [routerLink]="item.link" routerLinkActive="text-teal1" class="text-xl text-dark-gray1 hover:text-teal1">
+            [routerLink]="item.link" routerLinkActive="text-teal1" class="3xl:text-xl text-dark-gray1 hover:text-teal1">
             {{ item.label }}
             <i *ngIf="item.dropdown"
-              class="fa-solid fa-chevron-down text-base transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]"
+              class="fa-solid fa-chevron-down text-sm 3xl:text-base transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]"
               [ngClass]="{
               '-rotate-180 text-teal1': activeMenuItem === item.label && item.dropdown,
               'rotate-135 text-dark-gray1': activeMenuItem !== item.label && item.dropdown
@@ -26,7 +26,7 @@
           <div *ngIf="
               activeBottomSection === 'featured' && item.dropdown === 'featured'
             "
-            class="p-2 bg-card-gray rounded-br-lg rounded-bl-lg absolute left-1/2 transform -translate-x-1/2 top-[68px] z-20">
+            class="p-2 bg-card-gray rounded-br-lg rounded-bl-lg absolute left-1/2 transform -translate-x-1/2 top-[68px] 3xl:top-[88px] z-20">
             <div class="flex justify-center items-center gap-2">
               <div class="w-56" *ngFor="let item of featuredProductItems">
                 <div class="bg-white border-[1px] border-light-gray1 pt-8 px-8 rounded-lg text-center cursor-pointer">
@@ -42,7 +42,7 @@
               activeBottomSection === 'resources' &&
               item.dropdown === 'resources'
             "
-            class="flex gap-2 bg-card-gray absolute left-0 transform -translate-x-[70%] top-[68px] p-2 z-20 rounded-br-lg rounded-bl-lg w-[45rem]">
+            class="flex gap-2 bg-card-gray absolute left-0 transform -translate-x-[70%] top-[68px] 3xl:top-[88px] p-2 z-20 rounded-br-lg rounded-bl-lg w-[45rem]">
             <div class="bg-white border border-1 border-light-gray1 p-6 text-sm text-nowrap rounded-lg w-[40rem]">
               <div *ngFor="let item of resourceItems">
                 <a class="inline-block my-1 text-dark-gray2 hover:text-teal2 font-semibold cursor-pointer"
@@ -65,7 +65,7 @@
       </ng-container>
     </div>
 
-    <div class="flex items-center gap-6">
+    <div class="flex items-center gap-8 ">
       <svg (click)="toggleSearchbar()" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
         class="bi bi-search cursor-pointer hover:text-teal1" viewBox="0 0 16 16">
         <path
@@ -73,7 +73,7 @@
       </svg>
 
       <!-- Search bar container -->
-      <div *ngIf="isSearchbaropen" class="p-[10px] bg-card-gray fixed left-1/2 transform -translate-x-1/2 top-[109px] z-30 rounded-br-lg rounded-bl-lg w-[72%]">
+      <div *ngIf="isSearchbaropen" class="p-[10px] bg-card-gray fixed left-1/2 transform -translate-x-1/2 top-28 3xl:top-36 z-30 rounded-br-lg rounded-bl-lg w-[72%]">
         <div
           class="flex items-center gap-8 px-20 py-8 bg-white rounded-lg">
           <div
@@ -106,7 +106,6 @@
         <div class="flex gap-2">
           <div class="w-2/3 rounded-lg bg-white border-[1px] border-light-gray1">
             <app-header-section class="" [sections]="serviceSections"></app-header-section>
-
             <div class="p-6">
               <app-cbutton4 (click)="closeMenu()" [heading]="'All services'" [size]="'large'" [routerLink]="'/services'"
                 [icon]="'../../assets/services/r-arrow.svg'"></app-cbutton4>
@@ -142,9 +141,9 @@
   </div>
 </header>
 
-<div *ngIf="activeBottomSection" (click)="closeMenu()" class="hidden lg:block fixed h-full w-full z-20 bg-[#00000080]">
+<div *ngIf="activeBottomSection" (click)="closeMenu()" class="hidden lg:block fixed h-full w-full top-28 3xl:top-36 z-20 bg-[#00000080]">
 </div>
-<div *ngIf="isSearchbaropen" (click)="closeMenu()" class="hidden lg:block fixed h-full w-full z-20 bg-[#00000080]">
+<div *ngIf="isSearchbaropen" (click)="closeMenu()" class="hidden lg:block fixed h-full w-full top-28 3xl:top-36 z-20 bg-[#00000080]">
 </div>
 
 

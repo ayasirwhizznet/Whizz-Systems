@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Cbutton1Component } from '../cbutton1/cbutton1.component';
 import { CommonModule, NgFor } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [Cbutton1Component, CommonModule],
+  imports: [Cbutton1Component, CommonModule,RouterLink],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
@@ -19,7 +20,7 @@ export class FooterComponent {
 
   services:any[] = [
     {label: 'Engineering & Design', link: '/404'},
-    {label: 'NPI', link:'/404'},
+    {label: 'NPI', link:'/services/npi'},
     {label: 'Advanced Manufacturing', link: '/404'},
     {label: 'Lab Testing Solutions', link: '/404'},
     {label: 'Supply Chain Management', link: '/404'},

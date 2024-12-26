@@ -87,9 +87,15 @@ a great track record with us`,
           slides: {
             perView: 
             3,
+            spacing: 60,
+          },
+        },
+        "(min-width: 1700px)": {
+          slides: {
+            perView: 
+            3,
             spacing: 90,
           },
-        
         },
       },
     });

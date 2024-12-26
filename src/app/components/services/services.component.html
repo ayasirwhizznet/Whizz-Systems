@@ -1,7 +1,7 @@
-<div class="px-[4%] sm:px-[9%] text-dark-gray2 py-6 lg:py-16">
+<div class="px-[4%] sm:px-[9%] 3xl:px-[10.2%] text-dark-gray2 py-6 lg:py-16">
     <div class="flex flex-col gap-6 lg:gap-0 lg:flex-row items-center justify-between mb-8">
         <div class="self-start">
-            <h2 class="text-3xl sm:text-5xl font-bold">Services</h2>
+            <h2 class="text-3xl sm:text-4xl 3xl:text-5xl font-bold">Services</h2>
         </div>
         <div class="self-end flex items-center gap-6">
             <app-cbutton [size]="'medium'" [routerLink]="'/services'" heading="All services"
@@ -17,12 +17,13 @@
             </div>
         </div>
     </div>
-    <p class="mb-16 text-lg text-dark-gray1">With complete, in-house expertise, we provide flexible, customized support—
+    <p class="text-base 3xl:text-lg text-dark-gray1">With complete, in-house expertise, we provide flexible, customized support—
         <br class="hidden lg:block"> whether you’re
         starting from a concept or refining a product for the market.
     </p>
 </div>
-<div class="pl-[4%] sm:pl-[9%]">
+
+<div class="pl-[4%] sm:pl-[9%] 3xl:pl-[10.2%]">
     <div class="keen-slider" #sliderRef>
         <div class="keen-slider__slide " *ngFor="let card of cards">
             <app-services-card [imageUrl]="card.imgUrl" [title]="card.title"

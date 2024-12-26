@@ -1,6 +1,6 @@
-<div class="px-[4%] sm:px-[9%] pt-24 ">
-  <div class="flex flex-col lg:flex-row items-center justify-between mb-14 gap-6 sm:gap-0">
-    <h2 class="self-start text-3xl sm:text-5xl font-bold text-dark-gray2">Testimonials</h2>
+<div class="px-[4%] sm:px-[10.2%] pt-24 ">
+  <div class="flex flex-col lg:flex-row items-center justify-between mb-10 3xl:mb-14 gap-6 sm:gap-0">
+    <h2 class="self-start text-3xl sm:text-4xl 3xl:text-5xl font-bold text-dark-gray2">Testimonials</h2>
     <div class="self-end flex items-center gap-6">
       <div [className]="progress.abs == 0 ? 'pointer-events-none opacity-[0.6]':''">
         <app-larrowbutton (click)="prevSlide()" icon="../../assets/services/l-arrow.svg"
@@ -13,7 +13,7 @@
     </div>
   </div>
 </div>
-<div class="pl-[2%] sm:pl-[9%] pb-16">
+<div class="pl-[4%] sm:pl-[10.2%] pb-16">
   <div class="keen-slider" #sliderRef>
     <div class="keen-slider__slide " *ngFor="let card of cards">
       <app-testimonial-card [desc]="card.desc" [imageUrl]="card.imageUrl" [name]="card.name"
