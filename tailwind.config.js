@@ -14,6 +14,7 @@ module.exports = {
       backgroundImage: {
         lines: "url('../src/assets/services/line.png')",
         subscribe: "url('../src/assets/news/subscribe.png')",
+        map: "url('../src/assets/about/map.png')",
       },
       colors: {
         "light-gray1": "D9D9D9#",
