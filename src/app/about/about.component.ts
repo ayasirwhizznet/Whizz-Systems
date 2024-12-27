@@ -1,125 +1,169 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CbuttonComponent } from '../components/cbutton/cbutton.component';
-import * as am5 from '@amcharts/amcharts5';
-import * as am5map from '@amcharts/amcharts5/map';
-import * as am5geodata_worldLow from '@amcharts/amcharts5-geodata/worldLow';
-
-interface MapPointData {
-  geometry: { type: string; coordinates: [number, number] };
-  title: string;
-  html: string; // Explicitly define the `html` property
-}
-
+import * as am4core from '@amcharts/amcharts4/core';
+import * as am4maps from '@amcharts/amcharts4/maps';
+import am4geodata_worldLow from '@amcharts/amcharts4-geodata/worldLow';
 
 @Component({
   selector: 'app-about',
   standalone: true,
   imports: [CbuttonComponent, CommonModule],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.scss',
+  styleUrls: ['./about.component.scss'],
 })
-
 export class AboutComponent {
-  private root!: am5.Root;
+  private chart!: am4maps.MapChart;
+  private markers: HTMLDivElement[] = [];
 
-  ngAfterViewInit() {
-    // Create root element
-    this.root = am5.Root.new('chartdiv');
+  ngOnInit(): void {
+    // Create map instance
+    this.chart = am4core.create('chartdiv', am4maps.MapChart);
 
-    // Set themes
-    this.root.setThemes([
-      am5.Theme.new(this.root)
-    ]);
+    // Set map definition
+    this.chart.geodata = am4geodata_worldLow;
 
-    // Create map chart
-    const chart = this.root.container.children.push(
-      am5map.MapChart.new(this.root, {
-        panX: "rotateX",
-        panY: "rotateY",
-        wheelY: "zoom",
-        projection: am5map.geoNaturalEarth1(),
-      })
-    );
+    // Set projection
+    this.chart.projection = new am4maps.projections.Miller();
 
-    // Create polygon series for the world map
-    const polygonSeries = chart.series.push(
-      am5map.MapPolygonSeries.new(this.root, {
-        geoJSON: am5geodata_worldLow.default,
-      })
-    );
+    // Disable zoom control by setting zoomControl to null
+    // this.chart.zoomControl = null;
 
-    polygonSeries.mapPolygons.template.setAll({
-      fill: am5.color(0xffffff), // Set base color (e.g., green)
-      tooltipText: "{name}",
-      interactive: true,
-    });
+    // Set a fixed zoom level to prevent zooming in/out
+    this.chart.zoomLevel = -1; // Set this to the desired zoom level
 
-    polygonSeries.mapPolygons.template.states.create("hover", {
-      fill: am5.color(0xD9D9D9),
-    });
+    // Create map polygon series
+    const polygonSeries = this.chart.series.push(new am4maps.MapPolygonSeries());
+    polygonSeries.useGeodata = true;
+    const polygonTemplate = polygonSeries.mapPolygons.template;
+    polygonTemplate.fill = am4core.color('#fff');
 
-    // Add point series for markers
-    const pointSeries = chart.series.push(
-      am5map.MapPointSeries.new(this.root, {})
-    );
+    // Exclude Antarctica
+    polygonSeries.exclude = ['AQ'];
 
-    pointSeries.bullets.push((root, dataItem) => {
-      // Retrieve custom data from the `data` property of `dataItem`
-      const customData = dataItem.data as { title?: string; html?: string };
-    
-      console.log("Custom Data:", customData); // Debugging log
-    
-      // Use custom HTML if provided, otherwise fallback to a default
-      const customHtml = customData?.html || `<div class="custom-marker" title="{title}">
-               <div style="width: 17px; height: 17px; border-radius: 50%; border: 4px solid #2C353A"></div>
-                <div style="width: 0; height: 0; border-left: 12px solid transparent; border-right: 12px solid transparent; border-bottom: 24px solid #2A494C; position: relative; top:-10px; right: 3px"></div>
-             </div>`;
-    
-      return am5.Bullet.new(root, {
-        sprite: am5.Container.new(root, {
-          html: customHtml,
-          width: am5.percent(100),
-          height: am5.percent(100),
-          tooltipText: customData?.title || "No Title",
-          centerX: am5.percent(50),
-          centerY: am5.percent(50),
-        }),
-      });
-    });
-    
+    // Remove the AmCharts logo
+    this.chart.logo.disabled = true;
+    // Create image series for custom markers
+    const imageSeries = this.chart.series.push(new am4maps.MapImageSeries());
 
-    // Add data for specific locations
-    pointSeries.data.setAll([
+    // Add data for markers
+    imageSeries.data = [
       {
-        geometry: { type: "Point", coordinates: [-121.9552, 37.3541] },
-        title: "3240 Scott Blvd, Santa Clara, CA 95054, United States",
-        html: `<div class="custom-marker" title="{title}">
-               <div style="width: 17px; height: 17px; border-radius: 50%; border: 4px solid #2C353A"></div>
-                <div style="width: 0; height: 0; border-left: 12px solid transparent; border-right: 12px solid transparent; border-bottom: 24px solid #2A494C; position: relative; top:-10px; right: 3px"></div>
-             </div>`,
+        latitude: 37.3541,
+        longitude: -121.9552,
+        title: 'Santa Clara, California',
+        content: 'This is Santa Clara, California.',
       },
       {
-        geometry: { type: "Point", coordinates: [100.5974, 5.42467] }, // New York (lon, lat)
-        title: `Lot 8, SMI Park Phase 2 Jalan Hi-Tech 4 Sambungan Kulim Hi-Tech Park 09000 Kulim, KEDHA Malaysia`,
-        html: `<div class="custom-marker" title="{title}">
-               <div style="width: 17px; height: 17px; border-radius: 50%; border: 4px solid #2C353A"></div>
-                <div style="width: 0; height: 0; border-left: 12px solid transparent; border-right: 12px solid transparent; border-bottom: 24px solid #2A494C; position: relative; top:-10px; right: 3px"></div>
-             </div>`,
+        latitude: 5.42467,
+        longitude: 100.5974,
+        title: 'Kulim, Malaysia',
+        content: 'This is Kulim, Malaysia.',
       },
-    ]);
-    console.log(pointSeries.data.values)
+    ];
 
-    // Zoom to fit the map
-    chart.appear(1000, 100);
+    // Create custom markers after the chart is ready
+    this.chart.events.on('ready', () => {
+      const svgContainer = this.chart.svgContainer;
+      if (svgContainer && svgContainer.htmlElement) {
+        imageSeries.data.forEach((dataItem, index) => {
+          const marker = document.createElement('div');
+          marker.style.position = 'absolute';
+          marker.style.width = '17px';
+          marker.style.height = '17px';
+          marker.style.borderRadius = '50%';
+          marker.style.border = '4px solid #2C353A';
+          marker.style.transform = 'translate(-50%, -50%)';
+
+          // Different HTML for each location
+          if (dataItem.title === 'Santa Clara, California') {
+            marker.innerHTML = `<div>
+              <div style="width: 0; height: 0; border-left: 12px solid transparent; border-right: 12px solid transparent; border-bottom: 24px solid #2A494C; position: relative; right:7px; top: 3px;"></div>
+              <div style="width: 270px; height: 355px; background-color: #2A494C; color: #fff; position: relative; right: 130px; border-radius: 8px; padding: 16px; text-align: center; font-family: Roboto, serif;">
+              <h4 style="font-weight: 500; margin-bottom: 16px;">Santa Clara, CA, USA</h4>
+              <hr style="bordr-color: #D9D9D9">
+              <p style="font-weight: 300; margin-block: 16px">35,000 Square Foot Facility</p>
+              <hr style="bordr-color: #D9D9D9">
+              <p style="font-weight: 300; margin-block: 16px">95 Employees</p>
+              <hr style="bordr-color: #D9D9D9">
+              <p style="font-weight: 300; margin-block: 16px">SPI, FP, AOI, X-RAY</p>
+              <hr style="bordr-color: #D9D9D9">
+              <p style="font-weight: 300; margin-block: 16px">4 Juki SMT Lines</p>
+              <hr style="bordr-color: #D9D9D9">
+              <p style="font-weight: 300; margin-block: 16px">QMS, ITAR</p>
+              <hr style="bordr-color: #D9D9D9">
+              </div>
+            </div>`;
+          } else if (dataItem.title === 'Kulim, Malaysia') {
+            marker.innerHTML = `<div>
+            <div style="width: 0; height: 0; border-left: 12px solid transparent; border-right: 12px solid transparent; border-top: 24px solid #2A494C; position: relative; right:7px; bottom: 17px;"></div>
+            <div style="position: relative; bottom: 395px; width: 270px; height: 355px; background-color: #2A494C; color: #fff; position: relative; right: 130px; border-radius: 8px; padding: 16px; text-align: center; font-family: Roboto, serif;">
+            <h4 style="font-weight: 500; margin-bottom: 16px;">Malaysia</h4>
+            <hr style="bordr-color: #D9D9D9">
+            <p style="font-weight: 300; margin-block: 16px">80,000 Square Foot Facility</p>
+            <hr style="bordr-color: #D9D9D9">
+            <p style="font-weight: 300; margin-block: 16px">100 Employees</p>
+            <hr style="bordr-color: #D9D9D9">
+            <p style="font-weight: 300; margin-block: 16px">SPI, FP, AOI, X-RAY</p>
+            <hr style="bordr-color: #D9D9D9">
+            <p style="font-weight: 300; margin-block: 16px">4 Juki SMT Lines</p>
+            <hr style="bordr-color: #D9D9D9">
+            <p style="font-weight: 300; margin-block: 16px">QMS</p>
+            <hr style="bordr-color: #D9D9D9">
+            </div>
+          </div>`;
+          }
+
+          // Append the marker to the map container
+          svgContainer.htmlElement.appendChild(marker);
+          this.markers.push(marker);
+
+          // Update initial marker position
+          this.updateMarkerPosition(dataItem, marker);
+        });
+
+        // Add events for dynamic marker positioning
+        this.chart.events.on('mappositionchanged', () => {
+          this.updateAllMarkerPositions(imageSeries.data);
+        });
+        this.chart.events.on('zoomlevelchanged', () => {
+          this.updateAllMarkerPositions(imageSeries.data);
+        });
+      } else {
+        console.error('SVG container or HTML element is not available.');
+      }
+    });
   }
 
-  ngOnDestroy() {
-    if (this.root) {
-      this.root.dispose();
+  ngOnDestroy(): void {
+    // Dispose of the chart when the component is destroyed
+    if (this.chart) {
+      this.chart.dispose();
     }
   }
-  
+
+  private updateMarkerPosition(dataItem: any, marker: HTMLDivElement): void {
+    const geoPoint = this.chart.projection.convert({
+      latitude: dataItem.latitude,
+      longitude: dataItem.longitude,
+    });
+
+    if (geoPoint && this.chart.svgContainer?.htmlElement) {
+      const svgBoundingRect = this.chart.svgContainer.htmlElement.getBoundingClientRect();
+      marker.style.left = `${geoPoint.x + svgBoundingRect.left}px`;
+      marker.style.top = `${geoPoint.y + svgBoundingRect.top}px`;
+    } else {
+      console.error('GeoPoint conversion failed for:', dataItem);
+    }
+  }
+
+  private updateAllMarkerPositions(data: any[]): void {
+    data.forEach((dataItem, index) => {
+      this.updateMarkerPosition(dataItem, this.markers[index]);
+    });
+  }
+
+  // Data arrays for experience, certifications, etc. remain unchanged
   experience = [
     { quantity: '10', sign: '+', title: 'industries served', desc: 'Automotive, medical, aerospace, consumer electronics, and more' },
     { quantity: '10K', sign: '+', title: 'projects completed', desc: 'Trusted globally for delivering complex solutions' },
@@ -158,5 +202,35 @@ export class AboutComponent {
   passionate = [
     { imgUrl: '../../assets/about/Manny-Karim.png', name: 'Manny Karim', designation: 'CEO', desc: 'Manny’s expertise in operations, finance, and manufacturing has been instrumental in Whizz Systems’ success. Starting his career at Pentagon Systems in 1989, Manny co-founded Whizz Systems and developed a robust team and processes ensuring maximum efficiency without compromising quality. He oversees 4 state-of-the-art assembly lines in Santa Clara and 2 facilities in Malaysia.' },
     { imgUrl: '../../assets/about/Muuhammad-Irfan.png', name: 'Muhammad Irfan', designation: 'President', desc: `With a background in product development and manufacturing services, Muhammad co-founded Whizz Systems in 1999. His leadership has driven Whizz Systems' global presence across 3 continents, serving industries like computing, networking, medical, and defense.` },
+  ];
+
+  services = [
+    '',
+    'Product Development',
+    'Prototyping',
+    'NPI/Pilot',
+    'Production',
+    'Testing',
+    'Services & Repair',
+  ];
+
+  santaClara = [
+    'Santa Clara',
+    '<i class="fa-regular fa-circle-check"></i>',
+    '<i class="fa-regular fa-circle-check"></i>',
+    '<i class="fa-regular fa-circle-check"></i>',
+    '<i class="fa-regular fa-circle-check"></i>',
+    '<i class="fa-regular fa-circle-check"></i>',
+    '<i class="fa-regular fa-circle-check"></i>',
+  ];
+
+  malaysia = [
+    'Malaysia',
+    '',
+    '',
+    '',
+    '<i class="fa-regular fa-circle-check"></i>',
+    '<i class="fa-regular fa-circle-check"></i>',
+    '<i class="fa-regular fa-circle-check"></i>',
   ];
 }
