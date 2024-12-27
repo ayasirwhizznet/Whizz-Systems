@@ -29,11 +29,11 @@
             class="p-2 bg-card-gray rounded-br-lg rounded-bl-lg absolute left-1/2 transform -translate-x-1/2 top-[68px] 3xl:top-[88px] z-20">
             <div class="flex justify-center items-center gap-2">
               <div class="w-56" *ngFor="let item of featuredProductItems">
-                <div class="bg-white border-[1px] border-light-gray1 pt-8 px-8 rounded-lg text-center cursor-pointer">
-                  <a class="inline-block my-1 text-dark-gray2 hover:text-teal2 text-sm font-semibold mb-4"
-                    routerLink="item.link">{{ item.label }}</a>
+                <a class="inline-block bg-white border-[1px] border-light-gray1 pt-8 px-8 rounded-lg text-center cursor-pointer" routerLink="item.link">
+                  <p class="my-1 text-dark-gray2 hover:text-teal2 text-sm font-semibold mb-4"
+                    routerLink="item.link">{{ item.label }}</p>
                   <img class="rounded-tl-lg rounded-tr-lg" src="../../assets/header/featured-products.png" />
-                </div>
+                </a>
               </div>
             </div>
           </div>
