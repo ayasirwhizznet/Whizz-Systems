@@ -1,3 +1,5 @@
+
+
 <div class="px-[4%] sm:px-[5%] mb-12 lg:mb-32">
     <div class="relative px-8 lg:px-16 py-12 lg:py-40 3xl:py-56">
         <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-2xl" loop muted autoplay
@@ -105,73 +107,74 @@
 </div>
 
 <!-- Address -->
-<div class="w-full hidden lg:block  lg:mb-16 py-10 lg:py-16 bg-teal2 relative">
+<div class="w-full hidden lg:block mb-10 lg:mb-16 py-10 3xl:py-16 bg-teal2 relative">
     <h2 class="text-4xl 3xl:text-5xl font-medium leading-[57.6px] text-dark-gray2 text-center mb-8">Global Footprint
     </h2>
     <img class="w-[80%]  mx-auto" src="../../assets/about/map.png" alt="">
-    <div class="absolute top-[27rem] left-[19rem] 3xl:left-[24rem] w-32 text-center text-white">
+    <div class="absolute top-[22rem] 3xl:top-[27rem] left-[19rem] 3xl:left-[24rem] w-32 text-center text-white">
         <div class="w-4 h-4 rounded-[50%] border-4 border-dark-gray2"></div>
         <div class="w-0 h-0 border-l-[12px] border-r-[12px] border-b-[24px] border-l-transparent border-r-transparent border-b-dark-gray1 relative bottom-[10px] right-[3px]">
         </div>
-        <div class="w-72 bg-dark-gray1 p-4 rounded-lg relative right-32 bottom-3">
-            <h4 class="font-medium mb-4">Santa Clara, CA, USA</h4>
+        <div class="w-56 3xl:w-72 bg-dark-gray1 p-4 rounded-lg relative right-[104px] 3xl:right-32 bottom-3">
+            <h4 class="text-sm 3xl:text-base font-medium mb-3 3xl:mb-4">Santa Clara, CA, USA</h4>
             <div  *ngFor="let item of santaClara">
                 <hr class="border-light-gray1">
-                <p class="font-light my-4">{{item}}</p>
+                <p class="font-light text-sm 3xl:text-base my-3 3xl:my-4 text-light-gray1">{{item}}</p>
             </div>
         </div>
     </div>
-    <div class="absolute top-[38rem] right-[21rem] 3xl:right-[28rem] w-32 text-center text-white">
-        <div class="w-72 bg-dark-gray1 p-4 rounded-lg absolute bottom-7 -left-32">
-            <h4 class="font-medium mb-4">Malaysia</h4>
+    <div class="absolute top-[30.5rem] 3xl:top-[37.5rem] right-[21rem] 3xl:right-[28rem] w-32 text-center text-white">
+        <div class="w-56 3xl:w-72 bg-dark-gray1 p-3 3xl:p-4 rounded-lg absolute bottom-7 -left-24 3xl:-left-32">
+            <h4 class="text-sm 3xl:text-base font-medium mb-3 3xl:mb-4">Malaysia</h4>
             <div  *ngFor="let item of malaysia">
                 <hr class="border-light-gray1">
-                <p class="font-light my-4">{{item}}</p>
+                <p class="font-light text-sm 3xl:text-base my-3 3xl:my-4 text-light-gray1">{{item}}</p>
             </div>
         </div>
         <div class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[24px] border-l-transparent border-r-transparent border-t-dark-gray1 relative top-[10px] right-[3px]"></div>
         <div class="w-4 h-4 rounded-[50%] border-4 border-dark-gray2"></div>
     </div>
 
-    <div class="w-[54rem] mx-auto bg-dark-gray1 text-white p-5 text-center rounded-md mt-8">
+    <div class="w-[48rem] 3xl:w-[54rem] mx-auto bg-dark-gray1 text-white p-5 text-center rounded-md mt-8">
         <table>
             <tr>
-                <td class="text-xs px-8 py-3 border-r"></td>
-                <td class="text-xs px-8 py-3 font-light border-light-gray1 border-r">Product <br> Development</td>
-                <td class="text-xs px-8 py-3 font-light border-light-gray1 border-r">Prototyping</td>
-                <td class="text-xs px-8 py-3 font-light border-light-gray1 border-r">NPI/Pilot</td>
-                <td class="text-xs px-8 py-3 font-light border-light-gray1 border-r">Production</td>
-                <td class="text-xs px-8 py-3 font-light border-light-gray1 border-r">Testing</td>
-                <td class="text-xs px-8 py-3 font-light">Services & <br> Repair</td>
+                <td class="text-xs px-6 3xl:px-8 py-3 border-r"></td>
+                <td class="text-xs px-6 3xl:px-8 py-3 font-light border-light-gray1 border-r">Product <br> Development</td>
+                <td class="text-xs px-6 3xl:px-8 py-3 font-light border-light-gray1 border-r">Prototyping</td>
+                <td class="text-xs px-6 3xl:px-8 py-3 font-light border-light-gray1 border-r">NPI/Pilot</td>
+                <td class="text-xs px-6 3xl:px-8 py-3 font-light border-light-gray1 border-r">Production</td>
+                <td class="text-xs px-6 3xl:px-8 py-3 font-light border-light-gray1 border-r">Testing</td>
+                <td class="text-xs px-6 3xl:px-8 py-3 font-light">Services & <br> Repair</td>
             </tr>
             <tr>
                 <td class="text-xs text-nowrap px-2 py-7 border-t border-r">Santa Clara</td>
-                <td class="px-11 py-7 fa-2x border-light-gray1 border-t border-r"><i
+                <td class="px-8 3xl:px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"><i
                         class="fa-regular fa-circle-check"></i></td>
-                <td class="px-11 py-7 fa-2x border-light-gray1 border-t border-r"><i
+                <td class="px-8 3xl:px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"><i
                         class="fa-regular fa-circle-check"></i></td>
-                <td class="px-11 py-7 fa-2x border-light-gray1 border-t border-r"><i
+                <td class="px-8 3xl:px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"><i
                         class="fa-regular fa-circle-check"></i></td>
-                <td class="px-11 py-7 fa-2x border-light-gray1 border-t border-r"><i
+                <td class="px-8 3xl:px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"><i
                         class="fa-regular fa-circle-check"></i></td>
-                <td class="px-11 py-7 fa-2x border-light-gray1 border-t border-r"><i
+                <td class="px-8 3xl:px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"><i
                         class="fa-regular fa-circle-check"></i></td>
-                <td class="px-11 py-7 fa-2x border-light-gray1 border-t"><i class="fa-regular fa-circle-check"></i></td>
+                <td class="px-8 3xl:px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t"><i class="fa-regular fa-circle-check"></i></td>
             </tr>
             <tr>
                 <td class="text-xs px-2 py-7 border-t border-r">Malaysia</td>
-                <td class="px-11 py-7 fa-2x border-light-gray1 border-t border-r"></td>
-                <td class="px-11 py-7 fa-2x border-light-gray1 border-t border-r"></td>
-                <td class="px-11 py-7 fa-2x border-light-gray1 border-t border-r"></td>
-                <td class="px-11 py-7 fa-2x border-light-gray1 border-t border-r"><i
+                <td class="px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"></td>
+                <td class="px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"></td>
+                <td class="px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"></td>
+                <td class="px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"><i
                         class="fa-regular fa-circle-check"></i></td>
-                <td class="px-11 py-7 fa-2x border-light-gray1 border-t border-r"><i
+                <td class="px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"><i
                         class="fa-regular fa-circle-check"></i></td>
-                <td class="px-11 py-7 fa-2x border-light-gray1 border-t"><i class="fa-regular fa-circle-check"></i></td>
+                <td class="px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t"><i class="fa-regular fa-circle-check"></i></td>
             </tr>
         </table>
     </div>
 </div>
+
 
 <div class="px-[4%] sm:px-[8%]">
     <!-- Certifications -->
