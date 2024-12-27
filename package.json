@@ -10,8 +10,6 @@
   },
   "private": true,
   "dependencies": {
-    "@amcharts/amcharts4": "^4.10.39",
-    "@amcharts/amcharts4-geodata": "^4.1.30",
     "@angular/animations": "^18.2.0",
     "@angular/common": "^18.2.0",
     "@angular/compiler": "^18.2.0",
@@ -22,7 +20,6 @@
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
     "bootstrap-icons": "^1.11.3",
-    "geojson": "^0.5.0",
     "gsap": "^3.12.5",
     "keen-slider": "^6.8.6",
     "ngx-echarts": "^19.0.0",

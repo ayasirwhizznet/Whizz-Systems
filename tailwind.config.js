@@ -17,7 +17,7 @@ module.exports = {
         map: "url('../src/assets/about/map.png')",
       },
       colors: {
-        "light-gray1": "D9D9D9#",
+        "light-gray1": "#D9D9D9",
         "light-gray2": "#B9B9B9",
         "teal1": "#55C2BC",
         "teal2": "#7BD4CF",
