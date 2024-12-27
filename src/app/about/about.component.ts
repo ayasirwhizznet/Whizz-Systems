@@ -51,33 +51,48 @@ export class AboutComponent {
     { imgUrl: '../../assets/about/Muuhammad-Irfan.png', name: 'Muhammad Irfan', designation: 'President', desc: `With a background in product development and manufacturing services, Muhammad co-founded Whizz Systems in 1999. His leadership has driven Whizz Systems' global presence across 3 continents, serving industries like computing, networking, medical, and defense.` },
   ];
 
-  services = [
-    '',
-    'Product Development',
-    'Prototyping',
-    'NPI/Pilot',
-    'Production',
-    'Testing',
-    'Services & Repair',
-  ];
-
-  santaClara = [
-    'Santa Clara',
-    '<i class="fa-regular fa-circle-check"></i>',
-    '<i class="fa-regular fa-circle-check"></i>',
-    '<i class="fa-regular fa-circle-check"></i>',
-    '<i class="fa-regular fa-circle-check"></i>',
-    '<i class="fa-regular fa-circle-check"></i>',
-    '<i class="fa-regular fa-circle-check"></i>',
+  santaClara  = [
+    '35,000 Square Foot Facility',
+    '95 Employees',
+    'SPI, FP, AOI, X-RAY',
+    '4 Juki SMT Lines',
+    'QMS, ITAR',
   ];
 
   malaysia = [
-    'Malaysia',
-    '',
-    '',
-    '',
-    '<i class="fa-regular fa-circle-check"></i>',
-    '<i class="fa-regular fa-circle-check"></i>',
-    '<i class="fa-regular fa-circle-check"></i>',
+    '80,000 Square Foot Facility',
+    '100 Employees',
+    'SPI, FP, AOI, X-RAY',
+    '4 Juki SMT Lines',
+    'QMS',
   ];
+  // services = [
+  //   '',
+  //   'Product Development',
+  //   'Prototyping',
+  //   'NPI/Pilot',
+  //   'Production',
+  //   'Testing',
+  //   'Services & Repair',
+  // ];
+
+  // santaClara = [
+  //   'Santa Clara',
+  //   '<i class="fa-regular fa-circle-check"></i>',
+  //   '<i class="fa-regular fa-circle-check"></i>',
+  //   '<i class="fa-regular fa-circle-check"></i>',
+  //   '<i class="fa-regular fa-circle-check"></i>',
+  //   '<i class="fa-regular fa-circle-check"></i>',
+  //   '<i class="fa-regular fa-circle-check"></i>',
+  // ];
+
+  // malaysia = [
+  //   'Malaysia',
+  //   '',
+  //   '',
+  //   '',
+  //   '<i class="fa-regular fa-circle-check"></i>',
+  //   '<i class="fa-regular fa-circle-check"></i>',
+  //   '<i class="fa-regular fa-circle-check"></i>',
+  // ];
 }
