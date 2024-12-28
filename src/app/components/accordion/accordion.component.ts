@@ -1,18 +1,18 @@
 import { CommonModule, NgClass, NgFor } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 interface MenuItem {
   label: string;
-  link: string;
+  link?: string;  // Make link optional
   dropdown?: string;
   open?: boolean;
 }
 
 interface ServiceSection {
-  title: string;
-  items: MenuItem[];
-  open?: boolean; // Add this to track open state
+  title: string; // Keep the title as a string (no link)
+  items: MenuItem[]; // Keep the items as is
+  open?: boolean; 
 }
 
 @Component({
@@ -20,70 +20,72 @@ interface ServiceSection {
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './accordion.component.html',
-  styleUrl: './accordion.component.scss'
+  styleUrls: ['./accordion.component.scss']
 })
-
 export class AccordionComponent {
   activeMenuItem: string | null = null;
+  menuSectionVisible: boolean = true;
+
+  @Output() menuLinkClicked = new EventEmitter<void>(); // Emit an event when a link is clicked
 
   menuItems: MenuItem[] = [
-    { label: 'About', link: '/', open: false },
-    { label: 'Services', dropdown: 'service', link: '/', open: false },
-    { label: 'Featured Products', dropdown: 'featured', link: '/', open: false },
-    { label: 'Resources', dropdown: 'resources', link: '/', open: false },
+    { label: 'About', link: '/about', open: false },
+    { label: 'Services', dropdown: 'service', open: false },
+    { label: 'Featured Products', dropdown: 'featured', open: false },
+    { label: 'Resources', dropdown: 'resources', open: false },
   ];
 
   serviceSections: ServiceSection[] = [
     {
       title: 'Engineering & Design',
       items: [
-        { label: 'System Design/Schematics', link: '/' },
-        { label: 'FPGA Design', link: '/' },
-        { label: 'PCB Layout', link: '/' },
-        { label: '3D Modeling/Mechanical Engineering', link: '/' },
-        { label: 'Signal Integrity Simulations', link: '/' },
-        { label: 'Power Delivery Network Simulations', link: '/' },
-        { label: 'Thermal Management/Thermal Simulation', link: '/' },
+        { label: 'System Design/Schematics', link: '/services/engineering_&_design/system_design_&_schematics' },
+        { label: 'FPGA Design', link: '/404' },
+        { label: 'PCB Layout', link: '/services/engineering_&_design/pcb_layout' },
+        { label: '3D Modeling/Mechanical Engineering', link: '/services/engineering_&_design/3D_modeling' },
+        { label: 'Signal Integrity Simulations', link: '/services/engineering_&_design/signal_integrity_simulations' },
+        { label: 'Power Delivery Network Simulations', link: '/404' },
+        { label: 'Thermal Management/Thermal Simulation', link: '/services/engineering_&_design/thermal_management' },
       ],
-      open: false // Track the open state for each service section
+      open: false
     },
     {
       title: 'NPI',
       items: [
-        { label: 'System Level Architecture', link: '/' },
-        { label: 'Engineering & Design', link: '/' },
-        { label: 'Prototyping', link: '/' },
-        { label: 'Testing', link: '/' },
-        { label: 'Compliance and Certification', link: '/' }
+        { label: 'System Level Architecture', link: '/services/npi' },
+        { label: 'Engineering & Design', link: '/services/npi' },
+        { label: 'Prototyping', link: '/services/npi' },
+        { label: 'Testing', link: '/services/npi' },
+        { label: 'Compliance and Certification', link: '/services/npi' }
       ],
-      open: false // Track the open state for each service section
+      open: false
     },
     {
       title: 'Advanced Manufacturing',
       items: [
-        { label: 'DFX Analysis', link: '/' },
-        { label: 'FMEA (Failure Mode & Effects Analysis)', link: '/' },
-        { label: 'Thermal Profiling and Reflow Soldering Optimization', link: '/' },
-        { label: 'Mechanical System Build', link: '/' },
-        { label: 'Packaging Design', link: '/' },
+        { label: 'DFX Analysis', link: '/404' },
+        { label: 'FMEA (Failure Mode & Effects Analysis)', link: '/404' },
+        { label: 'Thermal Profiling and Reflow Soldering Optimization', link: '/404' },
+        { label: 'Mechanical System Build', link: '/404' },
+        { label: 'Packaging Design', link: '/404' },
       ],
       open: false // Track the open state for each service section
     },
     {
       title: 'Lab Testing Solutions',
       items: [
-        { label: 'Board Bring Up', link: '/' },
-        { label: 'Validation', link: '/' },
-        { label: 'Characterization', link: '/' },
+        { label: 'Board Bring Up', link: '/404' },
+        { label: 'Validation', link: '/404' },
+        { label: 'Characterization', link: '/404' },
       ],
       open: false // Track the open state for each service section
     },
     {
       title: 'Supply Chain Management',
       items: [
-        { label: 'Component Engineering', link: '/' },
-        { label: 'Compliance Engineering', link: '/' },
-        { label: 'Procurement Engineering', link: '/' },
+        { label: 'Component Engineering', link: '/404' },
+        { label: 'Compliance Engineering', link: '/404' },
+        { label: 'Procurement Engineering', link: '/404' },
       ],
       open: false // Track the open state for each service section
     },
@@ -91,30 +93,30 @@ export class AccordionComponent {
     {
       title: 'Sustainable Engineering & Obsolescence Management',
       items: [
-        { label: 'BOM Management', link: '/' },
-        { label: 'EOL Management', link: '/' },
-        { label: 'AVL Management', link: '/' },
-        { label: 'Second Sourcing / Risk Buying', link: '/' },
+        { label: 'BOM Management', link: '/404' },
+        { label: 'EOL Management', link: '/404' },
+        { label: 'AVL Management', link: '/404' },
+        { label: 'Second Sourcing / Risk Buying', link: '/404' },
       ],
       open: false // Track the open state for each service section
     },
   ];
 
   featuredProductItems: MenuItem[] = [
-    { label: '5G ORU Open Radio Unit', link: '/' },
-    { label: 'Loopback Cards', link: '/' },
-    { label: 'Xilinx Evaluation Kit', link: '/' },
-    { label: 'USB 3/2', link: '/' },
+    { label: '5G ORU Open Radio Unit', link: '/404' },
+    { label: 'Loopback Cards', link: '/404' },
+    { label: 'Xilinx Evaluation Kit', link: '/404' },
+    { label: 'USB 3/2', link: '/404' },
   ];
 
   blogItems: MenuItem[] = [
-    { label: 'News & Events', link: '/' },
-    { label: 'Whitepapers', link: '/' },
-    { label: 'Customer Stories', link: '/' },
-    { label: 'FAQ', link: '/' },
+    { label: 'News & Events', link: '/404' },
+    { label: 'Whitepapers', link: '/404' },
+    { label: 'Customer Stories', link: '/404' },
+    { label: 'FAQ', link: '/404' },
   ];
 
-  toggleMenu(item: MenuItem) {
+  toggleMenuSection(item: MenuItem) {
     // Loop through all menu items and close all except the clicked one
     this.menuItems.forEach(i => {
       i.open = (i === item) ? !i.open : false;  // Toggle the clicked item and close others
@@ -132,5 +134,19 @@ export class AccordionComponent {
       });
       section.open = true; // Open the selected section
     }
-  }  
+  }
+  
+
+  // Your existing properties and methods...
+
+  closeMenuSection() {
+    this.menuSectionVisible = false; // Hide the header
+    this.menuLinkClicked.emit(); // Emit the event to notify the parent
+  }
+
+  // Optional: If you want to show the header when navigating to a new route
+  // You can use Angular lifecycle hooks to show the header again when the component reloads.
+  ngOnInit() {
+    this.menuSectionVisible = true; // Ensure header is visible when the page loads
+  }
 }

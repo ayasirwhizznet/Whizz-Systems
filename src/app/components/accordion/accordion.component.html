@@ -1,15 +1,21 @@
-<div class="bg-white px-[3%] fixed left-0 right-0 h-full z-30 overflow-y-scroll">
+<div *ngIf="menuSectionVisible" class="bg-white px-[3%] fixed left-0 right-0 h-full z-30 overflow-y-scroll">
   <div *ngFor="let item of menuItems" class="mb-4">
     <!-- Menu Bar -->
-    <div (click)="toggleMenu(item)" class="flex items-center cursor-pointer transition-all duration-300 ease-in-out">
-      <a [routerLink]="item.link" class="text-2xl transition-all duration-300 ease-in-out"
-        [ngClass]="{'text-teal1': item.open, 'text-dark-gray1 hover:text-teal1': !item.open}">
+    <div (click)="toggleMenuSection(item)" class="flex items-center cursor-pointer transition-all duration-300 ease-in-out">
+      <!-- Only apply routerLink if item has a link -->
+      <a *ngIf="item.link" [routerLink]="item.link" class="text-2xl transition-all duration-300 ease-in-out"
+        [ngClass]="{'text-teal1': item.open, 'text-dark-gray1 hover:text-teal1': !item.open}" (click)="closeMenuSection()">
         {{ item.label }}
       </a>
+      <!-- For dropdown items, no link, just toggle open state -->
+      <div *ngIf="!item.link" class="text-2xl cursor-pointer transition-all duration-300 ease-in-out"
+        [ngClass]="{'text-teal1': item.open, 'text-dark-gray1 hover:text-teal1': !item.open}" >
+        {{ item.label }}
+      </div>
+
       <span class="ml-auto text-xl" *ngIf="item.dropdown">
         <i class="fa-solid fa-chevron-right transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)"
-          [ngClass]="{'rotate-90 text-teal1': item.open, 'text-dark-gray1': !item.open}">
-        </i>
+          [ngClass]="{'rotate-90 text-teal1': item.open, 'text-dark-gray1': !item.open}"></i>
       </span>
     </div>
 
@@ -20,18 +26,17 @@
         <span class="my-2 -ml-4 text-xl cursor-pointer"><i class="fa-solid fa-arrow-left-long"></i></span>
       </div>
 
-      <!-- Service Dropdown -->
+      <!-- Dropdowns for different types -->
       <ng-container *ngIf="item.dropdown === 'service'">
         <div *ngFor="let section of serviceSections" class="mb-4">
           <div (click)="toggleSection(section)" class="flex items-center cursor-pointer">
-            <a [routerLink]="item.link" class="text-xl transition-all duration-300 ease-in-out"
-              [ngClass]="{'text-teal1': section.open, 'text-dark-gray1 hover:text-teal1': !section.open}">
+            <a *ngIf="section.items.length > 0" [routerLink]="section.items[0].link" class="text-xl transition-all duration-300 ease-in-out"
+              [ngClass]="{'text-teal1': section.open, 'text-dark-gray1 hover:text-teal1': !section.open}" (click)="closeMenuSection()">
               {{ section.title }}
             </a>
             <span class="ml-auto text-xl">
               <i class="fa-solid fa-chevron-right transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)"
-                [ngClass]="{'rotate-90 text-teal1': section.open, 'text-dark-gray1': !section.open}">
-              </i>
+                [ngClass]="{'rotate-90 text-teal1': section.open, 'text-dark-gray1': !section.open}"></i>
             </span>
           </div>
           <div *ngIf="section.open" class="ml-4">
@@ -39,7 +44,8 @@
               <span class="my-2 -ml-4"><i class="fa-solid fa-arrow-left-long"></i></span>
             </div>
             <div *ngFor="let subItem of section.items" class="mb-4">
-              <a [routerLink]="subItem.link" class="block text-base text-dark-gray1 hover:text-teal1">
+              <a [routerLink]="subItem.link" class="block text-base text-dark-gray1 hover:text-teal1"
+                (click)="closeMenuSection()">
                 {{ subItem.label }}
               </a>
             </div>
@@ -47,19 +53,20 @@
         </div>
       </ng-container>
 
-      <!-- Featured Products Dropdown -->
+      <!-- Other dropdowns: Featured, Resources, etc. -->
       <ng-container *ngIf="item.dropdown === 'featured'">
         <div *ngFor="let featured of featuredProductItems" class="mb-4">
-          <a [routerLink]="featured.link" class="block text-base text-dark-gray1 hover:text-teal1">
+          <a [routerLink]="featured.link" class="block text-base text-dark-gray1 hover:text-teal1"
+            (click)="closeMenuSection()">
             {{ featured.label }}
           </a>
         </div>
       </ng-container>
 
-      <!-- Resources Dropdown -->
       <ng-container *ngIf="item.dropdown === 'resources'">
         <div *ngFor="let blog of blogItems" class="mb-4">
-          <a [routerLink]="blog.link" class="block text-base text-dark-gray1 hover:text-teal1">
+          <a [routerLink]="blog.link" class="block text-base text-dark-gray1 hover:text-teal1"
+            (click)="closeMenuSection()">
             {{ blog.label }}
           </a>
         </div>

@@ -187,7 +187,7 @@ export class HeaderComponent implements OnInit {
     this.isSearchbaropen = !this.isSearchbaropen;
   }
 
-  toggleMenu() {
+  toggleMenuSection() {
     this.isSearchbaropen = !this.isSearchbaropen;
     this.isMenuOpen = !this.isMenuOpen;
     this.isAccordionOpen = this.isMenuOpen;
