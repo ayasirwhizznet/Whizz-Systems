@@ -3,7 +3,7 @@ import { Router, NavigationEnd, NavigationStart, ActivatedRoute } from '@angular
 import { RouterLink } from '@angular/router';
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { HeaderSectionComponent } from '../header-section/header-section.component';
-import { AccordionComponent } from '../accordion/accordion.component';
+import { MobileHeaderComponent } from '../mobile_header/mobile_header.component';
 import { CbuttonComponent } from '../cbutton/cbutton.component';
 import { Cbutton3Component } from '../cbutton3/cbutton3.component';
 import { Cbutton4Component } from '../cbutton4/cbutton4.component';
@@ -11,7 +11,7 @@ import { Cbutton4Component } from '../cbutton4/cbutton4.component';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, NgIf, NgFor, NgClass, HeaderSectionComponent, AccordionComponent, CbuttonComponent, Cbutton3Component,Cbutton4Component],
+  imports: [RouterLink, NgIf, NgFor, NgClass, HeaderSectionComponent, MobileHeaderComponent, CbuttonComponent, Cbutton3Component,Cbutton4Component],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })

@@ -21,10 +21,10 @@ interface ServiceSection {
   selector: 'app-accordion',
   standalone: true,
   imports: [CommonModule, RouterLink],
-  templateUrl: './accordion.component.html',
-  styleUrls: ['./accordion.component.scss']
+  templateUrl: './mobile_header.component.html',
+  styleUrls: ['./mobile_header.component.scss']
 })
-export class AccordionComponent {
+export class MobileHeaderComponent {
   activeMenuItem: string | null = null;
   menuSectionVisible: boolean = true;
 
