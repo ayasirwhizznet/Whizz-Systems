@@ -25,6 +25,11 @@ export const routes: Routes = [
                 title: "Signal Integrity Simulations"
             },
             {
+                path: 'power_delivery',
+                loadComponent: () => import('./power-delivery/power-delivery.component').then(m => m.PowerDeliveryComponent),
+                title: "Power Delivery Network Simulations"
+            },
+            {
                 path: 'thermal_management',
                 loadComponent: () => import('./thermal-management/thermal-management.component').then(m => m.ThermalManagementComponent),
                 title: "Thermal Management/Thermal Simulation"

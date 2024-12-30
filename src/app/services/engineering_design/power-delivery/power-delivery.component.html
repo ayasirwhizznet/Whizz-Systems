@@ -1,0 +1,94 @@
+<!-- Hero -->
+<div class="px-[4%] sm:px-[6%] mb-12 lg:mb-32">
+    <div class="px-8 lg:px-16 py-10 lg:py-24 bg-dark-gray1 flex flex-col lg:flex-row items-center gap-10 lg:gap-14 3xl:gap-28 rounded-2xl">
+        <div class="w-full lg:w-1/2 text-white">
+            <p class="text-base">Engineering & Design</p>
+            <h1 class="text-3xl lg:text-5xl 3xl:text-[56px] lg:leading-[60px] 3xl:leading-[67.2px] font-bold  my-8">Power Delivery Network Simulations for Reliable PCB Performance</h1>
+            <p class="text-xl leading-[24px] font-light mb-8">Ensuring Power Integrity with Advanced DC and AC Analysis Techniques</p>
+            <app-cbutton [heading]="'Optimize Your Power Network Today'"
+                [icon]="'../../../assets/services/r-arrow.svg'" [routerLink]="'/404'"></app-cbutton>
+        </div>
+        <div class="w-full lg:w-1/2 p-6 sm:p-16 lg:p-0">
+            <img class="object-cover" src="../../../assets/power-delivery/hero.png" alt="img">
+        </div>
+    </div>
+</div>
+
+
+<div class="px-[4%] sm:px-[9.5%]">
+<!-- Introduction -->
+<div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-12 lg:mb-32">
+    <div class="w-full lg:w-[46.8%] order-2 lg:order-1 p-8 md:p-16 lg:p-0 ">
+        <img class="object-cover" src="../../../assets/signalIntegrity/introduction.png" alt="img">
+    </div>
+    <div class="w-full lg:w-[53.2%] order-1 lg:order-0">
+        <h4 class="text-teal1 font-bold">Introduction</h4>
+        <h3 class="text-dark-gray2 text-2xl font-medium my-4">Optimized Power Delivery for NextGen Electronics & Hardware Systems</h3>
+        <p class="text-dark-gray2 font-light mb-6">Whizz Systems’ Power Integrity services focus on delivering efficient, reliable, and high-performing power distribution networks for PCB designs. Our advanced simulations ensure every component receives stable power within design constraints while minimizing risks of overheating, noise, and power inefficiency.</p>
+    </div>
+</div>
+
+<!-- Core Services Overview -->
+<div class="mb-12 lg:mb-32">
+    <h4 class="text-teal1 font-bold">Core Services Overview</h4>
+    <h3 class="text-dark-gray2 text-2xl font-medium mt-4 mb-8">Comprehensive Power Integrity Services</h3>
+    <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 md:gap-x-16 3xl:gap-x-36 md:gap-y-10">
+        <div *ngFor="let service of coreServices">
+            <div class="p-8 bg-card-gray border border-light-gray1 rounded-lg">
+                <img class="rounded-lg" [src]="service.imgUrl" alt="img">
+                <div class=" h-[8rem] lg:h-[9rem]">
+                    <h3 class="font-bold mt-8 mb-5">{{service.title}}</h3>
+                    <p class="font-light">{{service.desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Benefits -->
+<div class="mb-12 lg:mb-24">
+    <h4 class="text-teal1 font-bold mb-4">Benefits</h4>
+    <h3 class="text-dark-gray2 text-2xl font-medium mb-12">Why Choose Whizz Systems for Power Integrity?</h3>
+    <div class="p-8 bg-card-gray  rounded-lg">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div *ngFor="let benefit of benefits">
+                <div class="p-8 bg-white border-[1px] border-light-gray1 rounded-lg h-[15rem]">
+                    <img class="w-12 h-12" [src]="benefit.imgUrl" alt="img">
+                    <h3 class="text-dark-gray2 font-medium my-4">{{benefit.title}}</h3>
+                    <p class="text-dark-gray2 font-light">{{benefit.desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- Case Studies -->
+ <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-12 lg:mb-16">
+    <div class="w-full lg:w-[53.2%]">
+        <h4 class="text-teal1 font-bold">Case Study</h4>
+        <h3 class="text-dark-gray2 text-2xl font-medium my-4">Proven Success</h3>
+        <p class="text-dark-gray2 font-light mb-4">Brief success stories or Whitepapers related to/ showcasing specific mechanical design projects.</p>
+        <app-cbutton heading="Learn more" size="small" icon="../../../assets/services/r-arrow.svg"></app-cbutton>
+    </div>
+    <div class="w-full lg:w-[46.8%] p-8 md:p-16 lg:p-0">
+        <img class="object-cover" src="../../../assets/power-delivery/case-study.png" alt="img">
+    </div>
+</div>
+
+<!-- Contact PCB Expert -->
+<div class="mb-12 lg:mb-16">
+    <div class="relative p-8 lg:p-12 3xl:p-16 rounded-lg">
+        <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-lg" loop muted autoplay
+            oncanplay="this.play()" onloadedmetadata="this.muted = true">
+            <source src="../../assets/hero/waves2.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-[#00a99f] opacity-80 z-10 rounded-lg"></div>
+        <div class="relative z-20 max-w-lg lg:max-w-[40rem] 3xl:max-w-3xl text-white">
+            <h2 class="text-3xl lg:text-5xl 3xl:text-[64px] 3xl:leading-[76.8px] font-bold mb-4">Ensure Power Integrity in Your Designs</h2>
+            <p class="text-lg lg:text-2xl 3xl:text-3xl font-medium lg:leading-[40px] 3xl:leading-[48px] mb-12">Partner with Whizz Systems to create high-performance PCBs with optimized power delivery networks that meet your industry’s standards.</p>
+            <app-cbutton heading="Contact our Experts" [size]="'large'" [routerLink]="'/404'"></app-cbutton>
+        </div>
+    </div>
+</div>
+</div>

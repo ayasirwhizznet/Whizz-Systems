@@ -7,6 +7,8 @@ interface MenuItem {
   link?: string;  // Make link optional
   dropdown?: string;
   open?: boolean;
+  fragment?: string;
+
 }
 
 interface ServiceSection {
@@ -44,7 +46,7 @@ export class AccordionComponent {
         { label: 'PCB Layout', link: '/services/engineering_&_design/pcb_layout' },
         { label: '3D Modeling/Mechanical Engineering', link: '/services/engineering_&_design/3D_modeling' },
         { label: 'Signal Integrity Simulations', link: '/services/engineering_&_design/signal_integrity_simulations' },
-        { label: 'Power Delivery Network Simulations', link: '/404' },
+        { label: 'Power Delivery Network Simulations', link: '/services/engineering_&_design/power_delivery' },
         { label: 'Thermal Management/Thermal Simulation', link: '/services/engineering_&_design/thermal_management' },
       ],
       open: false
@@ -52,11 +54,11 @@ export class AccordionComponent {
     {
       title: 'NPI',
       items: [
-        { label: 'System Level Architecture', link: '/services/npi' },
-        { label: 'Engineering & Design', link: '/services/npi' },
-        { label: 'Prototyping', link: '/services/npi' },
-        { label: 'Testing', link: '/services/npi' },
-        { label: 'Compliance and Certification', link: '/services/npi' }
+        { label: 'System Level Architecture', link: '/services/npi', fragment: "SystemLevelArchitecture" },
+        { label: 'Engineering & Design', link: '/services/npi', fragment: "Engineering&Design"  },
+        { label: 'Prototyping', link: '/services/npi', fragment: "Prototyping"  },
+        { label: 'Testing', link: '/services/npi', fragment: "Testing"  },
+        { label: 'Compliance and Certification', link: '/services/npi', fragment: "Compliance"  },
       ],
       open: false
     },
