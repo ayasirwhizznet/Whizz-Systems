@@ -19,6 +19,10 @@ export const routes: Routes = [
     loadChildren: () => import('./services/routes').then((m) => m.routes)
   },
   {
+    path: 'featured-products',
+    loadChildren: () => import('./featured-products/routes').then((m) => m.routes)
+  },
+  {
     path: 'news_&_insights',
     loadChildren: () => import('./news_&_blogs/routes').then((m) => m.routes)
   },

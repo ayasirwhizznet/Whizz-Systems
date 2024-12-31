@@ -28,13 +28,12 @@
             "
             class="p-2 bg-card-gray rounded-br-lg rounded-bl-lg absolute left-1/2 transform -translate-x-1/2 top-[68px] 3xl:top-[88px] z-20">
             <div class="flex justify-center items-center gap-2">
-              <div class="w-56" *ngFor="let item of featuredProductItems">
-                <a class="inline-block bg-white border-[1px] border-light-gray1 pt-8 px-8 rounded-lg text-center cursor-pointer" routerLink="item.link">
-                  <p class="my-1 text-dark-gray2 hover:text-teal2 text-sm font-semibold mb-4"
-                    routerLink="item.link">{{ item.label }}</p>
-                  <img class="rounded-tl-lg rounded-tr-lg" src="../../assets/header/featured-products.png" />
-                </a>
-              </div>
+              <a *ngFor="let item of featuredProductItems"
+                class="w-56 inline-block bg-white border border-light-gray1 pt-8 px-8 rounded-lg text-center cursor-pointer"
+                [routerLink]="item.link">
+                <p class="my-1 text-dark-gray2 hover:text-teal2 text-sm font-semibold mb-4">{{ item.label }}</p>
+                <img class="rounded-tl-lg rounded-tr-lg" src="../../assets/header/featured-products.png" />
+              </a>
             </div>
           </div>
 
@@ -73,9 +72,9 @@
       </svg>
 
       <!-- Search bar container -->
-      <div *ngIf="isSearchbaropen" class="p-[10px] bg-card-gray fixed left-1/2 transform -translate-x-1/2 top-28 3xl:top-36 z-30 rounded-br-lg rounded-bl-lg w-[72%]">
-        <div
-          class="flex items-center gap-8 px-20 py-8 bg-white rounded-lg">
+      <div *ngIf="isSearchbaropen"
+        class="p-[10px] bg-card-gray fixed left-1/2 transform -translate-x-1/2 top-28 3xl:top-36 z-30 rounded-br-lg rounded-bl-lg w-[72%]">
+        <div class="flex items-center gap-8 px-20 py-8 bg-white rounded-lg">
           <div
             class="w-[80%] flex items-center gap-4 rounded-lg border-[1px] border-dark-gray2 bg-card-gray px-5 py-2 ">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
@@ -141,9 +140,11 @@
   </div>
 </header>
 
-<div *ngIf="activeBottomSection" (click)="closeMenu()" class="hidden lg:block fixed h-full w-full top-28 3xl:top-36 z-20 bg-[#00000080]">
+<div *ngIf="activeBottomSection" (click)="closeMenu()"
+  class="hidden lg:block fixed h-full w-full top-28 3xl:top-36 z-20 bg-[#00000080]">
 </div>
-<div *ngIf="isSearchbaropen" (click)="closeMenu()" class="hidden lg:block fixed h-full w-full top-28 3xl:top-36 z-20 bg-[#00000080]">
+<div *ngIf="isSearchbaropen" (click)="closeMenu()"
+  class="hidden lg:block fixed h-full w-full top-28 3xl:top-36 z-20 bg-[#00000080]">
 </div>
 
 

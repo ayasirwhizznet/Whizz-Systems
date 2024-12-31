@@ -93,10 +93,10 @@ export class HeaderComponent implements OnInit {
 
 
   featuredProductItems = [
-    { label: '5G ORU Open Radio Unit', link: '/404' },
-    { label: 'Loopback Cards', link: '/404' },
-    { label: 'Xilinx Evaluation Kit', link: '/404' },
-    { label: 'USB 3/2', link: '/404' },
+    { label: '5G ORU Open Radio Unit', link: '/featured-products/5g-oru' },
+    { label: 'Loopback Cards', link: '/featured-products/loopback-cards' },
+    { label: 'Xilinx Evaluation Kit', link: '/featured-products/xilinix-evaluation-kit' },
+    { label: 'USB 3/2', link: '/featured-products/usb-3/2' },
   ];
 
   resourceItems = [
