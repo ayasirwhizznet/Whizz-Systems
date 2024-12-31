@@ -9,8 +9,10 @@ import { CbuttonComponent } from '../components/cbutton/cbutton.component';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
 })
-export class AboutComponent {
 
+
+
+export class AboutComponent {
   experience = [
     { quantity: '10', sign: '+', title: 'industries served', desc: 'Automotive, medical, aerospace, consumer electronics, and more' },
     { quantity: '10K', sign: '+', title: 'projects completed', desc: 'Trusted globally for delivering complex solutions' },
@@ -66,33 +68,34 @@ export class AboutComponent {
     '4 Juki SMT Lines',
     'QMS',
   ];
-  // services = [
-  //   '',
-  //   'Product Development',
-  //   'Prototyping',
-  //   'NPI/Pilot',
-  //   'Production',
-  //   'Testing',
-  //   'Services & Repair',
-  // ];
+  services = [
+    '',
+    'Product Development',
+    'Prototyping',
+    'NPI/Pilot',
+    'Production',
+    'Testing',
+    'Services & Repair',
+  ];
 
-  // santaClara = [
-  //   'Santa Clara',
-  //   '<i class="fa-regular fa-circle-check"></i>',
-  //   '<i class="fa-regular fa-circle-check"></i>',
-  //   '<i class="fa-regular fa-circle-check"></i>',
-  //   '<i class="fa-regular fa-circle-check"></i>',
-  //   '<i class="fa-regular fa-circle-check"></i>',
-  //   '<i class="fa-regular fa-circle-check"></i>',
-  // ];
+  santaClaraServices = [
+    'Santa Clara',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+  ];
 
-  // malaysia = [
-  //   'Malaysia',
-  //   '',
-  //   '',
-  //   '',
-  //   '<i class="fa-regular fa-circle-check"></i>',
-  //   '<i class="fa-regular fa-circle-check"></i>',
-  //   '<i class="fa-regular fa-circle-check"></i>',
-  // ];
+
+  malaysiaServices = [
+    'Malaysia',
+    '',
+    '',
+    '',
+    '',
+    '',
+   '',
+  ];
 }

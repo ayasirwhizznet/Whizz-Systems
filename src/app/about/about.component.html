@@ -105,50 +105,39 @@
 </div>
 
 <!-- Address -->
-<div class="w-full mb-10 lg:mb-16 py-10 3xl:py-16 bg-teal2 relative">
+<div class="w-full mb-10 lg:mb-16 py-10 3xl:py-16 bg-teal2">
     <h2 class="text-4xl 3xl:text-5xl font-medium leading-[57.6px] text-dark-gray2 text-center mb-8">Global Footprint
     </h2>
-    <img class="w-[90%] sm:w-[80%]  mx-auto" src="../../assets/about/map2.png" alt="">
+    <img class="w-[90%] 3xl:w-[80%]  mx-auto" src="../../assets/about/map2.png" alt="">
     <div>
-    <div class="w-[22rem] sm:w-[48rem] 3xl:w-[54rem] mx-auto bg-dark-gray1 text-white p-5 text-center rounded-md mt-8 overflow-x-scroll sm:overflow-x-hidden">
-        <table >
-            <tr>
-                <td class="text-xs px-6 3xl:px-8 py-3 border-r"></td>
-                <td class="text-xs px-6 3xl:px-8 py-3 font-light border-light-gray1 border-r">Product <br> Development</td>
-                <td class="text-xs px-6 3xl:px-8 py-3 font-light border-light-gray1 border-r">Prototyping</td>
-                <td class="text-xs px-6 3xl:px-8 py-3 font-light border-light-gray1 border-r">NPI/Pilot</td>
-                <td class="text-xs px-6 3xl:px-8 py-3 font-light border-light-gray1 border-r">Production</td>
-                <td class="text-xs px-6 3xl:px-8 py-3 font-light border-light-gray1 border-r">Testing</td>
-                <td class="text-xs px-6 3xl:px-8 py-3 font-light">Services & <br> Repair</td>
-            </tr>
-            <tr>
-                <td class="text-xs text-nowrap px-2 py-7 border-t border-r">Santa Clara</td>
-                <td class="px-8 3xl:px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"><i
-                        class="fa-regular fa-circle-check"></i></td>
-                <td class="px-8 3xl:px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"><i
-                        class="fa-regular fa-circle-check"></i></td>
-                <td class="px-8 3xl:px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"><i
-                        class="fa-regular fa-circle-check"></i></td>
-                <td class="px-8 3xl:px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"><i
-                        class="fa-regular fa-circle-check"></i></td>
-                <td class="px-8 3xl:px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"><i
-                        class="fa-regular fa-circle-check"></i></td>
-                <td class="px-8 3xl:px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t"><i class="fa-regular fa-circle-check"></i></td>
-            </tr>
-            <tr>
-                <td class="text-xs px-2 py-7 border-t border-r">Malaysia</td>
-                <td class="px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"></td>
-                <td class="px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"></td>
-                <td class="px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"></td>
-                <td class="px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"><i
-                        class="fa-regular fa-circle-check"></i></td>
-                <td class="px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t border-r"><i
-                        class="fa-regular fa-circle-check"></i></td>
-                <td class="px-11 py-7 text-xl 3xl:text-3xl border-light-gray1 border-t"><i class="fa-regular fa-circle-check"></i></td>
-            </tr>
-        </table>
+        <div
+            class="w-[22rem] sm:w-[48rem] 3xl:w-[54rem] mx-auto bg-dark-gray1 text-white p-5 text-center rounded-md mt-8 overflow-x-scroll sm:overflow-x-hidden">
+            <table>
+                <tr class="flex">
+                    <th *ngFor="let service of services; let i = index" [ngClass]="{'w-[5rem] 3xl:w-20 border-b': i == 0,
+                    'text-xs w-[6.7rem] 3xl:w-[7.7rem] px-4 py-2 border-l ': i !== 0}" class="text-xs font-light grid place-items-center">
+                        {{ service }}
+                    </th>
+                </tr>
+                <tr class="flex">
+                    <td *ngFor="let service of santaClaraServices; let i = index" [ngClass]="{'text-xs w-[5rem] 3xl:w-20 py-7 border-b text-npwrap': i == 0,
+                'text-xl 3xl:text-2xl w-[6.7rem] 3xl:w-[7.7rem]  py-7 3xl:py-8 border-l border-t fa-regular fa-circle-check': i !== 0}"
+                        class="text-xs font-light grid place-items-center">
+                        {{ service }}
+                    </td>
+                </tr>
+                <tr class="flex">
+                    <td *ngFor="let service of malaysiaServices; let i = index" [ngClass]="{
+                      'text-xs w-[5rem] 3xl:w-20': i === 0,
+                      'text-xl 3xl:text-2xl w-[6.7rem] 3xl:w-[7.7rem] py-7 3xl:py-8 border-l border-t': i !== 0
+                    }" class="text-xs font-ligh grid place-items-center py-6">
+                        <i [ngClass]="{'fa-regular fa-circle-check':![0,1,2,3].includes(i)}"></i>
+                        {{ service }}
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
-</div>
 </div>
 
 
