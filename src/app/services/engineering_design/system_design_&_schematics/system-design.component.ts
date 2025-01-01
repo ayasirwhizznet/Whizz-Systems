@@ -23,6 +23,9 @@ export class SystemDesignComponent {
     {imgUrl: '../../../assets/system-design/industry-standards.png', title: 'Industry Standards', type1: 'IPC Standards', type2: 'ISO 9001', type3: 'RoHS Compliance', type4:'UL Certification'},
     {imgUrl: '../../../assets/system-design/industry-standards.png', title: 'Testing & Validation Compliance', type1: 'EMC/EMI Testing', type2: 'ESD Standards', type3: 'Thermal Reliability Testing'},
     {imgUrl: '../../../assets/system-design/industry-standards.png', title: 'Global Regulatory Compliance', type1: 'FCC Compliance', type2: 'CE Marking', type3: 'UL and CSA Standards'},
+    {imgUrl: '../../../assets/system-design/industry-standards.png', title: 'Global Regulatory Compliance', type1: 'FCC Compliance', type2: 'CE Marking', type3: 'UL and CSA Standards'},
+    {imgUrl: '../../../assets/system-design/industry-standards.png', title: 'Global Regulatory Compliance', type1: 'FCC Compliance', type2: 'CE Marking', type3: 'UL and CSA Standards'},
+    {imgUrl: '../../../assets/system-design/industry-standards.png', title: 'Global Regulatory Compliance', type1: 'FCC Compliance', type2: 'CE Marking', type3: 'UL and CSA Standards'},
   ];
 
   benefits:any[] = [
