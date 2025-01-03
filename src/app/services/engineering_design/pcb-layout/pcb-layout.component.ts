@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
-import { CbuttonComponent } from '../../../components/cbutton/cbutton.component';
-import { CommonModule } from '@angular/common';
+import { ServicesHeroComponent } from '../../../components/services-hero/services-hero.component';
+import { ServicesIntroComponent } from '../../../components/services-intro/services-intro.component';
+import { ServicesCaseStudyComponent } from '../../../components/services-case-study/services-case-study.component';
+import { ServicesContactExpertsComponent } from '../../../components/services-contact-experts/services-contact-experts.component';
+import { ServicesCoreServicesComponent } from '../../../components/services-core-services/services-core-services.component';
+import { ServicesIndustryComponent } from '../../../components/services-industry/services-industry.component';
+import { ServicesBenefitsComponent } from '../../../components/services-benefits/services-benefits.component';
 
 @Component({
   selector: 'app-pcb-layout',
   standalone: true,
-  imports: [CbuttonComponent, CommonModule],
+  imports: [ServicesHeroComponent, ServicesIntroComponent, ServicesCaseStudyComponent, ServicesContactExpertsComponent, ServicesCoreServicesComponent, ServicesIndustryComponent, ServicesBenefitsComponent],
   templateUrl: './pcb-layout.component.html',
   styleUrl: './pcb-layout.component.scss'
 })
@@ -18,10 +23,10 @@ export class PcbLayoutComponent {
   ];
 
   industryStandards:any[] = [
-    {imgUrl: '../../../../assets/pcb/high-density.png', title: 'High-Density Component Placement', desc1: 'Expertise in placing components in complex, mixed-technology designs within constrained form factors.', desc2: 'Focus on signal integrity, thermal management, and adherence to Mechanical Outline Control (MOC).'},
-    {imgUrl: '../../../../assets/pcb/advanced.png', title: 'Advanced Signal Routing', desc1: '100% hand routing of high-speed signals using techniques like ARC, snake, tabbed, and fiber wave routing.', desc2: 'Enhanced signal integrity and transmission reliability in complex PCB designs'},
-    {imgUrl: '../../../../assets/pcb/power-plane.png', title: 'Power Plane Planning', desc1: 'Drafting power planes to ensure reliable power distribution, minimize voltage drops, and enhance signal integrity.', desc2: 'Effective heat dissipation and low-impedance paths for optimal performance.'},
-    {imgUrl: '../../../../assets/pcb/manufacturing.png', title: 'Manufacturing File Generation', desc1: 'Preparation of accurate Gerber files, drill files, BOMs, and pick-and-place files.', desc2: 'Seamless communication with manufacturing and assembly teams to streamline production and minimize errors.'},
+    {imgUrl: '../../../../assets/pcb/high-density.png', title: 'High-Density Component Placement', type1: 'Expertise in placing components in complex, mixed-technology designs within constrained form factors.', type2: 'Focus on signal integrity, thermal management, and adherence to Mechanical Outline Control (MOC).'},
+    {imgUrl: '../../../../assets/pcb/advanced.png', title: 'Advanced Signal Routing', type1: '100% hand routing of high-speed signals using techniques like ARC, snake, tabbed, and fiber wave routing.',type2: 'Enhanced signal integrity and transmission reliability in complex PCB designs'},
+    {imgUrl: '../../../../assets/pcb/power-plane.png', title: 'Power Plane Planning', type1: 'Drafting power planes to ensure reliable power distribution, minimize voltage drops, and enhance signal integrity.', type2: 'Effective heat dissipation and low-impedance paths for optimal performance.'},
+    {imgUrl: '../../../../assets/pcb/manufacturing.png', title: 'Manufacturing File Generation', type1: 'Preparation of accurate Gerber files, drill files, BOMs, and pick-and-place files.', type2: 'Seamless communication with manufacturing and assembly teams to streamline production and minimize errors.'},
   ];
 
   benefits:any[] = [

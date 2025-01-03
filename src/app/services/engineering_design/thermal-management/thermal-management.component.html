@@ -1,102 +1,32 @@
-<div class="px-[4%] sm:px-[5%] mb-12 lg:mb-32">
-    <div class="px-8 lg:px-16 py-10 lg:py-[88px] bg-dark-gray1 flex flex-col lg:flex-row items-center gap-10 lg:gap-14 3xl:gap-14 rounded-2xl">
-        <div class="w-full lg:w-1/2 text-white">
-            <p class="text-base">Engineering & Design</p>
-            <h1 class="text-3xl lg:text-5xl 3xl:text-[56px] lg:leading-[60px] 3xl:leading-[67px] font-bold  my-8">Maximize Performance with Advanced
-                Thermal Management Solutions</h1>
-            <p class="text-xl font-light mb-8">Precision Engineering to Keep Your Electronics Cool and Reliable</p>
-            <app-cbutton [heading]="'Get Started with Thermal Experts'"
-                [icon]="'../../../assets/services/r-arrow.svg'"></app-cbutton>
-        </div>
-        <div class="w-full lg:w-1/2 p-6 sm:p-16 lg:p-0">
-            <img class="object-cover" src="../../../assets/thermal-management/hero.png" alt="img">
-        </div>
-    </div>
-</div>
+<!-- Hero -->
+<app-services-hero category="Engineering & Design" heading="Maximize Performance with Advanced Thermal Management Solutions" desc="Precision Engineering to Keep Your Electronics Cool and Reliable" imgUrl="../../../assets/thermal-management/hero.png" routerLink="/404" btnText="Get Started with Thermal Experts"></app-services-hero>
 
-<div class="px-[4%] sm:px-[8%]">
+<div class="px-[4%] sm:px-[9.3%]">
     <!-- Introduction -->
-    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-12 lg:mb-32">
-        <div class="w-full lg:w-[45%] order-2 lg:order-1 p-8 md:p-16 lg:p-0 ">
-            <img class="object-cover" src="../../../assets/thermal-management/introduction.png" alt="img">
-        </div>
-        <div class="w-full lg:w-[50%] order-1 lg:order-0">
-            <h4 class="text-teal1 font-bold">Introduction</h4>
-            <h3 class="text-dark-gray2 text-2xl font-medium my-4">Tackling the Heat—Expert Thermal Solutions for Modern
-                Electronics</h3>
-            <p class="text-dark-gray2 font-light mb-6">At Whizz Systems, we provide comprehensive thermal management
-                solutions designed to optimize the performance and reliability of electronic systems. As devices become
-                smaller, faster, and more powerful, effective heat management becomes critical.</p>
-            <p class="text-dark-gray2 font-light"> Our team leverages decades of expertise in addressing the complex
-                thermal challenges faced by modern electronics, ensuring your products operate efficiently, even in
-                demanding environments. Using Thermal and Computational Fluid Dynamics (CFD) analysis, we simulate
-                airflow and heat distribution across PCBs, identify hotspots, predict potential overheating areas, and
-                optimize system airflow.</p>
-        </div>
-    </div>
+    <app-services-intro secTitle="Introduction"
+    secHeading="Tackling the Heat—Expert Thermal Solutions for Modern Electronics"
+    secDesc1="t Whizz Systems, we provide comprehensive thermal management
+    solutions designed to optimize the performance and reliability of electronic systems. As devices become
+    smaller, faster, and more powerful, effective heat management becomes critical."
+    secDesc2="Our team leverages decades of expertise in addressing the complex
+    thermal challenges faced by modern electronics, ensuring your products operate efficiently, even in
+    demanding environments. Using Thermal and Computational Fluid Dynamics (CFD) analysis, we simulate
+    airflow and heat distribution across PCBs, identify hotspots, predict potential overheating areas, and
+    optimize system airflow."
+    imgUrl="../../../assets/thermal-management/introduction.png"></app-services-intro>
 
     <!-- Core Services Overview-->
-    <div class="mb-12 lg:mb-32">
-        <h4 class="text-teal1 font-bold">Core Services Overview</h4>
-        <h3 class="text-dark-gray2 text-2xl font-medium my-4">Thermal Solutions Tailored to Your Needs</h3>
-        <p class="text-dark-gray2 font-light mb-12">Comprehensive 3D Modeling & Mechanical Design Services</p>
-        <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-x-16 3xl:gap-x-36 md:gap-y-10 lg:gap-y-16">
-            <div *ngFor="let service of coreServices">
-                <div class="p-8 bg-card-gray border-[1px] border-light-gray1 rounded-lg">
-                    <img class="rounded-lg" [src]="service.imgUrl" alt="img">
-                    <div class=" h-[8rem] sm:h-[8rem] lg:h-[9.5rem]">
-                        <h3 class="font-bold mt-8 mb-5">{{service.title}}</h3>
-                        <p class="font-light">{{service.desc}}</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
+    <app-services-core-services 
+    secTitle="Core Services Overview" secHeading="Thermal Solutions Tailored to Your Needs" secDesc="Comprehensive 3D Modeling & Mechanical Design Services" [cardData]="coreServices"
+    ></app-services-core-services>
 
     <!-- Benefits -->
-    <div class="mb-12 lg:mb-24">
-        <h4 class="text-teal1 font-bold mb-4">Benefits</h4>
-        <h3 class="text-dark-gray2 text-2xl font-medium mb-12">Why Choose Whizz Systems?</h3>
-        <div class="p-8 bg-card-gray  rounded-lg">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div *ngFor="let benefit of benefits">
-                    <div class="p-8 bg-white border-[1px] border-light-gray1 rounded-lg h-[15rem]">
-                        <img class="w-12 h-12" [src]="benefit.imgUrl" alt="img">
-                        <h3 class="text-dark-gray2 font-medium my-4">{{benefit.title}}</h3>
-                        <p class="text-dark-gray2 font-light">{{benefit.desc}}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <app-services-benefits secTitle="Benefits" secHeading="Why Choose Whizz Systems for PCB Layout" [cardData]="benefits"></app-services-benefits>
 
-    <!-- Case Studies -->
-    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-12 lg:mb-16">
-        <div class="w-full lg:w-[45%]">
-            <h4 class="text-teal1 font-bold">Case Study</h4>
-            <h3 class="text-dark-gray2 text-2xl font-medium my-4">Proven Success in Thermal Optimization</h3>
-            <p class="text-dark-gray2 font-light mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
-            <app-cbutton heading="Learn more" size="small" icon="../../../assets/services/r-arrow.svg"></app-cbutton>
-        </div>
-        <div class="w-full lg:w-[50%] p-8 md:p-16 lg:p-0">
-            <img class="object-cover" src="../../../assets/thermal-management/case-study.png" alt="img">
-        </div>
-    </div>
+
+    <!-- Case Study -->
+    <app-services-case-study secTitle="Case Study" secHeading="Proven Success in Thermal Optimization" secDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est." imgUrl="../../../assets/thermal-management/case-study.png" routerLink="/404" btnText="Learn more"></app-services-case-study>
 
     <!-- Contact Thermal Expert -->
-    <div class="mb-12 lg:mb-16">
-        <div class="relative p-10 lg:p-16 rounded-lg">
-            <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-lg" loop muted autoplay
-                oncanplay="this.play()" onloadedmetadata="this.muted = true">
-                <source src="../../assets/hero/waves2.mp4" type="video/mp4">
-            </video>
-            <div class="absolute inset-0 bg-[#00a99f] opacity-80 z-10 rounded-lg"></div>
-            <div class="relative z-20">
-                <h2 class="text-4xl lg:text-[64px] lg:leading-[76.8px] font-bold text-white mb-12">Ready to Optimize Your <br class="hidden lg:block"> Product's Thermal <br class="hidden lg:block"> Performance?</h2>
-                <app-cbutton heading="Contact our Thermal Experts" [size]="'large'"></app-cbutton>
-            </div>
-        </div>
-    </div>
+    <app-services-contact-experts secHeading="Ready to Optimize Your Product's Thermal  Performance?" routerLink="/404" btnText="Contact our Thermal Experts"></app-services-contact-experts>
 </div>

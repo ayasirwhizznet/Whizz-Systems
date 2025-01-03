@@ -2,12 +2,14 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd, RouterLink } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
-import { CbuttonComponent } from '../../components/cbutton/cbutton.component';
 import { CommonModule } from '@angular/common';
+import { ServicesHeroComponent } from '../../components/services-hero/services-hero.component';
+import { ServicesIntroComponent } from '../../components/services-intro/services-intro.component';
+import { ServicesCaseStudyComponent } from '../../components/services-case-study/services-case-study.component';
 @Component({
   selector: 'app-npi',
   standalone: true,
-  imports: [CbuttonComponent, CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, ServicesHeroComponent, ServicesIntroComponent, ServicesCaseStudyComponent],
   templateUrl: './npi.component.html',
   styleUrl: './npi.component.scss'
 })

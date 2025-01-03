@@ -1,35 +1,23 @@
-<div class="px-[4%] sm:px-[5%] mb-12 lg:mb-32">
-    <div class="px-8 lg:px-16 py-10 lg:py-[88px] bg-dark-gray1 flex flex-col lg:flex-row items-center lg:gap-14 3xl:gap-12 rounded-2xl">
-        <div class="w-full lg:w-1/2 text-white">
-            <p class="text-base ">Engineering & Design</p>
-            <h1 class="text-3xl lg:text-5xl 3xl:text-[56px] lg:leading-[60px] 3xl:leading-[67px] font-bold  my-8">Optimize Your Product with
-                Cutting-Edge 3D Modeling <br class="hidden 3xl:block"> & Mechanical Design</h1>
-            <p class="text-xl font-light mb-8">From Concept to Reality—Precision Engineering for Superior
-                Performance
-            </p>
-            <app-cbutton [heading]="'Get Started with Expert Design'"
-                [icon]="'../../../assets/services/r-arrow.svg'"></app-cbutton>
-        </div>
-        <div class="w-full lg:w-1/2 p-6 sm:p-16 lg:p-0">
-            <img class="object-cover" src="../../../assets/3D-Modeling/hero.png" alt="img">
-        </div>
-    </div>
-</div>
+<!-- Hero -->
+<app-services-hero category="Engineering & Design" heading="Optimize Your Product with
+Cutting-Edge 3D Modeling & Mechanical Design" desc="From Concept to Reality—Precision Engineering for Superior
+Performance" imgUrl="../../../assets/3D-Modeling/hero.png" routerLink="/404"
+    btnText="Get Started with Expert Design"></app-services-hero>
 
-<div class="px-[4%] sm:px-[9%]">
+<div class="px-[4%] sm:px-[9.3%]">
     <!-- Introduction -->
-    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-12 lg:mb-32">
-        <div class="w-full lg:w-[45%] order-2 lg:order-1 p-8 md:p-16 lg:p-0 ">
+    <div class="flex flex-col lg:flex-row items-center gap-4 lg:gap-[52px] 3xl:gap-16 mb-10 lg:mb-24 3xl:mb-32">
+        <div class="w-full lg:w-[46.2%] order-2 lg:order-1 p-10 sm:p-10 lg:p-0">
             <img class="object-cover" src="../../../assets/3D-Modeling/introduction.png" alt="img">
         </div>
-        <div class="w-full lg:w-[50%] order-1 lg:order-0">
-            <h4 class="text-teal1 font-bold">Introduction</h4>
-            <h3 class="text-dark-gray2 text-2xl font-medium my-4">Our Expertise, Your Advantage</h3>
-            <p class="text-dark-gray2 font-light">With over 25 years of experience designing successful electronic
-                products from concept to production, Whizz Systems leverages <span class="text-teal1 font-bold">advanced
+        <div class="w-full lg:w-[53.8%] order-1 lg:order-0">
+            <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[19.2px]">Introduction</h4>
+            <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[28.8px] my-3 3xl:my-4">Our Expertise, Your Advantage</h3>
+            <p class="text-dark-gray2 text-sm 3xl:text-base font-light leading-[24px] 3xl:leading-[28px]">With over 25 years of experience designing successful electronic
+                products from concept to production, Whizz Systems leverages <span class="text-teal1 text-sm 3xl:text-base font-medium 3xl:font-bold">advanced
                     3D modeling and mechanical design capabilities</span> to create optimized solutions for PCBs and
-                electronic products. Our designs <span class="text-teal1 font-bold">enhance performance and ensure
-                    manufacturability</span> by meeting the <span class="text-teal1 font-bold">highest industry
+                electronic products. Our designs <span class="text-teal1 text-sm 3xl:text-base font-medium 3xl:font-bold">enhance performance and ensure
+                    manufacturability</span> by meeting the <span class="text-teal1 text-sm 3xl:text-base font-medium 3xl:font-bold">highest industry
                     standards</span> . Our expertise spans multidomains and various industries, ensuring
                 comprehensive
                 support throughout the entire design process.</p>
@@ -37,74 +25,21 @@
     </div>
 
     <!-- Core Services Overview-->
-    <div class="mb-12 lg:mb-32">
-        <h4 class="text-teal1 font-bold">Core Services Overview</h4>
-        <h3 class="text-dark-gray2 text-2xl font-medium mt-4 mb-8">Comprehensive 3D Modeling & Mechanical Design
-            Services</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16 lg:gap-16 3xl:gap-36">
-            <div *ngFor="let service of coreServices">
-                <div class="p-8 bg-card-gray border-[1px] border-light-gray1 rounded-lg">
-                    <img class="rounded-lg" [src]="service.imgUrl" alt="img">
-                    <div class=" h-[8rem] sm:h-[10rem] lg:h-[11rem]">
-                        <h3 class="font-bold mt-8 mb-5">{{service.title}}</h3>
-                        <p class="font-light">{{service.desc}}</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
+    <app-services-core-services 
+    secTitle="Core Services Overview" secHeading="Comprehensive 3D Modeling & Mechanical Design Services" [cardData]="coreServices" secHeadingMargin="mb-6 3xl:mb-8"
+    ></app-services-core-services>
 
     <!-- Benefits -->
-    <div class="mb-12 lg:mb-32">
-        <h4 class="text-teal1 font-bold">Benefits</h4>
-        <h3 class="text-dark-gray2 text-2xl font-medium mt-4 mb-12">Why Choose Whizz Systems?</h3>
-        <div class="p-8 bg-card-gray  rounded-lg">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div *ngFor="let benefit of benefits">
-                    <div class="p-8 bg-white border-[1px] border-light-gray1 rounded-lg h-[15rem]">
-                        <img class="w-12 h-12" [src]="benefit.imgUrl" alt="img">
-                        <h3 class="text-dark-gray2 font-medium my-4">{{benefit.title}}</h3>
-                        <p class="text-dark-gray2 font-light">{{benefit.desc}}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <app-services-benefits secTitle="Benefits" secHeading="Why Choose Whizz Systems for PCB Layout" [cardData]="benefits"></app-services-benefits>
 
     <!-- Proven Success -->
-    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-12 lg:mb-32">
-        <div class="w-full lg:w-[45%]">
-            <h4 class="text-teal1 font-bold">Proven Success</h4>
-            <h3 class="text-dark-gray2 text-2xl font-medium my-4">Case Studies or customer success story</h3>
-            <p class="text-dark-gray2 font-light mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
-            <app-cbutton heading="Learn more" size="small" icon="../../../assets/services/r-arrow.svg"></app-cbutton>
-        </div>
-        <div class="w-full lg:w-[50%] p-8 md:p-16 lg:p-0">
-            <img class="object-cover" src="../../../assets/3D-Modeling/proven-success.png" alt="img">
-        </div>
-    </div>
+    <app-services-case-study secTitle="Proven Success" secHeading="Case Studies or customer success story" secDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+    occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est." imgUrl="../../../assets/3D-Modeling/proven-success.png" routerLink="/404"
+        btnText="Learn more"></app-services-case-study>
 
     <!-- Talk To Expert -->
-    <div class="mb-12 lg:mb-16">
-        <div class="relative p-10 lg:p-16 rounded-lg">
-            <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-lg" loop muted autoplay
-                oncanplay="this.play()" onloadedmetadata="this.muted = true">
-                <source src="../../assets/hero/waves2.mp4" type="video/mp4">
-            </video>
-            <div class="absolute inset-0 bg-[#00a99f] opacity-80 z-10 rounded-lg"></div>
-            <div class="relative z-20">
-                <h2 class="text-4xl lg:text-6xl font-bold text-white mb-12">Ready to Bring Your <br
-                        class="hidden md:block"> Design to Life?
-                </h2>
-                <app-cbutton heading="Contact Our Design Experts" [size]="'large'"></app-cbutton>
-            </div>
-        </div>
-    </div>
+    <app-services-contact-experts secHeading="Ready to Bring Your Design to Life?" routerLink="/404" btnText="Contact Our Design Experts"></app-services-contact-experts>
 </div>

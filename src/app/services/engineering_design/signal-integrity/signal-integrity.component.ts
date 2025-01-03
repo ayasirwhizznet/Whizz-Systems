@@ -1,11 +1,14 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { CbuttonComponent } from '../../../components/cbutton/cbutton.component';
+import { ServicesHeroComponent } from '../../../components/services-hero/services-hero.component';
+import { ServicesIntroComponent } from '../../../components/services-intro/services-intro.component';
+import { ServicesCoreServicesComponent } from '../../../components/services-core-services/services-core-services.component';
+import { ServicesBenefitsComponent } from '../../../components/services-benefits/services-benefits.component';
+import { ServicesContactExpertsComponent } from "../../../components/services-contact-experts/services-contact-experts.component";
 
 @Component({
   selector: 'app-signal-integrity',
   standalone: true,
-  imports: [CommonModule,CbuttonComponent],
+  imports: [ServicesHeroComponent, ServicesIntroComponent, ServicesCoreServicesComponent, ServicesBenefitsComponent, ServicesContactExpertsComponent],
   templateUrl: './signal-integrity.component.html',
   styleUrl: './signal-integrity.component.scss'
 })

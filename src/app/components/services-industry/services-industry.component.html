@@ -1,0 +1,31 @@
+<div class="mb-10 lg:mb-24 3xl:mb-32">
+    <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[19.2px]">{{secTitle}}</h4>
+    <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">
+        {{secHeading}}</h3>
+    <p
+        class="text-dark-gray2 font-light mb-9 3xl:mb-12 max-w-lg lg:max-w-xl 3xl:max-w-3xl text-base lg:text-xs 3xl:text-base leading-[24px] 3xl:leading-[28px]">{{secDesc}}</p>
+    <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-y-8 lg:gap-y-12 3xl:gap-y-16 sm:gap-x-20 lg:gap-x-36 3xl:gap-x-44">
+        <div *ngFor="let card of cardData">
+            <div class="p-6 3xl:p-8 bg-white border border-light-gray1 rounded-lg">
+                <img class="rounded-lg" [src]="card.imgUrl" alt="img">
+                <div class="h-[14rem] 3xl:h-[18rem]">
+                    <h3 class="font-bold text-sm 3xl:text-base my-6 3xl:my-8">{{card.title}}</h3>
+                    <hr class="border border-light-gray1 opacity-60">
+                    <p class="text-dark-gray2 text-sm 3xl:text-base font-light my-3 3xl:my-4 leading-[19.2px]"
+                        >{{card.type1}}</p>
+                    <hr class="border border-light-gray1 opacity-60">
+                    <p class="text-dark-gray2 text-sm 3xl:text-base font-light my-3 3xl:my-4 leading-[19.2px]"
+                        >{{card.type2}}</p>
+                    <hr class="border border-light-gray1 opacity-60">
+                    <p class="text-dark-gray2 text-sm 3xl:text-base font-light my-3 3xl:my-4 leading-[19.2px]"
+                        *ngIf="card.type3">{{card.type3}}</p>
+                    <hr *ngIf="card.type3" class="border border-light-gray1 opacity-60">
+                    <p class="text-dark-gray2 text-sm 3xl:text-base font-light my-3 3xl:my-4 leading-[19.2px]"
+                        *ngIf="card.type4">{{card.type4}}</p>
+                    <hr class="border border-light-gray1 opacity-60" *ngIf="card.type4">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

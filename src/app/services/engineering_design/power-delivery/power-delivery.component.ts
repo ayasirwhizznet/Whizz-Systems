@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
-import { CbuttonComponent } from '../../../components/cbutton/cbutton.component';
-import { CommonModule } from '@angular/common';
+import { ServicesHeroComponent } from '../../../components/services-hero/services-hero.component';
+import { ServicesIntroComponent } from '../../../components/services-intro/services-intro.component';
+import { ServicesCaseStudyComponent } from '../../../components/services-case-study/services-case-study.component';
+import { ServicesCoreServicesComponent } from '../../../components/services-core-services/services-core-services.component';
+import { ServicesBenefitsComponent } from '../../../components/services-benefits/services-benefits.component';
+import { ServicesContactExpertsComponent } from '../../../components/services-contact-experts/services-contact-experts.component';
 
 @Component({
   selector: 'app-power-delivery',
   standalone: true,
-  imports: [CbuttonComponent, CommonModule],
+  imports: [ServicesHeroComponent, ServicesIntroComponent, ServicesCaseStudyComponent, ServicesCoreServicesComponent, ServicesBenefitsComponent, ServicesContactExpertsComponent],
   templateUrl: './power-delivery.component.html',
   styleUrl: './power-delivery.component.scss'
 })

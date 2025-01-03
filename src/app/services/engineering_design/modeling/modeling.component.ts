@@ -1,11 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { CbuttonComponent } from "../../../components/cbutton/cbutton.component";
-import { NgFor} from '@angular/common';
+import { ServicesBenefitsComponent } from './../../../components/services-benefits/services-benefits.component';
+import { Component} from '@angular/core';
+import { ServicesHeroComponent } from '../../../components/services-hero/services-hero.component';
+import { ServicesCaseStudyComponent } from '../../../components/services-case-study/services-case-study.component';
+import { ServicesContactExpertsComponent } from '../../../components/services-contact-experts/services-contact-experts.component';
+import { ServicesCoreServicesComponent } from '../../../components/services-core-services/services-core-services.component';
 
 @Component({
   selector: 'app-modeling',
   standalone: true,
-  imports: [CbuttonComponent, NgFor],
+  imports: [ServicesHeroComponent, ServicesCaseStudyComponent, ServicesContactExpertsComponent, ServicesCoreServicesComponent, ServicesBenefitsComponent],
   templateUrl: './modeling.component.html',
   styleUrl: './modeling.component.scss'
 })

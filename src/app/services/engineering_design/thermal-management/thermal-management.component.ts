@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { CbuttonComponent } from '../../../components/cbutton/cbutton.component';
-import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
+import { ServicesHeroComponent } from '../../../components/services-hero/services-hero.component';
+import { ServicesIntroComponent } from '../../../components/services-intro/services-intro.component';
+import { ServicesCaseStudyComponent } from '../../../components/services-case-study/services-case-study.component';
+import { ServicesContactExpertsComponent } from '../../../components/services-contact-experts/services-contact-experts.component';
+import { ServicesCoreServicesComponent } from '../../../components/services-core-services/services-core-services.component';
+import { ServicesBenefitsComponent } from '../../../components/services-benefits/services-benefits.component';
 
 @Component({
   selector: 'app-thermal-management',
   standalone: true,
-  imports: [CbuttonComponent, CommonModule],
+  imports: [ServicesHeroComponent, ServicesIntroComponent, ServicesCaseStudyComponent, ServicesContactExpertsComponent, ServicesCoreServicesComponent, ServicesBenefitsComponent],
   templateUrl: './thermal-management.component.html',
   styleUrl: './thermal-management.component.scss'
 })

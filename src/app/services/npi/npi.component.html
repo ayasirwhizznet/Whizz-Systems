@@ -1,138 +1,87 @@
-<!-- Hero Section -->
-<div class="px-[4%] sm:px-[5%] mb-12 lg:mb-24">
-    <div
-        class="px-8 lg:px-16 py-10 lg:py-[88px] bg-dark-gray1 flex flex-col lg:flex-row items-center gap-10 lg:gap-14 3xl:gap-14 rounded-2xl">
-        <div class="w-full lg:w-1/2 text-white">
-            <p class="text-base">NPI</p>
-            <h1 class="text-3xl lg:text-5xl 3xl:text-[56px] lg:leading-[60px] 3xl:leading-[67px] font-bold my-8">
-                Future-Ready NPI: <br class="lg:block"> Designed for NexGen Demands and Innovation</h1>
-            <p class="text-xl font-light mb-8">Over 30 Years of Expertise in Creating Complex, Scalable Solutions with <br class="hidden 3xl:block">
-                Advanced Assembly and Material Science</p>
-            <app-cbutton [heading]="'Start Your NPI Project'"
-                [icon]="'../../../assets/services/r-arrow.svg'"></app-cbutton>
-        </div>
-        <div class="w-full lg:w-1/2 p-6 sm:p-16 lg:p-0">
-            <img class="object-cover" src="../../../assets/npi/hero.png" alt="img">
-        </div>
-    </div>
-</div>
+<!-- Hero -->
+<app-services-hero category="NPI" heading="Future-Ready NPI: Designed for NexGen Demands and Innovation" desc="Over 30 Years of Expertise in Creating Complex, Scalable Solutions with Advanced Assembly and Material Science" imgUrl="../../../assets/npi/hero.png" routerLink="/404" btnText="Start Your NPI Project"></app-services-hero>
 
 <!-- NPI Navbar -->
-<div class="hidden lg:block px-[5%] z-20 sticky top-0 mb-5">
-    <div class="p-8 flex justify-center items-center gap-4 text-center text-sm 3xl:text-base bg-white z-50">
+<div class="hidden lg:block px-[5%] z-20 sticky top-0 mb-10 lg:mb-24 3xl:mb-32">
+    <div class="flex justify-center items-center gap-3 3xl:gap-4 text-center text-xs 3xl:text-base bg-white z-50">
         <a *ngFor="let link of npiTab" (click)="scrollToFragment(link.title)"
-            class="lg:w-56 3xl:w-64 h-[88px] cursor-pointer flex justify-center items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-white font-medium rounded-lg transition-all duration-500 ease-in-out"
+            class="lg:w-[196px] 3xl:w-[247px] lg:h-[72px] 3xl:h-[88px] cursor-pointer flex justify-center items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-white font-medium rounded-lg transition-all duration-500 ease-in-out"
            >{{link.title}}</a>
     </div>
 </div>
 
 
-<div class="px-[4%] sm:px-[9%]">
+<div class="px-[4%] sm:px-[9.3%]">
     <!-- System Level Architecture -->
-    <div id="SystemLevelArchitecture" class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8 lg:py-16">
-        <div class="w-full lg:w-[45%] order-2 lg:order-1 p-8 md:p-16 lg:p-0 ">
-            <img class="object-cover rounded-lg" src="../../../assets/npi/sla.png" alt="img">
-        </div>
-        <div class="w-full lg:w-[50%] order-1 lg:order-0">
-            <h4 class="text-teal1 font-bold">System Level Architecture (SLA)</h4>
-            <h3 class="text-dark-gray2 text-2xl font-medium my-4">Build a Strong Foundation with System-Level
-                Architecture</h3>
-            <p class="text-dark-gray2 font-light">At Whizz Systems, we specialize in designing robust System Level
-                Architectures (SLA) for New Product Introduction (NPI), ensuring seamless integration of hardware,
-                software, and subsystems to achieve performance, scalability, and reliability goals. Whether you’re
-                starting with an idea, a product definition document, or a high-level block diagram, Whizz has the
-                capability and experience to guide projects from concept to completion.</p>
-            <h4 class="text-dark-gray2 font-bold mt-6 mb-1">Key Services:</h4>
-            <p class="text-dark-gray2 font-light">IoT Devices • Industrial Systems • Consumer Electronics</p>
-        </div>
-    </div>
+     <app-services-intro id="SystemLevelArchitecture" secTitle="System Level Architecture (SLA)" secHeading="Build a Strong Foundation with System-Level
+     Architecture" secDesc1="At Whizz Systems, we specialize in designing robust System Level
+     Architectures (SLA) for New Product Introduction (NPI), ensuring seamless integration of hardware,
+     software, and subsystems to achieve performance, scalability, and reliability goals. Whether you’re
+     starting with an idea, a product definition document, or a high-level block diagram, Whizz has the
+     capability and experience to guide projects from concept to completion." secSubHeading="Key Services:" secDesc4="IoT Devices • Industrial Systems • Consumer Electronics" imgUrl="../../../assets/npi/sla.png"></app-services-intro>
 
     <!-- Engineering and Design -->
-    <div id="Engineering&Design" class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8 lg:py-16 ">
-        <div class="w-full lg:w-[50%]">
-            <h4 class="text-teal1 font-bold">Engineering and Design</h4>
-            <h3 class="text-dark-gray2 text-2xl font-medium my-4">Innovating Designs for the NextGen Electronics</h3>
-            <app-cbutton heading="Learn more" size="small" icon="../../../assets/services/r-arrow.svg"></app-cbutton>
-        </div>
-        <div class="w-full lg:w-[45%] p-8 md:p-16 lg:p-0">
-            <img class="object-cover" src="../../../assets/npi/sla.png" alt="img">
-        </div>
-    </div>
+     <app-services-case-study id="Engineering&Design" secTitle="Engineering and Design" secHeading="Innovating Designs for the NextGen Electronics" btnText="Learn more" imgUrl="../../../assets/npi/sla.png" routerLink="/404"></app-services-case-study>
 
-    <img class="object-cover mx-auto px-6 md:px-28 lg:px-16 p-8 lg:pt-16 lg:pb-24"
+    <img class="object-cover mx-auto px-6 md:px-14 lg:px-20 3xl:px-16 mt-5 mb-8 lg:mb-16 3xl:mb-24" 
         src="../../assets/ideas/section-divider1.png" alt="img">
 
-    <h2 class="text-3xl lg:text-5xl text-dark-gray2 text-center font-bold mb-16">Explore our engineering and design
+    <h2 class="text-4xl 3xl:text-5xl lg:leading-[57.6px] text-dark-gray2 text-center font-bold mb-6 3xl:mb-8">Explore our engineering and design
         services</h2>
 
     <div
-        class="p-8 flex justify-center items-center flex-wrap gap-4 text-center text-sm 3xl:text-base z-50 mx-auto lg:w-[70rem] 3xl:w-[80rem]">
+        class="py-6 3xl:py-8 flex justify-center items-center flex-wrap gap-3 3xl:gap-4 text-center text-xs 3xl:text-base z-50 mx-auto lg:w-[58rem] 3xl:w-[80rem]">
         <a *ngFor="let item of enggandDesign.items" [routerLink]="item.link"
-            class=" w-56 3xl:w-[240px] h-[88px] cursor-pointer flex justify-center items-center px-3 bg-card-gray
-            hover:bg-dark-gray2 text-dark-gray2 border-[1px] border-light-gray1 hover:text-white font-medium rounded-lg
+            class=" w-[196px] 3xl:w-[247px] h-[72px] 3xl:h-[88px] cursor-pointer flex justify-center items-center px-[8px] py-[14px] 3xl:px-[18px] 3xl:py-[14px] bg-card-gray
+            hover:bg-dark-gray2 text-dark-gray2 border border-light-gray1 hover:text-white font-medium rounded-lg
             transition-all duration-500 ease-in-out">{{item.label}}
         </a>
     </div>
 
-    <img class="object-cover mx-auto px-6 md:px-28 lg:px-16 p-8 lg:py-16"
+    <img class="object-cover mx-auto px-6 md:px-14 lg:px-20 3xl:px-16 mt-5 lg:mt-14 lg: 3xl:mt-[71px] mb-8 lg:mb-[88px] 3xl:mb-[118px]"
         src="../../assets/testimonials/section-divider2.png" alt="img">
 
     <!-- Prototyping -->
-    <div id="Prototyping" class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8 lg:py-16">
-        <div class="w-full lg:w-[45%] order-2 lg:order-1 p-8 md:p-16 lg:p-0 ">
-            <img class=" object-cover rounded-lg" src="../../../assets/npi/sla.png" alt="img">
-        </div>
-        <div class="w-full lg:w-[55%] order-1 lg:order-0">
-            <h4 class="text-teal1 font-bold">Prototyping</h4>
-            <h3 class="text-dark-gray2 text-2xl font-medium my-4">Validate and Refine Your Designs with Prototyping
-                Experts</h3>
-            <p class="text-dark-gray2 font-light">Our prototyping services bridge the gap between concept and
-                production, offering quick-turn prototypes, proof-of-concept models, and pre-production units. With
-                in-house capabilities like signal integrity analysis and multi-layer PCB assembly, we ensure your
-                prototype aligns perfectly with production standards.</p>
-            <h4 class="text-dark-gray2 font-bold mt-6 mb-3">Key Services:</h4>
-            <p class="text-dark-gray2 font-light mb-5">Quick-turn prototypes • proof-of-concept models • engineering
-                prototypes • pre-production prototypes</p>
-            <app-cbutton [heading]="'Explore Prototyping Services'"
-                [icon]="'../../../assets/services/r-arrow.svg'"></app-cbutton>
-        </div>
-    </div>
-
+    <app-services-intro id="Prototyping"  secTitle="Prototyping" secHeading="Validate and Refine Your Designs with Prototyping
+    Experts" secDesc1="Our prototyping services bridge the gap between concept and
+    production, offering quick-turn prototypes, proof-of-concept models, and pre-production units. With
+    in-house capabilities like signal integrity analysis and multi-layer PCB assembly, we ensure your
+    prototype aligns perfectly with production standards." secSubHeading="Key Services:" secDesc4="Quick-turn prototypes • proof-of-concept models • engineering prototypes • pre-production prototypes" imgUrl="../../../assets/npi/sla.png"></app-services-intro>
 
     <!-- Testing -->
-    <div id="Testing" class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8 lg:py-16">
-        <div class="w-full lg:w-[50%] ">
-            <h4 class="text-teal1 font-bold">Testing</h4>
-            <h3 class="text-dark-gray2 text-2xl font-medium my-4">Ensure Quality and Reliability with Rigorous Testing
+    <div id="Testing" class="flex flex-col lg:flex-row items-center gap-4 lg:gap-[52px] 3xl:gap-16 mb-10 lg:mb-24 3xl:mb-32">
+        <div class="w-full lg:w-[53.8%]">
+            <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[19.2px]">Testing</h4>
+            <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[28.8px] my-3 3xl:my-4">Ensure Quality and Reliability with Rigorous Testing
             </h3>
-            <p class="text-dark-gray2 font-light">Whizz Systems provides comprehensive testing services to validate
-                every aspect of your product. Our tests cover <span class="text-teal2 font-bold">design verification,
+            <p class="text-dark-gray2 text-sm 3xl:text-base font-light leading-[24px] 3xl:leading-[28px]">Whizz Systems provides comprehensive testing services to validate
+                every aspect of your product. Our tests cover <span class="text-teal2 text-sm 3xl:text-base font-medium 3xl:font-bold">design verification,
                     functional validation, environmental resilience,</span> and <span
-                    class="text-teal2 font-bold">EMI/EMC compliance</span>. By addressing potential issues early, we
+                    class="text-teal2 text-sm 3xl:text-base font-medium 3xl:font-bold">EMI/EMC compliance</span>. By addressing potential issues early, we
                 reduce redesigns and accelerate time-to-market.</p>
-            <h4 class="text-dark-gray2 font-bold mt-6 mb-1">Key Tests:</h4>
-            <p class="text-dark-gray2 font-light">Design Verification Testing (DVT) • Environmental Testing
+            <h4 class="text-dark-gray2 font-bold mt-4 3xl:mt-6">Key Tests:</h4>
+            <p class="text-dark-gray2 text-sm 3xl:text-base font-light mt-1">Design Verification Testing (DVT) • Environmental Testing
                 (Temperature, Vibration, Shock) • EMI/EMC Assessments • Automated Fault Detection</p>
         </div>
-        <div class="w-full lg:w-[45%]  p-8 md:p-16 lg:p-0 ">
+        <div class="w-full lg:w-[46.2%] p-10 sm:p-10 lg:p-0">
             <img class="object-cover rounded-lg" src="../../../assets/npi/sla.png" alt="img">
         </div>
     </div>
 
     <!-- Compliance -->
-    <div id="Compliance" class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8 lg:py-16">
-        <div class="w-full lg:w-[45%] order-2 lg:order-1 p-8 md:p-16 lg:p-0 ">
+    <div id="Compliance" class="flex flex-col lg:flex-row items-center gap-4 lg:gap-[52px] 3xl:gap-16 mb-8 lg:mb-12 3xl:mb-16">
+        <div class="w-full lg:w-[46.2%] order-2 lg:order-1 p-10 sm:p-10 lg:p-0">
             <img class="object-cover rounded-lg" src="../../../assets/npi/sla.png" alt="img">
         </div>
-        <div class="w-full lg:w-[50%] order-1 lg:order-0">
-            <h4 class="text-teal1 font-bold">Compliance</h4>
-            <h3 class="text-dark-gray2 text-2xl font-medium my-4">Navigate Compliance with Confidence</h3>
-            <p class="text-dark-gray2 font-light">We integrate compliance into the design process from the start,
-                ensuring your product meets global regulatory standards. like <span class="text-teal2 font-bold"> RoHS,
-                    REACH, FCC,</span> and <span class="text-teal2 font-bold">CE</span>. Our collaboration with trusted
+        <div class="w-full lg:w-[53.8%] order-1 lg:order-0">
+            <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[19.2px]">Compliance</h4>
+            <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[28.8px] my-3 3xl:my-4">Navigate Compliance with Confidence</h3>
+            <p class="text-dark-gray2 text-sm 3xl:text-base font-light leading-[24px] 3xl:leading-[28px]">We integrate compliance into the design process from the start,
+                ensuring your product meets global regulatory standards. like <span class="text-teal2 text-sm 3xl:text-base font-medium 3xl:font-bold"> RoHS,
+                    REACH, FCC,</span> and <span class="text-teal2 text-sm 3xl:text-base font-medium 3xl:font-bold">CE</span>. Our collaboration with trusted
                 third-party labs provides authoritative certification, reducing.</p>
-            <h4 class="text-dark-gray2 font-bold mt-6 mb-3">Key Standards Covered:</h4>
-            <p class="text-dark-gray2 font-light mb-5">RoHS & REACH • FCC & CE certification • EMI safety compliance</p>
+            <h4 class="text-dark-gray2 font-bold mt-4 3xl:mt-6">Key Standards Covered:</h4>
+            <p class="text-dark-gray2 text-sm 3xl:text-base font-light mt-1">RoHS & REACH • FCC & CE certification • EMI safety compliance</p>
         </div>
     </div>
 </div>
