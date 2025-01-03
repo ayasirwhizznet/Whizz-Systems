@@ -42,7 +42,7 @@ export class MobileHeaderComponent {
       title: 'Engineering & Design',
       items: [
         { label: 'System Design/Schematics', link: '/services/engineering_&_design/system_design_&_schematics' },
-        { label: 'FPGA Design', link: '/404' },
+        { label: 'FPGA Design', link: '/services/engineering_&_design/fpga' },
         { label: 'PCB Layout', link: '/services/engineering_&_design/pcb_layout' },
         { label: '3D Modeling/Mechanical Engineering', link: '/services/engineering_&_design/3D_modeling' },
         { label: 'Signal Integrity Simulations', link: '/services/engineering_&_design/signal_integrity_simulations' },
@@ -105,10 +105,10 @@ export class MobileHeaderComponent {
   ];
 
   featuredProductItems: MenuItem[] = [
-    { label: '5G ORU Open Radio Unit', link: '/404' },
-    { label: 'Loopback Cards', link: '/404' },
-    { label: 'Xilinx Evaluation Kit', link: '/404' },
-    { label: 'USB 3/2', link: '/404' },
+    { label: '5G ORU Open Radio Unit', link: '/featured-products/5g-oru' },
+    { label: 'Loopback Cards', link: '/featured-products/loopback-cards' },
+    { label: 'Xilinx Evaluation Kit', link: '/featured-products/xilinix-evaluation-kit' },
+    { label: 'USB 3/2', link: '/featured-products/usb-3/2' },
   ];
 
   blogItems: MenuItem[] = [

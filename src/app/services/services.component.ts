@@ -31,7 +31,7 @@ export class ServicesComponent {
       description: `At Whizz Systems, we deliver end-to-end engineering and design solutions with multidomain expertise and world-class manufacturing—all in-house. Our flexible approach allows you to engage with us at any stage of product development, from concept through production and beyond. We take full ownership of the process, providing sustaining engineering support to ensure your product's performance and reliability throughout its entire lifecycle.`,
       items: [
         { label: 'System Design/Schematics', link: '/services/engineering_&_design/system_design_&_schematics' },
-        { label: 'FPGA Design', link: '/404' },
+        { label: 'FPGA Design', link: '/services/engineering_&_design/fpga' },
         { label: 'PCB Layout', link: '/services/engineering_&_design/pcb_layout' },
         { label: '3D Modeling/Mechanical Engineering', link: '/services/engineering_&_design/3D_modeling' },
         { label: 'Signal Integrity Simulations', link: '/services/engineering_&_design/signal_integrity_simulations' },

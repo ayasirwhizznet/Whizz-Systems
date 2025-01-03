@@ -10,6 +10,11 @@ export const routes: Routes = [
                 title: "System Design/Schematics"
             },
             {
+                path: 'fpga',
+                loadComponent: () => import('./fpga/fpga.component').then(m => m.FpgaComponent),
+                title: "FPGA"
+            },
+            {
                 path: 'pcb_layout',
                 loadComponent: () => import('./pcb-layout/pcb-layout.component').then(m => m.PcbLayoutComponent),
                 title: "PCB Layout"
