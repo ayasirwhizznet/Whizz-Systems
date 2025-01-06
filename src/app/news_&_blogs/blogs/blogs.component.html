@@ -1,38 +1,38 @@
-<div class="px-[4%] sm:px-[6.3%] mb-10 lg:mb-24 3xl:mb-32">
-  <div class="px-8 py-12 lg:px-0 lg:py-0 lg:pl-12 bg-dark-gray1 rounded-2xl flex items-center gap-10">
-    <div class="w-full lg:w-[50%]">
-      <h2 class="text-4xl lg:text-[52px] lg:leading-[67px] font-bold text-white mb-6">Whizz Bytes: Expert Views and
+<div class="px-0 sm:px-[6.3%] mb-10 lg:mb-24 3xl:mb-32">
+  <div class="px-4 py-8 sm:py-12 sm:px-8 lg:py-0 lg:px-0 lg:pl-[52px] 3xl:pl-16 bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl flex items-center lg:gap-[50px] 3xl:gap-16">
+    <div class="w-full lg:w-[44%] 3xl:w-[43%] text-white">
+      <h2 class="text-3xl lg:text-[46px] 3xl:text-[56px] lg:leading-[56px] 3xl:leading-[67.2px] font-bold mb-5 3xl:mb-6">Whizz Bytes: Expert  Views and
         Breaking News</h2>
-      <p class="text-lg font-light text-light-gray1">Get informed with expert opinions, industry news, and deep dives into
+      <p class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light text-light-gray1">Get informed with expert opinions, industry news, and deep dives into
         the latest in technology</p>
     </div>
-    <div class="hidden lg:block w-[53%] relative rounded-tl-[100px] ">
+    <div class="hidden lg:block lg:w-[56%] 3xl:w-[57%] relative">
       <video
-        class="absolute inset-0 w-full h-full object-cover z-0 rounded-tl-[100px] rounded-tr-lg rounded-bl-[100px] rounded-br-lg"
+        class="absolute inset-0 w-full h-full object-cover z-0 rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-lg"
         loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
         <source src="../../assets/hero/waves1.mp4" type="video/mp4">
       </video>
       <div
-        class="absolute inset-0 bg-[#00a99f] opacity-70 z-10 rounded-tl-[100px] rounded-tr-lg rounded-bl-[100px] rounded-br-lg">
+        class="absolute inset-0 bg-[#00a99f] opacity-80 z-10 rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-lg">
       </div>
-      <p class="relative z-20 grid place-items-center h-[40rem]"></p>
+      <p class="h-[39rem] 3xl:h-[48rem]"></p>
     </div>
   </div>
 </div>
 
 <div class="px-[4%] sm:px-[9.3%]">
-  <h3 class="text-4xl 3xl:text-5xl font-bold leading-[57.6px] text-dark-gray2 mb-6 3xl:mb-8">Featured Blogs</h3>
+  <h3 class="text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[57.6px] text-dark-gray2 mb-6 3xl:mb-8">Featured Blogs</h3>
   <app-featuredblog></app-featuredblog>
 </div>
 
 <div class="px-[4%] sm:px-[9.3%]" *ngIf="isBlogVisible">
   <img class="object-cover mx-auto px-6 sm:px-16 py-6 sm:py-16" src="../../assets/ideas/section-divider1.png"
     alt="img">
-  <h3 class="text-3xl sm:text-5xl font-bold text-dark-gray2 mb-8">All Blogs</h3>
-  <div class="grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 gap-6 mx-auto">
+  <h3 class="text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[57.6px] text-dark-gray2 mb-6 3xl:mb-8">All Blogs</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
     <div *ngFor=" let card of cards">
       <app-news-card [imageUrl]="card.imageUrl" [date]="card.date" [title]=" card.title"></app-news-card>
     </div>
   </div>
 </div>
-<app-cbutton (click)="loadBlogs()" class="flex justify-center mt-8 mb-16" [size]="'medium'" [heading]="'See more'"></app-cbutton>
+<app-cbutton (click)="loadBlogs()" class="flex justify-center py-4 mb-8 lg:mb-12 3xl:mb-16" [size]="'medium'" [heading]="'See more'"></app-cbutton>
