@@ -13,12 +13,12 @@
             <div class="w-1/2">
                 <img style="transform-origin: left center;"
                     class="object-cover h-[10rem] lg:h-[17rem] 3xl:h-[21rem] rounded-md transition-all duration-500 ease-in-out"
-                    src="../../../../assets/blogs/blogimg.png" alt="img"
+                    [src]="item.imgUrl" alt="img"
                     [ngClass]="i % 2 === 0 ? 'origin-right' : 'origin-left'" />
             </div>
             <div class="w-1/2">
-                <app-newsbutton heading="Heatsink" [routerLink]="''" class="mr-2"></app-newsbutton>
-                <app-newsbutton heading="Thermal Management" [routerLink]="''"></app-newsbutton>
+                <app-newsbutton heading="Heatsink" routerLink="/404" class="mr-2"></app-newsbutton>
+                <app-newsbutton heading="Thermal Management" routerLink="/404"></app-newsbutton>
                 <p class="mt-4 lg:mt-5 mb-2 text-xs 3xl:text-sm text-dark-gray2  font-semibold">{{ item.date }}</p>
                 <p class="text-base lg:text-xl 3xl:text-2xl font-bold">{{ item.title }}</p>
             </div>
