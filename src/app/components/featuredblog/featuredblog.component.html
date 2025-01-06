@@ -1,42 +1,31 @@
 <div class="grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 gap-x-6 mx-auto md:hidden">
     <div *ngFor=" let card of blogData">
-      <app-news-card [imageUrl]="card.imageUrl" [date]="card.date" [title]=" card.title"></app-news-card>
+        <app-news-card [imageUrl]="card.imageUrl" [date]="card.date" [title]=" card.title"></app-news-card>
     </div>
 </div>
-  
 
-<a routerLink="/news_&_insights/news" *ngFor="let item of blogData; let i = index" class="cursor-pointer hidden md:block">
-    <div class="group">
-        <div class="flex items-center gap-0 group-hover:gap-6 mb-6"
+<a routerLink="/news_&_insights/news" *ngFor="let item of blogData; let i = index"
+    class="cursor-pointer hidden md:block">
+    <div class="group relative w-full flex items-center gap-8 overflow-x-scroll no-scrollbar mb-6 3xl:mb-8"
+        [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">
+        <div class="p-6 3xl:p-8 bg-card-gray  w-full group-hover:w-[88%] lg:group-hover:w-[92%] rounded-lg border border-light-gray1 flex items-center gap-6 3xl:gap-8 transition-all duration-500 ease-in-out"
             [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">
-            <div class="p-8 bg-card-gray flex items-center gap-8 w-full rounded-lg border-[1px] border-light-gray1"
-                [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">
-                <div class="w-1/2">
-                    <img class="transition-all duration-300 ease-in-out h-[17rem] rounded-lg"
-                         src="../../assets/blogs/blogimg.png" alt="img"
-                         [ngClass]="i % 2 === 0 ? 'group-hover:w-[93%]' : 'group-hover:w-[100%]'"
-                         [ngStyle]="{
-                            'transform-origin': i % 2 === 0 ? 'right center' : 'left center',
-                            
-                         }">
-                </div>
-                <div class="w-1/2 transition-transform duration-300 ease-in-out"
-                    [ngClass]="i % 2 === 0 ? 'group-hover:-translate-x-[7%]' : 'group-hover:translate-x-[0%]'">
-                    <app-newsbutton heading="Heatsink" [routerLink]="'routerLink'" class="mr-2"></app-newsbutton>
-                    <app-newsbutton heading="Thermal Management" [routerLink]="'routerLink'"></app-newsbutton>
-                    <p class="mt-5 mb-2 text-dark-gray2 text-sm font-medium">{{item.date}}</p>
-                    <p class="text-2xl font-bold">{{item.title}}</p>
-                </div>
+            <div class="w-1/2">
+                <img style="transform-origin: left center;"
+                    class="object-cover h-[10rem] lg:h-[17rem] 3xl:h-[21rem] rounded-md transition-all duration-500 ease-in-out"
+                    src="../../../../assets/blogs/blogimg.png" alt="img"
+                    [ngClass]="i % 2 === 0 ? 'origin-right' : 'origin-left'" />
             </div>
-
-            <div class="bg-teal1 rounded-lg h-[21rem] grid place-items-center transition-all duration-500 ease-in-out w-0 opacity-0 group-hover:w-[7%] group-hover:opacity-100 flex-grow">
-                <img class="w-5 h-5" src="../../assets/services/r-arrow.svg" alt="img">
+            <div class="w-1/2">
+                <app-newsbutton heading="Heatsink" [routerLink]="''" class="mr-2"></app-newsbutton>
+                <app-newsbutton heading="Thermal Management" [routerLink]="''"></app-newsbutton>
+                <p class="mt-4 lg:mt-5 mb-2 text-xs 3xl:text-sm text-dark-gray2  font-semibold">{{ item.date }}</p>
+                <p class="text-base lg:text-xl 3xl:text-2xl font-bold">{{ item.title }}</p>
             </div>
+        </div>
+        <div class="bg-teal2 h-[13rem] lg:h-[20rem] 3xl:h-[25rem] rounded-lg grid place-items-center px-6 lg:px-7 3xl:px-9 transition-all duration-500 ease-in-out"
+            [ngClass]="i % 2 === 0 ? 'absolute right-0 top-0 translate-x-24 group-hover:translate-x-0' : 'absolute left-0 top-0 -translate-x-24 group-hover:translate-x-0'">
+            <img class="object-cover w-4 3xl:w-6" src="../../../../assets/services/r-arrow.svg" alt="img" />
         </div>
     </div>
 </a>
-
-
-
-
-    

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { ServicesHeroComponent } from '../../../components/services-hero/services-hero.component';
-import { ServicesIntroComponent } from '../../../components/services-intro/services-intro.component';
 import { ServicesCoreServicesComponent } from '../../../components/services-core-services/services-core-services.component';
+import { CommonModule} from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-fpga',
   standalone: true,
-  imports: [ServicesHeroComponent, ServicesCoreServicesComponent],
+  imports: [ServicesHeroComponent, ServicesCoreServicesComponent, CommonModule, RouterLink],
   templateUrl: './fpga.component.html',
   styleUrl: './fpga.component.scss'
 })
