@@ -13,9 +13,9 @@ import { RouterLink } from '@angular/router';
 
 export class FooterComponent {
   privacyTerms:any[] = [
-    {label: 'Privacy', link:''},
-    {label: 'Terms', link:''},
-    {label: 'Settings', link:''},
+    {label: 'Privacy', link:'/404'},
+    {label: 'Terms', link:'/404'},
+    {label: 'Settings', link:'/404'},
   ];
 
   services:any[] = [
@@ -35,8 +35,8 @@ export class FooterComponent {
   ];
 
   socailMedia:any[] = [
-    {label: 'Linkedin', link: '', icon: 'fa fa-linkedin-square'},
-    {label: 'Youtube', link: '', icon: 'fa fa-youtube'}
+    {label: 'LinkedIn', link: '', icon: 'fa-brands fa-lg 3xl:fa-xl fa-linkedin'},
+    {label: 'Youtube', link: '', icon: 'fa-brands fa-lg 3xl:fa-xl fa-youtube'}
   ];
 
   contacts:any[] = [
