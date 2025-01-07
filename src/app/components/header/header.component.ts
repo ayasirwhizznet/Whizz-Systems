@@ -1,7 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router, NavigationEnd, NavigationStart, ActivatedRoute } from '@angular/router';
 import { RouterLink } from '@angular/router';
-import { NgClass, NgFor, NgIf } from '@angular/common';
+import { CommonModule} from '@angular/common';
 import { HeaderSectionComponent } from '../header-section/header-section.component';
 import { MobileHeaderComponent } from '../mobile_header/mobile_header.component';
 import { CbuttonComponent } from '../cbutton/cbutton.component';
@@ -11,7 +11,7 @@ import { Cbutton4Component } from '../cbutton4/cbutton4.component';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, NgIf, NgFor, NgClass, HeaderSectionComponent, MobileHeaderComponent, CbuttonComponent, Cbutton3Component,Cbutton4Component],
+  imports: [RouterLink, CommonModule, HeaderSectionComponent, MobileHeaderComponent, CbuttonComponent, Cbutton3Component,Cbutton4Component],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
@@ -128,9 +128,6 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  titleSlug: string = '';
-  categorySlug: string = '';
-
   ngOnInit(): void {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
@@ -141,28 +138,16 @@ export class HeaderComponent implements OnInit {
         this.isSearchbaropen = '';
       }
     });
-
-    const title = this.route.snapshot.paramMap.get('title');
-    const category = this.route.snapshot.paramMap.get('category');
-    if (title) {
-      this.titleSlug = decodeURIComponent(title);
-      document.title = this.titleSlug;
-    }
-    if (category) {
-      this.categorySlug = decodeURIComponent(category);
-    }
-
-   
   }
 
   updateActiveMenuItem(): void {
-    if (this.currentRoute === '/about') {
+    if (this.currentRoute.includes('/about')) {
       this.activeMenuItem = 'About';
-    } else if (this.currentRoute === '/services') {
+    } else if (this.currentRoute.includes('/services')) {
       this.activeMenuItem = 'Services';
-    } else if (this.currentRoute === '/featured') {
+    } else if (this.currentRoute.includes('/featured-products')) {
       this.activeMenuItem = 'Featured Products';
-    } else if (this.currentRoute === '/resources') {
+    } else if (this.currentRoute.includes('/resources')) {
       this.activeMenuItem = 'Resources';
     } else {
       this.activeMenuItem = null;
@@ -205,13 +190,9 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const currentScroll = document.documentElement.scrollTop;
-    if (currentScroll > this.lastScrollTop && currentScroll > 100) {
       this.isHeaderVisible = false; 
-    } else if (currentScroll < this.lastScrollTop && currentScroll > 100) {
+      this.closeMenu();
       this.isHeaderVisible = true; 
-    }
     this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
   }
-
-
 }
