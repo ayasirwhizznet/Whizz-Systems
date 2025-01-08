@@ -4,11 +4,12 @@ import { NewsComponent } from "../../components/news/news.component";
 import { Cbutton3Component } from '../../components/cbutton3/cbutton3.component';
 import { Cbutton2Component } from '../../components/cbutton2/cbutton2.component';
 import { BlogTagComponent } from '../../components/blog-tag/blog-tag.component';
+import { CbuttonComponent } from "../../components/cbutton/cbutton.component";
 
 @Component({
   selector: 'app-newspage',
   standalone: true,
-  imports: [CommonModule, Cbutton2Component, Cbutton3Component, NewsComponent, BlogTagComponent],
+  imports: [CommonModule, Cbutton2Component, Cbutton3Component, NewsComponent, BlogTagComponent, CbuttonComponent],
   templateUrl: './newspage.component.html',
   styleUrl: './newspage.component.scss'
 })

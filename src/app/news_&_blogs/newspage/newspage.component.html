@@ -1,25 +1,34 @@
-<div class="px-[4%] sm:px-[5%]">
-    <div class=" bg-dark-gray1 rounded-2xl flex items-center gap-16">
-        <div class="px-10 py-16 lg:px-0 lg:py-0 lg:pl-16 w-full lg:w-[47%]">
-            <p class="mb-2 text-white text-base">May 29, 2024</p>
+<section class="px-0 sm:px-[6.3%] mb-10 lg:mb-24 3xl:mb-32">
+    <div class=" px-4 py-8 sm:py-12 sm:px-8 lg:py-0 lg:px-0 lg:pl-[52px] 3xl:pl-16 bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl flex items-center lg:gap-[50px] 3xl:gap-16">
+        <div class="w-full lg:w-[44%] 3xl:w-[43%] text-white">
+            <p class="text-sm 3xl:text-base mb-2 3xl:mb-[10px]">May 29, 2024</p>
             <div class="flex items-center gap-2 flex-wrap">
-                <app-blog-tag text="Heatsink" textColor="text-light-gray1" borderColor="border-light-gray1" borderRadius="rounded-[4px]"></app-blog-tag>
-                <app-blog-tag text="Thermal Management" textColor="text-light-gray1" borderColor="border-light-gray1" borderRadius="rounded-[4px]"></app-blog-tag>
+                <app-blog-tag text="Heatsink" textColor="text-light-gray1" borderColor="border-light-gray1"
+                    borderRadius="rounded-[4px]"></app-blog-tag>
+                <app-blog-tag text="Thermal Management" textColor="text-light-gray1" borderColor="border-light-gray1"
+                    borderRadius="rounded-[4px]"></app-blog-tag>
             </div>
-            <h1 class="text-4xl lg:text-5xl font-bold my-6 text-white">Whizz Systems' Guide to PCIe-6</h1>
-            <p class="text-lg font-thin text-white mb-8">Expert insight from Whizz systems</p>
-            <div class="flex items-center gap-3">
-                <a *ngFor="let link of links" routerLink="item.link" class="inline-block">
-                    <img class="cursor-pointer" [src]="link.img" alt="img">
+            <h1
+                class="text-3xl lg:text-[46px] 3xl:text-[56px] lg:leading-[56px] 3xl:leading-[67.2px] font-bold my-4 3xl:my-6">
+                Whizz Systems' Guide to PCIe-6</h1>
+            <p
+                class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light text-light-gray1 mb-6 3xl:mb-8">
+                Expert insight from Whizz systems</p>
+            <app-cbutton heading="Medium Button" icon="../../assets/header/r-arrow.svg" [size]="'medium'"
+                [routerLink]="'/404'"></app-cbutton>
+            <div class="flex items-center gap-2 3xl:gap-4 mt-6 3xl:mt-8">
+                <a *ngFor="let link of links" routerLink="item.link" class="cursor-pointer">
+                    <img class="" [src]="link.img" alt="img">
                 </a>
             </div>
         </div>
 
-        <div class="hidden lg:block w-[53%]">
-            <img class="object-contain" src="../../../assets/news/hero-img.png" alt="img">
+        <div class="hidden lg:block lg:w-[56%] 3xl:w-[57%]">
+            <img class="object-cover w-full h-[39rem] 3xl:h-[48rem] rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-lg"
+                src="../../../assets/news/hero-img.png" alt="img">
         </div>
     </div>
-</div>
+</section>
 
 <img class="object-cover mx-auto py-10 lg:py-20 px-6 md:px-28 lg:px-44 "
     src="../../../assets/services/section-divider.png" alt="img">
