@@ -2,16 +2,14 @@
     <div class=" bg-dark-gray1 rounded-2xl flex items-center gap-16">
         <div class="px-10 py-16 lg:px-0 lg:py-0 lg:pl-16 w-full lg:w-[47%]">
             <p class="mb-2 text-white text-base">May 29, 2024</p>
-            <div class="flex items-center gap-2 font-medium text-sm text-light-gray1">
-                <a class="inline-block px-2 py-1 rounded-md border-[1px] border-light-gray1 cursor-pointer"
-                    routerLink="">Heatsink</a>
-                <a class="inline-block px-2 py-1 rounded-md border-[1px] border-light-gray1 cursor-pointer"
-                    routerLink="">Thermal Management</a>
+            <div class="flex items-center gap-2 flex-wrap">
+                <app-blog-tag text="Heatsink" textColor="text-light-gray1" borderColor="border-light-gray1" borderRadius="rounded-[4px]"></app-blog-tag>
+                <app-blog-tag text="Thermal Management" textColor="text-light-gray1" borderColor="border-light-gray1" borderRadius="rounded-[4px]"></app-blog-tag>
             </div>
             <h1 class="text-4xl lg:text-5xl font-bold my-6 text-white">Whizz Systems' Guide to PCIe-6</h1>
             <p class="text-lg font-thin text-white mb-8">Expert insight from Whizz systems</p>
             <div class="flex items-center gap-3">
-                <a  *ngFor="let link of links" routerLink="item.link" class="inline-block">
+                <a *ngFor="let link of links" routerLink="item.link" class="inline-block">
                     <img class="cursor-pointer" [src]="link.img" alt="img">
                 </a>
             </div>
@@ -23,13 +21,15 @@
     </div>
 </div>
 
-<img class="object-cover mx-auto py-10 lg:py-20 px-6 md:px-28 lg:px-44 " src="../../../assets/services/section-divider.png" alt="img">
+<img class="object-cover mx-auto py-10 lg:py-20 px-6 md:px-28 lg:px-44 "
+    src="../../../assets/services/section-divider.png" alt="img">
 
 <div class="px-[4%] sm:px-[9%] pb-10">
     <div class="grid grid-cols-9 gap-0 lg:gap-20">
         <!-- left div -->
         <div class="col-span-9 lg:col-span-5">
-            <div class="max-w-md lg:max-w-lg p-6 sm:p-8 lg:p-12 bg-card-gray border border-1 border-light-gray1 rounded-lg text-dark-gray2">
+            <div
+                class="max-w-md lg:max-w-lg p-6 sm:p-8 lg:p-12 bg-card-gray border border-1 border-light-gray1 rounded-lg text-dark-gray2">
                 <h2 class="text-3xl xl:text-5xl font-bold mb-8">In This Article</h2>
                 <ul class="list-outside list-decimal font-bold text-xl marker:text-teal1 ml-4 lg:ml-9">
                     <li class="mb-8" *ngFor="let item of articlesummary">
@@ -49,13 +49,15 @@
                 <div *ngFor="let item of question1">
                     <h4 class="text-dark-gray2 text-lg font-medium mb-4">{{item.title}}</h4>
                     <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc1}}</p>
-                    <figure class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
+                    <figure
+                        class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
                         <img class="object-cover rounded-lg" [src]="item.img1" alt="img">
                         <figcaption class="text-base font-bold text-teal2 mt-2 lg:mt-4 text-center">{{item.img1caption}}
                         </figcaption>
                     </figure>
                     <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc2}}</p>
-                    <figure class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
+                    <figure
+                        class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
                         <img class="object-cover rounded-lg" [src]="item.img2" alt="img">
                         <figcaption class="text-base font-bold text-teal2 mt-2 lg:mt-4 text-center">{{item.img2caption}}
                         </figcaption>
@@ -63,7 +65,8 @@
                     <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc3}}</p>
                     <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc4}}</p>
                     <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc5}}</p>
-                    <figure class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
+                    <figure
+                        class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
                         <img class="object-cover rounded-lg" [src]="item.img3" alt="img">
                         <figcaption class="text-base font-bold text-teal2 mt-2 lg:mt-4 text-center">{{item.img3caption}}
                         </figcaption>
@@ -74,7 +77,8 @@
                     <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc1}}</p>
                     <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc2}}</p>
                     <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc3}}</p>
-                    <figure class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
+                    <figure
+                        class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
                         <img class="object-cover rounded-lg" [src]="item.img1" alt="img">
                         <figcaption class="text-base font-bold text-teal2 mt-2 lg:mt-4 text-center">{{item.img1caption}}
                         </figcaption>
@@ -84,7 +88,8 @@
                     <h4 class="text-dark-gray2 text-lg font-medium mb-4">{{item.title}}</h4>
                     <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc1}}</p>
                     <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc2}}</p>
-                    <figure class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
+                    <figure
+                        class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
                         <img class="object-cover rounded-lg" [src]="item.img1" alt="img">
                         <figcaption class="text-base font-bold text-teal2 mt-2 lg:mt-4 text-center">{{item.img1caption}}
                         </figcaption>
@@ -127,7 +132,7 @@
                     <div class="flex items-center flex-col md:flex-row gap-8">
                         <input type="email" placeholder="Enter Your Email"
                             class="w-full text-base px-4 py-3 block rounded-lg border-[1px] border-dark-gray1 focus:outline-none focus:border-teal1  bg-transparent placeholder:light-gray2 focus:placeholder-transparent">
-                                <app-cbutton3  heading="Subscribe" size="medium"></app-cbutton3>
+                        <app-cbutton3 heading="Subscribe" size="medium"></app-cbutton3>
                     </div>
                 </div>
                 <div class="max-w-lg p-6 xl:p-12  bg-subscribe rounded-lg bg-cover">

@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgClass, NgFor, NgStyle } from '@angular/common';
-import { NewsbuttonComponent } from '../newsbutton/newsbutton.component';
+import { CommonModule} from '@angular/common';
 import { NewsCardComponent } from '../news-card/news-card.component';
+import { BlogTagComponent } from '../blog-tag/blog-tag.component';
 
 @Component({
   selector: 'app-featuredblog',
   standalone: true,
-  imports: [RouterLink, NewsbuttonComponent, NgFor, NgClass,NewsCardComponent, NgStyle],
+  imports: [RouterLink, CommonModule, NewsCardComponent, BlogTagComponent],
   templateUrl: './featuredblog.component.html',
   styleUrl: './featuredblog.component.scss'
 })
