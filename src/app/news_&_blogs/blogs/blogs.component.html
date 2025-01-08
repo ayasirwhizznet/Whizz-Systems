@@ -1,7 +1,7 @@
-<div class="px-0 sm:px-[6.3%] mb-10 lg:mb-24 3xl:mb-32">
+<section class="px-0 sm:px-[6.3%] mb-10 lg:mb-24 3xl:mb-32">
   <div class="px-4 py-8 sm:py-12 sm:px-8 lg:py-0 lg:px-0 lg:pl-[52px] 3xl:pl-16 bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl flex items-center lg:gap-[50px] 3xl:gap-16">
     <div class="w-full lg:w-[44%] 3xl:w-[43%] text-white">
-      <h2 class="text-3xl lg:text-[46px] 3xl:text-[56px] lg:leading-[56px] 3xl:leading-[67.2px] font-bold mb-5 3xl:mb-6">Whizz Bytes: Expert  Views and
+      <h2 class="text-3xl lg:text-[46px] 3xl:text-[56px] lg:leading-[56px] 3xl:leading-[67.2px] font-bold mb-4 3xl:mb-6">Whizz Bytes: Expert  Views and
         Breaking News</h2>
       <p class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light text-light-gray1">Get informed with expert opinions, industry news, and deep dives into
         the latest in technology</p>
@@ -18,14 +18,14 @@
       <p class="h-[39rem] 3xl:h-[48rem]"></p>
     </div>
   </div>
-</div>
+</section>
 
-<div class="px-[4%] sm:px-[9.3%]">
+<section class="px-[4%] sm:px-[9.3%]">
   <h3 class="text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[57.6px] text-dark-gray2 mb-6 3xl:mb-8">Featured Blogs</h3>
   <app-featuredblog></app-featuredblog>
-</div>
+</section>
 
-<div class="px-[4%] sm:px-[9.3%]" *ngIf="isBlogVisible">
+<section class="px-[4%] sm:px-[9.3%]" *ngIf="isBlogVisible">
   <img class="object-cover mx-auto px-6 sm:px-16 py-6 sm:py-16" src="../../assets/ideas/section-divider1.png"
     alt="img">
   <h3 class="text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[57.6px] text-dark-gray2 mb-6 3xl:mb-8">All Blogs</h3>
@@ -34,5 +34,5 @@
       <app-news-card [imageUrl]="card.imageUrl" [date]="card.date" [title]=" card.title"></app-news-card>
     </div>
   </div>
-</div>
+</section>
 <app-cbutton (click)="loadBlogs()" class="flex justify-center py-4 mb-8 lg:mb-12 3xl:mb-16" [size]="'medium'" [heading]="'See more'"></app-cbutton>
