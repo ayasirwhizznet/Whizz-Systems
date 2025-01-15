@@ -28,11 +28,11 @@ export class NpiComponent implements OnInit, OnDestroy {
       title: "Engineering and Design",
      items: [
         { label: 'System Design/Schematics', link: '/services/engineering_&_design/system_design_&_schematics' },
-        { label: 'FPGA Design', link: '/404' },
+        { label: 'FPGA Design', link: '/services/engineering_&_design/fpga' },
         { label: 'PCB Layout', link: '/services/engineering_&_design/pcb_layout' },
         { label: '3D Modeling/Mechanical Engineering', link: '/services/engineering_&_design/3D_modeling' },
         { label: 'Signal Integrity Simulations', link: '/services/engineering_&_design/signal_integrity_simulations' },
-        { label: 'Power Delivery Network Simulations', link: '/404' },
+        { label: 'Power Delivery Network Simulations', link: '/services/engineering_&_design/power_delivery' },
         { label: 'Thermal Management/Thermal Simulation', link: '/services/engineering_&_design/thermal_management' },
       ],
     };
