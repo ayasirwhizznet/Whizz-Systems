@@ -119,14 +119,14 @@
                         {{ service }}
                     </th>
                 </tr>
-                <tr class="flex">
+                <tr class="flex -mt-[1px]">
                     <td *ngFor="let service of santaClaraServices; let i = index" [ngClass]="{'text-xs w-[5rem] 3xl:w-20 py-7 border-b text-npwrap': i == 0,
                 'text-xl 3xl:text-2xl w-[6.7rem] 3xl:w-[7.7rem]  py-7 3xl:py-8 border-l border-t fa-regular fa-circle-check': i !== 0}"
                         class="text-xs font-light grid place-items-center">
                         {{ service }}
                     </td>
                 </tr>
-                <tr class="flex">
+                <tr class="flex -mt-[1px]">
                     <td *ngFor="let service of malaysiaServices; let i = index" [ngClass]="{
                       'text-xs w-[5rem] 3xl:w-20': i === 0,
                       'text-xl 3xl:text-2xl w-[6.7rem] 3xl:w-[7.7rem] py-7 3xl:py-8 border-l border-t': i !== 0
