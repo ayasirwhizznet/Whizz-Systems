@@ -1,6 +1,6 @@
 $animationSpeed: 18s; /* Adjust to your desired speed */
 $gap: 20px; /* Space between slides */
-$slideWidth: 280px; /* Width of each slide */
+$slideWidth: 220px; /* Width of each slide */
 
 @keyframes scroll {
     0% {
@@ -12,7 +12,7 @@ $slideWidth: 280px; /* Width of each slide */
 }
 
 .slider {
-    height: 100px;
+    height: 80px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -27,7 +27,7 @@ $slideWidth: 280px; /* Width of each slide */
 }
 
 .slide {
-    height: 100px;
+    height: 80px;
     width: $slideWidth;
 }
 
