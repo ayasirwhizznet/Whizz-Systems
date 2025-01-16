@@ -59,7 +59,7 @@ export class HeaderComponent implements OnInit {
       items: [
         { label: 'DFX Analysis', link: '/404' },
         { label: 'FMEA (Failure Mode & Effects Analysis)', link: '/404' },
-        { label: 'Thermal Profiling and Reflow Soldering Optimization', link: '/404' },
+        { label: 'Thermal Profiling & Reflow Soldering Optimization', link: '/404' },
         { label: 'Mechanical System Build', link: '/404' },
         { label: 'Packaging Design', link: '/404' },
       ],
