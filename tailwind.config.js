@@ -14,7 +14,6 @@ module.exports = {
       backgroundImage: {
         lines: "url('../src/assets/services/line.png')",
         lines1: "url('../src/assets/services/line1.png')",
-        lines2: "url('../src/assets/services/line2.png')",
         subscribe: "url('../src/assets/news/subscribe.png')",
         map: "url('../src/assets/about/map.png')",
       },
