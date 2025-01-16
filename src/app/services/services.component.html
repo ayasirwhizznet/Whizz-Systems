@@ -43,22 +43,21 @@
     <div class="w-full lg:w-[60%]">
       <div class="grid grid-cols-2 gap-3 3xl:gap-4">
         <div *ngFor="let subitem of item.items" [routerLink]="[subitem.link]" [fragment]="subitem.fragment" class="group col-span-2 md:col-span-1">
-          <div class="cursor-pointer h-32 3xl:h-40 bg-card-gray border border-light-gray1 rounded-lg bg-lines bg-contain bg-no-repeat group-hover:bg-none group-hover:bg-white group-hover:border-white relative transition-all duration-700 ease-in-out">
-            <!-- Added fade transition to the image -->
+          <div class="cursor-pointer h-32 3xl:h-40 bg-card-gray border border-light-gray1 group-hover:border-white rounded-lg relative transition-all duration-300 ease-in-out group">
+            <div class="absolute inset-0 bg-lines bg-contain bg-no-repeat transition-opacity duration-700 ease-in-out group-hover:opacity-0"></div>
+            <div class="absolute inset-0 bg-white transition-opacity duration-700 ease-in-out opacity-0 group-hover:opacity-100 z-0 border-white" ></div>
+            <p class="absolute top-1/2 transform -translate-y-1/2 z-20 text-base 3xl:text-2xl text-dark-gray1 group-hover:text-white font-semibold 3xl:font-bold pl-6 3xl:pl-8 pr-12 3xl:pr-8 transition-all duration-700 ease-in-out">
+              {{ subitem.label }}
+            </p>
             <div class="hidden group-hover:block transition-opacity duration-700 ease-in-out">
               <img
-                class="object-contain absolute bottom-[10px] w-[15rem] 3xl:w-[18.5rem] right-16 sm:right-12 2xl:right-[58px] 3xl:right-[74px] z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out"
+                class="object-contain absolute bottom-[10px] w-[16rem] lg:w-[12rem] 3xl:w-[18.5rem] right-16 sm:right-14 lg:right-12 2xl:right-[58px] 3xl:right-[74px] z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out"
                 src="../../assets/services/line1.png"
                 alt="img"
               >
             </div>
-            <p class="absolute top-1/2 transform -translate-y-1/2 z-20 text-lg 3xl:text-2xl text-dark-gray1 group-hover:text-white font-semibold 3xl:font-bold pl-6 3xl:pl-8 pr-12 3xl:pr-8 transition-all duration-700 ease-in-out">
-              {{ subitem.label }}
-            </p>
-    
             <div class="w-full h-full flex 3xl:gap-0 group-hover:3xl-gap-4 absolute overflow-x-scroll no-scrollbar">
-              <div class="w-full group-hover:w-[84%] group-hover:bg-dark-gray1 rounded-lg transition-all duration-500 ease-in-out">
-              </div>
+              <div class="w-full group-hover:w-[84%] group-hover:bg-dark-gray1 rounded-lg transition-all duration-500 ease-in-out"></div>
               <div class="translate-x-2 2xl:translate-x-7 group-hover:md:translate-x-3 group-hover:3xl:translate-x-4 relative transition-all duration-700 ease-in-out">
                 <div class="w-9 2xl:w-[46px] 3xl:w-14 h-full bg-teal2 rounded-lg grid place-items-center absolute z-50">
                   <img class="w-[18px] 3xl:w-[22px]" src="../../assets/services/r-arrow.svg" alt="arrow-img">
@@ -69,6 +68,5 @@
         </div>
       </div>
     </div>
-    
   </div>
 </section>
