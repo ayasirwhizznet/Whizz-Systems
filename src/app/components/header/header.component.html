@@ -22,9 +22,7 @@
             }"></i>
           </a>
 
-          <div *ngIf="
-              activeBottomSection === 'featured' && item.dropdown === 'featured'
-            "
+          <div *ngIf="activeBottomSection === 'featured' && item.dropdown === 'featured'"
             class="p-2 3xl:p-[10px] bg-card-gray rounded-br-lg rounded-bl-lg absolute left-1/2 transform -translate-x-1/2 top-[68px] 3xl:top-[88px] z-20">
             <div class="flex justify-center items-center gap-2 3xl:gap-[10px]">
               <a *ngFor="let item of featuredProductItems"
@@ -36,10 +34,7 @@
             </div>
           </div>
 
-          <div *ngIf="
-              activeBottomSection === 'resources' &&
-              item.dropdown === 'resources'
-            "
+          <div *ngIf="activeBottomSection === 'resources' && item.dropdown === 'resources'"
             class="w-[36rem] 3xl:w-[45rem] p-2 3xl:p-[10px] flex gap-2 3xl:gap-[10px] bg-card-gray absolute left-0 transform -translate-x-[70%] top-[68px] 3xl:top-[88px] z-20 rounded-br-lg rounded-bl-lg">
             <div class="w-[38rem] 3xl:w-[46rem] bg-white border border-light-gray1 p-6 3xl:p-8 pr-0 text-sm text-nowrap rounded-lg">
               <div *ngFor="let item of resourceItems">
