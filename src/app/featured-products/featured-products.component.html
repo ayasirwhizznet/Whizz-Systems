@@ -1,0 +1,53 @@
+<section class="px-0 sm:px-[6.3%] mb-8 lg:mb-12 3xl:mb-16">
+  <div
+    class="px-4 py-8 sm:py-12 sm:px-8 lg:py-0 lg:px-0 lg:pl-[52px] 3xl:pl-16 bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl flex items-center lg:gap-[50px] 3xl:gap-16">
+    <div class="w-full lg:w-[44%] 3xl:w-[43%] text-white">
+      <h1
+        class="text-3xl lg:text-[46px] 3xl:text-[56px] lg:leading-[56px] 3xl:leading-[67.2px] font-bold mb-4 3xl:mb-6">
+        Featured Products</h1>
+      <p class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light text-light-gray1">Lorem ipsum
+        dolor sit amet.</p>
+    </div>
+    <div class="hidden lg:block lg:w-[56%] 3xl:w-[57%] relative">
+      <video
+        class="absolute inset-0 w-full h-full object-cover z-0 rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-lg"
+        loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
+        <source src="../../assets/hero/waves1.mp4" type="video/mp4">
+      </video>
+      <div
+        class="absolute inset-0 bg-[#00a99f] opacity-80 z-10 rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-lg">
+      </div>
+      <p class="h-[39rem] 3xl:h-[48rem]"></p>
+    </div>
+  </div>
+</section>
+<!-- Navbar -->
+<section class="hidden lg:block px-[9.3%] z-20 sticky top-[15%] py-8 lg:py-12 3xl:py-16 bg-white">
+  <div class="flex justify-center items-center gap-3 3xl:gap-4 z-50">
+    <a *ngFor="let category of featuredProducts" (click)="scrollToCategory(category.title)"
+      class="w-full h-[70px] 3xl:h-[88px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">{{category.title}}</a>
+  </div>
+</section>
+
+<section *ngFor="let category of featuredProducts; let i = index" [id]="category.title" class="px-[4%] lg:px-[20.5%] py-8 lg:py-12 3xl:py-16 text-center">
+  <h2 class="text-4xl 3xl:text-5xl 3xl:leading-[57.6px] text-dark-gray2 text-center font-bold mb-6 3xl:mb-8">{{ category.title }}</h2>
+  <div class="w-full grid grid-cols-2 gap-3 3xl:gap-4">
+    <a *ngFor="let product of category.products; let isLast = last" [routerLink]="[product.link]" [fragment]="product.fragment" 
+    [ngClass]="{'sm:col-span-2 sm:w-1/2 sm:mx-auto': !isEven(category.products) && isLast}" class="cursor-pointer col-span-2 sm:col-span-1 relative flex items-center overflow-x-scroll no-scrollbar group box-border">
+        <!-- content section -->
+      <div class="absolute inset-0 bg-lines3 bg-contain bg-no-repeat bg-[0%_15%] opacity-100 group-hover:opacity-0  transition-opacity duration-700 ease-in-out"></div>
+      <div class="absolute inset-0 bg-lines4 bg-contain bg-no-repeat bg-[0%_15%] opacity-0 group-hover:opacity-100 -translate-x-10 group-hover:translate-x-0 transition-all duration-600 ease-in-out"></div>
+      <div class="w-full h-full group-hover:w-[87%] p-6 3xl:p-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg group-hover:bg-dark-gray2 transition-all duration-700 ease-in-out">
+        <img class="object-cover z-10 relative w-full h-[65%] rounded-lg mb-6 3xl:mb-8 mx-auto origin-left" [src]="product.imgUrl" alt="img"/>
+        <div class="text-dark-gray2 group-hover:text-white transition-all duration-700 ease-in-out">
+          <h4 class="text-xl 3xl:text-2xl text-nowrap font-bold mb-1 3xl:mb-2">{{ product.name }}</h4>
+          <p class="3xl:text-lg font-light mb-1 3xl:mb-[6px]">{{ product.desc }}</p>
+        </div>
+      </div>
+      <!-- arrow section -->
+      <div class="absolute right-0 bg-teal2 grid place-items-center rounded-md 3xl:rounded-lg px-4 3xl:px-[18px] h-full translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out">
+        <img class="object-cover w-4 3xl:w-5" src="../../assets/services/r-arrow.svg" alt="img"/>
+      </div>
+    </a>
+  </div>
+</section>

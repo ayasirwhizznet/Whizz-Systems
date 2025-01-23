@@ -1,10 +1,10 @@
-import { NgFor } from '@angular/common';
+import { CommonModule} from '@angular/common';
 import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [NgFor,RouterModule],
+  imports: [CommonModule,RouterModule],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss'
 })
@@ -15,16 +15,17 @@ export class ServicesComponent {
   toTop(id: string) {
     const element = document.getElementById(id);
     if (element) {
-      const offset = 170;
+      const viewportHeight = window.innerHeight;
+      const offsetPercentage = 40;
+      const offset = (viewportHeight * offsetPercentage) / 100;
       const topPosition = element.offsetTop - offset;
-  
       window.scrollTo({
         top: topPosition,
         behavior: 'smooth',
       });
     }
   }
-
+  
   servicesTab: any = [
     {
       title: "Engineering & Design",

@@ -20,4 +20,5 @@ export class ServicesIntroComponent {
   @Input() routerLink!: string;
   @Input() btnText: string = '';
   @Input() imgUrl: string = '';
+  @Input() isImageFirst: boolean = true;
 }

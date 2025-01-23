@@ -39,11 +39,8 @@ export class NpiComponent implements OnInit, OnDestroy {
 
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
-
   private currentFragment: string | null = null;
-
   constructor(private route: ActivatedRoute, private router: Router) { }
-
   ngOnInit(): void {
     this.fragmentSubscription = this.route.fragment.subscribe((fragment) => {
       if (fragment) {
@@ -76,7 +73,9 @@ export class NpiComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       const element = document.getElementById(fragment?.replace(/\s/g, ''));
       if (element) {
-        const offset = 150;
+        const viewportHeight = window.innerHeight;
+        const offsetPercentage = 35;
+        const offset = (window.innerHeight * offsetPercentage) / 100;
         const topPosition = element.offsetTop - offset;
         window.scrollTo({
           top: topPosition,

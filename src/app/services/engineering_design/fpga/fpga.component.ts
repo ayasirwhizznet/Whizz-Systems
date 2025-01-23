@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-fpga',
   standalone: true,
-  imports: [ServicesHeroComponent, ServicesCoreServicesComponent, CommonModule, RouterLink],
+  imports: [ServicesHeroComponent, ServicesCoreServicesComponent, CommonModule],
   templateUrl: './fpga.component.html',
   styleUrl: './fpga.component.scss'
 })

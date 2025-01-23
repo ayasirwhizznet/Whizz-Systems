@@ -47,10 +47,10 @@ export class HeaderComponent implements OnInit {
     {
       title: 'NPI',
       items: [
-        { label: 'System Level Architecture', link: '/services/npi', fragment: "SystemLevelArchitecture" },
+        { label: 'System Level Architecture', link: '/services/npi', fragment: "SystemLevelArchitecture"},
         { label: 'Engineering & Design', link: '/services/npi', fragment: "Engineering&Design"  },
         { label: 'Prototyping', link: '/services/npi', fragment: "Prototyping"  },
-        { label: 'Testing', link: '/services/npi', fragment: "Testing"  },
+        { label: 'Testing', link: '/services/npi', fragment: "Testing"},
         { label: 'Compliance and Certification', link: '/services/npi', fragment: "Compliance"  },
       ],
     },
@@ -67,9 +67,9 @@ export class HeaderComponent implements OnInit {
     {
       title: 'Lab Testing Solutions',
       items: [
-        { label: 'Board Bring Up', link: '/404' },
-        { label: 'Validation', link: '/404' },
-        { label: 'Characterization', link: '/404' },
+        { label: 'Board Bring Up', link: '/services/lab_testing_solutions', fragment: "BoardBringUp"},
+        { label: 'Validation', link: '/services/lab_testing_solutions', fragment: "Validation"},
+        { label: 'Characterization', link: '/services/lab_testing_solutions', fragment: "Characterization"},
       ],
     },
     {

@@ -2,11 +2,10 @@
 <app-services-hero category="NPI" heading="Future-Ready NPI: Designed for NexGen Demands and Innovation" desc="Over 30 Years of Expertise in Creating Complex, Scalable Solutions with Advanced Assembly and Material Science" imgUrl="../../../assets/npi/hero.png" routerLink="/404" btnText="Start Your NPI Project"></app-services-hero>
 
 <!-- NPI Navbar -->
-<section class="hidden lg:block px-[5%] z-20 sticky top-0 mb-10 lg:mb-24 3xl:mb-32">
-    <div class="flex justify-center items-center gap-3 3xl:gap-4 text-center text-xs 3xl:text-base bg-white z-50">
-        <a *ngFor="let link of npiTab" (click)="scrollToFragment(link.title)"
-            class="lg:w-[196px] 3xl:w-[247px] lg:h-[72px] 3xl:h-[88px] cursor-pointer flex justify-center items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-white font-medium rounded-lg transition-all duration-500 ease-in-out"
-           >{{link.title}}</a>
+<section class="hidden lg:block px-[9.3%] z-20 sticky top-[15%] py-8 lg:py-12 3xl:py-16 bg-white">
+    <div class="flex justify-center items-center gap-3 3xl:gap-4 z-50">
+      <a *ngFor="let link of npiTab" (click)="scrollToFragment(link.title)"
+        class="lg:w-[196px] 3xl:w-[247px] h-[70px] 3xl:h-[88px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">{{link.title}}</a>
     </div>
 </section>
 
@@ -37,7 +36,7 @@
             transition-all duration-500 ease-in-out">{{item.label}}
         </a>
     </section>
-
+    
     <img class="object-cover mx-auto px-6 md:px-14 lg:px-20 3xl:px-16 mt-5 lg:mt-14 lg: 3xl:mt-[71px] mb-8 lg:mb-[88px] 3xl:mb-[118px]"
         src="../../assets/testimonials/section-divider2.png" alt="img">
 
@@ -49,7 +48,7 @@
     prototype aligns perfectly with production standards." secSubHeading="Key Services:" secDesc4="Quick-turn prototypes • proof-of-concept models • engineering prototypes • pre-production prototypes" imgUrl="../../../assets/npi/sla.png"></app-services-intro>
 
     <!-- Testing -->
-    <section id="Testing" class="flex flex-col lg:flex-row items-center gap-4 lg:gap-[52px] 3xl:gap-16 mb-10 lg:mb-24 3xl:mb-32">
+    <section id="Testing" class="flex flex-col lg:flex-row items-center gap-4 lg:gap-[52px] 3xl:gap-16 py-8 lg:py-12 3xl:py-16">
         <div class="w-full lg:w-[53.8%]">
             <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[19.2px]">Testing</h4>
             <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[28.8px] my-3 3xl:my-4">Ensure Quality and Reliability with Rigorous Testing
@@ -69,7 +68,7 @@
     </section>
 
     <!-- Compliance -->
-    <section id="Compliance" class="flex flex-col lg:flex-row items-center gap-4 lg:gap-[52px] 3xl:gap-16 mb-8 lg:mb-12 3xl:mb-16">
+    <section id="Compliance" class="flex flex-col lg:flex-row items-center gap-4 lg:gap-[52px] 3xl:gap-16 py-8 lg:py-12 3xl:py-16">
         <div class="w-full lg:w-[46.2%] order-2 lg:order-1 p-10 sm:p-10 lg:p-0">
             <img class="object-cover rounded-lg" src="../../../assets/npi/sla.png" alt="img">
         </div>

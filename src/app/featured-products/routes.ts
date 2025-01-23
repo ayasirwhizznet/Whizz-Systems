@@ -5,6 +5,11 @@ export const routes: Routes = [
         path: '',
         children: [
             {
+                path: '',
+                loadComponent: () => import('./featured-products.component').then(m => m.FeaturedProductsComponent),
+                title: 'Services'
+            },
+            {
                 path: '5g-oru',
                 loadComponent: () => import('./oru/oru.component').then(m => m.OruComponent),
                 title: "5G ORU Open Radio Unit"
