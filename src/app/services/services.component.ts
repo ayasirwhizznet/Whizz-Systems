@@ -64,12 +64,11 @@ export class ServicesComponent {
       ],
     },
     {
-      title: "Lab Testing Solutions",
-      description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
+      title: 'Lab Testing Solutions',
       items: [
-        { label: 'Board Bring Up', link: '/404' },
-        { label: 'Validation', link: '/404' },
-        { label: 'Characterization', link: '/404' },
+        { label: 'Board Bring Up', link: '/services/lab_testing_solutions', fragment: "BoardBringUp"},
+        { label: 'Validation', link: '/services/lab_testing_solutions', fragment: "Validation"},
+        { label: 'Characterization', link: '/services/lab_testing_solutions', fragment: "Characterization"},
       ],
     },
     {
