@@ -1,5 +1,5 @@
 import { CommonModule} from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
 import { filter, Subscription } from 'rxjs';
 @Component({
@@ -9,7 +9,7 @@ import { filter, Subscription } from 'rxjs';
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss'
 })
-export class ServicesComponent {
+export class ServicesComponent implements OnInit, OnDestroy{
 
   private fragmentSubscription!: Subscription;
     private navigationSubscription!: Subscription;
