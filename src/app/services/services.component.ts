@@ -1,6 +1,7 @@
 import { CommonModule} from '@angular/common';
 import { Component } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
+import { filter, Subscription } from 'rxjs';
 @Component({
   selector: 'app-services',
   standalone: true,
@@ -10,9 +11,39 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class ServicesComponent {
 
-  constructor(private router: Router) { }
+  private fragmentSubscription!: Subscription;
+    private navigationSubscription!: Subscription;
+    private currentFragment: string | null = null;
+    constructor(private route: ActivatedRoute, private router: Router) { }
+    ngOnInit(): void {
+      this.fragmentSubscription = this.route.fragment.subscribe((fragment) => {
+        if (fragment) {
+          this.currentFragment = fragment;
+          this.scrollToFragment(fragment);
+        }
+      });
+  
+      this.navigationSubscription = this.router.events
+        .pipe(filter((event) => event instanceof NavigationEnd))
+        .subscribe(() => {
+          const fragment = this.route.snapshot.fragment;
+          if (fragment && fragment !== this.currentFragment) {
+            this.currentFragment = fragment;
+            this.scrollToFragment(fragment);
+          }
+        });
+    }
+  
+    ngOnDestroy(): void {
+      if (this.fragmentSubscription) {
+        this.fragmentSubscription.unsubscribe();
+      }
+      if (this.navigationSubscription) {
+        this.navigationSubscription.unsubscribe();
+      }
+    }
 
-  toTop(id: string) {
+    scrollToFragment(id: string) {
     const element = document.getElementById(id);
     if (element) {
       const viewportHeight = window.innerHeight;
