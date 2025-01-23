@@ -15,7 +15,7 @@ export class FeaturedProductsComponent {
   scrollToCategory(id: string) {
     const element = document.getElementById(id);
     if (element) {
-      const offsetPercentage = 35;
+      const offsetPercentage = 30;
       const offset = (window.innerHeight * offsetPercentage) / 100;
       const topPosition = element.offsetTop - offset;
       window.scrollTo({

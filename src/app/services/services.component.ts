@@ -16,7 +16,7 @@ export class ServicesComponent {
     const element = document.getElementById(id);
     if (element) {
       const viewportHeight = window.innerHeight;
-      const offsetPercentage = 40;
+      const offsetPercentage = 35;
       const offset = (viewportHeight * offsetPercentage) / 100;
       const topPosition = element.offsetTop - offset;
       window.scrollTo({
@@ -65,6 +65,7 @@ export class ServicesComponent {
     },
     {
       title: 'Lab Testing Solutions',
+      description: 'With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.',
       items: [
         { label: 'Board Bring Up', link: '/services/lab_testing_solutions', fragment: "BoardBringUp"},
         { label: 'Validation', link: '/services/lab_testing_solutions', fragment: "Validation"},

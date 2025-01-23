@@ -74,7 +74,7 @@ export class NpiComponent implements OnInit, OnDestroy {
       const element = document.getElementById(fragment?.replace(/\s/g, ''));
       if (element) {
         const viewportHeight = window.innerHeight;
-        const offsetPercentage = 35;
+        const offsetPercentage = 30;
         const offset = (window.innerHeight * offsetPercentage) / 100;
         const topPosition = element.offsetTop - offset;
         window.scrollTo({
