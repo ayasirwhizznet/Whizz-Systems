@@ -33,15 +33,15 @@
   <h2 class="text-4xl 3xl:text-5xl 3xl:leading-[57.6px] text-dark-gray2 text-center font-bold mb-6 3xl:mb-8">{{ category.title }}</h2>
   <div class="w-full grid grid-cols-2 gap-3 3xl:gap-4">
     <a *ngFor="let product of category.products; let isLast = last" [routerLink]="[product.link]" [fragment]="product.fragment" 
-    [ngClass]="{'sm:col-span-2 sm:w-1/2 sm:mx-auto': !isEven(category.products) && isLast}" class="cursor-pointer col-span-2 sm:col-span-1 relative flex items-center overflow-x-scroll no-scrollbar group box-border">
+    [ngClass]="{'sm:col-span-2 sm:w-1/2 sm:mx-auto': !isEven(category.products) && isLast}" class="cursor-pointer col-span-2 sm:col-span-1 relative flex items-center gap-3 3xl-gap-4 overflow-x-scroll no-scrollbar group">
         <!-- content section -->
-      <div class="absolute inset-0 bg-lines3 bg-contain bg-no-repeat bg-[0%_15%] opacity-100 group-hover:opacity-0  transition-opacity duration-700 ease-in-out"></div>
-      <div class="absolute inset-0 bg-lines4 bg-contain bg-no-repeat bg-[0%_15%] opacity-0 group-hover:opacity-100 -translate-x-10 group-hover:translate-x-0 transition-all duration-600 ease-in-out"></div>
-      <div class="w-full h-full group-hover:w-[87%] p-6 3xl:p-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg group-hover:bg-dark-gray2 transition-all duration-700 ease-in-out">
-        <img class="object-cover z-10 relative w-full h-[65%] rounded-lg mb-6 3xl:mb-8 mx-auto origin-left" [src]="product.imgUrl" alt="img"/>
+      <div class="absolute inset-0 bg-lines3 bg-contain bg-no-repeat bg-[0%_15%] opacity-100 group-hover:opacity-0 translate-x-0 group-hover:translate-x-10 transition-all duration-700 ease-in-out"></div>
+      <div class="absolute inset-0 bg-lines4 w-[84%] lg:w-[87.1%] bg-contain bg-no-repeat bg-[0%_15%] opacity-0 group-hover:opacity-100 -translate-x-10 group-hover:translate-x-0 transition-all duration-700 ease-in-out"></div>
+      <div class="w-full h-full group-hover:w-[84%] lg:group-hover:w-[87%] p-6 3xl:p-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg group-hover:bg-dark-gray2 transition-all duration-700 ease-in-out">
+        <img class="object-fit z-10 relative w-full h-[9rem] 3xl:h-[10.6rem] rounded-lg mb-6 3xl:mb-8 mx-auto origin-left" [src]="product.imgUrl" alt="img"/>
         <div class="text-dark-gray2 group-hover:text-white transition-all duration-700 ease-in-out">
-          <h4 class="text-xl 3xl:text-2xl text-nowrap font-bold mb-1 3xl:mb-2">{{ product.name }}</h4>
-          <p class="3xl:text-lg font-light mb-1 3xl:mb-[6px]">{{ product.desc }}</p>
+          <h4 class="text-base lg:text-xl 3xl:text-2xl text-nowrap font-bold mb-1 3xl:mb-2">{{ product.name }}</h4>
+          <p class="text-sm lg:text-base 3xl:text-lg font-light mb-1 3xl:mb-[6px]">{{ product.desc ? product.desc : "&ensp;" }}</p>
         </div>
       </div>
       <!-- arrow section -->

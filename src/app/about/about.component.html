@@ -15,7 +15,6 @@
     </div>
 </div>
 
-
 <div class="px-[4%] sm:px-[8%]">
     <!-- Legacy -->
     <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-44 3xl:gap-96 mb-12 lg:mb-32">
@@ -115,12 +114,14 @@
             <table>
                 <tr class="flex">
                     <th *ngFor="let service of services; let i = index" [ngClass]="{'w-[5rem] 3xl:w-20 border-b': i == 0,
-                    'text-xs w-[6.7rem] 3xl:w-[7.7rem] px-4 py-2 border-l ': i !== 0}" class="text-xs font-light grid place-items-center">
+                    'text-xs w-[6.7rem] 3xl:w-[7.7rem] px-4 py-2 border-l ': i !== 0}"
+                        class="text-xs font-light grid place-items-center">
                         {{ service }}
                     </th>
                 </tr>
                 <tr class="flex -mt-[1px]">
-                    <td *ngFor="let service of santaClaraServices; let i = index" [ngClass]="{'text-xs w-[5rem] 3xl:w-20 py-7 border-b text-npwrap': i == 0,
+                    <td *ngFor="let service of santaClaraServices; let i = index"
+                        [ngClass]="{'text-xs w-[5rem] 3xl:w-20 py-7 border-b text-npwrap': i == 0,
                 'text-xl 3xl:text-2xl w-[6.7rem] 3xl:w-[7.7rem]  py-7 3xl:py-8 border-l border-t fa-regular fa-circle-check': i !== 0}"
                         class="text-xs font-light grid place-items-center">
                         {{ service }}
