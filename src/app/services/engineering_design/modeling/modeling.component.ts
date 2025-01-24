@@ -4,11 +4,12 @@ import { ServicesHeroComponent } from '../../../components/services-hero/service
 import { ServicesCaseStudyComponent } from '../../../components/services-case-study/services-case-study.component';
 import { ServicesContactExpertsComponent } from '../../../components/services-contact-experts/services-contact-experts.component';
 import { ServicesCoreServicesComponent } from '../../../components/services-core-services/services-core-services.component';
+import { ServicesIntroComponent } from '../../../components/services-intro/services-intro.component';
 
 @Component({
   selector: 'app-modeling',
   standalone: true,
-  imports: [ServicesHeroComponent, ServicesCaseStudyComponent, ServicesContactExpertsComponent, ServicesCoreServicesComponent, ServicesBenefitsComponent],
+  imports: [ServicesHeroComponent, ServicesIntroComponent, ServicesCaseStudyComponent, ServicesContactExpertsComponent, ServicesCoreServicesComponent, ServicesBenefitsComponent],
   templateUrl: './modeling.component.html',
   styleUrl: './modeling.component.scss'
 })

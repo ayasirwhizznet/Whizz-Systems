@@ -13,6 +13,6 @@ export class ServicesHeroComponent {
   @Input() heading: string = '';
   @Input() desc: string = '';
   @Input() imgUrl: string = '';
-  @Input() routerLink!: string;
+  @Input() navigate!: string;
   @Input() btnText: string = '';
 }

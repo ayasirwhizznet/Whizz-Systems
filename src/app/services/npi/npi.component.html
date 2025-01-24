@@ -1,5 +1,5 @@
 <!-- Hero -->
-<app-services-hero category="NPI" heading="Future-Ready NPI: Designed for NexGen Demands and Innovation" desc="Over 30 Years of Expertise in Creating Complex, Scalable Solutions with Advanced Assembly and Material Science" imgUrl="../../../assets/npi/hero.png" routerLink="/404" btnText="Start Your NPI Project"></app-services-hero>
+<app-services-hero category="NPI" heading="Future-Ready NPI: Designed for NexGen Demands and Innovation" desc="Over 30 Years of Expertise in Creating Complex, Scalable Solutions with Advanced Assembly and Material Science" imgUrl="../../../assets/npi/hero.png" navigate="/404" btnText="Start Your NPI Project"></app-services-hero>
 
 <!-- NPI Navbar -->
 <section class="hidden lg:block px-[9.3%] z-20 sticky top-[15%] lg:py-8 3xl:py-16 bg-white">
@@ -25,7 +25,7 @@
     <img class="object-cover mx-auto px-6 md:px-14 lg:px-20 3xl:px-16 mt-5 mb-8 lg:mb-16 3xl:mb-24" 
         src="../../assets/ideas/section-divider1.png" alt="img">
 
-    <h2 class="text-4xl 3xl:text-5xl lg:leading-[57.6px] text-dark-gray2 text-center font-bold mb-6 3xl:mb-8">Explore our engineering and design
+    <h2 class="text-4xl 3xl:text-5xl 3xl:leading-[57.6px] text-dark-gray2 text-center font-bold mb-6 3xl:mb-8">Explore our engineering and design
         services</h2>
 
     <section
@@ -48,39 +48,9 @@
     prototype aligns perfectly with production standards." secSubHeading="Key Services:" secDesc4="Quick-turn prototypes • proof-of-concept models • engineering prototypes • pre-production prototypes" imgUrl="../../../assets/npi/sla.png"></app-services-intro>
 
     <!-- Testing -->
-    <section id="Testing" class="flex flex-col lg:flex-row items-center gap-4 lg:gap-[52px] 3xl:gap-16 py-8 lg:py-12 3xl:py-16">
-        <div class="w-full lg:w-[53.8%]">
-            <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[19.2px]">Testing</h4>
-            <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[28.8px] my-3 3xl:my-4">Ensure Quality and Reliability with Rigorous Testing
-            </h3>
-            <p class="text-dark-gray2 text-sm 3xl:text-base font-light leading-[24px] 3xl:leading-[28px]">Whizz Systems provides comprehensive testing services to validate
-                every aspect of your product. Our tests cover <span class="text-teal2 text-sm 3xl:text-base font-medium 3xl:font-bold">design verification,
-                    functional validation, environmental resilience,</span> and <span
-                    class="text-teal2 text-sm 3xl:text-base font-medium 3xl:font-bold">EMI/EMC compliance</span>. By addressing potential issues early, we
-                reduce redesigns and accelerate time-to-market.</p>
-            <h4 class="text-dark-gray2 font-bold mt-4 3xl:mt-6">Key Tests:</h4>
-            <p class="text-dark-gray2 text-sm 3xl:text-base font-light mt-1">Design Verification Testing (DVT) • Environmental Testing
-                (Temperature, Vibration, Shock) • EMI/EMC Assessments • Automated Fault Detection</p>
-        </div>
-        <div class="w-full lg:w-[46.2%] p-10 sm:p-10 lg:p-0">
-            <img class="object-cover rounded-lg" src="../../../assets/npi/sla.png" alt="img">
-        </div>
-    </section>
+    <app-services-intro id="Testing" [isImageFirst]="false" secTitle="Testing" secHeading="Ensure Quality and Reliability with Rigorous Testing" secDesc1="Whizz Systems provides comprehensive testing services to validate every aspect of your product. Our tests cover *Design *Verification, *Functional *Validation, *Environmental *Resilience, and *EMI/EMC *compliance. By addressing potential issues early, we reduce redesigns and accelerate time-to-market." secSubHeading="Key Tests:" secDesc4="Design Verification Testing (DVT) • Environmental Testing (Temperature, Vibration, Shock) •
+    EMI/EMC Assessments • Automated Fault Detection" imgUrl="../../../assets/npi/sla.png"></app-services-intro>
 
     <!-- Compliance -->
-    <section id="Compliance" class="flex flex-col lg:flex-row items-center gap-4 lg:gap-[52px] 3xl:gap-16 py-8 lg:py-12 3xl:py-16">
-        <div class="w-full lg:w-[46.2%] order-2 lg:order-1 p-10 sm:p-10 lg:p-0">
-            <img class="object-cover rounded-lg" src="../../../assets/npi/sla.png" alt="img">
-        </div>
-        <div class="w-full lg:w-[53.8%] order-1 lg:order-0">
-            <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[19.2px]">Compliance</h4>
-            <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[28.8px] my-3 3xl:my-4">Navigate Compliance with Confidence</h3>
-            <p class="text-dark-gray2 text-sm 3xl:text-base font-light leading-[24px] 3xl:leading-[28px]">We integrate compliance into the design process from the start,
-                ensuring your product meets global regulatory standards. like <span class="text-teal2 text-sm 3xl:text-base font-medium 3xl:font-bold"> RoHS,
-                    REACH, FCC,</span> and <span class="text-teal2 text-sm 3xl:text-base font-medium 3xl:font-bold">CE</span>. Our collaboration with trusted
-                third-party labs provides authoritative certification, reducing.</p>
-            <h4 class="text-dark-gray2 font-bold mt-4 3xl:mt-6">Key Standards Covered:</h4>
-            <p class="text-dark-gray2 text-sm 3xl:text-base font-light mt-1">RoHS & REACH • FCC & CE certification • EMI safety compliance</p>
-        </div>
-    </section>
+    <app-services-intro id="Compliance" secTitle="Compliance" secHeading="Navigate Compliance with Confidence" secDesc1="We integrate compliance into the design process from the start, ensuring your product meets global regulatory standards.  like *RoHS, *REACH, *FCC, and *CE. Our collaboration with trusted third-party labs provides authoritative certification, reducing risk and streamlining market entry." secSubHeading="Key Standards Covered:" secDesc4="RoHS & REACH • FCC & CE certification • EMI safety compliance" imgUrl="../../../assets/npi/sla.png"></app-services-intro>
 </div>
