@@ -21,4 +21,6 @@ export class ServicesIntroComponent {
   @Input() btnText: string = '';
   @Input() imgUrl: string = '';
   @Input() isImageFirst: boolean = true;
+  @Input() hasBgColor1:boolean = false;
+  @Input() hasBgColor2:boolean = false;
 }

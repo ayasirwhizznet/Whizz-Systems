@@ -1,47 +1,77 @@
 <!-- Hero -->
-<app-services-hero category="Lab Testing Solutions"
-    heading="Lab Testing Solutions: Board Bring-Up, Validation, and Characterization"
-    desc="Backed by 25+ years of end-to-end product development experience, our testing solutions ensure your electronic systems exceed industry expectations."
-    imgUrl="../../../assets/lab-testing-solutions/hero.png" navigate="/404"
-    btnText="Get in Touch with Our Lab Testing  Experts"></app-services-hero>
+<app-services-hero
+  category="Lab Testing Solutions"
+  heading="Lab Testing Solutions: Board Bring-Up, Validation, and Characterization"
+  desc="Backed by 25+ years of end-to-end product development experience, our testing solutions ensure your electronic systems exceed industry expectations."
+  imgUrl="../../../assets/lab-testing-solutions/hero.png"
+  navigate="/404"
+  btnText="Get in Touch with Our Lab Testing  Experts"
+></app-services-hero>
 <!-- Navbar -->
-<section class="hidden lg:block px-[9.3%] z-20 sticky top-[15%] lg:py-8 3xl:py-16 bg-white">
-    <div class="flex justify-center items-center gap-3 3xl:gap-4 z-50">
-        <a *ngFor="let item of labTestingItems" (click)="scrollToFragment(item.title)"
-            class="lg:w-[196px] 3xl:w-[247px] h-[70px] 3xl:h-[88px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">{{item.title}}</a>
-    </div>
+<section
+  class="hidden lg:block px-[9.3%] z-20 sticky top-[15%] lg:py-8 3xl:py-16 bg-white"
+>
+  <div class="flex justify-center items-center gap-3 3xl:gap-4 z-50">
+    <a
+      *ngFor="let item of labTestingItems"
+      (click)="scrollToFragment(item.title)"
+      class="lg:w-[196px] 3xl:w-[247px] h-[70px] 3xl:h-[88px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out"
+      >{{ item.title }}</a
+    >
+  </div>
 </section>
 
-<div class="px-[4%] sm:px-[9.3%]">
-    <!-- Overview -->
-    <app-services-intro secTitle="Overview of Lab Testing Solutions"
-        secHeading="Elevating the Standards of Electronic Testing"
-        secDesc1="Whizz Systems’ Lab Testing Solutions combine cutting-edge testing methodologies with over two decades of product development excellence. By partnering with us, you gain access not only to precision lab testing but also to the deep, in-house expertise of our multidisciplinary engineering and manufacturing teams. Whether you're fine-tuning a PCB, validating an IoT device, or characterizing a complex electronic assembly, our comprehensive services ensure your product is optimized for real-world success."
-        [isImageFirst]="true" imgUrl="../../../assets/lab-testing-solutions/introduction.png"></app-services-intro>
+<!-- Overview -->
+<app-services-intro
+  secTitle="Overview of Lab Testing Solutions"
+  secHeading="Elevating the Standards of Electronic Testing"
+  secDesc1="Whizz Systems’ Lab Testing Solutions combine cutting-edge testing methodologies with over two decades of product development excellence. By partnering with us, you gain access not only to precision lab testing but also to the deep, in-house expertise of our multidisciplinary engineering and manufacturing teams. Whether you're fine-tuning a PCB, validating an IoT device, or characterizing a complex electronic assembly, our comprehensive services ensure your product is optimized for real-world success."
+  [isImageFirst]="true"
+  imgUrl="../../../assets/lab-testing-solutions/introduction.png"
+></app-services-intro>
 <!-- Board Bring-Up -->
-    <app-services-intro id="BoardBringUp" secTitle="Board Bring-Up & Initial Diagnostics"
-        secHeading="Bring-Up: Building the Foundation of Reliable Electronics"
-        secDesc1="Our Board Bring-Up services lay the groundwork for dependable products. With in-house engineering and manufacturing teams, we’re not just identifying issues — we’re equipped to solve them with expert precision, whether through rework or design refinement."
-        secSubHeading="Key Services:"
-        secDesc4="Visual Inspection • Open/Short Testing • Power-Up Testing • Debugging & Issue Resolution • Rework • Reset Check • Clock Measurement • Interface Testing"
-        [isImageFirst]="false" imgUrl="../../../assets/lab-testing-solutions/introduction.png"></app-services-intro>
+<app-services-intro
+  id="BoardBringUp"
+  secTitle="Board Bring-Up & Initial Diagnostics"
+  secHeading="Bring-Up: Building the Foundation of Reliable Electronics"
+  secDesc1="Our Board Bring-Up services lay the groundwork for dependable products. With in-house engineering and manufacturing teams, we’re not just identifying issues — we’re equipped to solve them with expert precision, whether through rework or design refinement."
+  secSubHeading="Key Services:"
+  secDesc4="Visual Inspection • Open/Short Testing • Power-Up Testing • Debugging & Issue Resolution • Rework • Reset Check • Clock Measurement • Interface Testing"
+  [isImageFirst]="false"
+  imgUrl="../../../assets/lab-testing-solutions/introduction.png"
+></app-services-intro>
 <!-- Validation -->
-    <app-services-intro id="Validation" secTitle="Validation – Assuring Operational Excellence"
-        secHeading="Validation: Proving Your Product’s Integrity"
-        secDesc1="Validation ensures that every component and system operates as intended. At Whizz Systems, this goes beyond ticking boxes — our 25+ years in engineering mean we approach validation with a development mindset, offering proactive improvements and design insights throughout the process."
-        secSubHeading="Key Services:"
-        secDesc4="Visual Inspection • Open/Short Testing • Power-Up Testing • Debugging & Issue Resolution • Rework • Reset Check • Clock Measurement • Interface Testing"
-        [isImageFirst]="true" imgUrl="../../../assets/lab-testing-solutions/introduction.png"></app-services-intro>
+<app-services-intro
+  id="Validation"
+  secTitle="Validation – Assuring Operational Excellence"
+  secHeading="Validation: Proving Your Product’s Integrity"
+  secDesc1="Validation ensures that every component and system operates as intended. At Whizz Systems, this goes beyond ticking boxes — our 25+ years in engineering mean we approach validation with a development mindset, offering proactive improvements and design insights throughout the process."
+  secSubHeading="Key Services:"
+  secDesc4="Visual Inspection • Open/Short Testing • Power-Up Testing • Debugging & Issue Resolution • Rework • Reset Check • Clock Measurement • Interface Testing"
+  [isImageFirst]="true"
+  imgUrl="../../../assets/lab-testing-solutions/introduction.png"
+></app-services-intro>
 <!-- Characterization -->
-    <app-services-intro id="Characterization" secTitle="Characterization – Refining Products for Performance"
-        secHeading="Characterization: From Metrics to Market Readiness"
-        secDesc1="Our characterization services provide a detailed understanding of your product’s performance across conditions, uncovering insights that drive optimization. With in-house experts in high-speed electronics, power systems, and advanced simulations, we don’t just test — we help refine."
-        secSubHeading="Key Services:"
-        secDesc4="Power Load Testing • Ripple Measurement • Stress Testing • Timing Analysis • Performance Benchmarking • Environmental Characterization"
-        [isImageFirst]="false" imgUrl="../../../assets/lab-testing-solutions/introduction.png"></app-services-intro>
+<app-services-intro
+  id="Characterization"
+  secTitle="Characterization – Refining Products for Performance"
+  secHeading="Characterization: From Metrics to Market Readiness"
+  secDesc1="Our characterization services provide a detailed understanding of your product’s performance across conditions, uncovering insights that drive optimization. With in-house experts in high-speed electronics, power systems, and advanced simulations, we don’t just test — we help refine."
+  secSubHeading="Key Services:"
+  secDesc4="Power Load Testing • Ripple Measurement • Stress Testing • Timing Analysis • Performance Benchmarking • Environmental Characterization"
+  [isImageFirst]="false"
+  imgUrl="../../../assets/lab-testing-solutions/introduction.png"
+></app-services-intro>
 <!-- Benefits -->
-    <app-services-benefits1 secTitle="Benefits" secHeading="Why Choose Whizz Systems for PCB Layout" [customStyle]="true" [cardData]="benefits"></app-services-benefits1>
+<app-services-benefits1
+  secTitle="Benefits"
+  secHeading="Why Choose Whizz Systems for PCB Layout"
+  [customStyle]="true"
+  [cardData]="benefits"
+></app-services-benefits1>
 <!-- Contact to Experts -->
-    <app-services-contact-experts secHeading="How Can Our Testing Expertise Accelerate Your Product Success?"
-        routerLink="/404" btnText="Contact Our Testing Experts"></app-services-contact-experts>
-</div>
+<app-services-contact-experts
+  secHeading="How Can Our Testing Expertise Accelerate Your Product Success?"
+  routerLink="/404"
+  btnText="Contact Our Testing Experts"
+></app-services-contact-experts>

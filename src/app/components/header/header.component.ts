@@ -75,9 +75,9 @@ export class HeaderComponent implements OnInit {
     {
       title: 'Supply Chain Management',
       items: [
-        { label: 'Component Engineering', link: '/404' },
-        { label: 'Compliance Engineering', link: '/404' },
-        { label: 'Procurement Engineering', link: '/404' },
+        { label: 'Component Engineering', link: '/services/supply_chain_management', fragment: 'ComponentEngineering'},
+        { label: 'Compliance Engineering', link: '/services/supply_chain_management', fragment: 'ComplianceEngineering' },
+        { label: 'Procurement Engineering', link: '/services/supply_chain_management', fragment: 'ProcurementEngineering' },
       ],
     },
     {
