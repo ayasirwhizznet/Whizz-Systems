@@ -107,9 +107,9 @@ export class ServicesComponent implements OnInit, OnDestroy{
       title: "Supply Chain Management",
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
       items: [
-        { label: 'Component Engineering', link: '/404' },
-        { label: 'Compliance Engineering', link: '/404' },
-        { label: 'Procurement Engineering', link: '/404' },
+        { label: 'Component Engineering', link: '/services/supply_chain_management', fragment: 'ComponentEngineering'},
+        { label: 'Compliance Engineering', link: '/services/supply_chain_management', fragment: 'ComplianceEngineering' },
+        { label: 'Procurement Engineering', link: '/services/supply_chain_management', fragment: 'ProcurementEngineering' },
       ],
     },
     {
