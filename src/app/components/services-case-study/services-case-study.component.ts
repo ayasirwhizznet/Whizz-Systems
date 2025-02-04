@@ -6,8 +6,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-services-case-study',
   standalone: true,
   imports: [CbuttonComponent, CommonModule],
-  templateUrl: './services-case-study.component.html',
-  styleUrl: './services-case-study.component.scss'
+  templateUrl: './services-case-study.component.html'
 })
 export class ServicesCaseStudyComponent {
   @Input() secTitle: string = '';

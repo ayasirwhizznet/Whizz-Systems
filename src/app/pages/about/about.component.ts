@@ -1,17 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CbuttonComponent } from '../components/cbutton/cbutton.component';
+import { CbuttonComponent } from '../../components/cbutton/cbutton.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
   imports: [CbuttonComponent, CommonModule],
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
+  templateUrl: './about.component.html'
 })
-
-
-
 export class AboutComponent {
   experience = [
     { quantity: '10', sign: '+', title: 'industries served', desc: 'Automotive, medical, aerospace, consumer electronics, and more' },

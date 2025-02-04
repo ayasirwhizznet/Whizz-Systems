@@ -11,8 +11,7 @@ import { ServicesBenefits1Component } from '../../components/services-benefits1/
   selector: 'app-lab-testing-solutions',
   standalone: true,
   imports: [CommonModule, ServicesHeroComponent, ServicesIntroComponent, ServicesContactExpertsComponent, ServicesBenefits1Component, RouterLink],
-  templateUrl: './lab-testing-solutions.component.html',
-  styleUrl: './lab-testing-solutions.component.scss'
+  templateUrl: './lab-testing-solutions.component.html'
 })
 export class LabTestingSolutionsComponent implements OnInit, OnDestroy {
 

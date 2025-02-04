@@ -6,8 +6,7 @@ import { BlogTagComponent } from '../blog-tag/blog-tag.component';
   selector: 'app-news-card',
   standalone: true,
   imports: [CommonModule, BlogTagComponent],
-  templateUrl: './news-card.component.html',
-  styleUrl: './news-card.component.scss'
+  templateUrl: './news-card.component.html'
 })
 export class NewsCardComponent {
   @Input() imageUrl: string = '';

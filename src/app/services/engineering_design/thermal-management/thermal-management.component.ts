@@ -11,8 +11,7 @@ import { ServicesBenefitsComponent } from '../../../components/services-benefits
   selector: 'app-thermal-management',
   standalone: true,
   imports: [ServicesHeroComponent, ServicesIntroComponent, ServicesCaseStudyComponent, ServicesContactExpertsComponent, ServicesCoreServicesComponent, ServicesBenefitsComponent],
-  templateUrl: './thermal-management.component.html',
-  styleUrl: './thermal-management.component.scss'
+  templateUrl: './thermal-management.component.html'
 })
 export class ThermalManagementComponent  implements OnInit {
 

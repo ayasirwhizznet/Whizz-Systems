@@ -6,8 +6,7 @@ import { filter, Subscription } from 'rxjs';
   selector: 'app-services',
   standalone: true,
   imports: [CommonModule,RouterModule],
-  templateUrl: './services.component.html',
-  styleUrl: './services.component.scss'
+  templateUrl: './services.component.html'
 })
 export class ServicesComponent implements OnInit, OnDestroy{
 

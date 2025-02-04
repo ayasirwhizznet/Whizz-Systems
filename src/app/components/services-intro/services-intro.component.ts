@@ -6,8 +6,7 @@ import { CbuttonComponent } from '../cbutton/cbutton.component';
   selector: 'app-services-intro',
   standalone: true,
   imports: [CommonModule, CbuttonComponent],
-  templateUrl: './services-intro.component.html',
-  styleUrl: './services-intro.component.scss'
+  templateUrl: './services-intro.component.html'
 })
 export class ServicesIntroComponent {
   @Input() secTitle: string = '';

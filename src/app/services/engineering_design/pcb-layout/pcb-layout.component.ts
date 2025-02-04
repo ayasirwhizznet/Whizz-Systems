@@ -11,8 +11,7 @@ import { ServicesBenefitsComponent } from '../../../components/services-benefits
   selector: 'app-pcb-layout',
   standalone: true,
   imports: [ServicesHeroComponent, ServicesIntroComponent, ServicesCaseStudyComponent, ServicesContactExpertsComponent, ServicesCoreServicesComponent, ServicesIndustryComponent, ServicesBenefitsComponent],
-  templateUrl: './pcb-layout.component.html',
-  styleUrl: './pcb-layout.component.scss'
+  templateUrl: './pcb-layout.component.html'
 })
 export class PcbLayoutComponent {
 

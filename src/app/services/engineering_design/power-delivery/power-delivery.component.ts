@@ -10,8 +10,7 @@ import { ServicesContactExpertsComponent } from '../../../components/services-co
   selector: 'app-power-delivery',
   standalone: true,
   imports: [ServicesHeroComponent, ServicesIntroComponent, ServicesCaseStudyComponent, ServicesCoreServicesComponent, ServicesBenefitsComponent, ServicesContactExpertsComponent],
-  templateUrl: './power-delivery.component.html',
-  styleUrl: './power-delivery.component.scss'
+  templateUrl: './power-delivery.component.html'
 })
 export class PowerDeliveryComponent {
   coreServices:any = [

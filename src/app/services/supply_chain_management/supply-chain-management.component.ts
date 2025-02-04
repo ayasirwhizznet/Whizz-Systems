@@ -10,8 +10,7 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
   selector: 'app-supply-chain-management',
   standalone: true,
   imports: [ServicesHeroComponent, ServicesIntroComponent, ServicesBenefitsComponent, ServicesContactExpertsComponent],
-  templateUrl: './supply-chain-management.component.html',
-  styleUrl: './supply-chain-management.component.scss'
+  templateUrl: './supply-chain-management.component.html'
 })
 export class SupplyChainManagementComponent implements OnInit, OnDestroy{
   benefits:any[] = [

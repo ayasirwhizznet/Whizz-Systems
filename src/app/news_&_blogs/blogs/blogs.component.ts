@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
 import { NewsCardComponent } from "../../components/news-card/news-card.component";
-import { NgFor, NgIf } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { CbuttonComponent } from '../../components/cbutton/cbutton.component';
 import { FeaturedblogComponent } from '../../components/featuredblog/featuredblog.component';
 
 @Component({
   selector: 'app-blogs',
   standalone: true,
-  imports: [FeaturedblogComponent, NewsCardComponent, NgFor, CbuttonComponent, NgIf],
-  templateUrl: './blogs.component.html',
-  styleUrl: './blogs.component.scss'
+  imports: [FeaturedblogComponent, NewsCardComponent, CbuttonComponent, CommonModule],
+  templateUrl: './blogs.component.html'
 })
 export class BlogsComponent {
 

@@ -5,8 +5,7 @@ import { Component, Input } from '@angular/core';
   selector: 'app-testimonial-card',
   standalone: true,
   imports: [NgIf],
-  templateUrl: './testimonial-card.component.html',
-  styleUrl: './testimonial-card.component.scss'
+  templateUrl: './testimonial-card.component.html'
 })
 export class TestimonialCardComponent {
   @Input() desc: string = '';

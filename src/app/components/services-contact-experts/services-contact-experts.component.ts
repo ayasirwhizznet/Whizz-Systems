@@ -5,8 +5,7 @@ import { CbuttonComponent } from '../cbutton/cbutton.component';
   selector: 'app-services-contact-experts',
   standalone: true,
   imports: [CbuttonComponent],
-  templateUrl: './services-contact-experts.component.html',
-  styleUrl: './services-contact-experts.component.scss'
+  templateUrl: './services-contact-experts.component.html'
 })
 export class ServicesContactExpertsComponent {
   @Input() secHeading: string = '';

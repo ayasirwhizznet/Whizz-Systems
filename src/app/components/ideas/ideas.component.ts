@@ -6,8 +6,7 @@ import { CbuttonComponent } from "../cbutton/cbutton.component";
   selector: 'app-ideas',
   standalone: true,
   imports: [NgFor, CbuttonComponent],
-  templateUrl: './ideas.component.html',
-  styleUrl: './ideas.component.scss'
+  templateUrl: './ideas.component.html'
 })
 export class IdeasComponent {
  achievemnets = [

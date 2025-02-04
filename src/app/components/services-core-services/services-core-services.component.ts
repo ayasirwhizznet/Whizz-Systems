@@ -5,8 +5,7 @@ import { Component, Input } from '@angular/core';
   selector: 'app-services-core-services',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './services-core-services.component.html',
-  styleUrl: './services-core-services.component.scss'
+  templateUrl: './services-core-services.component.html'
 })
 export class ServicesCoreServicesComponent {
 @Input() secTitle:string = '';

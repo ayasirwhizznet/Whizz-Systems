@@ -11,8 +11,7 @@ import { FooterComponent } from '../components/footer/footer.component';
   selector: 'app-home',
   standalone: true,
   imports: [HeroComponent, ServicesComponent, IdeasComponent, TrustComponent, TestimonialsComponent, NewsComponent, FooterComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  templateUrl: './home.component.html'
 })
 export class HomeComponent {
 

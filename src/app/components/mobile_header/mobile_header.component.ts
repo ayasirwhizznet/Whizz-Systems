@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 
 interface MenuItem {
   label: string;
-  link?: string;  // Make link optional
+  link?: string;
   dropdown?: string;
   open?: boolean;
   fragment?: string;
@@ -12,8 +12,8 @@ interface MenuItem {
 }
 
 interface ServiceSection {
-  title: string; // Keep the title as a string (no link)
-  items: MenuItem[]; // Keep the items as is
+  title: string;
+  items: MenuItem[];
   open?: boolean; 
 }
 
@@ -21,14 +21,13 @@ interface ServiceSection {
   selector: 'app-accordion',
   standalone: true,
   imports: [CommonModule, RouterLink],
-  templateUrl: './mobile_header.component.html',
-  styleUrls: ['./mobile_header.component.scss']
+  templateUrl: './mobile_header.component.html'
 })
 export class MobileHeaderComponent {
   activeMenuItem: string | null = null;
   menuSectionVisible: boolean = true;
 
-  @Output() menuLinkClicked = new EventEmitter<void>(); // Emit an event when a link is clicked
+  @Output() menuLinkClicked = new EventEmitter<void>();
 
   menuItems: MenuItem[] = [
     { label: 'About', link: '/about', open: false },

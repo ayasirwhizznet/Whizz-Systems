@@ -10,7 +10,6 @@ import { LarrowbuttonComponent } from '../larrowbutton/larrowbutton.component';
   standalone: true,
   imports: [TestimonialCardComponent, NgFor, RarrowbuttonComponent, LarrowbuttonComponent],
   templateUrl: './testimonials.component.html',
-  styleUrl: './testimonials.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TestimonialsComponent {

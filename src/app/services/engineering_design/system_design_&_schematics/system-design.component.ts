@@ -11,8 +11,7 @@ import { ServicesBenefitsComponent } from '../../../components/services-benefits
   selector: 'app-system-design',
   standalone: true,
   imports: [ServicesIntroComponent, ServicesHeroComponent, ServicesCaseStudyComponent, ServicesContactExpertsComponent, ServicesCoreServicesComponent, ServicesIndustryComponent, ServicesBenefitsComponent],
-  templateUrl: './system-design.component.html',
-  styleUrl: './system-design.component.scss'
+  templateUrl: './system-design.component.html'
 })
 export class SystemDesignComponent {
   coreServices:any[] = [

@@ -9,8 +9,7 @@ import { ServicesContactExpertsComponent } from "../../../components/services-co
   selector: 'app-signal-integrity',
   standalone: true,
   imports: [ServicesHeroComponent, ServicesIntroComponent, ServicesCoreServicesComponent, ServicesBenefitsComponent, ServicesContactExpertsComponent],
-  templateUrl: './signal-integrity.component.html',
-  styleUrl: './signal-integrity.component.scss'
+  templateUrl: './signal-integrity.component.html'
 })
 export class SignalIntegrityComponent {
 

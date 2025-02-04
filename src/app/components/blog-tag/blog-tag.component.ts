@@ -5,8 +5,7 @@ import { Component, Input } from '@angular/core';
   selector: 'app-blog-tag',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './blog-tag.component.html',
-  styleUrl: './blog-tag.component.scss'
+  templateUrl: './blog-tag.component.html'
 })
 export class BlogTagComponent {
 @Input() text:string = '';

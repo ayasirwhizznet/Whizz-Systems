@@ -10,8 +10,7 @@ import { ServicesCaseStudyComponent } from '../../components/services-case-study
   selector: 'app-npi',
   standalone: true,
   imports: [CommonModule, RouterLink, ServicesHeroComponent, ServicesIntroComponent, ServicesCaseStudyComponent],
-  templateUrl: './npi.component.html',
-  styleUrl: './npi.component.scss'
+  templateUrl: './npi.component.html'
 })
 export class NpiComponent implements OnInit, OnDestroy {
 

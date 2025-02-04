@@ -5,8 +5,7 @@ import { Component, Input } from '@angular/core';
   selector: 'app-services-benefits',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './services-benefits.component.html',
-  styleUrl: './services-benefits.component.scss'
+  templateUrl: './services-benefits.component.html'
 })
 export class ServicesBenefitsComponent {
 @Input() secTitle:string = '';

@@ -6,8 +6,7 @@ import { ServicesIntroComponent } from '../../components/services-intro/services
   selector: 'app-usb',
   standalone: true,
   imports: [ServicesHeroComponent, ServicesIntroComponent],
-  templateUrl: './usb.component.html',
-  styleUrl: './usb.component.scss'
+  templateUrl: './usb.component.html'
 })
 export class UsbComponent {
 

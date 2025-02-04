@@ -8,8 +8,7 @@ import { BlogTagComponent } from '../blog-tag/blog-tag.component';
   selector: 'app-featuredblog',
   standalone: true,
   imports: [RouterLink, CommonModule, NewsCardComponent, BlogTagComponent],
-  templateUrl: './featuredblog.component.html',
-  styleUrl: './featuredblog.component.scss'
+  templateUrl: './featuredblog.component.html'
 })
 export class FeaturedblogComponent {
   @Input() date: string | null = null;

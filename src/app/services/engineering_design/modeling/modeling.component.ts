@@ -10,8 +10,7 @@ import { ServicesIntroComponent } from '../../../components/services-intro/servi
   selector: 'app-modeling',
   standalone: true,
   imports: [ServicesHeroComponent, ServicesIntroComponent, ServicesCaseStudyComponent, ServicesContactExpertsComponent, ServicesCoreServicesComponent, ServicesBenefitsComponent],
-  templateUrl: './modeling.component.html',
-  styleUrl: './modeling.component.scss'
+  templateUrl: './modeling.component.html'
 })
 export class ModelingComponent  {
 

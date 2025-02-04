@@ -7,8 +7,7 @@ import { RouterLink  } from '@angular/router';
   selector: 'app-services-card',
   standalone: true,
   imports: [NgIf,RouterLink],
-  templateUrl: './services-card.component.html',
-  styleUrl: './services-card.component.scss'
+  templateUrl: './services-card.component.html'
 })
 export class ServicesCardComponent {
  
