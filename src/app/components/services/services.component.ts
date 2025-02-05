@@ -34,19 +34,19 @@ export class ServicesComponent {
       imgUrl: '../../assets/services/advanced-manfacuring.png',
       title: 'Advanced Manufacturing',
       content: 'World-class manufacturing to meet complex demands, ensuring quality and efficiency.',
-      link: '/404'
+      link: '/services/advanced_manufacturing'
     },
     {
       imgUrl: '../../assets/services/lab-test.png',
       title: 'Lab Testing Solutions',
       content: 'Ensuring product reliability and compliance through comprehensive validation.',
-      link: '/404'
+      link: '/services/lab_testing_solutions'
     },
     {
       imgUrl: '../../assets/services/supply-chain.jfif',
       title: 'Supply Chain Management & Design',
       content: 'Streamlining your supply chain with integrated sourcing, compliance, and procurement solutions, so you can rely on a single, trusted partner.',
-      link: '/404'
+      link: '/services/supply_chain_management'
     },
     {
       imgUrl: '../../assets/services/sustainable.jfif',

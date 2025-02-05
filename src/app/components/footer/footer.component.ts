@@ -20,9 +20,9 @@ export class FooterComponent {
   services:any[] = [
     {label: 'Engineering & Design', link: '/404'},
     {label: 'NPI', link:'/services/npi'},
-    {label: 'Advanced Manufacturing', link: '/404'},
-    {label: 'Lab Testing Solutions', link: '/404'},
-    {label: 'Supply Chain Management', link: '/404'},
+    {label: 'Advanced Manufacturing', link: '/services/advanced_manufacturing'},
+    {label: 'Lab Testing Solutions', link: '/services/lab_testing_solutions'},
+    {label: 'Supply Chain Management', link: '/services/supply_chain_management'},
     {label: 'Sustaining Engineering & Obsolescence Management', link: '/404'},
   ];
 
