@@ -64,11 +64,11 @@ export class MobileHeaderComponent {
     {
       title: 'Advanced Manufacturing',
       items: [
-        { label: 'DFX Analysis', link: '/404' },
-        { label: 'FMEA (Failure Mode & Effects Analysis)', link: '/404' },
-        { label: 'Thermal Profiling and Reflow Soldering Optimization', link: '/404' },
-        { label: 'Mechanical System Build', link: '/404' },
-        { label: 'Packaging Design', link: '/404' },
+        { label: 'DFX Analysis', link: '/services/advanced_manufacturing' },
+        { label: 'FMEA (Failure Mode & Effects Analysis)', link: '/services/advanced_manufacturing' },
+        { label: 'Thermal Profiling and Reflow Soldering Optimization', link: '/services/advanced_manufacturing' },
+        { label: 'Mechanical System Build', link: '/services/advanced_manufacturing' },
+        { label: 'Packaging Design', link: '/services/advanced_manufacturing' },
       ],
       open: false // Track the open state for each service section
     },
@@ -84,9 +84,9 @@ export class MobileHeaderComponent {
     {
       title: 'Supply Chain Management',
       items: [
-        { label: 'Component Engineering', link: '/404' },
-        { label: 'Compliance Engineering', link: '/404' },
-        { label: 'Procurement Engineering', link: '/404' },
+        { label: 'Component Engineering', link: '/services/supply_chain_management', fragment: 'ComponentEngineering'},
+        { label: 'Compliance Engineering', link: '/services/supply_chain_management', fragment: 'ComplianceEngineering' },
+        { label: 'Procurement Engineering', link: '/services/supply_chain_management', fragment: 'ProcurementEngineering' },
       ],
       open: false // Track the open state for each service section
     },

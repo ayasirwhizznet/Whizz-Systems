@@ -57,11 +57,11 @@ export class HeaderComponent implements OnInit {
     {
       title: 'Advanced Manufacturing',
       items: [
-        { label: 'DFX Analysis', link: '/404' },
-        { label: 'FMEA (Failure Mode & Effects Analysis)', link: '/404' },
-        { label: 'Thermal Profiling & Reflow Soldering Optimization', link: '/404' },
-        { label: 'Mechanical System Build', link: '/404' },
-        { label: 'Packaging Design', link: '/404' },
+        { label: 'DFX Analysis', link: '/services/advanced_manufacturing' },
+        { label: 'FMEA (Failure Mode & Effects Analysis)', link: '/services/advanced_manufacturing' },
+        { label: 'Thermal Profiling & Reflow Soldering Optimization', link: '/services/advanced_manufacturing' },
+        { label: 'Mechanical System Build', link: '/services/advanced_manufacturing' },
+        { label: 'Packaging Design',link: '/services/advanced_manufacturing' },
       ],
     },
     {
