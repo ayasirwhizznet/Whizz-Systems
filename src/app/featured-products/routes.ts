@@ -29,6 +29,11 @@ export const routes: Routes = [
                 loadComponent: () => import('./usb/usb.component').then(m => m.UsbComponent),
                 title: "USB 3/2"
             },
+            {
+                path: 'vhk158',
+                loadComponent: () => import('./products/vhk158/vhk158.component').then(m => m.VHK158Component),
+                title: "VHK158"
+            },
         ]
     }
 ];
