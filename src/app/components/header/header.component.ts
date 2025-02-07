@@ -184,15 +184,17 @@ export class HeaderComponent implements OnInit {
     this.isSearchbaropen = '';
   }
 
-  lastScrollTop = 0;
-  isHeaderVisible = true;
+  lastScrollTop: number = 0;
+  isHeaderVisible: boolean = true;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const currentScroll = document.documentElement.scrollTop;
-      this.isHeaderVisible = false; 
-      this.closeMenu();
-      this.isHeaderVisible = true; 
-    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    if (currentScroll > this.lastScrollTop) {
+      this.isHeaderVisible = false;
+    } else {
+      this.isHeaderVisible = true;
+    }
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Avoid negative values
   }
 }

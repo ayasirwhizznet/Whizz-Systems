@@ -1,10 +1,9 @@
 header {
-    transition: transform 0.1s ease, opacity 0.1s ease;
+    transition: transform 0.7s ease-in-out;
   }
   
   header.hidden {
     transform: translateY(-100%);
-    opacity: 0;
   }
   
 header.desktop-header {
