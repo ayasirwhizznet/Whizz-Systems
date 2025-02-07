@@ -1,16 +1,19 @@
 <section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
-  <div
-    class="px-4 py-8 sm:py-12 sm:px-8 lg:py-0 lg:px-0 lg:pl-[52px] 3xl:pl-16 bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl flex items-center lg:gap-[50px] 3xl:gap-16">
-    <div class="w-full lg:w-[44%] 3xl:w-[43%] text-white">
-      <h1
-        class="text-3xl lg:text-[46px] 3xl:text-[56px] lg:leading-[56px] 3xl:leading-[67.2px] font-bold mb-4 3xl:mb-6">
-        Our
-        Services: Expert Solutions, Tailored to You</h1>
-      <p class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light text-light-gray1">From development
-        to deployment, explore our comprehensive range of in-house tech
-        services designed to drive innovation</p>
+  <div class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl">
+    <div class="w-full lg:w-[46.5%] 3xl:w-[45%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16">
+      <h1 class="text-3xl lg:text-[46px] 3xl:text-[56px] lg:leading-[56px] 3xl:leading-[67.2px] font-bold mb-4 3xl:mb-6">
+        Powering the Future of Next-Gen Electronics Design and Manufacturing</h1>
+      <p class="text-base 3xl:text-xl mb-6 3xl:mb-8">At Whizz Systems, We leverage our <span
+          class="text-teal2 font-medium">25+ years of expertise</span>—mastering the art of harmonizing <span
+          class="text-teal2 font-medium">power, thermal efficiency, performance</span>, and <span
+          class="text-teal2 font-medium">cost</span> to bring next-generation complex products to life. Our engineering
+        and design teams work together to take full ownership of the product development process—<span
+          class="text-teal2 font-medium">from design to manufacturing</span>—helping you achieve faster time-to-market
+        with fewer design iterations.</p>
+      <app-cbutton heading="Get in Touch to Start Building the Future" routerLink="/404"
+        icon="../../../assets/services/r-arrow.svg" size="small"></app-cbutton>
     </div>
-    <div class="hidden lg:block lg:w-[56%] 3xl:w-[57%] relative">
+    <div class="hidden lg:block lg:w-[53.5%] 3xl:w-[55%] relative">
       <video
         class="absolute inset-0 w-full h-full object-cover z-0 rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-lg"
         loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
@@ -42,20 +45,31 @@
     </div>
     <div class="w-full lg:w-[60%]">
       <div class="grid grid-cols-2 gap-3 3xl:gap-4">
-        <a *ngFor="let subitem of item.items" [routerLink]="[subitem.link]" [fragment]="subitem.fragment" class="group col-span-2 md:col-span-1">
-          <div class="cursor-pointer h-32 3xl:h-40 bg-card-gray border border-light-gray1 group-hover:border-white rounded-lg relative transition-all duration-300 ease-in-out group">
-            <div class="absolute inset-0 bg-lines1 bg-contain bg-no-repeat transition-opacity duration-700 ease-in-out group-hover:opacity-0"></div>
-            <div class="absolute inset-0 bg-white transition-opacity ease-in-out opacity-0 group-hover:opacity-100 z-0 border-white" ></div>
-            <p class="absolute top-1/2 transform -translate-y-1/2 z-10 text-lg 3xl:text-2xl text-dark-gray1 group-hover:text-white font-semibold 3xl:font-bold pl-6 3xl:pl-8 pr-12 3xl:pr-8 transition-all duration-700 ease-in-out">
+        <a *ngFor="let subitem of item.items" [routerLink]="[subitem.link]" [fragment]="subitem.fragment"
+          class="group col-span-2 md:col-span-1">
+          <div
+            class="cursor-pointer h-32 3xl:h-40 bg-card-gray border border-light-gray1 group-hover:border-white rounded-lg relative transition-all duration-300 ease-in-out group">
+            <div
+              class="absolute inset-0 bg-lines1 bg-contain bg-no-repeat transition-opacity duration-700 ease-in-out group-hover:opacity-0">
+            </div>
+            <div
+              class="absolute inset-0 bg-white transition-opacity ease-in-out opacity-0 group-hover:opacity-100 z-0 border-white">
+            </div>
+            <p
+              class="absolute top-1/2 transform -translate-y-1/2 z-10 text-lg 3xl:text-2xl text-dark-gray1 group-hover:text-white font-semibold 3xl:font-bold pl-6 3xl:pl-8 pr-14 3xl:pr-8 transition-all duration-700 ease-in-out">
               {{ subitem.label }}
             </p>
             <div class="w-full h-full flex absolute overflow-x-scroll no-scrollbar">
-              <div class="w-full group-hover:w-[84%] group-hover:bg-dark-gray1 rounded-lg transition-all duration-500 ease-in-out group-hover:overflow-hidden">
-                <div class="absolute inset-0 top-[56%] left-[20%] bg-lines2 bg-contain bg-no-repeat opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out"></div>
+              <div
+                class="w-full group-hover:w-[84%] group-hover:bg-dark-gray1 rounded-lg transition-all duration-500 ease-in-out group-hover:overflow-hidden">
+                <div
+                  class="absolute inset-0 top-[56%] left-[20%] bg-lines2 bg-contain bg-no-repeat opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out">
+                </div>
               </div>
               <div class="w-3 3xl:w-4 relative group-hover:bg-white transition-all duration-700 ease-in-out"></div>
               <div class="relative transition-all duration-700 ease-in-out">
-                <div class="w-[52px] sm:w-10 lg:w-9 2xl:w-[46px] 3xl:w-14 h-full bg-teal2 rounded-lg grid place-items-center absolute z-20">
+                <div
+                  class="w-[52px] sm:w-10 lg:w-9 2xl:w-[46px] 3xl:w-14 h-full bg-teal2 rounded-lg grid place-items-center absolute z-20">
                   <img class="w-[18px] 3xl:w-[22px]" src="../../assets/services/r-arrow.svg" alt="arrow-img">
                 </div>
               </div>

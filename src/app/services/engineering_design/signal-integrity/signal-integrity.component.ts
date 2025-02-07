@@ -14,9 +14,9 @@ import { ServicesContactExpertsComponent } from "../../../components/services-co
 export class SignalIntegrityComponent {
 
   pcbPerformance:any = [
-    {imgUrl:'../../../assets/signalIntegrity/pcb.png', title: 'Stack-Up Recommendations', desc: 'Selection of suitable dielectric materials and layer configurations for impedance control and signal isolation.'},
-    {imgUrl:'../../../assets/signalIntegrity/pcb.png', title: '3D Via Design & Optimization', desc: 'Minimized crosstalk and reflections for enhanced signal integrity.'},
-    {imgUrl:'../../../assets/signalIntegrity/pcb.png', title: 'Maximum Trace Length Analysis', desc: 'Determining allowable trace lengths for high-speed nets (e.g., DDR, PCIe, SerDes) based on rise times, propagation delays, and potential signal degradation.'}
+    {imgUrl:'../../../../assets/signalIntegrity/stack.png', title: 'Stack-Up Recommendations', desc: 'Selection of suitable dielectric materials and layer configurations for impedance control and signal isolation.'},
+    {imgUrl:'../../../../assets/signalIntegrity/3d.png', title: '3D Via Design & Optimization', desc: 'Minimized crosstalk and reflections for enhanced signal integrity.'},
+    {imgUrl:'../../../../assets/signalIntegrity/mtla.png', title: 'Maximum Trace Length Analysis', desc: 'Determining allowable trace lengths for high-speed nets (e.g., DDR, PCIe, SerDes) based on rise times, propagation delays, and potential signal degradation.'}
   ];
 
   coreServices:any = [

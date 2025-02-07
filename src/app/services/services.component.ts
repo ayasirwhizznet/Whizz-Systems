@@ -2,10 +2,11 @@ import { CommonModule} from '@angular/common';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
 import { filter, Subscription } from 'rxjs';
+import { CbuttonComponent } from "../components/cbutton/cbutton.component";
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [CommonModule,RouterModule],
+  imports: [CommonModule, RouterModule, CbuttonComponent],
   templateUrl: './services.component.html'
 })
 export class ServicesComponent implements OnInit, OnDestroy{
@@ -86,11 +87,11 @@ export class ServicesComponent implements OnInit, OnDestroy{
       title: "Advanced Manufacturing",
       description: `With complete, in-house expertise, we provide flexible, customized support—whether you’re starting from a concept or refining a product for the market.`,
       items: [
-        { label: 'DFX Analysis', link: '/services/advanced_manufacturing' },
-        { label: 'FMEA (Failure Mode & Effects Analysis)', link: '/services/advanced_manufacturing' },
-        { label: 'Thermal Profiling & Reflow Soldering Optimization', link: '/services/advanced_manufacturing' },
-        { label: 'Mechanical System Build', link: '/services/advanced_manufacturing' },
-        { label: 'Packaging Design', link: '/services/advanced_manufacturing' },
+        { label: 'Manufacturing Simulations', link: '/services/advanced_manufacturing' },
+        { label: 'Electronic Manufacturing Assembly', link: '/services/advanced_manufacturing' },
+        { label: 'Mechanical Assembly', link: '/services/advanced_manufacturing' },
+        { label: 'System Build & Packaging Design', link: '/services/advanced_manufacturing' },
+        { label: 'Local & Offshore Capabilities', link: '/services/advanced_manufacturing' },
       ],
     },
     {
