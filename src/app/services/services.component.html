@@ -1,7 +1,9 @@
 <section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
   <div class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl">
-    <div class="w-full lg:w-[46.5%] 3xl:w-[45%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16">
-      <h1 class="text-3xl lg:text-[46px] 3xl:text-[56px] lg:leading-[56px] 3xl:leading-[67.2px] font-bold mb-4 3xl:mb-6">
+    <div
+      class="w-full lg:w-[46.5%] 3xl:w-[45%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16">
+      <h1
+        class="text-3xl lg:text-[46px] 3xl:text-[56px] lg:leading-[56px] 3xl:leading-[67.2px] font-bold mb-4 3xl:mb-6">
         Powering the Future of Next-Gen Electronics Design and Manufacturing</h1>
       <p class="text-base 3xl:text-xl mb-6 3xl:mb-8">At Whizz Systems, We leverage our <span
           class="text-teal2 font-medium">25+ years of expertise</span>—mastering the art of harmonizing <span
@@ -37,18 +39,18 @@
 
 <section class="px-[4%] sm:px-[9.3%]">
   <div *ngFor="let item of servicesTab"
-    class="flex flex-col lg:flex-row gap-8 lg:gap-32 3xl:gap-36 py-8 lg:py-12 3xl:py-16">
-    <div [id]="item.title" class="w-full lg:w-[30%] 3xl:w-[31%] mt-10 md:mt-0">
+    class="flex flex-col lg:flex-row justify-between gap-10 lg:gap-0 py-8 lg:py-12 3xl:py-16">
+    <div [id]="item.title" class="w-full lg:w-[29.8%] mt-10 md:mt-0">
       <h1 class="text-3xl lg:text-4xl 3xl:text-5xl font-bold 3xl:leading-[57.6px] text-dark-gray2 mb-6 3xl:mb-8">{{
         item.title }}</h1>
       <p class="text-sm 3xl:text-lg text-dark-gray1">{{ item.description }}</p>
     </div>
-    <div class="w-full lg:w-[60%]">
+    <div class="w-full lg:w-[59.49%]">
       <div class="grid grid-cols-2 gap-3 3xl:gap-4">
         <a *ngFor="let subitem of item.items" [routerLink]="[subitem.link]" [fragment]="subitem.fragment"
           class="group col-span-2 md:col-span-1">
           <div
-            class="cursor-pointer h-32 3xl:h-40 bg-card-gray border border-light-gray1 group-hover:border-white rounded-lg relative transition-all duration-300 ease-in-out group">
+            class="cursor-pointer h-32 3xl:h-40 bg-card-gray border border-light-gray1 group-hover:border-white rounded-lg relative transition-all duration-700 ease-in-out group">
             <div
               class="absolute inset-0 bg-lines1 bg-contain bg-no-repeat transition-opacity duration-700 ease-in-out group-hover:opacity-0">
             </div>
@@ -56,12 +58,12 @@
               class="absolute inset-0 bg-white transition-opacity ease-in-out opacity-0 group-hover:opacity-100 z-0 border-white">
             </div>
             <p
-              class="absolute top-1/2 transform -translate-y-1/2 z-10 text-lg 3xl:text-2xl text-dark-gray1 group-hover:text-white font-semibold 3xl:font-bold pl-6 3xl:pl-8 pr-14 3xl:pr-8 transition-all duration-700 ease-in-out">
+              class="absolute top-1/2 transform -translate-y-1/2 z-10 text-lg 3xl:text-2xl text-dark-gray1 group-hover:text-white font-semibold 3xl:font-bold px-6 3xl:px-8 group-hover:pr-16 3xl:leading-[33.6px] smooth-padding transition-all duration-700 ease-in-out">
               {{ subitem.label }}
             </p>
             <div class="w-full h-full flex absolute overflow-x-scroll no-scrollbar">
               <div
-                class="w-full group-hover:w-[84%] group-hover:bg-dark-gray1 rounded-lg transition-all duration-500 ease-in-out group-hover:overflow-hidden">
+                class="w-full group-hover:w-[84%] group-hover:bg-dark-gray1 rounded-lg transition-all duration-700 ease-in-out group-hover:overflow-hidden">
                 <div
                   class="absolute inset-0 top-[56%] left-[20%] bg-lines2 bg-contain bg-no-repeat opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out">
                 </div>

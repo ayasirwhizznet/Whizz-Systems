@@ -1,0 +1,7 @@
+.smooth-padding {
+    transition: padding 0.7s ease-in-out;
+  }
+
+  .group:hover .smooth-padding {
+    padding-right: 64px; // Adjust as needed
+  }
