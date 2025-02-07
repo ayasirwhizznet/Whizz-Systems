@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd, RouterLink } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
@@ -35,6 +35,21 @@ export class NpiComponent implements OnInit, OnDestroy {
         { label: 'Thermal Management/Thermal Simulation', link: '/services/engineering_&_design/thermal_management' },
       ],
     };
+
+    isSticky: boolean = true;
+      lastScrollTop: number = 0;
+    
+      @HostListener('window:scroll', [])
+      onScroll(): void {
+        const currentScroll = window.scrollY;
+    
+        if (currentScroll > this.lastScrollTop) {
+          this.isSticky = false;
+        } else {
+          this.isSticky = true;
+        }
+        this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      }
 
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;

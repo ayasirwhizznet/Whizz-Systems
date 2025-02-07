@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { ServicesHeroComponent } from '../../components/services-hero/services-hero.component';
 import { ServicesIntroComponent } from '../../components/services-intro/services-intro.component';
 import { ServicesContactExpertsComponent } from '../../components/services-contact-experts/services-contact-experts.component';
@@ -30,6 +30,21 @@ export class LabTestingSolutionsComponent implements OnInit, OnDestroy {
     {imgUrl: '../../../assets/lab-testing-solutions/benefits.png', title: 'Decades of Innovation', desc: 'Over 25 years ensuring the success of cutting-edge products.'}
   ];
 
+  isSticky: boolean = true;
+    lastScrollTop: number = 0;
+  
+    @HostListener('window:scroll', [])
+    onScroll(): void {
+      const currentScroll = window.scrollY;
+  
+      if (currentScroll > this.lastScrollTop) {
+        this.isSticky = false;
+      } else {
+        this.isSticky = true;
+      }
+      this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }
+  
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   private currentFragment: string | null = null;

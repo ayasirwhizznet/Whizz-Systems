@@ -22,7 +22,6 @@ export class FeaturedProductsComponent {
     } else {
       this.isSticky = true;
     }
-
     this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
   }
 

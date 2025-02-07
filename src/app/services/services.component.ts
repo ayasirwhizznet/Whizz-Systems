@@ -1,5 +1,5 @@
 import { CommonModule} from '@angular/common';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
 import { filter, Subscription } from 'rxjs';
 import { CbuttonComponent } from "../components/cbutton/cbutton.component";
@@ -42,6 +42,21 @@ export class ServicesComponent implements OnInit, OnDestroy{
         this.navigationSubscription.unsubscribe();
       }
     }
+    
+  isSticky: boolean = true;
+  lastScrollTop: number = 0;
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > this.lastScrollTop) {
+      this.isSticky = false;
+    } else {
+      this.isSticky = true;
+    }
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  }
 
     scrollToFragment(id: string) {
     const element = document.getElementById(id);
