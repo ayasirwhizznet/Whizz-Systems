@@ -115,7 +115,7 @@
     <div class="p-6 3xl:p-8 bg-card-gray rounded-md 3xl:rounded-lg">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 3xl:gap-8">
             <div *ngFor="let card of customization; let i = index" [ngClass]="{ 'lg:col-start-2': i == 4 }">
-                <div class="p-6 3xl:p-8 bg-white border border-light-gray1 rounded-lg h-full">
+                <div class="p-6 3xl:p-8 bg-white border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
                     <img class="w-10 3xl:w-12" [src]="card.imgUrl" alt="img" />
                     <h3
                         class="text-dark-gray2 text-sm lg:text-xs 3xl:text-base font-medium leading-[19.2px] my-3 3xl:my-4">

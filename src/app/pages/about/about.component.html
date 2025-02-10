@@ -1,157 +1,142 @@
-<div class="px-[4%] sm:px-[5%] mb-12 lg:mb-32">
-    <div class="relative px-8 lg:px-16 py-12 lg:py-40 3xl:py-56">
-        <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-2xl" loop muted autoplay
+<!-- Hero -->
+<section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
+    <div class="relative p-8 lg:p-12 3xl:p-16">
+        <video class="absolute inset-0 w-full h-full object-cover z-0 sm:rounded-xl 3xl:rounded-2xl" loop muted autoplay
             oncanplay="this.play()" onloadedmetadata="this.muted = true">
             <source src="../../assets/hero/waves1.mp4" type="video/mp4">
         </video>
-        <div class="absolute inset-0 bg-[#00a99f] opacity-80 z-[5] rounded-2xl"></div>
-        <div class="max-w-xl relative z-10 text-white">
-            <h1 class="text-4xl lg:text-5xl 3xl:text-[56px] lg:leading-[60px] 3xl:leading-[67.2px] font-bold">Your
-                end-to-end electronics design & manufacturing partner</h1>
-            <p class="text-xl font-extralight mt-6 mb-8">Innovative solutions. Global expertise. Proven excellence.</p>
+        <div class="absolute inset-0 bg-[#00a99f] opacity-80 z-[5] sm:rounded-xl 3xl:rounded-2xl"></div>
+        <div class="w-fit sm:w-3/5 lg:w-2/5 relative z-10 text-white py-[5%] sm:py-[10%]">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl 3xl:text-[56px] lg:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-4 3xl:mb-6">Your End-to-End Electronics Design & Manufacturing Partner</h1>
+            <p class="text-lg 3xl:text-xl font-extralight 3xl:font-light mb-6 3xl:mb-8">Innovative solutions. Global expertise. Proven excellence.</p>
             <app-cbutton [size]="'medium'" heading="Get Started with Us" icon="../../assets/hero/r-arrow.svg"
                 [routerLink]="'routerLink'"></app-cbutton>
         </div>
     </div>
-</div>
+</section>
 
-<div class="px-[4%] sm:px-[8%]">
-    <!-- Legacy -->
-    <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-44 3xl:gap-96 mb-12 lg:mb-32">
-        <div class="w-full lg:w-1/2">
-            <h2 class="text-3xl lg:text-5xl lg:leading-[57.6px] text-dark-gray2 font-medium">A Legacy of Excellence, A
-                Future of Innovation</h2>
-            <h4 class="text-dark-gray2 text-xl mt-4 mb-4">Delivering Advanced Electronics Solutions Since 1989</h4>
-            <img class="max-w-52 object-cover" src="../../assets/about/s-line.png" alt="image">
-            <p class="text-dark-gray2 leading-[28px] font-light mt-4 mb-8">Whizz Systems is a leading provider of
-                electronic product
-                design, development, and manufacturing services, proudly located in the heart of Silicon Valley. Since
+<!-- Legacy -->
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-[16rem] 3xl:gap-[25.4rem]">
+        <div class="w-full lg:w-[52%]">
+            <h2
+                class="text-3xl sm:text-4xl 3xl:text-5xl leading-[40px] 3xl:leading-[57.6px] text-dark-gray2 font-medium mb-3 3xl:mb-4">
+                A Legacy of Excellence, A Future of Innovation</h2>
+            <h4 class="text-dark-gray2 text-base 3xl:text-xl leading-[24px] 3xl:leading-[28px]">Delivering Advanced
+                Electronics Solutions Since 1989</h4>
+            <hr class="w-[35%] border border-light-gray1 opacity-60 my-3 3xl:my-4">
+            <p class="text-dark-gray2 text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] font-light mb-4 3xl:mb-6">
+                Whizz Systems is a leading provider of
+                electronic product design, development, and manufacturing services, proudly located in the heart of
+                Silicon Valley. Since
                 our inception in 1989, we’ve transformed from a specialized PCB design team into a multidisciplinary
                 powerhouse, bringing deep expertise across engineering and design, new product introduction (NPI),
                 advanced manufacturing, lab testing solutions, sustainable engineering, and end-to-end supply chain
                 management.</p>
-            <p class="text-dark-gray2 font-light">We serve a diverse range of industries—including defense and
+            <p class="text-dark-gray2 text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] font-light">We serve a
+                diverse range of industries—including defense and
                 aerospace, medical devices, automotive, consumer electronics, AI computing, and
                 telecommunications—earning the trust of both Fortune 100 companies and innovative startups. For over 30
                 years, we’ve been the go-to partner for turning groundbreaking ideas into market-ready products,
                 delivering exceptional quality, reliability, and innovation at every stage of the product lifecycle.</p>
         </div>
-        <div class="w-full lg:w-1/2">
+        <div class="w-full lg:w-[48%] p-6 sm:p-10 lg:p-0">
             <img class="object-cover" src="../../assets/about/legacy.png" alt="image">
         </div>
     </div>
+</section>
 
-    <div>
-        <img class="object-cover mx-auto px-6 sm:px-16 lg:px-20 mb-12 lg:mb-24"
-            src="../../assets/ideas/section-divider1.png" alt="img">
+<img class="px-[13%] mb-[39px] mt-[54px]" src="../../assets/ideas/section-divider1.png" alt="img">
+
+<!-- Experience -->
+<section class="px-[4%] sm:px-[9.3%] flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-32 3xl:gap-48 py-8 lg:py-12 3xl:py-16">
+    <div class="w-full lg:w-1/2 py-6 lg:py-20">
+        <h2 class="w-11/12 sm:w-3/5 lg:w-full text-3xl sm:text-4xl lg:text-[52px] 3xl:text-[64px] lg:leading-[64px] 3xl:leading-[76.8px] text-dark-gray2 font-light mx-auto text-center lg:text-left">
+            <span class="text-teal2 font-medium">25+ Years</span> of Building Growth in Electronic Design & Manufacturing
+        </h2>
     </div>
-
-    <!-- 25+ -->
-    <div class="flex flex-col lg:flex-row items-center gap-20 lg:gap-32 mb-12 lg:mb-32">
-        <div class="w-full lg:w-1/2 py-6 lg:py-20">
-            <h2
-                class="text-5xl 3xl:text-[64px] leading-[64px] 3xl:leading-[76.8px] text-dark-gray2 font-light text-center lg:text-left">
-                <span class="text-5xl 3xl:text-[64px] leading-[64px] 3xl:leading-[76.8px] text-teal2 font-medium">25+
-                    Years</span> of
-                Building Growth in
-                Electronic Design & Manufacturing
-            </h2>
-        </div>
-        <div class="w-full lg:w-1/2 flex flex-wrap justify-between items-between">
-            <div class=" grid grid-cols-1 sm:grid-cols-2 gap-y-10 3xl:gap-y-16 gap-x-20 3xl:gap-x-32">
-                <div class="text-center" *ngFor="let item of experience">
-                    <h3 class="text-5xl text-dark-gray2 font-bold">{{item.quantity}}<span
-                            class="text-4xl text-dark-gray2 font-bold">{{item.sign}}</span></h3>
-                    <h3 class="text-2xl text-dark-gray2 font-bold">{{item.title}}</h3>
-                    <img class="max-w-32 mx-auto object-cover my-2" src="../../assets/about/s-line.png" alt="image">
-                    <p class="px-10 sm:px-5 lg:px-1 3xl:px-4 text-xl text-dark-gray2 font-light">{{item.desc}}</p>
-                </div>
+    <div class="w-full lg:w-1/2 flex flex-wrap justify-between items-between">
+        <div class=" grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-y-10 3xl:gap-y-16 sm:gap-x-16 3xl:gap-x-32">
+            <div class="text-center" *ngFor="let item of experience">
+                <h2 class="text-4xl 3xl:text-5xl text-dark-gray2 font-bold">{{item.quantity}}<span class="text-3xl 3xl:text-4xl text-dark-gray2 font-bold">{{item.sign}}</span></h2>
+                <h3 class="text-xl 3xl:text-2xl text-dark-gray2 font-bold">{{item.title}}</h3>
+                <hr class="w-5/12 mx-auto border border-light-gray1 opacity-60 my-1 3xl:my-2">
+                <p class="w-[55%] sm:w-[70%] lg:w-[88%] 3xl:w-[95%] mx-auto text-base 3xl:text-xl leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light">{{item.desc}}</p>
             </div>
         </div>
     </div>
+</section>
+<img class="px-[13%] mt-[39px] mb-[54px]" src="../../assets/testimonials/section-divider2.png" alt="img">
 
-    <div>
-        <img class="object-cover mx-auto px-6 sm:px-16 lg:px-20 mb-12 lg:mb-32"
-            src="../../assets/testimonials/section-divider2.png" alt="img">
-    </div>
+<!-- Unique Approach -->
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16 text-center">
+    <h2 class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium mb-3 3xl:mb-4">Our Unique Approach to Accelerate Your Product Journey</h2>
+    <h3 class="text-base 3xl:text-xl leading-[24px] 3xl:leading-[28px] text-dark-gray2">Comprehensive, Expert Solutions Designed to Meet Your Unique Needs
+    </h3>
+    <hr class="w-[24%] lg:w-[13.5%] mx-auto border border-light-gray1 opacity-60 my-3 3xl:my-4">
+    <p class="w-full sm:w-[80%] lg:w-[45%] 3xl:w-[40%] mx-auto text-dark-gray2 text-sm 3xl:text-base font-light leading-[24px] 3xl:leading-[28px]">With decades of experience
+        serving diverse
+        industries, we’ve tailored our approach to provide everything you need for a seamless, efficient product
+        launch. By consolidating design, prototyping, manufacturing, and compliance under one roof, we eliminate
+        bottlenecks and accelerate your path to market.</p>
+</section>
 
-    <!-- Unique Approach -->
-    <div class="px-8 lg:px-16 text-center mb-12 lg:mb-32">
-        <h2 class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[57.6px] font-medium">Our Unique
-            Approach to Accelerate Your Product
-            Journey</h2>
-        <h3 class="3xl:text-xl text-dark-gray2 my-4">Comprehensive, Expert Solutions Designed to Meet Your Unique Needs
-        </h3>
-        <img class="max-w-52 object-cover mb-4 mx-auto" src="../../assets/about/s-line.png" alt="image">
-        <p class="text-dark-gray2 font-light mx-auto  sm:max-w-[38rem] leading-[28px]">With decades of experience
-            serving diverse
-            industries, we’ve tailored our approach to provide everything you need for a seamless, efficient product
-            launch. By consolidating design, prototyping, manufacturing, and compliance under one roof, we eliminate
-            bottlenecks and accelerate your path to market.</p>
-    </div>
-
-    <!--Dark Cards -->
-    <div
-        class="mb-8 lg:mb-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10  sm:gap-y-16 sm:gap-x-20 lg:gap-x-24">
+<!--Dark Cards -->
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <div  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-between gap-10  sm:gap-16 lg:gap-28 3xl:gap-[153px]">
         <div *ngFor="let item of concisely" class="mx-auto">
-            <div class=" w-[270px] h-[253px] px-8 py-10 bg-dark-gray1 rounded-lg text-white text-center ">
-                <img class="w-12 mx-auto object-cover" [src]="item.imgUrl" alt="">
-                <h4 class="font-semibold my-2">{{item.title}}</h4>
-                <p class="font-thin">{{item.desc}}</p>
+            <div class="w-[225px] 3xl:w-[270px] h-full px-6 3xl:px-8 py-8 3xl:py-10 bg-dark-gray1 rounded-md 3xl:rounded-lg text-white text-center">
+                <img class="w-10 3xl:w-12 mx-auto" [src]="item.imgUrl" alt="img">
+                <h4 class="text-sm 3xl:text-base font-medium 3xl:font-semibold my-1 3xl:my-2">{{item.title}}</h4>
+                <p class="text-sm 3xl:text-base font-thin">{{item.desc}}</p>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Address -->
-<div class="w-full mb-10 lg:mb-16 py-10 3xl:py-16 bg-teal2">
-    <h2 class="text-4xl 3xl:text-5xl font-medium leading-[57.6px] text-dark-gray2 text-center mb-8">Global Footprint
-    </h2>
-    <img class="w-[90%] 3xl:w-[80%]  mx-auto" src="../../assets/about/map2.png" alt="">
-    <div>
-        <div
-            class="w-[22rem] sm:w-[48rem] 3xl:w-[54rem] mx-auto bg-dark-gray1 text-white p-5 text-center rounded-md mt-8 overflow-x-scroll sm:overflow-x-hidden">
-            <table>
-                <tr class="flex">
-                    <th *ngFor="let service of services; let i = index" [ngClass]="{'w-[5rem] 3xl:w-20 border-b': i == 0,
-                    'text-xs w-[6.7rem] 3xl:w-[7.7rem] px-4 py-2 border-l ': i !== 0}"
-                        class="text-xs font-light grid place-items-center">
-                        {{ service }}
-                    </th>
-                </tr>
-                <tr class="flex -mt-[1px]">
-                    <td *ngFor="let service of santaClaraServices; let i = index"
-                        [ngClass]="{'text-xs w-[5rem] 3xl:w-20 py-7 border-b text-npwrap': i == 0,
-                'text-xl 3xl:text-2xl w-[6.7rem] 3xl:w-[7.7rem]  py-7 3xl:py-8 border-l border-t fa-regular fa-circle-check': i !== 0}"
-                        class="text-xs font-light grid place-items-center">
-                        {{ service }}
-                    </td>
-                </tr>
-                <tr class="flex -mt-[1px]">
-                    <td *ngFor="let service of malaysiaServices; let i = index" [ngClass]="{
-                      'text-xs w-[5rem] 3xl:w-20': i === 0,
-                      'text-xl 3xl:text-2xl w-[6.7rem] 3xl:w-[7.7rem] py-7 3xl:py-8 border-l border-t': i !== 0
-                    }" class="text-xs font-ligh grid place-items-center py-6">
-                        <i [ngClass]="{'fa-regular fa-circle-check':![0,1,2,3].includes(i)}"></i>
-                        {{ service }}
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16 bg-teal2">
+    <h2 class="text-3xl lg:text-4xl 3xl:text-5xl font-medium lg:leading-[40px] 3xl:leading-[57.6px] text-dark-gray2 text-center mb-6 3xl:mb-8">Global Footprint</h2>
+    <img src="../../assets/about/map2.png" alt="map-img">
+    <div
+    class="w-[22rem] sm:w-[48rem] 3xl:w-[54rem] mx-auto bg-dark-gray1 text-white p-5 text-center rounded-md mt-8 overflow-x-scroll sm:overflow-x-hidden">
+    <table>
+        <tr class="flex">
+            <th *ngFor="let service of services; let i = index" [ngClass]="{'w-[5rem] 3xl:w-20 border-b': i == 0,
+            'text-xs w-[6.7rem] 3xl:w-[7.7rem] px-4 py-2 border-l ': i !== 0}"
+                class="text-xs font-light grid place-items-center">
+                {{ service }}
+            </th>
+        </tr>
+        <tr class="flex -mt-[0.5px]">
+            <td *ngFor="let service of santaClaraServices; let i = index"
+                [ngClass]="{'text-xs w-[5rem] 3xl:w-20 py-7 border-b text-npwrap': i == 0,
+        'text-xl 3xl:text-2xl w-[6.7rem] 3xl:w-[7.7rem]  py-7 3xl:py-8 border-l border-t fa-regular fa-circle-check': i !== 0}"
+                class="text-xs font-light grid place-items-center">
+                {{ service }}
+            </td>
+        </tr>
+        <tr class="flex -mt-[1px]">
+            <td *ngFor="let service of malaysiaServices; let i = index" [ngClass]="{
+              'text-xs w-[5rem] 3xl:w-20': i === 0,
+              'text-xl 3xl:text-2xl w-[6.7rem] 3xl:w-[7.7rem] py-7 3xl:py-8 border-l border-t': i !== 0
+            }" class="text-xs font-ligh grid place-items-center py-6">
+                <i [ngClass]="{'fa-regular fa-circle-check':![0,1,2,3].includes(i)}"></i>
+                {{ service }}
+            </td>
+        </tr>
+    </table>
 </div>
+</section>
 
-
-
-<div class="px-[4%] sm:px-[8%]">
-    <!-- Certifications -->
-    <div class="mb-12 lg:mb-32">
-        <h2 class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[57.6px] font-medium text-center">
+<!-- Certifications -->
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+        <h2 class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium text-center mb-6 3xl:mb-8">
             Recognized for
             Excellence and
             Compliance</h2>
-        <img class="max-w-52 object-cover my-4 mx-auto" src="../../assets/about/s-line.png" alt="image">
-        <p class="max-w-[38rem] mx-auto text-dark-gray2 text-center font-light mb-16 leading-[28px]">We take pride in
+            <hr class="w-1/4 lh:w-[13%] mx-auto border border-light-gray1 opacity-60 my-3 3xl:my-4">
+        <p class="w-full sm:w-[75%] lg:w-[43%] 3xl:w-[38%] mx-auto text-dark-gray2 text-center text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-8 lg:mb-12 3xl:mb-16">We take pride in
             delivering
             exceptional solutions that meet the highest standards of quality and reliability. Our excellence has been
             recognized with numerous industry certifications and prestigious awards, including the <i>Outstanding
@@ -159,62 +144,51 @@
             Spartan and Virtex product families.</p>
         <div class="flex justify-center lg:justify-between items-center flex-wrap gap-10 px-24">
             <div *ngFor="let item of certifications" class="flex flex-col items-center">
-                <img class="w-20 h-20 3xl:w-28 3xl:h-28 mb-6" [src]="item.imgUrl" alt="img">
-                <p class="text-xl 3xl:text-2xl font-bold text-center">{{item.name}}</p>
+                <img class="w-20 3xl:w-24 mb-4 3xl:mb-6" [src]="item.imgUrl" alt="img">
+                <p class="text-xl 3xl:text-2xl font-medium 3xl:font-bold text-center">{{item.name}}</p>
             </div>
         </div>
-    </div>
+</section>
 
-    <!-- Collaborations -->
-    <div class="mb-12 lg:mb-32">
-        <h3
-            class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[57.6px] font-medium text-center mb-8 sm:mb-14">
-            We’ve Collaborated With</h3>
-        <div
-            class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 place-items-center gap-8 lg:gap-y-10 lg:gap-x-16 lg:px-10 3xl:px-40">
-            <div *ngFor="let item of collaborations" class="p-8">
+<!-- Collaborations -->
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <h3 class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium text-center mb-7 lg:mb-11 3xl:mb-14">We’ve Collaborated With</h3>
+        <div class="px-5 lg:px-40 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 place-items-center gap-6 lg:gap-8 3xl:gap-16">
+            <div *ngFor="let item of collaborations let i = index" [ngClass]="{'sm:col-start-2 lg:col-auto': i === 8}" class="p-6 3xl:p-8">
                 <img class="object-cover" [src]="item" alt="img">
             </div>
         </div>
-    </div>
+</section>
 
     <!-- Passionate -->
-    <div class="mb-12 lg:mb-32 px-[4%] sm:px-[9%]">
-        <h3 class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[57.6px] font-medium text-center">Built
-            By
-            Passionate People</h3>
-        <p class="text-xl text-dark-gray2 mt-4 mb-16 text-center">Learn more about our leaders</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
-            <div class="relative group text-white" *ngFor="let item of passionate">
-                <img [src]="item.imgUrl" alt="profile-img" class=" object-cover">
-                <div
-                    class="absolute inset-0 group-hover:bg-black group-hover:bg-opacity-30 rounded-lg transition-all duration-300 ease-in-out">
-                </div>
-                <div
-                    class="absolute bottom-16 px-8 sm:px-16 lg:px-12 3xl:px-16 group-hover:-translate-y-[11rem] 3xl:group-hover:-translate-y-[14rem] transition-all duration-300 ease-in-out">
-                    <h2 class="text-4xl 3xl:text-5xl 3xl:leading-[67.2px] font-bold">{{item.name}}</h2>
-                    <h3 class="text-4xl 3xl:text-5xl 3xl:leading-[67.2px] font-light my-2">{{item.designation}}</h3>
-                </div>
-                <p
-                    class="text-base 3xl:text-xl 3xl:leading-[28px] font-light px-8 sm:px-16 lg:px-12 3xl:px-16 absolute group-hover:-translate-y-[15rem] 3xl:group-hover:-translate-y-[18rem]  transition-all duration-300 ease-in-out">
-                    {{item.desc}}</p>
+<section class="px-[4%] sm:px-[17%] py-8 lg:py-12 3xl:py-16">
+    <h3 class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium text-center mb-3 3xl:mb-4">Built By Passionate People</h3>
+    <p class="text-base 3xl:text-xl leading-[20px] 3xl:leading-[28px] text-dark-gray2 mb-8 lg:mb-12 3xl:mb-16 text-center">Learn more about our leaders</p>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 3xl:gap-16">
+        <div class="relative group text-white" *ngFor="let item of passionate let i = index">
+            <img [src]="item.imgUrl" alt="profile-img" class="object-cover">
+            <div class="absolute inset-0 group-hover:bg-black group-hover:bg-opacity-30 rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out"></div>
+            <div [ngClass]="{'group-hover:-translate-y-[8rem] sm:group-hover:-translate-y-[12rem] lg:group-hover:-translate-y-[9rem] 3xl:group-hover:-translate-y-44': i === 1}" class="absolute bottom-8 sm:bottom-12 lg:bottom-10 3xl:bottom-16 px-6 sm:px-12 lg:px-10 3xl:px-16 group-hover:-translate-y-44 sm:group-hover:-translate-y-60 lg:group-hover:-translate-y-48 3xl:group-hover:-translate-y-56 transition-all duration-300 ease-in-out">
+                <h2 class="text-xl sm:text-4xl lg:text-4xl 3xl:text-5xl lg:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold">{{item.name}}</h2>
+                <h3 class="text-xl sm:text-4xl lg:text-4xl 3xl:text-5xl lg:leading-[55px] 3xl:leading-[67.2px] font-light my-2">{{item.designation}}</h3>
             </div>
+            <p [ngClass]="{'group-hover:-translate-y-[10rem] sm:group-hover:-translate-y-[14rem] lg:group-hover:-translate-y-[12em] 3xl:group-hover:-translate-y-[13.9rem]': i === 1}" class="text-sm sm:text-lg lg:text-base 3xl:text-xl font-light px-6 sm:px-12 lg:px-10 3xl:px-16 absolute group-hover:-translate-y-52 sm:group-hover:-translate-y-72 lg:group-hover:-translate-y-60 3xl:group-hover:-translate-y-72  transition-all duration-300 ease-in-out">{{item.desc}}</p>
         </div>
     </div>
+</section>
 
     <!-- Talk To Expert -->
-    <div class="mb-12 lg:mb-16">
-        <div class="relative p-10 lg:p-16 rounded-lg">
-            <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-lg" loop muted autoplay
+<section class="px-0 sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <div class="relative p-8 lg:p-12 3xl:p-16 rounded-md 3xl:rounded-lg">
+        <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg" loop muted autoplay
                 oncanplay="this.play()" onloadedmetadata="this.muted = true">
                 <source src="../../assets/hero/waves2.mp4" type="video/mp4">
-            </video>
-            <div class="absolute inset-0 bg-[#00a99f] opacity-80 z-10 rounded-lg"></div>
-            <div class="relative z-20 text-white">
-                <h2 class="text-4xl lg:text-6xl font-bold">Let’s build together.</h2>
-                <p class="text-3xl mt-4 mb-8">Ready to start your next project?</p>
-                <app-cbutton heading="Contact us today" [size]="'large'"></app-cbutton>
-            </div>
+        </video>
+        <div class="absolute inset-0 bg-[#00a99f] opacity-80 z-10 rounded-md 3xl:rounded-lg"></div>
+        <div class="relative z-20 text-white">
+            <h2 class="text-3xl sm:text-4xl lg:text-[52px] 3xl:text-[64px] lg:leading-[64px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4">Let’s build together.</h2>
+            <p class="text-xl lg:text-2xl 3xl:text-[32px] 3xl:leading-[38px] mb-6 3xl:mb-8">Ready to start your next project?</p>
+            <app-cbutton heading="Contact us today" [size]="'large'"></app-cbutton>
         </div>
     </div>
-</div>
+</section>
