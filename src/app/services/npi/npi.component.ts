@@ -37,19 +37,19 @@ export class NpiComponent implements OnInit, OnDestroy {
     };
 
     isSticky: boolean = true;
-      lastScrollTop: number = 0;
-    
-      @HostListener('window:scroll', [])
-      onScroll(): void {
-        const currentScroll = window.scrollY;
-    
-        if (currentScroll > this.lastScrollTop) {
-          this.isSticky = false;
-        } else {
-          this.isSticky = true;
-        }
-        this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    lastScrollTop: number = 0;
+  
+    @HostListener('window:scroll', [])
+    onScroll(): void {
+      const currentScroll = window.scrollY;
+  
+      if (currentScroll > this.lastScrollTop) {
+        this.isSticky = false;
+      } else {
+        this.isSticky = true;
       }
+      this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }
 
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
