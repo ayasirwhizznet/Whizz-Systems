@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit {
   menuItems = [
     { label: 'About', link: '/about'},
     { label: 'Services', dropdown: 'service' },
-    { label: 'Featured Products', dropdown: 'featured'},
+    { label: 'Featured Products', link: '/featured-products'},
     { label: 'Resources', dropdown: 'resources'},
   ];
 
@@ -46,6 +46,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       title: 'NPI',
+      link: '/services/npi',
       items: [
         { label: 'System Level Architecture', link: '/services/npi', fragment: "SystemLevelArchitecture"},
         { label: 'Engineering & Design', link: '/services/npi', fragment: "Engineering&Design"  },
@@ -56,6 +57,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       title: 'Advanced Manufacturing',
+      link: '/services/advanced_manufacturing',
       items: [
         { label: 'Manufacturing Simulations', link: '/services/advanced_manufacturing' },
         { label: 'Electronic Manufacturing Assembly', link: '/services/advanced_manufacturing' },
@@ -66,6 +68,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       title: 'Lab Testing Solutions',
+      link: '/services/lab_testing_solutions',
       items: [
         { label: 'Board Bring Up', link: '/services/lab_testing_solutions', fragment: "BoardBringUp"},
         { label: 'Validation', link: '/services/lab_testing_solutions', fragment: "Validation"},
@@ -74,6 +77,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       title: 'Supply Chain Management',
+      link: '/services/supply_chain_management',
       items: [
         { label: 'Component Engineering', link: '/services/supply_chain_management', fragment: 'ComponentEngineering'},
         { label: 'Compliance Engineering', link: '/services/supply_chain_management', fragment: 'ComplianceEngineering' },
@@ -119,6 +123,7 @@ export class HeaderComponent implements OnInit {
     { label: 'Compute', link: '/404' },
     { label: 'Network', link: '/404' },
   ];
+currentScroll: any;
 
   constructor(private router: Router, private route: ActivatedRoute) {
     this.router.events.subscribe((event) => {
