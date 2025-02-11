@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-cservices',
   standalone: true,
-  imports: [ServicesCardComponent, NgFor, CbuttonComponent, RarrowbuttonComponent, LarrowbuttonComponent, RouterLink,NgIf],
+  imports: [ServicesCardComponent, NgFor, CbuttonComponent, RouterLink,NgIf],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

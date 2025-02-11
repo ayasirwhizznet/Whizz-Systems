@@ -1,13 +1,9 @@
 .diagonal-swipe {
-    padding: 13px 18px;
     background-color: #f8f8f8;
     color: #2A494C;
     transition: color 1.5s;
     z-index: 1;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    
 }
 
 .diagonal-swipe span {
@@ -32,26 +28,8 @@
     border-width: 0 0 250px 250px;
 }
 
-.icon {
-    width: 19px;
-    height: 19px;
-    z-index: 2;
-}
 
-.diagonal-swipe.small .icon {
-    width: 16px;
-    height: 16px;
-}
 
-.diagonal-swipe.medium .icon {
-    width: 20px;
-    height: 20px;
-}
-
-.diagonal-swipe.large .icon {
-    width: 28px;
-    height: 28px;
-}
 
 
 

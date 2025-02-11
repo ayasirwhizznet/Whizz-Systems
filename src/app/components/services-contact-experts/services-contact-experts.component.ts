@@ -10,7 +10,6 @@ import { CbuttonComponent } from '../cbutton/cbutton.component';
 export class ServicesContactExpertsComponent {
   @Input() secHeading: string = '';
   @Input() secDesc: string = '';
-  @Input() secHeadingMargin: string = 'mb-3 3xl:mb-4';
   @Input() routerLink!: string;
   @Input() btnText: string = '';
 }

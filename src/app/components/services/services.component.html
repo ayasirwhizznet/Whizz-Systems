@@ -1,24 +1,23 @@
 <section class="py-8 lg:py-12 3xl:py-16">
     <div class="px-[4%] sm:px-[9.3%] text-dark-gray2">
-        <div class="flex flex-col gap-4 3xl:gap-6 lg:gap-0 lg:flex-row items-center justify-between mb-6 3xl:mb-8">
-            <div class="self-start">
-                <h2 class="text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[40px] 3xl:leading-[57.6px] text-dark-gray2">Services</h2>
-            </div>
-            <div class="self-end flex items-center gap-6">
-                <app-cbutton [size]="'medium'" [routerLink]="'/services'" heading="All services"
+        <div class="flex items-center justify-between mb-6 3xl:mb-8">
+            <h2 class="text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[40px] 3xl:leading-[57.6px] text-dark-gray2">Services</h2>
+            <div class="flex items-center gap-4 3xl:gap-6">
+                <app-cbutton size="medium" [routerLink]="'/services'" heading="All services"
                     icon="../../assets/services/r-arrow.svg"></app-cbutton>
-
                 <div [className]="progress.abs == 0 ? 'pointer-events-none opacity-[0.6]':''">
-                    <app-larrowbutton (click)="prevSlide()" icon="../../assets/services/l-arrow.svg"
-                        size="medium"></app-larrowbutton>
+                    <app-cbutton size="medium" (click)="prevSlide()"
+                        icon="../../assets/services/l-arrow.svg"></app-cbutton>
                 </div>
                 <div [className]="progress.abs == progress.maxIdx ? 'pointer-events-none opacity-[0.6]':''">
-                    <app-rarrowbutton (click)="nextSlide()" icon="../../assets/services/r-arrow.svg"
-                        size="medium"></app-rarrowbutton>
+                    <app-cbutton size="medium" (click)="nextSlide()"
+                        icon="../../assets/services/r-arrow.svg"></app-cbutton>
                 </div>
             </div>
         </div>
-        <p class="text-base 3xl:text-lg text-dark-gray1 max-w-xl 3xl:max-w-2xl mb-12 3xl:mb-[61px]">With complete, in-house expertise, we provide flexible, customized support— whether you’re starting from a concept or refining a product for the market.</p>
+        <p class="text-base 3xl:text-lg text-dark-gray1 max-w-xl 3xl:max-w-2xl mb-12 3xl:mb-[61px]">With complete,
+            in-house expertise, we provide flexible, customized support— whether you’re starting from a concept or
+            refining a product for the market.</p>
     </div>
     <div class="pl-[4%] sm:pl-[9.3%]">
         <div class="keen-slider" #sliderRef>

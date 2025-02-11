@@ -1,14 +1,13 @@
 import KeenSlider from 'keen-slider';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angular/core';
 import { TestimonialCardComponent } from '../testimonial-card/testimonial-card.component';
-import { NgFor } from '@angular/common';
-import { RarrowbuttonComponent } from '../rarrowbutton/rarrowbutton.component';
-import { LarrowbuttonComponent } from '../larrowbutton/larrowbutton.component';
+import { CommonModule} from '@angular/common';
+import { CbuttonComponent } from '../cbutton/cbutton.component';
 
 @Component({
   selector: 'app-testimonials',
   standalone: true,
-  imports: [TestimonialCardComponent, NgFor, RarrowbuttonComponent, LarrowbuttonComponent],
+  imports: [TestimonialCardComponent, CommonModule, CbuttonComponent],
   templateUrl: './testimonials.component.html',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

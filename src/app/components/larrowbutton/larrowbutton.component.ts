@@ -18,11 +18,11 @@ export class LarrowbuttonComponent {
   get sizeClass(): string {
     switch (this.size) {
       case 'small':
-        return 'px-2 py-1 text-sm';
+        return 'px-2 sm:px-[14px] 3xl:px-[18px] py-1 sm:py-[6px] 3xl:py-[14px] text-[10px] text-xs 3xl:text-sm font-semibold border border-teal2';
       case 'medium':
-        return 'px-[18px] py-[15px] text-base font-semibold border-[1px] border-teal2'
+        return 'px-2 sm:px-[14px] 3xl:px-[18px] py-[6px] sm:py-[14px] 3xl:py-[14px] border border-teal2'
       case 'large':
-        return 'px-[18px] py-[14px] text-lg font-semibold border-[1px] border-teal2';
+        return 'px-2 sm:px-[14px] 3xl:px-[18px] py-2 sm:py-3 3xl:py-[14px] text-sm 3xl:text-lg font-medium 3xl:font-semibold border border-teal2';
       default:
         return 'px-4 py-2 text-base';
     }
