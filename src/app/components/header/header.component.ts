@@ -201,5 +201,8 @@ currentScroll: any;
       this.isHeaderVisible = true;
     }
     this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Avoid negative values
+    if (this.activeBottomSection) {
+      this.closeMenu();
+    }
   }
 }

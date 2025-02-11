@@ -30,7 +30,7 @@
 </section>
 
 <!-- Services Navbar -->
-<section [ngClass]="{ 'top-[13%] z-50': isSticky}" class="hidden lg:block px-[9.3%] lg:py-8 3xl:py-16 bg-white sticky top-0 z-30">
+<section [ngClass]="{ 'top-[13%] ': isSticky}" class="hidden lg:block px-[9.3%] lg:py-8 3xl:py-16 bg-white sticky top-0 z-30">
   <div class="flex justify-center items-center gap-3 3xl:gap-4">
     <a *ngFor="let link of servicesTab" (click)="scrollToFragment(link.title)"
       class="lg:w-[196px] 3xl:w-[247px] h-[70px] 3xl:h-[88px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">{{link.title}}</a>
