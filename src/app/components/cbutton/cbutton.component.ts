@@ -24,7 +24,7 @@ export class CbuttonComponent {
       case 'large':
         return 'px-2 sm:px-[14px] 3xl:px-[18px] py-2 sm:py-3 3xl:py-[14px] text-sm 3xl:text-lg font-medium 3xl:font-semibold border border-teal2';
       default:
-        return 'px-4 py-2 text-base';
+        return 'px-2 sm:px-[14px] 3xl:px-[18px] py-1 sm:py-[6px] 3xl:py-[14px] text-[10px] text-xs 3xl:text-sm font-semibold border border-teal2'
     }
   }
 }

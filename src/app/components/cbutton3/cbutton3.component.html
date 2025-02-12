@@ -1,8 +1,3 @@
-<button [routerLink]="routerLink" class="diagonal-swipe relative overflow-hidden rounded-lg border cursor-pointer group">
-
-    <span class="absolute inset-0 transition-transform transform -translate-x-full -translate-y-full bg-yellow group-hover:translate-x-0 group-hover:translate-y-0 duration-500"></span>
-  
-    <span class="relative -z-10 font-senibold flex justify-between items-center text-base group-hover:text-white transition-all duration-400 ease-in-out">
-      {{ heading }}
-    </span>
-  </button>
+<button [routerLink]="routerLink" class="diagonal-swipe relative overflow-hidden rounded-md 3xl:rounded-lg border group {{ sizeClass }}">
+    <span class="relative -z-10 group-hover:text-white transition-all duration-300 ease-in-out">{{ heading }}</span>
+</button>
