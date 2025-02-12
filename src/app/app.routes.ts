@@ -2,7 +2,6 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { Page404Component } from './page404/page404.component';
-import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 export const routes: Routes = [
   {
@@ -27,11 +26,6 @@ export const routes: Routes = [
   {
     path: 'news_&_insights',
     loadChildren: () => import('./news_&_blogs/routes').then((m) => m.routes),
-  },
-  {
-    path: 'contactUs',
-    component: ContactUsComponent,
-    title: 'Contact Us',
   },
   {
     path: '404',
