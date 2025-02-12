@@ -5,11 +5,11 @@ import { Component, Input } from '@angular/core';
   selector: 'app-services-industry',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './services-industry.component.html'
+  templateUrl: './services-industry.component.html',
 })
 export class ServicesIndustryComponent {
-@Input() secTitle:string = '';
-@Input() secHeading:string = '';
-@Input() secDesc:string = '';
-@Input() cardData:any[] = [];
+  @Input() secTitle: string = '';
+  @Input() secHeading: string = '';
+  @Input() secDesc: string = '';
+  @Input() cardData: any[] = [];
 }

@@ -6,8 +6,6 @@ import { ServicesIntroComponent } from '../../components/services-intro/services
   selector: 'app-loopback-cards',
   standalone: true,
   imports: [ServicesHeroComponent, ServicesIntroComponent],
-  templateUrl: './loopback-cards.component.html'
+  templateUrl: './loopback-cards.component.html',
 })
-export class LoopbackCardsComponent {
-
-}
+export class LoopbackCardsComponent {}

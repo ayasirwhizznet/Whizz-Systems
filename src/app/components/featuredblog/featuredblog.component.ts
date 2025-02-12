@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { CommonModule} from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { NewsCardComponent } from '../news-card/news-card.component';
 import { BlogTagComponent } from '../blog-tag/blog-tag.component';
 
@@ -8,13 +8,13 @@ import { BlogTagComponent } from '../blog-tag/blog-tag.component';
   selector: 'app-featuredblog',
   standalone: true,
   imports: [RouterLink, CommonModule, NewsCardComponent, BlogTagComponent],
-  templateUrl: './featuredblog.component.html'
+  templateUrl: './featuredblog.component.html',
 })
 export class FeaturedblogComponent {
   @Input() date: string | null = null;
   @Input() blogTitle: string | null = null;
 
-  blogData:any[] = [
+  blogData: any[] = [
     {
       imgUrl: '../../../../assets/blogs/blogimg.png',
       date: 'July 9, 2024',
@@ -31,5 +31,4 @@ export class FeaturedblogComponent {
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
   ];
-
 }

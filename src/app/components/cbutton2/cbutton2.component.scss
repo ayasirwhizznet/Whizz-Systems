@@ -2,9 +2,8 @@
   position: relative;
   display: inline-block;
   overflow: hidden;
-  border: 1px solid #2C353A ;
-  background-color: #F8F8F8;
-  color: #2A494C;
+  border: 1px solid #2c353a;
+  color: #2a494c;
   cursor: pointer;
   transition: color 1s;
   z-index: 1;
@@ -17,14 +16,13 @@
 }
 
 .diagonal-swipe:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 0;
   height: 0;
   border-style: solid;
-  border-color: #2C353A transparent transparent transparent;
   transition: border-width 1s;
   z-index: 1;
 }
@@ -34,5 +32,20 @@
   z-index: -1;
 }
 
+.white-bg {
+  background-color: #f8f8f8;
+}
 
+.white-bg::after {
+  border-color: #2c353a transparent transparent transparent;
+}
 
+.teal-bg {
+  background-color: #7bd4cf;
+  border-color: #7bd4cf;
+  color: white;
+}
+
+.teal-bg::after {
+  border-color: #55c2bc transparent transparent transparent;
+}

@@ -1,17 +1,28 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { Router, NavigationEnd, NavigationStart, ActivatedRoute } from '@angular/router';
+import {
+  Router,
+  NavigationEnd,
+  NavigationStart,
+  ActivatedRoute,
+} from '@angular/router';
 import { RouterLink } from '@angular/router';
-import { CommonModule} from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { HeaderSectionComponent } from '../header-section/header-section.component';
 import { MobileHeaderComponent } from '../mobile_header/mobile_header.component';
 import { CbuttonComponent } from '../cbutton/cbutton.component';
-import { Cbutton3Component } from '../cbutton3/cbutton3.component';
-import { Cbutton4Component } from '../cbutton4/cbutton4.component';
+import { Cbutton2Component } from '../cbutton2/cbutton2.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, CommonModule, HeaderSectionComponent, MobileHeaderComponent, CbuttonComponent, Cbutton3Component,Cbutton4Component],
+  imports: [
+    RouterLink,
+    CommonModule,
+    HeaderSectionComponent,
+    MobileHeaderComponent,
+    CbuttonComponent,
+    Cbutton2Component,
+  ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
@@ -25,63 +36,136 @@ export class HeaderComponent implements OnInit {
   isAccordionOpen = false;
 
   menuItems = [
-    { label: 'About', link: '/about'},
+    { label: 'About', link: '/about' },
     { label: 'Services', dropdown: 'service' },
-    { label: 'Featured Products', link: '/featured-products'},
-    { label: 'Resources', dropdown: 'resources'},
+    { label: 'Featured Products', link: '/featured-products' },
+    { label: 'Resources', dropdown: 'resources' },
   ];
 
   serviceSections = [
     {
       title: 'Engineering & Design',
       items: [
-        { label: 'System Design/Schematics', link: '/services/engineering_&_design/system_design_&_schematics' },
+        {
+          label: 'System Design/Schematics',
+          link: '/services/engineering_&_design/system_design_&_schematics',
+        },
         { label: 'FPGA Design', link: '/services/engineering_&_design/fpga' },
-        { label: 'PCB Layout', link: '/services/engineering_&_design/pcb_layout' },
-        { label: '3D Modeling/Mechanical Engineering', link: '/services/engineering_&_design/3D_modeling' },
-        { label: 'Signal Integrity Simulations', link: '/services/engineering_&_design/signal_integrity_simulations' },
-        { label: 'Power Delivery Network Simulations', link: '/services/engineering_&_design/power_delivery' },
-        { label: 'Thermal Management/Thermal Simulation', link: '/services/engineering_&_design/thermal_management' },
+        {
+          label: 'PCB Layout',
+          link: '/services/engineering_&_design/pcb_layout',
+        },
+        {
+          label: '3D Modeling/Mechanical Engineering',
+          link: '/services/engineering_&_design/3D_modeling',
+        },
+        {
+          label: 'Signal Integrity Simulations',
+          link: '/services/engineering_&_design/signal_integrity_simulations',
+        },
+        {
+          label: 'Power Delivery Network Simulations',
+          link: '/services/engineering_&_design/power_delivery',
+        },
+        {
+          label: 'Thermal Management/Thermal Simulation',
+          link: '/services/engineering_&_design/thermal_management',
+        },
       ],
     },
     {
       title: 'NPI',
       link: '/services/npi',
       items: [
-        { label: 'System Level Architecture', link: '/services/npi', fragment: "SystemLevelArchitecture"},
-        { label: 'Engineering & Design', link: '/services/npi', fragment: "Engineering&Design"  },
-        { label: 'Prototyping', link: '/services/npi', fragment: "Prototyping"  },
-        { label: 'Testing', link: '/services/npi', fragment: "Testing"},
-        { label: 'Compliance and Certification', link: '/services/npi', fragment: "Compliance"  },
+        {
+          label: 'System Level Architecture',
+          link: '/services/npi',
+          fragment: 'SystemLevelArchitecture',
+        },
+        {
+          label: 'Engineering & Design',
+          link: '/services/npi',
+          fragment: 'Engineering&Design',
+        },
+        {
+          label: 'Prototyping',
+          link: '/services/npi',
+          fragment: 'Prototyping',
+        },
+        { label: 'Testing', link: '/services/npi', fragment: 'Testing' },
+        {
+          label: 'Compliance and Certification',
+          link: '/services/npi',
+          fragment: 'Compliance',
+        },
       ],
     },
     {
       title: 'Advanced Manufacturing',
       link: '/services/advanced_manufacturing',
       items: [
-        { label: 'Manufacturing Simulations', link: '/services/advanced_manufacturing' },
-        { label: 'Electronic Manufacturing Assembly', link: '/services/advanced_manufacturing' },
-        { label: 'Mechanical Assembly', link: '/services/advanced_manufacturing' },
-        { label: 'System Build & Packaging Design', link: '/services/advanced_manufacturing' },
-        { label: 'Local & Offshore Capabilities', link: '/services/advanced_manufacturing' },
+        {
+          label: 'Manufacturing Simulations',
+          link: '/services/advanced_manufacturing',
+        },
+        {
+          label: 'Electronic Manufacturing Assembly',
+          link: '/services/advanced_manufacturing',
+        },
+        {
+          label: 'Mechanical Assembly',
+          link: '/services/advanced_manufacturing',
+        },
+        {
+          label: 'System Build & Packaging Design',
+          link: '/services/advanced_manufacturing',
+        },
+        {
+          label: 'Local & Offshore Capabilities',
+          link: '/services/advanced_manufacturing',
+        },
       ],
     },
     {
       title: 'Lab Testing Solutions',
       link: '/services/lab_testing_solutions',
       items: [
-        { label: 'Board Bring Up', link: '/services/lab_testing_solutions', fragment: "BoardBringUp"},
-        { label: 'Validation', link: '/services/lab_testing_solutions', fragment: "Validation"},
-        { label: 'Characterization', link: '/services/lab_testing_solutions', fragment: "Characterization"},
+        {
+          label: 'Board Bring Up',
+          link: '/services/lab_testing_solutions',
+          fragment: 'BoardBringUp',
+        },
+        {
+          label: 'Validation',
+          link: '/services/lab_testing_solutions',
+          fragment: 'Validation',
+        },
+        {
+          label: 'Characterization',
+          link: '/services/lab_testing_solutions',
+          fragment: 'Characterization',
+        },
       ],
     },
     {
       title: 'Supply Chain Management',
       link: '/services/supply_chain_management',
       items: [
-        { label: 'Component Engineering', link: '/services/supply_chain_management', fragment: 'ComponentEngineering'},
-        { label: 'Compliance Engineering', link: '/services/supply_chain_management', fragment: 'ComplianceEngineering' },
-        { label: 'Procurement Engineering', link: '/services/supply_chain_management', fragment: 'ProcurementEngineering' },
+        {
+          label: 'Component Engineering',
+          link: '/services/supply_chain_management',
+          fragment: 'ComponentEngineering',
+        },
+        {
+          label: 'Compliance Engineering',
+          link: '/services/supply_chain_management',
+          fragment: 'ComplianceEngineering',
+        },
+        {
+          label: 'Procurement Engineering',
+          link: '/services/supply_chain_management',
+          fragment: 'ProcurementEngineering',
+        },
       ],
     },
     {
@@ -95,11 +179,13 @@ export class HeaderComponent implements OnInit {
     },
   ];
 
-
   featuredProductItems = [
     { label: '5G ORU Open Radio Unit', link: '/featured-products/5g-oru' },
     { label: 'Loopback Cards', link: '/featured-products/loopback-cards' },
-    { label: 'Xilinx Evaluation Kit', link: '/featured-products/xilinix-evaluation-kit' },
+    {
+      label: 'Xilinx Evaluation Kit',
+      link: '/featured-products/xilinix-evaluation-kit',
+    },
     { label: 'USB 3/2', link: '/featured-products/usb-3/2' },
   ];
 
@@ -123,7 +209,7 @@ export class HeaderComponent implements OnInit {
     { label: 'Compute', link: '/404' },
     { label: 'Network', link: '/404' },
   ];
-currentScroll: any;
+  currentScroll: any;
 
   constructor(private router: Router, private route: ActivatedRoute) {
     this.router.events.subscribe((event) => {
@@ -136,8 +222,8 @@ currentScroll: any;
   ngOnInit(): void {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.currentRoute = event.urlAfterRedirects;  
-        this.updateActiveMenuItem();  
+        this.currentRoute = event.urlAfterRedirects;
+        this.updateActiveMenuItem();
         this.activeBottomSection = '';
         this.activeMenuItem = '';
         this.isSearchbaropen = '';
@@ -200,7 +286,7 @@ currentScroll: any;
     } else {
       this.isHeaderVisible = true;
     }
-    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Avoid negative values
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     if (this.activeBottomSection) {
       this.closeMenu();
     }

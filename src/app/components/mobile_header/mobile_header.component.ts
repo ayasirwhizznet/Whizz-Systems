@@ -8,20 +8,19 @@ interface MenuItem {
   dropdown?: string;
   open?: boolean;
   fragment?: string;
-
 }
 
 interface ServiceSection {
   title: string;
   items: MenuItem[];
-  open?: boolean; 
+  open?: boolean;
 }
 
 @Component({
   selector: 'app-accordion',
   standalone: true,
   imports: [CommonModule, RouterLink],
-  templateUrl: './mobile_header.component.html'
+  templateUrl: './mobile_header.component.html',
 })
 export class MobileHeaderComponent {
   activeMenuItem: string | null = null;
@@ -40,57 +39,130 @@ export class MobileHeaderComponent {
     {
       title: 'Engineering & Design',
       items: [
-        { label: 'System Design/Schematics', link: '/services/engineering_&_design/system_design_&_schematics' },
+        {
+          label: 'System Design/Schematics',
+          link: '/services/engineering_&_design/system_design_&_schematics',
+        },
         { label: 'FPGA Design', link: '/services/engineering_&_design/fpga' },
-        { label: 'PCB Layout', link: '/services/engineering_&_design/pcb_layout' },
-        { label: '3D Modeling/Mechanical Engineering', link: '/services/engineering_&_design/3D_modeling' },
-        { label: 'Signal Integrity Simulations', link: '/services/engineering_&_design/signal_integrity_simulations' },
-        { label: 'Power Delivery Network Simulations', link: '/services/engineering_&_design/power_delivery' },
-        { label: 'Thermal Management/Thermal Simulation', link: '/services/engineering_&_design/thermal_management' },
+        {
+          label: 'PCB Layout',
+          link: '/services/engineering_&_design/pcb_layout',
+        },
+        {
+          label: '3D Modeling/Mechanical Engineering',
+          link: '/services/engineering_&_design/3D_modeling',
+        },
+        {
+          label: 'Signal Integrity Simulations',
+          link: '/services/engineering_&_design/signal_integrity_simulations',
+        },
+        {
+          label: 'Power Delivery Network Simulations',
+          link: '/services/engineering_&_design/power_delivery',
+        },
+        {
+          label: 'Thermal Management/Thermal Simulation',
+          link: '/services/engineering_&_design/thermal_management',
+        },
       ],
-      open: false
+      open: false,
     },
     {
       title: 'NPI',
       items: [
-        { label: 'System Level Architecture', link: '/services/npi', fragment: "SystemLevelArchitecture" },
-        { label: 'Engineering & Design', link: '/services/npi', fragment: "Engineering&Design"  },
-        { label: 'Prototyping', link: '/services/npi', fragment: "Prototyping"  },
-        { label: 'Testing', link: '/services/npi', fragment: "Testing"  },
-        { label: 'Compliance and Certification', link: '/services/npi', fragment: "Compliance"  },
+        {
+          label: 'System Level Architecture',
+          link: '/services/npi',
+          fragment: 'SystemLevelArchitecture',
+        },
+        {
+          label: 'Engineering & Design',
+          link: '/services/npi',
+          fragment: 'Engineering&Design',
+        },
+        {
+          label: 'Prototyping',
+          link: '/services/npi',
+          fragment: 'Prototyping',
+        },
+        { label: 'Testing', link: '/services/npi', fragment: 'Testing' },
+        {
+          label: 'Compliance and Certification',
+          link: '/services/npi',
+          fragment: 'Compliance',
+        },
       ],
-      open: false
+      open: false,
     },
     {
       title: 'Advanced Manufacturing',
       items: [
-        { label: 'Manufacturing Simulations', link: '/services/advanced_manufacturing' },
-        { label: 'Electronic Manufacturing Assembly', link: '/services/advanced_manufacturing' },
-        { label: 'Mechanical Assembly', link: '/services/advanced_manufacturing' },
-        { label: 'System Build & Packaging Design', link: '/services/advanced_manufacturing' },
-        { label: 'Local & Offshore Capabilities', link: '/services/advanced_manufacturing' },
+        {
+          label: 'Manufacturing Simulations',
+          link: '/services/advanced_manufacturing',
+        },
+        {
+          label: 'Electronic Manufacturing Assembly',
+          link: '/services/advanced_manufacturing',
+        },
+        {
+          label: 'Mechanical Assembly',
+          link: '/services/advanced_manufacturing',
+        },
+        {
+          label: 'System Build & Packaging Design',
+          link: '/services/advanced_manufacturing',
+        },
+        {
+          label: 'Local & Offshore Capabilities',
+          link: '/services/advanced_manufacturing',
+        },
       ],
-      open: false // Track the open state for each service section
+      open: false, // Track the open state for each service section
     },
     {
       title: 'Lab Testing Solutions',
       items: [
-        { label: 'Board Bring Up', link: '/services/lab_testing_solutions', fragment: "BoardBringUp"},
-        { label: 'Validation', link: '/services/lab_testing_solutions', fragment: "Validation"},
-        { label: 'Characterization', link: '/services/lab_testing_solutions', fragment: "Characterization"},
+        {
+          label: 'Board Bring Up',
+          link: '/services/lab_testing_solutions',
+          fragment: 'BoardBringUp',
+        },
+        {
+          label: 'Validation',
+          link: '/services/lab_testing_solutions',
+          fragment: 'Validation',
+        },
+        {
+          label: 'Characterization',
+          link: '/services/lab_testing_solutions',
+          fragment: 'Characterization',
+        },
       ],
-      open: false // Track the open state for each service section
+      open: false, // Track the open state for each service section
     },
     {
       title: 'Supply Chain Management',
       items: [
-        { label: 'Component Engineering', link: '/services/supply_chain_management', fragment: 'ComponentEngineering'},
-        { label: 'Compliance Engineering', link: '/services/supply_chain_management', fragment: 'ComplianceEngineering' },
-        { label: 'Procurement Engineering', link: '/services/supply_chain_management', fragment: 'ProcurementEngineering' },
+        {
+          label: 'Component Engineering',
+          link: '/services/supply_chain_management',
+          fragment: 'ComponentEngineering',
+        },
+        {
+          label: 'Compliance Engineering',
+          link: '/services/supply_chain_management',
+          fragment: 'ComplianceEngineering',
+        },
+        {
+          label: 'Procurement Engineering',
+          link: '/services/supply_chain_management',
+          fragment: 'ProcurementEngineering',
+        },
       ],
-      open: false // Track the open state for each service section
+      open: false, // Track the open state for each service section
     },
-    
+
     {
       title: 'Sustainable Engineering & Obsolescence Management',
       items: [
@@ -99,14 +171,17 @@ export class MobileHeaderComponent {
         { label: 'AVL Management', link: '/404' },
         { label: 'Second Sourcing / Risk Buying', link: '/404' },
       ],
-      open: false // Track the open state for each service section
+      open: false, // Track the open state for each service section
     },
   ];
 
   featuredProductItems: MenuItem[] = [
     { label: '5G ORU Open Radio Unit', link: '/featured-products/5g-oru' },
     { label: 'Loopback Cards', link: '/featured-products/loopback-cards' },
-    { label: 'Xilinx Evaluation Kit', link: '/featured-products/xilinix-evaluation-kit' },
+    {
+      label: 'Xilinx Evaluation Kit',
+      link: '/featured-products/xilinix-evaluation-kit',
+    },
     { label: 'USB 3/2', link: '/featured-products/usb-3/2' },
   ];
 
@@ -119,24 +194,23 @@ export class MobileHeaderComponent {
 
   toggleMenuSection(item: MenuItem) {
     // Loop through all menu items and close all except the clicked one
-    this.menuItems.forEach(i => {
-      i.open = (i === item) ? !i.open : false;  // Toggle the clicked item and close others
+    this.menuItems.forEach((i) => {
+      i.open = i === item ? !i.open : false; // Toggle the clicked item and close others
     });
   }
-  
+
   toggleSection(section: ServiceSection) {
     // If the section is already open, close it
     if (section.open) {
       section.open = false;
     } else {
       // Close all other sections
-      this.serviceSections.forEach(s => {
+      this.serviceSections.forEach((s) => {
         s.open = false; // Close all other sections
       });
       section.open = true; // Open the selected section
     }
   }
-  
 
   // Your existing properties and methods...
 

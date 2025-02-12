@@ -10,7 +10,6 @@ import { CbuttonComponent } from '../cbutton/cbutton.component';
   standalone: true,
   imports: [NewsCardComponent, CommonModule, RouterLink, CbuttonComponent],
   templateUrl: './news.component.html',
-  styleUrl: './news.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class NewsComponent {

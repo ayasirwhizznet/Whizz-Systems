@@ -1,14 +1,13 @@
 <div *ngIf="layout">
-    <app-header></app-header>
-  </div>
-  
-  <div class="lg:pt-[7.5rem] 3xl:pt-[9.8rem]">
-    <router-outlet ></router-outlet>
+  <app-header></app-header>
 </div>
 
+<div class="lg:pt-[7.5rem] 3xl:pt-[9.8rem]">
   <router-outlet></router-outlet>
-  
-  <div *ngIf="layout">
-    <app-footer></app-footer>
-  </div>
-  
+</div>
+
+<router-outlet></router-outlet>
+
+<div *ngIf="layout">
+  <app-footer></app-footer>
+</div>

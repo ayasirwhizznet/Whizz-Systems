@@ -1,15 +1,17 @@
 <div *ngIf="menuSectionVisible" class="bg-white px-[3%] fixed left-0 right-0 h-full z-30 overflow-y-scroll">
   <div *ngFor="let item of menuItems" class="mb-4">
     <!-- Menu Bar -->
-    <div (click)="toggleMenuSection(item)" class="flex items-center cursor-pointer transition-all duration-300 ease-in-out">
+    <div (click)="toggleMenuSection(item)"
+      class="flex items-center cursor-pointer transition-all duration-300 ease-in-out">
       <!-- Only apply routerLink if item has a link -->
       <a *ngIf="item.link" [routerLink]="item.link" class="text-2xl transition-all duration-300 ease-in-out"
-        [ngClass]="{'text-teal1': item.open, 'text-dark-gray1 hover:text-teal1': !item.open}" (click)="closeMenuSection()">
+        [ngClass]="{'text-teal1': item.open, 'text-dark-gray1 hover:text-teal1': !item.open}"
+        (click)="closeMenuSection()">
         {{ item.label }}
       </a>
       <!-- For dropdown items, no link, just toggle open state -->
       <div *ngIf="!item.link" class="text-2xl cursor-pointer transition-all duration-300 ease-in-out"
-        [ngClass]="{'text-teal1': item.open, 'text-dark-gray1 hover:text-teal1': !item.open}" >
+        [ngClass]="{'text-teal1': item.open, 'text-dark-gray1 hover:text-teal1': !item.open}">
         {{ item.label }}
       </div>
 
@@ -30,8 +32,10 @@
       <ng-container *ngIf="item.dropdown === 'service'">
         <div *ngFor="let section of serviceSections" class="mb-4">
           <div (click)="toggleSection(section)" class="flex items-center cursor-pointer">
-            <a *ngIf="section.items.length > 0" [routerLink]="section.items[0].link" class="text-xl transition-all duration-300 ease-in-out"
-              [ngClass]="{'text-teal1': section.open, 'text-dark-gray1 hover:text-teal1': !section.open}" (click)="closeMenuSection()">
+            <a *ngIf="section.items.length > 0" [routerLink]="section.items[0].link"
+              class="text-xl transition-all duration-300 ease-in-out"
+              [ngClass]="{'text-teal1': section.open, 'text-dark-gray1 hover:text-teal1': !section.open}"
+              (click)="closeMenuSection()">
               {{ section.title }}
             </a>
             <span class="ml-auto text-xl">

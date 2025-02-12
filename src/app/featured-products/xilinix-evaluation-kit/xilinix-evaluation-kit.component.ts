@@ -6,8 +6,6 @@ import { ServicesIntroComponent } from '../../components/services-intro/services
   selector: 'app-xilinix-evaluation-kit',
   standalone: true,
   imports: [ServicesHeroComponent, ServicesIntroComponent],
-  templateUrl: './xilinix-evaluation-kit.component.html'
+  templateUrl: './xilinix-evaluation-kit.component.html',
 })
-export class XilinixEvaluationKitComponent {
-
-}
+export class XilinixEvaluationKitComponent {}

@@ -1,14 +1,21 @@
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
     <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[19.2px] mb-3 3xl:mb-4">{{secTitle}}</h4>
-    <h3 class="{{secHeadingMargin}}" class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px]">{{secHeading}}</h3>
-    <p *ngIf="secDesc" class="text-dark-gray2 font-light text-sm 3xl:text-base leading-[24px] 3xl:leading-[28.8px] mb-6 3xl:mb-8">{{secDesc}}</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-x-12 lg:gap-x-[108px] 3xl:gap-x-[132px] sm:gap-y-8 lg:gap-y-12 3xl:gap-y-16">
+    <h3 class="{{secHeadingMargin}}"
+        class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px]">{{secHeading}}</h3>
+    <p *ngIf="secDesc"
+        class="text-dark-gray2 font-light text-sm 3xl:text-base leading-[24px] 3xl:leading-[28.8px] mb-6 3xl:mb-8">
+        {{secDesc}}</p>
+    <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-x-12 lg:gap-x-[108px] 3xl:gap-x-[132px] sm:gap-y-8 lg:gap-y-12 3xl:gap-y-16">
         <div *ngFor="let card of cardData">
             <div class="p-6 3xl:p-8 bg-card-gray border border-light-gray1 rounded-lg">
                 <img class="rounded-lg" [src]="card.imgUrl" alt="img">
                 <div class="h-[10rem] sm:h-[13rem] lg:h-[9.5rem] 3xl:h-[9.5rem]">
-                    <h3 class="font-bold mt-6 3xl:mt-8 mb-4 3xl:mb-5 text-base lg:text-xs 3xl:text-base leading-[22.4px]">{{card.title}}</h3>
-                    <p class="font-light text-base lg:text-xs 3xl:text-base lg:leading-[20px] 3xl:leading-[24px]">{{card.desc}}</p>
+                    <h3
+                        class="font-bold mt-6 3xl:mt-8 mb-4 3xl:mb-5 text-base lg:text-xs 3xl:text-base leading-[22.4px]">
+                        {{card.title}}</h3>
+                    <p class="font-light text-base lg:text-xs 3xl:text-base lg:leading-[20px] 3xl:leading-[24px]">
+                        {{card.desc}}</p>
                 </div>
             </div>
         </div>

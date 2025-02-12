@@ -5,8 +5,6 @@ import { CbuttonComponent } from '../cbutton/cbutton.component';
   selector: 'app-hero',
   standalone: true,
   imports: [CbuttonComponent],
-  templateUrl: './hero.component.html'
+  templateUrl: './hero.component.html',
 })
-export class HeroComponent {
-
-}
+export class HeroComponent {}

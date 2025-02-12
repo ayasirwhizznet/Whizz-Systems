@@ -1,30 +1,31 @@
-import { NgIf } from '@angular/common';
+import { CommonModule, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cbutton2',
   standalone: true,
-  imports: [NgIf, RouterLink],
+  imports: [NgIf, RouterLink, CommonModule],
   templateUrl: './cbutton2.component.html',
-  styleUrls: ['./cbutton2.component.scss']
+  styleUrls: ['./cbutton2.component.scss'],
 })
 export class Cbutton2Component {
   @Input() routerLink!: string;
   @Input() heading: string = '';
-  @Input() icon: string | null = null;
+  @Input() icon: boolean = false;
   @Input() size: 'small' | 'medium' | 'large' = 'small';
+  @Input() bg!: string;
 
   get sizeClass(): string {
     switch (this.size) {
       case 'small':
         return 'px-2 sm:px-[14px] 3xl:px-[18px] py-1 sm:py-[6px] 3xl:py-[14px] text-[10px] text-xs 3xl:text-sm font-semibold border border-teal2';
       case 'medium':
-        return 'px-2 sm:px-[14px] 3xl:px-[18px] py-[6px] sm:py-[10px] 3xl:py-[14px] text-sm 3xl:text-base font-medium 3xl:font-semibold border border-teal2'
+        return 'px-2 sm:px-[14px] 3xl:px-[18px] py-[6px] sm:py-[10px] 3xl:py-[14px] text-sm 3xl:text-base font-medium 3xl:font-semibold border border-teal2';
       case 'large':
         return 'px-2 sm:px-[14px] 3xl:px-[18px] py-2 sm:py-3 3xl:py-[14px] text-sm 3xl:text-lg font-medium 3xl:font-semibold border border-teal2';
       default:
-        return 'px-2 sm:px-[14px] 3xl:px-[18px] py-1 sm:py-[6px] 3xl:py-[14px] text-[10px] text-xs 3xl:text-sm font-semibold border border-teal2'
+        return 'px-2 sm:px-[14px] 3xl:px-[18px] py-1 sm:py-[6px] 3xl:py-[14px] text-[10px] text-xs 3xl:text-sm font-semibold border border-teal2';
     }
   }
 }

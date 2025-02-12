@@ -5,7 +5,7 @@ import { CbuttonComponent } from '../cbutton/cbutton.component';
   selector: 'app-services-hero',
   standalone: true,
   imports: [CbuttonComponent],
-  templateUrl: './services-hero.component.html'
+  templateUrl: './services-hero.component.html',
 })
 export class ServicesHeroComponent {
   @Input() category: string = '';

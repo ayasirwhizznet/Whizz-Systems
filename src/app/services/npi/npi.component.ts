@@ -1,5 +1,10 @@
 import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
-import { ActivatedRoute, Router, NavigationEnd, RouterLink } from '@angular/router';
+import {
+  ActivatedRoute,
+  Router,
+  NavigationEnd,
+  RouterLink,
+} from '@angular/router';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { CommonModule } from '@angular/common';
@@ -9,11 +14,16 @@ import { ServicesCaseStudyComponent } from '../../components/services-case-study
 @Component({
   selector: 'app-npi',
   standalone: true,
-  imports: [CommonModule, RouterLink, ServicesHeroComponent, ServicesIntroComponent, ServicesCaseStudyComponent],
-  templateUrl: './npi.component.html'
+  imports: [
+    CommonModule,
+    RouterLink,
+    ServicesHeroComponent,
+    ServicesIntroComponent,
+    ServicesCaseStudyComponent,
+  ],
+  templateUrl: './npi.component.html',
 })
 export class NpiComponent implements OnInit, OnDestroy {
-
   npiTab = [
     { title: 'System Level Architecture' },
     { title: 'Engineering & Design' },
@@ -22,39 +32,56 @@ export class NpiComponent implements OnInit, OnDestroy {
     { title: 'Compliance' },
   ];
 
-  enggandDesign =
-    {
-      title: "Engineering and Design",
-     items: [
-        { label: 'System Design/Schematics', link: '/services/engineering_&_design/system_design_&_schematics' },
-        { label: 'FPGA Design', link: '/services/engineering_&_design/fpga' },
-        { label: 'PCB Layout', link: '/services/engineering_&_design/pcb_layout' },
-        { label: '3D Modeling/Mechanical Engineering', link: '/services/engineering_&_design/3D_modeling' },
-        { label: 'Signal Integrity Simulations', link: '/services/engineering_&_design/signal_integrity_simulations' },
-        { label: 'Power Delivery Network Simulations', link: '/services/engineering_&_design/power_delivery' },
-        { label: 'Thermal Management/Thermal Simulation', link: '/services/engineering_&_design/thermal_management' },
-      ],
-    };
+  enggandDesign = {
+    title: 'Engineering and Design',
+    items: [
+      {
+        label: 'System Design/Schematics',
+        link: '/services/engineering_&_design/system_design_&_schematics',
+      },
+      { label: 'FPGA Design', link: '/services/engineering_&_design/fpga' },
+      {
+        label: 'PCB Layout',
+        link: '/services/engineering_&_design/pcb_layout',
+      },
+      {
+        label: '3D Modeling/Mechanical Engineering',
+        link: '/services/engineering_&_design/3D_modeling',
+      },
+      {
+        label: 'Signal Integrity Simulations',
+        link: '/services/engineering_&_design/signal_integrity_simulations',
+      },
+      {
+        label: 'Power Delivery Network Simulations',
+        link: '/services/engineering_&_design/power_delivery',
+      },
+      {
+        label: 'Thermal Management/Thermal Simulation',
+        link: '/services/engineering_&_design/thermal_management',
+      },
+    ],
+  };
 
-    isSticky: boolean = true;
-    lastScrollTop: number = 0;
-  
-    @HostListener('window:scroll', [])
-    onScroll(): void {
-      const currentScroll = window.scrollY;
-  
-      if (currentScroll > this.lastScrollTop) {
-        this.isSticky = false;
-      } else {
-        this.isSticky = true;
-      }
-      this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  isSticky: boolean = true;
+  lastScrollTop: number = 0;
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > this.lastScrollTop) {
+      this.isSticky = false;
+    } else {
+      this.isSticky = true;
     }
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  }
 
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   private currentFragment: string | null = null;
-  constructor(private route: ActivatedRoute, private router: Router) { }
+  constructor(private route: ActivatedRoute, private router: Router) {}
   ngOnInit(): void {
     this.fragmentSubscription = this.route.fragment.subscribe((fragment) => {
       if (fragment) {

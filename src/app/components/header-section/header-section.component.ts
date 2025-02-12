@@ -7,10 +7,9 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './header-section.component.html',
-  styleUrl: './header-section.component.scss'
 })
 export class HeaderSectionComponent {
   @Input() sections: any[] = [];
-  
-  constructor() { }
+
+  constructor() {}
 }

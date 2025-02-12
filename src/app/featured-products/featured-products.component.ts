@@ -6,7 +6,7 @@ import { Router, RouterModule } from '@angular/router';
   selector: 'app-featured-products',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './featured-products.component.html'
+  templateUrl: './featured-products.component.html',
 })
 export class FeaturedProductsComponent {
   constructor(private router: Router) {}

@@ -4,8 +4,6 @@ import { RouterLink } from '@angular/router';
   selector: 'app-page404',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './page404.component.html'
+  templateUrl: './page404.component.html',
 })
-export class Page404Component {
-
-}
+export class Page404Component {}

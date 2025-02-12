@@ -4,15 +4,17 @@
     <div class="w-full lg:w-[44%] 3xl:w-[43%] text-white">
       <h1
         class="text-3xl lg:text-[46px] 3xl:text-[56px] lg:leading-[56px] 3xl:leading-[67.2px] font-bold mb-4 3xl:mb-6">
-        Featured Products</h1>
-      <p class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light text-light-gray1">Lorem ipsum
-        dolor sit amet.</p>
+        Featured Products
+      </h1>
+      <p class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light text-light-gray1">
+        Lorem ipsum dolor sit amet.
+      </p>
     </div>
     <div class="hidden lg:block lg:w-[56%] 3xl:w-[57%] relative">
       <video
         class="absolute inset-0 w-full h-full object-cover z-0 rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-lg"
         loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
-        <source src="../../assets/hero/waves1.mp4" type="video/mp4">
+        <source src="../../assets/hero/waves1.mp4" type="video/mp4" />
       </video>
       <div
         class="absolute inset-0 bg-[#00a99f] opacity-80 z-10 rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-lg">
@@ -23,7 +25,7 @@
 </section>
 
 <!-- Navbar -->
-<section [ngClass]="{ 'top-[13%] z-20': isSticky, 'z-30': !isSticky}"
+<section [ngClass]="{ 'top-[13%] z-20': isSticky, 'z-30': !isSticky }"
   class="hidden lg:flex justify-center gap-3 3xl:gap-4 px-[7.8%] lg:py-8 3xl:py-16 bg-white sticky top-0 transition-all duration-300 ease-in-out">
   <div>
     <h4 class="text-sm 3xl:text-base text-dark-gray2 font-semibold mb-3 3xl:mb-4">
@@ -33,7 +35,7 @@
       class="flex justify-center items-center gap-3 3xl:gap-4 border border-light-gray1 p-3 3xl:p-4 rounded-md 3xl:rounded-lg">
       <a *ngFor="let category of boards" (click)="scrollToFragment(category.title)"
         class="h-[70px] 3xl:h-[88px] w-[190px] 3xl:w-[247px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">
-        {{category.title}}
+        {{ category.title }}
       </a>
     </div>
   </div>
@@ -45,7 +47,7 @@
       class="flex justify-center items-center gap-3 3xl:gap-4 border border-light-gray1 p-3 3xl:p-4 rounded-md 3xl:rounded-lg">
       <a *ngFor="let category of miscellaneous" (click)="scrollToFragment(category.title)"
         class="h-[70px] 3xl:h-[88px] w-[190px] 3xl:w-[247px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">
-        {{category.title}}
+        {{ category.title }}
       </a>
     </div>
   </div>
@@ -55,10 +57,13 @@
   <h2
     class="text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[40px] 3xl:leading-[57.6px] text-white text-center mb-3 3xl:mb-4"
     id="Boards & Kit Accessories">
-    Boards & Kit Accessories</h2>
-  <h3 class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white text-center mb-6 3xl:mb-8" id="Evaluations Kit">Evaluations Kit</h3>
+    Boards & Kit Accessories
+  </h2>
+  <h3 class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white text-center mb-6 3xl:mb-8" id="Evaluations Kit">
+    Evaluations Kit
+  </h3>
   <div class="w-full h-full grid gap-6 3xl:gap-8 px-[9.3%] grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-    <a *ngFor="let product of  evaluationKit let j = index;" [routerLink]="[product.link]"
+    <a *ngFor="let product of evaluationKit; let j = index" [routerLink]="[product.link]"
       class="h-[80%] cursor-pointer relative flex flex-col items-center gap-3 3xl:gap-4 overflow-y-scroll no-scrollbar group">
       <div
         class="absolute inset-0 bg-lines3 bg-contain bg-no-repeat bg-[0%_11%] opacity-100 group-hover:opacity-0 translate-x-0 group-hover:translate-x-10 transition-all duration-700 ease-in-out">
@@ -75,19 +80,22 @@
         </div>
         <h4
           class="text-left text-base 3xl:text-xl font-bold text-dark-gray2 group-hover:text-white transition-all duration-700 ease-in-out">
-          {{ product.name }}</h4>
+          {{ product.name }}
+        </h4>
       </div>
       <div
         class="w-full flex items-center justify-between text-dark-gray1 text-sm 3xl:text-base bg-teal2 p-3 3xl:p-4 rounded-md 3xl:rounded-lg group-hover:translate-y-0 translate-y-1 transition-all duration-700 ease-in-out">
         <span class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold">Read more</span>
-        <img class="object-cover w-4 3xl:w-6" src="../../assets/featured-products/icon.png" alt="img">
+        <img class="object-cover w-4 3xl:w-6" src="../../assets/featured-products/icon.png" alt="img" />
       </div>
     </a>
   </div>
 
-  <h3 class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white text-center mb-6 3xl:mb-8" id="Connectivity Kits">Connectivity Kits</h3>
+  <h3 class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white text-center mb-6 3xl:mb-8" id="Connectivity Kits">
+    Connectivity Kits
+  </h3>
   <div class="w-full h-full grid gap-6 3xl:gap-8 px-[9.3%] lg:px-[30%] grid-cols-1 sm:grid-cols-2">
-    <a *ngFor="let product of  connectivityKit let j = index;" [routerLink]="[product.link]"
+    <a *ngFor="let product of connectivityKit; let j = index" [routerLink]="[product.link]"
       class="h-[80%] cursor-pointer relative flex flex-col items-center gap-3 3xl:gap-4 overflow-y-scroll no-scrollbar group">
       <div
         class="absolute inset-0 bg-lines3 bg-contain bg-no-repeat bg-[0%_11%] opacity-100 group-hover:opacity-0 translate-x-0 group-hover:translate-x-10 transition-all duration-700 ease-in-out">
@@ -104,19 +112,22 @@
         </div>
         <h4
           class="text-left text-base 3xl:text-xl font-bold text-dark-gray2 group-hover:text-white transition-all duration-700 ease-in-out">
-          {{ product.name }}</h4>
+          {{ product.name }}
+        </h4>
       </div>
       <div
         class="w-full flex items-center justify-between text-dark-gray1 text-sm 3xl:text-base bg-teal2 p-3 3xl:p-4 rounded-md 3xl:rounded-lg group-hover:translate-y-0 translate-y-1 transition-all duration-700 ease-in-out">
         <span class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold">Read more</span>
-        <img class="object-cover w-4 3xl:w-6" src="../../assets/featured-products/icon.png" alt="img">
+        <img class="object-cover w-4 3xl:w-6" src="../../assets/featured-products/icon.png" alt="img" />
       </div>
     </a>
   </div>
 
-  <h3 class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white text-center mb-6 3xl:mb-8" id="Characterization Kits">Characterization Kits</h3>
+  <h3 class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white text-center mb-6 3xl:mb-8" id="Characterization Kits">
+    Characterization Kits
+  </h3>
   <div class="w-full h-full grid gap-6 3xl:gap-8 px-[9.3%] lg:px-[30%] grid-cols-1 sm:grid-cols-2">
-    <a *ngFor="let product of  characterizationKit let j = index;" [routerLink]="[product.link]"
+    <a *ngFor="let product of characterizationKit; let j = index" [routerLink]="[product.link]"
       class="h-[80%] cursor-pointer relative flex flex-col items-center gap-3 3xl:gap-4 overflow-y-scroll no-scrollbar group">
       <div
         class="absolute inset-0 bg-lines3 bg-contain bg-no-repeat bg-[0%_11%] opacity-100 group-hover:opacity-0 translate-x-0 group-hover:translate-x-10 transition-all duration-700 ease-in-out">
@@ -133,23 +144,27 @@
         </div>
         <h4
           class="text-left text-base 3xl:text-xl font-bold text-dark-gray2 group-hover:text-white transition-all duration-700 ease-in-out">
-          {{ product.name }}</h4>
+          {{ product.name }}
+        </h4>
       </div>
       <div
         class="w-full flex items-center justify-between text-dark-gray1 text-sm 3xl:text-base bg-teal2 p-3 3xl:p-4 rounded-md 3xl:rounded-lg group-hover:translate-y-0 translate-y-1 transition-all duration-700 ease-in-out">
         <span class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold">Read more</span>
-        <img class="object-cover w-4 3xl:w-6" src="../../assets/featured-products/icon.png" alt="img">
+        <img class="object-cover w-4 3xl:w-6" src="../../assets/featured-products/icon.png" alt="img" />
       </div>
     </a>
   </div>
 
-  <h3 class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white text-center mb-6 3xl:mb-8" id="Kit Accessories">Kit
-    Accessories</h3>
+  <h3 class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white text-center mb-6 3xl:mb-8" id="Kit Accessories">
+    Kit Accessories
+  </h3>
   <div class="w-full h-full grid gap-6 3xl:gap-8 px-[9.3%] lg:px-[20%] grid-cols-12">
-    <a *ngFor="let product of  kitAccessories let i = index;" [routerLink]="[product.link]"
+    <a *ngFor="let product of kitAccessories; let i = index" [routerLink]="[product.link]"
       class="h-[80%] cursor-pointer relative flex flex-col items-center gap-3 3xl:gap-4 overflow-y-scroll no-scrollbar group col-span-12 sm:col-span-6 lg:col-span-4"
-      [ngClass]="{'sm:col-span-12 sm:w-1/2 lg:col-span-6  lg:w-2/3 sm:mx-auto lg:ml-auto':i === 4}"
-      [ngClass]="{'lg:col-span-6 lg:w-2/3 lg:ml-auto': i === 3}">
+      [ngClass]="{
+        'sm:col-span-12 sm:w-1/2 lg:col-span-6  lg:w-2/3 sm:mx-auto lg:ml-auto':
+          i === 4
+      }" [ngClass]="{ 'lg:col-span-6 lg:w-2/3 lg:ml-auto': i === 3 }">
       <div
         class="absolute inset-0 bg-lines3 bg-contain bg-no-repeat bg-[0%_11%] opacity-100 group-hover:opacity-0 translate-x-0 group-hover:translate-x-10 transition-all duration-700 ease-in-out">
       </div>
@@ -165,25 +180,27 @@
         </div>
         <h4
           class="text-left text-base 3xl:text-xl font-bold text-dark-gray2 group-hover:text-white transition-all duration-700 ease-in-out">
-          {{ product.name }}</h4>
+          {{ product.name }}
+        </h4>
       </div>
       <div
         class="w-full flex items-center justify-between text-dark-gray1 text-sm 3xl:text-base bg-teal2 p-3 3xl:p-4 rounded-md 3xl:rounded-lg group-hover:translate-y-0 translate-y-1 transition-all duration-700 ease-in-out">
         <span class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold">Read more</span>
-        <img class="object-cover w-4 3xl:w-6" src="../../assets/featured-products/icon.png" alt="img">
+        <img class="object-cover w-4 3xl:w-6" src="../../assets/featured-products/icon.png" alt="img" />
       </div>
     </a>
   </div>
-
 </section>
 
 <section class="py-8 lg:py-12 3xl:py-16 px-[9.3%] sm:px-[16%] lg:px-[30%]">
   <h2
     class="text-dark-gray2 text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[40px] 3xl:leading-[57.6px] text-center mb-6 3xl:mb-8">
-    Miscellaneous</h2>
+    Miscellaneous
+  </h2>
   <div class="w-full h-full grid grid-cols-1 sm:grid-cols-2 gap-6 3xl:gap-8">
-    <div *ngFor="let product of miscellaneous let j = index;" id="{{product.title}}">
-      <h3 class="text-dark-gray2 text-3xl 3xl:text-4xl 3xl:leading-[48px] text-center mb-6 3xl:mb-8">{{ product.title }}
+    <div *ngFor="let product of miscellaneous; let j = index" id="{{ product.title }}">
+      <h3 class="text-dark-gray2 text-3xl 3xl:text-4xl 3xl:leading-[48px] text-center mb-6 3xl:mb-8">
+        {{ product.title }}
       </h3>
       <a [routerLink]="[product.link]" [fragment]="product.fragment"
         class="h-[70%] cursor-pointer relative flex flex-col items-center gap-3 3xl:gap-4 overflow-y-scroll no-scrollbar group">
@@ -202,12 +219,13 @@
           </div>
           <h4
             class="text-left text-base 3xl:text-xl font-bold text-dark-gray2 group-hover:text-white transition-all duration-700 ease-in-out">
-            {{ product.name }}</h4>
+            {{ product.name }}
+          </h4>
         </div>
         <div
           class="w-full flex items-center justify-between text-dark-gray1 text-sm 3xl:text-base bg-teal2 p-3 3xl:p-4 rounded-md 3xl:rounded-lg group-hover:translate-y-0 translate-y-1 transition-all duration-700 ease-in-out">
           <span class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold">Read more</span>
-          <img class="object-cover w-4 3xl:w-6" src="../../assets/featured-products/icon.png" alt="img">
+          <img class="object-cover w-4 3xl:w-6" src="../../assets/featured-products/icon.png" alt="img" />
         </div>
       </a>
     </div>

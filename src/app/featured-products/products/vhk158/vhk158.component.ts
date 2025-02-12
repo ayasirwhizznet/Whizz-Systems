@@ -7,7 +7,6 @@ import { CommonModule, NgFor } from '@angular/common';
   standalone: true,
   imports: [CbuttonComponent, CommonModule, NgFor],
   templateUrl: './vhk158.component.html',
-  styleUrl: './vhk158.component.scss',
 })
 export class VHK158Component {
   keyFeatures = {

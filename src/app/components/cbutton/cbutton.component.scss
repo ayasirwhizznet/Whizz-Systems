@@ -1,26 +1,26 @@
 .diagonal-swipe {
-    background-color: #f8f8f8;
-    color: #2A494C;
-    transition: color 1s;
-    z-index: 1;
-  }
-  .diagonal-swipe span {
-    position: relative;
-    z-index: 2;
-  }
-  .diagonal-swipe:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: #7BD4CF transparent transparent transparent;
-    transition: border-width 1s;
-    z-index: 1;
-  }
-  .diagonal-swipe:hover:after {
-    border-width: 450px 450px 0 0;
-    z-index: -1;
-  }
+  background-color: #f8f8f8;
+  color: #2a494c;
+  transition: color 1s;
+  z-index: 1;
+}
+.diagonal-swipe span {
+  position: relative;
+  z-index: 2;
+}
+.diagonal-swipe:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #7bd4cf transparent transparent transparent;
+  transition: border-width 1s;
+  z-index: 1;
+}
+.diagonal-swipe:hover:after {
+  border-width: 450px 450px 0 0;
+  z-index: -1;
+}

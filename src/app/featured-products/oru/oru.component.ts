@@ -6,8 +6,6 @@ import { ServicesIntroComponent } from '../../components/services-intro/services
   selector: 'app-oru',
   standalone: true,
   imports: [ServicesHeroComponent, ServicesIntroComponent],
-  templateUrl: './oru.component.html'
+  templateUrl: './oru.component.html',
 })
-export class OruComponent {
-
-}
+export class OruComponent {}

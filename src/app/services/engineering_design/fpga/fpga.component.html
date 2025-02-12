@@ -48,17 +48,20 @@
 <!-- Core Services -->
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
   <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[19.2px] mb-3 3xl:mb-4">Core Services Overview</h4>
-  <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] mb-6 3xl:mb-8">A Full Spectrum of FPGA, Firmware, and Software Services</h3>
+  <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] mb-6 3xl:mb-8">A Full
+    Spectrum of FPGA, Firmware, and Software Services</h3>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 3xl:gap-8">
-      <div *ngFor="let card of coreServices">
-          <div class="p-6 3xl:p-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg">
-              <img class="rounded-lg" [src]="card.imgUrl" alt="img">
-              <div class="h-[10rem] sm:h-[11rem] lg:h-[9.5rem] 3xl:h-[9.5rem]">
-                  <h3 class="font-bold mt-6 3xl:mt-8 mb-4 3xl:mb-5 text-base lg:text-xs 3xl:text-base leading-[22.4px]">{{card.title}}</h3>
-                  <p class="font-light text-base lg:text-xs 3xl:text-base lg:leading-[20px] 3xl:leading-[24px]">{{card.desc}}</p>
-              </div>
-          </div>
+    <div *ngFor="let card of coreServices">
+      <div class="p-6 3xl:p-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg">
+        <img class="rounded-lg" [src]="card.imgUrl" alt="img">
+        <div class="h-[10rem] sm:h-[11rem] lg:h-[9.5rem] 3xl:h-[9.5rem]">
+          <h3 class="font-bold mt-6 3xl:mt-8 mb-4 3xl:mb-5 text-base lg:text-xs 3xl:text-base leading-[22.4px]">
+            {{card.title}}</h3>
+          <p class="font-light text-base lg:text-xs 3xl:text-base lg:leading-[20px] 3xl:leading-[24px]">{{card.desc}}
+          </p>
+        </div>
       </div>
+    </div>
   </div>
 </section>
 
@@ -66,8 +69,5 @@
 <app-services-benefits1 secTitle="Benefits" secHeading="hy Choose Whizz Systems for FPGA Services?" [customStyle]="true"
   [cardData]="benefits"></app-services-benefits1>
 
-<app-services-contact-experts
-  secHeading="Ready to Take Your FPGA Design to the Next Level?"
-  routerLink="/404"
-  btnText="Get Started with Our FPGA Experts"
-></app-services-contact-experts>
+<app-services-contact-experts secHeading="Ready to Take Your FPGA Design to the Next Level?" routerLink="/404"
+  btnText="Get Started with Our FPGA Experts"></app-services-contact-experts>
