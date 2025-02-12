@@ -1,156 +1,215 @@
-<section class="px-0 sm:px-[6.3%] mb-10 lg:mb-24 3xl:mb-32">
-    <div class=" px-4 py-8 sm:py-12 sm:px-8 lg:py-0 lg:px-0 lg:pl-[52px] 3xl:pl-16 bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl flex items-center lg:gap-[50px] 3xl:gap-16">
-        <div class="w-full lg:w-[44%] 3xl:w-[43%] text-white">
-            <p class="text-sm 3xl:text-base mb-2 3xl:mb-[10px]">May 29, 2024</p>
+<section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
+    <div class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl">
+        <div
+            class="w-full lg:w-[47%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16">
+            <p class="text-sm 3xl:text-base leading-[15px] 3xl:leading-[19.2px] mb-2 3xl:mb-[10px]">May 29, 2024</p>
             <div class="flex items-center gap-2 flex-wrap">
                 <app-blog-tag text="Heatsink" textColor="text-light-gray1" borderColor="border-light-gray1"
-                    borderRadius="rounded-[4px]"></app-blog-tag>
+                    borderRadius="rounded-[3px] 3xl:rounded-[4px]"></app-blog-tag>
                 <app-blog-tag text="Thermal Management" textColor="text-light-gray1" borderColor="border-light-gray1"
-                    borderRadius="rounded-[4px]"></app-blog-tag>
+                    borderRadius="rounded-[3px] 3xl:rounded-[4px]"></app-blog-tag>
             </div>
             <h1
-                class="text-3xl lg:text-[46px] 3xl:text-[56px] lg:leading-[56px] 3xl:leading-[67.2px] font-bold my-4 3xl:my-6">
+                class="text-3xl lg:text-[44px] 3xl:text-[56px] lg:leading-[55px] 3xl:leading-[67.2px] font-bold my-4 3xl:my-6">
                 Whizz Systems' Guide to PCIe-6</h1>
             <p
                 class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light text-light-gray1 mb-6 3xl:mb-8">
                 Expert insight from Whizz systems</p>
             <app-cbutton heading="Medium Button" icon="../../assets/header/r-arrow.svg" [size]="'medium'"
                 [routerLink]="'/404'"></app-cbutton>
-            <div class="flex items-center gap-2 3xl:gap-4 mt-6 3xl:mt-8">
+            <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
                 <a *ngFor="let link of links" routerLink="item.link" class="cursor-pointer">
                     <img class="" [src]="link.img" alt="img">
                 </a>
             </div>
         </div>
 
-        <div class="hidden lg:block lg:w-[56%] 3xl:w-[57%]">
-            <img class="object-cover w-full h-[39rem] 3xl:h-[48rem] rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-lg"
-                src="../../../assets/news/hero-img.png" alt="img">
+        <div class="hidden lg:block lg:w-[53%]">
+            <img class="object-cover" src="../../../assets/news/hero.png" alt="img">
         </div>
     </div>
 </section>
 
-<img class="object-cover mx-auto py-10 lg:py-20 px-6 md:px-28 lg:px-44 "
-    src="../../../assets/services/section-divider.png" alt="img">
+<img src="../../../assets/featured-products/products/divider-top.png" alt="img">
 
-<div class="px-[4%] sm:px-[9%] pb-10">
-    <div class="grid grid-cols-9 gap-0 lg:gap-20">
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <div class="flex flex-col lg:flex-row gap-10 lg:justify-between">
         <!-- left div -->
-        <div class="col-span-9 lg:col-span-5">
+        <div class="w-full lg:w-[49%]">
             <div
-                class="max-w-md lg:max-w-lg p-6 sm:p-8 lg:p-12 bg-card-gray border border-1 border-light-gray1 rounded-lg text-dark-gray2">
-                <h2 class="text-3xl xl:text-5xl font-bold mb-8">In This Article</h2>
-                <ul class="list-outside list-decimal font-bold text-xl marker:text-teal1 ml-4 lg:ml-9">
-                    <li class="mb-8" *ngFor="let item of articlesummary">
-                        <h4 class="ml-3 text-xl font-light">{{item.title}}</h4>
+                class="w-full sm:w-3/5 lg:w-3/4 2xl:w-2/3 p-8 lg:p-12 3xl:p-16 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg text-dark-gray2">
+                <h2
+                    class="text-3xl lg:text-4xl 3xl:text-5xl leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
+                    In This Article</h2>
+                <ul
+                    class="list-outside list-decimal text-base 3xl:text-xl font-semibold 3xl:font-bold marker:text-teal1 ml-7 3xl:ml-9">
+                    <li class="mb-6 3xl:mb-8" *ngFor="let item of articlesummary">
+                        <h4 class="ml-3 3xl:ml-4 text-base 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px]">
+                            {{item.title}}</h4>
                     </li>
                 </ul>
             </div>
-
             <h3 (click)="toggleVisibility('signalIntegrity')"
-                class="text-dark-gray1 text-2xl font-semibold my-4 cursor-pointer"
-                [ngClass]="{'text-teal2': !sectionVisibility.signalIntegrity, 'text-dark-gray1': sectionVisibility.signalIntegrity}">
+                class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold my-3 3xl:my-4 cursor-pointer"
+                [ngClass]="{'text-teal2': !sectionVisibility.signalIntegrity, 'text-dark-gray1 hover:text-teal2 transition-all duration-300 ease-in-out': sectionVisibility.signalIntegrity}">
                 Signal Integrity
-                <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]"
-                    [ngClass]="{'rotate-135 text-dark-gray1': sectionVisibility.signalIntegrity, '-rotate-180 text-teal2': !sectionVisibility.signalIntegrity}"></i>
+                <i class="fa-solid fa-chevron-down text-sm transition-all duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)] ml-5 3xl:ml-8"
+                    [ngClass]="{'rotate-135 text-dark-gray1 hover:text-teal2 transition-all duration-300 ease-in-out': sectionVisibility.signalIntegrity, '-rotate-180 text-teal2': !sectionVisibility.signalIntegrity}"></i>
             </h3>
             <div *ngIf="sectionVisibility.signalIntegrity">
+                <!-- Question 1 -->
                 <div *ngFor="let item of question1">
-                    <h4 class="text-dark-gray2 text-lg font-medium mb-4">{{item.title}}</h4>
-                    <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc1}}</p>
+                    <h4 class="text-dark-gray2 text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-medium">
+                        {{item.title}}</h4>
+                    <p
+                        class="text-sm 3xl:text-base lg:leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light my-3 3xl:my-4">
+                        {{item.desc1}}</p>
                     <figure
-                        class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
-                        <img class="object-cover rounded-lg" [src]="item.img1" alt="img">
-                        <figcaption class="text-base font-bold text-teal2 mt-2 lg:mt-4 text-center">{{item.img1caption}}
-                        </figcaption>
+                        class="p-8 lg:p-12 3xl:p-16 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray">
+                        <img class="object-cover rounded-md 3xl:rounded-lg" [src]="item.img1" alt="img">
+                        <figcaption
+                            class="text-sm 3xl:text-base font-semibold 3xl:font-bold text-teal2 mt-3 3xl:mt-4 text-center">
+                            {{item.img1caption}}</figcaption>
                     </figure>
-                    <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc2}}</p>
+                    <p
+                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light my-3 3xl:my-4">
+                        {{item.desc2}}</p>
                     <figure
-                        class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
-                        <img class="object-cover rounded-lg" [src]="item.img2" alt="img">
-                        <figcaption class="text-base font-bold text-teal2 mt-2 lg:mt-4 text-center">{{item.img2caption}}
-                        </figcaption>
+                        class="p-8 lg:p-12 3xl:p-16 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray">
+                        <img class="object-cover rounded-md 3xl:rounded-lg" [src]="item.img2" alt="img">
+                        <figcaption
+                            class="text-sm 3xl:text-base font-semibold 3xl:font-bold text-teal2 mt-3 3xl:mt-4 text-center">
+                            {{item.img2caption}}</figcaption>
                     </figure>
-                    <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc3}}</p>
-                    <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc4}}</p>
-                    <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc5}}</p>
+                    <p
+                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light mt-3 3xl:mt-4">
+                        {{item.desc3}}</p>
+                    <p
+                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light my-4 3xl:my-6">
+                        {{item.desc4}}</p>
+                    <p
+                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light mb-3 3xl:mb-4">
+                        {{item.desc5}}</p>
                     <figure
-                        class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
-                        <img class="object-cover rounded-lg" [src]="item.img3" alt="img">
-                        <figcaption class="text-base font-bold text-teal2 mt-2 lg:mt-4 text-center">{{item.img3caption}}
-                        </figcaption>
+                        class="p-8 lg:p-12 3xl:p-16 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray">
+                        <img class="object-cover rounded-md 3xl:rounded-lg" [src]="item.img3" alt="img">
+                        <figcaption
+                            class="text-sm 3xl:text-base font-semibold 3xl:font-bold text-teal2 mt-3 3xl:mt-4 text-center">
+                            {{item.img3caption}}</figcaption>
                     </figure>
                 </div>
+                <!-- Question 2 -->
                 <div *ngFor="let item of question2">
-                    <h4 class="text-dark-gray2 text-lg font-medium mb-4">{{item.title}}</h4>
-                    <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc1}}</p>
-                    <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc2}}</p>
-                    <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc3}}</p>
+                    <h4
+                        class="text-dark-gray2 text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-medium my-3 3xl:my-4">
+                        {{item.title}}</h4>
+                    <p class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light">
+                        {{item.desc1}}</p>
+                    <p
+                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light my-4 3xl:my-6">
+                        {{item.desc2}}</p>
+                    <p
+                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light mb-3 3xl:mb-4">
+                        {{item.desc3}}</p>
                     <figure
-                        class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
-                        <img class="object-cover rounded-lg" [src]="item.img1" alt="img">
-                        <figcaption class="text-base font-bold text-teal2 mt-2 lg:mt-4 text-center">{{item.img1caption}}
-                        </figcaption>
+                        class="p-8 lg:p-12 3xl:p-16 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray">
+                        <img class="object-cover rounded-md 3xl:rounded-lg" [src]="item.img1" alt="img">
+                        <figcaption
+                            class="text-sm 3xl:text-base font-semibold 3xl:font-bold text-teal2 mt-3 3xl:mt-4 text-center">
+                            {{item.img1caption}}</figcaption>
                     </figure>
                 </div>
+                <!-- Question 3 -->
                 <div *ngFor="let item of question3">
-                    <h4 class="text-dark-gray2 text-lg font-medium mb-4">{{item.title}}</h4>
-                    <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc1}}</p>
-                    <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc2}}</p>
+                    <h4
+                        class="text-dark-gray2 text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-medium my-3 3xl:my-4">
+                        {{item.title}}</h4>
+                    <p
+                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light mb-4 3xl:mb-6">
+                        {{item.desc1}}</p>
+                    <p
+                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light mb-3 3xl:mb-4">
+                        {{item.desc2}}</p>
                     <figure
-                        class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray mb-4 grid place-items-center">
-                        <img class="object-cover rounded-lg" [src]="item.img1" alt="img">
-                        <figcaption class="text-base font-bold text-teal2 mt-2 lg:mt-4 text-center">{{item.img1caption}}
-                        </figcaption>
+                        class="p-8 lg:p-12 3xl:p-16 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray">
+                        <img class="object-cover rounded-md 3xl:rounded-lg" [src]="item.img1" alt="img">
+                        <figcaption
+                            class="text-sm 3xl:text-base font-semibold 3xl:font-bold text-teal2 mt-3 3xl:mt-4 text-center">
+                            {{item.img1caption}}</figcaption>
                     </figure>
                 </div>
             </div>
 
-            <h3 (click)="toggleVisibility('power')" class="text-dark-gray1 text-2xl font-semibold mb-4 cursor-pointer"
-                [ngClass]="{'text-teal2': !sectionVisibility.power, 'text-dark-gray1': sectionVisibility.power}">
+            <h3 (click)="toggleVisibility('power')"
+                class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold my-3 3xl:my-4 cursor-pointer"
+                [ngClass]="{'text-teal2': !sectionVisibility.power, 'text-dark-gray1 hover:text-teal2 transition-all duration-300 ease-in-out': sectionVisibility.power}">
                 Power
-                <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]"
-                    [ngClass]="{'rotate-135 text-dark-gray1': sectionVisibility.power, '-rotate-180 text-teal2': !sectionVisibility.power}"></i>
+                <i class="fa-solid fa-chevron-down text-sm transition-all duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)] ml-5 3xl:ml-8"
+                    [ngClass]="{'rotate-135 text-dark-gray1 hover:text-teal2 transition-all duration-300 ease-in-out': sectionVisibility.power, '-rotate-180 text-teal2': !sectionVisibility.power}"></i>
             </h3>
             <div *ngIf="sectionVisibility.power">
+                <!-- Question 4 -->
                 <div *ngFor="let item of question4">
-                    <h4 class="text-dark-gray2 text-lg font-medium mb-4">{{item.title}}</h4>
-                    <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc1}}</p>
-                    <p class="text-base text-dark-gray2 font-light mb-6">{{item.desc2}}</p>
-                    <p class="text-base text-dark-gray2 font-light mb-4">{{item.desc3}}</p>
+                    <h4
+                        class="text-dark-gray2 text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-medium my-3 3xl:my-4">
+                        {{item.title}}</h4>
+                    <p class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light">
+                        {{item.desc1}}</p>
+                    <p
+                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light my-4 3xl:my-6">
+                        {{item.desc2}}</p>
+                    <p class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light">
+                        {{item.desc3}}</p>
                 </div>
+                <!-- Question 5 -->
                 <div *ngFor="let item of question5">
-                    <h4 class="text-dark-gray2 text-lg font-medium mb-4">{{item.title}}</h4>
-                    <p class="text-base text-dark-gray2 font-light my-4">{{item.desc1}}</p>
-                    <p class="text-base text-dark-gray2 font-light my-4">{{item.desc2}}</p>
-                    <figure class="p-4 sm:p-8 md:p-14 lg:p-16 border-[1px] border-light-gray1 rounded-lg bg-card-gray">
-                        <img class="object-cover rounded-lg" [src]="item.img1" alt="img">
-                        <figcaption class="text-base font-bold text-teal2 mt-2 lg:mt-4 text-center">{{item.img1caption}}
-                        </figcaption>
+                    <h4
+                        class="text-dark-gray2 text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-medium my-3 3xl:my-4">
+                        {{item.title}}</h4>
+                    <p
+                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light mb-4 3xl:mb-6">
+                        {{item.desc1}}</p>
+                    <p
+                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light mb-3 3xl:mb-4">
+                        {{item.desc2}}</p>
+                    <figure
+                        class="p-8 lg:p-12 3xl:p-16 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray">
+                        <img class="object-cover rounded-md 3xl:rounded-lg" [src]="item.img1" alt="img">
+                        <figcaption
+                            class="text-sm 3xl:text-base font-semibold 3xl:font-bold text-teal2 mt-3 3xl:mt-4 text-center">
+                            {{item.img1caption}}</figcaption>
                     </figure>
                 </div>
             </div>
         </div>
-
         <!-- right div -->
-        <div class="col-span-9 lg:col-span-4">
-            <div class="lg:sticky top-28 lg:h-[calc(100vh-20px)] right-0 overflow-auto ">
-                <div class="max-w-lg p-6 xl:p-12 bg-card-gray rounded-xl border border-1 border-light-gray1 mb-8">
-                    <h2 class="text-3xl lg:text-5xl font-bold text-dark-gray2">Subscribe to our newsletter!</h2>
-                    <p class="font-light text-xl my-8 text-dark-gray2">Get updates on the latest news & insights</p>
-                    <div class="flex items-center flex-col md:flex-row gap-8">
+        <div class="w-full lg:w-[51%]">
+            <div
+                class="w-11/12 sm:w-1/2 lg:w-3/4 2xl:w-[70%] justify-self-center lg:sticky top-28 lg:h-[calc(100vh-20px)]">
+                <div
+                    class="p-8 lg:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1 mb-6 3xl:mb-8">
+                    <h2
+                        class="text-3xl lg:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold text-dark-gray2">
+                        Subscribe to our newsletter!</h2>
+                    <p
+                        class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light my-6 3xl:y-8 text-dark-gray2">
+                        Get updates on the latest news & insights</p>
+                    <div class="flex items-center gap-6 3xl:gap-8">
                         <input type="email" placeholder="Enter Your Email"
-                            class="w-full text-base px-4 py-3 block rounded-lg border-[1px] border-dark-gray1 focus:outline-none focus:border-teal1  bg-transparent placeholder:light-gray2 focus:placeholder-transparent">
-                        <app-cbutton3 heading="Subscribe" size="medium"></app-cbutton3>
+                            class="w-full text-sm 3xl:text-base px-4 3xl:px-5 py-[6px] sm:py-[10px] 3xl:py-[14px] block rounded-md 3xl:rounded-lg border border-dark-gray1 focus:outline-none focus:border-teal1  bg-transparent placeholder:light-gray2 focus:placeholder-transparent">
+                        <app-cbutton3 routerLink="/404" heading="Subscribe" size="medium"></app-cbutton3>
                     </div>
                 </div>
-                <div class="max-w-lg p-6 xl:p-12  bg-subscribe rounded-lg bg-cover">
-                    <h2 class="text-white text-3xl lg:text-5xl font-bold mb-8">Learn more about Whizz Systems</h2>
-                    <app-cbutton2 routerLink="/services" heading="All services" [size]="'medium'"></app-cbutton2>
+                <div
+                    class="p-8 lg:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1 bg-subscribe bg-cover">
+                    <h2
+                        class="text-white text-3xl lg:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
+                        Learn more about Whizz Systems</h2>
+                    <app-cbutton2 routerLink="/services" heading="All services" size="medium"></app-cbutton2>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <app-cnews></app-cnews>
