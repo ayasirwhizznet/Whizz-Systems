@@ -62,11 +62,11 @@
     </div>
 
     <div class="flex items-center gap-8 ">
-      <i (click)="toggleSearchbar()" class="bi bi-search text-xl 3xl:text-2xl cursor-pointer hover:text-teal1"></i>
+      <i (click)="toggleSearchbar()" class="bi bi-search text-xl 3xl:text-2xl cursor-pointer hover:text-teal1 duration-300"></i>
       <!-- Search bar container -->
       <div *ngIf="isSearchbaropen"
         class="p-[6px] 3xl:p-[10px] bg-card-gray fixed left-1/2 transform -translate-x-1/2 top-28 3xl:top-36 z-50 rounded-br-md 3xl:rounded-br-lg rounded-bl-md 3xl:rounded-bl-lg w-[72%]">
-        <div class="flex items-center gap-6 3xl:gap-8 px-16 3xl:px-20 py-6 3xl:py-8 bg-white rounded-md 3xl:rounded-lg">
+        <div class="flex items-center justify-center gap-6 3xl:gap-8 px-12 3xl:px-20 py-6 3xl:py-8 bg-white rounded-md 3xl:rounded-lg">
           <div
             class="w-[80%] flex items-center gap-3 3xl:gap-4 rounded-md 3xl:rounded-lg border border-dark-gray2 bg-card-gray px-5 py-2 ">
             <i class="bi bi-search text-lg 3xl:text-xl text-light-gray1 cursor-pointer"></i>

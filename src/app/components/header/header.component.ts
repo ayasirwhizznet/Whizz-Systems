@@ -287,7 +287,7 @@ export class HeaderComponent implements OnInit {
       this.isHeaderVisible = true;
     }
     this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-    if (this.activeBottomSection) {
+    if (this.activeBottomSection || this.isSearchbaropen ) {
       this.closeMenu();
     }
   }
