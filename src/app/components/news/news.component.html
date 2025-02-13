@@ -14,7 +14,7 @@
     </div>
     <div class="keen-slider" #sliderRef>
         <div class="keen-slider__slide" *ngFor="let card of cards">
-            <div class="group overflow-y-scroll no-scrollbar h-[22rem] sm:h-[22rem] xl:h-[22rem] 2xl:h-[22rem] 3xl:h-[25rem] hover_div">
+            <a routerLink="/news_&_insights/news" class="group cursor-pointer inline-block overflow-y-scroll no-scrollbar h-[22rem] sm:h-[22rem] xl:h-[22rem] 2xl:h-[22rem] 3xl:h-[25rem] hover_div">
                 <div class="p-6 3xl:p-8 bg-gray mb-6 3xl:mb-8 border border-light-gray1 bg-card-gray rounded-md 3xl:rounded-lg">
                   <img [src]="card.imageUrl" class="hover_img rounded-md 3xl:rounded-lg mb-6 3xl:mb-8" alt="Card-image">
                     <div class="flex items-center gap-1 3xl:gap-2 flex-wrap mb-4 3xl:mb-5">
@@ -36,7 +36,7 @@
                       d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
                   </svg>
                 </button>
-              </div>
+              </a>
         </div>
     </div>
 </section>

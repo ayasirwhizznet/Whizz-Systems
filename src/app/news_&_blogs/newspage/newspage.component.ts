@@ -65,6 +65,7 @@ export class NewspageComponent {
       img3caption: 'Fig. 1.1',
     },
   ];
+
   question2: any[] = [
     {
       title:

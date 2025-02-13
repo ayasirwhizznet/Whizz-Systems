@@ -68,28 +68,34 @@ export class NewsComponent {
       },
 
       breakpoints: {
-        '(min-width: 640px)': {
+        '(min-width: 0px)': {
           slides: {
             perView: 1,
             spacing: 50,
           },
         },
-        '(min-width: 768px)': {
+        '(min-width: 640px)': {
           slides: {
             perView: 2,
             spacing: 50,
           },
         },
-        '(min-width: 1200px)': {
+        '(min-width: 1280px)': {
           slides: {
             perView: 3,
             spacing: 50,
           },
         },
-        '(min-width: 1700px)': {
+        '(min-width: 1536px)': {
           slides: {
             perView: 3,
-            spacing: 70,
+            spacing: 50,
+          },
+        },
+        '(min-width: 1800px)': {
+          slides: {
+            perView: 3,
+            spacing: 64,
           },
         },
       },

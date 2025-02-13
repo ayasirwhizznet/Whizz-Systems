@@ -78,28 +78,34 @@ export class ServicesComponent {
       },
 
       breakpoints: {
-        '(min-width: 640px)': {
+        '(min-width: 0px)': {
           slides: {
             perView: 1,
-            spacing: 30,
+            spacing: 50,
           },
         },
-        '(min-width: 768px)': {
+        '(min-width: 640px)': {
           slides: {
             perView: 2,
-            spacing: 80,
+            spacing: 60,
           },
         },
-        '(min-width: 1200px)': {
+        '(min-width: 1280px)': {
           slides: {
             perView: 4,
-            spacing: 35,
+            spacing: 40,
           },
         },
-        '(min-width: 1700px)': {
+        '(min-width: 1536px)': {
           slides: {
             perView: 4,
-            spacing: 70,
+            spacing: 52,
+          },
+        },
+        '(min-width: 1800px)': {
+          slides: {
+            perView: 4,
+            spacing: 64,
           },
         },
       },

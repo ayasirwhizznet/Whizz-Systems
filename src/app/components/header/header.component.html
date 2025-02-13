@@ -62,15 +62,18 @@
     </div>
 
     <div class="flex items-center gap-8 ">
-      <i (click)="toggleSearchbar()" class="bi bi-search text-xl 3xl:text-2xl cursor-pointer hover:text-teal1 duration-300"></i>
+      <i (click)="toggleSearchbar()"
+        class="bi bi-search text-xl 3xl:text-2xl cursor-pointer hover:text-teal1 duration-300"></i>
       <!-- Search bar container -->
       <div *ngIf="isSearchbaropen"
         class="p-[6px] 3xl:p-[10px] bg-card-gray fixed left-1/2 transform -translate-x-1/2 top-28 3xl:top-36 z-50 rounded-br-md 3xl:rounded-br-lg rounded-bl-md 3xl:rounded-bl-lg w-[72%]">
-        <div class="flex items-center justify-center gap-6 3xl:gap-8 px-12 3xl:px-20 py-6 3xl:py-8 bg-white rounded-md 3xl:rounded-lg">
+        <div
+          class="flex items-center justify-center gap-6 3xl:gap-8 px-12 3xl:px-20 py-6 3xl:py-8 bg-white rounded-md 3xl:rounded-lg">
           <div
-            class="w-[80%] flex items-center gap-3 3xl:gap-4 rounded-md 3xl:rounded-lg border border-dark-gray2 bg-card-gray px-5 py-2 ">
+            class="w-[80%] flex items-center gap-3 3xl:gap-4 rounded-md 3xl:rounded-lg border border-dark-gray2 bg-card-gray px-5 py-2"
+            [ngClass]="{'border-teal1': searchText, 'border-dark-gray2': !searchText}">
             <i class="bi bi-search text-lg 3xl:text-xl text-light-gray1 cursor-pointer"></i>
-            <input type="search" placeholder="Search"
+            <input type="search" placeholder="Search" (focusin)=focusin() (focusout)=focusout()
               class="w-full py-1 text-sm 3xl:text-base bg-transparent focus:outline-none placeholder-light-gray1 focus:placeholder-transparent" />
           </div>
           <app-cbutton2 routerLink="/404" heading="Search" size="large" bg="white"></app-cbutton2>
@@ -109,9 +112,9 @@
                 Industries
               </h3>
               <div class="flex items-center flex-wrap gap-2">
-                <a *ngFor="let item of industryItems"
+                <a *ngFor="let industry of industries"
                   class="bg-dark-gray1 py-1 px-2 rounded-[4px] text-white inline-block text-xs 3xl:text-sm"
-                  routerLink="item.link">{{ item.label }}</a>
+                  routerLink="item.link">{{ industry }}</a>
               </div>
             </div>
             <div>
@@ -145,10 +148,27 @@
 <header class="mobile-header block lg:hidden shadow-sm px-[3%]">
   <div class="py-5 flex justify-between items-center ">
     <a routerLink="/">
-      <img class="w-32 object-cover cursor-pointer" src="assets/header/blogo.png" alt="logo" />
+      <img class="w-36 object-cover cursor-pointer" src="assets/header/blogo.png" alt="logo" />
     </a>
-    <div class="text-2xl cursor-pointer" (click)="toggleMenuSection()">
-      <i [ngClass]="isMenuOpen ? 'fa-solid fa-lg fa-xmark' : 'fa-solid fa-lg fa-bars'"
+    <div>
+      <i (click)="toggleSearchbar()"
+        class="fa-solid fa-search fa-xl text-dark-gray2 hover:text-teal1 duration-300 mr-8"></i>
+      <!-- Search bar container -->
+      <div *ngIf="isSearchbaropen"
+        class="p-2 bg-card-gray fixed left-1/2 transform -translate-x-1/2 top-24 z-50 rounded-br-md rounded-bl-md w-full">
+        <div class="flex items-center justify-center gap-3 px-2 py-4 bg-white rounded-md">
+          <div class="flex items-center gap-3 rounded-md border px-2 py-1 w-full bg-card-gray duration-300"
+            [ngClass]="{'border-teal1': searchText, 'border-dark-gray2': !searchText}">
+            <i class="bi bi-search text-lg text-light-gray1 cursor-pointer"></i>
+            <input type="search" (focusin)=focusin() (focusout)=focusout() placeholder="Search"
+              class="w-full py-1 text-sm bg-transparent focus:outline-none placeholder-light-gray1 focus:placeholder-transparent" />
+          </div>
+          <app-cbutton2 routerLink="/404" heading="Search" size="large" bg="white"></app-cbutton2>
+          <i (click)="toggleSearchbar()" class="bi bi-x-lg text-xl cursor-pointer hover:text-teal1 ml-2"></i>
+        </div>
+
+      </div>
+      <i (click)="toggleMenuSection()" [ngClass]="isMenuOpen ? 'fa-solid fa-2xl fa-xmark' : 'fa-solid fa-2xl fa-bars'"
         class="transition-transform duration-500 ease-in-out"></i>
     </div>
 

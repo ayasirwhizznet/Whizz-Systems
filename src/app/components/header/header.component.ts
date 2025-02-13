@@ -11,6 +11,7 @@ import { HeaderSectionComponent } from '../header-section/header-section.compone
 import { MobileHeaderComponent } from '../mobile_header/mobile_header.component';
 import { CbuttonComponent } from '../cbutton/cbutton.component';
 import { Cbutton2Component } from '../cbutton2/cbutton2.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-header',
@@ -22,6 +23,7 @@ import { Cbutton2Component } from '../cbutton2/cbutton2.component';
     MobileHeaderComponent,
     CbuttonComponent,
     Cbutton2Component,
+    FormsModule,
   ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
@@ -34,6 +36,7 @@ export class HeaderComponent implements OnInit {
   isSearchbaropen: any = false;
   isMenuOpen: boolean = false;
   isAccordionOpen = false;
+  searchText: boolean = false;
 
   menuItems = [
     { label: 'About', link: '/about' },
@@ -196,18 +199,18 @@ export class HeaderComponent implements OnInit {
     { label: 'FAQ', link: '/404' },
   ];
 
-  industryItems = [
-    { label: 'Aerospace', link: '/404' },
-    { label: 'Software', link: '/404' },
-    { label: 'AI', link: '/404' },
-    { label: 'Defence', link: '/404' },
-    { label: 'Automotive', link: '/404' },
-    { label: 'Medical', link: '/404' },
-    { label: 'Consumer', link: '/404' },
-    { label: 'Media', link: '/404' },
-    { label: 'Storage', link: '/404' },
-    { label: 'Compute', link: '/404' },
-    { label: 'Network', link: '/404' },
+  industries: any[] = [
+    'Aerospace',
+    'Software',
+    'AI',
+    'Defence',
+    'Automotive',
+    'Medical',
+    'Consumer',
+    'Media',
+    'Storage',
+    'Compute',
+    'Network',
   ];
   currentScroll: any;
 
@@ -261,10 +264,20 @@ export class HeaderComponent implements OnInit {
     this.activeBottomSection = '';
     this.activeMenuItem = '';
     this.isSearchbaropen = !this.isSearchbaropen;
+    this.isAccordionOpen = false;
+    this.isMenuOpen = false;
+  }
+
+  focusin() {
+    this.searchText = true;
+  }
+
+  focusout() {
+    this.searchText = false;
   }
 
   toggleMenuSection() {
-    this.isSearchbaropen = !this.isSearchbaropen;
+    this.isSearchbaropen = false;
     this.isMenuOpen = !this.isMenuOpen;
     this.isAccordionOpen = this.isMenuOpen;
   }
@@ -287,7 +300,7 @@ export class HeaderComponent implements OnInit {
       this.isHeaderVisible = true;
     }
     this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-    if (this.activeBottomSection || this.isSearchbaropen ) {
+    if (this.activeBottomSection || this.isSearchbaropen) {
       this.closeMenu();
     }
   }
