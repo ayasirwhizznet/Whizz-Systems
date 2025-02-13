@@ -22,17 +22,17 @@ import { ServicesContactExpertsComponent } from '../../../components/services-co
 export class PowerDeliveryComponent {
   coreServices: any = [
     {
-      imgUrl: '../../../assets/power-delivery/core-services.png',
+      imgUrl: 'assets/power-delivery/core-services.png',
       title: 'DC Power Analysis',
       desc: 'IR Drop Analysis, Current Density Analysis, Joule Heating Simulations.',
     },
     {
-      imgUrl: '../../../assets/power-delivery/core-services.png',
+      imgUrl: 'assets/power-delivery/core-services.png',
       title: 'AC Power Analysis',
       desc: 'Capacitor Optimization & Impedance Reduction.',
     },
     {
-      imgUrl: '../../../assets/power-delivery/core-services.png',
+      imgUrl: 'assets/power-delivery/core-services.png',
       title: 'End-to-End Layout Optimization',
       desc: 'Enhancing reliability by embedding simulation insights into PCB designs.',
     },
@@ -40,22 +40,22 @@ export class PowerDeliveryComponent {
 
   benefits: any = [
     {
-      imgUrl: '../../../assets/power-delivery/benefits.png',
+      imgUrl: 'assets/power-delivery/benefits.png',
       title: 'Lorem Ipsum',
       desc: 'Advanced DC and AC simulation capabilities tailored to your design needs.',
     },
     {
-      imgUrl: '../../../assets/power-delivery/benefits.png',
+      imgUrl: 'assets/power-delivery/benefits.png',
       title: 'Lorem Ipsum',
       desc: 'Expertise in high-performance PCB layouts for modern electronics.',
     },
     {
-      imgUrl: '../../../assets/power-delivery/benefits.png',
+      imgUrl: 'assets/power-delivery/benefits.png',
       title: 'Lorem Ipsum',
       desc: 'Reduction of design risks and iterations, ensuring faster time-to-market.',
     },
     {
-      imgUrl: '../../../assets/power-delivery/benefits.png',
+      imgUrl: 'assets/power-delivery/benefits.png',
       title: 'Lorem Ipsum',
       desc: 'Proven reliability and efficiency across industries.',
     },

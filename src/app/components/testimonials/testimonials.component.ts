@@ -19,38 +19,38 @@ export class TestimonialsComponent {
   cards = [
     {
       desc: 'When I needed a board customization in a hurry, Whizz was there for me. They were able to get the boards back to me the next day. I get my demos up running quickly.',
-      imageUrl: '../../assets/testimonials/profile.png',
+      imageUrl: 'assets/testimonials/profile.png',
       name: 'Stevan Logan',
       designation: 'Marketing at Xilinix',
     },
     {
       desc: `NVIDIA works closely with Whizz to build our Tegra mobile reference platforms. These platforms are very complex and we demand extremely quick turn times and high yield which is always delivered on time with the high quality we expect. . Whizz Team is extremely competent, easy to work with and very customer focused. They have
 a great track record with us`,
-      imageUrl: '../../assets/testimonials/profile.png',
+      imageUrl: 'assets/testimonials/profile.png',
       name: 'David Weigand',
       designation: 'VP of Engineering at NVIDIA',
     },
     {
       desc: 'I have been working with them and again wonderful service, I know what I am going to get, there is no surprises, they deliver on time and their rates are good and they are low cost so I can use them all the time. It’s a just a wonderful relationship and I refer all my clients to them, I refer all my companies to them and will be using them for a long time.',
-      imageUrl: '../../assets/testimonials/profile.png',
+      imageUrl: 'assets/testimonials/profile.png',
       name: 'Neil Mammen',
       designation: 'Industry Expert',
     },
     {
       desc: 'Vivamus nec pulvinar metus. Integer fermentum iaculis purus non ultricies. Vivamus bibendum ipsum condimentum aliquet bibendum. Morbi sed facilisis mauris.',
-      imageUrl: '../../assets/testimonials/profile.png',
+      imageUrl: 'assets/testimonials/profile.png',
       name: 'Stevan Logan',
       designation: 'Marketing at Xilinix',
     },
     {
       desc: 'Morbi molestie, quam vel volutpat finibus, libero nisl congue velit, sit amet porta velit felis quis arcu. Fusce nisi risus, placerat in facilisis vel, finibus nec nisl. Fusce porttitor ex erat, quis lacinia erat porttitor eu. In interdum ipsum feugiat libero viverra, id feugiat neque blandit. Donec suscipit pharetra diam a feugiat.',
-      imageUrl: '../../assets/testimonials/profile.png',
+      imageUrl: 'assets/testimonials/profile.png',
       name: 'Stevan Logan',
       designation: 'Marketing at Xilinix',
     },
     {
       desc: 'Vestibulum gravida libero sem, ut imperdiet nibh viverra non. Nulla vestibulum varius purus non tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
-      imageUrl: '../../assets/testimonials/profile.png',
+      imageUrl: 'assets/testimonials/profile.png',
       name: 'Stevan Logan',
       designation: 'Marketing at Xilinix',
     },

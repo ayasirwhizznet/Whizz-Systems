@@ -30,37 +30,37 @@ export class VHK158Component {
   customization: any[] = [
     {
       imgUrl:
-        '../../../../assets/featured-products/products/vhk158/customization.png',
+        'assets/featured-products/products/vhk158/customization.png',
       title: 'Full System Development',
       desc: 'Productize the VHK158 into a deployable solution, including custom enclosures, firmware, and regulatory compliance.',
     },
     {
       imgUrl:
-        '../../../../assets/featured-products/products/vhk158/customization.png',
+        'assets/featured-products/products/vhk158/customization.png',
       title: 'Custom I/O & Connectivity',
       desc: 'Modify PCIe lanes, QSFP28/QSFP-DD configurations, or expand I/O options.',
     },
     {
       imgUrl:
-        '../../../../assets/featured-products/products/vhk158/customization.png',
+        'assets/featured-products/products/vhk158/customization.png',
       title: 'FPGA & Memory Modifications',
       desc: 'Expand HBM/DDR4 capabilities based on workload needs.',
     },
     {
       imgUrl:
-        '../../../../assets/featured-products/products/vhk158/customization.png',
+        'assets/featured-products/products/vhk158/customization.png',
       title: 'Software & Firmware Customization',
       desc: 'Optimize drivers, software environments, and application-layer software.',
     },
     {
       imgUrl:
-        '../../../../assets/featured-products/products/vhk158/customization.png',
+        'assets/featured-products/products/vhk158/customization.png',
       title: 'Power Distribution Optimization',
       desc: ' Improve power management and efficiency to meet system power constraints.',
     },
     {
       imgUrl:
-        '../../../../assets/featured-products/products/vhk158/customization.png',
+        'assets/featured-products/products/vhk158/customization.png',
       title: 'Cooling Enhancements',
       desc: 'Implement advanced thermal solutions such as custom heatsinks, active cooling, or liquid-cooled enclosures for optimal performance.',
     },

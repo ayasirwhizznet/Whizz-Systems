@@ -28,10 +28,10 @@ export class NewspageComponent {
   }
 
   links = [
-    { img: '../../../assets/news/whizzicon.svg', imgUrl: '' },
-    { img: '../../../assets/news/whizz.svg', imgUrl: '' },
-    { img: '../../../assets/news/linkedin.svg', imgUrl: '' },
-    { img: '../../../assets/news/youtube.svg', imgUrl: '' },
+    { img: 'assets/news/whizzicon.svg', imgUrl: '' },
+    { img: 'assets/news/whizz.svg', imgUrl: '' },
+    { img: 'assets/news/linkedin.svg', imgUrl: '' },
+    { img: 'assets/news/youtube.svg', imgUrl: '' },
   ];
 
   articlesummary = [
@@ -49,11 +49,11 @@ export class NewspageComponent {
         'What are the key factors affecting signal integrity in PCIe Gen 6, and how are they mitigated?',
       desc1:
         'In PCIe Gen 6, several key factors impact signal integrity, and addressing these challenges is crucial for maintaining reliable high-speed data transmission. One significant factor is transmission line effects, where impedance mismatches, reflections, and distortion can occur. To mitigate this, meticulous PCB design practices are employed, including controlled impedance traces and proper termination techniques. Channel loss and attenuation are other factors that demand attention. Advanced equalization techniques, such as decision feedback equalization (DFE) and continuous time linear equalization (CTLE), are implemented to compensate for signal loss during transmission through PCB traces and connectors.',
-      img1: '../../../assets/news/impedence.png',
+      img1: 'assets/news/impedence.png',
       img1caption: 'Fig. 1.1',
       desc2:
         'Crosstalk, the interference between adjacent traces, is a persistent challenge. Design strategies involve maintaining proper spacing between traces, using shielded connectors, and leveraging signal integrity simulations to minimize crosstalk effects. Jitter, or timing variations in signals, is also a concern. To address this, PCIe Gen 6 incorporates high-quality clocking mechanisms, low-jitter oscillators, and advanced clock data recovery (CDR) circuits to reduce timing uncertainties.',
-      img2: '../../../assets/news/magnetic.png',
+      img2: 'assets/news/magnetic.png',
       img2caption: 'Fig. 1.1',
       desc3:
         'Power integrity plays a crucial role in signal integrity, as power fluctuations and noise can impact the overall system. Power distribution networks, decoupling capacitors, and power management techniques are implemented to mitigate this. Connector and interconnect quality are essential, and utilizing high-quality connectors, impedance-matched interconnects, and thorough testing helps ensure reliable signal transmission.',
@@ -61,7 +61,7 @@ export class NewspageComponent {
         'Furthermore, advanced equalization techniques and forward error correction (FEC) are integrated into PCIe Gen 6 to address the challenges associated with higher data rates. These technologies enhance the reliability of data transmission by compensating for signal distortions and detecting/correcting errors in real time. The choice of advanced materials with low dielectric constant and low loss tangent in PCB construction is also considered to minimize signal distortion.',
       desc5:
         'Additionally, advanced packaging techniques, such as micro bumping and Chip-on-Wafer-on-Substrate (CoWoS), reduce parasitic effects and enhance signal integrity. Collectively, these strategies underscore the comprehensive approach taken in PCIe Gen 6 to ensure robust signal integrity in the face of increasing data rates and performance requirements. For the most accurate and detailed information, consult the official documentation provided by the PCI-SIG.',
-      img3: '../../../assets/news/error-correction.png',
+      img3: 'assets/news/error-correction.png',
       img3caption: 'Fig. 1.1',
     },
   ];
@@ -74,7 +74,7 @@ export class NewspageComponent {
       desc2:
         'On the other hand, jitter management requires using high-quality clock sources with low jitter, advanced clock data recovery (CDR) circuits, and implementing adaptive CDR techniques. Designers establish a jitter budget, employ simulation tools for analysis, and apply filtering and conditioning methods such as phase-locked loops (PLLs) to reduce unwanted jitter components. Real-time monitoring tools are utilized to continuously assess and adjust for system variations.',
       desc3: `Additionally, compliance testing, bit error rate (BER) testing, and eye diagram analysis play crucial roles in validating signal integrity and ensuring the system meets PCIe Gen 6 specifications. This comprehensive approach, coupled with real-world testing, contributes to robust and reliable high-speed data transmission in PCIe Gen 6 systems. Designers should refer to the PCI-SIG's official PCIe Gen 6 specifications for accurate guidelines and requirements.`,
-      img1: '../../../assets/news/jitter.png',
+      img1: 'assets/news/jitter.png',
       img1caption: 'Fig. 1.1',
     },
   ];
@@ -86,7 +86,7 @@ export class NewspageComponent {
       desc1:
         'In PCIe Gen 6 signal integrity validation, eye diagrams and Bit Error Rate (BER) testing are indispensable tools. Eye diagrams illustrate signal quality, portraying characteristics like jitter, noise, and timing margins. This visualization is crucial for assessing the openness of the eye within defined voltage and timing thresholds, ensuring reliable signal reception. In parallel, BER testing involves comparing transmitted and received bit sequences, quantifying the accuracy of data transmission. Low BER values indicate a high level of signal integrity and system reliability.',
       desc2: `These tools are integrated, with information from eye diagrams guiding the understanding of factors contributing to observed bit errors during BER testing. Together, they provide a comprehensive evaluation of signal quality and aid in the optimization of PCIe Gen 6 systems for high-speed data transmission, meeting stringent performance requirements. Regular testing and analysis using these tools contribute to the development of robust and reliable PCIe Gen 6 communication links.`,
-      img1: '../../../assets/news/bit-error.png',
+      img1: 'assets/news/bit-error.png',
       img1caption: 'Fig. 1.1',
     },
   ];
@@ -111,7 +111,7 @@ export class NewspageComponent {
       desc1:
         'Ensuring stable power delivery in PCIe Gen 6 systems requires a multifaceted approach, employing various techniques to minimize voltage droops. Dynamic Voltage and Frequency Scaling (DVFS) allows for adaptive adjustments to voltage and frequency based on workload demands, optimizing power consumption and mitigating voltage droops during varying workloads. Advanced voltage regulators with fast response times and tight voltage regulation characteristics are instrumental in swiftly adjusting output voltage to minimize droops. Strategic placement of decoupling capacitors across the PCB acts as a buffer, absorbing transient currents and stabilizing voltage levels. Power gating techniques selectively disable power to inactive components, reducing overall power consumption and minimizing droops. Active power management involves real-time monitoring and control of power consumption, making dynamic adjustments to voltage levels.',
       desc2: `Predictive voltage scaling algorithms anticipate workload changes, proactively adjusting the voltage to prevent droops. Transient voltage suppressors and low-ESR capacitors protect against spikes and enhance the system's ability to maintain stable voltage levels. Optimizing power plane design on the PCB reduces impedance and inductance, enhancing the power distribution network's responsiveness. Fast-response voltage regulators and thorough simulation and analysis using dedicated tools help identify and address potential droop issues in the power delivery network. Implementing these techniques collectively ensures a stable power supply, meeting the demanding requirements of PCIe Gen 6 systems and contributing to reliable high-speed data transmission. Designers should refer to the PCI-SIG's official PCIe Gen 6 specifications for precise guidelines and considerations.`,
-      img1: '../../../assets/news/voltage-drop.png',
+      img1: 'assets/news/voltage-drop.png',
       img1caption: 'Fig. 1.1',
     },
   ];

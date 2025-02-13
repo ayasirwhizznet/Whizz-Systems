@@ -3,7 +3,7 @@
   [class.hidden]="!isHeaderVisible">
   <div class="py-5 3xl:py-7 flex justify-between items-center">
     <a routerLink="/">
-      <img class="w-44 3xl:w-[220px] object-cover cursor-pointer" src="../../assets/header/blogo.png" alt="logo" />
+      <img class="w-44 3xl:w-[220px] object-cover cursor-pointer" src="assets/header/blogo.png" alt="logo" />
     </a>
     <div class="flex items-center gap-9 3xl:gap-12 3xl:-ml-20">
       <ng-container *ngFor="let item of menuItems">
@@ -31,7 +31,7 @@
                 <p
                   class="text-dark-gray2 hover:text-teal2 text-xs 3xl:text-[15px] 3xl:leading-[22.5px] font-medium 3xl:font-semibold mb-3 3xl:mb-[14px]">
                   {{ item.label }}</p>
-                <img class="rounded-tl-lg rounded-tr-lg" src="../../assets/header/featured-products.png" />
+                <img class="rounded-tl-lg rounded-tr-lg" src="assets/header/featured-products.png" />
               </a>
             </div>
           </div>
@@ -53,7 +53,7 @@
                 <h3 class="text-xl 3xl:text-2xl font-bold text-dark-gray2 mb-6 3xl:mb-8">
                   Interesting Blog Title that <br> Can Fit On Two Lines
                 </h3>
-                <img class="object-cover" src="../../assets/header/resources.png" alt="img" />
+                <img class="object-cover" src="assets/header/resources.png" alt="img" />
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@
       </div>
 
       <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
-        target="_blank"><app-cbutton heading="Contact us" icon="../../assets/header/r-arrow.svg"
+        target="_blank"><app-cbutton heading="Contact us" icon="assets/header/r-arrow.svg"
           [size]="'medium'"></app-cbutton></a>
     </div>
   </div>
@@ -97,7 +97,7 @@
                 <span class="font-medium 3xl:font-semibold flex justify-between items-center">
                   All services
                   <ng-container>
-                    <img src="../../assets/services/r-arrow.svg" alt="icon" class=" w-6 h-6" />
+                    <img src="assets/services/r-arrow.svg" alt="icon" class=" w-6 h-6" />
                   </ng-container>
                 </span>
               </button>
@@ -123,7 +123,7 @@
                   Interesting Blog Title that <br />
                   Can Fit On Two Lines
                 </h2>
-                <img class="object-contain w-full" src="../../assets/header/featured-blog.png" alt="blog-img" />
+                <img class="object-contain w-full" src="assets/header/featured-blog.png" alt="blog-img" />
               </div>
             </div>
           </div>
@@ -145,7 +145,7 @@
 <header class="mobile-header block lg:hidden shadow-sm px-[3%]">
   <div class="py-5 flex justify-between items-center ">
     <a routerLink="/">
-      <img class="w-32 object-cover cursor-pointer" src="../../assets/header/blogo.png" alt="logo" />
+      <img class="w-32 object-cover cursor-pointer" src="assets/header/blogo.png" alt="logo" />
     </a>
     <div class="text-2xl cursor-pointer" (click)="toggleMenuSection()">
       <i [ngClass]="isMenuOpen ? 'fa-solid fa-lg fa-xmark' : 'fa-solid fa-lg fa-bars'"

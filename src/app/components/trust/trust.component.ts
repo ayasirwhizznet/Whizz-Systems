@@ -13,16 +13,16 @@ const animation = { duration: 7000, easing: (t: number) => t };
 })
 export class TrustComponent {
   companies = [
-    '../../assets/trust/altera.png',
-    '../../assets/trust/amd.png',
-    '../../assets/trust/nvidia.png',
-    '../../assets/trust/amazon.png',
-    '../../assets/trust/microsoft.png',
-    '../../assets/trust/keysight.png',
-    '../../assets/trust/google.png',
-    '../../assets/trust/advantest.png',
-    '../../assets/trust/paypal.png',
-    '../../assets/trust/broadcom.png',
+    'assets/trust/altera.png',
+    'assets/trust/amd.png',
+    'assets/trust/nvidia.png',
+    'assets/trust/amazon.png',
+    'assets/trust/microsoft.png',
+    'assets/trust/keysight.png',
+    'assets/trust/google.png',
+    'assets/trust/advantest.png',
+    'assets/trust/paypal.png',
+    'assets/trust/broadcom.png',
   ];
 
   @ViewChild('sliderRef') sliderRef = {} as ElementRef;

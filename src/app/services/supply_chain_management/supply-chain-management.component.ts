@@ -20,22 +20,22 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 export class SupplyChainManagementComponent implements OnInit, OnDestroy {
   benefits: any[] = [
     {
-      imgUrl: '../../../assets/supply-chain/benefits.png',
+      imgUrl: 'assets/supply-chain/benefits.png',
       title: 'Integrated Across Stages',
       desc: 'We address every step in your product’s lifecycle.',
     },
     {
-      imgUrl: '../../../assets/supply-chain/benefits.png',
+      imgUrl: 'assets/supply-chain/benefits.png',
       title: 'Proactive Risk Mitigation',
       desc: 'We manage risks before they become issues.',
     },
     {
-      imgUrl: '../../../assets/supply-chain/benefits.png',
+      imgUrl: 'assets/supply-chain/benefits.png',
       title: 'Seamless Transitions',
       desc: 'Agile processes ensure timely delivery at every stage.',
     },
     {
-      imgUrl: '../../../assets/supply-chain/benefits.png',
+      imgUrl: 'assets/supply-chain/benefits.png',
       title: 'End-to-end Compliance',
       desc: 'Meet global standards with our expert assistance.',
     },

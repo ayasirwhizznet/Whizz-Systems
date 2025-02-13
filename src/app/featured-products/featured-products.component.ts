@@ -51,22 +51,22 @@ export class FeaturedProductsComponent {
       products: [
         {
           name: 'Whizz Kintex 7 FPGA WH705',
-          imgUrl: '../../assets/featured-products/featured-product.png',
+          imgUrl: 'assets/featured-products/featured-product.png',
           link: '/404',
         },
         {
           name: 'Whizz Virtex- 7 FPGA WS707A',
-          imgUrl: '../../assets/featured-products/featured-product.png',
+          imgUrl: 'assets/featured-products/featured-product.png',
           link: '/404',
         },
         {
           name: 'Whizz Zyn- 7000 SoC WZ 706',
-          imgUrl: '../../assets/featured-products/featured-product.png',
+          imgUrl: 'assets/featured-products/featured-product.png',
           link: '/404',
         },
         {
           name: 'Whizz Virtex- 7 FPGA VS 707 B',
-          imgUrl: '../../assets/featured-products/featured-product.png',
+          imgUrl: 'assets/featured-products/featured-product.png',
           link: '/404',
         },
       ],
@@ -76,12 +76,12 @@ export class FeaturedProductsComponent {
       products: [
         {
           name: 'Whizz Virtex- 7 FPGA WS709',
-          imgUrl: '../../assets/featured-products/featured-product.png',
+          imgUrl: 'assets/featured-products/featured-product.png',
           link: '/404',
         },
         {
           name: 'Whizz Virtex- 7 FPGA WS 7203A',
-          imgUrl: '../../assets/featured-products/featured-product.png',
+          imgUrl: 'assets/featured-products/featured-product.png',
           link: '/404',
         },
       ],
@@ -91,12 +91,12 @@ export class FeaturedProductsComponent {
       products: [
         {
           name: 'Xilinx Kintex- 7 FPGA KC724',
-          imgUrl: '../../assets/featured-products/featured-product.png',
+          imgUrl: 'assets/featured-products/featured-product.png',
           link: '/404',
         },
         {
           name: 'Xilinx Virtex- 7 FPGA WS 7203',
-          imgUrl: '../../assets/featured-products/featured-product.png',
+          imgUrl: 'assets/featured-products/featured-product.png',
           link: '/404',
         },
       ],
@@ -106,27 +106,27 @@ export class FeaturedProductsComponent {
       products: [
         {
           name: 'Balun Transformer',
-          imgUrl: '../../assets/featured-products/featured-product.png',
+          imgUrl: 'assets/featured-products/featured-product.png',
           link: '/404',
         },
         {
           name: 'FMC Loopback Card',
-          imgUrl: '../../assets/featured-products/featured-product.png',
+          imgUrl: 'assets/featured-products/featured-product.png',
           link: '/404',
         },
         {
           name: 'PCIe loopback Card',
-          imgUrl: '../../assets/featured-products/featured-product.png',
+          imgUrl: 'assets/featured-products/featured-product.png',
           link: '/404',
         },
         {
           name: 'PCIe loopback Card',
-          imgUrl: '../../assets/featured-products/featured-product.png',
+          imgUrl: 'assets/featured-products/featured-product.png',
           link: '/404',
         },
         {
           name: 'USB3 Micro B Plug Adapter',
-          imgUrl: '../../assets/featured-products/featured-product.png',
+          imgUrl: 'assets/featured-products/featured-product.png',
           link: '/404',
         },
       ],
@@ -136,22 +136,22 @@ export class FeaturedProductsComponent {
   evaluationKit: any[] = [
     {
       name: 'Whizz Kintex 7 FPGA WH705',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       link: '/404',
     },
     {
       name: 'Whizz Virtex- 7 FPGA WS707A',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       link: '/404',
     },
     {
       name: 'Whizz Zyn- 7000 SoC WZ 706',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       link: '/404',
     },
     {
       name: 'Whizz Virtex- 7 FPGA VS 707 B',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       link: '/404',
     },
   ];
@@ -159,12 +159,12 @@ export class FeaturedProductsComponent {
   connectivityKit: any[] = [
     {
       name: 'Whizz Virtex- 7 FPGA WS709',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       link: '/404',
     },
     {
       name: 'Whizz Virtex- 7 FPGA WS 7203A',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       link: '/404',
     },
   ];
@@ -172,12 +172,12 @@ export class FeaturedProductsComponent {
   characterizationKit: any[] = [
     {
       name: 'Xilinx Kintex- 7 FPGA KC724',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       link: '/404',
     },
     {
       name: 'Xilinx Virtex- 7 FPGA WS 7203',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       link: '/404',
     },
   ];
@@ -185,27 +185,27 @@ export class FeaturedProductsComponent {
   kitAccessories: any[] = [
     {
       name: 'Balun Transformer',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       link: '/404',
     },
     {
       name: 'FMC Loopback Card',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       link: '/404',
     },
     {
       name: 'PCIe loopback Card',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       link: '/404',
     },
     {
       name: 'PCIe loopback Card',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       link: '/404',
     },
     {
       name: 'USB3 Micro B Plug Adapter',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       link: '/404',
     },
   ];
@@ -214,14 +214,14 @@ export class FeaturedProductsComponent {
     {
       title: 'Medical Devices',
       name: 'Invensify Insuridge',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       desc: '',
       link: '/404',
     },
     {
       title: 'Telecommunication',
       name: '5G ORU',
-      imgUrl: '../../assets/featured-products/featured-product.png',
+      imgUrl: 'assets/featured-products/featured-product.png',
       desc: '',
       link: '/404',
     },

@@ -37,58 +37,58 @@ export class AboutComponent {
   ];
 
   certifications = [
-    { imgUrl: '../../assets/about/image3.png', name: 'ITAR' },
-    { imgUrl: '../../assets/about/image4.png', name: 'ISO 9001: 2015 RevD' },
-    { imgUrl: '../../assets/about/image2.png', name: 'ISO 13485:2016' },
-    { imgUrl: '../../assets/about/image5.png', name: 'ISO-27001' },
-    { imgUrl: '../../assets/about/image1.png', name: 'ISO-14001' },
+    { imgUrl: 'assets/about/image3.png', name: 'ITAR' },
+    { imgUrl: 'assets/about/image4.png', name: 'ISO 9001: 2015 RevD' },
+    { imgUrl: 'assets/about/image2.png', name: 'ISO 13485:2016' },
+    { imgUrl: 'assets/about/image5.png', name: 'ISO-27001' },
+    { imgUrl: 'assets/about/image1.png', name: 'ISO-14001' },
   ];
 
   concisely = [
     {
-      imgUrl: '../../assets/about/img1.png',
+      imgUrl: 'assets/about/img1.png',
       title: 'Everything under one roof',
       desc: 'Feasibility studies, design, prototyping, manufacturing, and compliance.',
     },
     {
-      imgUrl: '../../assets/about/img2.png',
+      imgUrl: 'assets/about/img2.png',
       title: 'Flexible & scalable',
       desc: 'Whether you need a partner for the entire journey or just one part, we are adaptable.',
     },
     {
-      imgUrl: '../../assets/about/img3.png',
+      imgUrl: 'assets/about/img3.png',
       title: 'Global teams',
       desc: 'Our worldwide teams work in unison to accelerate execution with 24/7 collaboration.',
     },
     {
-      imgUrl: '../../assets/about/img4.png',
+      imgUrl: 'assets/about/img4.png',
       title: 'Seamless process',
       desc: 'Streamlined processes across design, testing, manufacturing, and post-delivery support.',
     },
   ];
 
   collaborations = [
-    '../../assets/about/altera.png',
-    '../../assets/about/amd.png',
-    '../../assets/about/nvidia.png',
-    '../../assets/about/amazon.png',
-    '../../assets/about/microsoft.png',
-    '../../assets/about/keysight.png',
-    '../../assets/about/google.png',
-    '../../assets/about/advantest.png',
-    '../../assets/about/paypal.png',
-    '../../assets/about/broadcom.png',
+    'assets/about/altera.png',
+    'assets/about/amd.png',
+    'assets/about/nvidia.png',
+    'assets/about/amazon.png',
+    'assets/about/microsoft.png',
+    'assets/about/keysight.png',
+    'assets/about/google.png',
+    'assets/about/advantest.png',
+    'assets/about/paypal.png',
+    'assets/about/broadcom.png',
   ];
 
   passionate = [
     {
-      imgUrl: '../../assets/about/Manny-Karim.png',
+      imgUrl: 'assets/about/Manny-Karim.png',
       name: 'Manny Karim',
       designation: 'CEO',
       desc: 'Manny’s expertise in operations, finance, and manufacturing has been instrumental in Whizz Systems’ success. Starting his career at Pentagon Systems in 1989, Manny co-founded Whizz Systems and developed a robust team and processes ensuring maximum efficiency without compromising quality. He oversees 4 state-of-the-art assembly lines in Santa Clara and 2 facilities in Malaysia.',
     },
     {
-      imgUrl: '../../assets/about/Muuhammad-Irfan.png',
+      imgUrl: 'assets/about/Muuhammad-Irfan.png',
       name: 'Muhammad Irfan',
       designation: 'President',
       desc: `With a background in product development and manufacturing services, Muhammad co-founded Whizz Systems in 1999. His leadership has driven Whizz Systems' global presence across 3 continents, serving industries like computing, networking, medical, and defense.`,

@@ -18,7 +18,7 @@ import { CbuttonComponent } from '../../components/cbutton/cbutton.component';
 export class AdvancedManufacturingComponent {
   coreServices: any[] = [
     {
-      imgUrl: '../../../assets/advanced_manufacturing/core-services.png',
+      imgUrl: 'assets/advanced_manufacturing/core-services.png',
       title: 'Manufacturing Simulations',
       description: [
         'Advanced process optimization to enhance manufacturability and reliability.',
@@ -28,7 +28,7 @@ export class AdvancedManufacturingComponent {
       ],
     },
     {
-      imgUrl: '../../../assets/advanced_manufacturing/core-services.png',
+      imgUrl: 'assets/advanced_manufacturing/core-services.png',
       title: 'Electronic Manufacturing Assembly',
       description: [
         'High-precision PCB assembly for complex electronic systems.',
@@ -37,7 +37,7 @@ export class AdvancedManufacturingComponent {
       ],
     },
     {
-      imgUrl: '../../../assets/advanced_manufacturing/core-services.png',
+      imgUrl: 'assets/advanced_manufacturing/core-services.png',
       title: 'Mechanical Assembly',
       description: [
         'Full electromechanical integration with <b>custom enclosures and robust housing solutions.</b>',
@@ -45,7 +45,7 @@ export class AdvancedManufacturingComponent {
       ],
     },
     {
-      imgUrl: '../../../assets/advanced_manufacturing/core-services.png',
+      imgUrl: 'assets/advanced_manufacturing/core-services.png',
       title: 'System Build & Packaging Design',
       description: [
         '<b>Turnkey box builds</b> and final system integration.',
@@ -78,32 +78,32 @@ export class AdvancedManufacturingComponent {
 
   benefits: any[] = [
     {
-      imgUrl: '../../../assets/advanced_manufacturing/benefits.png',
+      imgUrl: 'assets/advanced_manufacturing/benefits.png',
       title: 'Integrated Workflow',
       desc: 'Real-time collaboration between design, manufacturing, and supply chain teams.',
     },
     {
-      imgUrl: '../../../assets/advanced_manufacturing/benefits.png',
+      imgUrl: 'assets/advanced_manufacturing/benefits.png',
       title: 'Parallel Process Optimization',
       desc: 'Simultaneous simulations lead to higher efficiency and better quality.',
     },
     {
-      imgUrl: '../../../assets/advanced_manufacturing/benefits.png',
+      imgUrl: 'assets/advanced_manufacturing/benefits.png',
       title: 'Strategic Component Selection',
       desc: 'Ensuring long-term availability, cost efficiency, and supply stability.',
     },
     {
-      imgUrl: '../../../assets/advanced_manufacturing/benefits.png',
+      imgUrl: 'assets/advanced_manufacturing/benefits.png',
       title: 'Predictive Problem-Solving',
       desc: 'Early-stage FMEA and DFX analysis reduce risks and improve reliability.',
     },
     {
-      imgUrl: '../../../assets/advanced_manufacturing/benefits.png',
+      imgUrl: 'assets/advanced_manufacturing/benefits.png',
       title: 'Optimized Thermal & Mechanical Performance',
       desc: 'Advanced profiling for superior product durability.',
     },
     {
-      imgUrl: '../../../assets/advanced_manufacturing/benefits.png',
+      imgUrl: 'assets/advanced_manufacturing/benefits.png',
       title: 'Streamlined Global Manufacturing',
       desc: 'Seamless transition from prototyping to high-volume production.',
     },

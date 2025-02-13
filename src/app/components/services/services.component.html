@@ -4,14 +4,14 @@
             <h2 class="text-3xl sm:text-4xl 3xl:text-5xl lg-leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold text-dark-gray2">Services</h2>
             <div class="flex items-center gap-4 3xl:gap-6">
                 <app-cbutton size="medium" [routerLink]="'/services'" heading="All services"
-                    icon="../../assets/services/r-arrow.svg"></app-cbutton>
+                    icon="assets/services/r-arrow.svg"></app-cbutton>
                 <div [className]="progress.abs == 0 ? 'pointer-events-none opacity-[0.6]':''">
                     <app-cbutton size="medium" (click)="prevSlide()"
-                        icon="../../assets/services/l-arrow.svg"></app-cbutton>
+                        icon="assets/services/l-arrow.svg"></app-cbutton>
                 </div>
                 <div [className]="progress.abs == progress.maxIdx ? 'pointer-events-none opacity-[0.6]':''">
                     <app-cbutton size="medium" (click)="nextSlide()"
-                        icon="../../assets/services/r-arrow.svg"></app-cbutton>
+                        icon="assets/services/r-arrow.svg"></app-cbutton>
                 </div>
             </div>
         </div>
