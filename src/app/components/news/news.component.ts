@@ -1,19 +1,24 @@
-import  KeenSlider  from 'keen-slider';
-import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angular/core';
-import { NewsCardComponent } from '../news-card/news-card.component';
+import KeenSlider from 'keen-slider';
+import {
+  Component,
+  CUSTOM_ELEMENTS_SCHEMA,
+  ElementRef,
+  ViewChild,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { CbuttonComponent } from '../cbutton/cbutton.component';
+import { BlogTagComponent } from '../blog-tag/blog-tag.component';
 
 @Component({
   selector: 'app-cnews',
   standalone: true,
-  imports: [NewsCardComponent, CommonModule, RouterLink, CbuttonComponent],
+  imports: [CommonModule, RouterLink, CbuttonComponent, BlogTagComponent],
   templateUrl: './news.component.html',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class NewsComponent {
-  cards:any[] = [
+  cards: any[] = [
     {
       imageUrl: '../../assets/news/img1.png',
       date: 'July 9, 2024',
@@ -46,12 +51,12 @@ export class NewsComponent {
     },
   ];
 
-  @ViewChild("sliderRef") sliderRef = {} as ElementRef;
+  @ViewChild('sliderRef') sliderRef = {} as ElementRef;
 
   slider: any = null;
   progress = {
-    maxIdx:6,
-    abs:0,
+    maxIdx: 6,
+    abs: 0,
   };
   totalSlides = this.cards.length;
 
@@ -59,29 +64,29 @@ export class NewsComponent {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
       slideChanged: (slider) => {
         this.progress = slider.track.details;
-        console.log(this.slider.track.details)
+        console.log(this.slider.track.details);
       },
 
       breakpoints: {
-        "(min-width: 640px)": {
+        '(min-width: 640px)': {
           slides: {
             perView: 1,
             spacing: 50,
           },
         },
-        "(min-width: 768px)": {
+        '(min-width: 768px)': {
           slides: {
             perView: 2,
             spacing: 50,
           },
         },
-        "(min-width: 1200px)": {
+        '(min-width: 1200px)': {
           slides: {
             perView: 3,
             spacing: 50,
           },
         },
-        "(min-width: 1700px)": {
+        '(min-width: 1700px)': {
           slides: {
             perView: 3,
             spacing: 70,

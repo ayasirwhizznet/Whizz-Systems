@@ -4,8 +4,7 @@ import {
   ElementRef,
   ViewChild,
 } from '@angular/core';
-import { ServicesCardComponent } from '../services-card/services-card.component';
-import { NgFor, NgIf } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { CbuttonComponent } from '../cbutton/cbutton.component';
 import 'keen-slider/keen-slider.css';
 import KeenSlider from 'keen-slider';
@@ -14,7 +13,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-cservices',
   standalone: true,
-  imports: [ServicesCardComponent, NgFor, CbuttonComponent, RouterLink, NgIf],
+  imports: [CommonModule, CbuttonComponent, RouterLink],
   templateUrl: './services.component.html',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

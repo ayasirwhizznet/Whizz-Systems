@@ -1,22 +1,38 @@
-<div class="px-[4%] sm:px-[10.2%] pt-24 ">
-  <div class="flex items-center justify-between mb-10 3xl:mb-13">
-    <h2 class="text-3xl sm:text-4xl 3xl:text-5xl font-bold text-dark-gray2">Testimonials</h2>
-    <div class="flex items-center gap-4 3xl:gap-6">
-      <div [className]="progress.abs == 0 ? 'pointer-events-none opacity-[0.6]':''">
-        <app-cbutton size="medium" (click)="prevSlide()" icon="../../assets/services/l-arrow.svg"></app-cbutton>
-      </div>
-      <div [className]="progress.abs == progress.maxIdx ? 'pointer-events-none opacity-[0.6]':''">
-        <app-cbutton size="medium" (click)="nextSlide()" icon="../../assets/services/r-arrow.svg"></app-cbutton>
+<section class="py-8 lg:py-12 3xl:py-16">
+  <div class="px-[4%] sm:px-[9.3%]">
+    <div class="flex items-center justify-between mb-6 sm:mb-10 3xl:mb-13">
+      <h2
+        class="text-3xl sm:text-4xl 3xl:text-5xl lg-leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold text-dark-gray2">
+        Testimonials</h2>
+      <div class="flex items-center gap-4 3xl:gap-6">
+        <div [className]="progress.abs == 0 ? 'pointer-events-none opacity-[0.6]':''">
+          <app-cbutton size="medium" (click)="prevSlide()" icon="../../assets/services/l-arrow.svg"></app-cbutton>
+        </div>
+        <div [className]="progress.abs == progress.maxIdx ? 'pointer-events-none opacity-[0.6]':''">
+          <app-cbutton size="medium" (click)="nextSlide()" icon="../../assets/services/r-arrow.svg"></app-cbutton>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="pl-[4%] sm:pl-[10.2%] pb-16">
-  <div class="keen-slider" #sliderRef>
-    <div class="keen-slider__slide " *ngFor="let card of cards">
-      <app-testimonial-card [desc]="card.desc" [imageUrl]="card.imageUrl" [name]="card.name"
-        [designation]="card.designation">
-      </app-testimonial-card>
+
+  <div class="pl-[4%] sm:pl-[9.3%]">
+    <div class="keen-slider" #sliderRef>
+      <div class="keen-slider__slide hover:shadow-2xl" *ngFor="let card of cards">
+        <div
+          class="p-6 3xl:p-8 rounded-md 3xl:rounded-lg border border-light-gray1 bg-card-gray hover:bg-white  duration-500">
+          <p
+            class="text-base 3xl:text-xl font-light h-[16rem] sm:h-[18rem] lg:h-[20rem] xl:h-[19rem] 2xl:h-[18rem] 3xl::h-[21rem]">
+            {{card.desc}} </p>
+          <hr class="border border-teal2 opacity-60 mb-4 3xl:mb-6">
+          <div class="flex items-center gap-3 4xl:gap-4">
+            <img [src]="card.imageUrl" class="w-10 3xl:w-12 object-cover rounded-full" alt="profile-image">
+            <div class="flex flex-col justify-between items-start">
+              <h4 class="text-sm 3xl:text-base font-semibold">{{card.name}}</h4>
+              <p class="text-dark-gray2 text-sm 3xl:text-base">{{card.designation}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>

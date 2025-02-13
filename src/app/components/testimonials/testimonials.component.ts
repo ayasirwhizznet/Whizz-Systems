@@ -5,14 +5,13 @@ import {
   ElementRef,
   ViewChild,
 } from '@angular/core';
-import { TestimonialCardComponent } from '../testimonial-card/testimonial-card.component';
 import { CommonModule } from '@angular/common';
 import { CbuttonComponent } from '../cbutton/cbutton.component';
 
 @Component({
   selector: 'app-testimonials',
   standalone: true,
-  imports: [TestimonialCardComponent, CommonModule, CbuttonComponent],
+  imports: [CommonModule, CbuttonComponent],
   templateUrl: './testimonials.component.html',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
@@ -70,17 +69,22 @@ a great track record with us`,
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
       slideChanged: (slider) => {
         this.progress = slider.track.details;
-        console.log(this.slider.track.details);
       },
 
       breakpoints: {
-        '(min-width: 640px)': {
+        '(min-width: 0px)': {
           slides: {
             perView: 1,
             spacing: 50,
           },
         },
-        '(min-width: 768px)': {
+        '(min-width: 640px)': {
+          slides: {
+            perView: 2,
+            spacing: 50,
+          },
+        },
+        '(min-width: 1024px)': {
           slides: {
             perView: 2,
             spacing: 50,
@@ -92,10 +96,16 @@ a great track record with us`,
             spacing: 60,
           },
         },
-        '(min-width: 1700px)': {
+        '(min-width: 1536px)': {
           slides: {
             perView: 3,
-            spacing: 90,
+            spacing: 60,
+          },
+        },
+        '(min-width: 1800px)': {
+          slides: {
+            perView: 3,
+            spacing: 96,
           },
         },
       },
