@@ -29,6 +29,7 @@ module.exports = {
         "card-gray": "#F8F8F8",
         "card-border": "#dddddd",
         "light-gray": "#EEEEEE",
+        "video-overlay": "#00a99f"
       },
     },
   },
