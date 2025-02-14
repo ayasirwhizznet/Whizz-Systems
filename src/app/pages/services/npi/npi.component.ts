@@ -10,7 +10,6 @@ import { filter } from 'rxjs/operators';
 import { CommonModule } from '@angular/common';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
-import { ServicesCaseStudyComponent } from '@components/services-case-study/services-case-study.component';
 import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
 @Component({
   selector: 'app-npi',
@@ -20,7 +19,6 @@ import { ServicesContactExpertsComponent } from '@components/services-contact-ex
     RouterLink,
     ServicesHeroComponent,
     ServicesIntroComponent,
-    ServicesCaseStudyComponent,
     ServicesContactExpertsComponent
   ],
   templateUrl: './npi.component.html',
