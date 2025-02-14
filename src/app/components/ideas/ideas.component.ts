@@ -16,10 +16,10 @@ export class IdeasComponent {
   ];
 
   certifications = [
-    { imgUrl: 'assets/ideas/certification1.svg' },
-    { imgUrl: 'assets/ideas/certification2.svg' },
-    { imgUrl: 'assets/ideas/certification3.svg' },
-    { imgUrl: 'assets/ideas/certification4.svg' },
-    { imgUrl: 'assets/ideas/certification5.svg' },
+    'assets/ideas/certification1.svg',
+    'assets/ideas/certification2.svg',
+    'assets/ideas/certification3.svg',
+    'assets/ideas/certification4.svg',
+    'assets/ideas/certification5.svg',
   ];
 }

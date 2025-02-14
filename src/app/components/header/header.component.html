@@ -140,7 +140,7 @@
   class="hidden lg:block fixed h-full w-full top-28 3xl:top-36 z-40 bg-[#00000080]">
 </div>
 <div *ngIf="isSearchbaropen" (click)="closeMenu()"
-  class="hidden lg:block fixed h-full w-full top-28 3xl:top-36 z-40 bg-[#00000080]">
+  class="fixed h-full w-full top-24 lg:top-28  3xl:top-36 z-40 bg-[#00000080]">
 </div>
 
 
@@ -155,13 +155,13 @@
         class="fa-solid fa-search fa-xl text-dark-gray2 hover:text-teal1 duration-300 mr-8"></i>
       <!-- Search bar container -->
       <div *ngIf="isSearchbaropen"
-        class="p-2 bg-card-gray fixed left-1/2 transform -translate-x-1/2 top-24 z-50 rounded-br-md rounded-bl-md w-full">
+        class="p-2 bg-card-gray fixed left-1/2 transform -translate-x-1/2 top-24 z-50 rounded-br-md rounded-bl-md w-full sm:w-[80%]">
         <div class="flex items-center justify-center gap-3 px-2 py-4 bg-white rounded-md">
           <div class="flex items-center gap-3 rounded-md border px-2 py-1 w-full bg-card-gray duration-300"
             [ngClass]="{'border-teal1': searchText, 'border-dark-gray2': !searchText}">
             <i class="bi bi-search text-lg text-light-gray1 cursor-pointer"></i>
             <input type="search" (focusin)=focusin() (focusout)=focusout() placeholder="Search"
-              class="w-full py-1 text-sm bg-transparent focus:outline-none placeholder-light-gray1 focus:placeholder-transparent" />
+              class="w-full py-1 sm:py-2 text-sm bg-transparent focus:outline-none placeholder-light-gray1 focus:placeholder-transparent" />
           </div>
           <app-cbutton2 routerLink="/404" heading="Search" size="large" bg="white"></app-cbutton2>
           <i (click)="toggleSearchbar()" class="bi bi-x-lg text-xl cursor-pointer hover:text-teal1 ml-2"></i>
