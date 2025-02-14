@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router, RouterOutlet, NavigationEnd } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from './components/footer/footer.component';
-import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from '@components/footer/footer.component';
+import { HeaderComponent } from '@components/header/header.component';
 import { filter } from 'rxjs';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 @Component({

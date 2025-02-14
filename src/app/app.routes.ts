@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './pages/about/about.component';
-import { Page404Component } from './404/page404.component';
+import { Page404Component } from './pages/error/404/404.component';
+import { HomeComponent } from './pages/home/home.component';
 
 export const routes: Routes = [
   {
@@ -16,16 +16,16 @@ export const routes: Routes = [
   },
   {
     path: 'services',
-    loadChildren: () => import('./services/routes').then((m) => m.routes),
+    loadChildren: () => import('./pages/services/routes').then((m) => m.routes),
   },
   {
     path: 'featured-products',
     loadChildren: () =>
-      import('./featured-products/routes').then((m) => m.routes),
+      import('./pages/featured-products/routes').then((m) => m.routes),
   },
   {
     path: 'news_&_insights',
-    loadChildren: () => import('./news-blogs/routes').then((m) => m.routes),
+    loadChildren: () => import('./pages/news-blogs/routes').then((m) => m.routes),
   },
   {
     path: '404',
