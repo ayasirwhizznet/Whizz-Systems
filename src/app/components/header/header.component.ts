@@ -9,8 +9,8 @@ import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HeaderSectionComponent } from '../header-section/header-section.component';
 import { MobileHeaderComponent } from '../mobile_header/mobile_header.component';
-import { CbuttonComponent } from '../cbutton/cbutton.component';
-import { Cbutton2Component } from '../cbutton2/cbutton2.component';
+import { ButtonComponent } from '../button/button.component';
+import { AnimatedButton } from '../animated-button/animated-button.component';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -21,8 +21,8 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     HeaderSectionComponent,
     MobileHeaderComponent,
-    CbuttonComponent,
-    Cbutton2Component,
+    ButtonComponent,
+    AnimatedButton,
     FormsModule,
   ],
   templateUrl: './header.component.html',

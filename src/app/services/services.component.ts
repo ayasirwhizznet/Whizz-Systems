@@ -7,11 +7,11 @@ import {
   RouterModule,
 } from '@angular/router';
 import { filter, Subscription } from 'rxjs';
-import { CbuttonComponent } from '../components/cbutton/cbutton.component';
+import { ButtonComponent } from '../components/button/button.component';
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [CommonModule, RouterModule, CbuttonComponent],
+  imports: [CommonModule, RouterModule, ButtonComponent],
   templateUrl: './services.component.html',
 })
 export class ServicesComponent implements OnInit, OnDestroy {

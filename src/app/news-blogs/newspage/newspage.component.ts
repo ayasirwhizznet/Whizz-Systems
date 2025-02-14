@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NewsComponent } from '../../components/news/news.component';
-import { Cbutton2Component } from '../../components/cbutton2/cbutton2.component';
 import { BlogTagComponent } from '../../components/blog-tag/blog-tag.component';
-import { CbuttonComponent } from '../../components/cbutton/cbutton.component';
+import { ButtonComponent } from '../../components/button/button.component';
+import { AnimatedButton } from '../../components/animated-button/animated-button.component';
 
 @Component({
   selector: 'app-newspage',
   standalone: true,
   imports: [
     CommonModule,
-    Cbutton2Component,
+    AnimatedButton,
     NewsComponent,
     BlogTagComponent,
-    CbuttonComponent,
+    ButtonComponent,
   ],
   templateUrl: './newspage.component.html',
 })

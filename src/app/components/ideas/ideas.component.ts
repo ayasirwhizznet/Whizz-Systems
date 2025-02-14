@@ -1,11 +1,11 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
-import { CbuttonComponent } from '../cbutton/cbutton.component';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-ideas',
   standalone: true,
-  imports: [NgFor, CbuttonComponent],
+  imports: [NgFor, ButtonComponent],
   templateUrl: './ideas.component.html',
 })
 export class IdeasComponent {

@@ -1,4 +1,4 @@
-import { ServicesCaseStudyComponent } from './../../../components/services-case-study/services-case-study.component';
+import { ServicesCaseStudyComponent } from '../../../components/services-case-study/services-case-study.component';
 import { Component } from '@angular/core';
 import { ServicesIntroComponent } from '../../../components/services-intro/services-intro.component';
 import { ServicesHeroComponent } from '../../../components/services-hero/services-hero.component';

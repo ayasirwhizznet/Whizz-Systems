@@ -76,15 +76,15 @@
             <input type="search" placeholder="Search" (focusin)=focusin() (focusout)=focusout()
               class="w-full py-1 text-sm 3xl:text-base bg-transparent focus:outline-none placeholder-light-gray1 focus:placeholder-transparent" />
           </div>
-          <app-cbutton2 routerLink="/404" heading="Search" size="large" bg="white"></app-cbutton2>
+          <app-animated-button routerLink="/404" heading="Search" size="large" bg="white"></app-animated-button>
           <i (click)="toggleSearchbar()"
             class="bi bi-x-lg text-2xl 3xl:text-3xl cursor-pointer hover:text-teal1 ml-3"></i>
         </div>
       </div>
 
       <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
-        target="_blank"><app-cbutton heading="Contact us" icon="assets/header/r-arrow.svg"
-          [size]="'medium'"></app-cbutton></a>
+        target="_blank"><app-button heading="Contact us" icon="assets/header/r-arrow.svg"
+          [size]="'medium'"></app-button></a>
     </div>
   </div>
 
@@ -163,7 +163,7 @@
             <input type="search" (focusin)=focusin() (focusout)=focusout() placeholder="Search"
               class="w-full py-1 sm:py-2 text-sm bg-transparent focus:outline-none placeholder-light-gray1 focus:placeholder-transparent" />
           </div>
-          <app-cbutton2 routerLink="/404" heading="Search" size="large" bg="white"></app-cbutton2>
+          <app-animated-button routerLink="/404" heading="Search" size="large" bg="white"></app-animated-button>
           <i (click)="toggleSearchbar()" class="bi bi-x-lg text-xl cursor-pointer hover:text-teal1 ml-2"></i>
         </div>
 

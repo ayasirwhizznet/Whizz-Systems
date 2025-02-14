@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CbuttonComponent } from '../../components/cbutton/cbutton.component';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CbuttonComponent, CommonModule],
+  imports: [ButtonComponent, CommonModule],
   templateUrl: './about.component.html',
 })
 export class AboutComponent {

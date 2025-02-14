@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { CbuttonComponent } from '../cbutton/cbutton.component';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-services-hero',
   standalone: true,
-  imports: [CbuttonComponent],
+  imports: [ButtonComponent],
   templateUrl: './services-hero.component.html',
 })
 export class ServicesHeroComponent {

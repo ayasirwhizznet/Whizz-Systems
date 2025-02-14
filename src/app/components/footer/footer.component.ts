@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { Cbutton2Component } from '../cbutton2/cbutton2.component';
+import { AnimatedButton } from '../animated-button/animated-button.component';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [Cbutton2Component, CommonModule, RouterLink],
+  imports: [AnimatedButton, CommonModule, RouterLink],
   templateUrl: './footer.component.html',
 })
 export class FooterComponent {

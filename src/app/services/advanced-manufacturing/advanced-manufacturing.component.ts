@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ServicesHeroComponent } from '../../components/services-hero/services-hero.component';
 import { ServicesIntroComponent } from '../../components/services-intro/services-intro.component';
 import { CommonModule } from '@angular/common';
-import { CbuttonComponent } from '../../components/cbutton/cbutton.component';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
   selector: 'app-advanced-manufacturing',
@@ -11,7 +11,7 @@ import { CbuttonComponent } from '../../components/cbutton/cbutton.component';
     ServicesHeroComponent,
     ServicesIntroComponent,
     CommonModule,
-    CbuttonComponent,
+    ButtonComponent,
   ],
   templateUrl: './advanced-manufacturing.component.html',
 })

@@ -6,12 +6,12 @@ import {
   ViewChild,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CbuttonComponent } from '../cbutton/cbutton.component';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-testimonials',
   standalone: true,
-  imports: [CommonModule, CbuttonComponent],
+  imports: [CommonModule, ButtonComponent],
   templateUrl: './testimonials.component.html',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

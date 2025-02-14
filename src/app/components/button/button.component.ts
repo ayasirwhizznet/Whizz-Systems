@@ -3,13 +3,13 @@ import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-cbutton',
+  selector: 'app-button',
   standalone: true,
   imports: [NgIf, RouterLink, CommonModule],
-  templateUrl: './cbutton.component.html',
-  styleUrls: ['./cbutton.component.scss'],
+  templateUrl: './button.component.html',
+  styleUrls: ['./button.component.scss'],
 })
-export class CbuttonComponent {
+export class ButtonComponent {
   @Input() routerLink!: string;
   @Input() heading: string = '';
   @Input() icon: string | null = null;

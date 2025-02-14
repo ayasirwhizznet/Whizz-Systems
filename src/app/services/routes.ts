@@ -13,7 +13,7 @@ export const routes: Routes = [
       {
         path: 'engineering_&_design',
         loadChildren: () =>
-          import('./engineering_design/routes').then((m) => m.routes),
+          import('./engineering-design/routes').then((m) => m.routes),
       },
       {
         path: 'npi',
@@ -22,22 +22,22 @@ export const routes: Routes = [
       {
         path: 'advanced_manufacturing',
         loadChildren: () =>
-          import('./advanced_manufacturing/routes').then((m) => m.routes),
+          import('./advanced-manufacturing/routes').then((m) => m.routes),
       },
       {
         path: 'lab_testing_solutions',
         loadChildren: () =>
-          import('./lab_testing_solutions/routes').then((m) => m.routes),
+          import('./lab-testing-solutions/routes').then((m) => m.routes),
       },
       {
         path: 'supply_chain_management',
         loadChildren: () =>
-          import('./supply_chain_management/routes').then((m) => m.routes),
+          import('./supply-chain-management/routes').then((m) => m.routes),
       },
       {
         path: 'sustainable_engineering',
         loadChildren: () =>
-          import('./sustainable_engineering/routes').then((m) => m.routes),
+          import('./sustainable-engineering/routes').then((m) => m.routes),
       },
     ],
   },

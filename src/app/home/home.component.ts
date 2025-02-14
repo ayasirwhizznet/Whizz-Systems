@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HeroComponent } from '../components/hero/hero.component';
-import { ServicesComponent } from '../components/services/services.component';
+import { ServicesComponent } from '../components/service/services.component';
 import { IdeasComponent } from '../components/ideas/ideas.component';
 import { TrustComponent } from '../components/trust/trust.component';
 import { TestimonialsComponent } from '../components/testimonials/testimonials.component';

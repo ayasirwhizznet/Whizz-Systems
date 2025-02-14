@@ -3,13 +3,13 @@ import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-cbutton2',
+  selector: 'app-animated-button',
   standalone: true,
   imports: [NgIf, RouterLink, CommonModule],
-  templateUrl: './cbutton2.component.html',
-  styleUrls: ['./cbutton2.component.scss'],
+  templateUrl: './animated-button.component.html',
+  styleUrls: ['./animated-button.component.scss'],
 })
-export class Cbutton2Component {
+export class AnimatedButton {
   @Input() routerLink!: string;
   @Input() heading: string = '';
   @Input() icon: boolean = false;

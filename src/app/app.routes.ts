@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './pages/about/about.component';
-import { Page404Component } from './page404/page404.component';
+import { Page404Component } from './404/page404.component';
 
 export const routes: Routes = [
   {
@@ -25,7 +25,7 @@ export const routes: Routes = [
   },
   {
     path: 'news_&_insights',
-    loadChildren: () => import('./news_&_blogs/routes').then((m) => m.routes),
+    loadChildren: () => import('./news-blogs/routes').then((m) => m.routes),
   },
   {
     path: '404',

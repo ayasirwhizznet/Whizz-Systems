@@ -7,7 +7,7 @@ export const routes: Routes = [
       {
         path: 'system_design_&_schematics',
         loadComponent: () =>
-          import('./system_design_&_schematics/system-design.component').then(
+          import('./system-design-schematics/system-design.component').then(
             (m) => m.SystemDesignComponent
           ),
         title: 'System Design/Schematics',

@@ -7,13 +7,13 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { CbuttonComponent } from '../cbutton/cbutton.component';
+import { ButtonComponent } from '../button/button.component';
 import { BlogTagComponent } from '../blog-tag/blog-tag.component';
 
 @Component({
   selector: 'app-cnews',
   standalone: true,
-  imports: [CommonModule, RouterLink, CbuttonComponent, BlogTagComponent],
+  imports: [CommonModule, RouterLink, ButtonComponent, BlogTagComponent],
   templateUrl: './news.component.html',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

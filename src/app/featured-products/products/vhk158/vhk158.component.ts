@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { CbuttonComponent } from '../../../components/cbutton/cbutton.component';
+import { ButtonComponent } from '../../../components/button/button.component';
 import { CommonModule, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-vhk158',
   standalone: true,
-  imports: [CbuttonComponent, CommonModule, NgFor],
+  imports: [ButtonComponent, CommonModule, NgFor],
   templateUrl: './vhk158.component.html',
 })
 export class VHK158Component {
