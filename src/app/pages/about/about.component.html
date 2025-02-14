@@ -49,38 +49,39 @@
     </div>
 </section>
 
-<img class="px-[13%] mb-[39px] mt-[54px]" src="assets/ideas/section-divider1.png" alt="img">
-
 <!-- Experience -->
-<section
-    class="px-[4%] sm:px-[9.3%] flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-32 3xl:gap-48 py-8 lg:py-12 3xl:py-16">
-    <div class="w-full lg:w-1/2 py-6 lg:py-20">
-        <h2
-            class="w-11/12 sm:w-3/5 lg:w-full text-3xl sm:text-4xl lg:text-[52px] 3xl:text-[64px] lg:leading-[64px] 3xl:leading-[76.8px] text-dark-gray2 font-light mx-auto text-center lg:text-left">
-            <span class="text-teal2 font-medium">25+ Years</span> of Building Growth in Electronic Design &
-            Manufacturing
-        </h2>
-    </div>
-    <div class="w-full lg:w-1/2 flex flex-wrap justify-between items-between">
-        <div class=" grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-y-10 3xl:gap-y-16 sm:gap-x-16 3xl:gap-x-32">
-            <div class="text-center" *ngFor="let item of experience">
-                <h2 class="text-4xl 3xl:text-5xl text-dark-gray2 font-bold">{{item.quantity}}<span
-                        class="text-3xl 3xl:text-4xl text-dark-gray2 font-bold">{{item.sign}}</span></h2>
-                <h3 class="text-xl 3xl:text-2xl text-dark-gray2 font-bold">{{item.title}}</h3>
-                <hr class="w-5/12 mx-auto border border-light-gray1 opacity-60 my-1 3xl:my-2">
-                <p
-                    class="w-[55%] sm:w-[70%] lg:w-[88%] 3xl:w-[95%] mx-auto text-base 3xl:text-xl leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light">
-                    {{item.desc}}</p>
+<section>
+    <img src="assets/featured-products/products/divider-top.png" alt="img">
+    <div
+        class="px-[4%] sm:px-[9.3%] flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-32 3xl:gap-48 py-8 lg:py-12 3xl:py-16">
+        <div class="w-full lg:w-1/2 py-6 lg:py-20">
+            <h2
+                class="w-11/12 sm:w-3/5 lg:w-full text-3xl sm:text-4xl lg:text-[52px] 3xl:text-[64px] lg:leading-[64px] 3xl:leading-[76.8px] text-dark-gray2 font-light mx-auto text-center lg:text-left">
+                <span class="text-teal2 font-medium">25+ Years</span> of Building Growth in Electronic Design &
+                Manufacturing
+            </h2>
+        </div>
+        <div class="w-full lg:w-1/2 flex flex-wrap justify-between items-between">
+            <div class=" grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-y-10 3xl:gap-y-16 sm:gap-x-16 3xl:gap-x-32">
+                <div class="text-center" *ngFor="let item of experience">
+                    <h2 class="text-4xl 3xl:text-5xl text-dark-gray2 font-bold">{{item.quantity}}<span
+                            class="text-3xl 3xl:text-4xl text-dark-gray2 font-bold">{{item.sign}}</span></h2>
+                    <h3 class="text-xl 3xl:text-2xl text-dark-gray2 font-bold">{{item.title}}</h3>
+                    <hr class="w-5/12 mx-auto border border-light-gray1 opacity-60 my-1 3xl:my-2">
+                    <p
+                        class="w-[55%] sm:w-[70%] lg:w-[88%] 3xl:w-[95%] mx-auto text-base 3xl:text-xl leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light">
+                        {{item.desc}}</p>
+                </div>
             </div>
         </div>
     </div>
-</section>
-<img class="px-[13%] mt-[39px] mb-[54px]" src="assets/testimonials/section-divider2.png" alt="img">
+    <img src="assets/featured-products/products/divider-bottom.png" alt="img">
+</section>>
 
 <!-- Unique Approach -->
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16 text-center">
     <h2
-        class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium mb-3 3xl:mb-4">
+        class=" font-medium mb-3 3xl:mb-4">
         Our Unique Approach to Accelerate Your Product Journey</h2>
     <h3 class="text-base 3xl:text-xl leading-[24px] 3xl:leading-[28px] text-dark-gray2">Comprehensive, Expert Solutions
         Designed to Meet Your Unique Needs

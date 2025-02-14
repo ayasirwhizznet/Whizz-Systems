@@ -6,7 +6,7 @@
 
 <a routerLink="/news_&_insights/news" *ngFor="let item of blogData; let i = index"
     class="cursor-pointer hidden md:block">
-    <div class="group relative w-full flex items-center gap-8 overflow-x-scroll no-scrollbar mb-6 3xl:mb-8"
+    <div class="group relative w-full flex items-center gap-6 3xl:gap-8 overflow-x-scroll no-scrollbar mb-6 3xl:mb-8"
         [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">
         <div class="p-6 3xl:p-8 bg-card-gray  w-full group-hover:w-[88%] lg:group-hover:w-[92%] rounded-lg border border-light-gray1 flex items-center gap-6 3xl:gap-8 transition-all duration-500 ease-in-out"
             [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">
