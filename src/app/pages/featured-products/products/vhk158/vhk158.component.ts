@@ -9,7 +9,7 @@ import { CommonModule, NgFor } from '@angular/common';
   templateUrl: './vhk158.component.html',
 })
 export class VHK158Component {
-  keyFeatures = {
+  features = {
     feature1: [
       '<b>Clocking –</b> Programmable DDR4 Clocks (x2), PCIe Reference Clock (x1), Programmable GT Clocks (x12)',
       '<b>Memory –</b> DDR4 DIMM: 32GB (2x 16GB, 72-bit @ 3200 Mb/s)',
@@ -27,46 +27,46 @@ export class VHK158Component {
     ],
   };
 
-  customization: any[] = [
+  customizations: any[] = [
     {
       imgUrl:
         'assets/featured-products/products/vhk158/customization.png',
-      title: 'Full System Development',
+      name: 'Full System Development',
       desc: 'Productize the VHK158 into a deployable solution, including custom enclosures, firmware, and regulatory compliance.',
     },
     {
       imgUrl:
         'assets/featured-products/products/vhk158/customization.png',
-      title: 'Custom I/O & Connectivity',
+      name: 'Custom I/O & Connectivity',
       desc: 'Modify PCIe lanes, QSFP28/QSFP-DD configurations, or expand I/O options.',
     },
     {
       imgUrl:
         'assets/featured-products/products/vhk158/customization.png',
-      title: 'FPGA & Memory Modifications',
+      name: 'FPGA & Memory Modifications',
       desc: 'Expand HBM/DDR4 capabilities based on workload needs.',
     },
     {
       imgUrl:
         'assets/featured-products/products/vhk158/customization.png',
-      title: 'Software & Firmware Customization',
+      name: 'Software & Firmware Customization',
       desc: 'Optimize drivers, software environments, and application-layer software.',
     },
     {
       imgUrl:
         'assets/featured-products/products/vhk158/customization.png',
-      title: 'Power Distribution Optimization',
+      name: 'Power Distribution Optimization',
       desc: ' Improve power management and efficiency to meet system power constraints.',
     },
     {
       imgUrl:
         'assets/featured-products/products/vhk158/customization.png',
-      title: 'Cooling Enhancements',
+      name: 'Cooling Enhancements',
       desc: 'Implement advanced thermal solutions such as custom heatsinks, active cooling, or liquid-cooled enclosures for optimal performance.',
     },
   ];
 
-  applications: string[] = [
+  tags: string[] = [
     'Defense & Aerospace',
     'High Speed Network',
     'Telecommunications & 5G',

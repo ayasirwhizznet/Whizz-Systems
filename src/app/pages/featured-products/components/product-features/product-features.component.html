@@ -1,0 +1,17 @@
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16 bg-card-gray">
+    <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[14px] 3xl:leading-[19.2px] mb-3 3xl:mb-4">Key
+        {{heading}}</h4>
+    <h3
+        class="text-dark-gray2 text-xl 3xl:text-2xl font-semibold 3xl:font-bold leading-[24px] 3xl:leading-[28.8px] mb-10 3xl:mb-12">
+        {{title}}</h3>
+    <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 3xl:gap-8 border border-light-gray1 rounded-md 3xl:rounded-lg bg-white">
+        <div *ngFor="let feature of features | keyvalue" class="px-6 sm:p-6 3xl:p-8">
+            <hr class="hidden sm:block border border-light-gray1 opacity-60">
+            <div *ngFor="let item of feature.value" class="relative h-16 3xl:h-[84px] flex items-center w-full">
+                <p class="text-dark-gray2 text-xs 3xl:text-base font-light" [innerHTML]="item">{{ item }}</p>
+                <hr class="absolute bottom-0 left-0 w-full border border-light-gray1 opacity-60">
+            </div>
+        </div>
+    </div>
+</section>
