@@ -1,9 +1,9 @@
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[19.2px] mb-3 3xl:mb-4">{{secTitle}}</h4>
+    <h4 class="text-teal1 text-sm 3xl:text-base font-semibold 3xl:font-bold lg:leading-[15px] 3xl:leading-[19.2px] mb-3 3xl:mb-4">{{secTitle}}</h4>
     <h3 class="{{secHeadingMargin}}"
-        class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px]">{{secHeading}}</h3>
+        class="text-dark-gray2 text-xl 3xl:text-2xl font-medium lg:leading-[24px] 3xl:leading-[28.8px]">{{secHeading}}</h3>
     <p *ngIf="secDesc"
-        class="text-dark-gray2 font-light text-sm 3xl:text-base leading-[24px] 3xl:leading-[28.8px] mb-6 3xl:mb-8">
+        class="text-dark-gray2 font-light text-sm 3xl:text-base lg:leading-[24px] 3xl:leading-[28px] mb-6 3xl:mb-8">
         {{secDesc}}</p>
     <div
         class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 3xl:gap-x-8 gap-y-8 lg:gap-y-12 3xl:gap-y-16 "
@@ -11,9 +11,9 @@
             <div *ngFor="let card of cardData" class="p-6 3xl:p-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
                 <img class="rounded-md 3xl:rounded-lg" [src]="card.imgUrl" alt="img">
                     <h3
-                        class="font-bold mt-6 3xl:mt-8 mb-4 3xl:mb-5 text-base lg:text-xs 3xl:text-base leading-[22.4px]">
+                        class="text-dark-gray2 font-bold mt-6 3xl:mt-8 mb-4 3xl:mb-5 text-sm 3xl:text-base">
                         {{card.title}}</h3>
-                    <p class="font-light text-base lg:text-xs 3xl:text-base lg:leading-[20px] 3xl:leading-[24px]">
+                    <p class="text-dark-gray2 font-light text-sm 3xl:text-base">
                         {{card.desc}}</p>
             </div>
     </div>

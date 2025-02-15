@@ -40,12 +40,12 @@ export class SignalIntegrityComponent {
     {
       imgUrl: 'assets/signalIntegrity/core-services.png',
       title: 'DDR Parallel Bus Analysis',
-      desc: 'valuates timing, Simultaneous Switching Noise (SSN), voltage margins, and signal behavior for stable memory communication.',
+      desc: 'Evaluates timing, Simultaneous Switching Noise (SSN), voltage margins, and signal behavior for stable memory communication.',
     },
     {
       imgUrl: 'assets/signalIntegrity/core-services.png',
       title: 'S-Parameter Simulations',
-      desc: 'nalyze high-speed interfaces for insertion loss, return loss, and TDR, identifying signal path discontinuities and crosstalk.',
+      desc: 'Analyze high-speed interfaces for insertion loss, return loss, and TDR, identifying signal path discontinuities and crosstalk.',
     },
     {
       imgUrl: 'assets/signalIntegrity/core-services.png',

@@ -7,17 +7,17 @@
   </div>
   <div class="w-full lg:w-[53.8%]"
     [ngClass]="{ 'order-1 lg:order-0': isImageFirst, 'order-0 lg:order-1': !isImageFirst }">
-    <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[19.2px]">{{secTitle}}</h4>
-    <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[28.8px] my-3 3xl:my-4">{{secHeading}}</h3>
-    <p class="text-dark-gray2 text-sm 3xl:text-base font-light leading-[24px] 3xl:leading-[28px]" [innerHTML]="secDesc1"></p>
+    <h4 class="text-teal1 text-sm 3xl:text-base font-semibold 3xl:font-bold leading-[19.2px]">{{secTitle}}</h4>
+    <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium lg:leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">{{secHeading}}</h3>
+    <p class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]" [innerHTML]="secDesc1"></p>
     <p *ngIf="secDesc2"
-      class="text-dark-gray2 text-sm 3xl:text-base text-custom font-light leading-[24px] 3xl:leading-[28px] mt-6 3xl:mt-8" [innerHTML]="secDesc2"></p>
+      class="text-dark-gray2 text-sm 3xl:text-base text-custom font-light lg:leading-[24px] 3xl:leading-[28px] mt-6 3xl:mt-8" [innerHTML]="secDesc2"></p>
     <p *ngIf="secDesc3"
-      class="text-dark-gray2 text-sm 3xl:text-base font-light leading-[24px] 3xl:leading-[28px] mt-6 3xl:mt-8">
+      class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mt-6 3xl:mt-8">
       {{secDesc3}}</p>
-    <h4 *ngIf="secSubHeading" class="text-sm 3xl:text-base text-dark-gray2 font-bold mt-4 3xl:mt-6">{{secSubHeading}}
+    <h4 *ngIf="secSubHeading" class="text-dark-gray2 text-sm 3xl:text-base font-semibold 3xl:font-bold lg:leading-[24px] 3xl:leading-[28px] mt-4 3xl:mt-6">{{secSubHeading}}
     </h4>
-    <p *ngIf="secDesc4" class="text-dark-gray2 text-sm 3xl:text-base font-light leading-[24px] 3xl:leading-[28px] mt-1">
+    <p *ngIf="secDesc4" class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mt-1">
       {{secDesc4}}</p>
     <div *ngIf="btnText" class="mt-3 3xl:mt-4">
       <app-button heading="{{btnText}}" routerLink="{{routerLink}}" icon="assets/services/r-arrow.svg"
