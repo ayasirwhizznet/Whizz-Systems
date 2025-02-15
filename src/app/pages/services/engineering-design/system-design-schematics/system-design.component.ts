@@ -1,4 +1,3 @@
-import { ServicesCaseStudyComponent } from '@components/services-case-study/services-case-study.component';
 import { Component } from '@angular/core';
 import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
@@ -13,7 +12,6 @@ import { ServicesBenefitsComponent } from '@components/services-benefits/service
   imports: [
     ServicesIntroComponent,
     ServicesHeroComponent,
-    ServicesCaseStudyComponent,
     ServicesContactExpertsComponent,
     ServicesCoreServicesComponent,
     ServicesIndustryComponent,
@@ -59,24 +57,17 @@ export class SystemDesignComponent {
     {
       imgUrl: 'assets/system-design/industrial.png',
       title: 'Industry Standards',
-      type1: 'IPC Standards',
-      type2: 'ISO 9001',
-      type3: 'RoHS Compliance',
-      type4: 'UL Certification',
+      description: ['IPC Standards', 'ISO 9001', 'RoHS Compliance', 'UL Certification']
     },
     {
       imgUrl: 'assets/system-design/tvc.png',
       title: 'Testing & Validation Compliance',
-      type1: 'EMC/EMI Testing',
-      type2: 'ESD Standards',
-      type3: 'Thermal Reliability Testing',
+      description: ['EMC/EMI Testing', 'ESD Standards', 'Thermal Reliability Testing']
     },
     {
       imgUrl: 'assets/system-design/grc.png',
       title: 'Global Regulatory Compliance',
-      type1: 'FCC Compliance',
-      type2: 'CE Marking',
-      type3: 'UL and CSA Standards',
+      description: ['FCC Compliance', 'CE Marking', 'UL and CSA Standards']
     },
   ];
 

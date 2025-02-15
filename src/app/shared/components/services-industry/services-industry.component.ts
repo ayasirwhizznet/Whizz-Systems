@@ -11,5 +11,6 @@ export class ServicesIndustryComponent {
   @Input() secTitle: string = '';
   @Input() secHeading: string = '';
   @Input() secDesc: string = '';
+  @Input() columns: number = 3;
   @Input() cardData: any[] = [];
 }

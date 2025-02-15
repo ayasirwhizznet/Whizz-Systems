@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
-import { ServicesCaseStudyComponent } from '@components/services-case-study/services-case-study.component';
 import { ServicesCoreServicesComponent } from '@components/services-core-services/services-core-services.component';
 import { ServicesBenefitsComponent } from '@components/services-benefits/services-benefits.component';
 import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
@@ -12,7 +11,6 @@ import { ServicesContactExpertsComponent } from '@components/services-contact-ex
   imports: [
     ServicesHeroComponent,
     ServicesIntroComponent,
-    ServicesCaseStudyComponent,
     ServicesCoreServicesComponent,
     ServicesBenefitsComponent,
     ServicesContactExpertsComponent,

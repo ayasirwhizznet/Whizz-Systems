@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
-import { ServicesCaseStudyComponent } from '@components/services-case-study/services-case-study.component';
 import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
 import { ServicesCoreServicesComponent } from '@components/services-core-services/services-core-services.component';
 import { ServicesBenefitsComponent } from '@components/services-benefits/services-benefits.component';
@@ -13,7 +12,6 @@ import { ServicesBenefitsComponent } from '@components/services-benefits/service
   imports: [
     ServicesHeroComponent,
     ServicesIntroComponent,
-    ServicesCaseStudyComponent,
     ServicesContactExpertsComponent,
     ServicesCoreServicesComponent,
     ServicesBenefitsComponent,

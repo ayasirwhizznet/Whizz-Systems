@@ -4,6 +4,7 @@ import { ServicesHeroComponent } from '@components/services-hero/services-hero.c
 import { ServicesCoreServicesComponent } from '@components/services-core-services/services-core-services.component';
 import { ServicesBenefits1Component } from '@components/services-benefits1/services-benefits1.component';
 import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
+import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
 
 @Component({
   selector: 'app-fpga',
@@ -13,6 +14,8 @@ import { ServicesContactExpertsComponent } from '@components/services-contact-ex
     ServicesHeroComponent,
     ServicesBenefits1Component,
     ServicesContactExpertsComponent,
+    ServicesCoreServicesComponent,
+    ServicesIntroComponent
   ],
   templateUrl: './fpga.component.html',
 })

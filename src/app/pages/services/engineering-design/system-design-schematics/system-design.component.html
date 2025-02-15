@@ -16,19 +16,21 @@
 <!-- Industry Standards -->
 <app-services-industry secTitle="Industry Standards" secHeading="Certifications & Standards" secDesc="At Whizz Systems, we ensure that every design meets the highest industry standards and regulatory
      requirements. Our commitment to quality and compliance guarantees that your products are not only innovative
-     but also reliable and certified for global markets." [cardData]="industryStandards"></app-services-industry>
+     but also reliable and certified for global markets." [cardData]="industryStandards" [columns]="3"></app-services-industry>
 
 <!-- Benefits -->
 <app-services-benefits secTitle="Benefits" secHeading="Why Choose Whizz Systems for PCB Layout" [customStyle]="true"
   [cardData]="benefits"></app-services-benefits>
 
 <!-- Case Study -->
-<app-services-case-study secTitle="Case Study" secHeading="Case Studies & Success Stories" secDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
-  imgUrl="assets/system-design/case-study.png" routerLink="/404"
-  btnText="Learn more"></app-services-case-study>
+<app-services-intro secTitle="Case Study" secHeading="Case Studies & Success Stories" secDesc1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
+imgUrl="assets/system-design/case-study.png" routerLink="/404"
+btnText="Learn more" [isImageFirst]="false" >
+
+</app-services-intro>
 
 <!-- Contact Thermal Expert -->
 <app-services-contact-experts secHeading="Ready To Build Smarter, Scalable Systems?" routerLink="/404"

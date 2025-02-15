@@ -1,3 +1,4 @@
+import { ServicesIndustryComponent } from '@components/services-industry/services-industry.component';
 import { Component } from '@angular/core';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
@@ -12,6 +13,7 @@ import { ButtonComponent } from '@components/button/button.component';
     ServicesIntroComponent,
     CommonModule,
     ButtonComponent,
+    ServicesIndustryComponent
   ],
   templateUrl: './advanced-manufacturing.component.html',
 })
@@ -32,15 +34,15 @@ export class AdvancedManufacturingComponent {
       title: 'Electronic Manufacturing Assembly',
       description: [
         'High-precision PCB assembly for complex electronic systems.',
-        'Expertise in <b>high-pin-count BGAs, micro-pitch components, and high-speed interconnects.',
-        'Flexible production from prototype to high-volume manufacturing.</b>',
+        'Expertise in <b>high-pin-count BGAs, micro-pitch components, and high-speed interconnects</b>.',
+        'Flexible production from prototype to high-volume manufacturing.',
       ],
     },
     {
       imgUrl: 'assets/advanced_manufacturing/core-services.png',
       title: 'Mechanical Assembly',
       description: [
-        'Full electromechanical integration with <b>custom enclosures and robust housing solutions.</b>',
+        'Full electromechanical integration with <b>custom enclosures and robust housing solutions</b>.',
         'Expertise in thermal management, structural integrity, and environmental durability.',
       ],
     },

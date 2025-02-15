@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
-import { ServicesCaseStudyComponent } from '@components/services-case-study/services-case-study.component';
 import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
 import { ServicesCoreServicesComponent } from '@components/services-core-services/services-core-services.component';
 import { ServicesIndustryComponent } from '@components/services-industry/services-industry.component';
@@ -13,7 +12,6 @@ import { ServicesBenefitsComponent } from '@components/services-benefits/service
   imports: [
     ServicesHeroComponent,
     ServicesIntroComponent,
-    ServicesCaseStudyComponent,
     ServicesContactExpertsComponent,
     ServicesCoreServicesComponent,
     ServicesIndustryComponent,
@@ -44,34 +42,22 @@ export class PcbLayoutComponent {
     {
       imgUrl: 'assets/pcb/high-density.png',
       title: 'High-Density Component Placement',
-      type1:
-        'Expertise in placing components in complex, mixed-technology designs within constrained form factors.',
-      type2:
-        'Focus on signal integrity, thermal management, and adherence to Mechanical Outline Control (MOC).',
+      description: ['Expertise in placing components in complex, mixed-technology designs within constrained form factors', 'Focus on signal integrity, thermal management, and adherence to Mechanical Outline Control (MOC).']
     },
     {
       imgUrl: 'assets/pcb/advanced.png',
       title: 'Advanced Signal Routing',
-      type1:
-        '100% hand routing of high-speed signals using techniques like ARC, snake, tabbed, and fiber wave routing.',
-      type2:
-        'Enhanced signal integrity and transmission reliability in complex PCB designs',
+      description: ['100% hand routing of high-speed signals using techniques like ARC, snake, tabbed, and fiber wave routing.', 'Enhanced signal integrity and transmission reliability in complex PCB designs']
     },
     {
       imgUrl: 'assets/pcb/power-plane.png',
       title: 'Power Plane Planning',
-      type1:
-        'Drafting power planes to ensure reliable power distribution, minimize voltage drops, and enhance signal integrity.',
-      type2:
-        'Effective heat dissipation and low-impedance paths for optimal performance.',
+      description: ['Drafting power planes to ensure reliable power distribution, minimize voltage drops, and enhance signal integrity.', 'Effective heat dissipation and low-impedance paths for optimal performance.']
     },
     {
       imgUrl: 'assets/pcb/manufacturing.png',
       title: 'Manufacturing File Generation',
-      type1:
-        'Preparation of accurate Gerber files, drill files, BOMs, and pick-and-place files.',
-      type2:
-        'Seamless communication with manufacturing and assembly teams to streamline production and minimize errors.',
+      description: ['Preparation of accurate Gerber files, drill files, BOMs, and pick-and-place files.', 'Seamless communication with manufacturing and assembly teams to streamline production and minimize errors.',]
     },
   ];
 
