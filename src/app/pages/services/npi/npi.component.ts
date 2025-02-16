@@ -33,8 +33,7 @@ export class NpiComponent implements OnInit, OnDestroy {
   ];
 
   enggAndDesign = {
-    category: 'Engineering and Design',
-    subServices: [
+    services: [
       {
         name: 'System Design/Schematics',
         link: '/services/engineering_&_design/system_design_&_schematics',

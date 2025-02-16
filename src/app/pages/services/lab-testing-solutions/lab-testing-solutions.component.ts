@@ -27,11 +27,7 @@ import { ServicesBenefits1Component } from '../../../shared/components/services-
   templateUrl: './lab-testing-solutions.component.html',
 })
 export class LabTestingSolutionsComponent implements OnInit, OnDestroy {
-  labTestingItems = [
-    { title: 'Board Bring Up' },
-    { title: 'Validation' },
-    { title: 'Characterization' },
-  ];
+  labTestingServices:string[] = ['Board Bring Up', 'Validation', 'Characterization'];
 
   benefits: any[] = [
     {
@@ -84,7 +80,7 @@ export class LabTestingSolutionsComponent implements OnInit, OnDestroy {
     this.fragmentSubscription = this.route.fragment.subscribe((fragment) => {
       if (fragment) {
         this.currentFragment = fragment;
-        this.scrollToFragment(fragment);
+        this.scrollToService(fragment);
       }
     });
 
@@ -94,7 +90,7 @@ export class LabTestingSolutionsComponent implements OnInit, OnDestroy {
         const fragment = this.route.snapshot.fragment;
         if (fragment && fragment !== this.currentFragment) {
           this.currentFragment = fragment;
-          this.scrollToFragment(fragment);
+          this.scrollToService(fragment);
         }
       });
   }
@@ -108,7 +104,7 @@ export class LabTestingSolutionsComponent implements OnInit, OnDestroy {
     }
   }
 
-  scrollToFragment(fragment: string): void {
+  scrollToService(fragment: string): void {
     setTimeout(() => {
       const element = document.getElementById(fragment?.replace(/\s/g, ''));
       if (element) {
