@@ -5,11 +5,11 @@
 
 <!-- NPI Navbar -->
 <section [ngClass]="{ 'top-[13%]': isSticky}"
-  class="hidden lg:block px-[9.3%] lg:py-8 3xl:py-16 bg-white sticky top-0 z-20">
+  class="hidden lg:block px-[9.3%] lg:py-10 3xl:py-16 bg-white sticky top-0 z-20">
   <div class="flex justify-center items-center gap-3 3xl:gap-4">
-    <a *ngFor="let link of npiTab" (click)="scrollToFragment(link.title)"
-      class="lg:w-[196px] 3xl:w-[247px] h-[70px] 3xl:h-[88px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">{{
-      link.title }}</a>
+    <a *ngFor="let service of npiServices" (click)="scrollToService(service)"
+      class="lg:w-44 2xl:w-48 lg:h-[72px] 3xl:w-[247px] 3xl:h-[88px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium 3xl:font-semibold rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">{{
+      service }}</a>
   </div>
 </section>
 
@@ -32,18 +32,23 @@
   [isImageFirst]="false" imgUrl="assets/npi/eng.png"></app-services-intro>
 
 <!-- Explore our engineering and design services -->
-<img src="assets/featured-products/products/divider-top.png" alt="img" />
-<h2 class="text-4xl 3xl:text-5xl 3xl:leading-[57.6px] text-dark-gray2 text-center font-bold mb-6 3xl:mb-8">
-  Explore our engineering and design services
-</h2>
-<section
-  class="py-6 3xl:py-8 flex justify-center items-center flex-wrap gap-3 3xl:gap-4 text-center text-xs 3xl:text-base z-50 mx-auto lg:w-[58rem] 3xl:w-[80rem]">
-  <a *ngFor="let item of enggandDesign.items" [routerLink]="item.link"
-    class="w-[196px] 3xl:w-[247px] h-[72px] 3xl:h-[88px] cursor-pointer flex justify-center items-center px-[8px] py-[14px] 3xl:px-[18px] 3xl:py-[14px] bg-card-gray hover:bg-dark-gray2 text-dark-gray2 border border-light-gray1 hover:text-white font-medium rounded-lg transition-all duration-500 ease-in-out">{{
-    item.label }}
-  </a>
+<section>
+  <img src="assets/featured-products/products/divider-top.png" alt="img" />
+  <div class="py-6 3xl:py-8">
+    <h2
+      class="text-2xl sm:text-3xl lg:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] text-dark-gray2 text-center font-semibold 3xl:font-bold my-6 3xl:my-8">
+      Explore our engineering and design services
+    </h2>
+    <div
+      class="w-11/12 xl:w-2/3 2xl:w-7/12 text-xs 3xl:text-base text-center py-6 3xl:py-8 flex justify-center items-center flex-wrap gap-3 3xl:gap-4 mx-auto">
+      <a *ngFor="let subService of enggAndDesign.subServices" [routerLink]="subService.link"
+        class="w-44 h-16 lg:w-48 lg:h-[72px] 3xl:w-[247px] 3xl:h-[88px] cursor-pointer grid place-items-center bg-card-gray hover:bg-dark-gray2 text-dark-gray2 border border-light-gray1 hover:text-white font-semibold rounded-md 3xl:rounded-lg transition-all duration-500 ease-in-out">{{
+        subService.name }}
+      </a>
+    </div>
+  </div>
+  <img src="assets/featured-products/products/divider-bottom.png" alt="img" />
 </section>
-<img src="assets/featured-products/products/divider-bottom.png" alt="img" />
 
 <!-- Prototyping -->
 <app-services-intro id="Prototyping" secTitle="Prototyping" secHeading="Validate and Refine Your Designs with Prototyping
@@ -55,10 +60,11 @@
   imgUrl="assets/npi/testing.png"></app-services-intro>
 
 <!-- Testing -->
-<app-services-intro id="Testing" secTitle="Testing"
-  secHeading="Ensure Quality and Reliability with Rigorous Testing"
+<app-services-intro id="Testing" secTitle="Testing" secHeading="Ensure Quality and Reliability with Rigorous Testing"
   secDesc1="Whizz Systems provides comprehensive testing services to validate every aspect of your product. Our tests cover <b class='text-teal1'>Design Verification, Functional Validation, Environmental Resilience,</b> and <b class='text-teal1'>EMI/EMC compliance</b>. By addressing potential issues early, we reduce redesigns and accelerate time-to-market."
-  secSubHeading="Key Tests:" secDesc4="Design Verification Testing (DVT) • Environmental Testing (Temperature, Vibration, Shock) • Automated Fault Detection" imgUrl="assets/npi/testing.png"  [isImageFirst]="false"></app-services-intro>
+  secSubHeading="Key Tests:"
+  secDesc4="Design Verification Testing (DVT) • Environmental Testing (Temperature, Vibration, Shock) • Automated Fault Detection"
+  imgUrl="assets/npi/testing.png" [isImageFirst]="false"></app-services-intro>
 
 <!-- Compliance -->
 <app-services-intro id="Compliance" secTitle="Compliance" secHeading="Navigate Compliance with Confidence"

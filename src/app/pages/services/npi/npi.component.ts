@@ -19,45 +19,45 @@ import { ServicesContactExpertsComponent } from '@components/services-contact-ex
     RouterLink,
     ServicesHeroComponent,
     ServicesIntroComponent,
-    ServicesContactExpertsComponent
+    ServicesContactExpertsComponent,
   ],
   templateUrl: './npi.component.html',
 })
 export class NpiComponent implements OnInit, OnDestroy {
-  npiTab = [
-    { title: 'System Level Architecture' },
-    { title: 'Engineering & Design' },
-    { title: 'Prototyping' },
-    { title: 'Testing' },
-    { title: 'Compliance' },
+  npiServices = [
+    'System Level Architecture',
+    'Engineering & Design',
+    'Prototyping',
+    'Testing',
+    'Compliance',
   ];
 
-  enggandDesign = {
-    title: 'Engineering and Design',
-    items: [
+  enggAndDesign = {
+    category: 'Engineering and Design',
+    subServices: [
       {
-        label: 'System Design/Schematics',
+        name: 'System Design/Schematics',
         link: '/services/engineering_&_design/system_design_&_schematics',
       },
-      { label: 'FPGA Design', link: '/services/engineering_&_design/fpga' },
+      { name: 'FPGA Design', link: '/services/engineering_&_design/fpga' },
       {
-        label: 'PCB Layout',
+        name: 'PCB Layout',
         link: '/services/engineering_&_design/pcb_layout',
       },
       {
-        label: '3D Modeling/Mechanical Engineering',
+        name: '3D Modeling/Mechanical Engineering',
         link: '/services/engineering_&_design/3D_modeling',
       },
       {
-        label: 'Signal Integrity Simulations',
+        name: 'Signal Integrity Simulations',
         link: '/services/engineering_&_design/signal_integrity_simulations',
       },
       {
-        label: 'Power Delivery Network Simulations',
+        name: 'Power Delivery Network Simulations',
         link: '/services/engineering_&_design/power_delivery',
       },
       {
-        label: 'Thermal Management/Thermal Simulation',
+        name: 'Thermal Management/Thermal Simulation',
         link: '/services/engineering_&_design/thermal_management',
       },
     ],
@@ -86,7 +86,7 @@ export class NpiComponent implements OnInit, OnDestroy {
     this.fragmentSubscription = this.route.fragment.subscribe((fragment) => {
       if (fragment) {
         this.currentFragment = fragment;
-        this.scrollToFragment(fragment);
+        this.scrollToService(fragment);
       }
     });
 
@@ -96,7 +96,7 @@ export class NpiComponent implements OnInit, OnDestroy {
         const fragment = this.route.snapshot.fragment;
         if (fragment && fragment !== this.currentFragment) {
           this.currentFragment = fragment;
-          this.scrollToFragment(fragment);
+          this.scrollToService(fragment);
         }
       });
   }
@@ -110,12 +110,12 @@ export class NpiComponent implements OnInit, OnDestroy {
     }
   }
 
-  scrollToFragment(fragment: string): void {
+  scrollToService(fragment: string): void {
     setTimeout(() => {
       const element = document.getElementById(fragment?.replace(/\s/g, ''));
       if (element) {
         const viewportHeight = window.innerHeight;
-        const offsetPercentage = 30;
+        const offsetPercentage = 35;
         const offset = (window.innerHeight * offsetPercentage) / 100;
         const topPosition = element.offsetTop - offset;
         window.scrollTo({
