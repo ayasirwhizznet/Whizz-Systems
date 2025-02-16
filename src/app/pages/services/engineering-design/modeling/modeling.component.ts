@@ -39,32 +39,32 @@ export class ModelingComponent {
   benefits: any[] = [
     {
       imgUrl: 'assets/3D-Modeling/benefits.png',
-      title: '25+ Years of Expertise',
+      name: '25+ Years of Expertise',
       desc: 'Proven success in designing electronic products from concept to production.',
     },
     {
       imgUrl: 'assets/3D-Modeling/benefits.png',
-      title: 'Multidomain Knowledge',
+      name: 'Multidomain Knowledge',
       desc: 'Extensive experience across various industries.',
     },
     {
       imgUrl: 'assets/3D-Modeling/benefits.png',
-      title: 'Optimized for Performance and Manufacturability',
+      name: 'Optimized for Performance and Manufacturability',
       desc: 'Ensuring products meet and exceed industrial standards.',
     },
     {
       imgUrl: 'assets/3D-Modeling/benefits.png',
-      title: 'Comprehensive Support',
+      name: 'Comprehensive Support',
       desc: 'Full design expertise throughout the entire process.',
     },
     {
       imgUrl: 'assets/3D-Modeling/benefits.png',
-      title: 'Sustaining Engineering',
+      name: 'Sustaining Engineering',
       desc: 'Enhanced product integration and longevity through FEA analysis.',
     },
     {
       imgUrl: 'assets/3D-Modeling/benefits.png',
-      title: 'Supply Chain Management',
+      name: 'Supply Chain Management',
       desc: 'Seamless supply chain handling to ensure efficient production and timely delivery.',
     },
   ];

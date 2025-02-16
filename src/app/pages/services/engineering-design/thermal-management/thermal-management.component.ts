@@ -55,32 +55,32 @@ export class ThermalManagementComponent implements OnInit {
   benefits: any[] = [
     {
       imgUrl: 'assets/thermal-management/benefits.png',
-      title: 'Decades of Expertise',
+      name: 'Decades of Expertise',
       desc: 'Over 25 years of success in electronic design and optimization.',
     },
     {
       imgUrl: 'assets/thermal-management/benefits.png',
-      title: 'Tailored Solutions',
+      name: 'Tailored Solutions',
       desc: 'Custom thermal strategies for unique product requirements.',
     },
     {
       imgUrl: 'assets/thermal-management/benefits.png',
-      title: 'Advanced Simulation Tools',
+      name: 'Advanced Simulation Tools',
       desc: 'Accurate heat and airflow modeling using CFD analysis.',
     },
     {
       imgUrl: 'assets/thermal-management/benefits.png',
-      title: 'Cutting-Edge Cooling Tech',
+      name: 'Cutting-Edge Cooling Tech',
       desc: 'Vapor chambers, liquid cooling systems, and integrated designs.',
     },
     {
       imgUrl: 'assets/thermal-management/benefits.png',
-      title: 'Reliability in Any Environment',
+      name: 'Reliability in Any Environment',
       desc: 'Designs that meet thermal limits in even the most demanding conditions.',
     },
     {
       imgUrl: 'assets/thermal-management/benefits.png',
-      title: 'Comprehensive Support',
+      name: 'Comprehensive Support',
       desc: 'From concept to optimization, we’re with you every step of the way.',
     },
   ];

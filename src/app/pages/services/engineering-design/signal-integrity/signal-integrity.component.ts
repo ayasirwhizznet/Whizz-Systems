@@ -62,23 +62,23 @@ export class SignalIntegrityComponent {
   benefits: any = [
     {
       imgUrl: 'assets/signalIntegrity/benefits.png',
-      title: 'Lorem Ipsum',
-      desc: 'Comprehensive pre- and post-layout services tailored to modern electronics.',
+      name: 'End-to-End Support ',
+      desc: 'Comprehensive <b>pre- and post-layout services</b> tailored to modern electronics.',
     },
     {
       imgUrl: 'assets/signalIntegrity/benefits.png',
-      title: 'Lorem Ipsum',
-      desc: 'Reduction in design risks and iterations, accelerating time-to-market.',
+      name: 'High Speed Interface Expertise',
+      desc: 'Mastery of DDR, PCIe, SerDes, and other critical high-speed technologies',
     },
     {
       imgUrl: 'assets/signalIntegrity/benefits.png',
-      title: 'Lorem Ipsum',
-      desc: 'Cost-efficient, manufacturable designs with enhanced reliability.',
+      name: 'Accelerated Time-to-Market',
+      desc: 'Reduction in design risks and iterations for faster product launches.',
     },
     {
       imgUrl: 'assets/signalIntegrity/benefits.png',
-      title: 'Lorem Ipsum',
-      desc: 'Full design expertise throughout the entire process.',
+      name: 'Cost Optimized & Reliable Designs',
+      desc: 'Manufacturable solutions that enhance reliability while controlling costs.',
     },
   ];
 }

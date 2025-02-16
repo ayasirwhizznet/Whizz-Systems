@@ -39,22 +39,22 @@ export class PowerDeliveryComponent {
   benefits: any = [
     {
       imgUrl: 'assets/power-delivery/benefits.png',
-      title: 'Lorem Ipsum',
+      name: 'Lorem Ipsum',
       desc: 'Advanced DC and AC simulation capabilities tailored to your design needs.',
     },
     {
       imgUrl: 'assets/power-delivery/benefits.png',
-      title: 'Lorem Ipsum',
+      name: 'Lorem Ipsum',
       desc: 'Expertise in high-performance PCB layouts for modern electronics.',
     },
     {
       imgUrl: 'assets/power-delivery/benefits.png',
-      title: 'Lorem Ipsum',
+      name: 'Lorem Ipsum',
       desc: 'Reduction of design risks and iterations, ensuring faster time-to-market.',
     },
     {
       imgUrl: 'assets/power-delivery/benefits.png',
-      title: 'Lorem Ipsum',
+      name: 'Lorem Ipsum',
       desc: 'Proven reliability and efficiency across industries.',
     },
   ];

@@ -42,54 +42,66 @@ export class PcbLayoutComponent {
     {
       imgUrl: 'assets/pcb/high-density.png',
       title: 'High-Density Component Placement',
-      description: ['Expertise in placing components in complex, mixed-technology designs within constrained form factors', 'Focus on signal integrity, thermal management, and adherence to Mechanical Outline Control (MOC).']
+      description: [
+        'Expertise in placing components in complex, mixed-technology designs within constrained form factors',
+        'Focus on signal integrity, thermal management, and adherence to Mechanical Outline Control (MOC).',
+      ],
     },
     {
       imgUrl: 'assets/pcb/advanced.png',
       title: 'Advanced Signal Routing',
-      description: ['100% hand routing of high-speed signals using techniques like ARC, snake, tabbed, and fiber wave routing.', 'Enhanced signal integrity and transmission reliability in complex PCB designs']
+      description: [
+        '100% hand routing of high-speed signals using techniques like ARC, snake, tabbed, and fiber wave routing.',
+        'Enhanced signal integrity and transmission reliability in complex PCB designs',
+      ],
     },
     {
       imgUrl: 'assets/pcb/power-plane.png',
       title: 'Power Plane Planning',
-      description: ['Drafting power planes to ensure reliable power distribution, minimize voltage drops, and enhance signal integrity.', 'Effective heat dissipation and low-impedance paths for optimal performance.']
+      description: [
+        'Drafting power planes to ensure reliable power distribution, minimize voltage drops, and enhance signal integrity.',
+        'Effective heat dissipation and low-impedance paths for optimal performance.',
+      ],
     },
     {
       imgUrl: 'assets/pcb/manufacturing.png',
       title: 'Manufacturing File Generation',
-      description: ['Preparation of accurate Gerber files, drill files, BOMs, and pick-and-place files.', 'Seamless communication with manufacturing and assembly teams to streamline production and minimize errors.',]
+      description: [
+        'Preparation of accurate Gerber files, drill files, BOMs, and pick-and-place files.',
+        'Seamless communication with manufacturing and assembly teams to streamline production and minimize errors.',
+      ],
     },
   ];
 
   benefits: any[] = [
     {
       imgUrl: 'assets/pcb/benefits.png',
-      title: 'Expertise in High-Density Designs',
+      name: 'Expertise in High-Density Designs',
       desc: 'Specialized in complex layouts for constrained spaces and mixed-technology designs.',
     },
     {
       imgUrl: 'assets/pcb/benefits.png',
-      title: 'Signal Integrity Optimization',
+      name: 'Signal Integrity Optimization',
       desc: 'Ensuring high-speed performance and reliable signal transmission.',
     },
     {
       imgUrl: 'assets/pcb/benefits.png',
-      title: 'Design for Excellence (DFx)',
+      name: 'Design for Excellence (DFx)',
       desc: 'Optimized layouts for manufacturability, assembly, and testability.',
     },
     {
       imgUrl: 'assets/pcb/benefits.png',
-      title: 'Power Distribution Mastery',
+      name: 'Power Distribution Mastery',
       desc: 'Efficient power plane planning for improved performance and thermal management.',
     },
     {
       imgUrl: 'assets/pcb/benefits.png',
-      title: 'Accurate Manufacturing Files',
+      name: 'Accurate Manufacturing Files',
       desc: 'Properly prepared documentation for error-free fabrication and assembly.',
     },
     {
       imgUrl: 'assets/pcb/benefits.png',
-      title: 'Close Collaboration with Manufacturing Teams',
+      name: 'Close Collaboration with Manufacturing Teams',
       desc: 'Ensuring your design intent translates seamlessly into production.',
     },
   ];

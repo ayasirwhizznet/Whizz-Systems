@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesCoreServicesComponent } from '@components/services-core-services/services-core-services.component';
-import { ServicesBenefits1Component } from '@components/services-benefits1/services-benefits1.component';
 import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
 import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
+import { ServicesBenefits1Component } from "../../../../shared/components/services-benefits1/services-benefits1.component";
 
 @Component({
   selector: 'app-fpga',
@@ -12,11 +12,11 @@ import { ServicesIntroComponent } from '@components/services-intro/services-intr
   imports: [
     CommonModule,
     ServicesHeroComponent,
-    ServicesBenefits1Component,
     ServicesContactExpertsComponent,
     ServicesCoreServicesComponent,
-    ServicesIntroComponent
-  ],
+    ServicesIntroComponent,
+    ServicesBenefits1Component
+],
   templateUrl: './fpga.component.html',
 })
 export class FpgaComponent {
@@ -41,27 +41,27 @@ export class FpgaComponent {
   benefits: any[] = [
     {
       imgUrl: 'assets/fpga/benefits.png',
-      title: 'Extensive Expertise',
+      name: 'Extensive Expertise',
       desc: 'Over 30 years of successful FPGA project delivery.',
     },
     {
       imgUrl: 'assets/fpga/benefits.png',
-      title: 'Comprehensive Services',
+      name: 'Comprehensive Services',
       desc: 'End-to-end design, firmware, and software capabilities.',
     },
     {
       imgUrl: 'assets/fpga/benefits.png',
-      title: 'Cutting-Edge Tools',
+      name: 'Cutting-Edge Tools',
       desc: 'Proficiency in Vivado, Quartus Prime, Lattice Diamond, and more.',
     },
     {
       imgUrl: 'assets/fpga/benefits.png',
-      title: 'Cloud Integration',
+      name: 'Cloud Integration',
       desc: 'Scalable IoT solutions with AWS, Google Cloud, and Azure IoT.',
     },
     {
       imgUrl: 'assets/fpga/benefits.png',
-      title: 'Customer-Centric Approach',
+      name: 'Customer-Centric Approach',
       desc: 'Collaborative designs tailored to your requirements.',
     },
   ];

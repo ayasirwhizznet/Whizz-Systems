@@ -20,8 +20,9 @@ import { ServicesBenefits1Component } from '../../../shared/components/services-
     ServicesHeroComponent,
     ServicesIntroComponent,
     ServicesContactExpertsComponent,
-    ServicesBenefits1Component,
     RouterLink,
+    ServicesBenefits1Component,
+    ServicesBenefits1Component,
   ],
   templateUrl: './lab-testing-solutions.component.html',
 })
@@ -35,27 +36,27 @@ export class LabTestingSolutionsComponent implements OnInit, OnDestroy {
   benefits: any[] = [
     {
       imgUrl: 'assets/lab-testing-solutions/benefits.png',
-      title: 'All-In-One Lab Services',
+      name: 'All-In-One Lab Services',
       desc: 'Comprehensive solutions for bring-up, validation, and characterization under one roof.',
     },
     {
       imgUrl: 'assets/lab-testing-solutions/benefits.png',
-      title: 'Advanced Tools & Facilities',
+      name: 'Advanced Tools & Facilities',
       desc: ' Industry-grade equipment for precise diagnostics.',
     },
     {
       imgUrl: 'assets/lab-testing-solutions/benefits.png',
-      title: 'Global Compliance Expertise',
+      name: 'Global Compliance Expertise',
       desc: 'Meet rigorous industry and regulatory standards.',
     },
     {
       imgUrl: 'assets/lab-testing-solutions/benefits.png',
-      title: 'Tailored Services',
+      name: 'Tailored Services',
       desc: 'Solutions customized for your product and industry.',
     },
     {
       imgUrl: 'assets/lab-testing-solutions/benefits.png',
-      title: 'Decades of Innovation',
+      name: 'Decades of Innovation',
       desc: 'Over 25 years ensuring the success of cutting-edge products.',
     },
   ];

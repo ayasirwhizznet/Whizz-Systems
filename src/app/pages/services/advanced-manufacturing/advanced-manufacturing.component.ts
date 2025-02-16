@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
 import { CommonModule } from '@angular/common';
-import { ButtonComponent } from '@components/button/button.component';
 import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
+import { ServicesBenefitsComponent } from '@components/services-benefits/services-benefits.component';
 
 @Component({
   selector: 'app-advanced-manufacturing',
@@ -13,9 +13,9 @@ import { ServicesContactExpertsComponent } from '@components/services-contact-ex
     ServicesHeroComponent,
     ServicesIntroComponent,
     CommonModule,
-    ButtonComponent,
     ServicesIndustryComponent,
-    ServicesContactExpertsComponent
+    ServicesContactExpertsComponent,
+    ServicesBenefitsComponent
   ],
   templateUrl: './advanced-manufacturing.component.html',
 })
@@ -83,32 +83,32 @@ export class AdvancedManufacturingComponent {
   benefits: any[] = [
     {
       imgUrl: 'assets/advanced_manufacturing/benefits.png',
-      title: 'Integrated Workflow',
+      name: 'Integrated Workflow',
       desc: 'Real-time collaboration between design, manufacturing, and supply chain teams.',
     },
     {
       imgUrl: 'assets/advanced_manufacturing/benefits.png',
-      title: 'Parallel Process Optimization',
+      name: 'Parallel Process Optimization',
       desc: 'Simultaneous simulations lead to higher efficiency and better quality.',
     },
     {
       imgUrl: 'assets/advanced_manufacturing/benefits.png',
-      title: 'Strategic Component Selection',
+      name: 'Strategic Component Selection',
       desc: 'Ensuring long-term availability, cost efficiency, and supply stability.',
     },
     {
       imgUrl: 'assets/advanced_manufacturing/benefits.png',
-      title: 'Predictive Problem-Solving',
+      name: 'Predictive Problem-Solving',
       desc: 'Early-stage FMEA and DFX analysis reduce risks and improve reliability.',
     },
     {
       imgUrl: 'assets/advanced_manufacturing/benefits.png',
-      title: 'Optimized Thermal & Mechanical Performance',
+      name: 'Optimized Thermal & Mechanical Performance',
       desc: 'Advanced profiling for superior product durability.',
     },
     {
       imgUrl: 'assets/advanced_manufacturing/benefits.png',
-      title: 'Streamlined Global Manufacturing',
+      name: 'Streamlined Global Manufacturing',
       desc: 'Seamless transition from prototyping to high-volume production.',
     },
   ];

@@ -6,7 +6,8 @@
   btnText="Get in Touch with Our Lab Testing  Experts"></app-services-hero>
 
 <!-- Navbar -->
-<section [ngClass]="{ 'top-[13%]': isSticky}" class="hidden lg:block px-[9.3%] sticky top-0 lg:py-8 3xl:py-16 bg-white z-20">
+<section [ngClass]="{ 'top-[13%]': isSticky}"
+  class="hidden lg:block px-[9.3%] sticky top-0 lg:py-8 3xl:py-16 bg-white z-20">
   <div class="flex justify-center items-center gap-3 3xl:gap-4">
     <a *ngFor="let item of labTestingItems" (click)="scrollToFragment(item.title)"
       class="lg:w-[196px] 3xl:w-[247px] h-[70px] 3xl:h-[88px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-sm 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">{{
@@ -18,7 +19,6 @@
 <section class="px-[4%] sm:px-[9.3%] bg-dark-gray2 py-8 lg:py-12 3xl:py-16">
   <div class="px-8 lg:px-12 3xl:px-16 py-6 3xl:py-8 bg-dark-gray1 rounded-xl 3xl:rounded-2xl">
     <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-12 3xl:gap-16">
-      <!-- Image Section -->
       <div class="w-full lg:w-[49.2%] p-6 lg:p-0 order-1 lg:order-0">
         <img class="object-cover rounded-md 3xl-rounded-lg" src="assets/lab-testing-solutions/overview.png" alt="img" />
       </div>
@@ -30,12 +30,18 @@
           Elevating the Standards of Electronic Testing
         </h3>
         <p class="text-light-gray1 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
-          With over 25 years of experience designing successful electronic products from concept to production, Whizz Systems leverages <b class="text-teal1">advanced 3D modeling and mechanical design capabilities</b> to create optimized solutions for PCBs and electronic products. Our designs <b class="text-teal1">enhance performance and ensure manufacturability</b> by meeting the <b class="text-teal1">highest industry standards</b>. Our expertise spans multidomains and various industries, ensuring comprehensive support throughout the entire design process.
+          With over 25 years of experience designing successful electronic products from concept to production, Whizz
+          Systems leverages <b class="text-teal1">advanced 3D modeling and mechanical design capabilities</b> to create
+          optimized solutions for PCBs and electronic products. Our designs <b class="text-teal1">enhance performance
+            and ensure manufacturability</b> by meeting the <b class="text-teal1">highest industry standards</b>. Our
+          expertise spans multidomains and various industries, ensuring comprehensive support throughout the entire
+          design process.
         </p>
       </div>
     </div>
   </div>
 </section>
+
 <!-- Board Bring-Up -->
 <app-services-intro id="BoardBringUp" secTitle="Board Bring-Up & Initial Diagnostics"
   secHeading="Bring-Up: Building the Foundation of Reliable Electronics"
@@ -43,6 +49,7 @@
   secSubHeading="Key Services:"
   secDesc4="Visual Inspection • Open/Short Testing • Power-Up Testing • Debugging & Issue Resolution • Rework • Reset Check • Clock Measurement • Interface Testing"
   [isImageFirst]="false" imgUrl="assets/lab-testing-solutions/board.png"></app-services-intro>
+
 <!-- Validation -->
 <app-services-intro id="Validation" secTitle="Validation – Assuring Operational Excellence"
   secHeading="Validation: Proving Your Product’s Integrity"
@@ -50,6 +57,7 @@
   secSubHeading="Key Services:"
   secDesc4="Visual Inspection • Open/Short Testing • Power-Up Testing • Debugging & Issue Resolution • Rework • Reset Check • Clock Measurement • Interface Testing"
   [isImageFirst]="true" imgUrl="assets/lab-testing-solutions/validation.png"></app-services-intro>
+
 <!-- Characterization -->
 <app-services-intro id="Characterization" secTitle="Characterization – Refining Products for Performance"
   secHeading="Characterization: From Metrics to Market Readiness"
@@ -57,9 +65,11 @@
   secSubHeading="Key Services:"
   secDesc4="Power Load Testing • Ripple Measurement • Stress Testing • Timing Analysis • Performance Benchmarking • Environmental Characterization"
   [isImageFirst]="false" imgUrl="assets/lab-testing-solutions/characterization.png"></app-services-intro>
+
 <!-- Benefits -->
-<app-services-benefits1 secTitle="Benefits" secHeading="Why Choose Whizz Systems for PCB Layout" [customStyle]="true"
-  [cardData]="benefits"></app-services-benefits1>
+<app-services-benefits1 heading="Benefits" title="More Than Testing – A Complete Product Development Ecosystem"
+  [benefitsData]="benefits"></app-services-benefits1>
+
 <!-- Contact to Experts -->
 <app-services-contact-experts secHeading="How Can Our Testing Expertise Accelerate Your Product Success?"
   routerLink="/404" btnText="Contact Our Testing Experts"></app-services-contact-experts>
