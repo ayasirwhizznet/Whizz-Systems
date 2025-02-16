@@ -31,24 +31,24 @@
 
 <!-- Services Navbar -->
 <section [ngClass]="{ 'top-[13%] ': isSticky}"
-  class="hidden lg:block px-[9.3%] lg:py-8 3xl:py-16 bg-white sticky top-0 z-30">
+  class="hidden lg:block px-[9.3%] lg:py-10 3xl:py-16 bg-white sticky top-0 z-30">
   <div class="flex justify-center items-center gap-3 3xl:gap-4">
-    <a *ngFor="let link of servicesTab" (click)="scrollToFragment(link.title)"
-      class="lg:w-[196px] 3xl:w-[247px] h-[70px] 3xl:h-[88px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">{{link.title}}</a>
+    <a *ngFor="let category of serviceCategories" (click)="scrollToCategory(category.name)"
+      class="lg:w-44 2xl:w-48 lg:h-[72px] 3xl:w-[247px] 3xl:h-[88px] cursor-pointer grid place-items-center bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium 3xl:font-semibold rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">{{category.name}}</a>
   </div>
 </section>
 
 <section class="px-[4%] sm:px-[9.3%]">
-  <div *ngFor="let item of servicesTab"
+  <div *ngFor="let category of serviceCategories"
     class="flex flex-col lg:flex-row justify-between gap-10 lg:gap-0 py-8 lg:py-12 3xl:py-16">
-    <div [id]="item.title" class="w-full lg:w-[29.8%] mt-10 md:mt-0">
+    <div [id]="category.name" class="w-full lg:w-[29.8%] mt-10 md:mt-0">
       <h1 class="text-3xl lg:text-4xl 3xl:text-5xl font-bold 3xl:leading-[57.6px] text-dark-gray2 mb-6 3xl:mb-8">{{
-        item.title }}</h1>
-      <p class="text-sm 3xl:text-lg text-dark-gray1">{{ item.description }}</p>
+        category.name }}</h1>
+      <p class="text-sm 3xl:text-lg text-dark-gray1">{{ category.desc }}</p>
     </div>
     <div class="w-full lg:w-[59.49%]">
       <div class="grid grid-cols-2 gap-3 3xl:gap-4">
-        <a *ngFor="let subitem of item.items" [routerLink]="[subitem.link]" [fragment]="subitem.fragment"
+        <a *ngFor="let service of category.services" [routerLink]="[service.link]" [fragment]="service.fragment"
           class="group col-span-2 md:col-span-1">
           <div
             class="cursor-pointer h-32 3xl:h-40 bg-card-gray border border-light-gray1 group-hover:border-white rounded-lg relative transition-all duration-700 ease-in-out group">
@@ -60,7 +60,7 @@
             </div>
             <p
               class="absolute top-1/2 transform -translate-y-1/2 z-10 text-lg 3xl:text-2xl text-dark-gray1 group-hover:text-white font-semibold 3xl:font-bold px-6 3xl:px-8 group-hover:pr-16 3xl:leading-[33.6px] smooth-padding transition-all duration-700 ease-in-out">
-              {{ subitem.label }}
+              {{ service.name }}
             </p>
             <div class="w-full h-full flex absolute overflow-x-scroll no-scrollbar">
               <div
