@@ -1,42 +1,42 @@
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <div class="flex flex-col gap-6 lg:gap-0 lg:flex-row items-center justify-between mb-7 3xl:mb-8">
-        <h2 class="self-start text-3xl sm:text-4xl 3xl:text-5xl font-bold text-dark-gray2">Latest News & Insights</h2>
-        <div class="self-end flex items-center gap-4 3xl:gap-6">
-            <app-button [routerLink]="'/news_&_insights'" [size]="'medium'" heading="See more"
-                icon="assets/services/r-arrow.svg"></app-button>
-            <div [className]="progress.abs == 0 ? 'pointer-events-none opacity-[0.6]':''">
-                <app-button size="medium" (click)="prevSlide()" icon="assets/services/l-arrow.svg"></app-button>
-            </div>
-            <div [className]="progress.abs == progress.maxIdx ? 'pointer-events-none opacity-[0.6]':''">
-                <app-button size="medium" (click)="nextSlide()" icon="assets/services/r-arrow.svg"></app-button>
-            </div>
-        </div>
+  <div class="flex flex-col gap-6 lg:gap-0 lg:flex-row items-center justify-between mb-7 3xl:mb-8">
+    <h2 class="self-start text-3xl sm:text-4xl 3xl:text-5xl font-bold text-dark-gray2">Latest News & Insights</h2>
+    <div class="self-end flex items-center gap-4 3xl:gap-6">
+      <app-button [routerLink]="'/news_&_insights'" [size]="'medium'" heading="See more"
+        icon="assets/services/r-arrow.svg"></app-button>
+      <div [className]="progress.abs == 0 ? 'pointer-events-none opacity-[0.6]':''">
+        <app-button size="medium" (click)="prevSlide()" icon="assets/services/l-arrow.svg"></app-button>
+      </div>
+      <div [className]="progress.abs == progress.maxIdx ? 'pointer-events-none opacity-[0.6]':''">
+        <app-button size="medium" (click)="nextSlide()" icon="assets/services/r-arrow.svg"></app-button>
+      </div>
     </div>
-    <div class="keen-slider" #sliderRef>
-        <div class="keen-slider__slide" *ngFor="let card of cards">
-            <a routerLink="/news_&_insights/news" class="group cursor-pointer inline-block overflow-y-scroll no-scrollbar h-[22rem] sm:h-[22rem] xl:h-[22rem] 2xl:h-[22rem] 3xl:h-[25rem] hover_div">
-                <div class="p-6 3xl:p-8 bg-gray mb-6 3xl:mb-8 border border-light-gray1 bg-card-gray rounded-md 3xl:rounded-lg">
-                  <img [src]="card.imageUrl" class="hover_img rounded-md 3xl:rounded-lg mb-6 3xl:mb-8" alt="Card-image">
-                    <div class="flex items-center gap-1 3xl:gap-2 flex-wrap mb-4 3xl:mb-5">
-                      <app-blog-tag text="Heatsink" textColor="text-dark-gray2" borderColor="border-dark-gray2"
-                        borderRadius="rounded-md 3xl:rounded-lg"></app-blog-tag>
-                      <app-blog-tag text="Thermal Management" textColor="text-dark-gray2" borderColor="border-dark-gray2"
-                        borderRadius="rounded-lg"></app-blog-tag>
-                    </div>
-                    <p class="text-dark-gray2 text-xs 3xl:text-sm font-medium 3xl:font-semibold mb-1 3xl:mb-2">{{ card.date }}</p>
-                    <h3 class="text-xl 3xl:text-2xl font-semibold 3xl:font-bold">{{ card.title }}</h3>
-                </div>
-              
-                <button
-                  class="text-xs 3xl:text-base flex items-center justify-between font-medium 3xl:font-bold bg-dark-gray1 w-full px-4 3xl:px-5 py-[6px] 3xl:py-2 text-white rounded-md 3xl:rounded-lg duration-500 ease-in-out">
-                  Read more
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-right-short"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
-                  </svg>
-                </button>
-              </a>
+  </div>
+  <div class="keen-slider" #sliderRef>
+    <div class="keen-slider__slide" *ngFor="let blog of blogs">
+      <a routerLink="/news_&_insights/news"
+        class="group cursor-pointer inline-block overflow-y-scroll no-scrollbar h-[22rem] sm:h-[22rem] xl:h-[22rem] 2xl:h-[22rem] 3xl:h-[25rem] hover_div">
+        <div class="p-6 3xl:p-8 bg-gray mb-6 3xl:mb-8 border border-light-gray1 bg-card-gray rounded-md 3xl:rounded-lg">
+          <img [src]="blog.imgUrl" class="hover_img rounded-md 3xl:rounded-lg mb-6 3xl:mb-8" alt="Card-image">
+          <div class="flex items-center gap-1 3xl:gap-2 flex-wrap mb-4 3xl:mb-5">
+            <app-blog-tag text="Heatsink" textColor="text-dark-gray2" borderColor="border-dark-gray2"
+              borderRadius="rounded-md 3xl:rounded-lg"></app-blog-tag>
+            <app-blog-tag text="Thermal Management" textColor="text-dark-gray2" borderColor="border-dark-gray2"
+              borderRadius="rounded-lg"></app-blog-tag>
+          </div>
+          <p class="text-dark-gray2 text-xs 3xl:text-sm font-medium 3xl:font-semibold mb-1 3xl:mb-2">{{ blog.date }}</p>
+          <h3 class="text-xl 3xl:text-2xl font-semibold 3xl:font-bold">{{ blog.title }}</h3>
         </div>
+        <button
+          class="text-xs 3xl:text-base flex items-center justify-between font-medium 3xl:font-bold bg-dark-gray1 w-full px-4 3xl:px-5 py-[6px] 3xl:py-2 text-white rounded-md 3xl:rounded-lg duration-500 ease-in-out">
+          Read more
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+            class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+          </svg>
+        </button>
+      </a>
     </div>
+  </div>
 </section>

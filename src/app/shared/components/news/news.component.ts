@@ -18,34 +18,34 @@ import { BlogTagComponent } from '../blog-tag/blog-tag.component';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class NewsComponent {
-  cards: any[] = [
+  blogs: any[] = [
     {
-      imageUrl: 'assets/news/img1.png',
+      imgUrl: 'assets/news/img1.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
     {
-      imageUrl: 'assets/news/img2.png',
+      imgUrl: 'assets/news/img2.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
     {
-      imageUrl: 'assets/news/img3.png',
+      imgUrl: 'assets/news/img3.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
     {
-      imageUrl: 'assets/news/img3.png',
+      imgUrl: 'assets/news/img3.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
     {
-      imageUrl: 'assets/news/img3.png',
+      imgUrl: 'assets/news/img3.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
     {
-      imageUrl: 'assets/news/img3.png',
+      imgUrl: 'assets/news/img3.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
@@ -58,7 +58,7 @@ export class NewsComponent {
     maxIdx: 6,
     abs: 0,
   };
-  totalSlides = this.cards.length;
+  totalSlides = this.blogs.length;
 
   ngAfterViewInit() {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
@@ -101,6 +101,7 @@ export class NewsComponent {
       },
     });
   }
+
   ngOnDestroy() {
     if (this.slider) this.slider.destroy();
   }

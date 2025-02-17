@@ -17,18 +17,19 @@
 
   <div class="pl-[4%] sm:pl-[9.3%]">
     <div class="keen-slider" #sliderRef>
-      <div class="keen-slider__slide hover:shadow-lg" *ngFor="let card of cards">
+      <div class="keen-slider__slide hover:shadow-lg" *ngFor="let testimonial of testimonials">
         <div
-          class="p-6 3xl:p-8 rounded-md 3xl:rounded-lg border border-light-gray1 bg-card-gray hover:bg-white  duration-500">
-          <p
-            class="text-base 3xl:text-xl font-light h-[16rem] sm:h-[18rem] lg:h-[20rem] xl:h-[19rem] 2xl:h-[18rem] 3xl::h-[21rem]">
-            {{card.desc}} </p>
-          <hr class="border border-teal2 opacity-60 mb-4 3xl:mb-6">
-          <div class="flex items-center gap-3 4xl:gap-4">
-            <img [src]="card.imageUrl" class="w-10 3xl:w-12 object-cover rounded-full" alt="profile-image">
-            <div class="flex flex-col justify-between items-start">
-              <h4 class="text-sm 3xl:text-base font-semibold">{{card.name}}</h4>
-              <p class="text-dark-gray2 text-sm 3xl:text-base">{{card.designation}}</p>
+          class="p-6 3xl:p-8 flex flex-col justify-between rounded-md 3xl:rounded-lg border border-light-gray1 bg-card-gray h-full hover:bg-white  duration-500">
+          <p class="text-sm 3xl:text-xl font-light mb-24">
+            {{testimonial.desc}} </p>
+          <div>
+            <hr class="border border-teal2 opacity-60 mb-4 3xl:mb-6">
+            <div class="flex items-center gap-3 4xl:gap-4">
+              <img [src]="testimonial.imgUrl" class="w-10 3xl:w-12 object-cover rounded-full" alt="profile-image">
+              <div class="flex flex-col justify-between items-start">
+                <h4 class="text-sm 3xl:text-base font-semibold">{{testimonial.name}}</h4>
+                <p class="text-dark-gray2 text-sm 3xl:text-base">{{testimonial.designation}}</p>
+              </div>
             </div>
           </div>
         </div>
