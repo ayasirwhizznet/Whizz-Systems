@@ -4,9 +4,8 @@
         <source src="assets/hero/waves1.mp4" type="video/mp4">
     </video>
     <div class="absolute inset-0 bg-video-overlay opacity-80 z-10"></div>
-    <div class="relative z-20 flex flex-col lg:flex-row gap-6 3xl:gap-8 text-sm lg:text-xs 3xl:text-sm">
-        <div
-            class="p-6 3xl:p-8 flex flex-col items-center justify-between bg-card-gray rounded-lg text-center lg:text-left">
+    <div class="relative z-20 flex flex-col lg:flex-row gap-6 lg:gap-4 2xl:gap-6 3xl:gap-8 text-sm lg:text-xs 3xl:text-sm">
+        <div class="p-6 3xl:p-8 flex flex-col items-center justify-between bg-card-gray rounded-md 3xl:rounded-lg text-center lg:text-left">
             <div class="self-center lg:self-start mb-32 lg:mb-0">
                 <img class="w-24 3xl:w-[122px] object-cover" src="assets/footer/blogo.png" alt="Whizz_Logo">
             </div>
@@ -23,9 +22,8 @@
                 </div>
             </div>
         </div>
-        <div
-            class="grid grid-cols-12 gap-6 lg:gap-3 3xl:gap-8 bg-card-gray text-dark-gray2 p-6 3xl:p-8 rounded-lg text-center md:text-left">
-            <div class="col-span-12 md:col-span-6 lg:col-span-2">
+        <div class="grid grid-cols-12 gap-6 lg:gap-3 3xl:gap-8 bg-card-gray text-dark-gray2 p-6 3xl:p-8 rounded-md 3xl:rounded-lg text-center md:text-left">
+            <div class="col-span-12 md:col-span-6 lg:col-span-2 2xl:col-span-2">
                 <h3 class="text-base lg:text-sm 3xl:text-base mb-4 3xl:mb-6 font-medium 3xl:font-semibold">Get in touch
                 </h3>
 
@@ -44,7 +42,7 @@
                 </div>
             </div>
             <!-- Services -->
-            <div class="col-span-12 md:col-span-6 lg:col-span-2 ">
+            <div class="col-span-12 md:col-span-6 lg:col-span-2 2xl:col-span-2">
                 <h3 class="text-base lg:text-sm 3xl:text-base mb-4 lg:mb-6 3xl:mb-8 font-medium 3xl:font-semibold">
                     Services</h3>
                 <div *ngFor="let item of services">
@@ -53,16 +51,16 @@
                 </div>
             </div>
             <!-- Blog -->
-            <div class="col-span-12  md:col-span-6 lg:col-span-1 ">
+            <div class="col-span-12  md:col-span-6 lg:col-span-2 2xl:col-span-1">
                 <h3 class="text-base lg:text-sm 3xl:text-base mb-4 lg:mb-6 3xl:mb-8 font-medium 3xl:font-semibold">Blog
                 </h3>
                 <div *ngFor="let item of blog">
-                    <a class="mb-3 3xl:mb-4 inline-block cursor-pointer hover:text-teal1 2xl:text-nowrap transition-all duration-300 ease-in-out"
+                    <a class="mb-3 3xl:mb-4 inline-block cursor-pointer hover:text-teal1 text-nowrap transition-all duration-300 ease-in-out"
                         routerLink="item.link">{{item.label}}</a>
                 </div>
             </div>
             <!-- Social media -->
-            <div class="col-span-12 md:col-span-6 lg:col-span-2 ">
+            <div class="col-span-12 md:col-span-6 lg:col-span-2 2xl:col-span-2">
                 <h3
                     class="text-base lg:text-sm 3xl:text-base mb-4 lg:mb-6 3xl:mb-8 font-medium 3xl:font-semibold text-nowrap">
                     Social Media</h3>
@@ -72,12 +70,11 @@
                         {{item.label}}</a>
                 </div>
             </div>
-            <div
-                class="col-span-12 md:col-span-12 lg:col-span-5 grid justify-center lg:justify-end items-center lg:mr-14 3xl:mr-16 ">
+            <div class="col-span-12 md:col-span-12 lg:col-span-4 2xl:col-span-5 grid justify-center lg:justify-end items-center lg:mr-6 2xl:mr-14 3xl:mr-16 ">
                 <div
-                    class="w-[16rem] 3xl:w-[19rem] p-6 3xl:p-8 bg-white border border-light-gray1 rounded-lg text-left">
-                    <h1 class="text-2xl 3xl:text-3xl font-bold">Subscribe to our newsletter!</h1>
-                    <p class="mt-3 3xl:mt-5 mb-6 3xl:mb-8 font-light text-base 3xl:text-xl leading-[24px]">Get updates
+                    class="w-64 lg:w-[13rem] 2xl:w-64 3xl:w-80 p-6 lg:p-4 2xl:p-6 3xl:p-8 bg-white border border-light-gray1 rounded-md 3xl:rounded-lg text-left">
+                    <h1 class="text-2xl lg:text-xl 2xl:text-2xl 3xl:text-3xl font-bold">Subscribe to our newsletter!</h1>
+                    <p class="mt-3 3xl:mt-5 mb-5 3xl:mb-8 font-light text-base lg:text-xs 2xl:text-base 3xl:text-xl">Get updates
                         on the <br> latest news & insights</p>
                     <app-animated-button routerLink="/404" heading="Subscribe" size="medium" bg="teal-bg"></app-animated-button>
                 </div>
