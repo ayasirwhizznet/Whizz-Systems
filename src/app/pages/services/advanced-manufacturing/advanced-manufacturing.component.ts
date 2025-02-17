@@ -23,7 +23,7 @@ export class AdvancedManufacturingComponent {
   coreServices: any[] = [
     {
       imgUrl: 'assets/advanced_manufacturing/core-services.png',
-      title: 'Manufacturing Simulations',
+      name: 'Manufacturing Simulations',
       description: [
         'Advanced process optimization to enhance manufacturability and reliability.',
         '<b>DFX Analysis (DFM, DFA, DFT):</b> Ensuring smooth and cost-efficient production.',
@@ -33,7 +33,7 @@ export class AdvancedManufacturingComponent {
     },
     {
       imgUrl: 'assets/advanced_manufacturing/core-services.png',
-      title: 'Electronic Manufacturing Assembly',
+      name: 'Electronic Manufacturing Assembly',
       description: [
         'High-precision PCB assembly for complex electronic systems.',
         'Expertise in <b>high-pin-count BGAs, micro-pitch components, and high-speed interconnects</b>.',
@@ -42,7 +42,7 @@ export class AdvancedManufacturingComponent {
     },
     {
       imgUrl: 'assets/advanced_manufacturing/core-services.png',
-      title: 'Mechanical Assembly',
+      name: 'Mechanical Assembly',
       description: [
         'Full electromechanical integration with <b>custom enclosures and robust housing solutions</b>.',
         'Expertise in thermal management, structural integrity, and environmental durability.',
@@ -50,7 +50,7 @@ export class AdvancedManufacturingComponent {
     },
     {
       imgUrl: 'assets/advanced_manufacturing/core-services.png',
-      title: 'System Build & Packaging Design',
+      name: 'System Build & Packaging Design',
       description: [
         '<b>Turnkey box builds</b> and final system integration.',
         'Custom <b>packaging solutions</b> for shipping, distribution, and end-user experience.',

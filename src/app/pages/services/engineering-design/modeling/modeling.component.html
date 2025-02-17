@@ -1,31 +1,31 @@
 <!-- Hero -->
-<app-services-hero category="Engineering & Design" heading="Optimize Your Product with
-Cutting-Edge 3D Modeling & Mechanical Design" desc="From Concept to Reality—Precision Engineering for Superior
+<app-services-hero serviceCategory="Engineering & Design" serviceTitle="Optimize Your Product with
+Cutting-Edge 3D Modeling & Mechanical Design" serviceDesc="From Concept to Reality—Precision Engineering for Superior
 Performance" imgUrl="assets/3D-Modeling/hero.png" navigate="/404"
   btnText="Get Started with Expert Design"></app-services-hero>
 
 <!-- Introduction -->
-<app-services-intro secTitle="Introduction" secHeading="Lorem Ipsum"
-  secDesc1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+<app-services-intro heading="Introduction" title="Lorem Ipsum"
+  desc1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
   imgUrl="assets/3D-Modeling/introduction.png"></app-services-intro>
 
 <!-- Core Services Overview-->
-<app-services-core-services secTitle="Core Services Overview"
-  secHeading="Comprehensive 3D Modeling & Mechanical Design Services"
-  [cardData]="coreServices"></app-services-core-services>
+<app-services-core-services heading="Core Services Overview"
+title="Comprehensive 3D Modeling & Mechanical Design Services" [columns]="3"
+  [coreServicesData]="coreServices"></app-services-core-services>
 
 <!-- Benefits -->
-<app-services-benefits heading="Benefits" title="Why Choose Whizz Systems?" btnText="Small Button"
-  navigate="/404" [benefitsData]="benefits" [columns]="3"></app-services-benefits>
+<app-services-benefits heading="Benefits" title="Why Choose Whizz Systems?" btnText="Small Button" navigate="/404"
+  [benefitsData]="benefits" [columns]="3"></app-services-benefits>
 
 <!-- Proven Success -->
-<app-services-intro secTitle="Proven Success" secHeading="Case Studies or customer success story" secDesc1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+<app-services-intro heading="Proven Success" title="Case Studies or customer success story" desc1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
     reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
     occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
-  imgUrl="assets/3D-Modeling/proven-success.png" routerLink="/404" btnText="Learn more"
-  [isImageFirst]="false"></app-services-intro>
+  imgUrl="assets/3D-Modeling/proven-success.png" navigate="/404" btnText="Learn more"
+  [isImageLeft]="false"></app-services-intro>
 
 <!-- Talk To Expert -->
-<app-services-contact-experts secHeading="Ready to Bring Your Design to Life?" routerLink="/404"
+<app-services-contact-experts slogan="Ready to Bring Your Design to Life?" navigate="/404"
   btnText="Contact Our Design Experts"></app-services-contact-experts>

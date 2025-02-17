@@ -1,36 +1,35 @@
-<app-services-hero category="Engineering & Design"
-  heading="Building Smarter Systems with Hardware Design & Schematics Experts"
-  desc="Comprehensive architecture and schematic services optimized for performance, scalability, and compliance."
+<app-services-hero serviceCategory="Engineering & Design"
+  serviceTitle="Building Smarter Systems with Hardware Design & Schematics Experts"
+  serviceDesc="Comprehensive architecture and schematic services optimized for performance, scalability, and compliance."
   imgUrl="assets/system-design/hero.png" navigate="/404" btnText="Start Your Project Today"></app-services-hero>
 
 <!-- Introduction -->
-<app-services-intro secTitle="Introduction" secHeading="Crafting Scalable Architectures for Advanced Hardware"
-  secDesc1="At Whizz Systems, we provide end-to-end hardware design and system architecture solutions tailored to meet the evolving demands of cutting-edge technology. From defining robust system frameworks to crafting detailed schematics, our expertise ensures your hardware is designed for performance, reliability, and future scalability."
+<app-services-intro heading="Introduction" title="Crafting Scalable Architectures for Advanced Hardware"
+  desc1="At Whizz Systems, we provide end-to-end hardware design and system architecture solutions tailored to meet the evolving demands of cutting-edge technology. From defining robust system frameworks to crafting detailed schematics, our expertise ensures your hardware is designed for performance, reliability, and future scalability."
   imgUrl="assets/system-design/introduction.png"></app-services-intro>
 
 <!-- Core Services Overview-->
-<app-services-core-services secTitle="Core Services Overview" secHeading="Our System Design & Schematic Services"
-  [cardData]="coreServices" secHeadingMargin="mb-6 3xl:mb-8"></app-services-core-services>
+<app-services-core-services heading="Core Services Overview" title="Our System Design & Schematic Services"
+  [columns]="3" [coreServicesData]="coreServices"></app-services-core-services>
 
 <!-- Industry Standards -->
-<app-services-industry secTitle="Industry Standards" secHeading="Certifications & Standards" secDesc="At Whizz Systems, we ensure that every design meets the highest industry standards and regulatory
+<app-services-industry heading="Industry Standards" title="Certifications & Standards" desc="At Whizz Systems, we ensure that every design meets the highest industry standards and regulatory
      requirements. Our commitment to quality and compliance guarantees that your products are not only innovative
-     but also reliable and certified for global markets." [cardData]="industryStandards"
-  [columns]="3"></app-services-industry>
+     but also reliable and certified for global markets." [columns]="3"
+  [indusryStandsData]="industryStandards"></app-services-industry>
 
 <!-- Benefits -->
 <app-services-benefits heading="Benefits" title="Why Choose Whizz Systems for PCB Layout?" btnText="Small Button"
   navigate="/404" [benefitsData]="benefits" [columns]="4"></app-services-benefits>
 
 <!-- Case Study -->
-<app-services-intro secTitle="Case Study" secHeading="Case Studies & Success Stories" secDesc1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+<app-services-intro heading="Case Study" title="Case Studies & Success Stories" desc1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
-  imgUrl="assets/system-design/case-study.png" routerLink="/404" btnText="Learn more" [isImageFirst]="false">
-
+  imgUrl="assets/system-design/case-study.png" navigate="/404" btnText="Learn more" [isImageLeft]="false">
 </app-services-intro>
 
 <!-- Contact Thermal Expert -->
-<app-services-contact-experts secHeading="Ready To Build Smarter, Scalable Systems?" routerLink="/404"
+<app-services-contact-experts slogan="Ready To Build Smarter, Scalable Systems?" navigate="/404"
   btnText="Contact Our System Design Experts"></app-services-contact-experts>

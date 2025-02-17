@@ -1,18 +1,18 @@
-<app-services-hero category="Advanced Manufacturing"
-    heading="Integrated Design, Manufacturing, and Supply Chain for Superior Quality"
-    desc="A Seamless, Multidomain Approach to Delivering High-Complexity Electronics"
+<app-services-hero serviceCategory="Advanced Manufacturing"
+    serviceTitle="Integrated Design, Manufacturing, and Supply Chain for Superior Quality"
+    serviceDesc="A Seamless, Multidomain Approach to Delivering High-Complexity Electronics"
     imgUrl="assets/advanced_manufacturing/hero.png" navigate="/404"
     btnText="Get Started with Whizz Manufacturing Capabilities"></app-services-hero>
 
 <!-- Introduction -->
-<app-services-intro secTitle="Introduction" secHeading="The Power of Parallel Design & Manufacturing"
-    secDesc1="At Whizz Systems, we go beyond traditional manufacturing. By integrating design, manufacturing, and global supply chain management into a unified workflow, we provide multidomain feedback at every stage of development. Our ability to run critical analyses in parallel—before finalizing manufacturing files—ensures optimal component selection based on quality, price, availability, and supply chain stability."
-    secDesc2="This unique, synchronized approach allows us to anticipate challenges, mitigate risks, and optimize every aspect of production. With 25 years of experience balancing engineering complexity with a manufacturing-driven strategy, we deliver high-quality, high-reliability products with efficiency and precision."
+<app-services-intro heading="Introduction" title="The Power of Parallel Design & Manufacturing"
+desc1="At Whizz Systems, we go beyond traditional manufacturing. By integrating design, manufacturing, and global supply chain management into a unified workflow, we provide multidomain feedback at every stage of development. Our ability to run critical analyses in parallel—before finalizing manufacturing files—ensures optimal component selection based on quality, price, availability, and supply chain stability."
+desc2="This unique, synchronized approach allows us to anticipate challenges, mitigate risks, and optimize every aspect of production. With 25 years of experience balancing engineering complexity with a manufacturing-driven strategy, we deliver high-quality, high-reliability products with efficiency and precision."
     imgUrl="assets/advanced_manufacturing/introduction.png"></app-services-intro>
 
 <!-- Core Services -->
-<app-services-industry secTitle="Services Overview" secHeading="Integrated Manufacturing Services for Complex Products"
-    [cardData]="coreServices" [columns]="4"></app-services-industry>
+<app-services-industry heading="Services Overview" title="Integrated Manufacturing Services for Complex Products"
+    [indusryStandsData]="coreServices" [columns]="4"></app-services-industry>
 
 <!-- Scalable production -->
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
@@ -46,5 +46,5 @@
     btnText="Small Button" navigate="/404" [benefitsData]="benefits" [columns]="3"></app-services-benefits>
 
 <!-- Contact Thermal Expert -->
-<app-services-contact-experts secHeading="Experience the Future of Integrated Electronics Manufacturing"
-    routerLink="/404" btnText="Let’s Develop Your Product Together"></app-services-contact-experts>
+<app-services-contact-experts slogan="Experience the Future of Integrated Electronics Manufacturing"
+navigate="/404" btnText="Let’s Develop Your Product Together"></app-services-contact-experts>

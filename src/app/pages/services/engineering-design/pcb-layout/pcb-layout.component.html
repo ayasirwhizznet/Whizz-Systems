@@ -1,33 +1,33 @@
 <!-- Hero -->
-<app-services-hero category="Engineering & Design"
-  heading="Precision PCB Layout for Optimal Performance and Reliability"
-  desc="Elevate Your Design with Expertise in High-Density, High-Speed, and Manufacturable" imgUrl="assets/pcb/hero.png"
-  navigate="/404" btnText="Get Started with Expert PCB Design"></app-services-hero>
+<app-services-hero serviceCategory="Engineering & Design"
+  serviceTitle="Precision PCB Layout for Optimal Performance and Reliability"
+  serviceDesc="Elevate Your Design with Expertise in High-Density, High-Speed, and Manufacturable"
+  imgUrl="assets/pcb/hero.png" navigate="/404" btnText="Get Started with Expert PCB Design"></app-services-hero>
 
 <!-- Introduction -->
-<app-services-intro secTitle="Introduction" secHeading="Comprehensive PCB Layout Services Tailored for Success"
-  secDesc1="PCB layout is a critical phase in the PCB design process, directly influencing the performance, manufacturability, reliability, and cost of the final product. At Whizz Systems, we specialize in delivering reliable PCB layout services that meet the highest industry standards."
-  secDesc2="With extensive expertise in PCB footprint development, validation, and library management, our team ensures seamless integration of components and preparation of accurate BOMs for procurement and assembly. By implementing Signal Integrity (SI) and Design for Excellence (DFx) rules—covering Design for Manufacturing (DFM), Assembly (DFA), and Testing (DFT)—we ensure early application of constraints, optimizing PCB layouts for unparalleled performance and reliability."
+<app-services-intro heading="Introduction" title="Comprehensive PCB Layout Services Tailored for Success"
+  desc1="PCB layout is a critical phase in the PCB design process, directly influencing the performance, manufacturability, reliability, and cost of the final product. At Whizz Systems, we specialize in delivering reliable PCB layout services that meet the highest industry standards."
+  desc2="With extensive expertise in PCB footprint development, validation, and library management, our team ensures seamless integration of components and preparation of accurate BOMs for procurement and assembly. By implementing Signal Integrity (SI) and Design for Excellence (DFx) rules—covering Design for Manufacturing (DFM), Assembly (DFA), and Testing (DFT)—we ensure early application of constraints, optimizing PCB layouts for unparalleled performance and reliability."
   imgUrl="assets/pcb/introduction.png"></app-services-intro>
 
 <!-- Core Services Overview-->
-<app-services-core-services secTitle="Core Services Overview" secHeading="End-to-End PCB Layout Solutions"
-  secHeadingMargin="mb-6 3xl:mb-8" [cardData]="coreServices"></app-services-core-services>
+<app-services-core-services heading="Core Services Overview" title="End-to-End PCB Layout Solutions" [columns]="3"
+  [coreServicesData]="coreServices"></app-services-core-services>
 
 <!-- Industry Standards -->
-<app-services-industry secTitle="Industry Standards" secHeading="PCB Layout Expertise That Delivers Results"
-  secDesc="At Whizz Systems, we ensure that every design meets the highest industry standards and regulatory requirements. Our commitment to quality and compliance guarantees that your products are not only innovative but also reliable and certified for global markets."
-  [cardData]="industryStandards" [columns]="4"></app-services-industry>
+<app-services-industry heading="Industry Standards" title="PCB Layout Expertise That Delivers Results"
+desc="At Whizz Systems, we ensure that every design meets the highest industry standards and regulatory requirements. Our commitment to quality and compliance guarantees that your products are not only innovative but also reliable and certified for global markets."
+[columns]="4" [indusryStandsData]="industryStandards"></app-services-industry>
 
 <!-- Benefits -->
 <app-services-benefits heading="Benefits" title="Why Choose Whizz Systems for PCB Layout?" btnText="Small Button"
   navigate="/404" [benefitsData]="benefits" [columns]="3"></app-services-benefits>
 
 <!-- Case Studies -->
-<app-services-intro secTitle="Case Study" secHeading="Proven Success in Complex PCB Layouts"
-  secDesc1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
-  imgUrl="assets/pcb/case-study.png" routerLink="/404" btnText="Learn more" [isImageFirst]='false'></app-services-intro>
+<app-services-intro heading="Case Study" title="Proven Success in Complex PCB Layouts"
+  desc1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
+  imgUrl="assets/pcb/case-study.png" navigate="/404" btnText="Learn more" [isImageLeft]='false'></app-services-intro>
 
 <!-- Contact PCB Expert -->
-<app-services-contact-experts secHeading="Ready to Optimize Your PCB Layout?" routerLink="/404"
+<app-services-contact-experts slogan="Ready to Optimize Your PCB Layout?" navigate="/404"
   btnText="Contact Our PCB Layout Specialists"></app-services-contact-experts>

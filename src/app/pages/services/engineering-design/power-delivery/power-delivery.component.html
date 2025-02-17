@@ -1,30 +1,28 @@
 <!-- Hero -->
-<app-services-hero category="Engineering & Design"
-  heading="Power Delivery Network Simulations for Reliable PCB Performance"
-  desc="Ensuring Power Integrity with Advanced DC and AC Analysis Techniques"
+<app-services-hero serviceCategory="Engineering & Design"
+  serviceTitle="Power Delivery Network Simulations for Reliable PCB Performance"
+  serviceDesc="Ensuring Power Integrity with Advanced DC and AC Analysis Techniques"
   imgUrl="assets/power-delivery/hero.png" navigate="/404"
   btnText="Optimize Your Power Network Today"></app-services-hero>
 
 <!-- Introduction -->
-<app-services-intro secTitle="Introduction"
-  secHeading="Optimized Power Delivery for NextGen Electronics & Hardware Systems"
-  secDesc1="Whizz Systems’ Power Integrity services focus on delivering efficient, reliable, and high-performing power distribution networks for PCB designs. Our advanced simulations ensure every component receives stable power within design constraints while minimizing risks of overheating, noise, and power inefficiency."
+<app-services-intro heading="Introduction" title="Optimized Power Delivery for NextGen Electronics & Hardware Systems"
+  desc1="Whizz Systems’ Power Integrity services focus on delivering efficient, reliable, and high-performing power distribution networks for PCB designs. Our advanced simulations ensure every component receives stable power within design constraints while minimizing risks of overheating, noise, and power inefficiency."
   imgUrl="assets/signalIntegrity/introduction.png"></app-services-intro>
 
 <!-- Core Services Overview -->
 <app-services-core-services secTitle="Core Services Overview" secHeading="Comprehensive Power Integrity Services"
-  [cardData]="coreServices" secHeadingMargin="mb-6 3xl:mb-8"></app-services-core-services>
+  [columns]="3" [coreServicesData]="coreServices"></app-services-core-services>
 
 <!-- Benefits -->
 <app-services-benefits heading="Benefits" title="Why Choose Whizz Systems for Power Integrity?" btnText="Small Button"
   navigate="/404" [benefitsData]="benefits" [columns]="4"></app-services-benefits>
 
 <!-- Case Studies -->
-<app-services-intro secTitle="Case Study" secHeading="Proven Success" secDesc1="Brief success stories or Whitepapers related to/ showcasing
-  specific mechanical design projects." imgUrl="assets/power-delivery/case-study.png" routerLink="/404"
-btnText="Learn more" [isImageFirst]="false"></app-services-intro>
+<app-services-intro heading="Case Study" title="Proven Success" desc1="Brief success stories or Whitepapers related to/ showcasing
+  specific mechanical design projects." imgUrl="assets/power-delivery/case-study.png" navigate="/404"
+  btnText="Learn more" [isImageLeft]="false"></app-services-intro>
 
 <!-- Contact PCB Expert -->
-<app-services-contact-experts secHeading="Ensure Power Integrity in Your Designs"
-  secDesc="Partner with Whizz Systems to create high-performance PCBs with optimized power delivery networks that meet your industry’s standards."
-  secHeadingMargin="mb-10 3xl:mb-12" btnText="Contact our Experts" routerLink="/404"></app-services-contact-experts>
+<app-services-contact-experts slogan="Ensure Power Integrity in Your Designs" btnText="Contact our Experts"
+  navigate="/404"></app-services-contact-experts>

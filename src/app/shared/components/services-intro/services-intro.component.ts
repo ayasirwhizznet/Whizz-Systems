@@ -9,15 +9,15 @@ import { ButtonComponent } from '../button/button.component';
   templateUrl: './services-intro.component.html',
 })
 export class ServicesIntroComponent {
-  @Input() secTitle: string = '';
-  @Input() secHeading: string = '';
-  @Input() secDesc1: string = '';
-  @Input() secDesc2: string = '';
-  @Input() secDesc3: string = '';
-  @Input() secSubHeading: string = '';
-  @Input() secDesc4: string = '';
-  @Input() routerLink!: string;
+  @Input() heading: string = '';
+  @Input() title: string = '';
+  @Input() desc1: string = '';
+  @Input() desc2: string = '';
+  @Input() desc3: string = '';
+  @Input() subTitle: string = '';
+  @Input() desc4: string = '';
+  @Input() navigate!: string;
   @Input() btnText: string = '';
   @Input() imgUrl: string = '';
-  @Input() isImageFirst: boolean = true;
+  @Input() isImageLeft: boolean = true;
 }

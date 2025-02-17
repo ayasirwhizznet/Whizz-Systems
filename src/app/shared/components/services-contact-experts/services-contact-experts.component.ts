@@ -8,8 +8,7 @@ import { ButtonComponent } from '../button/button.component';
   templateUrl: './services-contact-experts.component.html',
 })
 export class ServicesContactExpertsComponent {
-  @Input() secHeading: string = '';
-  @Input() secDesc: string = '';
-  @Input() routerLink!: string;
+  @Input() slogan: string = '';
+  @Input() navigate!: string;
   @Input() btnText: string = '';
 }

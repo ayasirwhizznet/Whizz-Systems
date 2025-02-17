@@ -21,17 +21,17 @@ export class SignalIntegrityComponent {
   pcbPerformance: any = [
     {
       imgUrl: 'assets/signalIntegrity/stack.png',
-      title: 'Stack-Up Recommendations',
+      name: 'Stack-Up Recommendations',
       desc: 'Selection of suitable dielectric materials and layer configurations for impedance control and signal isolation.',
     },
     {
       imgUrl: 'assets/signalIntegrity/3d.png',
-      title: '3D Via Design & Optimization',
+      name: '3D Via Design & Optimization',
       desc: 'Minimized crosstalk and reflections for enhanced signal integrity.',
     },
     {
       imgUrl: 'assets/signalIntegrity/mtla.png',
-      title: 'Maximum Trace Length Analysis',
+      name: 'Maximum Trace Length Analysis',
       desc: 'Determining allowable trace lengths for high-speed nets (e.g., DDR, PCIe, SerDes) based on rise times, propagation delays, and potential signal degradation.',
     },
   ];
@@ -39,22 +39,22 @@ export class SignalIntegrityComponent {
   coreServices: any = [
     {
       imgUrl: 'assets/signalIntegrity/core-services.png',
-      title: 'DDR Parallel Bus Analysis',
+      name: 'DDR Parallel Bus Analysis',
       desc: 'Evaluates timing, Simultaneous Switching Noise (SSN), voltage margins, and signal behavior for stable memory communication.',
     },
     {
       imgUrl: 'assets/signalIntegrity/core-services.png',
-      title: 'S-Parameter Simulations',
+      name: 'S-Parameter Simulations',
       desc: 'Analyze high-speed interfaces for insertion loss, return loss, and TDR, identifying signal path discontinuities and crosstalk.',
     },
     {
       imgUrl: 'assets/signalIntegrity/core-services.png',
-      title: 'Length and Delay Matching',
+      name: 'Length and Delay Matching',
       desc: 'Ensures proper matching to prevent timing mismatches in high-speed signals.',
     },
     {
       imgUrl: 'assets/signalIntegrity/core-services.png',
-      title: 'System-Level Simulations',
+      name: 'System-Level Simulations',
       desc: 'Addresses bottlenecks across the design for seamless operation.',
     },
   ];

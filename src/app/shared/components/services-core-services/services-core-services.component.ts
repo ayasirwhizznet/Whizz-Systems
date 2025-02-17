@@ -8,9 +8,9 @@ import { Component, Input } from '@angular/core';
   templateUrl: './services-core-services.component.html',
 })
 export class ServicesCoreServicesComponent {
-  @Input() secTitle: string = '';
-  @Input() secHeading: string = '';
-  @Input() secDesc: string = '';
-  @Input() columns: number = 3;
-  @Input() cardData: any[] = [];
+  @Input() heading: string = '';
+  @Input() title: string = '';
+  @Input() desc: string = '';
+  @Input() columns!: number;
+  @Input() coreServicesData: any[] = [];
 }

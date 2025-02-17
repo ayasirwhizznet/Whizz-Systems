@@ -21,17 +21,17 @@ export class ModelingComponent {
   coreServices: any[] = [
     {
       imgUrl: 'assets/3D-Modeling/assembly.png',
-      title: '3D Models & 2D Assembly Drawings',
+      name: '3D Models & 2D Assembly Drawings',
       desc: 'Detailed, standards-compliant PCB component designs. Custom designs ensuring functionality and durability.',
     },
     {
       imgUrl: 'assets/3D-Modeling/advanced.png',
-      title: 'Advanced Mechanical Component Design',
+      name: 'Advanced Mechanical Component Design',
       desc: 'Specialized solutions for I/O brackets, trays, and ingress-protected enclosures. Pole-mounted or wall-mounted solutions.',
     },
     {
       imgUrl: 'assets/3D-Modeling/fea.png',
-      title: 'Finite Element Analysis (FEA)',
+      name: 'Finite Element Analysis (FEA)',
       desc: 'Structural analysis for longevity and performance. Identifying structural weaknesses before production.',
     },
   ];

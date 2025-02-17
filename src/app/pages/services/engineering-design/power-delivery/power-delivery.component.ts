@@ -21,17 +21,17 @@ export class PowerDeliveryComponent {
   coreServices: any = [
     {
       imgUrl: 'assets/power-delivery/core-services.png',
-      title: 'DC Power Analysis',
+      name: 'DC Power Analysis',
       desc: 'IR Drop Analysis, Current Density Analysis, Joule Heating Simulations.',
     },
     {
       imgUrl: 'assets/power-delivery/core-services.png',
-      title: 'AC Power Analysis',
+      name: 'AC Power Analysis',
       desc: 'Capacitor Optimization & Impedance Reduction.',
     },
     {
       imgUrl: 'assets/power-delivery/core-services.png',
-      title: 'End-to-End Layout Optimization',
+      name: 'End-to-End Layout Optimization',
       desc: 'Enhancing reliability by embedding simulation insights into PCB designs.',
     },
   ];
