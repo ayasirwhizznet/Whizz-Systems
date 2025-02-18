@@ -12,7 +12,7 @@ const animation = { duration: 7000, easing: (t: number) => t };
   styleUrls: ['./trust.component.scss'],
 })
 export class TrustComponent {
-  companies = [
+  partners:any[] = [
     'assets/trust/altera.png',
     'assets/trust/amd.png',
     'assets/trust/nvidia.png',
