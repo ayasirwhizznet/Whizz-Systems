@@ -12,8 +12,8 @@
     <div class="p-6 3xl:p-8 bg-card-gray rounded-md 3xl:rounded-lg">
         <div class="grid grid-cols-12 gap-6 3xl:gap-8">
             <div *ngFor="let benefit of benefitsData; let i = index" 
-            [ngClass]="{'lg:col-span-6 lg:w-2/3 lg:ml-auto': i === 3,
-            'sm:col-span-9 sm:w-2/3 sm:ml-auto lg:w-full':i === 4
+            [ngClass]="{'lg:col-start-3': i === 3,
+            'sm:col-start-4':i === 4
         }" class="col-span-12 sm:col-span-6 lg:col-span-4">
                 <div class="p-6 3xl:p-8 bg-white border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
                     <img class="w-10 3xl:w-12 rounded-md 3xl:rounded-lg" [src]="benefit.imgUrl" alt="img">
