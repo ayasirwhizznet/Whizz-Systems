@@ -1,98 +1,38 @@
 <!-- Hero -->
-<section class="px-0 sm:px-[6.3%] mt-[3%]">
-    <div
-        class="p-8 lg:p-12 3xl:p-16 bg-dark-gray1 flex flex-col lg:flex-row items-center gap-8 lg:gap-12 3xl:gap-16 sm:rounded-xl 3xl:rounded-2xl">
-        <div class="w-full lg:w-[40%] text-white">
-            <p class="text-sm 3xl:text-base font-light leading-[14px] 3xl:leading-[19.2px]">Featured Products |
-                Evaluation Boards | Versal</p>
-            <h1
-                class="text-3xl lg:text-[44px] 3xl:text-[56px] lg:leading-[55px] 3xl:leading-[67.2px] font-bold my-3 3xl:my-4">
-                Versal HBM Series VHK158 Evaluation Kit</h1>
-            <p class="text-base 3xl:text-xl font-extralight leading-[20px] 3xl:leading-[24px] mb-4 3xl:mb-4">A
-                Cutting-Edge
-                Platform for Memory-Intensive, High-Bandwidth Applications in Data Centers, Networking, and Aerospace
-            </p>
-            <app-button heading="Request a Custom Design" routerLink="/404" icon="assets/services/r-arrow.svg"
-                size="small"></app-button>
-        </div>
-        <div class="w-full lg:w-[60%]">
-            <img class="object-cover" src="assets/featured-products/products/vhk158/hero.png" alt="img">
-        </div>
-    </div>
-</section>
+<app-product-hero productCategory="Featured Products |
+Evaluation Boards | Versal" productName="Versal HBM Series VHK158 Evaluation Kit"
+    productDesc="A Cutting-Edge Platform for Memory-Intensive, High-Bandwidth Applications in Data Centers, Networking, and Aerospace"
+    btnText="Request a Custom Design" navigate="/404"
+    imgUrl="assets/featured-products/products/vhk158/hero.png"></app-product-hero>
 
 <!-- Overview -->
-<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 3xl:gap-16">
-        <div class="w-full lg:w-[57%] order-2 lg:order-1 p-6 sm:p-10 lg:p-0">
-            <img class="object-cover" src="assets/featured-products/products/vhk158/overview.png" alt="img">
-        </div>
-        <div class="w-full lg:w-[43%] order-1 lg:order-2">
-            <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[14px] 3xl:leading-[19.2px]">Product Overview
-            </h4>
-            <h3
-                class="text-dark-gray2 text-xl 3xl:text-2xl font-semibold 3xl:font-bold leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">
-                The VHK158 Evaluation Kit – Designed for Next-Generation Compute & Networking Applications</h3>
-            <p class="text-dark-gray2 text-sm 3xl:text-base font-light leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">
-                The <a href="https://www.xilinx.com/products/boards-and-kits/vhk158.html#information" target="_blank"
-                    class="underline text-teal1">
-                    <b>VHK158 Evaluation Kit</b>
-                </a> is a high-performance computing and networking platform designed to handle
-                memory-bound and compute-intensive applications. With <b>32GB of high- bandwidth memory (HBM), 112G PAM4
-                    transceivers, PCIe Gen5x8,</b> and <b>QSFP28/QSFP-DD connectors,</b> this evaluation kit is built to
-                support
-                applications requiring extreme data throughput, low-latency communication, and scalable processing
-                capabilities.</p>
-            <app-button heading="Learn more" routerLink="/404" icon="../../../assets/services/r-arrow.svg"
-                size="small"></app-button>
-        </div>
-    </div>
-</section>
+<app-product-overview heading="Product Overview"
+    title="The VHK158 Evaluation Kit – Designed for Next-Generation Compute & Networking Applications"
+    desc1="The <a href='https://www.xilinx.com/products/boards-and-kits/vhk158.html#information' target='_blank' class='text-teal1 underline'><b>VHK158 Evaluation Kit</b></a> is a high-performance computing and networking platform designed to handle memory-bound and compute-intensive applications. With 32GB of high-bandwidth memory (HBM), 112G PAM4 transceivers, PCIe Gen5x8, and QSFP28/QSFP-DD connectors, this evaluation kit is built to support applications requiring extreme data throughput, low-latency communication, and scalable processing capabilities."
+    btnText="Learn more" navigate="/404" imgUrl="assets/featured-products/products/vhk158/overview.png">
+</app-product-overview>
 
 <!-- Marketing -->
-<section>
-    <img src="assets/featured-products/products/divider-top.png" alt="img">
-    <div class="px-[7%] sm:px-[13%] lg:px-[20%] 3xl:px-[18%] py-8 lg:py-12 3xl:py-16 text-center">
-        <h2
-            class="text-teal1 text-xl sm:text-2xl lg:text-4xl 3xl:text-5xl font-medium lg:leading-[40px] 3xl:leading-[57.6px]">
-            Whizz Systems specialize in transforming development kits into fully productized, market-ready solutions for
-            a wide
-            range of industries</h2>
-    </div>
-    <img src="assets/featured-products/products/divider-bottom.png" alt="img">
-</section>
+<app-product-marketing slogan="Whizz Systems specialize in transforming development kits into fully productized, market-ready solutions for a wide
+range of industries"></app-product-marketing>
 
 <!-- Key features -->
-<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16 bg-card-gray">
-    <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[14px] 3xl:leading-[19.2px] mb-3 3xl:mb-4">Key
-        Features & Benefits</h4>
-    <h3
-        class="text-dark-gray2 text-xl 3xl:text-2xl font-semibold 3xl:font-bold leading-[24px] 3xl:leading-[28.8px] mb-10 3xl:mb-12">
-        Engineered for High-Speed Connectivity & Scalable Customization</h3>
-    <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 3xl:gap-8 border border-light-gray1 rounded-md 3xl:rounded-lg bg-white">
-        <div *ngFor="let feature of features | keyvalue" class="px-6 sm:p-6 3xl:p-8">
-            <hr class="hidden sm:block border border-light-gray1 opacity-60">
-            <div *ngFor="let item of feature.value" class="relative h-16 3xl:h-[84px] flex items-center w-full">
-                <p class="text-dark-gray2 text-xs 3xl:text-base font-light" [innerHTML]="item">{{ item }}</p>
-                <hr class="absolute bottom-0 left-0 w-full border border-light-gray1 opacity-60">
-            </div>
-        </div>
-    </div>
-</section>
+<app-product-features heading="Key Features & Benefits"
+title="Engineered for High-Speed Connectivity & Scalable Customization" [featuresData]="features"></app-product-features>
 
+<!-- Customization -->
 <!-- Customization -->
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
     <div class="flex items-center flex-col lg:flex-row gap-8 lg:gap-3 3xl:gap-4 mb-10 3xl:mb-12">
-        <div class="w-full lg:w-1/2">
-            <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[14px] 3xl:leading-[19.2px]">
+        <div class="w-full lg:w-[49%]">
+            <h4 class="text-teal1 text-[13px] 3xl:text-base font-semibold 3xl:font-bold leading-[14px] 3xl:leading-[19.2px]">
                 Customization Options
             </h4>
             <h3
-                class="text-dark-gray2 text-xl 3xl:text-2xl font-semibold 3xl:font-bold leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">
+                class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">
                 Productize Your Development Kit for Your Applications
             </h3>
-            <p class="text-dark-gray2 text-xs 3xl:text-base font-light leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">
+            <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">
                 Whizz Systems offers extensive <b>customization</b> and
                 <b>productization</b> services, enabling customers to adapt the VHK158
                 for real-world deployments. Whether you need
@@ -100,14 +40,14 @@
                 <b>system-level development,</b> our engineering expertise ensures
                 seamless integration and scalability.
             </p>
-            <app-button heading="Request a Custom Design" routerLink="/404" icon="../../../assets/services/r-arrow.svg"
+            <app-button heading="Request a Custom Version" routerLink="/404" icon="../../../assets/services/r-arrow.svg"
                 size="small"></app-button>
         </div>
-        <div class="w-full lg:w-1/2 flex">
+        <div class="w-full lg:w-[51%] flex">
             <div class="lg:basis-1/3"></div>
             <div class="basis-full lg:basis-2/3 justify-self-end">
                 <h4
-                    class="flex gap-3 3xl:gap-4 text-dark-gray2 text-sm 3xl:text-base font-medium leading-[14px] 3xl:leading-[19.2px] mb-3 3xl:mb-4">
+                    class="flex gap-3 3xl:gap-4 text-dark-gray2 text-[13px] 3xl:text-base font-medium leading-[15px] 3xl:leading-[19.2px] mb-3 3xl:mb-4">
                     Target Applications
                 </h4>
                 <div class="flex items-center flex-wrap gap-3 3xl:gap-4">
@@ -124,14 +64,16 @@
             <div *ngFor="let customization of customizations; let i = index" [ngClass]="{ 'lg:col-start-2': i == 4 }">
                 <div class="p-6 3xl:p-8 bg-white border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
                     <img class="w-10 3xl:w-12" [src]="customization.imgUrl" alt="img" />
+                    <div class="h-[5rem] sm:h-[6rem] 3xl:h-[7.5rem]">
                     <h3
-                        class="text-dark-gray2 text-sm lg:text-xs 3xl:text-base font-medium leading-[19.2px] my-3 3xl:my-4">
+                        class="text-dark-gray2 text-[13px] 3xl:text-base font-medium lg:leading-[15px] 3xl:leading-[19.2px] my-3 3xl:my-4">
                         {{ customization.name }}
                     </h3>
                     <p
-                        class="text-dark-gray2 text-sm lg:text-xs 3xl:text-base font-light leading-[20px] 3xl:leading-[28px]">
+                        class="text-dark-gray2 text-[13px] 3xl:text-base font-light 3xl:leading-[20px]">
                         {{ customization.desc }}
                     </p>
+                </div>
                 </div>
             </div>
         </div>
@@ -145,21 +87,21 @@
             <img class="object-cover" src="assets/featured-products/products/vhk158/collaboration.png" alt="img" />
         </div>
         <div class="w-full lg:w-[53.8%] order-1 lg:order-2">
-            <h4 class="text-teal1 text-sm 3xl:text-base font-bold leading-[14px] 3xl:leading-[19.2px]">
+            <h4 class="text-teal1 text-[13px] 3xl:text-base font-semibold 3xl:font-bold lg:leading-[15px] 3xl:leading-[19.2px]">
                 Trusted Expertise, Backed by Collaboration
             </h4>
             <h3
-                class="text-dark-gray2 text-xl 3xl:text-2xl font-semibold 3xl:font-bold leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">
+                class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">
                 Leverage Our Proven Industry Partnerships for Your Product
             </h3>
-            <p class="text-dark-gray2 text-sm 3xl:text-base font-light leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">
-                When you work with Whizz Systems, you gain access to a trusted partner
+            <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">
+                When you work with Whizz Systems, you gain access to a trusted partnetext-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]r
                 with deep expertise in AMD Xilinx FPGA platforms. Our 25 years
                 experience of servicing AMD/Xilinx in developing reference designs,
                 evaluation kits, and connectivity solutions allows us to bring
                 industry-leading experience to your project.
             </p>
-            <p class="text-dark-gray2 text-sm 3xl:text-base font-light leading-[24px] 3xl:leading-[28px]">
+            <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
                 We understand the architecture, design methodologies, and best practices
                 used in AMD Xilinx-based solutions because we’ve worked directly with
                 them. Now, we’re extending that expertise to you—whether you need custom
@@ -171,19 +113,5 @@
 </section>
 
 <!-- Contact Experts -->
-<section class="px-0 sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <div class="relative p-6 sm:p-10 lg:p-[52px] 3xl:p-16 sm:rounded-md 3xl:rounded-lg">
-        <video class="absolute inset-0 w-full h-full object-cover z-0 sm:rounded-md 3xl:rounded-lg" loop muted autoplay
-            oncanplay="this.play()" onloadedmetadata="this.muted = true">
-            <source src="../../assets/hero/waves2.mp4" type="video/mp4" />
-        </video>
-        <div class="absolute inset-0 bg-video-overlay opacity-80 z-[5] sm:rounded-md 3xl:rounded-lg"></div>
-        <div class="relative z-[10] w-[80%] text-white">
-            <h2
-                class="text-2xl sm:text-3xl lg:text-[52px] 3xl:text-[64px] lg:leading-[60px] 3xl:leading-[76.8px] font-bold mb-10 3xl:mb-12">
-                Looking to Productize Your Dev Kit? Let’s Build It Together!
-            </h2>
-            <app-button heading="Request a Custom Design Consultation" routerLink="/404" size="large"></app-button>
-        </div>
-    </div>
-</section>
+<app-product-cta slogan="Looking to Productize Your Dev Kit? Let’s Build It Together!" btnText="Request a Custom Design Consultation"
+navigate="/404"></app-product-cta>

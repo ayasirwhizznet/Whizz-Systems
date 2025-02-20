@@ -10,5 +10,5 @@ import { Component, Input } from '@angular/core';
 export class ProductFeaturesComponent {
   @Input() heading: string = '';
   @Input() title: string = '';
-  @Input() features:any[] = [];
+  @Input() featuresData: { [key: string]: string[] } = {};
 }

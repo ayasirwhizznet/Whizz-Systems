@@ -1,11 +1,24 @@
+import { ProductMarketingComponent } from './../../components/product-marketing/product-marketing.component';
 import { Component } from '@angular/core';
 import { ButtonComponent } from '@components/button/button.component';
-import { CommonModule, NgFor } from '@angular/common';
+import { CommonModule} from '@angular/common';
+import { ProductHeroComponent } from '../../components/product-hero/product-hero.component';
+import { ProductOverviewComponent } from '../../components/product-overview/product-overview.component';
+import { ProductFeaturesComponent } from '../../components/product-features/product-features.component';
+import { ProductCtaComponent } from '../../components/product-cta/product-cta.component';
 
 @Component({
   selector: 'app-vhk158',
   standalone: true,
-  imports: [ButtonComponent, CommonModule, NgFor],
+  imports: [
+    ButtonComponent,
+    CommonModule,
+    ProductHeroComponent,
+    ProductOverviewComponent,
+    ProductMarketingComponent,
+    ProductFeaturesComponent,
+    ProductCtaComponent
+  ],
   templateUrl: './vhk158.component.html',
 })
 export class VHK158Component {
@@ -27,45 +40,6 @@ export class VHK158Component {
     ],
   };
 
-  customizations: any[] = [
-    {
-      imgUrl:
-        'assets/featured-products/products/vhk158/customization.png',
-      name: 'Full System Development',
-      desc: 'Productize the VHK158 into a deployable solution, including custom enclosures, firmware, and regulatory compliance.',
-    },
-    {
-      imgUrl:
-        'assets/featured-products/products/vhk158/customization.png',
-      name: 'Custom I/O & Connectivity',
-      desc: 'Modify PCIe lanes, QSFP28/QSFP-DD configurations, or expand I/O options.',
-    },
-    {
-      imgUrl:
-        'assets/featured-products/products/vhk158/customization.png',
-      name: 'FPGA & Memory Modifications',
-      desc: 'Expand HBM/DDR4 capabilities based on workload needs.',
-    },
-    {
-      imgUrl:
-        'assets/featured-products/products/vhk158/customization.png',
-      name: 'Software & Firmware Customization',
-      desc: 'Optimize drivers, software environments, and application-layer software.',
-    },
-    {
-      imgUrl:
-        'assets/featured-products/products/vhk158/customization.png',
-      name: 'Power Distribution Optimization',
-      desc: ' Improve power management and efficiency to meet system power constraints.',
-    },
-    {
-      imgUrl:
-        'assets/featured-products/products/vhk158/customization.png',
-      name: 'Cooling Enhancements',
-      desc: 'Implement advanced thermal solutions such as custom heatsinks, active cooling, or liquid-cooled enclosures for optimal performance.',
-    },
-  ];
-
   tags: string[] = [
     'Defense & Aerospace',
     'High Speed Network',
@@ -73,5 +47,38 @@ export class VHK158Component {
     'AI Acceleration',
     'Data Centers',
     'Test & Measurement',
+  ];
+
+  customizations: any[] = [
+    {
+      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      name: 'Full System Development',
+      desc: 'Productize the VHK158 into a deployable solution, including custom enclosures, firmware, and regulatory compliance.',
+    },
+    {
+      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      name: 'Custom I/O & Connectivity',
+      desc: 'Modify PCIe lanes, QSFP28/QSFP-DD configurations, or expand I/O options.',
+    },
+    {
+      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      name: 'FPGA & Memory Modifications',
+      desc: 'Expand HBM/DDR4 capabilities based on workload needs.',
+    },
+    {
+      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      name: 'Software & Firmware Customization',
+      desc: 'Optimize drivers, software environments, and application-layer software.',
+    },
+    {
+      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      name: 'Power Distribution Optimization',
+      desc: ' Improve power management and efficiency to meet system power constraints.',
+    },
+    {
+      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      name: 'Cooling Enhancements',
+      desc: 'Implement advanced thermal solutions such as custom heatsinks, active cooling, or liquid-cooled enclosures for optimal performance.',
+    },
   ];
 }

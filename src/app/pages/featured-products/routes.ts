@@ -10,13 +10,13 @@ export const routes: Routes = [
           import('./featured-products.component').then(
             (m) => m.FeaturedProductsComponent
           ),
-        title: 'Services',
+        title: 'Featured Products',
       },
       {
-        path: '5g-oru',
+        path: 'oru',
         loadComponent: () =>
           import('./oru/oru.component').then((m) => m.OruComponent),
-        title: '5G ORU Open Radio Unit',
+        title: '5G/4G Open Radio Unit',
       },
       {
         path: 'loopback-cards',
