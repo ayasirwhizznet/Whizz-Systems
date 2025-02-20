@@ -5,9 +5,9 @@
         class="text-dark-gray2 text-xl 3xl:text-2xl font-medium lg:leading-[24px] 3xl:leading-[28.8px] mb-10 3xl:mb-12">
         {{title}}</h3>
     <div
-        class="grid grid-cols-12 sm:gap-6 3xl:gap-8 border border-light-gray1 rounded-md 3xl:rounded-lg bg-white">
-        <div class="col-span-12 sm:col-span-6 lg:col-span-4 px-6 sm:p-6 3xl:p-8" *ngFor="let feature of featuresData | keyvalue let i = index" [ngClass]="{'sm:col-start-4': i === 2}">
-            <hr class="hidden sm:block border-light-gray1 opacity-60">
+        class="grid grid-cols-12 sm:gap-x-6 sm:gap-y-0 3xl:gap-8 border border-light-gray1 rounded-md 3xl:rounded-lg bg-white">
+        <div class="col-span-12 sm:col-span-6 lg:col-span-4 p-6 3xl:p-8" *ngFor="let feature of featuresData | keyvalue let i = index" [ngClass]="{'pb-0 sm:pb-6': i === 0, 'py-0 sm:py-6': i === 1, 'sm:col-start-4 pt-0 sm:pt-6': i === 2}">
+            <hr class="border border-light-gray1 opacity-60" [ngClass]="{'hidden sm:block': i === 1 || i === 2}">
             <div *ngFor="let item of feature.value" class="relative h-16 3xl:h-[84px] flex items-center w-full">
                 <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light" [innerHTML]="item">{{ item }}</p>
                 <hr class="absolute bottom-0 left-0 w-full border border-light-gray1 opacity-60">
