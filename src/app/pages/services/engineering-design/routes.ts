@@ -5,7 +5,7 @@ export const routes: Routes = [
     path: '',
     children: [
       {
-        path: 'system_design_&_schematics',
+        path: 'system-design-&-schematics',
         loadComponent: () =>
           import('./system-design-schematics/system-design.component').then(
             (m) => m.SystemDesignComponent
@@ -19,7 +19,7 @@ export const routes: Routes = [
         title: 'FPGA',
       },
       {
-        path: 'pcb_layout',
+        path: 'pcb-layout',
         loadComponent: () =>
           import('./pcb-layout/pcb-layout.component').then(
             (m) => m.PcbLayoutComponent
@@ -27,7 +27,7 @@ export const routes: Routes = [
         title: 'PCB Layout',
       },
       {
-        path: '3D_modeling',
+        path: '3D-modeling',
         loadComponent: () =>
           import('./modeling/modeling.component').then(
             (m) => m.ModelingComponent
@@ -35,7 +35,7 @@ export const routes: Routes = [
         title: '3D Modeling/Mechanical Engineering',
       },
       {
-        path: 'signal_integrity_simulations',
+        path: 'signal-integrity-simulations',
         loadComponent: () =>
           import('./signal-integrity/signal-integrity.component').then(
             (m) => m.SignalIntegrityComponent
@@ -43,7 +43,7 @@ export const routes: Routes = [
         title: 'Signal Integrity Simulations',
       },
       {
-        path: 'power_delivery',
+        path: 'power-delivery',
         loadComponent: () =>
           import('./power-delivery/power-delivery.component').then(
             (m) => m.PowerDeliveryComponent
@@ -51,7 +51,7 @@ export const routes: Routes = [
         title: 'Power Delivery Network Simulations',
       },
       {
-        path: 'thermal_management',
+        path: 'thermal-management',
         loadComponent: () =>
           import('./thermal-management/thermal-management.component').then(
             (m) => m.ThermalManagementComponent

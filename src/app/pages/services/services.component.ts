@@ -83,28 +83,28 @@ serviceCategories: any = [
       services: [
         {
           name: 'System Design/Schematics',
-          link: '/services/engineering_&_design/system_design_&_schematics',
+          link: '/services/engineering-&-design/system-design-&-schematics',
         },
-        { name: 'FPGA Design', link: '/services/engineering_&_design/fpga' },
+        { name: 'FPGA Design', link: '/services/engineering-&-design/fpga' },
         {
           name: 'PCB Layout',
-          link: '/services/engineering_&_design/pcb_layout',
+          link: '/services/engineering-&-design/pcb-layout',
         },
         {
           name: '3D Modeling/Mechanical Engineering',
-          link: '/services/engineering_&_design/3D_modeling',
+          link: '/services/engineering-&-design/3D-modeling',
         },
         {
           name: 'Signal Integrity Simulations',
-          link: '/services/engineering_&_design/signal_integrity_simulations',
+          link: '/services/engineering-&-design/signal-integrity-simulations',
         },
         {
           name: 'Power Delivery Network Simulations',
-          link: '/services/engineering_&_design/power_delivery',
+          link: '/services/engineering-&-design/power-delivery',
         },
         {
           name: 'Thermal Management/Thermal Simulation',
-          link: '/services/engineering_&_design/thermal_management',
+          link: '/services/engineering-&-design/thermal-management',
         },
       ],
     },
@@ -147,23 +147,23 @@ serviceCategories: any = [
       services: [
         {
           name: 'Manufacturing Simulations',
-          link: '/services/advanced_manufacturing',
+          link: '/services/advanced-manufacturing',
         },
         {
           name: 'Electronic Manufacturing Assembly',
-          link: '/services/advanced_manufacturing',
+          link: '/services/advanced-manufacturing',
         },
         {
           name: 'Mechanical Assembly',
-          link: '/services/advanced_manufacturing',
+          link: '/services/advanced-manufacturing',
         },
         {
           name: 'System Build & Packaging Design',
-          link: '/services/advanced_manufacturing',
+          link: '/services/advanced-manufacturing',
         },
         {
           name: 'Local & Offshore Capabilities',
-          link: '/services/advanced_manufacturing',
+          link: '/services/advanced-manufacturing',
         },
       ],
     },
@@ -174,17 +174,17 @@ serviceCategories: any = [
         services: [
         {
           name: 'Board Bring Up',
-          link: '/services/lab_testing_solutions',
+          link: '/services/lab-testing-solutions',
           fragment: 'BoardBringUp',
         },
         {
           name: 'Validation',
-          link: '/services/lab_testing_solutions',
+          link: '/services/lab-testing-solutions',
           fragment: 'Validation',
         },
         {
           name: 'Characterization',
-          link: '/services/lab_testing_solutions',
+          link: '/services/lab-testing-solutions',
           fragment: 'Characterization',
         },
       ],
@@ -195,17 +195,17 @@ serviceCategories: any = [
       services: [
         {
           name: 'Component Engineering',
-          link: '/services/supply_chain_management',
+          link: '/services/supply-chain-management',
           fragment: 'ComponentEngineering',
         },
         {
           name: 'Compliance Engineering',
-          link: '/services/supply_chain_management',
+          link: '/services/supply-chain-management',
           fragment: 'ComplianceEngineering',
         },
         {
           name: 'Procurement Engineering',
-          link: '/services/supply_chain_management',
+          link: '/services/supply-chain-management',
           fragment: 'ProcurementEngineering',
         },
       ],

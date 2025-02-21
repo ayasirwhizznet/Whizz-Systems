@@ -11,7 +11,7 @@ export const routes: Routes = [
         title: 'Services',
       },
       {
-        path: 'engineering_&_design',
+        path: 'engineering-&-design',
         loadChildren: () =>
           import('./engineering-design/routes').then((m) => m.routes),
       },
@@ -20,17 +20,17 @@ export const routes: Routes = [
         loadChildren: () => import('./npi/routes').then((m) => m.routes),
       },
       {
-        path: 'advanced_manufacturing',
+        path: 'advanced-manufacturing',
         loadChildren: () =>
           import('./advanced-manufacturing/routes').then((m) => m.routes),
       },
       {
-        path: 'lab_testing_solutions',
+        path: 'lab-testing-solutions',
         loadChildren: () =>
           import('./lab-testing-solutions/routes').then((m) => m.routes),
       },
       {
-        path: 'supply_chain_management',
+        path: 'supply-chain-management',
         loadChildren: () =>
           import('./supply-chain-management/routes').then((m) => m.routes),
       },

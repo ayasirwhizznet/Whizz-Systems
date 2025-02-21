@@ -36,28 +36,28 @@ export class NpiComponent implements OnInit, OnDestroy {
     services: [
       {
         name: 'System Design/Schematics',
-        link: '/services/engineering_&_design/system_design_&_schematics',
+        link: '/services/engineering-&-design/system-design-&-schematics',
       },
-      { name: 'FPGA Design', link: '/services/engineering_&_design/fpga' },
+      { name: 'FPGA Design', link: '/services/engineering-&-design/fpga' },
       {
         name: 'PCB Layout',
-        link: '/services/engineering_&_design/pcb_layout',
+        link: '/services/engineering-&-design/pcb-layout',
       },
       {
         name: '3D Modeling/Mechanical Engineering',
-        link: '/services/engineering_&_design/3D_modeling',
+        link: '/services/engineering-&-design/3D-modeling',
       },
       {
         name: 'Signal Integrity Simulations',
-        link: '/services/engineering_&_design/signal_integrity_simulations',
+        link: '/services/engineering-&-design/signal-integrity-simulations',
       },
       {
         name: 'Power Delivery Network Simulations',
-        link: '/services/engineering_&_design/power_delivery',
+        link: '/services/engineering-&-design/power-delivery',
       },
       {
         name: 'Thermal Management/Thermal Simulation',
-        link: '/services/engineering_&_design/thermal_management',
+        link: '/services/engineering-&-design/thermal-management',
       },
     ],
   };
