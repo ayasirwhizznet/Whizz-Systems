@@ -1,4 +1,4 @@
-import { CommonModule, NgClass, NgFor } from '@angular/common';
+import { CommonModule} from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
@@ -12,6 +12,7 @@ interface MenuItem {
 
 interface ServiceSection {
   title: string;
+  link?: string;
   items: MenuItem[];
   open?: boolean;
 }
@@ -69,6 +70,7 @@ export class MobileHeaderComponent {
     },
     {
       title: 'NPI',
+      link: 'services/npi',
       items: [
         {
           label: 'System Level Architecture',
@@ -101,6 +103,7 @@ export class MobileHeaderComponent {
     },
     {
       title: 'Advanced Manufacturing',
+      link: '/services/advanced_manufacturing',
       items: [
         {
           label: 'Manufacturing Simulations',
@@ -127,6 +130,7 @@ export class MobileHeaderComponent {
     },
     {
       title: 'Lab Testing Solutions',
+      link: '/services/lab_testing_solutions',
       items: [
         {
           label: 'Board Bring Up',
@@ -148,6 +152,7 @@ export class MobileHeaderComponent {
     },
     {
       title: 'Supply Chain Management',
+      link: '/services/supply_chain_management',
       items: [
         {
           label: 'Component Engineering',
