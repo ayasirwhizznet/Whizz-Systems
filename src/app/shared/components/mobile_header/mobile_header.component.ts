@@ -76,9 +76,9 @@ export class MobileHeaderComponent {
           fragment: 'SystemLevelArchitecture',
         },
         {
-          label: 'Engineering & Design',
+          label: 'Schematic Design',
           link: '/services/npi',
-          fragment: 'Engineering&Design',
+          fragment: 'SchematicDesign',
         },
         {
           label: 'Prototyping',
@@ -90,6 +90,11 @@ export class MobileHeaderComponent {
           label: 'Compliance and Certification',
           link: '/services/npi',
           fragment: 'Compliance',
+        },
+        {
+          label: 'Computer ided Design',
+          link: '/services/npi',
+          fragment: 'Computer Aided Design',
         },
       ],
       open: false,

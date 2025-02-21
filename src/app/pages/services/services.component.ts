@@ -119,9 +119,9 @@ serviceCategories: any = [
           fragment: 'SystemLevelArchitecture',
         },
         {
-          name: 'Engineering & Design',
+          name: 'Schematic Design',
           link: '/services/npi',
-          fragment: 'Engineering&Design',
+          fragment: 'SchematicDesign',
         },
         {
           name: 'Prototyping',
@@ -133,6 +133,11 @@ serviceCategories: any = [
           name: 'Compliance and Certification',
           link: '/services/npi',
           fragment: 'Compliance',
+        },
+        {
+          name: 'Computer Aided Design',
+          link: '/services/npi',
+          fragment: 'ComputerAidedDesign',
         },
       ],
     },
