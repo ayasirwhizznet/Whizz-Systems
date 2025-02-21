@@ -86,9 +86,9 @@ export class HeaderComponent implements OnInit {
           fragment: 'SystemLevelArchitecture',
         },
         {
-          label: 'Engineering & Design',
+          label: 'Schematic Design',
           link: '/services/npi',
-          fragment: 'Engineering&Design',
+          fragment: 'SchematicDesign',
         },
         {
           label: 'Prototyping',
@@ -100,6 +100,11 @@ export class HeaderComponent implements OnInit {
           label: 'Compliance and Certification',
           link: '/services/npi',
           fragment: 'Compliance',
+        },
+        {
+          label: 'Computer Aided Design',
+          link: '/services/npi',
+          fragment: 'ComputerAidedDesign',
         },
       ],
     },

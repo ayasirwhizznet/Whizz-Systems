@@ -8,7 +8,7 @@
   <div class="w-full lg:w-[53.8%]"
     [ngClass]="{ 'order-1 lg:order-0': isImageLeft, 'order-0 lg:order-1': !isImageLeft }">
     <h4 class="text-teal1 text-sm 3xl:text-base font-semibold 3xl:font-bold lg:leading-[15px] 3xl:leading-[19.2px]">{{heading}}</h4>
-    <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-semibold 3xl:font-bold leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">{{title}}</h3>
+    <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">{{title}}</h3>
     <p class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]" [innerHTML]="desc1"></p>
     <p *ngIf="desc2"
       class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mt-6 3xl:mt-8" [innerHTML]="desc2"></p>

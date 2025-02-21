@@ -26,7 +26,7 @@ import { ServicesContactExpertsComponent } from '@components/services-contact-ex
 export class NpiComponent implements OnInit, OnDestroy {
   npiServices = [
     'System Level Architecture',
-    'Engineering & Design',
+    'Schematic Design',
     'Prototyping',
     'Testing',
     'Compliance',
