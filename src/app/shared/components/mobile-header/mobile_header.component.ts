@@ -21,7 +21,7 @@ interface ServiceSection {
   selector: 'app-accordion',
   standalone: true,
   imports: [CommonModule, RouterLink],
-  templateUrl: './mobile_header.component.html',
+  templateUrl: './mobile-header.component.html',
 })
 export class MobileHeaderComponent {
   activeMenuItem: string | null = null;

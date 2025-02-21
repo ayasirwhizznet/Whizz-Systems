@@ -23,7 +23,6 @@ export class ServicesComponent {
       imgUrl: 'assets/home/services/engg.&design.png',
       name: 'Engineering & design',
       desc: 'Innovating Designs for the Next Generation of Electronics.',
-      link: '/404',
     },
     {
       imgUrl: 'assets/home/services/npi.png',
@@ -35,19 +34,19 @@ export class ServicesComponent {
       imgUrl: 'assets/home/services/advanced-manufacturing.png',
       name: 'Advanced Manufacturing',
       desc: 'World-class manufacturing to meet complex demands, ensuring quality and efficiency.',
-      link: '/services/advanced_manufacturing',
+      link: '/services/advanced-manufacturing',
     },
     {
       imgUrl: 'assets/home/services/lab-testing.png',
       name: 'Lab Testing Solutions',
       desc: 'Ensuring product reliability and compliance through comprehensive validation.',
-      link: '/services/lab_testing_solutions',
+      link: '/services/lab-testing-solutions',
     },
     {
       imgUrl: 'assets/home/services/supply-chain.jfif',
       name: 'Supply Chain Management & Design',
       desc: 'Streamlining your supply chain with integrated sourcing, compliance, and procurement solutions, so you can rely on a single, trusted partner.',
-      link: '/services/supply_chain_management',
+      link: '/services/supply-chain-management',
     },
     {
       imgUrl: 'assets/home/services/sustainable.jfif',
