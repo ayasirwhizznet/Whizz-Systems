@@ -20,17 +20,17 @@ import { ServicesIntroComponent } from '@components/services-intro/services-intr
 export class ModelingComponent {
   coreServices: any[] = [
     {
-      imgUrl: 'assets/3D-Modeling/assembly.png',
+      imgUrl: 'assets/services/engg&design/3D-modeling/assembly-drawings.png',
       name: '3D Models & 2D Assembly Drawings',
       desc: 'Detailed, standards-compliant PCB component designs. Custom designs ensuring functionality and durability.',
     },
     {
-      imgUrl: 'assets/3D-Modeling/advanced.png',
+      imgUrl: 'assets/services/engg&design/3D-modeling/advanced-mechanical.png',
       name: 'Advanced Mechanical Component Design',
       desc: 'Specialized solutions for I/O brackets, trays, and ingress-protected enclosures. Pole-mounted or wall-mounted solutions.',
     },
     {
-      imgUrl: 'assets/3D-Modeling/fea.png',
+      imgUrl: 'assets/services/engg&design/3D-modeling/fea.png',
       name: 'Finite Element Analysis (FEA)',
       desc: 'Structural analysis for longevity and performance. Identifying structural weaknesses before production.',
     },
@@ -38,32 +38,32 @@ export class ModelingComponent {
 
   benefits: any[] = [
     {
-      imgUrl: 'assets/3D-Modeling/benefits.png',
+      imgUrl: 'assets/services/engg&design/3D-modeling/benefits.png',
       name: '25+ Years of Expertise',
       desc: 'Proven success in designing electronic products from concept to production.',
     },
     {
-      imgUrl: 'assets/3D-Modeling/benefits.png',
+      imgUrl: 'assets/services/engg&design/3D-modeling/benefits.png',
       name: 'Multidomain Knowledge',
       desc: 'Extensive experience across various industries.',
     },
     {
-      imgUrl: 'assets/3D-Modeling/benefits.png',
+      imgUrl: 'assets/services/engg&design/3D-modeling/benefits.png',
       name: 'Optimized for Performance and Manufacturability',
       desc: 'Ensuring products meet and exceed industrial standards.',
     },
     {
-      imgUrl: 'assets/3D-Modeling/benefits.png',
+      imgUrl: 'assets/services/engg&design/3D-modeling/benefits.png',
       name: 'Comprehensive Support',
       desc: 'Full design expertise throughout the entire process.',
     },
     {
-      imgUrl: 'assets/3D-Modeling/benefits.png',
+      imgUrl: 'assets/services/engg&design/3D-modeling/benefits.png',
       name: 'Sustaining Engineering',
       desc: 'Enhanced product integration and longevity through FEA analysis.',
     },
     {
-      imgUrl: 'assets/3D-Modeling/benefits.png',
+      imgUrl: 'assets/services/engg&design/3D-modeling/benefits.png',
       name: 'Supply Chain Management',
       desc: 'Seamless supply chain handling to ensure efficient production and timely delivery.',
     },

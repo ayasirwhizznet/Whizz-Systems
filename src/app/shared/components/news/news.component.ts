@@ -20,32 +20,32 @@ import { BlogTagComponent } from '../blog-tag/blog-tag.component';
 export class NewsComponent {
   blogs: any[] = [
     {
-      imgUrl: 'assets/news/img1.png',
+      imgUrl: 'assets/news/blog1.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
     {
-      imgUrl: 'assets/news/img2.png',
+      imgUrl: 'assets/news/blog.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
     {
-      imgUrl: 'assets/news/img3.png',
+      imgUrl: 'assets/news/blog.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
     {
-      imgUrl: 'assets/news/img3.png',
+      imgUrl: 'assets/news/blog.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
     {
-      imgUrl: 'assets/news/img3.png',
+      imgUrl: 'assets/news/blog.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
     {
-      imgUrl: 'assets/news/img3.png',
+      imgUrl: 'assets/news/blog.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },

@@ -20,37 +20,37 @@ import { RouterLink } from '@angular/router';
 export class ServicesComponent {
   serviceCategories: any[] = [
     {
-      imgUrl: 'assets/services/engg.&design.png',
+      imgUrl: 'assets/home/services/engg.&design.png',
       name: 'Engineering & design',
       desc: 'Innovating Designs for the Next Generation of Electronics.',
       link: '/404',
     },
     {
-      imgUrl: 'assets/services/npi.png',
+      imgUrl: 'assets/home/services/npi.png',
       name: 'NPI',
       desc: 'Accelerating your product launch with rapid prototyping and efficient NPI processes.',
       link: '/services/npi',
     },
     {
-      imgUrl: 'assets/services/advanced-manfacuring.png',
+      imgUrl: 'assets/home/services/advanced-manufacturing.png',
       name: 'Advanced Manufacturing',
       desc: 'World-class manufacturing to meet complex demands, ensuring quality and efficiency.',
       link: '/services/advanced_manufacturing',
     },
     {
-      imgUrl: 'assets/services/lab-test.png',
+      imgUrl: 'assets/home/services/lab-testing.png',
       name: 'Lab Testing Solutions',
       desc: 'Ensuring product reliability and compliance through comprehensive validation.',
       link: '/services/lab_testing_solutions',
     },
     {
-      imgUrl: 'assets/services/supply-chain.jfif',
+      imgUrl: 'assets/home/services/supply-chain.jfif',
       name: 'Supply Chain Management & Design',
       desc: 'Streamlining your supply chain with integrated sourcing, compliance, and procurement solutions, so you can rely on a single, trusted partner.',
       link: '/services/supply_chain_management',
     },
     {
-      imgUrl: 'assets/services/sustainable.jfif',
+      imgUrl: 'assets/home/services/sustainable.jfif',
       name: 'Sustaining Engineering & Obsolescence Management',
       desc: 'Keeping your product lines future-proof with proactive support and obsolescence solutions.',
       link: '/404',

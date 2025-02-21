@@ -12,8 +12,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        lines1: "url('../src/assets/services/line1.png')",
-        lines2: "url('../src/assets/services/line2.png')",
+        lines1: "url('../src/assets/home/services/line1.png')",
+        lines2: "url('../src/assets/home/services/line2.png')",
         lines3: "url('../src/assets/featured-products/line3.png')",
         lines4: "url('../src/assets/featured-products/line4.png')",
         subscribe: "url('../src/assets/news/subscribe.png')",

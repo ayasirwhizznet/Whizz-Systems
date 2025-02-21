@@ -1,11 +1,11 @@
-import { NgFor } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-ideas',
   standalone: true,
-  imports: [NgFor, ButtonComponent],
+  imports: [CommonModule, ButtonComponent],
   templateUrl: './ideas.component.html',
 })
 export class IdeasComponent {
@@ -16,10 +16,10 @@ export class IdeasComponent {
   ];
 
   certifications = [
-    'assets/ideas/certification1.svg',
-    'assets/ideas/certification2.svg',
-    'assets/ideas/certification3.svg',
-    'assets/ideas/certification4.svg',
-    'assets/ideas/certification5.svg',
+    'assets/home/ideas/14001.svg',
+    'assets/home/ideas/13485.svg',
+    'assets/home/ideas/9001.svg',
+    'assets/home/ideas/27001.svg',
+    'assets/home/ideas/itar.svg',
   ];
 }
