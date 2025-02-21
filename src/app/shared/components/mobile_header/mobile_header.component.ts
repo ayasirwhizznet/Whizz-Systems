@@ -94,7 +94,7 @@ export class MobileHeaderComponent {
         {
           label: 'Computer ided Design',
           link: '/services/npi',
-          fragment: 'Computer Aided Design',
+          fragment: 'ComputerAidedDesign',
         },
       ],
       open: false,

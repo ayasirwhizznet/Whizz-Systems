@@ -287,6 +287,12 @@ export class HeaderComponent implements OnInit {
     this.isAccordionOpen = this.isMenuOpen;
   }
 
+  isClickedMobileLogo() {
+    this.isSearchbaropen = false;
+    this.isMenuOpen = false;
+    this.isAccordionOpen = false;
+  }
+
   closeMenu() {
     this.activeBottomSection = '';
     this.activeMenuItem = '';
