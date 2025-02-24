@@ -21,12 +21,12 @@ export class FooterComponent {
     { label: 'NPI', link: '/services/npi' },
     {
       label: 'Advanced Manufacturing',
-      link: '/services/advanced_manufacturing',
+      link: '/services/advanced-manufacturing',
     },
-    { label: 'Lab Testing Solutions', link: '/services/lab_testing_solutions' },
+    { label: 'Lab Testing Solutions', link: '/services/lab-testing-solutions' },
     {
       label: 'Supply Chain Management',
-      link: '/services/supply_chain_management',
+      link: '/services/supply-chain-management',
     },
     { label: 'Sustaining Engineering & Obsolescence Management', link: '/404' },
   ];
