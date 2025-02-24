@@ -53,7 +53,7 @@ export class HeaderComponent implements OnInit {
           label: 'System Design/Schematics',
           link: '/services/engineering-&-design/system-design-&-schematics',
         },
-        { label: 'FPGA Design', link: '/services/engineering_&_design/fpga' },
+        { label: 'FPGA Design', link: '/services/engineering-&-design/fpga' },
         {
           label: 'PCB Layout',
           link: '/services/engineering-&-design/pcb-layout',
