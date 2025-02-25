@@ -22,19 +22,24 @@ import { ServicesBenefits1Component } from "../../../../shared/components/servic
 export class FpgaComponent {
   coreServices: any[] = [
     {
-      imgUrl: 'assets/services/engg&design/fpga/core-services.png',
-      name: 'FPGA Design Services',
-      desc: 'Architecture design, RTL coding, functional verification, and system integration for FPGA/ASICs. Expertise with standard buses (AXI, Avalon), third-party IPs, and SERDES interfaces.',
+      imgUrl: 'assets/services/engg&design/fpga/architecture.png',
+      name: 'Architecture Design & RTL Coding',
+      desc: 'Develop scalable FPGA architectures with optimized RTL coding to meet your system requirements',
     },
     {
       imgUrl: 'assets/services/engg&design/fpga/core-services.png',
-      name: 'Firmware Development',
-      desc: 'Kernel and device driver development for Linux and Windows. Bare-metal and Linux-based embedded applications supporting wireless (BLE, Zigbee, LoRaWAN) and wired (USB, UART, Ethernet) protocols.',
+      name: 'Functional Verification & Simulation',
+      desc: 'Rigorous verification processes ensure FPGA/ASIC designs perform flawlessly under real-world conditions.',
     },
     {
       imgUrl: 'assets/services/engg&design/fpga/core-services.png',
-      name: 'Software Development',
-      desc: 'Custom UI and networking applications. Cloud integration with AWS, Google, and Azure IoT for end-to-end connectivity.',
+      name: 'System Integration & IP Connectivity',
+      desc: 'Seamlessly integrate third-party IP and standard buses (AXI, Avalon) to enable efficient PS-PL data exchange and high-speed SERDES interfaces',
+    },
+    {
+      imgUrl: 'assets/services/engg&design/fpga/core-services.png',
+      name: 'Tool Expertise',
+      desc: 'Utilize industry-leading tools like Vivado, Quartus Prime, and Lattice Diamond for best-in-class design performance.',
     },
   ];
 
