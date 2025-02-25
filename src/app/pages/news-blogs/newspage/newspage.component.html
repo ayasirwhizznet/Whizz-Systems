@@ -3,19 +3,16 @@
         <div
             class="w-full lg:w-[47%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16">
             <p class="text-sm 3xl:text-base leading-[15px] 3xl:leading-[19.2px] mb-2 3xl:mb-[10px]">May 29, 2024</p>
-            <div class="flex items-center gap-2 flex-wrap">
+            <div class="flex items-center gap-2 flex-wrap mb-4 3xl:mb-6">
                 <app-blog-tag text="Heatsink" textColor="text-light-gray1" borderColor="border-light-gray1"
                     borderRadius="rounded-[3px] 3xl:rounded-[4px]"></app-blog-tag>
                 <app-blog-tag text="Thermal Management" textColor="text-light-gray1" borderColor="border-light-gray1"
                     borderRadius="rounded-[3px] 3xl:rounded-[4px]"></app-blog-tag>
             </div>
             <h1
-                class="text-3xl lg:text-[44px] 3xl:text-[56px] lg:leading-[55px] 3xl:leading-[67.2px] font-bold my-4 3xl:my-6">
-                Whizz Systems' Guide to PCIe-6</h1>
-            <p
-                class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light text-light-gray1 mb-6 3xl:mb-8">
-                Expert insight from Whizz systems</p>
-            <app-button heading="Medium Button" icon="assets/shared/r-arrow.svg" [size]="'medium'"
+                class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-[96%] sm:w-[57%] lg:w-full">
+                Building the Future of 5G Connectivity with Open Radio Unit Solutions</h1>
+            <app-button heading="Explore the Full Whitepaper" icon="assets/shared/r-arrow.svg" [size]="'medium'"
                 [routerLink]="'/404'"></app-button>
             <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
                 <a *ngFor="let link of links" routerLink="item.link" class="cursor-pointer">
@@ -23,173 +20,127 @@
                 </a>
             </div>
         </div>
-
         <div class="hidden lg:block lg:w-[53%]">
             <img class="object-cover" src="assets/news/hero.png" alt="img">
         </div>
     </div>
 </section>
 
-<img src="assets/shared/divider-top.png" alt="img">
+<!-- Marketing -->
+<section>
+    <div class="py-8 lg:py-12 3xl:py-16 px-[4%] lg:px-[11%] 2xl:px-[17%] 3xl:px-[19%]">
+        <p class="text-dark-gray2 sm:text-lg lg:text-xl 3xl:text-2xl font-extralight lg:leading-[32px] 3xl:leading-[38.4px] text-center my-6 3xl:my-8">In collaboration with Intel, Analog Devices, Comcores, and Radisys, Whizz Systems has developed a groundbreaking 5G Open Radio Unit (ORU) white box solution. This white paper delves into our comprehensive design, engineering, and manufacturing process, showcasing how our integrated expertise in hardware, thermal, mechanical, and power engineering drives the development of next-generation cost-effective, high-performance 5G solutions.</p>
+    </div>
+    <img src="assets/shared/divider-bottom.png" alt="img">
+</section>
 
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
     <div class="flex flex-col lg:flex-row gap-10 lg:justify-between">
         <!-- left div -->
-        <div class="w-full lg:w-[49%]">
-            <div
-                class="w-full sm:w-3/5 lg:w-3/4 2xl:w-2/3 p-8 lg:p-12 3xl:p-16 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg text-dark-gray2">
-                <h2
-                    class="text-3xl lg:text-4xl 3xl:text-5xl leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
-                    In This Article</h2>
-                <ul
-                    class="list-outside list-decimal text-base 3xl:text-xl font-semibold 3xl:font-bold marker:text-teal1 ml-7 3xl:ml-9">
-                    <li class="mb-6 3xl:mb-8" *ngFor="let item of articlesummary">
-                        <h4 class="ml-3 3xl:ml-4 text-base 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px]">
-                            {{item.title}}</h4>
-                    </li>
-                </ul>
-            </div>
-            <h3 (click)="toggleVisibility('signalIntegrity')"
-                class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold my-3 3xl:my-4 cursor-pointer"
-                [ngClass]="{'text-teal2': !sectionVisibility.signalIntegrity, 'text-dark-gray1 hover:text-teal2 transition-all duration-300 ease-in-out': sectionVisibility.signalIntegrity}">
-                Signal Integrity
-                <i class="fa-solid fa-chevron-down text-sm transition-all duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)] ml-5 3xl:ml-8"
-                    [ngClass]="{'rotate-135 text-dark-gray1 hover:text-teal2 transition-all duration-300 ease-in-out': sectionVisibility.signalIntegrity, '-rotate-180 text-teal2': !sectionVisibility.signalIntegrity}"></i>
-            </h3>
-            <div *ngIf="sectionVisibility.signalIntegrity">
-                <!-- Question 1 -->
-                <div *ngFor="let item of question1">
-                    <h4 class="text-dark-gray2 text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-medium">
-                        {{item.title}}</h4>
-                    <p
-                        class="text-sm 3xl:text-base lg:leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light my-3 3xl:my-4">
-                        {{item.desc1}}</p>
-                    <figure
-                        class="p-8 lg:p-12 3xl:p-16 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray">
-                        <img class="object-cover rounded-md 3xl:rounded-lg" [src]="item.img1" alt="img">
-                        <figcaption
-                            class="text-sm 3xl:text-base font-semibold 3xl:font-bold text-teal2 mt-3 3xl:mt-4 text-center">
-                            {{item.img1caption}}</figcaption>
-                    </figure>
-                    <p
-                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light my-3 3xl:my-4">
-                        {{item.desc2}}</p>
-                    <figure
-                        class="p-8 lg:p-12 3xl:p-16 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray">
-                        <img class="object-cover rounded-md 3xl:rounded-lg" [src]="item.img2" alt="img">
-                        <figcaption
-                            class="text-sm 3xl:text-base font-semibold 3xl:font-bold text-teal2 mt-3 3xl:mt-4 text-center">
-                            {{item.img2caption}}</figcaption>
-                    </figure>
-                    <p
-                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light mt-3 3xl:mt-4">
-                        {{item.desc3}}</p>
-                    <p
-                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light my-4 3xl:my-6">
-                        {{item.desc4}}</p>
-                    <p
-                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light mb-3 3xl:mb-4">
-                        {{item.desc5}}</p>
-                    <figure
-                        class="p-8 lg:p-12 3xl:p-16 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray">
-                        <img class="object-cover rounded-md 3xl:rounded-lg" [src]="item.img3" alt="img">
-                        <figcaption
-                            class="text-sm 3xl:text-base font-semibold 3xl:font-bold text-teal2 mt-3 3xl:mt-4 text-center">
-                            {{item.img3caption}}</figcaption>
-                    </figure>
-                </div>
-                <!-- Question 2 -->
-                <div *ngFor="let item of question2">
-                    <h4
-                        class="text-dark-gray2 text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-medium my-3 3xl:my-4">
-                        {{item.title}}</h4>
-                    <p class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light">
-                        {{item.desc1}}</p>
-                    <p
-                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light my-4 3xl:my-6">
-                        {{item.desc2}}</p>
-                    <p
-                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light mb-3 3xl:mb-4">
-                        {{item.desc3}}</p>
-                    <figure
-                        class="p-8 lg:p-12 3xl:p-16 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray">
-                        <img class="object-cover rounded-md 3xl:rounded-lg" [src]="item.img1" alt="img">
-                        <figcaption
-                            class="text-sm 3xl:text-base font-semibold 3xl:font-bold text-teal2 mt-3 3xl:mt-4 text-center">
-                            {{item.img1caption}}</figcaption>
-                    </figure>
-                </div>
-                <!-- Question 3 -->
-                <div *ngFor="let item of question3">
-                    <h4
-                        class="text-dark-gray2 text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-medium my-3 3xl:my-4">
-                        {{item.title}}</h4>
-                    <p
-                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light mb-4 3xl:mb-6">
-                        {{item.desc1}}</p>
-                    <p
-                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light mb-3 3xl:mb-4">
-                        {{item.desc2}}</p>
-                    <figure
-                        class="p-8 lg:p-12 3xl:p-16 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray">
-                        <img class="object-cover rounded-md 3xl:rounded-lg" [src]="item.img1" alt="img">
-                        <figcaption
-                            class="text-sm 3xl:text-base font-semibold 3xl:font-bold text-teal2 mt-3 3xl:mt-4 text-center">
-                            {{item.img1caption}}</figcaption>
-                    </figure>
-                </div>
-            </div>
+        <div class="w-full lg:w-1/2">
+            <!-- Introduction -->
+            <section class="py-6 3xl:py-8">
+                <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Introduction to 5G ORU</h2>
+                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-1 3xl:mb-2">Meeting the Demand for Cost-Effective 5G Radio Units</h3>
+                <h4 class="text-dark-gray2 text-base 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Overcoming Range Limitations with Advanced 5G ORU Solutions</h4>
+                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">5G radio networks provide increased bandwidth at the expense of reduced range. To address this, cost-effective radio units are critical for expanding coverage. Whizz Systems, in collaboration with Intel, Analog Devices, Comcores, and Radisys, developed the 5G Open Radio Unit (ORU) white box solution to meet this growing market need.</p>
+                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">This white paper provides an overview of the design and development process for the hardware components that make up the 5G ORU white box. Whizz Systems is responsible for the electrical, thermal, mechanical engineering, and manufacturing aspects, as well as system validation and bring-up of the turnkey white box ORU solution.</p>
+            </section>
 
-            <h3 (click)="toggleVisibility('power')"
-                class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold my-3 3xl:my-4 cursor-pointer"
-                [ngClass]="{'text-teal2': !sectionVisibility.power, 'text-dark-gray1 hover:text-teal2 transition-all duration-300 ease-in-out': sectionVisibility.power}">
-                Power
-                <i class="fa-solid fa-chevron-down text-sm transition-all duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)] ml-5 3xl:ml-8"
-                    [ngClass]="{'rotate-135 text-dark-gray1 hover:text-teal2 transition-all duration-300 ease-in-out': sectionVisibility.power, '-rotate-180 text-teal2': !sectionVisibility.power}"></i>
-            </h3>
-            <div *ngIf="sectionVisibility.power">
-                <!-- Question 4 -->
-                <div *ngFor="let item of question4">
-                    <h4
-                        class="text-dark-gray2 text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-medium my-3 3xl:my-4">
-                        {{item.title}}</h4>
-                    <p class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light">
-                        {{item.desc1}}</p>
-                    <p
-                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light my-4 3xl:my-6">
-                        {{item.desc2}}</p>
-                    <p class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light">
-                        {{item.desc3}}</p>
+            <!-- Expertise -->
+            <section>
+                <div class="py-6 3xl:py-8">
+                    <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Our Expertise in 5G ORU Design and Engineering</h2>
+                    <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Whizz Systems: End-to-End Expertise in 5G ORU Development</h3>
+                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">Whizz Systems is responsible for the electrical, thermal, mechanical engineering, and manufacturing of the ORU white box. Our expertise spans the design of individual PCBAs, system validation, and thermal simulation for optimized heat dissipation.</p>
+                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">By leveraging Intel’s Arria 10 FPGA as a reference, we revamped the power and clocking schemes and added a JESD interface for communication between the Intel Arria 10 FPGA and Analog Devices’ ADRV902X chip. This was further enhanced with a board-to-board (BTB) header for interfacing with either the ADI-designed RFFE Card or the Whizz-designed ORU Adapter Card.</p>
                 </div>
-                <!-- Question 5 -->
-                <div *ngFor="let item of question5">
-                    <h4
-                        class="text-dark-gray2 text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-medium my-3 3xl:my-4">
-                        {{item.title}}</h4>
-                    <p
-                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light mb-4 3xl:mb-6">
-                        {{item.desc1}}</p>
-                    <p
-                        class="text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light mb-3 3xl:mb-4">
-                        {{item.desc2}}</p>
-                    <figure
-                        class="p-8 lg:p-12 3xl:p-16 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray">
-                        <img class="object-cover rounded-md 3xl:rounded-lg" [src]="item.img1" alt="img">
-                        <figcaption
-                            class="text-sm 3xl:text-base font-semibold 3xl:font-bold text-teal2 mt-3 3xl:mt-4 text-center">
-                            {{item.img1caption}}</figcaption>
-                    </figure>
+                <figure class="py-6 3xl:py-8">
+                    <img class="object-cover" src="assets/news/expertise.png" alt="img">
+                    <figcaption class="text-teal1 text-[13px] font-medium 3xl:font-bold mt-3 3xl:mt-4">Fig. 1</figcaption>
+                </figure>
+            </section>
+
+            <!-- Key Features -->
+            <section>
+                <div class="py-6 3xl:py-8">
+                    <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Key Features and Specifications</h2>
+                    <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Next-Gen 5G Features to Drive the Future of Connectivity</h3>
+                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">The ORU white box is designed for high-performance with 4T4R TDD communication and a tunable frequency range from 600MHz to 6GHz with a 100MHz signal bandwidth. Featuring Intel’s Arria 10 SX processor, the ORU includes:</p>
+                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">1GB DDR4 HPS Memory • 2GB DDR4 FPGA Memory • QSFP ports (40Gbps transfer rate) • USB to UART interface • Ethernet with 1PPS/10MHz clock for synchronization</p>
                 </div>
-            </div>
+                <figure class="py-6 3xl:py-8">
+                    <img class="object-cover" src="assets/news/features.png" alt="img">
+                    <figcaption class="text-teal1 text-[13px] font-medium 3xl:font-bold mt-3 3xl:mt-4">Fig. 2</figcaption>
+                </figure>
+            </section>
+
+            <!-- Design Challenges -->
+            <section>
+                <div class="py-6 3xl:py-8">
+                    <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Overcoming Design Challenges</h2>
+                    <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-1 3xl:mb-2">Addressing Complex Design Challenges with Precision Engineering</h3>
+                    <h4 class="text-dark-gray2 text-base 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Solving Signal Integrity, Power, and Thermal Management Issues</h4>
+                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">Designing the ORU required overcoming several key challenges:</p>
+                    <hr class="border border-light-gray1/60 mb-3 3xl:mb-4">
+                    <p class="text-dark-gray2 text-xs 3xl:text-sm font-light"><b>Signal Integrity & Power Design:</b> Our <b>SI/PI simulations</b> optimized <b>high-speed signal</b> routing and <b>minimized IR drops</b> for power delivery.</p>
+                    <hr class="border border-light-gray1/60 my-3 3xl:my-4">
+                    <p class="text-dark-gray2 text-xs 3xl:text-sm font-light"><b>Thermal Management:</b> Through <b>thermal simulations,</b> we guided the selection of <b>heat sinks</b> and <b>optimal airflow</b> configurations in the mechanical enclosure.</p>
+                    <hr class="border border-light-gray1/60 my-3 3xl:my-4">
+                    <p class="text-dark-gray2 text-xs 3xl:text-sm font-light"><b>RF Signal Isolation:</b> A <b>GND shield</b> around the <b>ADI chip</b> isolates RF signals to minimize interference.</p>
+                    <hr class="border border-light-gray1/60 mt-3 3xl:mt-4">
+                </div>
+                <figure class="py-6 3xl:py-8">
+                    <img class="object-cover" src="assets/news/design-challenges.png" alt="img">
+                    <figcaption class="text-teal1 text-[13px] font-medium 3xl:font-bold mt-3 3xl:mt-4">Fig. 3</figcaption>
+                </figure>
+            </section>
+
+            <!-- Mechanical Enclosure Design-->
+            <section>
+                <div class="py-6 3xl:py-8">
+                    <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Mechanical Enclosure Design</h2>
+                    <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-1 3xl:mb-2">Meeting the Demand for Cost-Effective 5G Radio Units</h3>
+                    <h4 class="text-dark-gray2 text-base 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Aluminum Alloy Enclosure with Custom Cooling Solutions</h4>
+                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">The ORU white box is housed in an aluminum alloy enclosure, providing a lightweight and durable solution with optimized airflow for cooling. We prioritized off-the-shelf hardware to reduce cost, using ABS plastic end caps for added durability and shock absorption. The chassis design was revised for both aesthetic appeal and cost-effectiveness.</p>
+                    <app-button heading="Learn more about Mechanical Engineering" icon="assets/shared/r-arrow.svg" size="small" routerLink="/404"></app-button>
+                </div>
+                <figure class="py-6 3xl:py-8">
+                    <img class="object-cover" src="assets/news/design-enclosure.png" alt="img">
+                    <figcaption class="text-teal1 text-[13px] font-medium 3xl:font-bold mt-3 3xl:mt-4">Fig. 4</figcaption>
+                </figure>
+            </section>
+
+            <!-- Thermal Management Solutions-->
+            <section>
+                <div class="py-6 3xl:py-8">
+                    <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Thermal Management and Solutions</h2>
+                    <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Ensuring Optimal Heat Dissipation in Every Configuration</h3>
+                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">We employed thermal simulations for both the ORU and RFFE cards to ensure efficient heat dissipation. The simulations validated that critical components operated within thermal limits, and the selected heat sinks and fans provided optimal airflow with minimal pressure noise.</p>
+                    <app-button heading="Learn more about Whizz Thermal Management" icon="assets/shared/r-arrow.svg" size="small" routerLink="/404"></app-button>
+                </div>
+                <figure class="py-6 3xl:py-8">
+                    <img class="object-cover" src="assets/news/thermal-management.png" alt="img">
+                    <figcaption class="text-teal1 text-[13px] font-medium 3xl:font-bold mt-3 3xl:mt-4">Fig. 5</figcaption>
+                </figure>
+            </section>
+
+            <!-- Roadmap -->
+            <section class="py-6 3xl:py-8">
+                <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Roadmap and Future Developments</h2>
+                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-1 3xl:mb-2">The Future of 5G with Whizz Systems' ORU Solutions</h3>
+                <h4 class="text-dark-gray2 text-base 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Available Now for Testing, with More Derivatives Coming Soon</h4>
+                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">The ORU white box solution is available for testing, with general availability expected in Q4 2020 or early 2021. Future derivatives, including 2T2R, 8T8R, and lower-power versions, are also being explored to meet different customer needs</p>
+            </section>
         </div>
         <!-- right div -->
-        <div class="w-full lg:w-[51%]">
+        <div class="w-full lg:w-1/2">
             <div
-                class="w-11/12 sm:w-1/2 lg:w-3/4 2xl:w-[70%] justify-self-center lg:sticky top-28 lg:h-[calc(100vh-20px)]">
+                class="w-11/12 sm:w-1/2 lg:w-3/4 2xl:w-[70%] justify-self-center lg:sticky lg:top-28 lg:h-[calc(100vh+1%)] lg:mt-40">
                 <div
-                    class="p-8 lg:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1 mb-6 3xl:mb-8">
+                    class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1 mb-6 3xl:mb-8">
                     <h2
-                        class="text-3xl lg:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold text-dark-gray2">
+                        class="text-3xl lg:text-[32px] 2xl:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold text-dark-gray2">
                         Subscribe to our newsletter!</h2>
                     <p
                         class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light my-6 3xl:y-8 text-dark-gray2">
@@ -202,9 +153,9 @@
                     </div>
                 </div>
                 <div
-                    class="p-8 lg:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1 bg-subscribe bg-cover">
+                    class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1 bg-subscribe bg-cover">
                     <h2
-                        class="text-white text-3xl lg:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
+                        class="text-white text-3xl lg:text-[32px] 2xl:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
                         Learn more about Whizz Systems</h2>
                     <app-animated-button routerLink="/services" heading="All services" size="medium" [icon]="true"
                         bg="white"></app-animated-button>
@@ -213,5 +164,27 @@
         </div>
     </div>
 </section>
-
-<app-cnews></app-cnews>
+<section class="px-0 sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <div class="relative p-6 sm:p-10 lg:p-[52px] 3xl:p-16 sm:rounded-md 3xl:rounded-lg">
+        <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg" loop muted autoplay
+            oncanplay="this.play()" onloadedmetadata="this.muted = true">
+            <source src="assets/hero/waves2.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-video-overlay opacity-80 z-[5] sm:rounded-md 3xl:rounded-lg"></div>
+        <div class="relative z-10 sm:w-[93%] lg:w-[73%] 2xl:w-[65%] 3xl:w-[63%] text-white">
+            <h2
+                class="text-3xl sm:text-4xl lg:text-5xl 2xl:text-[52px] 3xl:text-[64px] 2xl:leading-[60px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4">
+                Ready to Drive the Future of 5G Connectivity?</h2>
+            <p class="sm:text-xl lg:text-2xl 2xl:text-[26px] 3xl:text-[32px] 2xl:leading-[36px] 3xl:leading-[48px] mb-8 lg:mb-10 3xl:mb-12">Contact Whizz Systems today to learn how our ORU solutions can power your 5G network and deliver cutting-edge connectivity for the next generation.</p>
+            <app-button heading="Start Your 5G Journey with Whizz Systems" routerLink="/404" size="large"></app-button>
+        </div>
+    </div>
+</section>
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <h2 class="text-3xl sm:text-4xl 3xl:text-5xl lg-leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold text-dark-gray2 mb-6 3xl:mb-8">Latest News & Insights</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 3xl:gap-16">
+        <div *ngFor=" let card of cards">
+          <app-news-card [imageUrl]="card.imageUrl" [date]="card.date" [title]=" card.title"></app-news-card>
+        </div>
+    </div>
+</section>

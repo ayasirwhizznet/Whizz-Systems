@@ -1,10 +1,10 @@
 <div class="grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 gap-x-6 mx-auto md:hidden">
-    <div *ngFor=" let card of blogData">
-        <app-news-card [imageUrl]="card.imageUrl" [date]="card.date" [title]=" card.title"></app-news-card>
+    <div *ngFor=" let card of cards">
+        <app-news-card [imageUrl]="card.imageUrl" [date]="card.date" [title]="card.title"></app-news-card>
     </div>
 </div>
 
-<a routerLink="/news_&_insights/news" *ngFor="let item of blogData; let i = index"
+<a routerLink="/news-&-insights/whitepaper-5g-oru" *ngFor="let item of blogData; let i = index"
     class="cursor-pointer hidden md:block">
     <div class="group relative w-full flex items-center gap-6 3xl:gap-8 overflow-x-scroll no-scrollbar mb-6 3xl:mb-8"
         [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">

@@ -11,12 +11,12 @@ export const routes: Routes = [
         title: 'News & Insights',
       },
       {
-        path: 'news',
+        path: 'whitepaper-5g-oru',
         loadComponent: () =>
           import('./newspage/newspage.component').then(
             (m) => m.NewspageComponent
           ),
-        title: 'News',
+        title: 'Whitepaper/5G ORU',
       },
     ],
   },

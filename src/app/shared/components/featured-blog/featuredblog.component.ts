@@ -31,4 +31,22 @@ export class FeaturedblogComponent {
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
   ];
+
+  cards: any[] = [
+    {
+      imageUrl: 'assets/news/blog1.png',
+      date: 'July 9, 2024',
+      title: 'Interesting Blog Title that Can Fit On Two Lines',
+    },
+    {
+      imageUrl: 'assets/news/blog1.png',
+      date: 'July 9, 2024',
+      title: 'Interesting Blog Title that Can Fit On Two Lines',
+    },
+    {
+      imageUrl: 'assets/news/blog1.png',
+      date: 'July 9, 2024',
+      title: 'Interesting Blog Title that Can Fit On Two Lines',
+    },
+  ];
 }
