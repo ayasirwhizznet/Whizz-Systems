@@ -2,17 +2,11 @@
     <h4
         class="text-teal1 text-sm 3xl:text-base font-semibold 3xl:font-bold lg:leading-[15px] 3xl:leading-[19.2px] mb-3 3xl:mb-4">
         {{heading}}</h4>
-    <h3 [ngClass]="{'mb-10 3xl:mb-12': !btnText, 'mb-3 3xl:mb-4': btnText}"
-        class="text-dark-gray2 text-xl 3xl:text-2xl font-medium lg:leading-[24px] 3xl:leading-[28.8px]">
+    <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium lg:leading-[24px] 3xl:leading-[28.8px] mb-10 3xl:mb-12">
         {{title}}</h3>
-    <div *ngIf="btnText" class="mb-10 3xl:mb-12">
-        <app-button heading="{{btnText}}" routerLink="{{navigate}}" icon="assets/shared/r-arrow.svg"
-            size="small"></app-button>
-    </div>
     <div class="p-6 3xl:p-8 bg-card-gray rounded-md 3xl:rounded-lg">
         <div class="grid grid-cols-12 gap-6 3xl:gap-8">
-            <div *ngFor="let benefit of benefitsData; let i = index" 
-            [ngClass]="{'lg:col-start-3': i === 3,
+            <div *ngFor="let benefit of benefitsData; let i = index" [ngClass]="{'lg:col-start-3': i === 3,
             'sm:col-start-4':i === 4
         }" class="col-span-12 sm:col-span-6 lg:col-span-4">
                 <div class="p-6 3xl:p-8 bg-white border border-light-gray1 rounded-md 3xl:rounded-lg h-full">

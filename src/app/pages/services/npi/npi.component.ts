@@ -27,6 +27,7 @@ export class NpiComponent implements OnInit, OnDestroy {
   npiServices = [
     'System Level Architecture',
     'Schematic Design',
+    'Computer Aided Design',
     'Prototyping',
     'Testing',
     'Compliance',

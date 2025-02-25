@@ -2,15 +2,11 @@
     <h4
         class="text-teal1 text-sm 3xl:text-base font-semibold 3xl:font-bold lg:leading-[15px] 3xl:leading-[19.2px] mb-3 3xl:mb-4">
         {{heading}}</h4>
-    <h3 [ngClass]="{'mb-10 3xl:mb-12': !btnText, 'mb-3 3xl:mb-4': btnText}"
+    <h3 [ngClass]="{'mb-10 3xl:mb-12': !desc, 'mb-3 3xl:mb-4': desc}"
         class="text-dark-gray2 text-xl 3xl:text-2xl font-medium lg:leading-[24px] 3xl:leading-[28.8px]">{{title}}</h3>
     <p *ngIf="desc"
         class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">
         {{desc}}</p>
-    <div *ngIf="btnText" class="mb-10 3xl:mb-12">
-        <app-button heading="{{btnText}}" routerLink="{{navigate}}" icon="assets/shared/r-arrow.svg"
-            size="small"></app-button>
-    </div>
     <div class="p-6 3xl:p-8 bg-card-gray rounded-md 3xl:rounded-lg">
         <div class="grid gap-6 3xl:gap-8" [ngClass]="columns === 2 ? 'grid-cols-1 sm:grid-cols-2' :
                columns === 3 ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3' :

@@ -83,6 +83,11 @@ export class MobileHeaderComponent {
           fragment: 'SchematicDesign',
         },
         {
+          label: 'Computer ided Design',
+          link: '/services/npi',
+          fragment: 'ComputerAidedDesign',
+        },
+        {
           label: 'Prototyping',
           link: '/services/npi',
           fragment: 'Prototyping',
@@ -92,11 +97,6 @@ export class MobileHeaderComponent {
           label: 'Compliance and Certification',
           link: '/services/npi',
           fragment: 'Compliance',
-        },
-        {
-          label: 'Computer ided Design',
-          link: '/services/npi',
-          fragment: 'ComputerAidedDesign',
         },
       ],
       open: false,
