@@ -38,7 +38,7 @@ export class SignalIntegrityComponent {
 
   coreServices: any = [
     {
-      imgUrl: 'assets/services/engg&design/signal-integrity/core-services.png',
+      imgUrl: 'assets/services/engg&design/signal-integrity/simulations.png',
       name: 'DDR Parallel Bus Analysis',
       desc: 'Evaluates timing, Simultaneous Switching Noise (SSN), voltage margins, and signal behavior for stable memory communication.',
     },
