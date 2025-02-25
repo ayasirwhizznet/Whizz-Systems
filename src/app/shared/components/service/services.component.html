@@ -22,11 +22,11 @@
   <div class="pl-[4%] sm:pl-[9.3%]">
     <div class="keen-slider" #sliderRef>
       <div class="keen-slider__slide " *ngFor="let category of serviceCategories">
-        <a class="cursor-pointer inline-block relative group overflow-y-scroll no-scrollbar h-[23rem] 3xl:h-[28rem] hover_div w-full  mx-auto"
+        <a class="cursor-pointer inline-block relative group overflow-y-scroll no-scrollbar h-[23rem] 3xl:h-[28rem] hover_div w-full mx-auto"
           [routerLink]="category.link">
           <div class="p-6 3xl:p-8 mb-6 3xl:mb-8 border border-light-gray1 bg-card-gray rounded-md 3xl:rounded-lg">
             <div class="flex flex-col items-center">
-              <img class="hover_img rounded-md 3xl:rounded-lg mb-6 3xl:mb-8" [src]="category.imgUrl" alt="Card image">
+              <img class="hover_img object-contain rounded-md 3xl:rounded-lg mb-6 3xl:mb-8" [src]="category.imgUrl" alt="Card image">
               <div class="h-[9rem] 3xl:h-[12.5rem]">
                 <h3
                   class="text-dark-gray2 text-xl xl:text-base 2xl:text-xl 3xl:text-2xl font-semibold 3xl:font-bold mb-4 3xl:mb-5">
