@@ -43,6 +43,21 @@ export class FpgaComponent {
     },
   ];
 
+  expertise:any[] = [
+    {
+      heading: 'Supported FPGA Families',
+      title: 'Diverse FPGA Families for Every Need',
+      subTitle: 'Our expertise spans a wide range of FPGA families, including:',
+      desc: ['Versal', 'Zynx', 'Virtex Ultrascale ', 'Expertise in high-pin-count BGAs, micro-pitch components, and high-speed interconnects.', 'Expertise in high-pin-count BGAs, micro-pitch components, and high-speed interconnects.', 'Expertise in high-pin-count BGAs, micro-pitch components, and high-speed interconnects.']
+    },
+    {
+      heading: 'Communication & Connectivity',
+      title: 'Seamless IP Integration and High-Speed Connectivity',
+      subTitle: 'We ensure seamless integration with standard communication protocols, including:',
+      desc: ['UART', 'I2C', 'SPI', 'Expertise in high-pin-count BGAs, micro-pitch components, and high-speed interconnects.', 'Expertise in high-pin-count BGAs, micro-pitch components, and high-speed interconnects.', 'Expertise in high-pin-count BGAs, micro-pitch components, and high-speed interconnects.']
+    }
+  ];
+
   benefits: any[] = [
     {
       imgUrl: 'assets/services/engg&design/fpga/benefits.png',
