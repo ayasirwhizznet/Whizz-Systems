@@ -124,9 +124,9 @@ serviceCategories: any = [
           fragment: 'SchematicDesign',
         },
         {
-          name: 'Computer Aided Design',
+          name: 'Computer Aided Manufacturing',
           link: '/services/npi',
-          fragment: 'ComputerAidedDesign',
+          fragment: 'ComputerAided<br>Manufacturing',
         },
         {
           name: 'Prototyping',
