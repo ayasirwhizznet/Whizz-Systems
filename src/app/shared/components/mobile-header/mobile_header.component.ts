@@ -83,9 +83,9 @@ export class MobileHeaderComponent {
           fragment: 'SchematicDesign',
         },
         {
-          label: 'Computer ided Design',
+          label: 'Computer Aided Manufacturing',
           link: '/services/npi',
-          fragment: 'ComputerAidedDesign',
+          fragment: 'ComputerAidedManufacturing',
         },
         {
           label: 'Prototyping',

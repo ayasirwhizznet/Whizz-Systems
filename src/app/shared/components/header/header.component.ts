@@ -91,9 +91,9 @@ export class HeaderComponent implements OnInit {
           fragment: 'SchematicDesign',
         },
         {
-          label: 'Computer Aided Design',
+          label: 'Computer Aided Manufacturing',
           link: '/services/npi',
-          fragment: 'ComputerAidedDesign',
+          fragment: 'ComputerAided<br>Manufacturing',
         },
         {
           label: 'Prototyping',
