@@ -3,6 +3,11 @@ import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 import 'keen-slider/keen-slider.min.css';
 
-bootstrapApplication(AppComponent, appConfig).catch((err) =>
-  console.error(err)
-);
+bootstrapApplication(AppComponent, appConfig)
+  .then(() => {
+    const loader = document.getElementById('app-loader');
+    if (loader) {
+      loader.style.display = 'none';
+    }
+  })
+  .catch((err) => console.error(err));

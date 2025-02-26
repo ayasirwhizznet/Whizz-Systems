@@ -73,3 +73,11 @@ img.hover_img {
     transform: rotateX(180deg);
   }
 }
+
+#app-loader {
+  @apply fixed inset-0 flex items-center justify-center bg-white dark:bg-gray-900;
+}
+
+.loader {
+  @apply w-12 h-12 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin;
+}
