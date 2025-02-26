@@ -16,17 +16,17 @@ export class FeaturedblogComponent {
 
   blogData: any[] = [
     {
-      imgUrl: 'assets/news/featured-blog.png',
+      imgUrl: 'assets/news/featured-blog1.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
     {
-      imgUrl: 'assets/news/featured-blog.png',
+      imgUrl: 'assets/news/featured-blog2.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
     {
-      imgUrl: 'assets/news/featured-blog.png',
+      imgUrl: 'assets/news/featured-blog3.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
