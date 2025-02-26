@@ -139,11 +139,6 @@ serviceCategories: any = [
           link: '/services/npi',
           fragment: 'Compliance',
         },
-        {
-          name: 'Computer Aided Design',
-          link: '/services/npi',
-          fragment: 'ComputerAidedDesign',
-        },
       ],
     },
     {
