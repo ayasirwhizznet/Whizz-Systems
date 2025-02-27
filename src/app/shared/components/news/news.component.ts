@@ -43,7 +43,7 @@ export class NewsComponent {
     {
       imgUrl: 'assets/news/blog.png',
       date: 'July 9, 2024',
-      tags: ['Tag','Tag'],
+      tags: ['Heatsink','Thermal Management'],
       title: 'Interesting Blog Title that Can Fit On Two Lines',
       link: '/404'
     }
