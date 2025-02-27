@@ -82,13 +82,13 @@ export class AboutComponent {
 
   passionate = [
     {
-      imgUrl: 'assets/about/manny-karim.png',
+      imgUrl: 'assets/about/mannyKarim.png',
       name: 'Manny Karim',
       designation: 'CEO',
       desc: 'Manny’s expertise in operations, finance, and manufacturing has been instrumental in Whizz Systems’ success. Starting his career at Pentagon Systems in 1989, Manny co-founded Whizz Systems and developed a robust team and processes ensuring maximum efficiency without compromising quality. He oversees 4 state-of-the-art assembly lines in Santa Clara and 2 facilities in Malaysia.',
     },
     {
-      imgUrl: 'assets/about/muhammad-irfan.png',
+      imgUrl: 'assets/about/muhammadIrfan.png',
       name: 'Muhammad Irfan',
       designation: 'President',
       desc: `With a background in product development and manufacturing services, Muhammad co-founded Whizz Systems in 1999. His leadership has driven Whizz Systems' global presence across 3 continents, serving industries like computing, networking, medical, and defense.`,

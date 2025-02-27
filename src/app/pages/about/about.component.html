@@ -12,8 +12,8 @@
                 Your End-to-End Electronics Design & Manufacturing Partner</h1>
             <p class="text-lg 3xl:text-xl font-extralight 3xl:font-light mb-6 3xl:mb-8">Innovative solutions. Global
                 expertise. Proven excellence.</p>
-            <app-button [size]="'medium'" heading="Get Started with Us" icon="assets/shared/r-arrow.svg"
-                [routerLink]="'routerLink'"></app-button>
+                <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
+                target="_blank"><app-button [size]="'medium'" heading="Get Started with Us" icon="assets/shared/webform.svg"></app-button></a>
         </div>
     </div>
 </section>
@@ -81,7 +81,7 @@
 <!-- Unique Approach -->
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16 text-center">
     <h2
-        class=" font-medium mb-3 3xl:mb-4">
+        class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium text-center mb-3 3xl:mb-4">
         Our Unique Approach to Accelerate Your Product Journey</h2>
     <h3 class="text-base 3xl:text-xl leading-[24px] 3xl:leading-[28px] text-dark-gray2">Comprehensive, Expert Solutions
         Designed to Meet Your Unique Needs
@@ -172,20 +172,6 @@
     </div>
 </section>
 
-<!-- Collaborations -->
-<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <h3
-        class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium text-center mb-7 lg:mb-11 3xl:mb-14">
-        We’ve Collaborated With</h3>
-    <div
-        class="px-5 lg:px-40 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 place-items-center gap-6 lg:gap-8 3xl:gap-16">
-        <div *ngFor="let item of collaborations let i = index" [ngClass]="{'sm:col-start-2 lg:col-auto': i === 8}"
-            class="p-6 3xl:p-8">
-            <img class="object-cover" [src]="item" alt="img">
-        </div>
-    </div>
-</section>
-
 <!-- Passionate -->
 <section class="px-[4%] sm:px-[17%] py-8 lg:py-12 3xl:py-16">
     <h3
@@ -195,7 +181,7 @@
         class="text-base 3xl:text-xl leading-[20px] 3xl:leading-[28px] text-dark-gray2 mb-8 lg:mb-12 3xl:mb-16 text-center">
         Learn more about our leaders</p>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 3xl:gap-16">
-        <div class="relative group text-white" *ngFor="let item of passionate let i = index">
+        <div class="relative group overflow-y-hidden text-white" *ngFor="let item of passionate let i = index">
             <img [src]="item.imgUrl" alt="profile-img" class="object-cover">
             <div
                 class="absolute inset-0 group-hover:bg-black group-hover:bg-opacity-30 rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">
@@ -216,6 +202,20 @@
     </div>
 </section>
 
+<!-- Collaborations -->
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <h3
+        class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium text-center mb-7 lg:mb-11 3xl:mb-14">
+        We’ve Collaborated With</h3>
+    <div
+        class="px-5 lg:px-40 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 place-items-center gap-6 lg:gap-8 3xl:gap-16">
+        <div *ngFor="let item of collaborations let i = index" [ngClass]="{'sm:col-start-2 lg:col-auto': i === 8}"
+            class="p-6 3xl:p-8">
+            <img class="object-cover" [src]="item" alt="img">
+        </div>
+    </div>
+</section>
+
 <!-- Talk To Expert -->
 <section class="px-0 sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
     <div class="relative p-8 lg:p-12 3xl:p-16 rounded-md 3xl:rounded-lg">
@@ -230,7 +230,9 @@
                 Let’s build together.</h2>
             <p class="text-xl lg:text-2xl 3xl:text-[32px] 3xl:leading-[38px] mb-6 3xl:mb-8">Ready to start your next
                 project?</p>
-            <app-button heading="Contact us today" [size]="'large'"></app-button>
+            <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
+                target="_blank"><app-button heading="Contact us today" [size]="'large'"
+                    icon="assets/shared/webform.svg"></app-button></a>
         </div>
     </div>
 </section>
