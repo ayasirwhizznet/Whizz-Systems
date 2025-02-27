@@ -1,14 +1,17 @@
-<a routerLink="/404" class="group cursor-pointer inline-block overflow-y-hidden no-scrollbar h-[22rem] sm:h-[22rem] xl:h-[22rem] 2xl:h-[22rem] 3xl:h-[25rem] hover_div">
+<a routerLink="{{navigate}}"
+  class="group cursor-pointer block overflow-y-hidden no-scrollbar h-[22rem] sm:h-[22rem] xl:h-[22rem] 2xl:h-[22rem] 3xl:h-[25rem] hover_div">
   <div class="p-6 3xl:p-8 bg-gray mb-6 3xl:mb-8 border border-light-gray1 bg-card-gray rounded-md 3xl:rounded-lg">
     <img [src]="imageUrl" class="hover_img rounded-md 3xl:rounded-lg mb-6 3xl:mb-8" alt="Card-image">
-      <div class="flex items-center gap-1 3xl:gap-2 flex-wrap mb-4 3xl:mb-5">
-        <app-blog-tag text="Heatsink" textColor="text-dark-gray2" borderColor="border-dark-gray2"
-          borderRadius="rounded-md 3xl:rounded-lg"></app-blog-tag>
-        <app-blog-tag text="Thermal Management" textColor="text-dark-gray2" borderColor="border-dark-gray2"
-          borderRadius="rounded-lg"></app-blog-tag>
+    <div class="h-[8rem] 3xl:h-[11.5rem]">
+      <div class="flex items-center gap-2 3xl:gap-2 flex-wrap mb-4 3xl:mb-5">
+        <div *ngFor="let tag of tags">
+          <app-blog-tag text="{{tag}}" textColor="text-dark-gray2" borderColor="border-dark-gray2"
+            borderRadius="rounded-md 3xl:rounded-lg"></app-blog-tag>
+        </div>
       </div>
       <p class="text-dark-gray2 text-xs 3xl:text-sm font-medium 3xl:font-semibold mb-1 3xl:mb-2">{{ date }}</p>
-      <h3 class="text-xl 3xl:text-2xl font-semibold 3xl:font-bold">{{ title }}</h3>
+      <h3 class="text-lg 3xl:text-2xl font-semibold 3xl:font-bold">{{ title }}</h3>
+    </div>
   </div>
 
   <button

@@ -9,64 +9,62 @@ import { FeaturedblogComponent } from '@components/featured-blog/featuredblog.co
   standalone: true,
   imports: [
     FeaturedblogComponent,
-    NewsCardComponent,
-    ButtonComponent,
     CommonModule,
   ],
   templateUrl: './blogs.component.html',
 })
 export class BlogsComponent {
-  isBlogVisible: boolean = false;
+  // isBlogVisible: boolean = false;
 
-  loadBlogs(): void {
-    this.isBlogVisible = !this.isBlogVisible;
-  }
+  // loadBlogs(): void {
+  //   this.isBlogVisible = !this.isBlogVisible;
+  // }
 
-  cards: any[] = [
-    {
-      imageUrl: 'assets/news/blog1.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-    {
-      imageUrl: 'assets/news/blog1.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-    {
-      imageUrl: 'assets/news/blog1.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-    {
-      imageUrl: 'assets/news/blog1.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-    {
-      imageUrl: 'assets/news/blog1.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-    {
-      imageUrl: 'assets/news/blog1.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-    {
-      imageUrl: 'assets/news/blog1.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-    {
-      imageUrl: 'assets/news/blog1.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-    {
-      imageUrl: 'assets/news/blog1.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-  ];
+  // cards: any[] = [
+  //   {
+  //     imageUrl: 'assets/news/blog1.png',
+  //     date: 'July 9, 2024',
+  //     title: 'Interesting Blog Title that Can Fit On Two Lines',
+  //   },
+  //   {
+  //     imageUrl: 'assets/news/blog1.png',
+  //     date: 'July 9, 2024',
+  //     title: 'Interesting Blog Title that Can Fit On Two Lines',
+  //   },
+  //   {
+  //     imageUrl: 'assets/news/blog1.png',
+  //     date: 'July 9, 2024',
+  //     title: 'Interesting Blog Title that Can Fit On Two Lines',
+  //   },
+  //   {
+  //     imageUrl: 'assets/news/blog1.png',
+  //     date: 'July 9, 2024',
+  //     title: 'Interesting Blog Title that Can Fit On Two Lines',
+  //   },
+  //   {
+  //     imageUrl: 'assets/news/blog1.png',
+  //     date: 'July 9, 2024',
+  //     title: 'Interesting Blog Title that Can Fit On Two Lines',
+  //   },
+  //   {
+  //     imageUrl: 'assets/news/blog1.png',
+  //     date: 'July 9, 2024',
+  //     title: 'Interesting Blog Title that Can Fit On Two Lines',
+  //   },
+  //   {
+  //     imageUrl: 'assets/news/blog1.png',
+  //     date: 'July 9, 2024',
+  //     title: 'Interesting Blog Title that Can Fit On Two Lines',
+  //   },
+  //   {
+  //     imageUrl: 'assets/news/blog1.png',
+  //     date: 'July 9, 2024',
+  //     title: 'Interesting Blog Title that Can Fit On Two Lines',
+  //   },
+  //   {
+  //     imageUrl: 'assets/news/blog1.png',
+  //     date: 'July 9, 2024',
+  //     title: 'Interesting Blog Title that Can Fit On Two Lines',
+  //   },
+  // ];
 }

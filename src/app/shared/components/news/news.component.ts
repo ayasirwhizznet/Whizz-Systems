@@ -8,47 +8,44 @@ import {
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ButtonComponent } from '../button/button.component';
-import { BlogTagComponent } from '../blog-tag/blog-tag.component';
+import { NewsCardComponent } from '@components/news-card/news-card.component';
 
 @Component({
   selector: 'app-cnews',
   standalone: true,
-  imports: [CommonModule, RouterLink, ButtonComponent, BlogTagComponent],
+  imports: [CommonModule, RouterLink, ButtonComponent, NewsCardComponent],
   templateUrl: './news.component.html',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class NewsComponent {
   blogs: any[] = [
     {
-      imgUrl: 'assets/news/blog1.png',
+      imgUrl: 'assets/news/blog-1.png',
+      date: 'May 29, 2024',
+      tags: ['Whitepaper','High Speed Connectivity'],
+      title: 'PCIe-6: Everything You Need to Know',
+      link: '/404'
+    },
+    {
+      imgUrl: 'assets/news/blog-2.png',
       date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
+      tags: ['Case Study','Hardware Design'],
+      title: 'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
+      link: '/news-&-insights/whitepaper-5g-oru'
+    },
+    {
+      imgUrl: 'assets/news/blog-3.png',
+      date: 'July 9, 2024',
+      tags: ['Whitepaper','Thermal Management'],
+      title: 'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
+      link: '/404'
     },
     {
       imgUrl: 'assets/news/blog.png',
       date: 'July 9, 2024',
       title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-    {
-      imgUrl: 'assets/news/blog.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-    {
-      imgUrl: 'assets/news/blog.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-    {
-      imgUrl: 'assets/news/blog.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-    {
-      imgUrl: 'assets/news/blog.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
+      link: '/404'
+    }
   ];
 
   @ViewChild('sliderRef') sliderRef = {} as ElementRef;

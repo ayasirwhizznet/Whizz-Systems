@@ -14,39 +14,34 @@ export class FeaturedblogComponent {
   @Input() date: string | null = null;
   @Input() blogTitle: string | null = null;
 
-  blogData: any[] = [
+  blogs: any[] = [
     {
       imgUrl: 'assets/news/featured-blog1.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
+      date: 'February 11, 2025',
+      tags: ['Hardware Design','Telecom Engineering'],
+      title: 'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
+      link: '/news-&-insights/whitepaper-5g-oru'
     },
     {
       imgUrl: 'assets/news/featured-blog2.png',
       date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
+      tags: ['Electronics Cooling','Thermal Management'],
+      title: 'Heatsinks Uncoverd: Best Practices For Optimized Thermal Management',
+      link: '/404'
     },
     {
       imgUrl: 'assets/news/featured-blog3.png',
       date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-  ];
-
-  cards: any[] = [
-    {
-      imageUrl: 'assets/news/blog1.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
+      tags: ['High-Speed Connectivity','Mechanical Design'],
+      title: 'Whizz Systems PCIe Gen 6',
+      link: '/404'
     },
     {
-      imageUrl: 'assets/news/blog1.png',
+      imgUrl: 'assets/news/featured-blog3.png',
       date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
-    },
-    {
-      imageUrl: 'assets/news/blog1.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
+      tags: ['High-Speed Connectivity','Mechanical Design'],
+      title: 'Whizz Systems PCIe Gen 6',
+      link: '/404'
     },
   ];
 }
