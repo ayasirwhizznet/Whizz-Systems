@@ -62,10 +62,10 @@
     </div>
 
     <div class="flex items-center gap-8 ">
-      <i (click)="toggleSearchbar()"
-        class="bi bi-search text-xl 3xl:text-2xl cursor-pointer hover:text-teal1 duration-300"></i>
+      <!-- <i (click)="toggleSearchbar()"
+        class="bi bi-search text-xl 3xl:text-2xl cursor-pointer hover:text-teal1 duration-300"></i> -->
       <!-- Search bar container -->
-      <div *ngIf="isSearchbaropen"
+      <!-- <div *ngIf="isSearchbaropen"
         class="p-[6px] 3xl:p-[10px] bg-card-gray fixed left-1/2 transform -translate-x-1/2 top-28 3xl:top-36 z-50 rounded-br-md 3xl:rounded-br-lg rounded-bl-md 3xl:rounded-bl-lg w-[72%]">
         <div
           class="flex items-center justify-center gap-6 3xl:gap-8 px-12 3xl:px-20 py-6 3xl:py-8 bg-white rounded-md 3xl:rounded-lg">
@@ -80,10 +80,10 @@
           <i (click)="toggleSearchbar()"
             class="bi bi-x-lg text-2xl 3xl:text-3xl cursor-pointer hover:text-teal1 ml-3"></i>
         </div>
-      </div>
+      </div> -->
 
       <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
-        target="_blank"><app-button heading="Contact us" icon="assets/shared/r-arrow.svg"
+        target="_blank"><app-button heading="Contact us" icon="assets/shared/webform.svg"
           [size]="'medium'"></app-button></a>
     </div>
   </div>
@@ -139,9 +139,11 @@
 <div *ngIf="activeBottomSection" (click)="closeMenu()"
   class="hidden lg:block fixed h-full w-full top-28 3xl:top-36 z-40 bg-[#00000080]">
 </div>
-<div *ngIf="isSearchbaropen" (click)="closeMenu()"
+
+<!-- Search Overlay -->
+<!-- <div *ngIf="isSearchbaropen" (click)="closeMenu()"
   class="fixed h-full w-full top-24 lg:top-28  3xl:top-36 z-40 bg-[#00000080]">
-</div>
+</div> -->
 
 
 <!-- Mobile header -->
@@ -151,10 +153,10 @@
       <img class="w-36 object-cover cursor-pointer" src="assets/header/teal-logo.png" alt="logo" />
     </a>
     <div>
-      <i (click)="toggleSearchbar()"
-        class="fa-solid fa-search fa-xl text-dark-gray2 hover:text-teal1 duration-300 mr-8"></i>
+      <!-- <i (click)="toggleSearchbar()"
+        class="fa-solid fa-search fa-xl text-dark-gray2 hover:text-teal1 duration-300 mr-8"></i> -->
       <!-- Search bar container -->
-      <div *ngIf="isSearchbaropen"
+      <!-- <div *ngIf="isSearchbaropen"
         class="p-2 bg-card-gray fixed left-1/2 transform -translate-x-1/2 top-24 z-50 rounded-br-md rounded-bl-md w-full sm:w-[80%]">
         <div class="flex items-center justify-center gap-3 px-2 py-4 bg-white rounded-md">
           <div class="flex items-center gap-3 rounded-md border px-2 py-1 w-full bg-card-gray duration-300"
@@ -167,7 +169,7 @@
           <i (click)="toggleSearchbar()" class="bi bi-x-lg text-xl cursor-pointer hover:text-teal1 ml-2"></i>
         </div>
 
-      </div>
+      </div> -->
       <i (click)="toggleMenuSection()" [ngClass]="isMenuOpen ? 'fa-solid fa-2xl fa-xmark' : 'fa-solid fa-2xl fa-bars'"
         class="transition-transform duration-500 ease-in-out"></i>
     </div>
