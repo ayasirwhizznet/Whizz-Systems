@@ -4,10 +4,10 @@ import { NewsComponent } from '@components/news/news.component';
 import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
 import { AnimatedButton } from '@components/animated-button/animated-button.component';
-import { NewsCardComponent } from "../../../shared/components/news-card/news-card.component";
+import { NewsCardComponent } from "../../../../shared/components/news-card/news-card.component";
 
 @Component({
-  selector: 'app-newspage',
+  selector: 'app-5g-oru',
   standalone: true,
   imports: [
     CommonModule,
@@ -17,9 +17,9 @@ import { NewsCardComponent } from "../../../shared/components/news-card/news-car
     ButtonComponent,
     NewsCardComponent
 ],
-  templateUrl: './newspage.component.html',
+  templateUrl: './5g-oru.component.html',
 })
-export class NewspageComponent {
+export class ORUComponent {
   sectionVisibility: any = {
     signalIntegrity: true,
     power: true,

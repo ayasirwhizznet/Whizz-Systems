@@ -1,0 +1,68 @@
+<section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
+  <div class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl">
+    <div
+      class="w-full lg:w-[46.5%] 3xl:w-[45%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16">
+      <h1
+        class="text-3xl lg:text-[39px] 2xl:text-[47px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[56px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-4 3xl:mb-6 w-[96%] sm:w-[57%] lg:w-full">
+        Whizz Bytes: Expert <br class="block lg:hidden"> Views and Breaking News</h1>
+      <p
+        class="text-base lg:text-sm 2xl:text-base 3xl:text-xl font-extralight lg:leading-[20px] 3xl:leading-[24px] sm:w-[70%] lg:w-full">
+        Get informed with expert opinions, industry news, and deep dives into the latest in technology</p>
+    </div>
+    <div class="hidden lg:block lg:w-[53.5%] 3xl:w-[55%] relative">
+      <video
+        class="absolute inset-0 w-full h-full object-cover z-0 rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-md 3xl:rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-md 3xl:rounded-br-lg"
+        loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
+        <source src="assets/hero/waves1.mp4" type="video/mp4">
+      </video>
+      <div
+        class="absolute inset-0 bg-video-overlay opacity-80 z-10 rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-md 3xl:rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-md 3xl:rounded-br-lg">
+      </div>
+      <p class="h-[34rem] 2xl:h-[39rem] 3xl:h-[48rem]"></p>
+    </div>
+  </div>
+</section>
+
+<section class="px-[4%] sm:px-[9.3%] pt-8 lg:pt-12 3xl:pt-16">
+  <h3
+    class="text-3xl sm:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] text-dark-gray2 font-semibold 3xl:font-bold mb-6 3xl:mb-8">
+    Featured Blogs</h3>
+  <!-- For Mobile -->
+  <div class="grid grid-cols-1 gap-8 md:hidden py-8">
+    <div *ngFor="let blog of blogs">
+      <app-news-card [imageUrl]="blog.imgUrl" [date]="blog.date" [title]="blog.title" [tags]="blog.tags"
+        [navigate]="blog.link"></app-news-card>
+    </div>
+  </div>
+
+  <!-- For above Mobile -->
+  <a routerLink="{{blog.link}}" *ngFor="let blog of blogs; let i = index" class="cursor-pointer hidden md:block">
+    <div class="group relative w-full flex items-center gap-6 3xl:gap-8 overflow-x-scroll no-scrollbar mb-6 3xl:mb-8"
+      [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">
+      <div
+        class="p-6 3xl:p-8 bg-card-gray  w-full group-hover:w-[88%] lg:group-hover:w-[92%] rounded-lg border border-light-gray1 flex items-center gap-6 3xl:gap-8 transition-all duration-500 ease-in-out"
+        [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'">
+        <div class="w-1/2">
+          <img
+            class="object-cover h-[10rem] lg:h-[17rem] 3xl:h-[21rem] rounded-md transition-all duration-500 ease-in-out"
+            [src]="blog.imgUrl" alt="img" [ngClass]="i % 2 === 0 ? 'origin-right' : 'origin-left'" />
+        </div>
+        <div class="w-1/2">
+          <div class="flex items-center gap-2 flex-wrap">
+            <div *ngFor="let tag of blog.tags">
+              <app-blog-tag text="{{tag}}" textColor="text-dark-gray2" borderColor="border-dark-gray2"
+                borderRadius="rounded-md 3xl:rounded-lg"></app-blog-tag>
+            </div>
+          </div>
+          <p class="mt-4 lg:mt-5 mb-2 text-xs 3xl:text-sm text-dark-gray2  font-semibold">{{ blog.date }}</p>
+          <p class="text-base lg:text-xl 3xl:text-2xl font-bold">{{ blog.title }}</p>
+        </div>
+      </div>
+      <div
+        class="bg-teal2 h-full rounded-lg grid place-items-center px-6 lg:px-7 3xl:px-9 transition-all duration-500 ease-in-out"
+        [ngClass]="i % 2 === 0 ? 'absolute right-0 top-0 translate-x-24 group-hover:translate-x-0' : 'absolute left-0 top-0 -translate-x-24 group-hover:translate-x-0'">
+        <img class="object-cover w-4 3xl:w-6" src="assets/shared/r-arrow.svg" alt="img" />
+      </div>
+    </div>
+  </a>
+</section>
