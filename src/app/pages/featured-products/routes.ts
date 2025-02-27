@@ -13,7 +13,7 @@ export const routes: Routes = [
         title: 'Featured Products',
       },
       {
-        path: 'oru',
+        path: 'oru-open-radio-unit',
         loadComponent: () =>
           import('./oru/oru.component').then((m) => m.OruComponent),
         title: '5G/4G Open Radio Unit',
