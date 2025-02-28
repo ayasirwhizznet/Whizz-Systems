@@ -27,17 +27,17 @@ export class FpgaComponent {
       desc: 'Develop scalable FPGA architectures with optimized RTL coding to meet your system requirements',
     },
     {
-      imgUrl: 'assets/services/engg&design/fpga/core-services.png',
+      imgUrl: 'assets/services/engg&design/fpga/verification.png',
       name: 'Functional Verification & Simulation',
       desc: 'Rigorous verification processes ensure FPGA/ASIC designs perform flawlessly under real-world conditions.',
     },
     {
-      imgUrl: 'assets/services/engg&design/fpga/core-services.png',
+      imgUrl: 'assets/services/engg&design/fpga/system.png',
       name: 'System Integration & IP Connectivity',
       desc: 'Seamlessly integrate third-party IP and standard buses (AXI, Avalon) to enable efficient PS-PL data exchange and high-speed SERDES interfaces',
     },
     {
-      imgUrl: 'assets/services/engg&design/fpga/core-services.png',
+      imgUrl: 'assets/services/engg&design/fpga/tool.png',
       name: 'Tool Expertise',
       desc: 'Utilize industry-leading tools like Vivado, Quartus Prime, and Lattice Diamond for best-in-class design performance.',
     },

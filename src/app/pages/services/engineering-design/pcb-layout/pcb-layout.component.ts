@@ -22,12 +22,12 @@ import { ServicesBenefitsComponent } from '@components/services-benefits/service
 export class PcbLayoutComponent {
   coreServices: any[] = [
     {
-      imgUrl: 'assets/services/engg&design/pcb/pcb.png',
+      imgUrl: 'assets/services/engg&design/pcb/footprint.png',
       name: 'PCB Footprint Design',
       desc: 'Development, verification, and maintenance of 2D/3D footprints following IPC standards.',
     },
     {
-      imgUrl: 'assets/services/engg&design/pcb/signal-integrity.png',
+      imgUrl: 'assets/services/engg&design/pcb/constraint.png',
       name: 'Signal Integrity & Constraint Management',
       desc: 'Optimization of SI and DFx rules to ensure manufacturability and performance.',
     },
@@ -48,7 +48,7 @@ export class PcbLayoutComponent {
       ],
     },
     {
-      imgUrl: 'assets/services/engg&design/pcb/advanced.png',
+      imgUrl: 'assets/services/engg&design/pcb/routing.png',
       name: 'Advanced Signal Routing',
       description: [
         '100% hand routing of high-speed signals using techniques like ARC, snake, tabbed, and fiber wave routing.',
