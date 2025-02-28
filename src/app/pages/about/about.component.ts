@@ -37,6 +37,8 @@ export class AboutComponent {
     },
   ];
 
+  i = 0;
+
   certifications = [
     { imgUrl: 'assets/about/itar.png', name: 'ITAR' },
     { imgUrl: 'assets/about/9001.png', name: 'ISO 9001: 2015 RevD' },
