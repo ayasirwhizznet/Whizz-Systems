@@ -3,18 +3,29 @@
     <div class="relative p-8 lg:p-12 3xl:p-16">
         <video class="absolute inset-0 w-full h-full object-cover z-0 sm:rounded-xl 3xl:rounded-2xl" loop muted autoplay
             oncanplay="this.play()" onloadedmetadata="this.muted = true">
-            <source src="assets/hero/waves1.mp4" type="video/mp4">
+            <source src="assets/about/heroVedio.mp4" type="video/mp4">
         </video>
         <div class="absolute inset-0 bg-video-overlay opacity-80 z-[5] sm:rounded-xl 3xl:rounded-2xl"></div>
-        <div class="w-fit sm:w-3/5 lg:w-2/5 relative z-10 text-white py-[5%] sm:py-[10%]">
-            <h1
-                class="text-3xl sm:text-4xl lg:text-5xl 3xl:text-[56px] lg:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-4 3xl:mb-6">
-                Your End-to-End Electronics Design & Manufacturing Partner</h1>
-            <p class="text-lg 3xl:text-xl font-extralight 3xl:font-light mb-6 3xl:mb-8">Innovative solutions. Global
-                expertise. Proven excellence.</p>
-                <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
-                target="_blank"><app-button [size]="'medium'" heading="Get Started with Us" icon="assets/shared/webform.svg"></app-button></a>
+        <div class="w-fit sm:w-3/5 lg:w-1/2 relative z-10 mx-auto py-12 lg:py-16 3xl:py-24">
+            <div class="text-white  p-8 lg:p-12 3xl:p-16 bg-dark-gray1 text-center lg:rounded-md mb-3 3xl:mb-4">
+                <h1
+                    class="text-3xl sm:text-4xl lg:text-5xl 3xl:text-[56px] lg:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-4 3xl:mb-6">
+                    Your End-to-End Electronics Design & Manufacturing Partner</h1>
+                <p class="text-lg 3xl:text-xl font-extralight 3xl:font-light">Innovative solutions. Global
+                    expertise. Proven excellence.</p>
+            </div>
+            <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
+                target="_blank"><button routerLink="/services"
+                    class="diagonal-swipe white-bg w-full relative overflow-hidden rounded-lg cursor-pointer text-nowrap px-[18px] py-[11px] text-sm 3xl:text-base font-medium 3xl:font-semibold border-[1px] border-teal2">
+                    <span class="font-medium 3xl:font-semibold flex justify-between items-center">
+                        Get Started with Us
+                        <ng-container>
+                            <img src="assets/shared/r-arrow.svg" alt="icon" class=" w-6 h-6" />
+                        </ng-container>
+                    </span>
+                </button></a>
         </div>
+
     </div>
 </section>
 

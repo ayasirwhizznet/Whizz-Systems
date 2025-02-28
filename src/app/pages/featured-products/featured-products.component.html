@@ -1,25 +1,26 @@
 <section class="px-0 sm:px-[6.3%] mb-8 lg:mb-12 3xl:mb-16">
   <div
     class="px-4 py-8 sm:py-12 sm:px-8 lg:py-0 lg:px-0 lg:pl-[52px] 3xl:pl-16 bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl flex items-center lg:gap-[50px] 3xl:gap-16">
-    <div class="w-full lg:w-[44%] 3xl:w-[43%] text-white">
+    <div class="w-full lg:w-[50%] 3xl:w-[50%] text-white">
       <h1
         class="text-3xl lg:text-[46px] 3xl:text-[56px] lg:leading-[56px] 3xl:leading-[67.2px] font-bold mb-4 3xl:mb-6">
-        Featured Products
+        Proven Board & System Designs, Tailored for Your Application
       </h1>
-      <p class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light text-light-gray1">
-        Lorem ipsum dolor sit amet.
+      <p class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light text-light-gray1 mb-6 3xl:mb-8">
+        Accelerate Your Product Development with Our High-Performance, Scalable Designs for AI, 5G, Medical, and More.
       </p>
+      <app-button [size]="'medium'"  heading="Medium Button" icon="assets/shared/r-arrow.svg"></app-button>
     </div>
-    <div class="hidden lg:block lg:w-[56%] 3xl:w-[57%] relative">
+    <div class="hidden lg:block lg:w-[50%] 3xl:w-[50%] relative">
       <video
-        class="absolute inset-0 w-full h-full object-cover z-0 rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-lg"
+        class="absolute inset-0 w-full h-full object-cover z-0  brightness-150"
         loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
-        <source src="assets/hero/waves1.mp4" type="video/mp4" />
+        <source src="assets/featured-products/hero-vedio.mp4" type="video/mp4" />
       </video>
       <div
-        class="absolute inset-0 bg-video-overlay opacity-80 z-10 rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-lg">
+        class="absolute inset-0 bg-gradient-to-r from-teal2/60 to-teal2/60 z-10  brightness-150" >
       </div>
-      <p class="h-[39rem] 3xl:h-[48rem]"></p>
+      <p class="h-[25rem] 3xl:h-[31rem]"></p>
     </div>
   </div>
 </section>
@@ -53,179 +54,56 @@
   </div>
 </section>
 
-<section class="py-8 lg:py-12 3xl:py-16 bg-dark-gray2">
-  <h2
-    class="text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[40px] 3xl:leading-[57.6px] text-white text-center mb-3 3xl:mb-4"
+<section *ngFor="let section of boards; let i = index" class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16 bg-dark-gray2">
+  <h2 *ngIf="i == 0" class="text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[40px] 3xl:leading-[57.6px] text-white mb-4 3xl:mb-5"
     id="Boards & Kit Accessories">
     Boards & Kit Accessories
   </h2>
-  <h3 class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white text-center mb-6 3xl:mb-8" id="Evaluations Kit">
-    Evaluations Kit
+  <h3 class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white mb-8 lg:mb-12 3xl:mb-16" id="{{section.title}}">
+    {{section.title}}
   </h3>
-  <div class="w-full h-full grid gap-6 3xl:gap-8 px-[9.3%] grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-    <a *ngFor="let product of evaluationKit; let j = index" [routerLink]="[product.link]"
-      class="h-[80%] cursor-pointer relative flex flex-col items-center gap-3 3xl:gap-4 overflow-y-scroll no-scrollbar group">
-      <div
-        class="absolute inset-0 bg-lines3 bg-contain bg-no-repeat bg-[0%_11%] opacity-100 group-hover:opacity-0 translate-x-0 group-hover:translate-x-10 transition-all duration-700 ease-in-out">
-      </div>
-      <div
-        class="absolute inset-0 bg-lines4 bg-contain bg-no-repeat bg-[0%_11%] opacity-0 group-hover:opacity-100 -translate-x-16 group-hover:translate-x-0 transition-all duration-700 ease-in-out">
-      </div>
-      <div
-        class="h-full w-full group-hover:h-[79%] p-6 3xl:p-8 pb-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg group-hover:bg-dark-gray1 transition-all duration-700 ease-in-out">
-        <div class="h-[79%] relative mb-6 3xl:mb-8">
-          <img
-            class="object-cover w-full h-full relative z-10 rounded-md 3xl:rounded-lg transition-all duration-700 ease-in-out"
-            [src]="product.imgUrl" alt="img" />
+  <div class="w-full h-full grid gap-6 3xl:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    <a *ngFor="let product of section.products; let j = index" [routerLink]="[product.link]" class="cursor-pointer">
+      <div class="group relative w-full flex items-center gap-4 overflow-x-scroll no-scrollbar">
+        <div class="relative flex items-center w-full bg-white transition-all duration-700 ease-in-out group-hover:w-[86%] rounded-md 3xl:rounded-lg h-full">
+          <div class="flex-shrink-0 p-[0.75px]">
+            <img class="w-20 lg:w-[104px] 3xl:w-32 object-cover rounded-md 3xl:rounded-lg" [src]="product.imgUrl" alt="img" />
+          </div>
+          <div class="px-4 lg:px-6 3xl:px-8 flex-shrink-0">
+            <h3 class="text-dark-gray2 sm:text-sm lg:text-base 3xl:text-xl w-4/5">{{ product.name }}</h3>
+          </div>
         </div>
-        <h4
-          class="text-left text-base 3xl:text-xl font-bold text-dark-gray2 group-hover:text-white transition-all duration-700 ease-in-out">
-          {{ product.name }}
-        </h4>
-      </div>
-      <div
-        class="w-full flex items-center justify-between text-dark-gray1 text-sm 3xl:text-base bg-teal2 p-3 3xl:p-4 rounded-md 3xl:rounded-lg group-hover:translate-y-0 translate-y-1 transition-all duration-700 ease-in-out">
-        <span class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold">Read more</span>
-        <img class="object-cover w-4 3xl:w-6" src="assets/featured-products/icon.png" alt="img" />
-      </div>
-    </a>
-  </div>
-
-  <h3 class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white text-center mb-6 3xl:mb-8" id="Connectivity Kits">
-    Connectivity Kits
-  </h3>
-  <div class="w-full h-full grid gap-6 3xl:gap-8 px-[9.3%] lg:px-[30%] grid-cols-1 sm:grid-cols-2">
-    <a *ngFor="let product of connectivityKit; let j = index" [routerLink]="[product.link]"
-      class="h-[80%] cursor-pointer relative flex flex-col items-center gap-3 3xl:gap-4 overflow-y-scroll no-scrollbar group">
-      <div
-        class="absolute inset-0 bg-lines3 bg-contain bg-no-repeat bg-[0%_11%] opacity-100 group-hover:opacity-0 translate-x-0 group-hover:translate-x-10 transition-all duration-700 ease-in-out">
-      </div>
-      <div
-        class="absolute inset-0 bg-lines4 bg-contain bg-no-repeat bg-[0%_11%] opacity-0 group-hover:opacity-100 -translate-x-16 group-hover:translate-x-0 transition-all duration-700 ease-in-out">
-      </div>
-      <div
-        class="h-full w-full group-hover:h-[79%] p-6 3xl:p-8 pb-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg group-hover:bg-dark-gray1 transition-all duration-700 ease-in-out">
-        <div class="h-[79%] relative mb-6 3xl:mb-8">
-          <img
-            class="object-cover w-full h-full relative z-10 rounded-md 3xl:rounded-lg transition-all duration-700 ease-in-out"
-            [src]="product.imgUrl" alt="img" />
+        <div class="absolute right-0 top-0 translate-x-32 group-hover:translate-x-0 h-full grid place-items-center bg-teal2 rounded-md 3xl:rounded-lg px-3 transition-all duration-700 ease-in-out">
+          <img class="object-cover w-4 3xl:w-6" src="assets/shared/r-arrow.svg" alt="img" />
         </div>
-        <h4
-          class="text-left text-base 3xl:text-xl font-bold text-dark-gray2 group-hover:text-white transition-all duration-700 ease-in-out">
-          {{ product.name }}
-        </h4>
-      </div>
-      <div
-        class="w-full flex items-center justify-between text-dark-gray1 text-sm 3xl:text-base bg-teal2 p-3 3xl:p-4 rounded-md 3xl:rounded-lg group-hover:translate-y-0 translate-y-1 transition-all duration-700 ease-in-out">
-        <span class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold">Read more</span>
-        <img class="object-cover w-4 3xl:w-6" src="assets/featured-products/icon.png" alt="img" />
-      </div>
-    </a>
-  </div>
-
-  <h3 class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white text-center mb-6 3xl:mb-8" id="Characterization Kits">
-    Characterization Kits
-  </h3>
-  <div class="w-full h-full grid gap-6 3xl:gap-8 px-[9.3%] lg:px-[30%] grid-cols-1 sm:grid-cols-2">
-    <a *ngFor="let product of characterizationKit; let j = index" [routerLink]="[product.link]"
-      class="h-[80%] cursor-pointer relative flex flex-col items-center gap-3 3xl:gap-4 overflow-y-scroll no-scrollbar group">
-      <div
-        class="absolute inset-0 bg-lines3 bg-contain bg-no-repeat bg-[0%_11%] opacity-100 group-hover:opacity-0 translate-x-0 group-hover:translate-x-10 transition-all duration-700 ease-in-out">
-      </div>
-      <div
-        class="absolute inset-0 bg-lines4 bg-contain bg-no-repeat bg-[0%_11%] opacity-0 group-hover:opacity-100 -translate-x-16 group-hover:translate-x-0 transition-all duration-700 ease-in-out">
-      </div>
-      <div
-        class="h-full w-full group-hover:h-[79%] p-6 3xl:p-8 pb-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg group-hover:bg-dark-gray1 transition-all duration-700 ease-in-out">
-        <div class="h-[79%] relative mb-6 3xl:mb-8">
-          <img
-            class="object-cover w-full h-full relative z-10 rounded-md 3xl:rounded-lg transition-all duration-700 ease-in-out"
-            [src]="product.imgUrl" alt="img" />
-        </div>
-        <h4
-          class="text-left text-base 3xl:text-xl font-bold text-dark-gray2 group-hover:text-white transition-all duration-700 ease-in-out">
-          {{ product.name }}
-        </h4>
-      </div>
-      <div
-        class="w-full flex items-center justify-between text-dark-gray1 text-sm 3xl:text-base bg-teal2 p-3 3xl:p-4 rounded-md 3xl:rounded-lg group-hover:translate-y-0 translate-y-1 transition-all duration-700 ease-in-out">
-        <span class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold">Read more</span>
-        <img class="object-cover w-4 3xl:w-6" src="assets/featured-products/icon.png" alt="img" />
-      </div>
-    </a>
-  </div>
-
-  <h3 class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white text-center mb-6 3xl:mb-8" id="Kit Accessories">
-    Kit Accessories
-  </h3>
-  <div class="w-full h-full grid gap-6 3xl:gap-8 px-[9.3%] lg:px-[20%] grid-cols-12">
-    <a *ngFor="let product of kitAccessories; let i = index" [routerLink]="[product.link]"
-      class="h-[80%] cursor-pointer relative flex flex-col items-center gap-3 3xl:gap-4 overflow-y-scroll no-scrollbar group col-span-12 sm:col-span-6 lg:col-span-4"
-      [ngClass]="{
-        'sm:col-span-12 sm:w-1/2 lg:col-span-6  lg:w-2/3 sm:mx-auto lg:ml-auto':
-          i === 4
-      }" [ngClass]="{ 'lg:col-span-6 lg:w-2/3 lg:ml-auto': i === 3 }">
-      <div
-        class="absolute inset-0 bg-lines3 bg-contain bg-no-repeat bg-[0%_11%] opacity-100 group-hover:opacity-0 translate-x-0 group-hover:translate-x-10 transition-all duration-700 ease-in-out">
-      </div>
-      <div
-        class="absolute inset-0 bg-lines4 bg-contain bg-no-repeat bg-[0%_11%] opacity-0 group-hover:opacity-100 -translate-x-16 group-hover:translate-x-0 transition-all duration-700 ease-in-out">
-      </div>
-      <div
-        class="h-full w-full group-hover:h-[79%] p-6 3xl:p-8 pb-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg group-hover:bg-dark-gray1 transition-all duration-700 ease-in-out">
-        <div class="h-[79%] relative mb-6 3xl:mb-8">
-          <img
-            class="object-cover w-full h-full relative z-10 rounded-md 3xl:rounded-lg transition-all duration-700 ease-in-out"
-            [src]="product.imgUrl" alt="img" />
-        </div>
-        <h4
-          class="text-left text-base 3xl:text-xl font-bold text-dark-gray2 group-hover:text-white transition-all duration-700 ease-in-out">
-          {{ product.name }}
-        </h4>
-      </div>
-      <div
-        class="w-full flex items-center justify-between text-dark-gray1 text-sm 3xl:text-base bg-teal2 p-3 3xl:p-4 rounded-md 3xl:rounded-lg group-hover:translate-y-0 translate-y-1 transition-all duration-700 ease-in-out">
-        <span class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold">Read more</span>
-        <img class="object-cover w-4 3xl:w-6" src="assets/featured-products/icon.png" alt="img" />
       </div>
     </a>
   </div>
 </section>
 
-<section class="py-8 lg:py-12 3xl:py-16 px-[9.3%] sm:px-[16%] lg:px-[30%]">
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 my-8 lg:my-12 3xl:my-16">
   <h2
-    class="text-dark-gray2 text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[40px] 3xl:leading-[57.6px] text-center mb-6 3xl:mb-8">
+    class="text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[40px] 3xl:leading-[57.6px] text-dark-gray2 mb-3 3xl:mb-4">
     Miscellaneous
   </h2>
-  <div class="w-full h-full grid grid-cols-1 sm:grid-cols-2 gap-6 3xl:gap-8">
-    <div *ngFor="let product of miscellaneous; let j = index" id="{{ product.title }}">
-      <h3 class="text-dark-gray2 text-3xl 3xl:text-4xl 3xl:leading-[48px] text-center mb-6 3xl:mb-8">
-        {{ product.title }}
+  <div class="w-full h-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 3xl:gap-8">
+    <div *ngFor="let products of miscellaneous; let j = index" id="{{ products.title }}">
+      <h3 class="text-dark-gray2 text-3xl 3xl:text-4xl 3xl:leading-[48px]  mb-8 lg:mb-12 3xl:mb-16">
+        {{ products.title }}
       </h3>
-      <a [routerLink]="[product.link]" [fragment]="product.fragment"
-        class="h-[70%] cursor-pointer relative flex flex-col items-center gap-3 3xl:gap-4 overflow-y-scroll no-scrollbar group">
-        <div
-          class="absolute inset-0 bg-lines3 bg-contain bg-no-repeat bg-[0%_11%] opacity-100 group-hover:opacity-0 translate-x-0 group-hover:translate-x-10 transition-all duration-700 ease-in-out">
-        </div>
-        <div
-          class="absolute inset-0 bg-lines4 bg-contain bg-no-repeat bg-[0%_11%] opacity-0 group-hover:opacity-100 -translate-x-16 group-hover:translate-x-0 transition-all duration-700 ease-in-out">
-        </div>
-        <div
-          class="h-full w-full group-hover:h-[79%] p-6 3xl:p-8 pb-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg group-hover:bg-dark-gray1 transition-all duration-700 ease-in-out">
-          <div class="h-[79%] relative mb-6 3xl:mb-8">
-            <img
-              class="object-cover w-full h-full relative z-10 rounded-md 3xl:rounded-lg transition-all duration-700 ease-in-out"
-              [src]="product.imgUrl" alt="img" />
+      <a [routerLink]="[products.link]" class="cursor-pointer">
+        <div class="group relative w-full flex items-center gap-4 overflow-x-scroll no-scrollbar">
+          <div class="relative flex items-center w-full bg-card-gray border border-light-gray1 transition-all duration-700 ease-in-out group-hover:w-[88%] rounded-md 3xl:rounded-lg h-full">
+            <div class="flex-shrink-0 p-[0.75px]">
+              <img class="w-[104px] 3xl:w-32 object-cover rounded-md 3xl:rounded-lg" [src]="products.imgUrl" alt="img" />
+            </div>
+            <div class="px-6 3xl:px-8 flex-shrink-0"> 
+              <h3 class="text-dark-gray2 text-base 3xl:text-xl w-4/5">{{ products.name }}</h3>
+            </div>
           </div>
-          <h4
-            class="text-left text-base 3xl:text-xl font-bold text-dark-gray2 group-hover:text-white transition-all duration-700 ease-in-out">
-            {{ product.name }}
-          </h4>
-        </div>
-        <div
-          class="w-full flex items-center justify-between text-dark-gray1 text-sm 3xl:text-base bg-teal2 p-3 3xl:p-4 rounded-md 3xl:rounded-lg group-hover:translate-y-0 translate-y-1 transition-all duration-700 ease-in-out">
-          <span class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold">Read more</span>
-          <img class="object-cover w-4 3xl:w-6" src="assets/featured-products/icon.png" alt="img" />
+          <div class="absolute right-0 top-0 translate-x-32 group-hover:translate-x-0 h-full grid place-items-center bg-teal2 rounded-md 3xl:rounded-lg px-3 transition-all duration-700 ease-in-out">
+            <img class="object-cover w-4 3xl:w-6" src="assets/shared/r-arrow.svg" alt="img" />
+          </div>
         </div>
       </a>
     </div>

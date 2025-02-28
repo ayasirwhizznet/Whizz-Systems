@@ -42,7 +42,7 @@ export class HeaderComponent implements OnInit {
     { label: 'About', link: '/about' },
     { label: 'Services', dropdown: 'service' },
     { label: 'Featured Products', link: '/featured-products' },
-    { label: 'Blogs', link: '/news-&-insights' },
+    { label: 'Blog', link: '/news-&-insights' },
   ];
 
   serviceSections = [
