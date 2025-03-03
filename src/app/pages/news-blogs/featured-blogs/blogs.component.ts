@@ -32,7 +32,7 @@ export class BlogsComponent {
       tags: ['Electronics Cooling', 'Thermal Management'],
       title:
         'Heatsinks Uncoverd: Best Practices For Optimized Thermal Management',
-      link: '/404',
+      link: '/news-&-insights/whitepaper-heatsink',
     },
     {
       imgUrl: 'assets/news/featured-blog3.png',

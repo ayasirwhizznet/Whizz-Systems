@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NewsComponent } from '@components/news/news.component';
 import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
 import { AnimatedButton } from '@components/animated-button/animated-button.component';
@@ -12,7 +11,6 @@ import { NewsCardComponent } from "../../../../shared/components/news-card/news-
   imports: [
     CommonModule,
     AnimatedButton,
-    NewsComponent,
     BlogTagComponent,
     ButtonComponent,
     NewsCardComponent
