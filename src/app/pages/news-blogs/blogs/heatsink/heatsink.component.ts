@@ -133,16 +133,19 @@ Where, Tj is the maximum allowable junction temperature (°C), Ta is the maximum
     {
       imageUrl: 'assets/news/blog.png',
       date: 'July 9, 2024',
+      tags: ['Heatsink', 'Thermal Management'],
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
     {
       imageUrl: 'assets/news/blog.png',
       date: 'July 9, 2024',
+      tags: ['Heatsink', 'Thermal Management'],
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     },
     {
       imageUrl: 'assets/news/blog.png',
       date: 'July 9, 2024',
+      tags: ['Heatsink', 'Thermal Management'],
       title: 'Interesting Blog Title that Can Fit On Two Lines',
     }
   ];
