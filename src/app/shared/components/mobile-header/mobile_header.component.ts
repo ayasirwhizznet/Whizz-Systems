@@ -51,8 +51,16 @@ export class MobileHeaderComponent {
           link: '/services/engineering-&-design/pcb-layout',
         },
         {
+          label: '3D Modeling/Mechanical Engineering',
+          link: '/services/engineering-&-design/3D-modeling',
+        },
+        {
           label: 'Signal Integrity Simulations',
           link: '/services/engineering-&-design/signal-integrity-simulations',
+        },
+        {
+          label: 'Power Delivery Network Simulations',
+          link: '/services/engineering-&-design/power-delivery',
         },
         {
           label: 'Thermal Management/Thermal Simulation',
