@@ -16,4 +16,5 @@ export class ServicesBenefitsComponent {
   @Input() navigate: string = '';
   @Input() columns!: number;
   @Input() benefitsData: any[] = [];
+  @Input() cutCard: boolean = false;
 }

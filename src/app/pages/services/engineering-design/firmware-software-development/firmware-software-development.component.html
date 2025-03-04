@@ -1,0 +1,51 @@
+<!-- Hero -->
+<app-services-hero serviceCategory="Engineering & Design"
+    serviceTitle="Robust Firmware & Software Solutions for Modern Applications"
+    serviceDesc="Bridging Electronics & Software for Complete System Solutions"
+    imgUrl="assets/services/engg&design/firmware-software/hero.png"
+    navigate="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
+    btnText="Optimize Your Design with Whizz"></app-services-hero>
+
+<!-- Introduction -->
+<app-services-intro heading="Comprehensive Firmware & Software Development"
+    title="Powering Embedded Systems and Cloud-Connected Applications"
+    desc1="At WHIZZ SYSTEMS, we go beyond hardware design and manufacturing by providing firmware and software solutions that seamlessly integrate with the electronics we develop. Our team ensures embedded systems operate efficiently, enabling communication between hardware and software layers.
+From bare-metal firmware development to cloud-connected software applications, we deliver complete solutions for our clients across various industries."
+    imgUrl="assets/services/engg&design/firmware-software/introduction.png"></app-services-intro>
+
+<!-- Core Services Overview-->
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <h4
+        class="text-teal1 text-sm 3xl:text-base font-semibold 3xl:font-bold lg:leading-[15px] 3xl:leading-[19.2px] mb-3 3xl:mb-4">
+        Our Key Capabilities</h4>
+    <h3 class="mb-3 3xl:mb-4 text-dark-gray2 text-xl 3xl:text-2xl font-medium lg:leading-[24px] 3xl:leading-[28.8px]">
+        Tailored Solutions for Every Development Challenge</h3>
+    <p class="text-dark-gray2 font-light text-sm 3xl:text-base lg:leading-[24px] 3xl:leading-[28px] mb-6 3xl:mb-8">
+        Optimized for Performance, Connectivity, and Reliability</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 3xl:gap-x-8 gap-y-8 lg:gap-y-12 3xl:gap-y-16 lg:grid-cols-3">
+        <div *ngFor="let service of coreServices"
+            class="p-6 3xl:p-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
+            <img class="rounded-md 3xl:rounded-lg" [src]="service.imgUrl" alt="img">
+            <h3 class="text-dark-gray2 font-bold mt-6 3xl:mt-8 mb-4 3xl:mb-5 text-sm 3xl:text-base">
+                {{service.name}}</h3>
+            <ul class="list-disc pl-5">
+                <li *ngFor="let des of service.desc" class="text-dark-gray2 font-light text-sm 3xl:text-base"
+                    [innerHTML]="des">
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Benefits -->
+<app-services-benefits heading=" Why Choose Whizz Systems?" [cutCard] = 'true'
+    title="Your One-Stop Partner for Hardware, Firmware & Software" [benefitsData]="benefits"
+    [columns]="2"></app-services-benefits>
+
+<!-- Contact Expert -->
+<app-services-contact-experts slogan="From Hardware to Firmware & Cloud – We’ve Got You Covered"
+    desc="Let’s Build Your Next-Gen Embedded System"
+    btnText="Contact our Experts"
+    navigate="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"></app-services-contact-experts>

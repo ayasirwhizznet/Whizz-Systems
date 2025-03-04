@@ -1,1 +1,151 @@
-<p>invensify works!</p>
+<!-- Hero Section -->
+<section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
+    <div class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl">
+        <div
+            class="w-full lg:w-[47%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16">
+            <p class="text-xs 3xl:text-base leading-[15px] 3xl:leading-[19.2px] mb-2 3xl:mb-[10px]">May 29, 2024</p>
+            <div class="flex items-center gap-2 flex-wrap mb-4 3xl:mb-6">
+                <div *ngFor="let tag of tags">
+                    <app-blog-tag text="{{tag}}" textColor="text-light-gray1" borderColor="border-light-gray1"
+                    borderRadius="rounded-[3px] 3xl:rounded-[4px]"></app-blog-tag>
+                </div>
+            </div>
+            <h1
+                class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-full sm:w-[53%] lg:w-[94%] 2xl:w-[95%]">Lorem Ipsum</h1>
+            <app-button heading="Lorem Ipsum" icon="assets/shared/r-arrow.svg" [size]="'medium'"
+                [routerLink]="'/404'"></app-button>
+            <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
+                <a *ngFor="let link of links" routerLink="item.link" class="cursor-pointer">
+                    <img [src]="link.img" alt="img">
+                </a>
+            </div>
+        </div>
+        <div class="hidden lg:block lg:w-[53%]">
+            <img class="object-cover" src="assets/news/blogs/invensify/hero.png" alt="img">
+        </div>
+    </div>
+</section>
+
+<!-- Marketing -->
+<section>
+    <div class="py-8 lg:py-12 3xl:py-16 px-[4%] lg:px-[11%] 2xl:px-[17%] 3xl:px-[19%]">
+        <p class="text-dark-gray2 sm:text-lg lg:text-xl 3xl:text-2xl font-extralight lg:leading-[32px] 3xl:leading-[38.4px] text-center my-6 3xl:my-8">Lorem Ipsum</p>
+    </div>
+    <img src="assets/shared/divider-bottom.png" alt="img">
+</section>
+
+
+<section class="px-[4%] sm:px-[9.3%]">
+    <div class="flex flex-col lg:flex-row gap-10 lg:justify-between">
+        <!-- left div -->
+        <div class="w-full lg:w-1/2">
+            <!-- Introduction -->
+            <section class="py-6 3xl:py-8">
+                <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Introduction</h2>
+                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Innovating Medical Device Development in a Competitive Market</h3>
+                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">In the fast-evolving field of medical devices, partnering with a trusted development expert is critical. Whizz Systems has built a reputation for delivering end-to-end product development services—ranging from hardware design and PCB layout to thermal management and mechanical design—that drive innovative, high-quality solutions. This case study spotlights our collaboration with Invensify Inc. in bringing their groundbreaking Insuridge 12L, a portable refrigeration system designed for the safe transportation of sensitive medical drugs, from concept to reality.</p>
+            </section>
+
+            <!-- Client Background -->
+            <section class="py-6 3xl:py-8">
+                <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Client Background</h2>
+                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">About Invensify Inc.</h3>
+                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">Invensify Inc., a cutting-edge startup based in Santa Clara, California, is dedicated to revolutionizing the transportation of temperature-sensitive medical products. By replacing traditional refrigeration systems with energy-efficient, environmentally friendly solutions, Invensify serves biopharmaceutical, healthcare, and logistics companies—ensuring that critical medical supplies reach their destination safely and reliably. Their innovative products have the potential to extend into the EV and AI hardware markets, further demonstrating their versatile approach to technology.</p>
+                <figure class="py-6 3xl:py-8">
+                    <img class="object-cover" src="assets/news/blogs/invensify/fig.1.png" alt="img">
+                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">Figure 1</figcaption>
+                </figure>
+            </section>
+
+            <!-- Product Overview -->
+            <section class="py-6 3xl:py-8">
+                <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Product Overview</h2>
+                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Introducing Insuridge 12L: A Next-Generation Medical Device</h3>
+                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">Invensify’s Insuridge 12L is a semiconductor-controlled portable refrigeration system designed to maintain a strict temperature range (2°C to 8°C) for sensitive medical drugs over extended periods (up to 100 hours).</p>
+                <ul *ngFor="let overview of overviews">
+                    <hr class="border border-light-gray1/60 my-3 3xl:my-4">
+                    <li class="text-dark-gray2 text-xs 3xl:text-sm lg:leading-[20px] 3xl:leading-[22.4px]" [innerHTML]="overview"></li>
+                </ul>
+                <hr class="border border-light-gray1/60 mt-3 3xl:mt-4">
+                <figure class="py-6 3xl:py-8">
+                    <img class="object-cover" src="assets/news/blogs/invensify/fig.2.png" alt="img">
+                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">Figure 2</figcaption>
+                </figure>
+                <figure class="py-6 3xl:py-8">
+                    <img class="object-cover" src="assets/news/blogs/invensify/fig.3.png" alt="img">
+                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">Figure 3</figcaption>
+                </figure>
+            </section>
+
+            <!-- How Whizz Systems Delivered -->
+            <section class="py-6 3xl:py-8">
+                <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">How Whizz Systems Delivered</h2>
+                <h3 class="text-dark-gray2 text-lg 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Our Collaborative Approach to Medical Device Innovation</h3>
+                <div *ngFor="let delivery of deliveries; let i = index" [ngClass]="i === 0 ? 'pb-6 3xl:pb-8' : 'py-6 3xl:py-8'">
+                    <h4 class="text-dark-gray2 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">{{delivery.title}}</h4>
+                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">{{delivery.desc}}</p>
+                </div>
+                <figure class="py-6 3xl:py-8">
+                    <img class="object-cover" src="assets/news/blogs/invensify/fig.1.1.png" alt="img">
+                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">Fig. 1.1</figcaption>
+                </figure>
+            </section>
+        </div>
+        <!-- right div -->
+        <div class="w-full lg:w-1/2">
+            <div
+                class="w-11/12 sm:w-1/2 lg:w-3/4 2xl:w-[70%] justify-self-center lg:sticky lg:top-28 lg:h-[calc(100vh+1%)] lg:mt-40">
+                <div
+                    class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1 mb-6 3xl:mb-8">
+                    <h2
+                        class="text-3xl lg:text-[32px] 2xl:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold text-dark-gray2">
+                        Subscribe to our newsletter!</h2>
+                    <p
+                        class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light my-6 3xl:y-8 text-dark-gray2">
+                        Get updates on the latest news & insights</p>
+                    <div class="flex items-center gap-6 3xl:gap-8">
+                        <input type="email" placeholder="Enter Your Email"
+                            class="w-full text-sm 3xl:text-base px-4 3xl:px-5 py-[6px] sm:py-[10px] 3xl:py-[14px] block rounded-md 3xl:rounded-lg border border-dark-gray1 focus:outline-none focus:border-teal1  bg-transparent placeholder-light-gray1 focus:placeholder-transparent">
+                        <app-animated-button routerLink="/404" heading="Subscribe" size="medium" [icon]="false"
+                            bg="white"></app-animated-button>
+                    </div>
+                </div>
+                <div
+                    class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1 bg-subscribe bg-cover">
+                    <h2
+                        class="text-white text-3xl lg:text-[32px] 2xl:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
+                        Learn more about Whizz Systems</h2>
+                    <app-animated-button routerLink="/services" heading="All services" size="medium" [icon]="true"
+                        bg="white"></app-animated-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="px-0 sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <div class="relative p-6 sm:p-10 lg:p-[52px] 3xl:p-16 sm:rounded-md 3xl:rounded-lg">
+        <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg" loop muted autoplay
+            oncanplay="this.play()" onloadedmetadata="this.muted = true">
+            <source src="assets/hero/waves2.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-video-overlay opacity-80 z-[5] sm:rounded-md 3xl:rounded-lg"></div>
+        <div class="relative z-10 ] text-white">
+            <h2
+                class="text-3xl sm:text-4xl lg:text-5xl 2xl:text-[52px] 3xl:text-[64px] 2xl:leading-[60px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4 sm:w-[93%] lg:w-[79%] 2xl:w-[73%] 3xl:w-[68%]">
+                Ready to Accelerate Your Medical Device Development?</h2>
+            <p class="sm:text-xl lg:text-2xl 2xl:text-[26px] 3xl:text-[32px] 2xl:leading-[36px] 3xl:leading-[48px] mb-8 lg:mb-10 3xl:mb-12 sm:w-[95%] lg:w-[73%] 2xl:w-[65%] 3xl:w-[63%]">Partner with Whizz Systems for complete product development support. Our expertise in design, engineering, supply chain management, and manufacturing ensures that your medical device not only meets but exceeds industry standards—delivering faster time-to-market and unmatched reliability.</p>
+            <app-button heading="Contact Our Experts Today" routerLink="/404" size="large" icon="assets/shared/webform.svg"></app-button>
+        </div>
+    </div>
+</section>
+
+<!-- Latest News & Insights -->
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <h2 class="text-3xl sm:text-4xl 3xl:text-5xl lg-leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold text-dark-gray2 mb-6 3xl:mb-8">Latest News & Insights</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 3xl:gap-16">
+        <div *ngFor=" let card of cards">
+          <app-news-card [imageUrl]="card.imageUrl" [tags]="card.tags" [date]="card.date" [title]=" card.title"></app-news-card>
+        </div>
+    </div>
+</section>

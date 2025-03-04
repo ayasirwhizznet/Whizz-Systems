@@ -46,7 +46,7 @@ export class BlogsComponent {
       date: 'July 9, 2024',
       tags: ['Heatsink', 'Thermal Management'],
       title: 'Interesting Blog Title that Can Fit On Two Lines',
-      link: '/404'
+      link: '/news-&-insights/whitepaper-invensify'
     }
   ];
 }

@@ -58,6 +58,14 @@ export const routes: Routes = [
           ),
         title: 'Thermal Management/Thermal Simulation',
       },
+      {
+        path: 'firmware-software-development',
+        loadComponent: () =>
+          import('./firmware-software-development/firmware-software-development.component').then(
+            (m) => m.FirmwareSoftwareDevelopmentComponent
+          ),
+        title: 'Firmware & Software Development',
+      },
     ],
   },
 ];
