@@ -87,6 +87,10 @@ serviceCategories: any = [
         },
         { name: 'FPGA Design', link: '/services/engineering-&-design/fpga' },
         {
+          name: 'Firmware & Software Development',
+          link: '/services/engineering-&-design/firmware-software-development',
+        },
+        {
           name: 'PCB Layout',
           link: '/services/engineering-&-design/pcb-layout',
         },
