@@ -46,147 +46,155 @@ export class HeaderComponent implements OnInit {
   ];
 
   serviceSections = [
-    {
-      title: 'Engineering & Design',
-      items: [
-        {
-          label: 'System Design/Schematics',
-          link: '/services/engineering-&-design/system-design-&-schematics',
-        },
-        { label: 'FPGA Design', link: '/services/engineering-&-design/fpga' },
-        { label: 'Firmware & Software Development', link: '/services/engineering-&-design/firmware-software-development' },
-        {
-          label: 'PCB Layout',
-          link: '/services/engineering-&-design/pcb-layout',
-        },
-        {
-          label: '3D Modeling/Mechanical Engineering',
-          link: '/services/engineering-&-design/3D-modeling',
-        },
-        {
-          label: 'Signal Integrity Simulations',
-          link: '/services/engineering-&-design/signal-integrity-simulations',
-        },
-        {
-          label: 'Power Delivery Network Simulations',
-          link: '/services/engineering-&-design/power-delivery',
-        },
-        {
-          label: 'Thermal Management/Thermal Simulation',
-          link: '/services/engineering-&-design/thermal-management',
-        },
-      ],
-    },
-    {
-      title: 'NPI',
-      link: '/services/npi',
-      items: [
-        {
-          label: 'System Level Architecture',
-          link: '/services/npi',
-          fragment: 'SystemLevelArchitecture',
-        },
-        {
-          label: 'Schematic Design',
-          link: '/services/npi',
-          fragment: 'SchematicDesign',
-        },
-        {
-          label: 'Computer Aided Manufacturing',
-          link: '/services/npi',
-          fragment: 'ComputerAided<br>Manufacturing',
-        },
-        {
-          label: 'Prototyping',
-          link: '/services/npi',
-          fragment: 'Prototyping',
-        },
-        { label: 'Testing', link: '/services/npi', fragment: 'Testing' },
-        {
-          label: 'Compliance and Certification',
-          link: '/services/npi',
-          fragment: 'Compliance',
-        },
-        
-      ],
-    },
-    {
-      title: 'Advanced Manufacturing',
-      link: '/services/advanced-manufacturing',
-      items: [
-        {
-          label: 'Manufacturing Simulations',
-          link: '/services/advanced-manufacturing',
-        },
-        {
-          label: 'Electronic Manufacturing Assembly',
-          link: '/services/advanced-manufacturing',
-        },
-        {
-          label: 'Mechanical Assembly',
-          link: '/services/advanced-manufacturing',
-        },
-        {
-          label: 'System Build & Packaging Design',
-          link: '/services/advanced-manufacturing',
-        },
-        {
-          label: 'Local & Offshore Capabilities',
-          link: '/services/advanced-manufacturing',
-        },
-      ],
-    },
-    {
-      title: 'Lab Testing Solutions',
-      link: '/services/lab-testing-solutions',
-      items: [
-        {
-          label: 'Board Bring Up',
-          link: '/services/lab-testing-solutions',
-          fragment: 'BoardBringUp',
-        },
-        {
-          label: 'Validation',
-          link: '/services/lab-testing-solutions',
-          fragment: 'Validation',
-        },
-        {
-          label: 'Characterization',
-          link: '/services/lab-testing-solutions',
-          fragment: 'Characterization',
-        },
-      ],
-    },
-    {
-      title: 'Supply Chain Management',
-      link: '/services/supply-chain-management',
-      items: [
-        {
-          label: 'Component Engineering',
-          link: '/services/supply-chain-management',
-          fragment: 'ComponentEngineering',
-        },
-        {
-          label: 'Compliance Engineering',
-          link: '/services/supply-chain-management',
-          fragment: 'ComplianceEngineering',
-        },
-        {
-          label: 'Procurement Engineering',
-          link: '/services/supply-chain-management',
-          fragment: 'ProcurementEngineering',
-        },
-      ],
-    },
-    {
-      title: 'Sustainable Engineering & Obsolescence Management',
-      items: [
-        { label: 'BOM Management', link: '/404' },
-        { label: 'EOL Management', link: '/404' },
-        { label: 'AVL Management', link: '/404' },
-        { label: 'Second Sourcing/Risk Buying', link: '/404' },
-      ],
-    },
+    [
+      {
+        title: 'Engineering & Design',
+        items: [
+          {
+            label: 'System Design/Schematics',
+            link: '/services/engineering-&-design/system-design-&-schematics',
+          },
+          { label: 'FPGA Design', link: '/services/engineering-&-design/fpga' },
+          {
+            label: 'Firmware & Software Development',
+            link: '/services/engineering-&-design/firmware-software-development',
+          },
+          {
+            label: 'PCB Layout',
+            link: '/services/engineering-&-design/pcb-layout',
+          },
+          {
+            label: '3D Modeling/Mechanical Engineering',
+            link: '/services/engineering-&-design/3D-modeling',
+          },
+          {
+            label: 'Signal Integrity Simulations',
+            link: '/services/engineering-&-design/signal-integrity-simulations',
+          },
+          {
+            label: 'Power Delivery Network Simulations',
+            link: '/services/engineering-&-design/power-delivery',
+          },
+          {
+            label: 'Thermal Management/Thermal Simulation',
+            link: '/services/engineering-&-design/thermal-management',
+          },
+        ],
+      },
+      {
+        title: 'Lab Testing Solutions',
+        link: '/services/lab-testing-solutions',
+        items: [
+          {
+            label: 'Board Bring Up',
+            link: '/services/lab-testing-solutions',
+            fragment: 'BoardBringUp',
+          },
+          {
+            label: 'Validation',
+            link: '/services/lab-testing-solutions',
+            fragment: 'Validation',
+          },
+          {
+            label: 'Characterization',
+            link: '/services/lab-testing-solutions',
+            fragment: 'Characterization',
+          },
+        ],
+      },
+    ],
+    [
+      {
+        title: 'NPI',
+        link: '/services/npi',
+        items: [
+          {
+            label: 'System Level Architecture',
+            link: '/services/npi',
+            fragment: 'SystemLevelArchitecture',
+          },
+          {
+            label: 'Schematic Design',
+            link: '/services/npi',
+            fragment: 'SchematicDesign',
+          },
+          {
+            label: 'Computer Aided Manufacturing',
+            link: '/services/npi',
+            fragment: 'ComputerAided<br>Manufacturing',
+          },
+          {
+            label: 'Prototyping',
+            link: '/services/npi',
+            fragment: 'Prototyping',
+          },
+          { label: 'Testing', link: '/services/npi', fragment: 'Testing' },
+          {
+            label: 'Compliance and Certification',
+            link: '/services/npi',
+            fragment: 'Compliance',
+          },
+        ],
+      },
+      {
+        title: 'Supply Chain Management',
+        link: '/services/supply-chain-management',
+        items: [
+          {
+            label: 'Component Engineering',
+            link: '/services/supply-chain-management',
+            fragment: 'ComponentEngineering',
+          },
+          {
+            label: 'Compliance Engineering',
+            link: '/services/supply-chain-management',
+            fragment: 'ComplianceEngineering',
+          },
+          {
+            label: 'Procurement Engineering',
+            link: '/services/supply-chain-management',
+            fragment: 'ProcurementEngineering',
+          },
+        ],
+      },
+    ],
+    [
+      {
+        title: 'Advanced Manufacturing',
+        link: '/services/advanced-manufacturing',
+        items: [
+          {
+            label: 'Manufacturing Simulations',
+            link: '/services/advanced-manufacturing',
+          },
+          {
+            label: 'Electronic Manufacturing Assembly',
+            link: '/services/advanced-manufacturing',
+          },
+          {
+            label: 'Mechanical Assembly',
+            link: '/services/advanced-manufacturing',
+          },
+          {
+            label: 'System Build & Packaging Design',
+            link: '/services/advanced-manufacturing',
+          },
+          {
+            label: 'Local & Offshore Capabilities',
+            link: '/services/advanced-manufacturing',
+          },
+        ],
+      },
+      {
+        title: 'Sustainable Engineering & Obsolescence Management',
+        items: [
+          { label: 'BOM Management', link: '/404' },
+          { label: 'EOL Management', link: '/404' },
+          { label: 'AVL Management', link: '/404' },
+          { label: 'Second Sourcing/Risk Buying', link: '/404' },
+        ],
+      },
+    ],
   ];
 
   featuredProductItems = [

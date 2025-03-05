@@ -38,22 +38,22 @@ export class SignalIntegrityComponent {
 
   coreServices: any = [
     {
-      imgUrl: 'assets/services/engg&design/signal-integrity/simulations.png',
+      imgUrl: 'assets/services/engg&design/signal-integrity/ddr.png',
       name: 'DDR Parallel Bus Analysis',
       desc: 'Evaluates timing, Simultaneous Switching Noise (SSN), voltage margins, and signal behavior for stable memory communication.',
     },
     {
-      imgUrl: 'assets/services/engg&design/signal-integrity/simulations.png',
+      imgUrl: 'assets/services/engg&design/signal-integrity/s-parameter.png',
       name: 'S-Parameter Simulations',
       desc: 'Analyze high-speed interfaces for insertion loss, return loss, and TDR, identifying signal path discontinuities and crosstalk.',
     },
     {
-      imgUrl: 'assets/services/engg&design/signal-integrity/simulations.png',
+      imgUrl: 'assets/services/engg&design/signal-integrity/length.png',
       name: 'Length and Delay Matching',
       desc: 'Ensures proper matching to prevent timing mismatches in high-speed signals.',
     },
     {
-      imgUrl: 'assets/services/engg&design/signal-integrity/simulations.png',
+      imgUrl: 'assets/services/engg&design/signal-integrity/system.png',
       name: 'System-Level Simulations',
       desc: 'Addresses bottlenecks across the design for seamless operation.',
     },

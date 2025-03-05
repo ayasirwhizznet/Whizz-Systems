@@ -22,7 +22,7 @@ import { ServicesBenefitsComponent } from '@components/services-benefits/service
 export class AdvancedManufacturingComponent {
   coreServices: any[] = [
     {
-      imgUrl: 'assets/services/advanced-manufacturing/core-services.png',
+      imgUrl: 'assets/services/advanced-manufacturing/core-1.png',
       name: 'Manufacturing Simulations',
       description: [
         'Advanced process optimization to enhance manufacturability and reliability.',
@@ -32,7 +32,7 @@ export class AdvancedManufacturingComponent {
       ],
     },
     {
-      imgUrl: 'assets/services/advanced-manufacturing/core-services.png',
+      imgUrl: 'assets/services/advanced-manufacturing/core-2.png',
       name: 'Electronic Manufacturing Assembly',
       description: [
         'High-precision PCB assembly for complex electronic systems.',
@@ -41,7 +41,7 @@ export class AdvancedManufacturingComponent {
       ],
     },
     {
-      imgUrl: 'assets/services/advanced-manufacturing/core-services.png',
+      imgUrl: 'assets/services/advanced-manufacturing/core-3.png',
       name: 'Mechanical Assembly',
       description: [
         'Full electromechanical integration with <b>custom enclosures and robust housing solutions</b>.',
@@ -49,7 +49,7 @@ export class AdvancedManufacturingComponent {
       ],
     },
     {
-      imgUrl: 'assets/services/advanced-manufacturing/core-services.png',
+      imgUrl: 'assets/services/advanced-manufacturing/core-4.png',
       name: 'System Build & Packaging Design',
       description: [
         '<b>Turnkey box builds</b> and final system integration.',
