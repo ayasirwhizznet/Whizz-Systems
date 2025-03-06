@@ -23,6 +23,7 @@ export class ServicesComponent {
       imgUrl: 'assets/home/services/engg.&design.png',
       name: 'Engineering & design',
       desc: 'Innovating Designs for the Next Generation of Electronics.',
+      link: '/services',
     },
     {
       imgUrl: 'assets/home/services/npi.png',
@@ -52,7 +53,7 @@ export class ServicesComponent {
       imgUrl: 'assets/home/services/sustainable.jfif',
       name: 'Sustaining Engineering & Obsolescence Management',
       desc: 'Keeping your product lines future-proof with proactive support and obsolescence solutions.',
-      link: '/404',
+      link: '/services/sustainable_engineering',
     },
   ];
 
