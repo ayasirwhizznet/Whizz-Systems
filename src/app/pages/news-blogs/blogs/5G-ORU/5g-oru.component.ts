@@ -45,19 +45,25 @@ export class ORUComponent {
 
   cards: any[] = [
     {
-      imageUrl: 'assets/news/blog.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
+      imageUrl: 'assets/news/blogs/blog-bottom/heatsink.png',
+      link: '/news-&-insights/whitepaper-heatsink',
+      tags: ['Heatsink','Thermal Management'],
+      date: 'July 09, 2024',
+      title: 'Heatsinks: Considerations, guidance, and best practices.',
     },
     {
-      imageUrl: 'assets/news/blog.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
+      imageUrl: 'assets/news/blogs/blog-bottom/invensify.png',
+      link: '/news-&-insights/whitepaper-invensify',
+      tags: ['Case Study','Medical Devices'],
+      date: 'December 12, 2024',
+      title: 'Developing Smart Medical Devices: The Invensify Case Study',
     },
     {
-      imageUrl: 'assets/news/blog.png',
-      date: 'July 9, 2024',
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
+      imageUrl: 'assets/news/blogs/blog-bottom/pcle6.png',
+      link: '/news-&-insights/whitepaper-pcle6',
+      tags: ['Heatsink','Thermal Management'],
+      date: 'May 29, 2024',
+      title: 'PCIe-6: Everything You Need To Know',
     }
   ];
 }

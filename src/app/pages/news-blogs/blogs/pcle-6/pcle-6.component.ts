@@ -20,27 +20,30 @@ export class Pcle6Component {
     { img: 'assets/news/youtube.svg', imgUrl: '' },
   ];
 
-  tags = ['tag a','tag a','tag a'];
+  tags = ['Whitepapper','High-Speed Connectivity','Mechanical Design'];
 
 
   cards: any[] = [
     {
-      imageUrl: 'assets/news/blogs/pcle6/blog1.png',
-      date: 'Month, DD, YYYY',
-      tags: ['Case Study', 'Hardware Design', 'Telecom Engineering'],
-      title: 'Building the Future of 5G Connectivity with Open Radio...',
+      imageUrl: 'assets/news/blogs/blog-bottom/5g.png',
+      link: '/news-&-insights/whitepaper-5g-oru',
+      tags: ['Case Study','Hardware Design','Telecom Engineering'],
+      date: 'September  05, 2020',
+      title: 'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
     },
     {
-      imageUrl: 'assets/news/blogs/pcle6/blog2.png',
-      date: 'Month, DD, YYYY',
-      tags: ['Heatsink', 'Thermal Management'],
+      imageUrl: 'assets/news/blogs/blog-bottom/heatsink.png',
+      link: '/news-&-insights/whitepaper-heatsink',
+      tags: ['Heatsink','Thermal Management'],
+      date: 'July 09, 2024',
       title: 'Heatsinks: Considerations, guidance, and best practices.',
     },
     {
-      imageUrl: 'assets/news/blogs/pcle6/blog3.png',
-      date: 'Month, DD, YYYY',
-      tags: ['Heatsink', 'Thermal Management'],
-      title: 'Lorem Ipsum',
-    }
+      imageUrl: 'assets/news/blogs/blog-bottom/invensify.png',
+      link: '/news-&-insights/whitepaper-invensify',
+      tags: ['Case Study','Medical Devices'],
+      date: 'December 12, 2024',
+      title: 'Developing Smart Medical Devices: The Invensify Case Study',
+    },
   ];
 }

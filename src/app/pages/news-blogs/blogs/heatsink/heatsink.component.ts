@@ -19,7 +19,7 @@ export class HeatsinkComponent {
     { img: 'assets/news/youtube.svg', imgUrl: '' },
   ];
 
-  tags = ['Tag a','Tag b','Tag c'];
+  tags = ['Whitepaper','Thermal Management','Cooling Solutions'];
 
   factors = ['Surface area', 'Material choice', 'Fin geometry', 'Base dimensions', 'Innovative elements like varying sizes, scales, and protrusions'];
 
@@ -131,22 +131,27 @@ Where, Tj is the maximum allowable junction temperature (°C), Ta is the maximum
 
   cards: any[] = [
     {
-      imageUrl: 'assets/news/blog.png',
-      date: 'July 9, 2024',
-      tags: ['Heatsink', 'Thermal Management'],
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
+      imageUrl: 'assets/news/blogs/blog-bottom/5g.png',
+      link: '/news-&-insights/whitepaper-5g-oru',
+      tags: ['Case Study','Hardware Design','Telecom Engineering'],
+      date: 'September  05, 2020',
+      title: 'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
     },
     {
-      imageUrl: 'assets/news/blog.png',
-      date: 'July 9, 2024',
-      tags: ['Heatsink', 'Thermal Management'],
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
+      imageUrl: 'assets/news/blogs/blog-bottom/invensify.png',
+      link: '/news-&-insights/whitepaper-invensify',
+      tags: ['Case Study','Medical Devices'],
+      date: 'December 12, 2024',
+      title: 'Developing Smart Medical Devices: The Invensify Case Study',
     },
     {
-      imageUrl: 'assets/news/blog.png',
-      date: 'July 9, 2024',
-      tags: ['Heatsink', 'Thermal Management'],
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
+      imageUrl: 'assets/news/blogs/blog-bottom/pcle6.png',
+      link: '/news-&-insights/whitepaper-pcle6',
+      tags: ['Heatsink','Thermal Management'],
+      date: 'May 29, 2024',
+      title: 'PCIe-6: Everything You Need To Know',
     }
   ];
+
+
 }

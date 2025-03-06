@@ -41,10 +41,10 @@ export class NewsComponent {
       link: '/news-&-insights/whitepaper-heatsink'
     },
     {
-      imgUrl: 'assets/news/blog-3.png',
-      date: 'July 9, 2024',
-      tags: ['Heatsink','Thermal Management'],
-      title: 'Invensify Blog Title that Can Fit On Two Lines',
+      imgUrl: 'assets/news/blog-4.png',
+      date: 'December 12, 2024',
+      tags: ['Case Study','Medical Devices'],
+      title: 'Engineering Smart Medical Devices: The Invensify Case Study',
       link: '/news-&-insights/whitepaper-invensify'
     }
   ];
