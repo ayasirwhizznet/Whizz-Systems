@@ -218,10 +218,10 @@ serviceCategories: any = [
       name: 'Sustaining Engineering & Obsolescence Management',
       desc: `Technology evolves, but your product lifecycle doesn’t have to be a limitation. We proactively manage component lifecycles, mitigate EOL risks, and provide alternative sourcing strategies to keep your products viable and competitive.`,
       services: [
-        { name: 'BOM Management', link: '/404' },
-        { name: 'EOL Management', link: '/404' },
-        { name: 'AVL Management', link: '/404' },
-        { name: 'Second Sourcing/Risk Buying', link: '/404' },
+        { name: 'BOM Management', link: '/services/sustainable_engineering' },
+        { name: 'EOL Management', link: '/services/sustainable_engineering' },
+        { name: 'AVL Management', link: '/services/sustainable_engineering' },
+        { name: 'Second Sourcing/Risk Buying', link: '/services/sustainable_engineering' },
       ],
     },
   ];

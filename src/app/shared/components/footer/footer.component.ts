@@ -17,7 +17,7 @@ export class FooterComponent {
   ];
 
   services: any[] = [
-    { label: 'Engineering & Design', link: '/404' },
+    { label: 'Engineering & Design' },
     { label: 'NPI', link: '/services/npi' },
     {
       label: 'Advanced Manufacturing',
@@ -28,7 +28,7 @@ export class FooterComponent {
       label: 'Supply Chain Management',
       link: '/services/supply-chain-management',
     },
-    { label: 'Sustaining Engineering & Obsolescence Management', link: '/404' },
+    { label: 'Sustaining Engineering & Obsolescence Management', link: '/services/sustainable_engineering' },
   ];
 
   blog: any[] = [

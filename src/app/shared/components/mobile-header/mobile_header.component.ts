@@ -177,10 +177,10 @@ export class MobileHeaderComponent {
     {
       title: 'Sustainable Engineering & Obsolescence Management',
       items: [
-        { label: 'BOM Management', link: '/404' },
-        { label: 'EOL Management', link: '/404' },
-        { label: 'AVL Management', link: '/404' },
-        { label: 'Second Sourcing / Risk Buying', link: '/404' },
+        { label: 'BOM Management', link: '/services/sustainable_engineering' },
+        { label: 'EOL Management', link: '/services/sustainable_engineering' },
+        { label: 'AVL Management', link: '/services/sustainable_engineering' },
+        { label: 'Second Sourcing / Risk Buying', link: '/services/sustainable_engineering' },
       ],
       open: false, // Track the open state for each service section
     },
