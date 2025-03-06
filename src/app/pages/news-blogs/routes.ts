@@ -35,7 +35,7 @@ export const routes: Routes = [
         title: 'Whitepaper/Invensify',
       },
       {
-        path: 'whitepaper-PCLe-6',
+        path: 'whitepaper-pcle6',
         loadComponent: () =>
           import('./blogs/pcle-6/pcle-6.component').then(
             (m) => m.Pcle6Component

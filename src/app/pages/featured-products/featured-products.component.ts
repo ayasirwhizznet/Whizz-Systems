@@ -53,22 +53,22 @@ export class FeaturedProductsComponent {
       products: [
         {
           name: 'Whizz Kintex 7 FPGA WH 705',
-          imgUrl: 'assets/featured-products/product.png',
+          imgUrl: 'assets/featured-products/eva-1.png',
           link: '/404',
         },
         {
           name: 'Whizz Kintex 7 FPGA WH 707A',
-          imgUrl: 'assets/featured-products/product.png',
+          imgUrl: 'assets/featured-products/eva-2.png',
           link: '/404',
         },
         {
           name: 'Whizz Zyn SoC WZ 706',
-          imgUrl: 'assets/featured-products/product.png',
+          imgUrl: 'assets/featured-products/eva-3.png',
           link: '/404',
         },
         {
           name: 'Whizz Kintex 7 FPGA WH 707 B',
-          imgUrl: 'assets/featured-products/product.png',
+          imgUrl: 'assets/featured-products/eva-4.png',
           link: '/404',
         },
       ],
@@ -78,12 +78,12 @@ export class FeaturedProductsComponent {
       products: [
         {
           name: 'Whizz Virtex 7 FPGA WS 709',
-          imgUrl: 'assets/featured-products/product.png',
+          imgUrl: 'assets/featured-products/con-1.png',
           link: '/404',
         },
         {
           name: 'Whizz Virtex 7 FPGA WS 7203A',
-          imgUrl: 'assets/featured-products/product.png',
+          imgUrl: 'assets/featured-products/con-2.png',
           link: '/404',
         },
       ],
@@ -103,36 +103,36 @@ export class FeaturedProductsComponent {
         },
       ],
     },
-    {
-      title: 'Kit Accessories',
-      products: [
-        {
-          name: 'Balun Transformer',
-          imgUrl: 'assets/featured-products/product.png',
-          link: '/404',
-        },
-        {
-          name: 'FMC Loopback Card',
-          imgUrl: 'assets/featured-products/product.png',
-          link: '/404',
-        },
-        {
-          name: 'PCIe Loopback Card',
-          imgUrl: 'assets/featured-products/product.png',
-          link: '/404',
-        },
-        {
-          name: 'FMC+ Loopback Card',
-          imgUrl: 'assets/featured-products/product.png',
-          link: '/404',
-        },
-        {
-          name: 'USB3/2 A Female to USB3 Micro B Male Adapter',
-          imgUrl: 'assets/featured-products/product.png',
-          link: '/404',
-        },
-      ],
-    },
+    // {
+    //   title: 'Kit Accessories',
+    //   products: [
+    //     {
+    //       name: 'Balun Transformer',
+    //       imgUrl: 'assets/featured-products/product.png',
+    //       link: '/404',
+    //     },
+    //     {
+    //       name: 'FMC Loopback Card',
+    //       imgUrl: 'assets/featured-products/product.png',
+    //       link: '/404',
+    //     },
+    //     {
+    //       name: 'PCIe Loopback Card',
+    //       imgUrl: 'assets/featured-products/product.png',
+    //       link: '/404',
+    //     },
+    //     {
+    //       name: 'FMC+ Loopback Card',
+    //       imgUrl: 'assets/featured-products/product.png',
+    //       link: '/404',
+    //     },
+    //     {
+    //       name: 'USB3/2 A Female to USB3 Micro B Male Adapter',
+    //       imgUrl: 'assets/featured-products/product.png',
+    //       link: '/404',
+    //     },
+    //   ],
+    // },
   ];
 
   evaluationKit: any[] = [

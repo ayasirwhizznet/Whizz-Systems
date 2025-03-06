@@ -39,7 +39,7 @@ export class BlogsComponent {
       date: 'July 9, 2024',
       tags: ['High-Speed Connectivity', 'Mechanical Design'],
       title: 'Whizz Systems PCIe Gen 6',
-      link: '/404',
+      link: '/news-&-insights/whitepaper-pcle6',
     },
     {
       imgUrl: 'assets/news/blog.png',

@@ -24,7 +24,7 @@ export class NewsComponent {
       date: 'May 29, 2024',
       tags: ['Whitepaper','High Speed Connectivity'],
       title: 'PCIe-6: Everything You Need to Know',
-      link: '/404'
+      link: '/news-&-insights/whitepaper-pcle6'
     },
     {
       imgUrl: 'assets/news/blog-2.png',
@@ -38,14 +38,14 @@ export class NewsComponent {
       date: 'July 9, 2024',
       tags: ['Whitepaper','Thermal Management'],
       title: 'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
-      link: '/404'
+      link: '/news-&-insights/whitepaper-heatsink'
     },
     {
       imgUrl: 'assets/news/blog.png',
       date: 'July 9, 2024',
       tags: ['Heatsink','Thermal Management'],
       title: 'Interesting Blog Title that Can Fit On Two Lines',
-      link: '/404'
+      link: '/news-&-insights/whitepaper-invensify'
     }
   ];
 
