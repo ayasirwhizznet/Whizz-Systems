@@ -42,10 +42,10 @@ export class BlogsComponent {
       link: '/news-&-insights/whitepaper-pcle6',
     },
     {
-      imgUrl: 'assets/news/blog.png',
+      imgUrl: 'assets/news/featured-blog3.png',
       date: 'July 9, 2024',
       tags: ['Heatsink', 'Thermal Management'],
-      title: 'Interesting Blog Title that Can Fit On Two Lines',
+      title: 'Invensify Blog Title that Can Fit On Two Lines',
       link: '/news-&-insights/whitepaper-invensify'
     }
   ];
