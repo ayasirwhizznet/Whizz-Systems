@@ -1,5 +1,6 @@
 import KeenSlider from 'keen-slider';
 import {
+  AfterViewInit,
   Component,
   CUSTOM_ELEMENTS_SCHEMA,
   ElementRef,
@@ -17,7 +18,7 @@ import { NewsCardComponent } from '@components/news-card/news-card.component';
   templateUrl: './news.component.html',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class NewsComponent {
+export class NewsComponent implements AfterViewInit {
   blogs: any[] = [
     {
       imgUrl: 'assets/news/blog-1.png',

@@ -1,4 +1,5 @@
 import {
+  AfterViewInit,
   Component,
   CUSTOM_ELEMENTS_SCHEMA,
   ElementRef,
@@ -17,7 +18,7 @@ import { RouterLink } from '@angular/router';
   templateUrl: './services.component.html',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class ServicesComponent {
+export class ServicesComponent implements AfterViewInit {
   serviceCategories: any[] = [
     {
       imgUrl: 'assets/home/services/engg.&design.png',

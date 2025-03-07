@@ -1,6 +1,6 @@
 import KeenSlider from 'keen-slider';
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 
 const animation = { duration: 7000, easing: (t: number) => t };
 
@@ -11,7 +11,7 @@ const animation = { duration: 7000, easing: (t: number) => t };
   templateUrl: './trust.component.html',
   styleUrls: ['./trust.component.scss'],
 })
-export class TrustComponent {
+export class TrustComponent implements AfterViewInit {
   partners:any[] = [
     'assets/home/trust/altera.png',
     'assets/home/trust/amd.png',
