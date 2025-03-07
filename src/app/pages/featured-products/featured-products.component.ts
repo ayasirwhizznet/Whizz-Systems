@@ -64,7 +64,7 @@ export class FeaturedProductsComponent {
         {
           name: 'Whizz Zyn SoC WZ 706',
           imgUrl: 'assets/featured-products/eva-3.png',
-          link: '/404',
+          link: '/featured-products/whizz-zyn-7000-wz706',
         },
         {
           name: 'Whizz Kintex 7 FPGA WH 707 B',

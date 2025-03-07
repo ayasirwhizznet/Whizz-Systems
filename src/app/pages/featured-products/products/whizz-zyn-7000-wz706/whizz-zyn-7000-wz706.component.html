@@ -1,1 +1,111 @@
-<p>whizz-zyn-7000-wz706 works!</p>
+<!-- Hero -->
+<app-product-hero productCategory="Featured Products | Evaluation Boards | Versal" productName="Embedded Processing & High-Speed Connectivity with the Whizz Zyn-7000 SoC WZ706"
+    productDesc="A Scalable and Customizable Evaluation Kit for Next-Generation Applications"
+    btnText="Request a Custom Design" navigate="/404"
+    imgUrl="assets/featured-products/products/WZ706/hero.png"></app-product-hero>
+
+<!-- Overview -->
+<app-product-overview heading="Product Overview"
+    title="The WZ706 – A Customizable Derivative of Xilinx’s ZC706 Evaluation Kit"
+    desc1="The Whizz Zynq-7000 All Programmable SoC WZ706 is a powerful evaluation kit optimized for embedded processing and high-speed connectivity applications. As a derivative of the AMD Zynq™ 7000 SoC ZC706 Evaluation Kit, the WZ706 retains its full feature set while supporting the XC7Z100 FPGA."
+    desc2="With integrated PCIe Gen2, SFP+, GigE Ethernet, DDR3 memory, and industry-standard FPGA Mezzanine Connectors (FMC), this platform enables rapid evaluation and development of embedded processing, high-performance networking, and system prototyping applications."
+    desc3="<span class='text-teal1'>Whizz Systems offers full customization services to tailor this platform to your specific application needs.
+    </span>" imgUrl="assets/featured-products/products/vhk158/overview.png">
+</app-product-overview>
+
+<!-- Marketing -->
+<app-product-marketing slogan="Whizz Systems specialize in transforming development kits into fully productized, market-ready solutions for a wide range of industries"></app-product-marketing>
+
+<!-- Key features -->
+<app-product-features heading="Key Features & Benefits"
+    title="Engineered for High-Speed Connectivity & Scalable Customization"
+    [featuresData]="features"></app-product-features>
+
+<!-- Customization -->
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <div class="flex items-center flex-col lg:flex-row gap-8 lg:gap-3 3xl:gap-4 mb-10 3xl:mb-12">
+        <div class="w-full lg:w-[49%]">
+            <h4
+                class="text-teal1 text-[13px] 3xl:text-base font-semibold 3xl:font-bold leading-[14px] 3xl:leading-[19.2px]">
+                Customization Options
+            </h4>
+            <h3
+                class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">
+                Productize Your Development Kit for Your Applications
+            </h3>
+            <p
+                class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">
+                Whizz Systems has been <b>delivering reference designs and customized FPGA solutions</b> across various industries. Our experience in these sectors enables us to take your <b>development kit</b> and productize it to meet the specific challenges and performance requirements of your industry.
+            </p>
+            <app-button heading="Request a Custom Version" routerLink="/404" icon="assets/shared/r-arrow.svg"
+                size="small"></app-button>
+        </div>
+        <div class="w-full lg:w-[51%] flex">
+            <div class="sm:mr-[27%] lg:mr-0 lg:ml-[15%] 2xl:ml-[29%] 3xl:ml-[34.5%]">
+                <h4
+                    class="flex gap-3 3xl:gap-4 text-dark-gray2 text-[13px] 3xl:text-base font-medium leading-[15px] 3xl:leading-[19.2px] mb-3 3xl:mb-4">
+                    Target Applications
+                </h4>
+                <div class="flex items-center flex-wrap gap-3 3xl:gap-4">
+                    <a *ngFor="let tag of tags"
+                        class="px-2 py-1 border border-light-gray1 rounded-[4px] text-dark-gray2 text-xs 3xl:text-sm font-medium 3xl:font-semibold">
+                        {{ tag }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-6 3xl:p-8 bg-card-gray rounded-md 3xl:rounded-lg">
+        <div class="grid grid-cols-12 gap-6 3xl:gap-8">
+            <div *ngFor="let customization of customizations; let i = index" [ngClass]="{ 'lg:col-start-2': i == 4 }" class="col-span-12 sm:col-span-6 lg:col-span-3">
+                <div class="p-6 3xl:p-8 bg-white border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
+                    <img class="w-10 3xl:w-12" [src]="customization.imgUrl" alt="img" />
+                    <div class="h-[5rem] sm:h-[6rem] 3xl:h-[7.5rem]">
+                        <h3
+                            class="text-dark-gray2 text-[13px] xl:text-xs 2xl:text-[13px] 3xl:text-base font-medium lg:leading-[15px] 3xl:leading-[19.2px] my-3 3xl:my-4">
+                            {{ customization.name }}
+                        </h3>
+                        <p
+                            class="text-dark-gray2 text-[13px] xl:text-xs 2xl:text-[13px] 3xl:text-base font-light 3xl:leading-[20px]">
+                            {{ customization.desc }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Collaboration -->
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 3xl:gap-16">
+        <div class="w-full lg:w-[44%] 2xl:w-[46.2%] order-2 lg:order-1 p-6 sm:p-10 lg:p-0">
+            <img class="object-cover" src="assets/featured-products/products/vhk158/collaboration.png" alt="img" />
+        </div>
+        <div class="w-full lg:w-[56%] 2xl::w-[53.8%] order-1 lg:order-2">
+            <h4
+                class="text-teal1 text-[13px] 3xl:text-base font-semibold 3xl:font-bold lg:leading-[15px] 3xl:leading-[19.2px]">
+                Trusted Expertise, Backed by Collaboration
+            </h4>
+            <h3
+                class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">
+                Leverage Our Proven Industry Partnerships for Your Product
+            </h3>
+            <p
+                class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">
+                When you work with Whizz Systems, you gain access to a trusted partner with deep expertise in AMD Xilinx FPGA platforms. Our 25 years experience of servicing  AMD/Xilinx in developing reference designs, evaluation kits, and connectivity solutions allows us to bring industry-leading experience to your project.
+            </p>
+            <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
+                We understand the <b>architecture, design methodologies, and best practices</b>
+                used in AMD Xilinx-based solutions because we’ve worked directly with
+                them. Now, we’re extending that expertise to you—whether you need <b>custom
+                FPGA solutions, modifications to existing development kits, or full
+                productization of your design.</b>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Experts -->
+<app-product-cta slogan="Looking to Productize Your Dev Kit? Let’s Build It Together!"
+    btnText="Request a Custom Design Consultation" navigate="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"  icon="assets/shared/webform.svg"></app-product-cta>
