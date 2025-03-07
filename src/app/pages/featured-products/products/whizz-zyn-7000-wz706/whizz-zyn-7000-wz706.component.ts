@@ -21,7 +21,8 @@ import { ProductCtaComponent } from '../../components/product-cta/product-cta.co
   ],
   templateUrl: './whizz-zyn-7000-wz706.component.html',
 })
-export class WhizzZyn7000WZ706Component {features = {
+export class WhizzZyn7000WZ706Component {
+  features = {
   feature1: [
     '<b>FPGA –</b> Zynq-7000 XC7Z100',
     '<b>Memory –</b> 1GB DDR3 (PS), 1GB DDR3 SODIMM (PL), 2x16MB Quad SPI Flash, 1KB IIC EEPROM',

@@ -84,7 +84,7 @@ export class FeaturedProductsComponent {
         {
           name: 'Whizz Virtex 7 FPGA WS 7203A',
           imgUrl: 'assets/featured-products/con-2.png',
-          link: '/404',
+          link: '/featured-products/xilinx-virtex-7-fpga-ws7203-a',
         },
       ],
     },
