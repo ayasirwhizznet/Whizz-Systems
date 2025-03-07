@@ -99,7 +99,7 @@ export class FeaturedProductsComponent {
         {
           name: 'Xilinx Virtex 7 FPGA WS 7203',
           imgUrl: 'assets/featured-products/product.png',
-          link: '/404',
+          link: '/featured-products/xilinx-virtex-7-fpga-ws7203-b',
         },
       ],
     },
