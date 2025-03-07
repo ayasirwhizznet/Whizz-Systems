@@ -42,10 +42,10 @@ export class BlogsComponent {
       link: '/news-&-insights/whitepaper-pcle6',
     },
     {
-      imgUrl: 'assets/news/featured-blog3.png',
+      imgUrl: 'assets/news/featured-blog4.png',
       date: 'July 9, 2024',
-      tags: ['Heatsink', 'Thermal Management'],
-      title: 'Invensify Blog Title that Can Fit On Two Lines',
+      tags: ['Case Study', 'Medical Devices'],
+      title: ' Whizz Systems & Invensify: Engineering a Smart, Reliable, and Efficient Medical Refrigeration System',
       link: '/news-&-insights/whitepaper-invensify'
     }
   ];

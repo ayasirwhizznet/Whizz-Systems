@@ -93,12 +93,12 @@ export class FeaturedProductsComponent {
       products: [
         {
           name: 'Xilinx Kintex 7 FPGA KC724',
-          imgUrl: 'assets/featured-products/product.png',
+          imgUrl: 'assets/featured-products/cha-1.png',
           link: '/featured-products/xilinx-kintex-7-fpga-kc724',
         },
         {
           name: 'Xilinx Virtex 7 FPGA WS 7203',
-          imgUrl: 'assets/featured-products/product.png',
+          imgUrl: 'assets/featured-products/cha-2.png',
           link: '/featured-products/xilinx-virtex-7-fpga-ws7203-b',
         },
       ],
@@ -216,16 +216,16 @@ export class FeaturedProductsComponent {
     {
       title: 'Medical Devices',
       name: 'Invensify Insuridge',
-      imgUrl: 'assets/featured-products/product.png',
+      imgUrl: 'assets/featured-products/mi-1.png',
       desc: '',
-      link: '/404',
+      link: '/news-&-insights/whitepaper-invensify',
     },
     {
       title: 'Telecommunication',
       name: '5G ORU',
-      imgUrl: 'assets/featured-products/product.png',
+      imgUrl: 'assets/featured-products/mi-2.png',
       desc: '',
-      link: '/404',
+      link: '/news-&-insights/whitepaper-5g-oru',
     },
   ];
 }

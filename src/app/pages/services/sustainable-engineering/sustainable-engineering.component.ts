@@ -13,7 +13,7 @@ import { ServicesHeroComponent } from '@components/services-hero/services-hero.c
 export class SustainableEngineeringComponent {
   coreServices: any[] = [
     {
-      imgUrl: 'assets/services/sustaining-egineering/core.png',
+      imgUrl: 'assets/services/sustaining-egineering/core-1.png',
       name: 'BoM Management',
       description: [
         'Pre-screening for obsolete components before production',
@@ -22,7 +22,7 @@ export class SustainableEngineeringComponent {
       ],
     },
     {
-      imgUrl: 'assets/services/sustaining-egineering/core.png',
+      imgUrl: 'assets/services/sustaining-egineering/core-2.png',
       name: 'EOL Management',
       description: [
         'End-of-life (EOL) tracking and notifications for critical components',
@@ -31,7 +31,7 @@ export class SustainableEngineeringComponent {
       ],
     },
     {
-      imgUrl: 'assets/services/sustaining-egineering/core.png',
+      imgUrl: 'assets/services/sustaining-egineering/core-3.png',
       name: 'Approved Vendor List (AVL) Management',
       description: [
         'Optimizing AVL to ensure supplier reliability and cost-efficiency',
@@ -40,7 +40,7 @@ export class SustainableEngineeringComponent {
       ],
     },
     {
-      imgUrl: 'assets/services/sustaining-egineering/core.png',
+      imgUrl: 'assets/services/sustaining-egineering/core-4.png',
       name: 'Second Sourcing & Risk Buying',
       description: [
         'Global sourcing of alternative components to maintain production continuity',
@@ -49,7 +49,7 @@ export class SustainableEngineeringComponent {
       ],
     },
     {
-      imgUrl: 'assets/services/sustaining-egineering/core.png',
+      imgUrl: 'assets/services/sustaining-egineering/core-5.png',
       name: 'Obsolescence Management',
       description: [
         'Evaluating component life cycle risks to ensure long-term viability',
