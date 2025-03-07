@@ -69,7 +69,7 @@ export class FeaturedProductsComponent {
         {
           name: 'Whizz Kintex 7 FPGA WH 707 B',
           imgUrl: 'assets/featured-products/eva-4.png',
-          link: '/404',
+          link: '/featured-products/whizz-virtex-7-fpga-ws707',
         },
       ],
     },
