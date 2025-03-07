@@ -23,7 +23,7 @@ export class AdvancedManufacturingComponent {
   coreServices: any[] = [
     {
       imgUrl: 'assets/services/advanced-manufacturing/core-1.png',
-      name: 'Manufacturing Simulations',
+      name: 'Pre-Manufacturing Analysis',
       description: [
         'Advanced process optimization to enhance manufacturability and reliability.',
         '<b>DFX Analysis (DFM, DFA, DFT):</b> Ensuring smooth and cost-efficient production.',

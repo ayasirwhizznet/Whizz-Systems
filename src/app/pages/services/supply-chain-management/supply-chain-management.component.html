@@ -1,7 +1,17 @@
 <app-services-hero serviceCategory="Supply Chain Management"
   serviceTitle="Streamlined Global Supply Chain Management for Seamless Operations"
   serviceDesc="Ensuring quality, compliance, and efficiency across all phases of supply chain management to meet your design and production needs."
-  imgUrl="assets/services/supply-chain/hero.png" navigate="https://webforms.pipedrive.com/f/6k5g9P6xBe8hKKOK5gAGLSRWSeLSp28QnpBPKCw7zg96tXKLN8NPkGD9deOLbWZQiL" btnText="Small Button"></app-services-hero>
+  imgUrl="assets/services/supply-chain/hero.png" navigate="https://webforms.pipedrive.com/f/6k5g9P6xBe8hKKOK5gAGLSRWSeLSp28QnpBPKCw7zg96tXKLN8NPkGD9deOLbWZQiL" btnText="Bring Your Product to Life, Without Supply Chain Hassles"></app-services-hero>
+
+  <!-- Navbar -->
+<section [ngClass]="{ 'top-[13%]': isSticky}"
+class="hidden lg:block px-[9.3%] lg:py-10 3xl:py-16 bg-white sticky top-0 z-20">
+<div class="flex justify-center items-center gap-3 3xl:gap-4">
+  <a *ngFor="let service of supplyChainServices" (click)="scrollToService(service)"
+    class="lg:w-44 2xl:w-48 lg:h-[72px] 3xl:w-[247px] 3xl:h-[88px] cursor-pointer grid place-items-center bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium 3xl:font-semibold rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">{{
+    service }}</a>
+</div>
+</section>
 
 <!-- Overview -->
 <section class="px-[4%] sm:px-[9.3%] bg-dark-gray2 py-8 lg:py-12 3xl:py-16">
@@ -51,7 +61,7 @@ subTitle="Key Services:" desc4="RoHS-3 (2011/65/EU + EU 2015/863) Compliance Rep
 " imgUrl="assets/services/supply-chain/compliance.png"></app-services-intro>
 
 <!-- Commodity Management -->
-<app-services-intro id="Commodity" heading="Commodity Management"
+<app-services-intro id="CommodityManagement" heading="Commodity Management"
 title="Strategic Management for a Resilient Supply Chain"
 desc1="Our Commodity Management phase is all about aligning supply strategies with production schedules to ensure consistent delivery. Through advanced Risk Management practices, lead time optimization, and strategic decision-making, we prevent disruptions and enable smooth operations."
   subTitle="Key Services:" desc4="Strategic Risk Management
@@ -60,13 +70,13 @@ desc1="Our Commodity Management phase is all about aligning supply strategies wi
 " [isImageLeft]="false" imgUrl="assets/services/supply-chain/strategic.png"></app-services-intro>
 
 <!-- Procurement Management -->
-<app-services-intro id="ProcurementEngineering" heading="Procurement Management"
+<app-services-intro id="ProcurementManagement" heading="Procurement Management"
 title="Procurement Simplified for Speed and Efficiency"
 desc1="From identifying Risk Buy situations to managing End-of-Life (EOL) transitions, our procurement services are designed to keep your projects on schedule and your costs optimized. Our team manages every detail of the purchasing process with precision."
 subTitle="Key Services:" desc4="Efficient Purchase Order Issuance
 • Risk Buy Management
 • EOL Transition Planning and Execution
-" imgUrl="assets/services/supply-chain/overview.png"></app-services-intro>
+" imgUrl="assets/services/supply-chain/procurement.png"></app-services-intro>
 
 <!-- Benefits -->
 <app-services-benefits heading="Benefits Overview" title="A Supply Chain You Can Trust, From Concept to Completion"
