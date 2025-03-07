@@ -1,20 +1,19 @@
 <!-- Hero -->
-<app-product-hero productCategory="Featured Products |
-Evaluation Boards | Versal" productName="Versal HBM Series VHK158 Evaluation Kit"
-    productDesc="A Cutting-Edge Platform for Memory-Intensive, High-Bandwidth Applications in Data Centers, Networking, and Aerospace"
+<app-product-hero productCategory="Featured Products | Evaluations Kits | WH705" productName="High-Performance Prototyping with the Whizz Kintex-7 FPGA WH705"
+    productDesc="A Scalable and Customizable Evaluation Kit for High-Speed Applications"
     btnText="Request a Custom Design" navigate="/404"
     imgUrl="assets/featured-products/products/vhk158/hero.png"></app-product-hero>
 
 <!-- Overview -->
 <app-product-overview heading="Product Overview"
-    title="The VHK158 Evaluation Kit – Designed for Next-Generation Compute & Networking Applications"
-    desc1="The <a href='https://www.xilinx.com/products/boards-and-kits/vhk158.html#information' target='_blank' class='text-teal1 underline'><b>VHK158 Evaluation Kit</b></a> is a high-performance computing and networking platform designed to handle memory-bound and compute-intensive applications. With 32GB of high-bandwidth memory (HBM), 112G PAM4 transceivers, PCIe Gen5x8, and QSFP28/QSFP-DD connectors, this evaluation kit is built to support applications requiring extreme data throughput, low-latency communication, and scalable processing capabilities."
-    btnText="Learn more" navigate="/404" imgUrl="assets/featured-products/products/vhk158/overview.png">
+    title="The WH705 – A Customizable Derivative of Xilinx’s KC705 Evaluation Kit"
+    desc1="The Whizz Kintex-7 FPGA WH705 is a powerful evaluation kit designed to provide a seamless prototyping experience for high-speed serial transceiver applications. As a derivative of the AMD Kintex™ 7 FPGA KC705 Evaluation Kit, the WH705 retains its full feature set while being optimized for applications requiring high-performance connectivity and advanced memory interfacing."
+    desc2="With integrated PCIe Gen2, SFP+, HDMI, and DDR3 memory support, this platform enables rapid development of networking, high-speed computing, and video display applications. The WH705 also supports FPGA Mezzanine Card (FMC) interfaces, allowing for expansion and customization based on project requirements."
+    desc3="<span class='text-teal1'>Whizz Systems offers full customization services to tailor this platform to your specific application needs.</span>" imgUrl="assets/featured-products/products/vhk158/overview.png">
 </app-product-overview>
 
 <!-- Marketing -->
-<app-product-marketing slogan="Whizz Systems specialize in transforming development kits into fully productized, market-ready solutions for a wide
-range of industries"></app-product-marketing>
+<app-product-marketing slogan="Whizz Systems specialize in transforming development kits into fully productized, market-ready solutions for a wide range of industries"></app-product-marketing>
 
 <!-- Key features -->
 <app-product-features heading="Key Features & Benefits"
@@ -35,12 +34,7 @@ range of industries"></app-product-marketing>
             </h3>
             <p
                 class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">
-                Whizz Systems offers extensive <b>customization</b> and
-                <b>productization</b> services, enabling customers to adapt the VHK158
-                for real-world deployments. Whether you need
-                <b>hardware modifications, custom interfaces,</b> or
-                <b>system-level development,</b> our engineering expertise ensures
-                seamless integration and scalability.
+                Whizz Systems specializes in transforming FPGA evaluation kits into deployable, market-ready solutions. Our expertise in AMD Xilinx FPGA platforms enables us to optimize your WH705 kit for real-world applications with enhanced performance and custom features..
             </p>
             <app-button heading="Request a Custom Version" routerLink="/404" icon="assets/shared/r-arrow.svg"
                 size="small"></app-button>
@@ -61,8 +55,8 @@ range of industries"></app-product-marketing>
         </div>
     </div>
     <div class="p-6 3xl:p-8 bg-card-gray rounded-md 3xl:rounded-lg">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 3xl:gap-8">
-            <div *ngFor="let customization of customizations; let i = index" [ngClass]="{ 'lg:col-start-2': i == 4 }">
+        <div class="grid grid-cols-12 gap-6 3xl:gap-8">
+            <div *ngFor="let customization of customizations; let i = index" [ngClass]="{ 'lg:col-start-2': i == 4 }" class="col-span-12 sm:col-span-6 lg:col-span-3">
                 <div class="p-6 3xl:p-8 bg-white border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
                     <img class="w-10 3xl:w-12" [src]="customization.imgUrl" alt="img" />
                     <div class="h-[5rem] sm:h-[6rem] 3xl:h-[7.5rem]">
@@ -106,11 +100,11 @@ range of industries"></app-product-marketing>
                 industry-leading experience to your project.
             </p>
             <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
-                We understand the architecture, design methodologies, and best practices
+                We understand the <b>architecture, design methodologies, and best practices</b>
                 used in AMD Xilinx-based solutions because we’ve worked directly with
-                them. Now, we’re extending that expertise to you—whether you need custom
+                them. Now, we’re extending that expertise to you—whether you need <b>custom
                 FPGA solutions, modifications to existing development kits, or full
-                productization of your design.
+                productization of your design.</b>
             </p>
         </div>
     </div>
@@ -118,4 +112,4 @@ range of industries"></app-product-marketing>
 
 <!-- Contact Experts -->
 <app-product-cta slogan="Looking to Productize Your Dev Kit? Let’s Build It Together!"
-    btnText="Request a Custom Design Consultation" navigate="/404"></app-product-cta>
+    btnText="Request a Custom Design Consultation" navigate="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"  icon="assets/shared/webform.svg"></app-product-cta>

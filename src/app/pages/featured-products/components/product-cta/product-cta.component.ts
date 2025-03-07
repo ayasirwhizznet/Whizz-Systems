@@ -11,4 +11,5 @@ export class ProductCtaComponent {
 @Input() slogan: string = '';
 @Input() btnText: string = '';
 @Input() navigate: string = '';
+@Input() icon:string = '';
 }

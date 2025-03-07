@@ -54,7 +54,7 @@ export class FeaturedProductsComponent {
         {
           name: 'Whizz Kintex 7 FPGA WH 705',
           imgUrl: 'assets/featured-products/eva-1.png',
-          link: '/404',
+          link: '/featured-products/whizz-kintex-7FPGA-WH705',
         },
         {
           name: 'Whizz Kintex 7 FPGA WH 707A',

@@ -24,19 +24,19 @@ import { ProductCtaComponent } from '../../components/product-cta/product-cta.co
 export class VHK158Component {
   features = {
     feature1: [
-      '<b>Clocking –</b> Programmable DDR4 Clocks (x2), PCIe Reference Clock (x1), Programmable GT Clocks (x12)',
-      '<b>Memory –</b> DDR4 DIMM: 32GB (2x 16GB, 72-bit @ 3200 Mb/s)',
-      '<b>PCIe Slots –</b> PCIe Gen5 x8, Gen3/4 x16',
+      '<b>FPGA –</b> Kintex-7 XC7K410T',
+      '<b>Memory –</b> 1GB DDR3 SODIMM, 128MB Linear BPI Flash, 16MB Quad SPI Flash, 8Kb IIC EEPROM',
+      '<b>PCIe –</b>  Gen2x4 (5 Gb/s) or Gen1x8 (2.5 Gb/s)',
     ],
     feature2: [
-      '<b>Configuration–</b> JTAG, OSPI, MicroSD',
-      '<b>Networking–</b> USB JTAG, USB-C, RJ-45 Ethernet (x2), QSFP28 (x4), QSFP-DD (x2)',
-      '<b>Expansion –</b> VITA 57.4 FMC+ (8 GTYPs, 68 User-Defined Signals)',
+      '<b>Networking–</b> 10/100/1000 Mbps Ethernet, SFP/SFP+ Cage, GTX port with SMA',
+      '<b>Expansion –</b> FMC-HPC, FMC-LPC',
+      '<b>Power Supply –</b> 12V wall adapter or ATX',
     ],
     feature3: [
-      '<b>Power Supply –</b> 180W (12V) Power Supply, Power-on Reset',
-      '<b>Control I/O–</b> 2 User Pushbuttons, 4 User LEDs, DIP Switches, SYSMON, System Controller',
-      '<b>Customization –</b> FPGA selection, memory expansion, custom I/O configurations',
+      '<b>Control I/O–</b> Push buttons, DIP switches, SMA I/O pairs, AMS FAN Header',
+      '<b>Customization –</b>  FPGA selection, memory expansion, custom I/O configurations',
+      '<b>Configuration –</b> JTAG over USB, BPI Flash, Quad SPI Flash, SD Card Slot',
     ],
   };
 
@@ -52,33 +52,38 @@ export class VHK158Component {
   customizations: any[] = [
     {
       imgUrl: 'assets/featured-products/products/vhk158/customization.png',
-      name: 'Full System Development',
-      desc: 'Productize the VHK158 into a deployable solution, including custom enclosures, firmware, and regulatory compliance.',
+      name: 'Productizing Development Kits',
+      desc: 'Convert the WH705 into a ready-to-deploy product with tailored hardware and software.',
     },
     {
       imgUrl: 'assets/featured-products/products/vhk158/customization.png',
-      name: 'Custom I/O & Connectivity',
-      desc: 'Modify PCIe lanes, QSFP28/QSFP-DD configurations, or expand I/O options.',
+      name: 'Complete System Development',
+      desc: 'Design enclosures, firmware, and thermal solutions around the WH705.',
     },
     {
       imgUrl: 'assets/featured-products/products/vhk158/customization.png',
-      name: 'FPGA & Memory Modifications',
-      desc: 'Expand HBM/DDR4 capabilities based on workload needs.',
+      name: 'FPGA Modifications',
+      desc: 'Upgrade or modify the FPGA for application-specific needs.',
+    },
+    {
+      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      name: 'Memory Enhancements',
+      desc: 'Expand DDR3/DDR4 configurations as per performance requirements.',
+    },
+    {
+      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      name: 'Custom Connectivity',
+      desc: 'Modify PCIe lanes, add extra SFP/SFP+ ports, or customize I/O.',
     },
     {
       imgUrl: 'assets/featured-products/products/vhk158/customization.png',
       name: 'Software & Firmware Customization',
-      desc: 'Optimize drivers, software environments, and application-layer software.',
+      desc: 'Develop specialized drivers, GUI, or firmware.',
     },
     {
       imgUrl: 'assets/featured-products/products/vhk158/customization.png',
-      name: 'Power Distribution Optimization',
-      desc: ' Improve power management and efficiency to meet system power constraints.',
-    },
-    {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
-      name: 'Cooling Enhancements',
-      desc: 'Implement advanced thermal solutions such as custom heatsinks, active cooling, or liquid-cooled enclosures for optimal performance.',
+      name: 'Power & Thermal Optimization',
+      desc: 'Enhance power delivery and cooling mechanisms.',
     },
   ];
 }
