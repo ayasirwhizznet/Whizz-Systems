@@ -13,6 +13,10 @@
             <h1
                 class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-full sm:w-[53%] lg:w-[94%] 2xl:w-[95%]">
                 Building the Future of Medical Logistics with Invensify</h1>
+            <p
+                class="text-base lg:text-sm 2xl:text-base 3xl:text-xl font-extralight lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8 sm:w-[70%] lg:w-full">
+                How Whizz Systems Designed, Engineered, and Manufactured Invensify’s Next-Gen Cold Chain Solution
+            </p>
             <app-button heading="Lorem Ipsum" icon="assets/shared/r-arrow.svg" [size]="'medium'"
                 [routerLink]="'/404'"></app-button>
             <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
@@ -32,7 +36,9 @@
     <div class="py-8 lg:py-12 3xl:py-16 px-[4%] lg:px-[11%] 2xl:px-[17%] 3xl:px-[19%]">
         <p
             class="text-dark-gray2 sm:text-lg lg:text-xl 3xl:text-2xl font-extralight lg:leading-[32px] 3xl:leading-[38.4px] text-center my-6 3xl:my-8">
-            Lorem Ipsum</p>
+            Whizz Systems is a trusted partner in medical device innovation, providing end-to-end electronic design and
+            manufacturing solutions. In collaboration with Invensify, we developed Insuridge, a smart cold chain medical
+            refrigeration system designed for precision temperature control and real-time monitoring.</p>
     </div>
     <img src="assets/shared/divider-bottom.png" alt="img">
 </section>
@@ -49,13 +55,16 @@
                 <h3
                     class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">
                     Innovating Medical Device Development in a Competitive Market</h3>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">In
+                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">In
                     the fast-evolving field of medical devices, partnering with a trusted development expert is
                     critical. Whizz Systems has built a reputation for delivering end-to-end product development
                     services—ranging from hardware design and PCB layout to thermal management and mechanical
                     design—that drive innovative, high-quality solutions. This case study spotlights our collaboration
                     with Invensify Inc. in bringing their groundbreaking Insuridge 12L, a portable refrigeration system
                     designed for the safe transportation of sensitive medical drugs, from concept to reality.</p>
+                <figure class="py-6 3xl:py-8">
+                    <img class="object-cover" src="assets/news/blogs/invensify/fig.1.png" alt="img">
+                </figure>
             </section>
 
             <!-- Client Background -->
@@ -73,11 +82,20 @@
                     medical supplies reach their destination safely and reliably. Their innovative products have the
                     potential to extend into the EV and AI hardware markets, further demonstrating their versatile
                     approach to technology.</p>
-                <figure class="py-6 3xl:py-8">
-                    <img class="object-cover" src="assets/news/blogs/invensify/fig.1.png" alt="img">
-                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">
-                        Figure 1</figcaption>
-                </figure>
+                <div class="flex items-center gap-2 justify-between">
+                    <figure class="py-6 3xl:py-8">
+                        <img class="object-cover" src="assets/news/blogs/invensify/portable.png" alt="img">
+                        <figcaption
+                            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">
+                            Portable Medical Temp Tracker</figcaption>
+                    </figure>
+                    <figure class="py-6 3xl:py-8">
+                        <img class="object-cover" src="assets/news/blogs/invensify/cold.png" alt="img">
+                        <figcaption
+                            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">
+                            Cold Chain Portable Shipper Units </figcaption>
+                    </figure>
+                </div>
             </section>
 
             <!-- Product Overview -->
@@ -98,14 +116,9 @@
                 </ul>
                 <hr class="border border-light-gray1/60 mt-3 3xl:mt-4">
                 <figure class="py-6 3xl:py-8">
-                    <img class="object-cover" src="assets/news/blogs/invensify/fig.2.png" alt="img">
+                    <img class="object-cover" src="assets/news/blogs/invensify/insuridge.png" alt="img">
                     <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">
-                        Figure 2</figcaption>
-                </figure>
-                <figure class="py-6 3xl:py-8">
-                    <img class="object-cover" src="assets/news/blogs/invensify/fig.3.png" alt="img">
-                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">
-                        Figure 3</figcaption>
+                        Invensify’s Insuridge 12L</figcaption>
                 </figure>
             </section>
 
@@ -113,23 +126,180 @@
             <section class="py-6 3xl:py-8">
                 <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">How Whizz
                     Systems Delivered</h2>
-                <h3
-                    class="text-dark-gray2 text-lg 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">
-                    Our Collaborative Approach to Medical Device Innovation</h3>
-                <div *ngFor="let delivery of deliveries; let i = index"
-                    [ngClass]="i === 0 ? 'pb-6 3xl:pb-8' : 'py-6 3xl:py-8'">
+                <h4 class="text-dark-gray2 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8">
+                    Hardware Design Engineering</h4>
+                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
+                    An intelligent charging circuit was developed to balance external power and battery use. Whizz
+                    Systems designed a circuit capable of powering the system directly from external input,
+                    supplementing additional power from the battery when necessary.
+                </p>
+                <p
+                    class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] py-6 3xl:py-8">
+                    A feedback-based electronic circuit was also incorporated that regulated the peltiers & cooling
+                    system with help of sensors. Moreover, to ensure reliable monitoring, GPS module with cellular
+                    connectivity was also integrated that enabled real-time tracking and secure cloud data transmission.
+                </p>
+                <div class="py-6 3xl:py-8">
                     <h4
                         class="text-dark-gray2 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">
-                        {{delivery.title}}</h4>
+                        PCB Design & Layout</h4>
                     <p
                         class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
-                        {{delivery.desc}}</p>
+                        Insuridge required a compact and high-density PCB design to fit all components without
+                        compromising functionality. Modular and space-efficient designs were employed to maximize space
+                        while ensuring performance. Additionally, the PCB design incorporated various technologies,
+                        including analog, digital, power, and RF circuits, each requiring careful planning and design
+                        considerations.
+                    </p>
                 </div>
+                <div class="flex items-center gap-2 justify-between">
+                    <figure class="py-6 3xl:py-8">
+                        <img class="object-cover" src="assets/news/blogs/invensify/pcb.png" alt="img">
+                        <figcaption
+                            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">
+                            PCB installed in Insuridge Shipper</figcaption>
+                    </figure>
+                    <figure class="py-6 3xl:py-8">
+                        <img class="object-cover" src="assets/news/blogs/invensify/pcbs.png" alt="img">
+                        <figcaption
+                            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">
+                            PCBs Designed & Assembled By Whizz Systems</figcaption>
+                    </figure>
+                </div>
+                <div class="py-6 3xl:py-8">
+                    <p
+                        class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
+                        To ensure reliable connectivity, Whizz Systems employed advanced layout and shielding techniques
+                        to prevent interference between the GPS, LTE, and BLE modules while also keeping the cost
+                        minimum.
+                    </p>
+                </div>
+                <h4
+                    class="text-dark-gray2 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4 pt-6 3xl:pt-8">
+                    Mechanical Design</h4>
+                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
+                    The form factor and size of the overall product made it challenging to fit all components, including
+                    the PCBs, cooling chamber, payload and cooling system, in the unit. The limited available space
+                    further complicated the piping of the cooling system. From mechanical design perspective, fittinng
+                    all components within the given form factor without compromising the product’s functionality became
+                    very challenging.
+                </p>
+                <p
+                    class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] py-6 3xl:py-8">
+                    To address this challenge, Whizz Systems utilized advanced 3D tools to thoroughly inspect and
+                    resolve potential interferences between assembled parts. This process ensured proper clearances
+                    around PCB components and mechanical enclosure, and provided adequate spacing for larger components
+                    like radiators and fans.
+                </p>
                 <figure class="py-6 3xl:py-8">
-                    <img class="object-cover" src="assets/news/blogs/invensify/fig.1.1.png" alt="img">
+                    <img class="object-cover" src="assets/news/blogs/invensify/mechanical.png" alt="img">
                     <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">
-                        Fig. 1.1</figcaption>
+                        Figure 1</figcaption>
                 </figure>
+                <div class="py-6 3xl:py-8">
+                    <p
+                        class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
+                        Through collaboration and iterative process, Whizz & Invensify achieved a design that smoothly
+                        integrated all elements without compromising the product’s functionality, while also ensuring
+                        manufacturability and ease of assembly.
+                    </p>
+                </div>
+                <h4
+                    class="text-dark-gray2 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4 pt-6 3xl:pt-8">
+                    Structural Analysis</h4>
+                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
+                    Using Finite Element Analysis (FEA), we reinforced the plastic housing to balance weight constraints
+                    with the need for structural integrity. Reinforcement ribs and optimized design features ensured the
+                    enclosure could withstand shock and vibration without compromising the device’s overall performance.
+                </p>
+                <div class="flex items-center gap-2 justify-between">
+                    <figure class="py-6 3xl:py-8">
+                        <img class="object-cover" src="assets/news/blogs/invensify/str1.png" alt="img">
+                        <figcaption
+                            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">
+                            Fig 1.1</figcaption>
+                    </figure>
+                    <figure class="py-6 3xl:py-8">
+                        <img class="object-cover" src="assets/news/blogs/invensify/str2.png" alt="img">
+                        <figcaption
+                            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">
+                            Fig 1.1</figcaption>
+                    </figure>
+                </div>
+                <div class="py-6 3xl:py-8">
+                    <p
+                        class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
+                        To ensure structural integrity, we used Finite Element Analysis (FEA) to identify potential
+                        weaknesses in the plastic enclosure. Based on the analysis, reinforcing features like ribs were
+                        added to reduce stress and deformation, enhancing resilience against shock and vibration.
+                    </p>
+                </div>
+                <h4
+                    class="text-dark-gray2 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4 pt-6 3xl:pt-8">
+                    Liquid Cooling System & Thermal Management</h4>
+                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
+                    The liquid cooling system of Insuridge consisted of phase change material (PCM), a cooling block, a
+                    radiator and an interconnected piping network. The PCM was crucial in maintaining a consistent
+                    thermal profile throughout its operation.
+                </p>
+                <p
+                    class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] py-6 3xl:py-8">
+                    To optimize the PCM’s volume, a series of validation tests were conducted in the lab. The empirical
+                    data  gathered from these tests were then used to refine and optimize the design of the PCM
+                    chamber.  Additionally, thermal simulations were carried out to verify the experimental findings and
+                    ensure the  reliability of the design.
+                </p>
+                <figure class="py-6 3xl:py-8">
+                    <img class="object-cover" src="assets/news/blogs/invensify/liquid.png" alt="img">
+                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">
+                        Fig 1.1</figcaption>
+                </figure>
+                <div class="py-6 3xl:py-8">
+                    <p
+                        class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
+                        The liquid cooling block, featuring internal fins and flow channels, was specifically designed
+                        to maximize cooling efficiency. Extensive flow simulations were conducted to develop an
+                        optimized design that struck the right balance between cooling performance and overall pressure
+                        drop.
+                    </p>
+                </div>
+                <div class="flex items-center gap-2 justify-between">
+                    <figure class="py-6 3xl:py-8">
+                        <img class="object-cover" src="assets/news/blogs/invensify/liquid1.png" alt="img">
+                        <figcaption
+                            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">
+                            Fig 1.1</figcaption>
+                    </figure>
+                    <figure class="py-6 3xl:py-8">
+                        <img class="object-cover" src="assets/news/blogs/invensify/liquid2.png" alt="img">
+                        <figcaption
+                            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">
+                            Fig 1.1</figcaption>
+                    </figure>
+                </div>
+                <h4
+                    class="text-dark-gray2 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4 pt-6 3xl:pt-8">
+                    Component Engineering & Supply Chain Management</h4>
+                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
+                    Whizz Systems provided crucial support in component sourcing and supply chain management, developing
+                    an Approved Vendor List (AVL) to ensure the selection of high-quality, reliable parts. This
+                    proactive approach ensured continuity and quality across all phases of product development.
+                </p>
+                <figure class="py-6 3xl:py-8">
+                    <img class="object-cover" src="assets/news/blogs/invensify/component.png" alt="img">
+                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">
+                        Fig 1.1</figcaption>
+                </figure>
+                <div class="py-6 3xl:py-8">
+                    <p
+                        class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
+                        During the supply chain and component engineering phase, Whizz Systems developed an Approved
+                        Vendor List (AVL) to help Invensify identify and qualify suppliers capable of consistently
+                        meeting their requirements. Additionally, Whizz Systems identified secondary sources for
+                        critical components based on design specifications, ensuring continuity and preparedness in the
+                        event of primary source unavailability.
+                    </p>
+                </div>
             </section>
         </div>
         <!-- right div -->
