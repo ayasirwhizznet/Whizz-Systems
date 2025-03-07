@@ -130,7 +130,7 @@ serviceCategories: any = [
         {
           name: 'Computer Aided Manufacturing',
           link: '/services/npi',
-          fragment: 'ComputerAided<br>Manufacturing',
+          fragment: 'ComputerAidedManufacturing',
         },
         {
           name: 'Prototyping',
