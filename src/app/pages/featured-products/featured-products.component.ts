@@ -94,7 +94,7 @@ export class FeaturedProductsComponent {
         {
           name: 'Xilinx Kintex 7 FPGA KC724',
           imgUrl: 'assets/featured-products/product.png',
-          link: '/404',
+          link: '/featured-products/xilinx-kintex-7-fpga-kc724',
         },
         {
           name: 'Xilinx Virtex 7 FPGA WS 7203',
