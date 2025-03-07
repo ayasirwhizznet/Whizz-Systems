@@ -79,7 +79,7 @@ export class FeaturedProductsComponent {
         {
           name: 'Whizz Virtex 7 FPGA WS 709',
           imgUrl: 'assets/featured-products/con-1.png',
-          link: '/404',
+          link: '/featured-products/whizz-virtex-7-fpga-ws709',
         },
         {
           name: 'Whizz Virtex 7 FPGA WS 7203A',
