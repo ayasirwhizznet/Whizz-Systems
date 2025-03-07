@@ -151,12 +151,12 @@ export class HeaderComponent implements OnInit {
             fragment: 'ComplianceEngineering',
           },
           {
-            label: 'Commodity Engineering',
+            label: 'Commodity Management',
             link: '/services/supply-chain-management',
             fragment: 'CommodityManagement',
           },
           {
-            label: 'Procurement Engineering',
+            label: 'Procurement Management',
             link: '/services/supply-chain-management',
             fragment: 'ProcurementManagement',
           },

@@ -127,7 +127,7 @@ export class MobileHeaderComponent {
           link: '/services/advanced-manufacturing',
         },
       ],
-      open: false, // Track the open state for each service section
+      open: false,
     },
     {
       title: 'Lab Testing Solutions',
@@ -149,7 +149,7 @@ export class MobileHeaderComponent {
           fragment: 'Characterization',
         },
       ],
-      open: false, // Track the open state for each service section
+      open: false,
     },
     {
       title: 'Supply Chain Management',
@@ -166,12 +166,17 @@ export class MobileHeaderComponent {
           fragment: 'ComplianceEngineering',
         },
         {
-          label: 'Procurement Engineering',
+          label: 'Commodity Management',
           link: '/services/supply-chain-management',
-          fragment: 'ProcurementEngineering',
+          fragment: 'CommodityManagement',
+        },
+        {
+          label: 'Procurement Management',
+          link: '/services/supply-chain-management',
+          fragment: 'ProcurementManagement',
         },
       ],
-      open: false, // Track the open state for each service section
+      open: false,
     },
 
     {
@@ -182,7 +187,7 @@ export class MobileHeaderComponent {
         { label: 'AVL Management', link: '/services/sustainable_engineering' },
         { label: 'Second Sourcing / Risk Buying', link: '/services/sustainable_engineering' },
       ],
-      open: false, // Track the open state for each service section
+      open: false,
     },
   ];
 
