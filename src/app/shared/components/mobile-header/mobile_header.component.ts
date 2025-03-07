@@ -33,7 +33,7 @@ export class MobileHeaderComponent {
     { label: 'About', link: '/about', open: false },
     { label: 'Services', dropdown: 'service', open: false },
     { label: 'Featured Products', link: '/featured-products', open: false },
-    { label: 'Resources', dropdown: 'resources', open: false },
+    { label: 'Blog', link: '/news-&-insights', open: false },
   ];
 
   serviceSections: ServiceSection[] = [
