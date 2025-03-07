@@ -17,7 +17,7 @@ export class FooterComponent {
   ];
 
   services: any[] = [
-    { label: 'Engineering & Design' },
+    { label: 'Engineering & Design', link: '/services' },
     { label: 'NPI', link: '/services/npi' },
     {
       label: 'Advanced Manufacturing',
@@ -32,21 +32,21 @@ export class FooterComponent {
   ];
 
   blog: any[] = [
-    { label: 'White Papers', link: '' },
-    { label: 'Case studies', link: '' },
-    { label: 'News', link: '' },
-    { label: 'FAQ', link: '' },
+    { label: 'White Papers', link: '/news-&-insights' },
+    { label: 'Case studies', link: '/news-&-insights' },
+    { label: 'News', link: '/news-&-insights' },
+    { label: 'FAQ', link: '/news-&-insights' },
   ];
 
   socailMedia: any[] = [
     {
       label: 'LinkedIn',
-      link: '',
+      link: 'https://www.linkedin.com/company/whizz-systems/?viewAsMember=true',
       icon: 'fa-brands fa-lg 3xl:fa-xl fa-linkedin',
     },
     {
       label: 'Youtube',
-      link: '',
+      link: 'https://www.youtube.com/@WhizzSystemsCA',
       icon: 'fa-brands fa-lg 3xl:fa-xl fa-youtube',
     },
   ];

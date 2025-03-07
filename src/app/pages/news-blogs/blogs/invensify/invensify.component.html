@@ -20,8 +20,17 @@
             <app-button heading="Lorem Ipsum" icon="assets/shared/r-arrow.svg" [size]="'medium'"
                 [routerLink]="'/404'"></app-button>
             <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
-                <a *ngFor="let link of links" routerLink="item.link" class="cursor-pointer">
-                    <img [src]="link.img" alt="img">
+                <a routerLink="/" class="cursor-pointer">
+                    <img src="assets/news/whizzicon.svg" alt="img">
+                </a>
+                <a routerLink="/" class="cursor-pointer">
+                    <img src="assets/news/whizz.svg" alt="img">
+                </a>
+                <a href="https://www.linkedin.com/company/whizz-systems/?viewAsMember=true" target="_blank" class="cursor-pointer">
+                    <img src="assets/news/linkedin.svg" alt="img">
+                </a>
+                <a href="https://www.youtube.com/@WhizzSystemsCA" target="_blank" class="cursor-pointer">
+                    <img src="assets/news/youtube.svg" alt="img">
                 </a>
             </div>
         </div>

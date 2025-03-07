@@ -56,7 +56,7 @@
                 </h3>
                 <div *ngFor="let item of blog">
                     <a class="mb-3 3xl:mb-4 inline-block cursor-pointer hover:text-teal1 text-nowrap transition-all duration-300 ease-in-out"
-                        routerLink="item.link">{{item.label}}</a>
+                        [routerLink]="item.link">{{item.label}}</a>
                 </div>
             </div>
             <!-- Social media -->
@@ -66,7 +66,7 @@
                     Social Media</h3>
                 <div *ngFor="let item of socailMedia">
                     <a class="mb-3 3xl:mb-4 inline-block cursor-pointer hover:text-teal1 transition-all duration-300 ease-in-out"
-                        routerLink="item.link"><i class="w-5 3xl:w-6 mr-1" [class]="item.icon" aria-hidden="true"></i>
+                        [href]="item.link" target="_blank"><i class="w-5 3xl:w-6 mr-1" [class]="item.icon" aria-hidden="true"></i>
                         {{item.label}}</a>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                     <h1 class="text-2xl lg:text-xl 2xl:text-2xl 3xl:text-3xl font-bold">Subscribe to our newsletter!</h1>
                     <p class="mt-3 3xl:mt-5 mb-5 3xl:mb-8 font-light text-base lg:text-xs 2xl:text-base 3xl:text-xl">Get updates
                         on the <br> latest news & insights</p>
-                    <app-animated-button routerLink="/404" heading="Subscribe" size="medium" bg="teal-bg"></app-animated-button>
+                    <app-animated-button routerLink="/" heading="Subscribe" size="medium" bg="teal-bg"></app-animated-button>
                 </div>
             </div>
         </div>

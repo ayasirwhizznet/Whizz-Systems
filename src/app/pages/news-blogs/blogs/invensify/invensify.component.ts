@@ -13,13 +13,6 @@ import { NewsCardComponent } from '@components/news-card/news-card.component';
   templateUrl: './invensify.component.html'
 })
 export class InvensifyComponent {
-  links = [
-    { img: 'assets/news/whizzicon.svg', imgUrl: '' },
-    { img: 'assets/news/whizz.svg', imgUrl: '' },
-    { img: 'assets/news/linkedin.svg', imgUrl: '' },
-    { img: 'assets/news/youtube.svg', imgUrl: '' },
-  ];
-
   tags = ['Medical Devices','PCB Layout','Hardware Design'];
 
   overviews = ['<b>Precise Temperature Control:</b> Maintains optimal conditions for pharmaceutical integrity.', '<b>Energy Efficiency:</b> Consumes less than 0.24 kWh per day.', '<b>Robust Construction:</b> A 12-liter payload capacity in a single, durable enclosure.', '<b>Advanced Connectivity:</b> Integrated LTE, GPS, and Bluetooth for real-time monitoring.', '<b>Rapid Cooling & Charging:</b> Incorporates a high-performance liquid cooling system and phase change material (PCM) to extend thermal stability.'];

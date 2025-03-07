@@ -4,6 +4,7 @@ import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
 import { AnimatedButton } from '@components/animated-button/animated-button.component';
 import { NewsCardComponent } from "../../../../shared/components/news-card/news-card.component";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-5g-oru',
@@ -13,7 +14,8 @@ import { NewsCardComponent } from "../../../../shared/components/news-card/news-
     AnimatedButton,
     BlogTagComponent,
     ButtonComponent,
-    NewsCardComponent
+    NewsCardComponent,
+    RouterLink
 ],
   templateUrl: './5g-oru.component.html',
 })
@@ -26,13 +28,6 @@ export class ORUComponent {
   toggleVisibility(section: string) {
     this.sectionVisibility[section] = !this.sectionVisibility[section];
   }
-
-  links = [
-    { img: 'assets/news/whizzicon.svg', imgUrl: '' },
-    { img: 'assets/news/whizz.svg', imgUrl: '' },
-    { img: 'assets/news/linkedin.svg', imgUrl: '' },
-    { img: 'assets/news/youtube.svg', imgUrl: '' },
-  ];
 
   articlesummary = [
     { title: 'Summary Point Number One' },

@@ -13,13 +13,6 @@ import { NewsCardComponent } from '@components/news-card/news-card.component';
   templateUrl: './pcle-6.component.html'
 })
 export class Pcle6Component {
-  links = [
-    { img: 'assets/news/whizzicon.svg', imgUrl: '' },
-    { img: 'assets/news/whizz.svg', imgUrl: '' },
-    { img: 'assets/news/linkedin.svg', imgUrl: '' },
-    { img: 'assets/news/youtube.svg', imgUrl: '' },
-  ];
-
   tags = ['Whitepapper','High-Speed Connectivity','Mechanical Design'];
 
 

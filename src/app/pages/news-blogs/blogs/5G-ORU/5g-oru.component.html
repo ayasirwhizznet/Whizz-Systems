@@ -12,11 +12,18 @@
             <h1
                 class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-[96%] sm:w-[57%] lg:w-full">
                 Building the Future of 5G Connectivity with Open Radio Unit Solutions</h1>
-            <app-button heading="Explore the Full Whitepaper" icon="assets/shared/r-arrow.svg" [size]="'medium'"
-                [routerLink]="'/404'"></app-button>
             <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
-                <a *ngFor="let link of links" routerLink="item.link" class="cursor-pointer">
-                    <img [src]="link.img" alt="img">
+                <a routerLink="/" class="cursor-pointer">
+                    <img src="assets/news/whizzicon.svg" alt="img">
+                </a>
+                <a routerLink="/" class="cursor-pointer">
+                    <img src="assets/news/whizz.svg" alt="img">
+                </a>
+                <a href="https://www.linkedin.com/company/whizz-systems/?viewAsMember=true" target="_blank" class="cursor-pointer">
+                    <img src="assets/news/linkedin.svg" alt="img">
+                </a>
+                <a href="https://www.youtube.com/@WhizzSystemsCA" target="_blank" class="cursor-pointer">
+                    <img src="assets/news/youtube.svg" alt="img">
                 </a>
             </div>
         </div>

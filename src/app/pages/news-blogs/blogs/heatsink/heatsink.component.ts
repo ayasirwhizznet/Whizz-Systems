@@ -4,20 +4,15 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AnimatedButton } from '@components/animated-button/animated-button.component';
 import { NewsCardComponent } from '@components/news-card/news-card.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-heatsink',
   standalone: true,
-  imports: [BlogTagComponent,ButtonComponent,CommonModule, AnimatedButton, NewsCardComponent],
+  imports: [BlogTagComponent,ButtonComponent,CommonModule, AnimatedButton, NewsCardComponent, RouterLink],
   templateUrl: './heatsink.component.html'
 })
 export class HeatsinkComponent {
-  links = [
-    { img: 'assets/news/whizzicon.svg', imgUrl: '' },
-    { img: 'assets/news/whizz.svg', imgUrl: '' },
-    { img: 'assets/news/linkedin.svg', imgUrl: '' },
-    { img: 'assets/news/youtube.svg', imgUrl: '' },
-  ];
 
   tags = ['Whitepaper','Thermal Management','Cooling Solutions'];
 
