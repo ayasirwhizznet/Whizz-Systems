@@ -8,6 +8,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [CommonModule, BlogTagComponent, RouterLink],
   templateUrl: './news-card.component.html',
+  styleUrl: './news-card.component.scss'
 })
 export class NewsCardComponent {
   @Input() imageUrl: string = '';
