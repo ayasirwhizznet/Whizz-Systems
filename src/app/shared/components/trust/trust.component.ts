@@ -25,7 +25,7 @@ export class TrustComponent implements AfterViewInit {
     'assets/home/trust/broadcom.png',
   ];
 
-  @ViewChild('sliderRef') sliderRef = {} as ElementRef;
+  @ViewChild('sliderRef', { static: false }) sliderRef!: ElementRef;
 
   slider: any = null;
 

@@ -1,22 +1,19 @@
 <section>
     <img loading="lazy" src="assets/shared/divider-top.png" alt="img">
     <div class="py-8 lg:py-12 3xl:py-16">
-        <h2 class="text-3xl sm:text-4xl 3xl:text-5xl lg-leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold text-dark-gray2 mb-5 3xl:mb-6 text-center">Trusted by</h2>
-        <p class="text-base 3xl:text-lg text-center text-dark-gray1 px-4 sm:px-0 mb-10 lg:mb-16 3xl:mb-16">Partnering with leading
-            companies to
-            redefine what’s possible.</p>
-        <div class="slider">
-            <div class="slide-track">
-                <div *ngFor="let partner of partners" class="slide">
-                    <img loading="lazy" [src]="partner" width="220px" height="80px" class="object-cover" />
-                </div>
+        <h2 class="text-3xl sm:text-4xl 3xl:text-5xl lg-leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold text-dark-gray2 mb-5 3xl:mb-6 text-center">
+            Trusted by
+        </h2>
+        <p class="text-base 3xl:text-lg text-center text-dark-gray1 px-4 sm:px-0 mb-10 lg:mb-16 3xl:mb-16">
+            Partnering with leading companies to redefine what’s possible.
+        </p>
 
-                <div *ngFor="let partner of partners" class="slide">
-                    <img loading="lazy" [src]="partner" width="220px" height="80px" class="object-cover" />
-                </div>
-
+        <div #sliderRef class="keen-slider">
+            <div *ngFor="let partner of partners" class="keen-slider__slide">
+                <img loading="lazy" [src]="partner" width="220px" height="80px" class="object-cover" />
             </div>
         </div>
+
     </div>
     <img loading="lazy" src="assets/shared/divider-bottom.png" alt="img">
 </section>
