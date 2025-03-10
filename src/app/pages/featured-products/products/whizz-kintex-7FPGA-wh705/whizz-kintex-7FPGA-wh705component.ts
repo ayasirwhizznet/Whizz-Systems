@@ -1,4 +1,4 @@
-import { ProductMarketingComponent } from './../../components/product-marketing/product-marketing.component';
+import { ProductMarketingComponent } from '../../components/product-marketing/product-marketing.component';
 import { Component } from '@angular/core';
 import { ButtonComponent } from '@components/button/button.component';
 import { CommonModule} from '@angular/common';
@@ -19,7 +19,7 @@ import { ProductCtaComponent } from '../../components/product-cta/product-cta.co
     ProductFeaturesComponent,
     ProductCtaComponent
   ],
-  templateUrl: './vhk158.component.html',
+  templateUrl: './whizz-kintex-7FPGA-wh705.component.html',
 })
 export class VHK158Component {
   features = {

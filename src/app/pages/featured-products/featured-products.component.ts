@@ -32,7 +32,7 @@ export class FeaturedProductsComponent {
       const element = document.getElementById(fragment);
       if (element) {
         const viewportHeight = window.innerHeight;
-        const offsetPercentage = 30;
+        const offsetPercentage = 40;
         const offset = (window.innerHeight * offsetPercentage) / 100;
         const topPosition = element.offsetTop - offset;
         window.scrollTo({

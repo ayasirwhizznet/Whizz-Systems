@@ -43,7 +43,7 @@ export const routes: Routes = [
       {
         path: 'whizz-kintex-7FPGA-WH705',
         loadComponent: () =>
-          import('./products/vhk158/vhk158.component').then(
+          import('./products/whizz-kintex-7FPGA-wh705/whizz-kintex-7FPGA-wh705component').then(
             (m) => m.VHK158Component
           ),
         title: 'Whizz Kintex 7FPGA WH705',
