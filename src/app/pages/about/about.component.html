@@ -1,7 +1,7 @@
 <!-- Hero -->
 <section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
     <div class="relative p-8 lg:p-12 3xl:p-16">
-        <video class="absolute inset-0 w-full h-full object-cover sm:rounded-xl 3xl:rounded-2xl" loop muted autoplay
+        <video  class="absolute inset-0 w-full h-full object-cover sm:rounded-xl 3xl:rounded-2xl" loop muted autoplay
             oncanplay="this.play()" onloadedmetadata="this.muted = true">
             <source src="assets/about/heroVedio.mp4" type="video/mp4">
         </video>
@@ -55,14 +55,14 @@
                 delivering exceptional quality, reliability, and innovation at every stage of the product lifecycle.</p>
         </div>
         <div class="w-full lg:w-[65%] 3xl:w-[60%] p-6 sm:p-10 lg:p-0">
-            <img class="object-cover" src="assets/about/legacy.png" alt="image">
+            <img loading="lazy" class="object-cover" src="assets/about/legacy.png" alt="image">
         </div>
     </div>
 </section>
 
 <!-- Experience -->
 <section>
-    <img src="assets/shared/divider-top.png" alt="img">
+    <img loading="lazy" src="assets/shared/divider-top.png" alt="img">
     <div
         class="px-[4%] sm:px-[9.3%] flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-32 3xl:gap-48 py-8 lg:py-12 3xl:py-16">
         <div class="w-full lg:w-1/2 py-6 lg:py-20">
@@ -86,7 +86,7 @@
             </div>
         </div>
     </div>
-    <img src="assets/shared/divider-bottom.png" alt="img">
+    <img loading="lazy" src="assets/shared/divider-bottom.png" alt="img">
 </section>>
 
 <!-- Unique Approach -->
@@ -114,7 +114,7 @@
         <div *ngFor="let item of concisely" class="mx-auto">
             <div
                 class="w-[225px] 3xl:w-[270px] h-full px-6 3xl:px-8 py-8 3xl:py-10 bg-dark-gray1 rounded-md 3xl:rounded-lg text-white text-center">
-                <img class="w-10 3xl:w-12 mx-auto" [src]="item.imgUrl" alt="img">
+                <img loading="lazy" class="w-10 3xl:w-12 mx-auto" [src]="item.imgUrl" alt="img">
                 <h4 class="text-sm 3xl:text-base font-medium 3xl:font-semibold my-1 3xl:my-2">{{item.title}}</h4>
                 <p class="text-sm 3xl:text-base font-thin">{{item.desc}}</p>
             </div>
@@ -127,7 +127,7 @@
     <h2
         class="text-3xl lg:text-4xl 3xl:text-5xl font-medium lg:leading-[40px] 3xl:leading-[57.6px] text-dark-gray2 text-center mb-6 3xl:mb-8">
         Global Footprint</h2>
-    <img src="assets/about/global-footprint.png" alt="map-img">
+    <img loading="lazy" src="assets/about/global-footprint.png" alt="map-img">
     <div
         class="w-[22rem] sm:w-[48rem] 3xl:w-[54rem] mx-auto bg-dark-gray1 text-white p-5 text-center rounded-md mt-8 overflow-x-scroll sm:overflow-x-hidden">
         <table>
@@ -177,7 +177,7 @@
         Spartan and Virtex product families.</p>
     <div class="flex justify-center lg:justify-between items-center flex-wrap gap-10 px-24">
         <div *ngFor="let item of certifications" class="flex flex-col items-center">
-            <img class="w-20 3xl:w-24 mb-4 3xl:mb-6" [src]="item.imgUrl" alt="img">
+            <img loading="lazy" class="w-20 3xl:w-24 mb-4 3xl:mb-6" [src]="item.imgUrl" alt="img">
             <p class="text-xl 3xl:text-2xl font-medium 3xl:font-bold text-center">{{item.name}}</p>
         </div>
     </div>
@@ -193,7 +193,7 @@
         Learn more about our leaders</p>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 3xl:gap-16">
         <div class="relative group overflow-y-hidden text-white" *ngFor="let item of passionate let i = index">
-            <img [src]="item.imgUrl" alt="profile-img" class="object-cover">
+            <img loading="lazy" [src]="item.imgUrl" alt="profile-img" class="object-cover">
             <div
                 class="absolute inset-0 group-hover:bg-black group-hover:bg-opacity-30 rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">
             </div>
@@ -222,7 +222,7 @@
         class="px-5 lg:px-40 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 place-items-center gap-6 lg:gap-8 3xl:gap-16">
         <div *ngFor="let item of collaborations let i = index" [ngClass]="{'sm:col-start-2 lg:col-auto': i === 8}"
             class="p-6 3xl:p-8">
-            <img class="object-cover" [src]="item" alt="img">
+            <img loading="lazy" class="object-cover" [src]="item" alt="img">
         </div>
     </div>
 </section>
@@ -230,7 +230,7 @@
 <!-- Talk To Expert -->
 <section class="px-0 sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
     <div class="relative p-8 lg:p-12 3xl:p-16 rounded-md 3xl:rounded-lg">
-        <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg" loop muted autoplay
+        <video  class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg" loop muted autoplay
             oncanplay="this.play()" onloadedmetadata="this.muted = true">
             <source src="assets/hero/waves2.mp4" type="video/mp4">
         </video>

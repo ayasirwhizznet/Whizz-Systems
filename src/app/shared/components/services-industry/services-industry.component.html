@@ -9,7 +9,7 @@
                     'lg:grid-cols-4 sm:gap-x-6 3xl:gap-x-8': columns === 4}">
         <div *ngFor="let industry of indusryStandsData"
             class="p-6 3xl:p-8 bg-white border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
-            <img class="rounded-md 3xl:rounded-lg" [src]="industry.imgUrl" alt="img">
+            <img loading="lazy" class="rounded-md 3xl:rounded-lg" [src]="industry.imgUrl" alt="img">
             <h3 class="text-sm 3xl:text-base font-medium lg:leading-[15px] 3xl:leading-[19.2px] my-6 3xl:my-8">{{industry.name}}</h3>
             <hr class="border border-light-gray1 opacity-60 mb-3 3xl:mb-4">
             <div *ngFor="let desc of industry.description">

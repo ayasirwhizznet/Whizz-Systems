@@ -1,6 +1,6 @@
 <section class=" px-0 sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
   <div class="relative">
-    <video class="absolute inset-0 w-full h-full object-cover z-0 sm:rounded-md 3xl:rounded-lg" loop muted autoplay
+    <video  class="absolute inset-0 w-full h-full object-cover z-0 sm:rounded-md 3xl:rounded-lg" loop muted autoplay
       oncanplay="this.play()" onloadedmetadata="this.muted = true">
       <source src="assets/hero/waves2.mp4" type="video/mp4">
     </video>
@@ -14,7 +14,7 @@
         <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
           target="_blank"><app-button class=" inline-block" size="large" heading="Get in touch"
             icon="assets/shared/webform.svg"></app-button></a>
-        <img class="w-full py-8 lg:py-12 3xl:py-16" src="assets/home/ideas/line.png" alt="line-img">
+        <img loading="lazy" class="w-full py-8 lg:py-12 3xl:py-16" src="assets/home/ideas/line.png" alt="line-img">
         <div class="flex gap-6 lg:gap-12 3xl:gap-16">
           <div *ngFor="let achievmnent of achievemnets" class="flex flex-col">
             <h3
@@ -32,7 +32,7 @@
           Certifications</h3>
         <div class="flex justify-center sm:justify-start items-center flex-wrap gap-6 3xl:gap-8">
           <div *ngFor="let certificate of certifications">
-            <img [src]='certificate' alt="img" class="w-14 xl:w-12 2xl:w-14 3xl:w-[70px]">
+            <img loading="lazy" [src]='certificate' alt="img" class="w-14 xl:w-12 2xl:w-14 3xl:w-[70px]">
           </div>
         </div>
       </div>

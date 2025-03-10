@@ -3,7 +3,7 @@
   <!-- Image Section -->
   <div class="w-full lg:w-[46.2%] p-10 sm:p-10 lg:p-0"
     [ngClass]="{ 'order-2 lg:order-1 ': isImageLeft, 'order-1 lg:order-2': !isImageLeft }">
-    <img class="object-cover rounded-md 3xl-rounded-lg" [src]="imgUrl" alt="img">
+    <img loading="lazy" class="object-cover rounded-md 3xl-rounded-lg" [src]="imgUrl" alt="img">
   </div>
   <div class="w-full lg:w-[53.8%]"
     [ngClass]="{ 'order-1 lg:order-0': isImageLeft, 'order-0 lg:order-1': !isImageLeft }">

@@ -3,7 +3,7 @@
   [class.hidden]="!isHeaderVisible">
   <div class="py-5 3xl:py-7 flex justify-between items-center">
     <a routerLink="/">
-      <img class="w-44 3xl:w-[220px] object-cover cursor-pointer" src="assets/header/teal-logo.png" alt="logo" />
+      <img loading="lazy" class="w-44 3xl:w-[220px] object-cover cursor-pointer" src="assets/header/teal-logo.png" alt="logo" />
     </a>
     <div class="flex items-center gap-9 3xl:gap-12 3xl:-ml-20">
       <ng-container *ngFor="let item of menuItems">
@@ -31,7 +31,7 @@
                 <p
                   class="text-dark-gray2 hover:text-teal2 text-xs 3xl:text-[15px] 3xl:leading-[22.5px] font-medium 3xl:font-semibold mb-3 3xl:mb-[14px]">
                   {{ item.label }}</p>
-                <img class="rounded-tl-lg rounded-tr-lg" src="assets/header/featured-products/featured-product.png" />
+                <img loading="lazy" class="rounded-tl-lg rounded-tr-lg" src="assets/header/featured-products/featured-product.png" />
               </a>
             </div>
           </div>
@@ -53,7 +53,7 @@
                 <h3 class="text-xl 3xl:text-2xl font-bold text-dark-gray2 mb-6 3xl:mb-8">
                   Interesting Blog Title that <br> Can Fit On Two Lines
                 </h3>
-                <img class="object-cover" src="assets/header/resources/featured-article.png" alt="img" />
+                <img loading="lazy" class="object-cover" src="assets/header/resources/featured-article.png" alt="img" />
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@
                 <span class="font-medium 3xl:font-semibold flex justify-between items-center">
                   All services
                   <ng-container>
-                    <img src="assets/shared/r-arrow.svg" alt="icon" class=" w-6 h-6" />
+                    <img loading="lazy" src="assets/shared/r-arrow.svg" alt="icon" class=" w-6 h-6" />
                   </ng-container>
                 </span>
               </button>
@@ -114,13 +114,13 @@
                   <h2 class="text-xl 3xl:text-2xl font-bold text-dark-gray2 mb-6 3xl:mb-8">
                     PCIe-6: Everything You Need to Know
                   </h2>
-                  <img class="object-contain w-full" src="assets/header/blog1.png" alt="blog-img" />
+                  <img loading="lazy" class="object-contain w-full" src="assets/header/blog1.png" alt="blog-img" />
                 </div>
                 <div routerLink="/news-&-insights/whitepaper-5g-oru" class="bg-white px-6 3xl:px-8 pt-6 3xl:pt-8 pb-[2px] rounded-md 3xl:rounded-lg cursor-pointer grow-0">
                   <h2 class="text-xl 3xl:text-2xl font-bold text-dark-gray2 mb-6 3xl:mb-8">
                     Building the Future of 5G Connectivity with Open Ra...
                   </h2>
-                  <img class="object-contain w-full" src="assets/header/blog2.png" alt="blog-img" />
+                  <img loading="lazy" class="object-contain w-full" src="assets/header/blog2.png" alt="blog-img" />
                 </div>
               </div>
           </div>
@@ -143,7 +143,7 @@
 <header class="mobile-header block lg:hidden shadow-sm px-[3%] fixed z-50 -top-[1px] sm:-top-[3px] left-0 right-0 bg-white">
   <div class="py-5 flex justify-between items-center ">
     <a routerLink="/" (click)="isClickedMobileLogo()">
-      <img class="w-36 object-cover cursor-pointer" src="assets/header/teal-logo.png" alt="logo" />
+      <img loading="lazy" class="w-36 object-cover cursor-pointer" src="assets/header/teal-logo.png" alt="logo" />
     </a>
     <div>
       <!-- <i (click)="toggleSearchbar()"
