@@ -83,7 +83,7 @@ export class ServicesComponent implements AfterViewInit {
           },
         });
       }
-    }, 200);
+    }, 500);
   }
   
 
