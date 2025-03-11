@@ -39,23 +39,23 @@ export class PowerDeliveryComponent {
   benefits: any = [
     {
       imgUrl: 'assets/services/engg&design/power-delivery/benefits.png',
-      name: 'Lorem Ipsum',
-      desc: 'Advanced DC and AC simulation capabilities tailored to your design needs.',
+      name: 'Proven PDN Optimization Expertise',
+      desc: '25+ Years of experience ensuring robust power delivery.',
     },
     {
       imgUrl: 'assets/services/engg&design/power-delivery/benefits.png',
-      name: 'Lorem Ipsum',
-      desc: 'Expertise in high-performance PCB layouts for modern electronics.',
+      name: 'First-Time-Right Designs',
+      desc: 'Reduce design iterations and time-to-market.',
     },
     {
       imgUrl: 'assets/services/engg&design/power-delivery/benefits.png',
-      name: 'Lorem Ipsum',
-      desc: 'Reduction of design risks and iterations, ensuring faster time-to-market.',
+      name: 'End-to-End Support',
+      desc: 'Seamless integration with SI, PI, and thermal analysis.',
     },
     {
       imgUrl: 'assets/services/engg&design/power-delivery/benefits.png',
-      name: 'Lorem Ipsum',
-      desc: 'Proven reliability and efficiency across industries.',
+      name: 'Cost-Effective & Scalable Solutions',
+      desc: 'Optimized designs that balance performance and cost.',
     },
   ];
 }
