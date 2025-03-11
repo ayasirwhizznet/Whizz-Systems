@@ -45,13 +45,13 @@ export class ServicesComponent implements AfterViewInit {
       link: '/services/lab-testing-solutions',
     },
     {
-      imgUrl: 'assets/home/services/supply-chain.jfif',
+      imgUrl: 'assets/home/services/supply-chain.png',
       name: 'Supply Chain Management & Design',
       desc: 'Streamlining your supply chain with integrated sourcing, compliance, and procurement solutions, so you can rely on a single, trusted partner.',
       link: '/services/supply-chain-management',
     },
     {
-      imgUrl: 'assets/home/services/sustainable.jfif',
+      imgUrl: 'assets/home/services/sustainable.png',
       name: 'Sustaining Engineering & Obsolescence Management',
       desc: 'Keeping your product lines future-proof with proactive support and obsolescence solutions.',
       link: '/services/sustainable_engineering',
