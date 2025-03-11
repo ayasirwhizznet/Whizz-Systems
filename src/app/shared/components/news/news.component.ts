@@ -100,7 +100,7 @@ export class NewsComponent implements AfterViewInit {
           },
         },
       });
-    }, 0);
+    }, 500);
   }
 
   ngOnDestroy() {
