@@ -34,7 +34,7 @@ export class SystemDesignComponent {
     {
       imgUrl: 'assets/services/engg&design/system-design/schematic.png',
       name: 'Schematic Design & Drafting',
-      desc: 'Our experts design circuit diagrams that capture every detail of your system. By emphasizing precision, we minimize errors and create a strong foundation for your hardware development.',
+      desc: 'Our experts design <span class = "font-medium">circuit diagrams</span> using industry-leading tools  including: Cadence Concept, OrCAD,  Mentor Graphics, View Draw,and DxDesigner. These tools enable <span class = "font-medium">accurate schematic capture, simulation, and validation,</span> ensuring first-pass success in complex hardware designs.',
     },
     {
       imgUrl: 'assets/services/engg&design/system-design/power.png',
