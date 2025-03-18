@@ -1,7 +1,7 @@
 <a routerLink="{{navigate}}"
 class="group cursor-pointer block overflow-y-hidden no-scrollbar h-[22rem] sm:h-[22rem] xl:h-[22rem] 2xl:h-[22rem] 3xl:h-[25.4rem] hover_div">
   <div class="p-6 3xl:p-8 bg-gray mb-6 3xl:mb-8 border border-light-gray1 bg-card-gray rounded-md 3xl:rounded-lg">
-    <img loading="lazy" [src]="imageUrl" class="hover_img rounded-md 3xl:rounded-lg mb-6 3xl:mb-8" alt="Card-image">
+    <img loading="lazy" [src]="imageUrl" class="hover_img rounded-md 3xl:rounded-lg mb-6 3xl:mb-8" alt="{{title}}">
     <div class="h-[8rem] 3xl:h-[8.5rem]">
       <div class="flex items-center gap-2 3xl:gap-2 flex-wrap mb-4 3xl:mb-5">
         <div *ngFor="let tag of tags">

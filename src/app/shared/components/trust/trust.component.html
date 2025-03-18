@@ -10,7 +10,7 @@
 
         <div #sliderRef class="keen-slider">
             <div *ngFor="let partner of partners" class="keen-slider__slide">
-                <img loading="lazy" [src]="partner" width="220px" height="80px" class="object-cover" />
+                <img loading="lazy" [src]="partner.link" width="220px" height="80px" class="object-cover" alt="{{partner.alt}}" />
             </div>
         </div>
 

@@ -45,7 +45,7 @@
         <div class="w-1/2">
           <img loading="lazy"
             class="object-cover h-[10rem] lg:h-[17rem] 3xl:h-[21rem] rounded-md transition-all duration-500 ease-in-out"
-            [src]="blog.imgUrl" alt="img" [ngClass]="i % 2 === 0 ? 'origin-right' : 'origin-left'" />
+            [src]="blog.imgUrl" alt="{{ blog.title }}" [ngClass]="i % 2 === 0 ? 'origin-right' : 'origin-left'" />
         </div>
         <div class="w-1/2">
           <div class="flex items-center gap-2 flex-wrap">
