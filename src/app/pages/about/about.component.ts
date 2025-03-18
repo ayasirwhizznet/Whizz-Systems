@@ -40,12 +40,13 @@ export class AboutComponent {
   i = 0;
 
   certifications = [
-    { imgUrl: 'assets/about/itar.png', name: 'ITAR' },
-    { imgUrl: 'assets/about/9001.png', name: 'ISO 9001: 2015 RevD' },
-    { imgUrl: 'assets/about/13485.png', name: 'ISO 13485:2016' },
-    { imgUrl: 'assets/about/27001.png', name: 'ISO-27001' },
-    { imgUrl: 'assets/about/14001.png', name: 'ISO-14001' },
+    { imgUrl: 'assets/about/itar.png', name: 'ITAR', alt: 'ITAR Certification' },
+    { imgUrl: 'assets/about/9001.png', name: 'ISO 9001: 2015 RevD', alt: 'ISO 9001: 2015 RevD Certification' },
+    { imgUrl: 'assets/about/13485.png', name: 'ISO 13485:2016', alt: 'ISO 13485:2016 Certification' },
+    { imgUrl: 'assets/about/27001.png', name: 'ISO-27001', alt: 'ISO-27001 Certification' },
+    { imgUrl: 'assets/about/14001.png', name: 'ISO-14001', alt: 'ISO-14001 Certification' },
   ];
+  
 
   concisely = [
     {
@@ -71,17 +72,18 @@ export class AboutComponent {
   ];
 
   collaborations = [
-    'assets/about/altera.png',
-    'assets/about/amd.png',
-    'assets/about/nvidia.png',
-    'assets/about/amazon.png',
-    'assets/about/microsoft.png',
-    'assets/about/keysight.png',
-    'assets/about/google.png',
-    'assets/about/advantest.png',
-    'assets/about/paypal.png',
-    'assets/about/broadcom.png',
+    { imgUrl: 'assets/about/altera.png', alt: 'Altera Logo' },
+    { imgUrl: 'assets/about/amd.png', alt: 'AMD Logo' },
+    { imgUrl: 'assets/about/nvidia.png', alt: 'NVIDIA Logo' },
+    { imgUrl: 'assets/about/amazon.png', alt: 'Amazon Logo' },
+    { imgUrl: 'assets/about/microsoft.png', alt: 'Microsoft Logo' },
+    { imgUrl: 'assets/about/keysight.png', alt: 'Keysight Logo' },
+    { imgUrl: 'assets/about/google.png', alt: 'Google Logo' },
+    { imgUrl: 'assets/about/advantest.png', alt: 'Advantest Logo' },
+    { imgUrl: 'assets/about/paypal.png', alt: 'PayPal Logo' },
+    { imgUrl: 'assets/about/broadcom.png', alt: 'Broadcom Logo' },
   ];
+  
 
   passionate = [
     {

@@ -4,11 +4,11 @@ import {
   CUSTOM_ELEMENTS_SCHEMA,
   ElementRef,
   ViewChild,
+  Inject,
+  PLATFORM_ID,
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ButtonComponent } from '../button/button.component';
-import 'keen-slider/keen-slider.css';
-import KeenSlider from 'keen-slider';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -22,7 +22,7 @@ export class ServicesComponent implements AfterViewInit {
   serviceCategories: any[] = [
     {
       imgUrl: 'assets/home/services/engg.&design.png',
-      name: 'Engineering & design',
+      name: 'Engineering & Design',
       desc: 'Innovating Designs for the Next Generation of Electronics.',
       link: '/services',
     },
@@ -58,37 +58,44 @@ export class ServicesComponent implements AfterViewInit {
     },
   ];
 
-  @ViewChild('sliderRef') sliderRef = {} as ElementRef;
-
+  @ViewChild('sliderRef', { static: false }) sliderRef!: ElementRef;
   slider: any = null;
-  progress = {
-    maxIdx: 5,
-    abs: 0,
-  };
+  progress = { maxIdx: 5, abs: 0 };
   totalSlides = this.serviceCategories.length;
 
-  ngAfterViewInit() {
-    setTimeout(() => {
-      if (this.sliderRef?.nativeElement) {
-        this.slider = new KeenSlider(this.sliderRef.nativeElement, {
-          slideChanged: (slider) => {
-            this.progress = slider.track.details;
-          },
-          breakpoints: {
-            '(min-width: 0px)': { slides: { perView: 1, spacing: 50 } },
-            '(min-width: 640px)': { slides: { perView: 2, spacing: 60 } },
-            '(min-width: 1280px)': { slides: { perView: 4, spacing: 40 } },
-            '(min-width: 1536px)': { slides: { perView: 4, spacing: 52 } },
-            '(min-width: 1800px)': { slides: { perView: 4, spacing: 64 } },
-          },
-        });
-      }
-    }, 500);
+  constructor(@Inject(PLATFORM_ID) private platformId: object) {}
+
+  async ngAfterViewInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      const KeenSlider = (await import('keen-slider')).default;
+
+      setTimeout(() => {
+        if (this.sliderRef?.nativeElement) {
+          this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+            slideChanged: (slider) => {
+              this.progress = slider.track.details;
+            },
+            breakpoints: {
+              '(min-width: 0px)': { slides: { perView: 1, spacing: 50 } },
+              '(min-width: 640px)': { slides: { perView: 2, spacing: 60 } },
+              '(min-width: 1280px)': { slides: { perView: 4, spacing: 40 } },
+              '(min-width: 1536px)': { slides: { perView: 4, spacing: 52 } },
+              '(min-width: 1800px)': { slides: { perView: 4, spacing: 64 } },
+            },
+          });
+        }
+      }, 500);
+    }
   }
-  
 
   ngOnDestroy() {
-    if (this.slider) this.slider.destroy();
+    if (
+      isPlatformBrowser(this.platformId) &&
+      this.slider &&
+      typeof this.slider.destroy === 'function'
+    ) {
+      this.slider.destroy();
+    }
   }
 
   nextSlide() {

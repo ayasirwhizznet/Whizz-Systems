@@ -97,6 +97,14 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/Whizz/server",
+            "main": "src/server.ts",
+            "tsConfig": "tsconfig.server.json"
+          }
         }
       }
     }
