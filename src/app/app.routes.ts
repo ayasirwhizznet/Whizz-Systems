@@ -12,7 +12,7 @@ export const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent,
-    title: 'About',
+    title: 'About Us',
   },
   {
     path: 'services',
