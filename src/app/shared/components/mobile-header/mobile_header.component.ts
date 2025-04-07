@@ -108,23 +108,23 @@ export class MobileHeaderComponent {
       items: [
         {
           label: 'Manufacturing Simulations',
-          link: '/services/advanced-manufacturing',
+          link: '/services/advanced-manufacturing/manufacturing-simulations',
         },
         {
           label: 'Electronic Manufacturing Assembly',
-          link: '/services/advanced-manufacturing',
+          link: '/services/advanced-manufacturing/electronic-manufacturing-assembly',
         },
         {
           label: 'Mechanical Assembly',
-          link: '/services/advanced-manufacturing',
+          link: '/services/advanced-manufacturing/mechanical-assembly',
         },
         {
           label: 'System Build & Packaging Design',
-          link: '/services/advanced-manufacturing',
+          link: '/services/advanced-manufacturing/system-build-packaging-design',
         },
         {
           label: 'Local & Offshore Capabilities',
-          link: '/services/advanced-manufacturing',
+          link: '/services/advanced-manufacturing/local-offshore-capabilities',
         },
       ],
       open: false,
