@@ -10,7 +10,8 @@ export const routes: Routes = [
           import('./sustainable-engineering.component').then(
             (m) => m.SustainableEngineeringComponent
           ),
-        title: 'Sustainable Engineering & Obsolescence Management',
+        title: 'Sustaining Engineering & Obsolescence Management | Whizz Systems',
+        data: {description: 'Extend product lifecycles with Whizz Systems Sustaining Engineering & Obsolescence Management. We mitigate risks, manage EOL components, and optimize AVL strategies for uninterrupted production.' }
       },
     ],
   },
