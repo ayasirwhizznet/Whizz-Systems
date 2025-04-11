@@ -8,7 +8,7 @@
     <div class="flex items-center gap-9 3xl:gap-12 3xl:-ml-20">
       <ng-container *ngFor="let item of menuItems">
         <div class="relative cursor-pointer">
-          <a [ngClass]="{
+          <button [ngClass]="{
             'text-teal1': (item.label !== 'About' && activeMenuItem === item.label) || (item.label === 'About' && currentRoute === '/about'),
             'text-dark-gray1': activeMenuItem !== item.label && item.label !== 'About'
           }" (click)="item.dropdown ? toggleBottomSection(item.dropdown, item.label) : menu(item.label)"
@@ -20,7 +20,7 @@
               '-rotate-180 text-teal1': activeMenuItem === item.label && item.dropdown,
               'rotate-135 text-dark-gray1': activeMenuItem !== item.label && item.dropdown
             }"></i>
-          </a>
+          </button>
 
           <div *ngIf="activeBottomSection === 'featured'"
             class="p-2 3xl:p-[10px] bg-card-gray rounded-br-lg rounded-bl-lg absolute left-1/2 transform -translate-x-1/2 top-[68px] 3xl:top-[88px] z-50">
