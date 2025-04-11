@@ -8,7 +8,8 @@ export const routes: Routes = [
     path: '',
     component: HomeComponent,
     title: 'Whizz Systems',
-  },
+    data: {description: 'Whizz Systems is a leading provider of innovative electronic design and manufacturing solutions. From concept to production, we deliver high-quality PCB design, prototyping, and assembly services tailored for startups and enterprises alike.'}
+  },  
   {
     path: 'about',
     component: AboutComponent,
