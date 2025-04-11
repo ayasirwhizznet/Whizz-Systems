@@ -53,7 +53,9 @@
                 "scripts": true
               },
               "outputHashing": "all",
-              "sourceMap": false
+              "sourceMap": true,
+              "namedChunks": true,
+              "aot": true
             },
             "development": {
               "optimization": false,
