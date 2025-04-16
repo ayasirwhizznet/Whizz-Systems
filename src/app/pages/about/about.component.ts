@@ -99,22 +99,7 @@ export class AboutComponent {
       desc: `With a background in product development and manufacturing services, Muhammad co-founded Whizz Systems in 1999. His leadership has driven Whizz Systems' global presence across 3 continents, serving industries like computing, networking, medical, and defense.`,
     },
   ];
-
-  santaClara = [
-    '35,000 Square Foot Facility',
-    '95 Employees',
-    'SPI, FP, AOI, X-RAY',
-    '4 Juki SMT Lines',
-    'QMS, ITAR',
-  ];
-
-  malaysia = [
-    '80,000 Square Foot Facility',
-    '100 Employees',
-    'SPI, FP, AOI, X-RAY',
-    '4 Juki SMT Lines',
-    'QMS',
-  ];
+  
   services = [
     '',
     'Product Development',

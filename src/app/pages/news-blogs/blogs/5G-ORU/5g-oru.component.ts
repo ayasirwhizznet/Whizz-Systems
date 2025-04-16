@@ -29,15 +29,6 @@ export class ORUComponent {
     this.sectionVisibility[section] = !this.sectionVisibility[section];
   }
 
-  articlesummary = [
-    { title: 'Summary Point Number One' },
-    { title: 'Summary Point Number Two' },
-    { title: 'Summary Point Number Three' },
-    { title: 'Summary Point Number Four' },
-    { title: 'Summary Point Number Five' },
-    { title: 'Summary Point Number Six' },
-  ];
-
   cards: any[] = [
     {
       imageUrl: 'assets/news/blogs/blog-bottom/heatsink.png',

@@ -16,8 +16,18 @@
       </div>
 
       <span class="ml-auto text-lg" *ngIf="item.dropdown">
-        <i class="fa-solid fa-chevron-right transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)"
-          [ngClass]="{'rotate-90 text-teal1': item.open, 'text-dark-gray1': !item.open}"></i>
+        <span class="ml-auto text-lg" *ngIf="item.dropdown">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 320 512"
+               class="w-[1em] h-[1em] transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)] fill-current"
+               [ngClass]="{
+                 'rotate-90 text-teal1': item.open,
+                 'text-dark-gray1': !item.open
+               }">
+            <path
+              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+          </svg>
+        </span>        
       </span>
     </div>
 
@@ -25,8 +35,16 @@
     <div *ngIf="item.open" class="ml-4">
       <!-- Dropdown Back Button -->
       <div *ngIf="item.dropdown" class="flex items-center cursor-pointer mb-2" (click)="item.open = false">
-        <span class="my-2 -ml-4 text-lg cursor-pointer"><i class="fa-solid fa-arrow-left-long"></i></span>
+        <span class="my-2 -ml-4 text-lg cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 512 512"
+               class="w-[1em] h-[1em] fill-current">
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"/>
+          </svg>
+        </span>
       </div>
+      
 
       <!-- Dropdowns for different types -->
       <ng-container *ngIf="item.dropdown === 'service'">
@@ -45,13 +63,28 @@
               {{ section.title }}
             </a>
             <span class="ml-auto text-lg">
-              <i class="fa-solid fa-chevron-right transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)"
-                [ngClass]="{'rotate-90 text-teal1': section.open, 'text-dark-gray1': !section.open}"></i>
+              <svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 320 512"
+     class="transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)] w-[1em] h-[1em] fill-current"
+     [ngClass]="{
+       'rotate-90 text-teal1': section.open,
+       'text-dark-gray1': !section.open
+     }">
+  <path
+    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+</svg>
+
             </span>
           </div>
           <div *ngIf="section.open" class="ml-4">
             <div class="flex items-center cursor-pointer" (click)="section.open = false">
-              <span class="my-2 -ml-4"><i class="fa-solid fa-arrow-left-long"></i></span>
+              <span class="my-2 -ml-4">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 512 512"
+                     class="w-[1em] h-[1em] fill-current">
+                  <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"/>
+                </svg>
+              </span>              
             </div>
             <div *ngFor="let subItem of section.items" class="mb-4">
               <a [routerLink]="subItem.link" [fragment]= "subItem.fragment" class="block text-base text-dark-gray1 hover:text-teal1"

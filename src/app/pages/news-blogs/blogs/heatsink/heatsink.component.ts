@@ -1,4 +1,3 @@
-import { ButtonComponent } from '@components/button/button.component';
 import { BlogTagComponent } from './../../../../shared/components/blog-tag/blog-tag.component';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -9,7 +8,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-heatsink',
   standalone: true,
-  imports: [BlogTagComponent,ButtonComponent,CommonModule, AnimatedButton, NewsCardComponent, RouterLink],
+  imports: [BlogTagComponent,CommonModule, AnimatedButton, NewsCardComponent, RouterLink],
   templateUrl: './heatsink.component.html'
 })
 export class HeatsinkComponent {

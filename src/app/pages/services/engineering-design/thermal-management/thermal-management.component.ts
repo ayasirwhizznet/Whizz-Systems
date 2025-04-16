@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component } from '@angular/core';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
 import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
@@ -18,17 +17,7 @@ import { ServicesBenefitsComponent } from '@components/services-benefits/service
   ],
   templateUrl: './thermal-management.component.html',
 })
-export class ThermalManagementComponent implements OnInit {
-  titleSlug: string = '';
-
-  constructor(private route: ActivatedRoute) {}
-
-  ngOnInit(): void {
-    this.route.paramMap.subscribe((params) => {
-      this.titleSlug = params.get('title') || '';
-    });
-  }
-
+export class ThermalManagementComponent {
   coreServices: any[] = [
     {
       imgUrl: 'assets/services/engg&design/thermal-management/cfd-analysis.png',

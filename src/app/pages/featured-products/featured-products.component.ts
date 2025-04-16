@@ -8,7 +8,6 @@ import { ButtonComponent } from '@components/button/button.component';
   standalone: true,
   imports: [CommonModule, RouterModule, ButtonComponent],
   templateUrl: './featured-products.component.html',
-  styleUrl: './featured-products.component.scss'
 })
 export class FeaturedProductsComponent {
   constructor(private router: Router) {}
@@ -133,83 +132,6 @@ export class FeaturedProductsComponent {
     //     },
     //   ],
     // },
-  ];
-
-  evaluationKit: any[] = [
-    {
-      name: 'Whizz Kintex 7 FPGA WH705',
-      imgUrl: 'assets/featured-products/product.png',
-      link: '/404',
-    },
-    {
-      name: 'Whizz Virtex- 7 FPGA WS707A',
-      imgUrl: 'assets/featured-products/product.png',
-      link: '/404',
-    },
-    {
-      name: 'Whizz Zyn- 7000 SoC WZ 706',
-      imgUrl: 'assets/featured-products/product.png',
-      link: '/404',
-    },
-    {
-      name: 'Whizz Virtex- 7 FPGA VS 707 B',
-      imgUrl: 'assets/featured-products/product.png',
-      link: '/404',
-    },
-  ];
-
-  connectivityKit: any[] = [
-    {
-      name: 'Whizz Virtex- 7 FPGA WS709',
-      imgUrl: 'assets/featured-products/product.png',
-      link: '/404',
-    },
-    {
-      name: 'Whizz Virtex- 7 FPGA WS 7203A',
-      imgUrl: 'assets/featured-products/product.png',
-      link: '/404',
-    },
-  ];
-
-  characterizationKit: any[] = [
-    {
-      name: 'Xilinx Kintex- 7 FPGA KC724',
-      imgUrl: 'assets/featured-products/product.png',
-      link: '/404',
-    },
-    {
-      name: 'Xilinx Virtex- 7 FPGA WS 7203',
-      imgUrl: 'assets/featured-products/product.png',
-      link: '/404',
-    },
-  ];
-
-  kitAccessories: any[] = [
-    {
-      name: 'Balun Transformer',
-      imgUrl: 'assets/featured-products/product.png',
-      link: '/404',
-    },
-    {
-      name: 'FMC Loopback Card',
-      imgUrl: 'assets/featured-products/product.png',
-      link: '/404',
-    },
-    {
-      name: 'PCIe loopback Card',
-      imgUrl: 'assets/featured-products/product.png',
-      link: '/404',
-    },
-    {
-      name: 'PCIe loopback Card',
-      imgUrl: 'assets/featured-products/product.png',
-      link: '/404',
-    },
-    {
-      name: 'USB3 Micro B Plug Adapter',
-      imgUrl: 'assets/featured-products/product.png',
-      link: '/404',
-    },
   ];
 
   miscellaneous: any[] = [

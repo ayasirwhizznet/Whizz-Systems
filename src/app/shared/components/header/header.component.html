@@ -3,7 +3,8 @@
   [class.hidden]="!isHeaderVisible">
   <div class="py-5 3xl:py-7 flex justify-between items-center">
     <a routerLink="/">
-      <img height="70" width="176" loading="lazy" class="w-44 h-auto 3xl:w-[220px] object-cover cursor-pointer" src="assets/header/teal-logo.png" alt="logo" />
+      <img height="70" width="176" loading="lazy" class="w-44 h-auto 3xl:w-[220px] object-cover cursor-pointer"
+        src="assets/header/teal-logo.png" alt="logo" />
     </a>
     <div class="flex items-center gap-9 3xl:gap-12 3xl:-ml-20">
       <ng-container *ngFor="let item of menuItems">
@@ -12,14 +13,19 @@
             'text-teal1': (item.label !== 'About' && activeMenuItem === item.label) || (item.label === 'About' && currentRoute === '/about'),
             'text-dark-gray1': activeMenuItem !== item.label && item.label !== 'About'
           }" (click)="item.dropdown ? toggleBottomSection(item.dropdown, item.label) : menu(item.label)"
-            [routerLink]="item.link" routerLinkActive="text-teal1" class="3xl:text-xl text-dark-gray1 hover:text-teal1">
+            [routerLink]="item.link" routerLinkActive="text-teal1"
+            class="flex 3xl:text-xl text-dark-gray1 hover:text-teal1">
             {{ item.label }}
-            <i *ngIf="item.dropdown"
-              class="fa-solid fa-chevron-down text-sm 3xl:text-base transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)]"
+
+            <svg *ngIf="item.dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="15" width="22"
+              class="transition-transform duration-300 ease-[cubic-bezier(1,0.25,0.25,.8)] text-sm 3xl:text-base fill-current mt-[5px]"
               [ngClass]="{
-              '-rotate-180 text-teal1': activeMenuItem === item.label && item.dropdown,
-              'rotate-135 text-dark-gray1': activeMenuItem !== item.label && item.dropdown
-            }"></i>
+  '-rotate-180 text-teal1': activeMenuItem === item.label && item.dropdown,
+  'rotate-135 text-dark-gray1': activeMenuItem !== item.label && item.dropdown
+}">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+            </svg>
           </button>
 
           <div *ngIf="activeBottomSection === 'featured'"
@@ -31,7 +37,8 @@
                 <p
                   class="text-dark-gray2 hover:text-teal2 text-xs 3xl:text-[15px] 3xl:leading-[22.5px] font-medium 3xl:font-semibold mb-3 3xl:mb-[14px]">
                   {{ item.label }}</p>
-                <img height="170" width="220" loading="lazy" class="h-auto w-full rounded-tl-lg rounded-tr-lg" src="assets/header/featured-products/featured-product.png" />
+                <img height="170" width="220" loading="lazy" class="h-auto w-full rounded-tl-lg rounded-tr-lg"
+                  src="assets/header/featured-products/featured-product.png" />
               </a>
             </div>
           </div>
@@ -53,7 +60,8 @@
                 <h3 class="text-xl 3xl:text-2xl font-bold text-dark-gray2 mb-6 3xl:mb-8">
                   Interesting Blog Title that <br> Can Fit On Two Lines
                 </h3>
-                <img height="auto" width="auto" loading="lazy" class="object-cover" src="assets/header/resources/featured-article.png" alt="img" />
+                <img height="auto" width="auto" loading="lazy" class="object-cover"
+                  src="assets/header/resources/featured-article.png" alt="img" />
               </div>
             </div>
           </div>
@@ -88,7 +96,8 @@
     </div>
   </div>
 
-  <div *ngIf="activeBottomSection" class="absolute left-1/2 transform -translate-x-1/2 pb-1 z-50 lg:w-[88%] 2xl:w-[82%]">
+  <div *ngIf="activeBottomSection"
+    class="absolute left-1/2 transform -translate-x-1/2 pb-1 z-50 lg:w-[88%] 2xl:w-[82%]">
     <ng-container *ngIf="activeBottomSection === 'service'">
       <div class="p-2 3xl:p-[10px] bg-card-gray rounded-br-lg rounded-bl-lg">
         <div class="flex gap-2 3xl:gap-[10px]">
@@ -100,30 +109,35 @@
                 <span class="font-medium 3xl:font-semibold flex justify-between items-center">
                   All services
                   <ng-container>
-                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/shared/r-arrow.svg" alt="icon" class=" w-6 h-6" />
+                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/shared/r-arrow.svg"
+                      alt="icon" class=" w-6 h-6" />
                   </ng-container>
                 </span>
               </button>
             </div>
           </div>
           <div class="w-1/3 p-6 3xl:p-8 rounded-md 3xl:rounded-lg bg-dark-gray2 flex flex-col gap-6 justify-around">
-              <h3 class="text-xs 3xl:text-[15px] font-medium 3xl:font-semibold  text-light-gray1">
-                Featured Blog
-              </h3>
-                <div routerLink="/news-&-insights/whitepaper-pcle6" class="bg-white px-6 3xl:px-8 pt-6 3xl:pt-8 pb-[2px] rounded-md 3xl:rounded-lg cursor-pointer grow-0">
-                  <h2 class="text-xl 3xl:text-2xl font-bold text-dark-gray2 mb-6 3xl:mb-8">
-                    PCIe-6: Everything You Need to Know
-                  </h2>
-                  <img height="109" width="311" loading="lazy" class="object-contain w-full h-auto" src="assets/header/blog1.png" alt="blog-img" />
-                </div>
-                <div routerLink="/news-&-insights/whitepaper-5g-oru" class="bg-white px-6 3xl:px-8 pt-6 3xl:pt-8 pb-[2px] rounded-md 3xl:rounded-lg cursor-pointer grow-0">
-                  <h2 class="text-xl 3xl:text-2xl font-bold text-dark-gray2 mb-6 3xl:mb-8">
-                    Building the Future of 5G Connectivity with Open Ra...
-                  </h2>
-                  <img height="109" width="311" loading="lazy" class="object-contain w-full h-auto" src="assets/header/blog2.png" alt="blog-img" />
-                </div>
-              </div>
+            <h3 class="text-xs 3xl:text-[15px] font-medium 3xl:font-semibold  text-light-gray1">
+              Featured Blog
+            </h3>
+            <div routerLink="/news-&-insights/whitepaper-pcle6"
+              class="bg-white px-6 3xl:px-8 pt-6 3xl:pt-8 pb-[2px] rounded-md 3xl:rounded-lg cursor-pointer grow-0">
+              <h2 class="text-xl 3xl:text-2xl font-bold text-dark-gray2 mb-6 3xl:mb-8">
+                PCIe-6: Everything You Need to Know
+              </h2>
+              <img height="109" width="311" loading="lazy" class="object-contain w-full h-auto"
+                src="assets/header/blog1.png" alt="blog-img" />
+            </div>
+            <div routerLink="/news-&-insights/whitepaper-5g-oru"
+              class="bg-white px-6 3xl:px-8 pt-6 3xl:pt-8 pb-[2px] rounded-md 3xl:rounded-lg cursor-pointer grow-0">
+              <h2 class="text-xl 3xl:text-2xl font-bold text-dark-gray2 mb-6 3xl:mb-8">
+                Building the Future of 5G Connectivity with Open Ra...
+              </h2>
+              <img height="109" width="311" loading="lazy" class="object-contain w-full h-auto"
+                src="assets/header/blog2.png" alt="blog-img" />
+            </div>
           </div>
+        </div>
       </div>
     </ng-container>
   </div>
@@ -140,14 +154,20 @@
 
 
 <!-- Mobile header -->
-<header class="mobile-header block lg:hidden shadow-sm px-[3%] fixed z-50 -top-[1px] sm:-top-[3px] left-0 right-0 bg-white">
+<header
+  class="mobile-header block lg:hidden shadow-sm px-[3%] fixed z-50 -top-[1px] sm:-top-[3px] left-0 right-0 bg-white">
   <div class="py-5 flex justify-between items-center ">
     <a routerLink="/" (click)="isClickedMobileLogo()">
-      <img height="74" width="176" loading="lazy" class="w-36 h-auto object-cover cursor-pointer" src="assets/header/teal-logo.png" alt="logo" />
+      <img height="74" width="176" loading="lazy" class="w-36 h-auto object-cover cursor-pointer"
+        src="assets/header/teal-logo.png" alt="logo" />
     </a>
     <div>
-      <!-- <i (click)="toggleSearchbar()"
-        class="fa-solid fa-search fa-xl text-dark-gray2 hover:text-teal1 duration-300 mr-8"></i> -->
+      <!-- <svg (click)="toggleSearchbar()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+        class="w-[2em] h-[2em] text-dark-gray2 hover:text-teal1 duration-300 mr-8 fill-current cursor-pointer">
+        <path
+          d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+      </svg> -->
+
       <!-- Search bar container -->
       <!-- <div *ngIf="isSearchbaropen"
         class="p-2 bg-card-gray fixed left-1/2 transform -translate-x-1/2 top-24 z-50 rounded-br-md rounded-bl-md w-full sm:w-[80%]">
@@ -163,8 +183,19 @@
         </div>
 
       </div> -->
-      <i (click)="toggleMenuSection()" [ngClass]="isMenuOpen ? 'fa-solid fa-2xl fa-xmark' : 'fa-solid fa-2xl fa-bars'"
-        class="transition-transform duration-500 ease-in-out"></i>
+      <div (click)="toggleMenuSection()" class="transition-transform duration-500 ease-in-out cursor-pointer">
+        <svg *ngIf="isMenuOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+          class="w-[28px] h-[32px] fill-current">
+          <path
+            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+        </svg>
+
+        <svg *ngIf="!isMenuOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+          class="w-[28px] h-[32px] fill-current">
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+        </svg>
+      </div>
     </div>
 
   </div>

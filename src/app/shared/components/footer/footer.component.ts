@@ -42,12 +42,10 @@ export class FooterComponent {
     {
       label: 'LinkedIn',
       link: 'https://www.linkedin.com/company/whizz-systems/?viewAsMember=true',
-      icon: 'fa-brands fa-lg 3xl:fa-xl fa-linkedin',
     },
     {
       label: 'Youtube',
       link: 'https://www.youtube.com/@WhizzSystemsCA',
-      icon: 'fa-brands fa-lg 3xl:fa-xl fa-youtube',
     },
   ];
 

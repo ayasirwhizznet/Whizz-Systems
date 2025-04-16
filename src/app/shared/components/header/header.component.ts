@@ -230,19 +230,6 @@ export class HeaderComponent implements OnInit {
     { label: 'FAQ', link: '/404' },
   ];
 
-  industries: any[] = [
-    'Aerospace',
-    'Software',
-    'AI',
-    'Defence',
-    'Automotive',
-    'Medical',
-    'Consumer',
-    'Media',
-    'Storage',
-    'Compute',
-    'Network',
-  ];
   currentScroll: any;
 
   constructor(private router: Router, private route: ActivatedRoute) {

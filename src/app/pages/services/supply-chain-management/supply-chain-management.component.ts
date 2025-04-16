@@ -20,7 +20,12 @@ import { CommonModule } from '@angular/common';
   templateUrl: './supply-chain-management.component.html',
 })
 export class SupplyChainManagementComponent implements OnInit, OnDestroy {
-supplyChainServices = ['Component Engineering','Compliance Engineering','Commodity Management','Procurement Management']
+  supplyChainServices = [
+    'Component Engineering',
+    'Compliance Engineering',
+    'Commodity Management',
+    'Procurement Management',
+  ];
 
   benefits: any[] = [
     {
@@ -46,66 +51,65 @@ supplyChainServices = ['Component Engineering','Compliance Engineering','Commodi
   ];
 
   isSticky: boolean = true;
-    lastScrollTop: number = 0;
-  
-    @HostListener('window:scroll', [])
-    onScroll(): void {
-      const currentScroll = window.scrollY;
-  
-      if (currentScroll > this.lastScrollTop) {
-        this.isSticky = false;
-      } else {
-        this.isSticky = true;
-      }
-      this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  lastScrollTop: number = 0;
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > this.lastScrollTop) {
+      this.isSticky = false;
+    } else {
+      this.isSticky = true;
     }
-  
-    private fragmentSubscription!: Subscription;
-    private navigationSubscription!: Subscription;
-    private currentFragment: string | null = null;
-    constructor(private route: ActivatedRoute, private router: Router) {}
-    ngOnInit(): void {
-      this.fragmentSubscription = this.route.fragment.subscribe((fragment) => {
-        if (fragment) {
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  }
+
+  private fragmentSubscription!: Subscription;
+  private navigationSubscription!: Subscription;
+  private currentFragment: string | null = null;
+  constructor(private route: ActivatedRoute, private router: Router) {}
+  ngOnInit(): void {
+    this.fragmentSubscription = this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.currentFragment = fragment;
+        this.scrollToService(fragment);
+      }
+    });
+
+    this.navigationSubscription = this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        const fragment = this.route.snapshot.fragment;
+        if (fragment && fragment !== this.currentFragment) {
           this.currentFragment = fragment;
           this.scrollToService(fragment);
         }
       });
-  
-      this.navigationSubscription = this.router.events
-        .pipe(filter((event) => event instanceof NavigationEnd))
-        .subscribe(() => {
-          const fragment = this.route.snapshot.fragment;
-          if (fragment && fragment !== this.currentFragment) {
-            this.currentFragment = fragment;
-            this.scrollToService(fragment);
-          }
-        });
+  }
+
+  ngOnDestroy(): void {
+    if (this.fragmentSubscription) {
+      this.fragmentSubscription.unsubscribe();
     }
-  
-    ngOnDestroy(): void {
-      if (this.fragmentSubscription) {
-        this.fragmentSubscription.unsubscribe();
-      }
-      if (this.navigationSubscription) {
-        this.navigationSubscription.unsubscribe();
-      }
-    }
-  
-    scrollToService(fragment: string): void {
-      setTimeout(() => {
-        const element = document.getElementById(fragment?.replace(/\s/g, ''));
-        if (element) {
-          const viewportHeight = window.innerHeight;
-          const offsetPercentage = 35;
-          const offset = (window.innerHeight * offsetPercentage) / 100;
-          const topPosition = element.offsetTop - offset;
-          window.scrollTo({
-            top: topPosition,
-            behavior: 'smooth',
-          });
-        }
-      }, 1);
+    if (this.navigationSubscription) {
+      this.navigationSubscription.unsubscribe();
     }
   }
-  
+
+  scrollToService(fragment: string): void {
+    setTimeout(() => {
+      const element = document.getElementById(fragment?.replace(/\s/g, ''));
+      if (element) {
+        const viewportHeight = window.innerHeight;
+        const offsetPercentage = 35;
+        const offset = (window.innerHeight * offsetPercentage) / 100;
+        const topPosition = element.offsetTop - offset;
+        window.scrollTo({
+          top: topPosition,
+          behavior: 'smooth',
+        });
+      }
+    }, 1);
+  }
+}
