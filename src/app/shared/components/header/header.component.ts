@@ -10,7 +10,6 @@ import { CommonModule } from '@angular/common';
 import { HeaderSectionComponent } from '../header-section/header-section.component';
 import { MobileHeaderComponent } from '../mobile-header/mobile_header.component';
 import { ButtonComponent } from '../button/button.component';
-import { AnimatedButton } from '../animated-button/animated-button.component';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -22,7 +21,6 @@ import { FormsModule } from '@angular/forms';
     HeaderSectionComponent,
     MobileHeaderComponent,
     ButtonComponent,
-    AnimatedButton,
     FormsModule,
   ],
   templateUrl: './header.component.html',
