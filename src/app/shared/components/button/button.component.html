@@ -3,7 +3,7 @@
   <span class="flex justify-between items-center">
     {{ heading || '&nbsp;' }}
     <ng-container *ngIf="icon">
-      <img loading="lazy" [src]="icon" alt="icon" class="w-3 sm:w-4 3xl:w-5" [ngClass]="{'ml-4 sm:ml-6 3xl:ml-8':heading}" />
+      <img height="auto" width="auto" loading="lazy" [src]="icon" alt="icon" class="w-3 sm:w-4 3xl:w-5" [ngClass]="{'ml-4 sm:ml-6 3xl:ml-8':heading}" />
     </ng-container>
   </span>
 </button>

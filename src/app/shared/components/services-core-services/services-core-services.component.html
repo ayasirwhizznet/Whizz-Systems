@@ -8,7 +8,7 @@
         class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 3xl:gap-x-8 gap-y-8 lg:gap-y-12 3xl:gap-y-16 "
         [ngClass]="{'lg:grid-cols-3': columns === 3, 'lg:grid-cols-4': columns === 4}">
             <div *ngFor="let service of coreServicesData" class="p-6 3xl:p-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
-                <img loading="lazy" class="rounded-md 3xl:rounded-lg" [src]="service.imgUrl" alt="{{service.name}}">
+                <img height="auto" width="auto" loading="lazy" class="rounded-md 3xl:rounded-lg" [src]="service.imgUrl" alt="{{service.name}}">
                     <h3
                         class="text-dark-gray2 font-bold mt-6 3xl:mt-8 mb-4 3xl:mb-5 text-sm 3xl:text-base">
                         {{service.name}}</h3>
