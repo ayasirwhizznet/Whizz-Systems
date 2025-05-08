@@ -27,7 +27,7 @@ export const routes: Routes = [
       import('./pages/featured-products/routes').then((m) => m.routes),
   },
   {
-    path: 'blogs',
+    path: 'news-&-insights',
     loadChildren: () =>
       import('./pages/news-blogs/routes').then((m) => m.routes),
   },
