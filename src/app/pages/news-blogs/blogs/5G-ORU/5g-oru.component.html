@@ -189,11 +189,4 @@
         </div>
     </div>
 </section>
-<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <h2 class="text-3xl sm:text-4xl 3xl:text-5xl lg-leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold text-dark-gray2 mb-6 3xl:mb-8">Latest News & Insights</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 3xl:gap-16">
-        <div *ngFor=" let card of cards">
-          <app-news-card [imageUrl]="card.imageUrl" [navigate]="card.link" [tags]="card.tags" [date]="card.date" [title]=" card.title"></app-news-card>
-        </div>
-    </div>
-</section>
+<app-cnews [blogs]="blogs"></app-cnews>

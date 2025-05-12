@@ -8,6 +8,8 @@ import {
   PLATFORM_ID,
   ViewChild,
   OnDestroy,
+  input,
+  Input,
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ButtonComponent } from '../button/button.component';
@@ -23,38 +25,7 @@ import KeenSlider from 'keen-slider';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class NewsComponent implements AfterViewInit, OnDestroy {
-  blogs: any[] = [
-    {
-      imgUrl: 'assets/news/blog-1.png',
-      date: 'May 29, 2024',
-      tags: ['Whitepaper', 'High Speed Connectivity'],
-      title: 'PCIe-6: Everything You Need to Know',
-      link: '/news-&-insights/whitepaper-pcle6',
-    },
-    {
-      imgUrl: 'assets/news/blog-2.png',
-      date: 'July 9, 2024',
-      tags: ['Case Study', 'Hardware Design'],
-      title:
-        'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
-      link: '/news-&-insights/whitepaper-5g-oru',
-    },
-    {
-      imgUrl: 'assets/news/blog-3.png',
-      date: 'July 9, 2024',
-      tags: ['Whitepaper', 'Thermal Management'],
-      title:
-        'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
-      link: '/news-&-insights/whitepaper-heatsink',
-    },
-    {
-      imgUrl: 'assets/news/blog-4.png',
-      date: 'December 12, 2024',
-      tags: ['Case Study', 'Medical Devices'],
-      title: 'Engineering Smart Medical Devices: The Invensify Case Study',
-      link: '/news-&-insights/whitepaper-invensify',
-    },
-  ];
+  @Input() blogs: any[] = [];
 
   @ViewChild('sliderRef', { static: false }) sliderRef!: ElementRef;
   slider: any = null;

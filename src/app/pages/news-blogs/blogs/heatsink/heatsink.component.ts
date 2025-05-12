@@ -2,16 +2,48 @@ import { BlogTagComponent } from './../../../../shared/components/blog-tag/blog-
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AnimatedButton } from '@components/animated-button/animated-button.component';
-import { NewsCardComponent } from '@components/news-card/news-card.component';
 import { RouterLink } from '@angular/router';
+import { NewsComponent } from '@components/news/news.component';
 
 @Component({
   selector: 'app-heatsink',
   standalone: true,
-  imports: [BlogTagComponent,CommonModule, AnimatedButton, NewsCardComponent, RouterLink],
+  imports: [BlogTagComponent,CommonModule, AnimatedButton, RouterLink,NewsComponent],
   templateUrl: './heatsink.component.html'
 })
 export class HeatsinkComponent {
+
+  blogs: any[] = [
+    {
+      imgUrl: 'assets/news/blog-1.png',
+      date: 'May 29, 2024',
+      tags: ['Whitepaper', 'High Speed Connectivity'],
+      title: 'PCIe-6: Everything You Need to Know',
+      link: '/news-&-insights/whitepaper-pcle6',
+    },
+    {
+      imgUrl: 'assets/news/blog-2.png',
+      date: 'July 9, 2024',
+      tags: ['Case Study', 'Hardware Design'],
+      title:
+        'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
+      link: '/news-&-insights/whitepaper-5g-oru',
+    },
+    {
+      imgUrl: 'assets/news/blog-4.png',
+      date: 'December 12, 2024',
+      tags: ['Case Study', 'Medical Devices'],
+      title: 'Engineering Smart Medical Devices: The Invensify Case Study',
+      link: '/news-&-insights/whitepaper-invensify',
+    },
+    // {
+    //   imgUrl: 'assets/news/blogs/hardwareDesign/hero.png',
+    //   date: 'April 26, 2025',
+    //   tags: ['High-Density Hardware Design', 'AI System Thermal','Signal Management'],
+    //   title: 'NextGen Hardware Design for High-Density, High-Complexity Systems',
+    //   link: '/news-&-insights/hardware-design',
+    // },
+  ];
 
   tags = ['Whitepaper','Thermal Management','Cooling Solutions'];
 

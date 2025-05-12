@@ -7,41 +7,48 @@
             <div class="flex items-center gap-2 flex-wrap mb-4 3xl:mb-6">
                 <div *ngFor="let tag of tags">
                     <app-blog-tag text="{{tag}}" textColor="text-light-gray1" borderColor="border-light-gray1"
-                    borderRadius="rounded-[3px] 3xl:rounded-[4px]"></app-blog-tag>
+                        borderRadius="rounded-[3px] 3xl:rounded-[4px]"></app-blog-tag>
                 </div>
             </div>
             <h1
                 class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-[96%] sm:w-[57%] lg:w-full">
                 NextGen Hardware Design for High-Density, High-Complexity Systems</h1>
-                <p
+            <p
                 class="text-base lg:text-sm 2xl:text-base 3xl:text-xl font-extralight lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8 sm:w-[70%] lg:w-full">
                 Delivering precise, high-performance designs with innovative system-building solutions
             </p>
             <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
                 <a routerLink="/" class="cursor-pointer">
-                    <img height="48" width="48" class="h-auto w-full" loading="lazy" src="assets/news/whizzicon.svg" alt="Whizz Systems">
+                    <img height="48" width="48" class="h-auto w-full" loading="lazy" src="assets/news/whizzicon.svg"
+                        alt="Whizz Systems">
                 </a>
                 <a routerLink="/" class="cursor-pointer">
-                    <img height="16" width="109" class="h-auto w-full" loading="lazy" src="assets/news/whizz.svg" alt="Whizz Systems">
+                    <img height="16" width="109" class="h-auto w-full" loading="lazy" src="assets/news/whizz.svg"
+                        alt="Whizz Systems">
                 </a>
-                <a href="https://www.linkedin.com/company/whizz-systems/?viewAsMember=true" target="_blank" class="cursor-pointer">
-                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/news/linkedin.svg" alt="Whizz Systems">
+                <a href="https://www.linkedin.com/company/whizz-systems/?viewAsMember=true" target="_blank"
+                    class="cursor-pointer">
+                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/news/linkedin.svg"
+                        alt="Whizz Systems">
                 </a>
                 <a href="https://www.youtube.com/@WhizzSystemsCA" target="_blank" class="cursor-pointer">
-                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/news/youtube.svg" alt="Whizz Systems">
+                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/news/youtube.svg"
+                        alt="Whizz Systems">
                 </a>
             </div>
         </div>
         <div class="hidden lg:block lg:w-[53%]">
-            <img height="587" width="682" loading="lazy" class="h-auto w-full object-cover" src="assets/news/blogs/hardwareDesign/hero.png" alt="Building the Future of 5G Connectivity with Open Radio Unit Solutions">
+            <img height="587" width="682" loading="lazy" class="h-auto w-full object-cover"
+                src="assets/news/blogs/hardwareDesign/hero.png"
+                alt="Building the Future of 5G Connectivity with Open Radio Unit Solutions">
         </div>
     </div>
 </section>
 
 <section class="px-[4%] sm:pr-0 sm:pl-[6.3%] py-6 3xl:py-8">
-    <div class="w-full flex justify-between gap-12">
+    <div class="w-full flex justify-between gap-1 sm:gap-12">
         <!-- left div -->
-        <div class="hidden lg:block lg:w-[19%] mt-12">
+        <div class="hidden lg:block lg:w-[23%] 2xl:w-[19%] 3xl:w-[22%] mt-12 ">
             <div
                 class="p-6 3xl:p-8 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray lg:sticky lg:top-28">
                 <h3
@@ -49,15 +56,42 @@
                     In
                     This Article</h3>
                 <ul>
-                    <li *ngFor="let point of points"
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4">
-                        {{point}}</li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section1')"
+                            [ngClass]="isActive('section1') ? 'text-teal1' : ''">The Complexity Behind the AI
+                            Hardware</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section2')"
+                            [ngClass]="isActive('section2') ? 'text-teal1' : ''">Key Challenges in High-Density
+                            Systems</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section3')"
+                            [ngClass]="isActive('section3') ? 'text-teal1' : ''">Whizz Systems’s Approach and
+                            Expertise</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section4')"
+                            [ngClass]="isActive('section4') ? 'text-teal1' : ''">Best Practices in Action</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section5')"
+                            [ngClass]="isActive('section5') ? 'text-teal1' : ''">Key Considerations for Customers</a>
+                    </li>
                 </ul>
+
+
             </div>
         </div>
         <!-- cener div -->
-        <div class="flex flex-col lg:w-[53%] mr-auto">
-            <section class="mb-6 3xl:mb-8">
+        <div class="flex flex-col sm:w-4/5 lg:w-[55%] 2xl:w-[53%] 3xl:w-[47%]">
+            <section id="section1" class="mb-6 3xl:mb-8">
                 <h2
                     class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-3 3xl:mb-4">
                     The
@@ -75,13 +109,13 @@
                         class="font-semibold 3xl:font-bold">layout design</span>.</p>
                 <p class="text-dark-gray2 text-lg 3xl:text-xl leading-[30px] 3xl:leading-[36px]">When boards and
                     systems
-                    get larger and more complex, problems begin to appear with <span
+                    get larger and more complex, problems begin to appear with <a routerLink="/services/engineering-&-design/signal-integrity-simulations"
                         class="text-teal1 font-medium 3xl:font-bold underline underline-offset-2">signal
-                        integrity</span>, <span
+                        integrity</a>, <a routerLink="/services/engineering-&-design/power-delivery"
                         class="text-teal1 font-medium 3xl:font-bold underline underline-offset-2">power
-                        distribution</span>, and <span
+                        distribution</a>, and <a routerLink="/services/engineering-&-design/thermal-management"
                         class="text-teal1 font-medium 3xl:font-bold underline underline-offset-2">thermal
-                        management</span>. Companies are tasked with delivering high-performance products capable of
+                        management</a>. Companies are tasked with delivering high-performance products capable of
                     <span class="font-semibold 3xl:font-bold">supporting intensive data processing</span> while
                     complying with industry standards.
                 </p>
@@ -95,7 +129,7 @@
                     simplify the path to success?</h2>
 
             </section>
-            <section class="py-6 3xl:py-8">
+            <section id="section2" class="py-6 3xl:py-8">
                 <h2
                     class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
                     Key
@@ -132,7 +166,8 @@
                     <li *ngFor="let point of signals1"
                         class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">{{point}}</li>
                 </ul>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Companies have to use really <span class="font-semibold 3xl:font-bold">sophisticated
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Companies have to use
+                    really <span class="font-semibold 3xl:font-bold">sophisticated
                         methods</span>
                     to overcome these problems, like:</p>
                 <ul class="list-disc list-inside ml-4">
@@ -157,43 +192,74 @@
                         alt="Key Challenges in High-Density Systems">
                 </figure>
             </section>
-            <section class="py-6 3xl:py-8">
-                <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">Whizz
+            <section id="section3" class="py-6 3xl:py-8">
+                <h2
+                    class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
+                    Whizz
                     Systems’ Approach and Expertise</h2>
-                <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4">Turning Complexity into Competitive Advantage</h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Whizz Systems is dedicated to mastering the challenges of <span class="font-semibold 3xl:bold">advanced hardware complexity</span>,
+                <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4">Turning
+                    Complexity into Competitive Advantage</h3>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Whizz Systems is
+                    dedicated to mastering the challenges of <span class="font-semibold 3xl:bold">advanced hardware
+                        complexity</span>,
                     particularly
                     when it comes to managing high-pin count chips or high-density boards. 
-                    Our approach involves a comprehensive understanding of the <span class="font-semibold 3xl:bold">critical electrical and mechanical
-                    constraints</span> that impact high-performance systems. By leveraging <span class="font-semibold 3xl:bold">advanced design methodologies</span>,
+                    Our approach involves a comprehensive understanding of the <span
+                        class="font-semibold 3xl:bold">critical electrical and mechanical
+                        constraints</span> that impact high-performance systems. By leveraging <span
+                        class="font-semibold 3xl:bold">advanced design methodologies</span>,
                     we
                     address the intricacies of complex hardware—including signal integrity, power distribution, and
                     thermal management—ensuring efficient, reliable solutions</p>
-                <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4">Optimized Ball Mapping and Layout Strategy</h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Our team specializes in creating optimized <span class="font-semibold 3xl:bold">ball maps and pin configurations</span> tailored for <span class="font-semibold 3xl:bold">high-pin
-                    count chips</span>.</p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Through the use of <span class="font-semibold 3xl:bold">advanced design tools and techniques</span>, we:</p>
+                <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4">Optimized
+                    Ball Mapping and Layout Strategy</h3>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Our team specializes
+                    in creating optimized <span class="font-semibold 3xl:bold">ball maps and pin configurations</span>
+                    tailored for <span class="font-semibold 3xl:bold">high-pin
+                        count chips</span>.</p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Through the use of
+                    <span class="font-semibold 3xl:bold">advanced design tools and techniques</span>, we:</p>
                 <ul class="list-disc list-inside ml-4">
-                    <li *ngFor="let point of optimized" class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">{{point}}</li>
+                    <li *ngFor="let point of optimized"
+                        class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">{{point}}</li>
                 </ul>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">For instance, we focus on reducing trace lengths and optimizing layout to <span class="font-semibold 3xl:bold">prevent data loss</span> and
-                    <span class="font-semibold 3xl:bold">maintain signal fidelity</span>. </p>
-                <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4">Robust Power Delivery Across High-Density Boards</h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">This meticulous planning extends to <span  class="text-teal1 font-medium 3xl:font-bold underline underline-offset-2">power distribution</span>, where we implement strategies to ensure:
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">For instance, we
+                    focus on reducing trace lengths and optimizing layout to <span
+                        class="font-semibold 3xl:bold">prevent data loss</span> and
+                    <span class="font-semibold 3xl:bold">maintain signal fidelity</span>. 
+                </p>
+                <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4">Robust Power
+                    Delivery Across High-Density Boards</h3>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">This meticulous
+                    planning extends to <a routerLink="/services/engineering-&-design/power-delivery"
+                        class="text-teal1 font-medium 3xl:font-bold underline underline-offset-2">power
+                        distribution</a>, where we implement strategies to ensure:
                 </p>
                 <ul class="list-disc list-inside ml-4">
-                    <li *ngFor="let point of robust" class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]" [innerHTML]="point"></li>
+                    <li *ngFor="let point of robust"
+                        class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+                        [innerHTML]="point"></li>
                 </ul>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Proper power planning supports stable performance,especially as boards continue to grow more
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Proper power planning
+                    supports stable performance,especially as boards continue to grow more
                     complex and demanding.</p>
-                <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4">Advanced Thermal Management Solutions</h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Speaking of thermal management, we know one of the major problems is going to be the <span class="font-semibold 3xl:bold">amount of
-                    heat generated</span> by all the components packed into a small space.</p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Whizz Systems employs <span class="font-semibold 3xl:bold">advanced cooling solutions</span>, such as <span class="font-semibold 3xl:bold">vapor chambers</span> and <span class="font-semibold 3xl:bold">liquid cooling
-                    systems</span>, to achieve superior <span class="font-semibold 3xl:bold">thermal dissipation.</span></p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">These cooling technologies allow <span class="font-semibold 3xl:bold">high performance AI systems</span> to:</p>
+                <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4">Advanced
+                    Thermal Management Solutions</h3>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Speaking of thermal
+                    management, we know one of the major problems is going to be the <span
+                        class="font-semibold 3xl:bold">amount of
+                        heat generated</span> by all the components packed into a small space.</p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Whizz Systems employs
+                    <span class="font-semibold 3xl:bold">advanced cooling solutions</span>, such as <span
+                        class="font-semibold 3xl:bold">vapor chambers</span> and <span
+                        class="font-semibold 3xl:bold">liquid cooling
+                        systems</span>, to achieve superior <span class="font-semibold 3xl:bold">thermal
+                        dissipation.</span></p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">These cooling
+                    technologies allow <span class="font-semibold 3xl:bold">high performance AI systems</span> to:</p>
                 <ul class="list-disc list-inside ml-4">
-                    <li *ngFor="let point of robust" class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">{{point}}</li>
+                    <li *ngFor="let point of robust"
+                        class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]" [innerHTML]="point"></li>
                 </ul>
                 <figure class="py-6 3xl:py-8">
                     <img loading="lazy" height="598" width="252" class="w-full h-auto object-cover"
@@ -201,10 +267,12 @@
                         alt="Whizz Systems’ Approach and Expertise">
                 </figure>
             </section>
-            <section class="py-6 3xl:py-8">
+            <section id="section4" class="py-6 3xl:py-8">
                 <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Best
                     Practices in Action</h2>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">For instance, in a recent project involving a <span class="font-semibold 3xl:bold">high density board with a high pin count ASIC</span>,
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">For instance, in a
+                    recent project involving a <span class="font-semibold 3xl:bold">high density board with a high pin
+                        count ASIC</span>,
                     Whizz applied best known methods of layout design and power management.
                     Our innovative topologies allowed for seamless integration of the chip into the application
                     solution, enabling maximum performance even under extreme conditions.
@@ -220,23 +288,32 @@
                     class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1">
                     <div class="flex items-center justify-between">
                         <div>
-                            <h3 class="text-dark-gray1 text-xl lg:text-2xl 3xl:text-3xl font-semibold 3xl:font-bold my-3 3xl:my-4">Subscribe to our newsletter!</h3>
-                            <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[15px] 3xl:leading-[19.2px]">Get updates on the latest news & insights</p>
+                            <h3
+                                class="text-dark-gray1 text-xl lg:text-2xl 3xl:text-3xl font-semibold 3xl:font-bold my-3 3xl:my-4">
+                                Subscribe to our newsletter!</h3>
+                            <p
+                                class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[15px] 3xl:leading-[19.2px]">
+                                Get updates on the latest news & insights</p>
                         </div>
-                        <app-animated-button heading="Subscribe" size="medium" [icon]="false"
-                            bg="white"></app-animated-button>
+                        <a href="https://webforms.pipedrive.com/f/6UT1JKLeb6G1xtMMTPA4HRcQsTZefgpvRq9cSzG1TincmHlD6Wvfh3YCmSXUO7VklB"
+                            target="_blank"><app-animated-button heading="Subscribe" size="medium" [icon]="false"
+                            bg="white"></app-animated-button></a>
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="section5">
                 <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Key
                     Considerations for Customers</h2>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">There are many different aspects that companies must keep in mind when dealing with high-density
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">There are many
+                    different aspects that companies must keep in mind when dealing with high-density
                     complex boards, some of which can make or break the success of their products. </p>
                 <div *ngFor="let consideration of considerations">
-                    <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4">{{consideration.title}}</h3>
-                    <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]" [innerHTML]="consideration.desc1"></p>
-                    <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]" [innerHTML]="consideration.desc2"></p>
+                    <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4">
+                        {{consideration.title}}</h3>
+                    <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+                        [innerHTML]="consideration.desc1"></p>
+                    <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+                        [innerHTML]="consideration.desc2"></p>
                 </div>
                 <figure class="py-6 3xl:py-8">
                     <img loading="lazy" height="598" width="252" class="w-full h-auto object-cover"
@@ -245,26 +322,34 @@
                 </figure>
             </section>
             <section>
-                <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">Partner With Whizz Systems to Simplify Complexity</h2>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">The <span class="font-semibold 3xl:bold">AI field</span> is a rapidly changing one and whoever can best conquer the complexity of advanced hardware will be the one who prevails. <span class="text-teal1 font-medium 3xl:font-semibold">Whizz Systems</span> is committed to partnering with you to address these challenges, delivering innovative, high-quality solutions that support your strategic goals. </p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Let us create the future of AI hardware together with architectures not just capable but surpassing today's needs!</p>
+                <h2
+                    class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
+                    Partner With Whizz Systems to Simplify Complexity</h2>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">The <span
+                        class="font-semibold 3xl:bold">AI field</span> is a rapidly changing one and whoever can best
+                    conquer the complexity of advanced hardware will be the one who prevails. <span
+                        class="text-teal1 font-medium 3xl:font-semibold">Whizz Systems</span> is committed to partnering
+                    with you to address these challenges, delivering innovative, high-quality solutions that support
+                    your strategic goals. </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Let us create the
+                    future of AI hardware together with architectures not just capable but surpassing today's needs!</p>
             </section>
         </div>
 
         <!-- right div -->
-        <section class="ml-auto mb-56 mt-96">
-            <div class="flex flex-col justify-center items-center space-y-3 3xl:space-y-4 lg:sticky lg:top-96">
+        <section class="sm:ml-auto mb-56 mt-96">
+            <div class="flex flex-col justify-center items-center space-y-3 3xl:space-y-4 sticky top-96">
                 <p class="text-light-gray2 text-[10px] 3xl:text-xs font-semibold 3xl:font-bold">SHARE</p>
-                <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512">
-                    <path
-                        d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
-                </svg>
-                <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512">
-                    <path
-                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
-                </svg>
+                <a (click)="shareOnFacebook()" class="cursor-pointer"><svg height="20" width="20"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                    </svg></a>
+                <a (click)="shareOnTwitter()" class="cursor-pointer"><svg height="20" width="20"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg></a>
             </div>
         </section>
     </div>
@@ -277,7 +362,7 @@
             <source src="assets/hero/waves2.mp4" type="video/mp4">
         </video>
         <div class="absolute inset-0 bg-video-overlay opacity-80 z-[5] sm:rounded-md 3xl:rounded-lg"></div>
-        <div class="relative z-10  lg:w-[85%] 2xl:w-[80%] 3xl:w-[63%] text-white">
+        <div class="relative z-10 lg:w-[85%] 2xl:w-[80%] 3xl:w-[63%] text-white">
             <h2
                 class="text-3xl sm:text-4xl lg:text-5xl 2xl:text-[52px] 3xl:text-[64px] 2xl:leading-[60px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4">
                 Ready to overcome the challenges of high-complexity hardware design?</h2>
@@ -293,14 +378,4 @@
 </section>
 
 <!-- Latest News and Insights -->
-<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <h2
-        class="text-3xl sm:text-4xl 3xl:text-5xl lg-leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold text-dark-gray2 mb-6 3xl:mb-8">
-        Latest News & Insights</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 3xl:gap-16">
-        <div *ngFor=" let card of cards">
-            <app-news-card [imageUrl]="card.imageUrl" [navigate]="card.link" [tags]="card.tags" [date]="card.date"
-                [title]=" card.title"></app-news-card>
-        </div>
-    </div>
-</section>
+<app-cnews [blogs]="blogs"></app-cnews>

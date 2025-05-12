@@ -42,14 +42,14 @@ export const routes: Routes = [
           ),
         title: 'Whitepaper/PCLe-6',
       },
-      // {
-      //   path: 'hardware-design',
-      //   loadComponent: () =>
-      //     import('./blogs/hardware-design/hardware-design.component').then(
-      //       (m) => m.HardwareDesignComponent
-      //     ),
-      //   title: 'High Density Hardware Design',
-      // },
+      {
+        path: 'hardware-design',
+        loadComponent: () =>
+          import('./blogs/hardware-design/hardware-design.component').then(
+            (m) => m.HardwareDesignComponent
+          ),
+        title: 'High Density Hardware Design',
+      },
     ],
   },
 ];

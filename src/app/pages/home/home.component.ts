@@ -19,4 +19,44 @@ import { NewsComponent } from '@components/news/news.component';
   ],
   templateUrl: './home.component.html',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  blogs: any[] = [
+    {
+      imgUrl: 'assets/news/blog-1.png',
+      date: 'May 29, 2024',
+      tags: ['Whitepaper', 'High Speed Connectivity'],
+      title: 'PCIe-6: Everything You Need to Know',
+      link: '/news-&-insights/whitepaper-pcle6',
+    },
+    {
+      imgUrl: 'assets/news/blog-2.png',
+      date: 'July 9, 2024',
+      tags: ['Case Study', 'Hardware Design'],
+      title:
+        'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
+      link: '/news-&-insights/whitepaper-5g-oru',
+    },
+    {
+      imgUrl: 'assets/news/blog-3.png',
+      date: 'July 9, 2024',
+      tags: ['Whitepaper', 'Thermal Management'],
+      title:
+        'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
+      link: '/news-&-insights/whitepaper-heatsink',
+    },
+    {
+      imgUrl: 'assets/news/blog-4.png',
+      date: 'December 12, 2024',
+      tags: ['Case Study', 'Medical Devices'],
+      title: 'Engineering Smart Medical Devices: The Invensify Case Study',
+      link: '/news-&-insights/whitepaper-invensify',
+    },
+    // {
+    //   imgUrl: 'assets/news/blogs/hardwareDesign/hero.png',
+    //   date: 'April 26, 2025',
+    //   tags: ['High-Density Hardware Design', 'AI System Thermal','Signal Management'],
+    //   title: 'NextGen Hardware Design for High-Density, High-Complexity Systems',
+    //   link: '/news-&-insights/hardware-design',
+    // },
+  ];
+}
