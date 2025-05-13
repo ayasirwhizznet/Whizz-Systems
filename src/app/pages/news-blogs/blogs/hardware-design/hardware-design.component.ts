@@ -198,34 +198,27 @@ export class HardwareDesignComponent {
 
   @HostListener('window:scroll', [])
   onScroll(): void {
-    clearTimeout(this.scrollTimeout);
-    this.scrollTimeout = setTimeout(() => {
-      const sections = [
-        'section1',
-        'section2',
-        'section3',
-        'section4',
-        'section5',
-      ];
-      const scrollTop = window.scrollY;
+    const sections = [
+      'section1',
+      'section2',
+      'section3',
+      'section4',
+      'section5',
+    ];
+    const headerOffset = 500;
 
-      this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    for (const id of sections) {
+      const el = document.getElementById(id);
+      if (el) {
+        const rect = el.getBoundingClientRect();
+        const adjustedTop = rect.top - headerOffset;
 
-      const headerOffset = 500;
-
-      for (const id of sections) {
-        const el = document.getElementById(id);
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          const adjustedTop = rect.top - headerOffset;
-
-          if (adjustedTop <= 0 && rect.bottom > headerOffset) {
-            this.currentFragment = id;
-            break;
-          }
+        if (adjustedTop <= 0 && rect.bottom > headerOffset) {
+          this.currentFragment = id;
+          break;
         }
       }
-    }, 100);
+    }
   }
 
   scrollToCategory(id: string): void {
@@ -250,8 +243,18 @@ export class HardwareDesignComponent {
 
   shareOnTwitter() {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Check out this blog! ');
-    const twitterShareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+  
+    const text = encodeURIComponent(
+      `🚀 Discover NextGen Hardware Design by Whizz System! 
+  High-density, high-complexity systems engineered for performance and scalability. 
+  Proudly built by @whizzsystems. Learn more:`
+    );
+  
+    const hashtags = encodeURIComponent('whizzsystems,HighDensityHardwareDesign,AISystemThermal,SignalManagement');
+  
+    const twitterShareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}&hashtags=${hashtags}`;
+  
     window.open(twitterShareUrl, '_blank');
   }
+  
 }

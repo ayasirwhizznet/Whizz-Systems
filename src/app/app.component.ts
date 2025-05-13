@@ -6,6 +6,8 @@ import { HeaderComponent } from '@components/header/header.component';
 import { filter } from 'rxjs';
 import { Meta, Title } from '@angular/platform-browser';
 import { fragmentMap } from './config/fragments';
+declare let gtag: Function;
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -27,9 +29,14 @@ export class AppComponent implements OnInit {
     try {
       this.router.events
         .pipe(filter((event) => event instanceof NavigationEnd))
-        .subscribe(() => {
+        .subscribe((event: NavigationEnd) => {
           const currentRoute = this.router.url;
           this.layout = currentRoute !== '/404';
+  
+          // Google Analytics pageview tracking
+          gtag('config', 'G-709E1EM7HP', {
+            page_path: event.urlAfterRedirects
+          });
   
           // Get the deepest activated route
           let route = this.activatedRoute;
@@ -61,6 +68,6 @@ export class AppComponent implements OnInit {
     } catch (error) {
       console.error('Error while loading config:', error);
     }
-  } 
+  }  
     
 }
