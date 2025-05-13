@@ -243,18 +243,17 @@ export class HardwareDesignComponent {
 
   shareOnTwitter() {
     const url = encodeURIComponent(window.location.href);
-  
+
     const text = encodeURIComponent(
-      `🚀 Discover NextGen Hardware Design by Whizz System! 
-  High-density, high-complexity systems engineered for performance and scalability. 
-  Proudly built by @whizzsystems. Learn more:`
+      `🚀 Discover NextGen Hardware Design by Whizz System!\n\n` +
+        `High-density, high-complexity systems engineered for performance and scalability.\n\n` +
+        `Proudly built by @whizzsystems.\n\n`
     );
-  
+
     const hashtags = encodeURIComponent('whizzsystems,HighDensityHardwareDesign,AISystemThermal,SignalManagement');
-  
-    const twitterShareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}&hashtags=${hashtags}`;
-  
+
+    const twitterShareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}&hashtags=${hashtags}`;
+
     window.open(twitterShareUrl, '_blank');
   }
-  
 }
