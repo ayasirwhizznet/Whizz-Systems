@@ -245,9 +245,9 @@ export class HardwareDesignComponent {
     const pageUrl = window.location.href;
   
     const text = encodeURIComponent(
-      `🚀 Discover NextGen Hardware Design by Whizz System!\n\n` +
+      `🚀 Discover NextGen Hardware Design by Whizz Systems!\n\n` +
       `High-density, high-complexity systems engineered for performance and scalability.\n\n` +
-      `Proudly built by @WhizzSystem.\n\n` +
+      `Proudly built by @whizzsystems.\n\n` +
       `${pageUrl}\n\n`
     );
   
