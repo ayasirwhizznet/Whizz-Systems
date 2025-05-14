@@ -43,6 +43,13 @@ export class Pcle6Component {
 
   blogs: any[] = [
     {
+      imgUrl: 'assets/news/blogs/hardwareDesign/key-challenges.png',
+      date: 'May 14, 2025',
+      tags: ['AI Hardware Design','High-density PCB design'],
+      title: 'NextGen Hardware Design for High-Density, High-Complexity Systems',
+      link: '/news-&-insights/hardware-design',
+    },
+    {
       imgUrl: 'assets/news/blog-2.png',
       date: 'July 9, 2024',
       tags: ['Case Study', 'Hardware Design'],
@@ -64,13 +71,6 @@ export class Pcle6Component {
       tags: ['Case Study', 'Medical Devices'],
       title: 'Engineering Smart Medical Devices: The Invensify Case Study',
       link: '/news-&-insights/whitepaper-invensify',
-    },
-    // {
-    //   imgUrl: 'assets/news/blogs/hardwareDesign/hero.png',
-    //   date: 'April 26, 2025',
-    //   tags: ['High-Density Hardware Design', 'AI System Thermal','Signal Management'],
-    //   title: 'NextGen Hardware Design for High-Density, High-Complexity Systems',
-    //   link: '/news-&-insights/hardware-design',
-    // },
+    }
   ];
 }

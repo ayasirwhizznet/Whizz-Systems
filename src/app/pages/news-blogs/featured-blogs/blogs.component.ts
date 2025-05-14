@@ -19,6 +19,13 @@ import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 export class BlogsComponent {
   blogs: any[] = [
     {
+      imgUrl: 'assets/news/blogs/hardwareDesign/key-challenges.png',
+      date: 'May 14, 2025',
+      tags: ['AI Hardware Design','High-density PCB design','High-pin count chips'],
+      title: 'NextGen Hardware Design for High-Density, High-Complexity Systems',
+      link: '/news-&-insights/hardware-design',
+    },
+    {
       imgUrl: 'assets/news/featured-blog1.png',
       date: 'February 11, 2025',
       tags: ['Hardware Design', 'Telecom Engineering'],
@@ -47,13 +54,6 @@ export class BlogsComponent {
       tags: ['Case Study', 'Medical Devices'],
       title: ' Whizz Systems & Invensify: Engineering a Smart, Reliable, and Efficient Medical Refrigeration System',
       link: '/news-&-insights/whitepaper-invensify'
-    },
-    // {
-    //   imgUrl: 'assets/news/blogs/hardwareDesign/hero.png',
-    //   date: 'April 26, 2025',
-    //   tags: ['High-Density Hardware Design', 'AI System Thermal','Signal Management'],
-    //   title: 'NextGen Hardware Design for High-Density, High-Complexity Systems',
-    //   link: '/news-&-insights/hardware-design',
-    // },
+    }
   ];
 }

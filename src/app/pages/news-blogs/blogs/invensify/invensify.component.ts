@@ -15,6 +15,13 @@ import { NewsComponent } from '@components/news/news.component';
 export class InvensifyComponent {
   blogs: any[] = [
     {
+      imgUrl: 'assets/news/blogs/hardwareDesign/key-challenges.png',
+      date: 'May 14, 2025',
+      tags: ['AI Hardware Design','High-density PCB design'],
+      title: 'NextGen Hardware Design for High-Density, High-Complexity Systems',
+      link: '/news-&-insights/hardware-design',
+    },
+    {
       imgUrl: 'assets/news/blog-1.png',
       date: 'May 29, 2024',
       tags: ['Whitepaper', 'High Speed Connectivity'],
@@ -36,14 +43,7 @@ export class InvensifyComponent {
       title:
         'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
       link: '/news-&-insights/whitepaper-heatsink',
-    },
-    // {
-    //   imgUrl: 'assets/news/blogs/hardwareDesign/hero.png',
-    //   date: 'April 26, 2025',
-    //   tags: ['High-Density Hardware Design', 'AI System Thermal','Signal Management'],
-    //   title: 'NextGen Hardware Design for High-Density, High-Complexity Systems',
-    //   link: '/news-&-insights/hardware-design',
-    // },
+    }
   ];
   tags = ['Medical Devices','PCB Layout','Hardware Design'];
 
