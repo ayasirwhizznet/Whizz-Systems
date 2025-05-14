@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, HostListener } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import {
   ActivatedRoute,
   NavigationEnd,
@@ -27,9 +28,9 @@ import { filter, Subscription } from 'rxjs';
 })
 export class HardwareDesignComponent {
   tags = [
-    'High-Density Hardware Design',
-    'AI System Thermal',
-    'Signal Management',
+    'AI Hardware Design',
+    'High-density PCB design',
+    'High-pin count chips',
   ];
 
   cards: any[] = [
@@ -166,9 +167,19 @@ export class HardwareDesignComponent {
   isSticky = true;
   lastScrollTop = 0;
 
-  constructor(private route: ActivatedRoute, private router: Router) {}
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private meta: Meta
+  ) {}
 
   ngOnInit(): void {
+    // share on linkdin logic
+    this.route.data.subscribe((data) => {
+      const url = encodeURIComponent(window.location.href);
+      this.meta.updateTag({ property: 'og:url', content: url });
+    });
+
     // When the fragment changes (via click or scroll), update the active section
     this.fragmentSubscription = this.route.fragment.subscribe((fragment) => {
       if (fragment) {
@@ -243,18 +254,26 @@ export class HardwareDesignComponent {
 
   shareOnTwitter() {
     const pageUrl = window.location.href;
-  
+
     const text = encodeURIComponent(
       `🚀 Discover NextGen Hardware Design by Whizz Systems!\n\n` +
-      `High-density, high-complexity systems engineered for performance and scalability.\n\n` +
-      `Proudly built by @whizzsystems.\n\n` +
-      `${pageUrl}\n\n`
+        `High-density, high-complexity systems engineered for performance and scalability.\n\n` +
+        `Proudly built by @whizzsystems.\n\n` +
+        `${pageUrl}\n\n`
     );
-  
-    const hashtags = encodeURIComponent('whizzsystems,HighDensityHardwareDesign,AISystemThermal,SignalManagement');
-  
+
+    const hashtags = encodeURIComponent(
+      'whizzsystems,HighDensityHardwareDesign,AISystemThermal,SignalManagement'
+    );
+
     const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}`;
-  
+
     window.open(twitterUrl, '_blank');
+  }
+
+  shareOnLinkedIn(): void {
+    const url = encodeURIComponent(window.location.href);
+    const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+    window.open(linkedInShareUrl, '_blank');
   }
 }
