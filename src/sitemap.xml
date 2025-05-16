@@ -1,74 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://www.whizzsystems.com/</loc>
-    <lastmod>2025-05-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://www.whizzsystems.com/about</loc>
-    <lastmod>2025-05-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.whizzsystems.com/services/engineering-&amp;-design/system-design-&amp;-schematics</loc>
-    <lastmod>2025-05-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.whizzsystems.com/services/npi#SystemLevelArchitecture</loc>
-    <lastmod>2025-05-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.whizzsystems.com/services/advanced-manufacturing/manufacturing-simulations</loc>
-    <lastmod>2025-05-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.whizzsystems.com/services/lab-testing-solutions#BoardBringUp</loc>
-    <lastmod>2025-05-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.whizzsystems.com/services/supply-chain-management#ComponentEngineering</loc>
-    <lastmod>2025-05-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.whizzsystems.com/services/sustainable_engineering</loc>
-    <lastmod>2025-05-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.whizzsystems.com/featured-products</loc>
-    <lastmod>2025-05-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.whizzsystems.com/news-&amp;-insights</loc>
-    <lastmod>2025-05-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
+  <url><loc>https://www.whizzsystems.com</loc></url>
+  <url><loc>https://www.whizzsystems.com/about</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/engineering-&amp;-design/system-design-&amp;-schematics</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/engineering-&amp;-design/fpga</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/engineering-&amp;-design/firmware-software-development</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/engineering-&amp;-design/pcb-layout</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/engineering-&amp;-design/3D-modeling</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/engineering-&amp;-design/signal-integrity-simulations</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/engineering-&amp;-design/power-delivery</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/engineering-&amp;-design/thermal-management</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/npi</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/advanced-manufacturing</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/advanced-manufacturing/manufacturing-simulations</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/advanced-manufacturing/electronic-manufacturing-assembly</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/advanced-manufacturing/mechanical-assembly</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/advanced-manufacturing/system-build-packaging-design</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/advanced-manufacturing/local-offshore-capabilities</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/lab-testing-solutions</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/lab-testing-solutions#BoardBringUp</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/lab-testing-solutions#Validation</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/lab-testing-solutions#Characterization</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/supply-chain-management</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/supply-chain-management#ComponentEngineering</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/supply-chain-management#ComplianceEngineering</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/supply-chain-management#CommodityManagement</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/supply-chain-management#ProcurementManagement</loc></url>
+  <url><loc>https://www.whizzsystems.com/services/sustainable_engineering</loc></url>
+  <url><loc>https://www.whizzsystems.com/featured-products</loc></url>
+  <url><loc>https://webforms.pipedrive.com/f/6FrY8XOrvq6RD3Wh34QXfdNDhZ965bOGgUKq2uQw1me6FtQ56ixuOwtI5a45PI3nmX</loc></url>
+  <url><loc>https://www.whizzsystems.com/news-&amp;-insights</loc></url>
+  <url><loc>https://www.whizzsystems.com/news-&amp;-insights/hardware-design</loc></url>
+  <url><loc>https://www.whizzsystems.com/news-&amp;-insights/whitepaper-5g-oru</loc></url>
+  <url><loc>https://www.whizzsystems.com/news-&amp;-insights/whitepaper-heatsink</loc></url>
+  <url><loc>https://www.whizzsystems.com/news-&amp;-insights/whitepaper-pcle6</loc></url>
+  <url><loc>https://www.whizzsystems.com/news-&amp;-insights/whitepaper-invensify</loc></url>
+ 
 </urlset>
+
+
