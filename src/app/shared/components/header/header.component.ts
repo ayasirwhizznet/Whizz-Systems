@@ -36,6 +36,105 @@ export class HeaderComponent implements OnInit {
   isAccordionOpen = false;
   searchText: boolean = false;
 
+  lastScrollTop: number = 0;
+  isHeaderVisible: boolean = true;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    if (currentScroll > this.lastScrollTop) {
+      this.isHeaderVisible = false;
+    } else {
+      this.isHeaderVisible = true;
+    }
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    if (this.activeBottomSection || this.isSearchbaropen) {
+      this.closeMenu();
+    }
+  }
+
+  currentScroll: any;
+
+  constructor(private router: Router, private route: ActivatedRoute) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        this.isHeaderVisible = true;
+      }
+    });
+  }
+
+  ngOnInit(): void {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.currentRoute = event.urlAfterRedirects;
+        this.updateActiveMenuItem();
+        this.activeBottomSection = '';
+        this.activeMenuItem = '';
+        this.isSearchbaropen = '';
+      }
+    });
+  }
+
+  updateActiveMenuItem(): void {
+    if (this.currentRoute.includes('/about')) {
+      this.activeMenuItem = 'About';
+    } else if (this.currentRoute.includes('/services')) {
+      this.activeMenuItem = 'Services';
+    } else if (this.currentRoute.includes('/featured-products')) {
+      this.activeMenuItem = 'Featured Products';
+    } else if (this.currentRoute.includes('/resources')) {
+      this.activeMenuItem = 'Resources';
+    } else {
+      this.activeMenuItem = null;
+    }
+  }
+
+  menu(menuItemLabel: string) {
+    this.isSearchbaropen = false;
+    this.activeMenuItem = menuItemLabel;
+    this.activeBottomSection = null;
+  }
+
+  toggleBottomSection(type: string | null, menuItemLabel: string) {
+    this.isSearchbaropen = false;
+    this.activeBottomSection = this.activeBottomSection === type ? null : type;
+    this.activeMenuItem = this.activeBottomSection ? menuItemLabel : null;
+  }
+
+  toggleSearchbar() {
+    this.activeBottomSection = '';
+    this.activeMenuItem = '';
+    this.isSearchbaropen = !this.isSearchbaropen;
+    this.isAccordionOpen = false;
+    this.isMenuOpen = false;
+  }
+
+  focusin() {
+    this.searchText = true;
+  }
+
+  focusout() {
+    this.searchText = false;
+  }
+
+  toggleMenuSection() {
+    this.isSearchbaropen = false;
+    this.isMenuOpen = !this.isMenuOpen;
+    this.isAccordionOpen = this.isMenuOpen;
+  }
+
+  isClickedMobileLogo() {
+    this.isSearchbaropen = false;
+    this.isMenuOpen = false;
+    this.isAccordionOpen = false;
+  }
+
+  closeMenu() {
+    this.activeBottomSection = '';
+    this.activeMenuItem = '';
+    this.isSearchbaropen = '';
+  }
+
   menuItems = [
     { label: 'About', link: '/about' },
     { label: 'Services', dropdown: 'service' },
@@ -230,102 +329,5 @@ export class HeaderComponent implements OnInit {
     { label: 'FAQ', link: '/404' },
   ];
 
-  currentScroll: any;
-
-  constructor(private router: Router, private route: ActivatedRoute) {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationStart) {
-        this.isHeaderVisible = true;
-      }
-    });
-  }
-
-  ngOnInit(): void {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.currentRoute = event.urlAfterRedirects;
-        this.updateActiveMenuItem();
-        this.activeBottomSection = '';
-        this.activeMenuItem = '';
-        this.isSearchbaropen = '';
-      }
-    });
-  }
-
-  updateActiveMenuItem(): void {
-    if (this.currentRoute.includes('/about')) {
-      this.activeMenuItem = 'About';
-    } else if (this.currentRoute.includes('/services')) {
-      this.activeMenuItem = 'Services';
-    } else if (this.currentRoute.includes('/featured-products')) {
-      this.activeMenuItem = 'Featured Products';
-    } else if (this.currentRoute.includes('/resources')) {
-      this.activeMenuItem = 'Resources';
-    } else {
-      this.activeMenuItem = null;
-    }
-  }
-
-  menu(menuItemLabel: string) {
-    this.isSearchbaropen = false;
-    this.activeMenuItem = menuItemLabel;
-    this.activeBottomSection = null;
-  }
-
-  toggleBottomSection(type: string | null, menuItemLabel: string) {
-    this.isSearchbaropen = false;
-    this.activeBottomSection = this.activeBottomSection === type ? null : type;
-    this.activeMenuItem = this.activeBottomSection ? menuItemLabel : null;
-  }
-
-  toggleSearchbar() {
-    this.activeBottomSection = '';
-    this.activeMenuItem = '';
-    this.isSearchbaropen = !this.isSearchbaropen;
-    this.isAccordionOpen = false;
-    this.isMenuOpen = false;
-  }
-
-  focusin() {
-    this.searchText = true;
-  }
-
-  focusout() {
-    this.searchText = false;
-  }
-
-  toggleMenuSection() {
-    this.isSearchbaropen = false;
-    this.isMenuOpen = !this.isMenuOpen;
-    this.isAccordionOpen = this.isMenuOpen;
-  }
-
-  isClickedMobileLogo() {
-    this.isSearchbaropen = false;
-    this.isMenuOpen = false;
-    this.isAccordionOpen = false;
-  }
-
-  closeMenu() {
-    this.activeBottomSection = '';
-    this.activeMenuItem = '';
-    this.isSearchbaropen = '';
-  }
-
-  lastScrollTop: number = 0;
-  isHeaderVisible: boolean = true;
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const currentScroll = window.scrollY || document.documentElement.scrollTop;
-    if (currentScroll > this.lastScrollTop) {
-      this.isHeaderVisible = false;
-    } else {
-      this.isHeaderVisible = true;
-    }
-    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-    if (this.activeBottomSection || this.isSearchbaropen) {
-      this.closeMenu();
-    }
-  }
+  
 }

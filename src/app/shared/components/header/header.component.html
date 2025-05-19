@@ -1,6 +1,7 @@
 <!-- Desktop header -->
-<header class="desktop-header hidden lg:block shadow-md px-[3.3%] bg-white fixed left-0 right-0 z-50"
-  [class.hidden]="!isHeaderVisible">
+<header class="desktop-header lg:block shadow-md px-[3.3%] bg-white fixed left-0 right-0 z-50 transition-all ease-in-out duration-500"
+  [ngClass]="{'transform translate-y-0': isHeaderVisible, '-translate-y-full': !isHeaderVisible}">
+  <!-- Your header content here -->
   <div class="py-5 3xl:py-7 flex justify-between items-center">
     <a routerLink="/">
       <img height="70" width="176" loading="lazy" class="w-44 h-auto 3xl:w-[220px] object-cover cursor-pointer"

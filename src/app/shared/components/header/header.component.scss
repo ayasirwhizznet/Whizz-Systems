@@ -2,6 +2,18 @@ header {
   transition: transform 0s ease-in-out;
 }
 
+.transform.-translate-y-full {
+  transform: translateY(-100%);
+}
+
+.transition-all {
+  transition-property: all;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 header.hidden {
   transform: translateY(-100%);
 }

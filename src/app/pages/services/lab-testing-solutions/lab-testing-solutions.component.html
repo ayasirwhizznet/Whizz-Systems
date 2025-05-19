@@ -7,7 +7,7 @@
 
 <!-- Navbar -->
 <section [ngClass]="{ 'top-[13%]': isSticky}"
-  class="hidden lg:block px-[9.3%] lg:py-10 3xl:py-16 bg-white sticky top-0 z-20">
+  class="hidden lg:block px-[9.3%] lg:py-10 3xl:py-16 bg-white sticky top-0 z-20 transition-all duration-500 ease-in-out">
   <div class="flex justify-center items-center gap-3 3xl:gap-4">
     <a *ngFor="let service of labTestingServices" (click)="scrollToService(service)"
       class="lg:w-44 2xl:w-48 lg:h-[72px] 3xl:w-[247px] 3xl:h-[88px] cursor-pointer grid place-items-center bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-normal 3xl:font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">{{
