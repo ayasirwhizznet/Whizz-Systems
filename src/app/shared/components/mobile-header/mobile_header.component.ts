@@ -103,32 +103,31 @@ export class MobileHeaderComponent {
       open: false,
     },
     {
-      title: 'Advanced Manufacturing',
-      link: '/services/advanced-manufacturing',
-      items: [
-        {
-          label: 'Manufacturing Simulations',
-          link: '/services/advanced-manufacturing/manufacturing-simulations',
-        },
-        {
-          label: 'Electronic Manufacturing Assembly',
-          link: '/services/advanced-manufacturing/electronic-manufacturing-assembly',
-        },
-        {
-          label: 'Mechanical Assembly',
-          link: '/services/advanced-manufacturing/mechanical-assembly',
-        },
-        {
-          label: 'System Build & Packaging Design',
-          link: '/services/advanced-manufacturing/system-build-packaging-design',
-        },
-        {
-          label: 'Local & Offshore Capabilities',
-          link: '/services/advanced-manufacturing/local-offshore-capabilities',
-        },
-      ],
-      open: false,
-    },
+        title: 'Advanced Manufacturing',
+        link: '/services/advanced-manufacturing',
+        items: [
+          {
+            label: 'DFX Analysis',
+            link: '/services/advanced-manufacturing/dfx-analysis',
+          },
+          {
+            label: 'FMAE  (Failure Mode and Effects Analysis)',
+            link: '/services/advanced-manufacturing/fame',
+          },
+          {
+            label: 'Thermal Profiling & Reflow Soldering Optimization',
+            link: '/services/advanced-manufacturing/thermal-profiling',
+          },
+          {
+            label: 'Mechanical System Build',
+            link: '/services/advanced-manufacturing/mechanical-system-build',
+          },
+          {
+            label: 'Packaging Design',
+            link: '/services/advanced-manufacturing/packaging-design',
+          },
+        ],
+      },
     {
       title: 'Lab Testing Solutions',
       link: '/services/lab-testing-solutions',

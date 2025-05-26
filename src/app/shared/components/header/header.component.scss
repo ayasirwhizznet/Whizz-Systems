@@ -65,3 +65,13 @@ header.mobile-header {
   border-width: 1200px 1200px 0 0;
   z-index: -1;
 }
+
+.content_box {
+  height: 100%;
+  overflow: hidden;
+}
+
+.hover_div:hover .content_box {
+  height: 65%;
+    overflow: hidden;
+}

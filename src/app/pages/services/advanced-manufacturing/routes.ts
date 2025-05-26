@@ -14,7 +14,7 @@ export const routes: Routes = [
         data: { description: 'Optimize production with advanced manufacturing, supply chain solutions, and cutting-edge technology for efficient electronics manufacturing.' },
       },
       {
-        path: 'manufacturing-simulations',
+        path: 'dfx-analysis',
         loadComponent: () =>
           import('./advanced-manufacturing.component').then(
             (m) => m.AdvancedManufacturingComponent
@@ -23,7 +23,7 @@ export const routes: Routes = [
         data: { description: 'Reduce errors and improve efficiency with advanced electronic manufacturing simulations for precise, high-quality production.' },
       },
       {
-        path: 'electronic-manufacturing-assembly',
+        path: 'fame',
         loadComponent: () =>
           import('./advanced-manufacturing.component').then(
             (m) => m.AdvancedManufacturingComponent
@@ -32,7 +32,7 @@ export const routes: Routes = [
         data: { description: 'Get expert PCB assembly services, from prototypes to full production, ensuring high-quality electronic assembly and performance.' },
       },
       {
-        path: 'mechanical-assembly',
+        path: 'thermal-profiling',
         loadComponent: () =>
           import('./advanced-manufacturing.component').then(
             (m) => m.AdvancedManufacturingComponent
@@ -41,7 +41,7 @@ export const routes: Routes = [
         data: { description: 'Build strong products with expert mechanical and electro-mechanical assembly, including modern thermal management solutions.' },
       },
       {
-        path: 'system-build-packaging-design',
+        path: 'mechanical-system-build',
         loadComponent: () =>
           import('./advanced-manufacturing.component').then(
             (m) => m.AdvancedManufacturingComponent
@@ -50,7 +50,7 @@ export const routes: Routes = [
         data: { description: 'Secure, functional, and visually appealing product packaging with smart design and complete system build services.' },
       },
       {
-        path: 'local-offshore-capabilities',
+        path: 'packaging-design',
         loadComponent: () =>
           import('./advanced-manufacturing.component').then(
             (m) => m.AdvancedManufacturingComponent
