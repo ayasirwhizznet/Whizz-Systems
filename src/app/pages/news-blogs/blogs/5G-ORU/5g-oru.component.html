@@ -1,192 +1,610 @@
 <section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
-    <div class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl">
+  <div
+    class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl"
+  >
+    <div
+      class="w-full lg:w-[47%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16"
+    >
+      <p
+        class="text-sm 3xl:text-base leading-[15px] 3xl:leading-[19.2px] mb-2 3xl:mb-[10px]"
+      >
+        May 29, 2024
+      </p>
+      <div class="flex items-center gap-2 flex-wrap mb-4 3xl:mb-6">
+        <app-blog-tag
+          text="Heatsink"
+          textColor="text-light-gray1"
+          borderColor="border-light-gray1"
+          borderRadius="rounded-[3px] 3xl:rounded-[4px]"
+        ></app-blog-tag>
+        <app-blog-tag
+          text="Thermal Management"
+          textColor="text-light-gray1"
+          borderColor="border-light-gray1"
+          borderRadius="rounded-[3px] 3xl:rounded-[4px]"
+        ></app-blog-tag>
+      </div>
+      <h1
+        class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-[96%] sm:w-[57%] lg:w-full"
+      >
+        Building the Future of 5G Connectivity with Open Radio Unit Solutions
+      </h1>
+      <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
+        <a routerLink="/" class="cursor-pointer">
+          <img
+            height="48"
+            width="48"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/news/whizzicon.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+        <a routerLink="/" class="cursor-pointer">
+          <img
+            height="16"
+            width="109"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/news/whizz.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/whizz-systems/?viewAsMember=true"
+          target="_blank"
+          class="cursor-pointer"
+        >
+          <img
+            height="24"
+            width="24"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/news/linkedin.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/@WhizzSystemsCA"
+          target="_blank"
+          class="cursor-pointer"
+        >
+          <img
+            height="24"
+            width="24"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/news/youtube.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="hidden lg:block lg:w-[53%]">
+      <img
+        height="587"
+        width="682"
+        loading="lazy"
+        class="h-auto w-full object-cover"
+        src="assets/news/hero.png"
+        alt="Building the Future of 5G Connectivity with Open Radio Unit Solutions"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="px-[4%] sm:pr-0 sm:pl-[6.3%] py-6 3xl:py-8">
+  <div class="w-full flex justify-between gap-1 sm:gap-12">
+    <!-- left div -->
+    <div class="hidden lg:block lg:w-[23%] 2xl:w-[19%] 3xl:w-[22%] mt-12">
+      <div
+        class="p-6 3xl:p-8 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray lg:sticky lg:top-28"
+      >
+        <h3
+          class="text-teal1 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] mb-6 3xl:mb-8"
+        >
+          In This Article
+        </h3>
+        <ul>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section1')"
+              [ngClass]="isActive('section1') ? 'text-teal1' : ''"
+              >Introduction to 5G ORU</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section2')"
+              [ngClass]="isActive('section2') ? 'text-teal1' : ''"
+              >Our Expertise in 5G ORU Design and Engineering</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section3')"
+              [ngClass]="isActive('section3') ? 'text-teal1' : ''"
+              >Key Features and Specifications</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section4')"
+              [ngClass]="isActive('section4') ? 'text-teal1' : ''"
+              >Overcoming Design Challenges</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section5')"
+              [ngClass]="isActive('section5') ? 'text-teal1' : ''"
+              >Mechanical Enclosure Design</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section6')"
+              [ngClass]="isActive('section6') ? 'text-teal1' : ''"
+              >Thermal Management and Solutions</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section7')"
+              [ngClass]="isActive('section7') ? 'text-teal1' : ''"
+              >Roadmap and Future Developments</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- cener div -->
+    <div class="flex flex-col sm:w-4/5 lg:w-[55%] 2xl:w-[53%] 3xl:w-[47%]">
+      <section>
+        <div class="py-8 lg:py-12 3xl:py-16">
+          <p
+            class="text-dark-gray2 text-xl 3xl:text-2xl leading-[30px] 3xl:leading-[38px] font-light text-center"
+          >
+            In collaboration with Intel, Analog Devices, Comcores, and Radisys,
+            Whizz Systems has developed a groundbreaking 5G Open Radio Unit
+            (ORU) white box solution. This white paper delves into our
+            comprehensive design, engineering, and manufacturing process,
+            showcasing how our integrated expertise in hardware, thermal,
+            mechanical, and power engineering drives the development of
+            next-generation cost-effective, high-performance 5G solutions.
+          </p>
+        </div>
+      </section>
+      <!-- Introduction -->
+      <section id="section1" class="py-6 3xl:py-8">
+        <h2
+          class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium 3xl:font-bold mb-3 3xl:mb-4"
+        >
+          Introduction to 5G ORU
+        </h2>
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          Meeting the Demand for Cost-Effective 5G Radio Units
+        </h3>
+        <h4
+          class="text-dark-gray2 text-base 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          Overcoming Range Limitations with Advanced 5G ORU Solutions
+        </h4>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          5G radio networks provide increased bandwidth at the expense of
+          reduced range. To address this, cost-effective radio units are
+          critical for expanding coverage. Whizz Systems, in collaboration with
+          Intel, Analog Devices, Comcores, and Radisys, developed the 5G Open
+          Radio Unit (ORU) white box solution to meet this growing market need.
+        </p>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          This white paper provides an overview of the design and development
+          process for the hardware components that make up the 5G ORU white box.
+          Whizz Systems is responsible for the electrical, thermal, mechanical
+          engineering, and manufacturing aspects, as well as system validation
+          and bring-up of the turnkey white box ORU solution.
+        </p>
+      </section>
+
+      <!-- Expertise -->
+      <section id="section2">
+        <div class="py-6 3xl:py-8">
+          <h2
+            class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium 3xl:font-bold mb-3 3xl:mb-4"
+          >
+            Our Expertise in 5G ORU Design and Engineering
+          </h2>
+          <h3
+            class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+          >
+            Whizz Systems: End-to-End Expertise in 5G ORU Development
+          </h3>
+          <p
+            class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+          >
+            Whizz Systems is responsible for the electrical, thermal, mechanical
+            engineering, and manufacturing of the ORU white box. Our expertise
+            spans the design of individual PCBAs, system validation, and thermal
+            simulation for optimized heat dissipation.
+          </p>
+          <p
+            class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+          >
+            By leveraging Intel’s Arria 10 FPGA as a reference, we revamped the
+            power and clocking schemes and added a JESD interface for
+            communication between the Intel Arria 10 FPGA and Analog Devices’
+            ADRV902X chip. This was further enhanced with a board-to-board (BTB)
+            header for interfacing with either the ADI-designed RFFE Card or the
+            Whizz-designed ORU Adapter Card.
+          </p>
+        </div>
+        <figure class="py-6 3xl:py-8">
+          <img
+            loading="lazy"
+            height="598"
+            width="252"
+            class="w-full h-auto object-cover"
+            src="assets/news/expertise.png"
+            alt="Whizz Systems: End-to-End Expertise in 5G ORU Development"
+          />
+        </figure>
+      </section>
+
+      <!-- Key Features -->
+      <section id="section3">
+        <div class="py-6 3xl:py-8">
+          <h2
+            class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium 3xl:font-bold mb-3 3xl:mb-4"
+          >
+            Key Features and Specifications
+          </h2>
+          <h3
+            class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+          >
+            Next-Gen 5G Features to Drive the Future of Connectivity
+          </h3>
+          <p
+            class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+          >
+            The ORU white box is designed for high-performance with 4T4R TDD
+            communication and a tunable frequency range from 600MHz to 6GHz with
+            a 100MHz signal bandwidth. Featuring Intel’s Arria 10 SX processor,
+            the ORU includes:
+          </p>
+          <p
+            class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+          >
+            1GB DDR4 HPS Memory • 2GB DDR4 FPGA Memory • QSFP ports (40Gbps
+            transfer rate) • USB to UART interface • Ethernet with 1PPS/10MHz
+            clock for synchronization
+          </p>
+        </div>
+        <figure class="py-6 3xl:py-8">
+          <img
+            loading="lazy"
+            height="598"
+            width="252"
+            class="w-full h-auto object-cover"
+            src="assets/news/features.png"
+            alt="Next-Gen 5G Features to Drive the Future of Connectivity"
+          />
+        </figure>
+      </section>
+
+      <!-- Design Challenges -->
+      <section id="section4">
+        <div class="py-6 3xl:py-8">
+          <h2
+            class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium 3xl:font-bold mb-3 3xl:mb-4"
+          >
+            Overcoming Design Challenges
+          </h2>
+          <h3
+            class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+          >
+            Addressing Complex Design Challenges with Precision Engineering
+          </h3>
+          <h4
+            class="text-dark-gray2 text-base 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+          >
+            Solving Signal Integrity, Power, and Thermal Management Issues
+          </h4>
+          <p
+            class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+          >
+            Designing the ORU required overcoming several key challenges:
+          </p>
+          <hr class="border border-light-gray1/60 mb-3 3xl:mb-4" />
+          <p
+            class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            <b>Signal Integrity & Power Design:</b> Our
+            <b>SI/PI simulations</b> optimized <b>high-speed signal</b> routing
+            and <b>minimized IR drops</b> for power delivery.
+          </p>
+          <hr class="border border-light-gray1/60 my-3 3xl:my-4" />
+          <p
+            class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            <b>Thermal Management:</b> Through <b>thermal simulations,</b> we
+            guided the selection of <b>heat sinks</b> and
+            <b>optimal airflow</b> configurations in the mechanical enclosure.
+          </p>
+          <hr class="border border-light-gray1/60 my-3 3xl:my-4" />
+          <p
+            class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            <b>RF Signal Isolation:</b> A <b>GND shield</b> around the
+            <b>ADI chip</b> isolates RF signals to minimize interference.
+          </p>
+          <hr class="border border-light-gray1/60 mt-3 3xl:mt-4" />
+        </div>
+        <figure class="py-6 3xl:py-8">
+          <img
+            loading="lazy"
+            height="598"
+            width="252"
+            class="w-full h-auto object-cover"
+            src="assets/news/design-challenges.png"
+            alt="Addressing Complex Design Challenges with Precision Engineering"
+          />
+        </figure>
+      </section>
+
+      <!-- Mechanical Enclosure Design-->
+      <section id="section5">
+        <div class="py-6 3xl:py-8">
+          <h2
+            class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium 3xl:font-bold mb-3 3xl:mb-4"
+          >
+            Mechanical Enclosure Design
+          </h2>
+          <h3
+            class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+          >
+            Meeting the Demand for Cost-Effective 5G Radio Units
+          </h3>
+          <h4
+            class="text-dark-gray2 text-base 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+          >
+            Aluminum Alloy Enclosure with Custom Cooling Solutions
+          </h4>
+          <p
+            class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+          >
+            The ORU white box is housed in an aluminum alloy enclosure,
+            providing a lightweight and durable solution with optimized airflow
+            for cooling. We prioritized off-the-shelf hardware to reduce cost,
+            using ABS plastic end caps for added durability and shock
+            absorption. The chassis design was revised for both aesthetic appeal
+            and cost-effectiveness.
+          </p>
+          <app-button
+            heading="Learn more about Mechanical Engineering"
+            icon="assets/shared/r-arrow.svg"
+            size="small"
+            routerLink="/404"
+          ></app-button>
+        </div>
+        <figure class="py-6 3xl:py-8">
+          <img
+            loading="lazy"
+            height="598"
+            width="252"
+            class="w-full h-auto object-cover"
+            src="assets/news/design-enclosure.png"
+            alt="Meeting the Demand for Cost-Effective 5G Radio Units"
+          />
+        </figure>
+      </section>
+
+      <!-- Thermal Management Solutions-->
+      <section id="section6">
+        <div class="py-6 3xl:py-8">
+          <h2
+            class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium 3xl:font-bold mb-3 3xl:mb-4"
+          >
+            Thermal Management and Solutions
+          </h2>
+          <h3
+            class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+          >
+            Ensuring Optimal Heat Dissipation in Every Configuration
+          </h3>
+          <p
+            class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+          >
+            We employed thermal simulations for both the ORU and RFFE cards to
+            ensure efficient heat dissipation. The simulations validated that
+            critical components operated within thermal limits, and the selected
+            heat sinks and fans provided optimal airflow with minimal pressure
+            noise.
+          </p>
+          <app-button
+            heading="Learn more about Whizz Thermal Management"
+            icon="assets/shared/r-arrow.svg"
+            size="small"
+            routerLink="/404"
+          ></app-button>
+        </div>
+        <figure class="py-6 3xl:py-8">
+          <img
+            loading="lazy"
+            height="598"
+            width="252"
+            class="w-full h-auto object-cover"
+            src="assets/news/thermal-management.png"
+            alt="Ensuring Optimal Heat Dissipation in Every Configuration"
+          />
+        </figure>
+      </section>
+      <section class="py-6 3xl:py-8">
         <div
-            class="w-full lg:w-[47%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16">
-            <p class="text-sm 3xl:text-base leading-[15px] 3xl:leading-[19.2px] mb-2 3xl:mb-[10px]">May 29, 2024</p>
-            <div class="flex items-center gap-2 flex-wrap mb-4 3xl:mb-6">
-                <app-blog-tag text="Heatsink" textColor="text-light-gray1" borderColor="border-light-gray1"
-                    borderRadius="rounded-[3px] 3xl:rounded-[4px]"></app-blog-tag>
-                <app-blog-tag text="Thermal Management" textColor="text-light-gray1" borderColor="border-light-gray1"
-                    borderRadius="rounded-[3px] 3xl:rounded-[4px]"></app-blog-tag>
+          class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1"
+        >
+          <div class="flex items-center justify-between">
+            <div>
+              <h3
+                class="text-dark-gray1 text-xl lg:text-2xl 3xl:text-3xl font-semibold 3xl:font-bold my-3 3xl:my-4"
+              >
+                Subscribe to our newsletter!
+              </h3>
+              <p
+                class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[15px] 3xl:leading-[19.2px]"
+              >
+                Get updates on the latest news & insights
+              </p>
             </div>
-            <h1
-                class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-[96%] sm:w-[57%] lg:w-full">
-                Building the Future of 5G Connectivity with Open Radio Unit Solutions</h1>
-            <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
-                <a routerLink="/" class="cursor-pointer">
-                    <img height="48" width="48" class="h-auto w-full" loading="lazy" src="assets/news/whizzicon.svg" alt="Whizz Systems">
-                </a>
-                <a routerLink="/" class="cursor-pointer">
-                    <img height="16" width="109" class="h-auto w-full" loading="lazy" src="assets/news/whizz.svg" alt="Whizz Systems">
-                </a>
-                <a href="https://www.linkedin.com/company/whizz-systems/?viewAsMember=true" target="_blank" class="cursor-pointer">
-                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/news/linkedin.svg" alt="Whizz Systems">
-                </a>
-                <a href="https://www.youtube.com/@WhizzSystemsCA" target="_blank" class="cursor-pointer">
-                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/news/youtube.svg" alt="Whizz Systems">
-                </a>
-            </div>
+            <a
+              href="https://webforms.pipedrive.com/f/6UT1JKLeb6G1xtMMTPA4HRcQsTZefgpvRq9cSzG1TincmHlD6Wvfh3YCmSXUO7VklB"
+              target="_blank"
+              ><app-animated-button
+                heading="Subscribe"
+                size="medium"
+                [icon]="false"
+                bg="white"
+              ></app-animated-button
+            ></a>
+          </div>
         </div>
-        <div class="hidden lg:block lg:w-[53%]">
-            <img height="587" width="682" loading="lazy" class="h-auto w-full object-cover" src="assets/news/hero.png" alt="Building the Future of 5G Connectivity with Open Radio Unit Solutions">
-        </div>
+      </section>
+
+      <!-- Roadmap -->
+      <section id="section7" class="py-6 3xl:py-8">
+        <h2
+          class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium 3xl:font-bold mb-3 3xl:mb-4"
+        >
+          Roadmap and Future Developments
+        </h2>
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          The Future of 5G with Whizz Systems' ORU Solutions
+        </h3>
+        <h4
+          class="text-dark-gray2 text-base 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          Available Now for Testing, with More Derivatives Coming Soon
+        </h4>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          The ORU white box solution is available for testing, with general
+          availability expected in Q4 2020 or early 2021. Future derivatives,
+          including 2T2R, 8T8R, and lower-power versions, are also being
+          explored to meet different customer needs
+        </p>
+      </section>
     </div>
+
+    <!-- right div -->
+    <section class="sm:ml-auto mb-56 mt-96">
+      <div
+        class="flex flex-col justify-center items-center space-y-3 3xl:space-y-4 sticky top-96"
+      >
+        <p
+          class="text-light-gray2 text-[10px] 3xl:text-xs font-semibold 3xl:font-bold"
+        >
+          SHARE
+        </p>
+        <a (click)="shareOnFacebook()" class="cursor-pointer"
+          ><svg
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+            /></svg></a>
+        <a (click)="shareOnLinkedIn()" class="cursor-pointer"
+          ><svg
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+            /></svg></a>
+        <a (click)="shareOnTwitter()" class="cursor-pointer"
+          ><svg
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+            /></svg></a>
+      </div>
+    </section>
+  </div>
 </section>
 
-<!-- Marketing -->
-<section>
-    <div class="py-8 lg:py-12 3xl:py-16 px-[4%] lg:px-[11%] 2xl:px-[17%] 3xl:px-[19%]">
-        <p class="text-dark-gray2 sm:text-lg lg:text-xl 3xl:text-2xl font-extralight lg:leading-[32px] 3xl:leading-[38.4px] text-center my-6 3xl:my-8">In collaboration with Intel, Analog Devices, Comcores, and Radisys, Whizz Systems has developed a groundbreaking 5G Open Radio Unit (ORU) white box solution. This white paper delves into our comprehensive design, engineering, and manufacturing process, showcasing how our integrated expertise in hardware, thermal, mechanical, and power engineering drives the development of next-generation cost-effective, high-performance 5G solutions.</p>
-    </div>
-    <img loading="lazy" height="109" width="1520" class="h-auto w-full" src="assets/shared/divider-bottom.png" alt="Section Divider">
-</section>
-
-<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <div class="flex flex-col lg:flex-row gap-10 lg:justify-between">
-        <!-- left div -->
-        <div class="w-full lg:w-1/2">
-            <!-- Introduction -->
-            <section class="py-6 3xl:py-8">
-                <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Introduction to 5G ORU</h2>
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-1 3xl:mb-2">Meeting the Demand for Cost-Effective 5G Radio Units</h3>
-                <h4 class="text-dark-gray2 text-base 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Overcoming Range Limitations with Advanced 5G ORU Solutions</h4>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">5G radio networks provide increased bandwidth at the expense of reduced range. To address this, cost-effective radio units are critical for expanding coverage. Whizz Systems, in collaboration with Intel, Analog Devices, Comcores, and Radisys, developed the 5G Open Radio Unit (ORU) white box solution to meet this growing market need.</p>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">This white paper provides an overview of the design and development process for the hardware components that make up the 5G ORU white box. Whizz Systems is responsible for the electrical, thermal, mechanical engineering, and manufacturing aspects, as well as system validation and bring-up of the turnkey white box ORU solution.</p>
-            </section>
-
-            <!-- Expertise -->
-            <section>
-                <div class="py-6 3xl:py-8">
-                    <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Our Expertise in 5G ORU Design and Engineering</h2>
-                    <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Whizz Systems: End-to-End Expertise in 5G ORU Development</h3>
-                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">Whizz Systems is responsible for the electrical, thermal, mechanical engineering, and manufacturing of the ORU white box. Our expertise spans the design of individual PCBAs, system validation, and thermal simulation for optimized heat dissipation.</p>
-                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">By leveraging Intel’s Arria 10 FPGA as a reference, we revamped the power and clocking schemes and added a JESD interface for communication between the Intel Arria 10 FPGA and Analog Devices’ ADRV902X chip. This was further enhanced with a board-to-board (BTB) header for interfacing with either the ADI-designed RFFE Card or the Whizz-designed ORU Adapter Card.</p>
-                </div>
-                <figure class="py-6 3xl:py-8">
-                    <img loading="lazy" height="598" width="252" class="w-full h-auto object-cover" src="assets/news/expertise.png" alt="Whizz Systems: End-to-End Expertise in 5G ORU Development">
-                    <figcaption class="text-teal1 text-[13px] font-medium 3xl:font-bold mt-3 3xl:mt-4">Fig. 1</figcaption>
-                </figure>
-            </section>
-
-            <!-- Key Features -->
-            <section>
-                <div class="py-6 3xl:py-8">
-                    <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Key Features and Specifications</h2>
-                    <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Next-Gen 5G Features to Drive the Future of Connectivity</h3>
-                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">The ORU white box is designed for high-performance with 4T4R TDD communication and a tunable frequency range from 600MHz to 6GHz with a 100MHz signal bandwidth. Featuring Intel’s Arria 10 SX processor, the ORU includes:</p>
-                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">1GB DDR4 HPS Memory • 2GB DDR4 FPGA Memory • QSFP ports (40Gbps transfer rate) • USB to UART interface • Ethernet with 1PPS/10MHz clock for synchronization</p>
-                </div>
-                <figure class="py-6 3xl:py-8">
-                    <img loading="lazy" height="598" width="252" class="w-full h-auto object-cover" src="assets/news/features.png" alt="Next-Gen 5G Features to Drive the Future of Connectivity">
-                    <figcaption class="text-teal1 text-[13px] font-medium 3xl:font-bold mt-3 3xl:mt-4">Fig. 2</figcaption>
-                </figure>
-            </section>
-
-            <!-- Design Challenges -->
-            <section>
-                <div class="py-6 3xl:py-8">
-                    <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Overcoming Design Challenges</h2>
-                    <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-1 3xl:mb-2">Addressing Complex Design Challenges with Precision Engineering</h3>
-                    <h4 class="text-dark-gray2 text-base 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Solving Signal Integrity, Power, and Thermal Management Issues</h4>
-                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">Designing the ORU required overcoming several key challenges:</p>
-                    <hr class="border border-light-gray1/60 mb-3 3xl:mb-4">
-                    <p class="text-dark-gray2 text-xs 3xl:text-sm font-light"><b>Signal Integrity & Power Design:</b> Our <b>SI/PI simulations</b> optimized <b>high-speed signal</b> routing and <b>minimized IR drops</b> for power delivery.</p>
-                    <hr class="border border-light-gray1/60 my-3 3xl:my-4">
-                    <p class="text-dark-gray2 text-xs 3xl:text-sm font-light"><b>Thermal Management:</b> Through <b>thermal simulations,</b> we guided the selection of <b>heat sinks</b> and <b>optimal airflow</b> configurations in the mechanical enclosure.</p>
-                    <hr class="border border-light-gray1/60 my-3 3xl:my-4">
-                    <p class="text-dark-gray2 text-xs 3xl:text-sm font-light"><b>RF Signal Isolation:</b> A <b>GND shield</b> around the <b>ADI chip</b> isolates RF signals to minimize interference.</p>
-                    <hr class="border border-light-gray1/60 mt-3 3xl:mt-4">
-                </div>
-                <figure class="py-6 3xl:py-8">
-                    <img loading="lazy" height="598" width="252" class="w-full h-auto object-cover" src="assets/news/design-challenges.png" alt="Addressing Complex Design Challenges with Precision Engineering">
-                    <figcaption class="text-teal1 text-[13px] font-medium 3xl:font-bold mt-3 3xl:mt-4">Fig. 3</figcaption>
-                </figure>
-            </section>
-
-            <!-- Mechanical Enclosure Design-->
-            <section>
-                <div class="py-6 3xl:py-8">
-                    <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Mechanical Enclosure Design</h2>
-                    <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-1 3xl:mb-2">Meeting the Demand for Cost-Effective 5G Radio Units</h3>
-                    <h4 class="text-dark-gray2 text-base 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Aluminum Alloy Enclosure with Custom Cooling Solutions</h4>
-                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">The ORU white box is housed in an aluminum alloy enclosure, providing a lightweight and durable solution with optimized airflow for cooling. We prioritized off-the-shelf hardware to reduce cost, using ABS plastic end caps for added durability and shock absorption. The chassis design was revised for both aesthetic appeal and cost-effectiveness.</p>
-                    <app-button heading="Learn more about Mechanical Engineering" icon="assets/shared/r-arrow.svg" size="small" routerLink="/404"></app-button>
-                </div>
-                <figure class="py-6 3xl:py-8">
-                    <img loading="lazy" height="598" width="252" class="w-full h-auto object-cover" src="assets/news/design-enclosure.png" alt="Meeting the Demand for Cost-Effective 5G Radio Units">
-                    <figcaption class="text-teal1 text-[13px] font-medium 3xl:font-bold mt-3 3xl:mt-4">Fig. 4</figcaption>
-                </figure>
-            </section>
-
-            <!-- Thermal Management Solutions-->
-            <section>
-                <div class="py-6 3xl:py-8">
-                    <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Thermal Management and Solutions</h2>
-                    <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Ensuring Optimal Heat Dissipation in Every Configuration</h3>
-                    <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">We employed thermal simulations for both the ORU and RFFE cards to ensure efficient heat dissipation. The simulations validated that critical components operated within thermal limits, and the selected heat sinks and fans provided optimal airflow with minimal pressure noise.</p>
-                    <app-button heading="Learn more about Whizz Thermal Management" icon="assets/shared/r-arrow.svg" size="small" routerLink="/404"></app-button>
-                </div>
-                <figure class="py-6 3xl:py-8">
-                    <img loading="lazy" height="598" width="252" class="w-full h-auto object-cover" src="assets/news/thermal-management.png" alt="Ensuring Optimal Heat Dissipation in Every Configuration">
-                    <figcaption class="text-teal1 text-[13px] font-medium 3xl:font-bold mt-3 3xl:mt-4">Fig. 5</figcaption>
-                </figure>
-            </section>
-
-            <!-- Roadmap -->
-            <section class="py-6 3xl:py-8">
-                <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Roadmap and Future Developments</h2>
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-1 3xl:mb-2">The Future of 5G with Whizz Systems' ORU Solutions</h3>
-                <h4 class="text-dark-gray2 text-base 3xl:text-xl font-light lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Available Now for Testing, with More Derivatives Coming Soon</h4>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">The ORU white box solution is available for testing, with general availability expected in Q4 2020 or early 2021. Future derivatives, including 2T2R, 8T8R, and lower-power versions, are also being explored to meet different customer needs</p>
-            </section>
-        </div>
-        <!-- right div -->
-        <div class="w-full lg:w-1/2">
-            <div
-                class="w-11/12 sm:w-1/2 lg:w-3/4 2xl:w-[70%] justify-self-center lg:sticky lg:top-28 lg:h-[calc(100vh+1%)] lg:mt-40">
-                <div
-                    class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1 mb-6 3xl:mb-8">
-                    <h2
-                        class="text-3xl lg:text-[32px] 2xl:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold text-dark-gray2">
-                        Subscribe to our newsletter!</h2>
-                    <p
-                        class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light my-6 3xl:y-8 text-dark-gray2">
-                        Get updates on the latest news & insights</p>
-                    <div class="flex items-center gap-6 3xl:gap-8">
-                        <input type="email" placeholder="Enter Your Email"
-                            class="w-full text-sm 3xl:text-base px-4 3xl:px-5 py-[6px] sm:py-[10px] 3xl:py-[14px] block rounded-md 3xl:rounded-lg border border-dark-gray1 focus:outline-none focus:border-teal1  bg-transparent placeholder-light-gray1 focus:placeholder-transparent">
-                            <a href="https://webforms.pipedrive.com/f/6UT1JKLeb6G1xtMMTPA4HRcQsTZefgpvRq9cSzG1TincmHlD6Wvfh3YCmSXUO7VklB"
-                            target="_blank"><app-animated-button heading="Subscribe" size="medium" [icon]="false"
-                            bg="white"></app-animated-button></a>
-                    </div>
-                </div>
-                <div
-                    class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1 bg-subscribe bg-cover">
-                    <h2
-                        class="text-white text-3xl lg:text-[32px] 2xl:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
-                        Learn more about Whizz Systems</h2>
-                    <app-animated-button routerLink="/services" heading="All services" size="medium" [icon]="true"
-                        bg="white"></app-animated-button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <section class="px-0 sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <div class="relative p-6 sm:p-10 lg:p-[52px] 3xl:p-16 sm:rounded-md 3xl:rounded-lg">
-        <video  class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg" loop muted autoplay
-            oncanplay="this.play()" onloadedmetadata="this.muted = true">
-            <source src="assets/hero/waves2.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-0 bg-video-overlay opacity-80 z-[5] sm:rounded-md 3xl:rounded-lg"></div>
-        <div class="relative z-10 sm:w-[93%] lg:w-[73%] 2xl:w-[65%] 3xl:w-[63%] text-white">
-            <h2
-                class="text-3xl sm:text-4xl lg:text-5xl 2xl:text-[52px] 3xl:text-[64px] 2xl:leading-[60px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4">
-                Ready to Drive the Future of 5G Connectivity?</h2>
-            <p class="sm:text-xl lg:text-2xl 2xl:text-[26px] 3xl:text-[32px] 2xl:leading-[36px] 3xl:leading-[48px] mb-8 lg:mb-10 3xl:mb-12">Contact Whizz Systems today to learn how our ORU solutions can power your 5G network and deliver cutting-edge connectivity for the next generation.</p>
-            <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
-        target="_blank"><app-button heading="Start Your 5G Journey with Whizz Systems" size="large" icon="assets/shared/webform.svg"></app-button></a>
-        </div>
+  <div
+    class="relative p-6 sm:p-10 lg:p-[52px] 3xl:p-16 sm:rounded-md 3xl:rounded-lg"
+  >
+    <video
+      class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg"
+      loop
+      muted
+      autoplay
+      oncanplay="this.play()"
+      onloadedmetadata="this.muted = true"
+    >
+      <source src="assets/hero/waves2.mp4" type="video/mp4" />
+    </video>
+    <div
+      class="absolute inset-0 bg-video-overlay opacity-80 z-[5] sm:rounded-md 3xl:rounded-lg"
+    ></div>
+    <div
+      class="relative z-10 sm:w-[93%] lg:w-[73%] 2xl:w-[65%] 3xl:w-[63%] text-white"
+    >
+      <h2
+        class="text-3xl sm:text-4xl lg:text-5xl 2xl:text-[52px] 3xl:text-[64px] 2xl:leading-[60px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4"
+      >
+        Ready to Drive the Future of 5G Connectivity?
+      </h2>
+      <p
+        class="sm:text-xl lg:text-2xl 2xl:text-[26px] 3xl:text-[32px] 2xl:leading-[36px] 3xl:leading-[48px] mb-8 lg:mb-10 3xl:mb-12"
+      >
+        Contact Whizz Systems today to learn how our ORU solutions can power
+        your 5G network and deliver cutting-edge connectivity for the next
+        generation.
+      </p>
+      <a
+        href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
+        target="_blank"
+        ><app-button
+          heading="Start Your 5G Journey with Whizz Systems"
+          size="large"
+          icon="assets/shared/webform.svg"
+        ></app-button
+      ></a>
     </div>
+  </div>
 </section>
+
 <app-cnews [blogs]="blogs"></app-cnews>

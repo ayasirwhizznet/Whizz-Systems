@@ -1,233 +1,860 @@
 <!-- Hero Section -->
 <section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
-    <div class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl">
-        <div
-            class="w-full lg:w-[47%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16">
-            <p class="text-xs 3xl:text-base leading-[15px] 3xl:leading-[19.2px] mb-2 3xl:mb-[10px]">May 29, 2024</p>
-            <div class="flex items-center gap-2 flex-wrap mb-4 3xl:mb-6">
-                <div *ngFor="let tag of tags">
-                    <app-blog-tag text="{{tag}}" textColor="text-light-gray1" borderColor="border-light-gray1"
-                    borderRadius="rounded-[3px] 3xl:rounded-[4px]"></app-blog-tag>
-                </div>
-            </div>
-            <h1
-                class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-full sm:w-[53%] lg:w-[94%] 2xl:w-[95%]">
-                Heatsinks: Considerations, guidance, and best practices.</h1>
-            <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
-                <a routerLink="/" class="cursor-pointer">
-                    <img height="48" width="48" class="h-auto w-full" loading="lazy" src="assets/news/whizzicon.svg" alt="Whizz">
-                </a>
-                <a routerLink="/" class="cursor-pointer">
-                    <img height="16" width="109" class="h-auto w-full" loading="lazy" src="assets/news/whizz.svg" alt="Whizz">
-                </a>
-                <a href="https://www.linkedin.com/company/whizz-systems/?viewAsMember=true" target="_blank" class="cursor-pointer">
-                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/news/linkedin.svg" alt="Linkdin">
-                </a>
-                <a href="https://www.youtube.com/@WhizzSystemsCA" target="_blank" class="cursor-pointer">
-                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/news/youtube.svg" alt="Youtube">
-                </a>
-            </div>
+  <div
+    class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl"
+  >
+    <div
+      class="w-full lg:w-[47%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16"
+    >
+      <p
+        class="text-xs 3xl:text-base leading-[15px] 3xl:leading-[19.2px] mb-2 3xl:mb-[10px]"
+      >
+        May 29, 2024
+      </p>
+      <div class="flex items-center gap-2 flex-wrap mb-4 3xl:mb-6">
+        <div *ngFor="let tag of tags">
+          <app-blog-tag
+            text="{{ tag }}"
+            textColor="text-light-gray1"
+            borderColor="border-light-gray1"
+            borderRadius="rounded-[3px] 3xl:rounded-[4px]"
+          ></app-blog-tag>
         </div>
-        <div class="hidden lg:block lg:w-[53%]">
-            <img height="587" width="682" loading="lazy" class="h-auto w-full object-cover" src="assets/news/blogs/heatsink/hero.png" alt="Heatsinks: Considerations, guidance, and best practices">
-        </div>
+      </div>
+      <h1
+        class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-full sm:w-[53%] lg:w-[94%] 2xl:w-[95%]"
+      >
+        Heatsinks: Considerations, guidance, and best practices.
+      </h1>
+      <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
+        <a routerLink="/" class="cursor-pointer">
+          <img
+            height="48"
+            width="48"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/news/whizzicon.svg"
+            alt="Whizz"
+          />
+        </a>
+        <a routerLink="/" class="cursor-pointer">
+          <img
+            height="16"
+            width="109"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/news/whizz.svg"
+            alt="Whizz"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/whizz-systems/?viewAsMember=true"
+          target="_blank"
+          class="cursor-pointer"
+        >
+          <img
+            height="24"
+            width="24"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/news/linkedin.svg"
+            alt="Linkdin"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/@WhizzSystemsCA"
+          target="_blank"
+          class="cursor-pointer"
+        >
+          <img
+            height="24"
+            width="24"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/news/youtube.svg"
+            alt="Youtube"
+          />
+        </a>
+      </div>
     </div>
+    <div class="hidden lg:block lg:w-[53%]">
+      <img
+        height="587"
+        width="682"
+        loading="lazy"
+        class="h-auto w-full object-cover"
+        src="assets/news/blogs/heatsink/hero.png"
+        alt="Heatsinks: Considerations, guidance, and best practices"
+      />
+    </div>
+  </div>
 </section>
 
-
-<section class="px-[4%] sm:px-[9.3%]">
-    <div class="flex flex-col lg:flex-row gap-10 lg:justify-between">
-        <!-- left div -->
-        <div class="w-full lg:w-1/2">
-            <!-- Why do we need a Heatsink? -->
-            <section class="py-6 3xl:py-8">
-                <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8">Heatsinks</h2>
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Why do we need a Heatsink?</h3>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">If any heat source in an electronic device cannot be cooled efficiently through conduction or convection, then a heatsink is required to move the heat away from the heat source so that conduction or convection is more evenly managed. Heat generation is one of the most important challenges for electronic devices since it affects the device’s reliability. It is mainly generated from the flow of electrical current through various components in a circuit, such as integrated circuits, transistors, and other electronic components. The primary cause of heat generation in electronic circuits is electronic resistance to the current flow. So, efficient thermal management frameworks are essential to avoid overheating, ensuring a long lifecycle and optimal safety of the electronic devices. [1]</p>
-            </section>
-
-            <!-- Consequences of Overheating -->
-            <section class="py-6 3xl:py-8">
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Consequences of Overheating</h3>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">When a device overheats, it can lead to performance issues, unexpected shutdowns, and even permanent damage to the inside components. There are several techniques for cooling, including different styles of heatsinks, thermoelectric coolers, forced air systems, fans, and heat channels. In power electronics, cooling systems must evacuate excess heat to maintain reliability and power density. So, electronic components should always operate within their rated operating temperature range, the safe operating area (SOA).  [2]</p>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">Overheating can happen for different reasons, including intemperate utilization, poor ventilation, and defective cooling systems. Extreme heat can slow and even damage devices [3].</p>
-            </section>
-
-            <!-- Working Principle and Concept -->
-            <section class="py-6 3xl:py-8">
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Working Principle and Concept</h3>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">Heatsinks operate on the fundamental principle that heat transfer from a hot to a cool region is proportional to the available surface area, as governed by the second law of thermodynamics. Heatsinks conduct heat away from critical electronic components, maintaining them within their rated operating temperature range. The absorbed heat is then removed through natural or forced air convection.</p>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">Heatsinks function either passively through natural convection or actively using mechanisms like fans or liquid cooling to improve heat dissipation. Key performance factors for heatsink design include:</p>
-                <hr class="border border-light-gray1/60 my-3 3xl:my-4">
-                <div *ngFor="let factor of factors">
-                    <p class="text-dark-gray2 text-xs 3xl:text-sm">{{factor}}</p>
-                    <hr class="border border-light-gray1/60 my-3 3xl:my-4">
-                </div>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mt-8 lg:mt-12 3xl:mt-16">Optimizing these parameters will enhance heat exchange efficiency or thermal conductivity, resulting improvement of heat transfer coefficient.</p>
-            </section>
-
-            <!-- Active and Passive Heatsink -->
-            <section class="py-6 3xl:py-8">
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Active and Passive Heatsink</h3>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">Heatsinks are classified into passive and active cooling methods. Passive cooling relies on natural convection and radiation for heat dissipation without external assistance. On the other hand, active cooling employs external devices like fans, pumps, or thermoelectric coolers (TECs) to boost heat transfer and cooling efficiency. The choice of a heatsink is determined by the necessary resistance to meet component thermal requirements with active solutions such as forced air or liquid cooling offering tailored thermal management solutions at different levels. (See Fig. 1) [5]</p>
-                <figure class="py-6 3xl:py-8">
-                    <img height="598" width="252" loading="lazy" class="h-auto w-full object-cover" src="assets/news/blogs/heatsink/natural-forced.png" alt="Natural vs. Forced Convection">
-                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">Figure 1: Natural vs. Forced Convection</figcaption>
-                </figure>
-                <figure class="py-6 3xl:py-8">
-                    <img height="598" width="252" loading="lazy" class="h-auto w-full object-cover" src="assets/news/blogs/heatsink/heatsink-summary.png" alt="Heatsinks High-Level Summary">
-                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">Table 1: Heatsinks High-Level Summary</figcaption>
-                </figure>
-            </section>
-
-            <!-- Types of Heatsink by Design -->
-            <section class="py-6 3xl:py-8">
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Active and Passive Heatsink</h3>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">Heatsinks are classified into passive and active cooling methods. Passive cooling relies on natural convection and radiation for heat dissipation without external assistance. On the other hand, active cooling employs external devices like fans, pumps, or thermoelectric coolers (TECs) to boost heat transfer and cooling efficiency. The choice of a heatsink is determined by the necessary resistance to meet component thermal requirements with active solutions such as forced air or liquid cooling offering tailored thermal management solutions at different levels. (See Fig. 1) [5]</p>
-                <figure class="py-6 3xl:py-8">
-                    <img height="598" width="252" loading="lazy" class="h-auto w-full object-cover" src="assets/news/blogs/heatsink/design-types.png" alt="Types of Heatsink by Design">
-                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">Figure 2: Types of Heatsink by Design</figcaption>
-                </figure>
-            </section>
-
-            <!-- Types of Heatsink Based on Manufacturing -->
-            <section class="py-6 3xl:py-8">
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8">Types of Heatsink Based on Manufacturing</h3>
-                <figure class="py-6 3xl:py-8">
-                    <img height="598" width="252" loading="lazy" class="h-auto w-full object-cover" src="assets/news/blogs/heatsink/considerations.png" alt="Considerations by Heatsink Type">
-                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">Table 2: Considerations by Heatsink Type</figcaption>
-                </figure>
-                <figure class="py-6 3xl:py-8">
-                    <img height="598" width="252" loading="lazy" class="h-auto w-full object-cover" src="assets/news/blogs/heatsink/materials-summary.png" alt="Materials Summary">
-                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">Table 3: Materials Summary</figcaption>
-                </figure>
-                <figure class="py-6 3xl:py-8">
-                    <img height="598" width="252" loading="lazy" class="h-auto w-full object-cover" src="assets/news/blogs/heatsink/manufacturing.png" alt="Type of Heatsink Based on Manufacturing">
-                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">Figure 3: Type of Heatsink Based on Manufacturing</figcaption>
-                </figure>
-            </section>
-
-            <!-- Design Optimization -->
-            <section class="py-6 3xl:py-8">
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Design Optimization</h3>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">To enhance the thermal performance of heatsinks in both natural and forced convection, various design optimization strategies can be used. Like optimizing fin designs such as trapezoidal, curved, and angled fins can improve heat transfer efficiency, adding a cover plate over straight fins can improve the chimney effect, resulting in more heat transfer. In forced convection, adding internal flow channels can be used to design high-performance heatsinks with efficient heat dissipation capabilities.</p>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] my-4 3xl:my-6">Fin efficiency depends on length, thickness, thermal conductivity, and heat transfer coefficient.</p>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">Common heatsinks have a fin aspect ratio between 3:1 and 5:1. In forced convection applications, efficiency should be within the 40 to 70 % range. Also, expansion of the surface area, precise fin design, material choice, and an integrated thermal management system are the factors that improve the performance of a heatsink</p>
-                <figure class="py-6 3xl:py-8">
-                    <img height="598" width="252" loading="lazy" class="h-auto w-full object-cover" src="assets/news/blogs/heatsink/design-optimization.png" alt="Design Optimization in Heatsink">
-                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">Figure 4: Design Optimization in Heatsink</figcaption>
-                </figure>
-            </section>
-
-            <!-- Parametric Approach -->
-            <section class="py-6 3xl:py-8">
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Parametric Approach to Optimize Heatsink Design</h3>
-                <h4 class="text-dark-gray2 text-sm 3xl:tesxt-base lg:leading-[24px] 3xl:leading-[28px] font-light">To optimize the relationship between design intent and design response:</h4>
-                <ol *ngFor="let approach of approaches">
-                    <hr class="border border-light-gray1/60 my-3 3xl:my-4">
-                    <li class="text-teal1 text-[13px] 3xl:text-base font-medium  lg:leading-[14px] 3xl:leading-[19.2px] flex gap-3 3xl:gap-4">{{approach.number}}<span class="text-dark-gray2 text-xs 3xl:text-sm font-light lg:leading-[20px] 3xl:leading-[22.4px] -mt-[2px]">{{approach.desc}}</span></li>
-                </ol>
-                <hr class="border border-light-gray1/60 mt-3 3xl:mt-4">
-            </section>
-            
-            <!-- General Rules -->
-            <section class="py-6 3xl:py-8">
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">General Rules</h3>
-                <h4 class="text-dark-gray2 text-sm 3xl:tesxt-base lg:leading-[24px] 3xl:leading-[28px] font-light">These general rules apply to heatsinks:</h4>
-                <ol *ngFor="let rule of rules">
-                    <hr class="border border-light-gray1/60 my-3 3xl:my-4">
-                    <li class="text-teal1 text-[13px] 3xl:text-base font-medium  lg:leading-[14px] 3xl:leading-[19.2px] flex gap-3 3xl:gap-4">{{rule.number}}<span class="text-dark-gray2 text-xs 3xl:text-sm font-light lg:leading-[20px] 3xl:leading-[22.4px] -mt-[2px]" [innerHTML]="rule.desc"></span></li>
-                </ol>
-                <hr class="border border-light-gray1/60 mt-3 3xl:mt-4">
-            </section>
-
-            <!-- Recommended Heatsink Materials -->
-            <section class="py-6 3xl:py-8">
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Recommended Heatsink Materials</h3>
-                <h4 class="text-dark-gray2 text-sm 3xl:tesxt-base lg:leading-[24px] 3xl:leading-[28px] font-light mb-6 3xl:mb-8">The most frequent materials used in the construction of heatsinks are those with high thermal conductivity.</h4>
-                <figure class="py-6 3xl:py-8">
-                    <img height="598" width="252" loading="lazy" class="h-auto w-full object-cover" src="assets/news/blogs/heatsink/thermal-conductivity.png" alt="Thermal Conductivity by Material">
-                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">Table 4: Thermal Conductivity by Material</figcaption>
-                </figure>
-            </section>
-
-            <!-- Selecting the Right Heatsink -->
-            <section class="py-6 3xl:py-8">
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Selecting the Right Heatsink</h3>
-                <h4 class="text-dark-gray2 text-sm 3xl:tesxt-base lg:leading-[24px] 3xl:leading-[28px] font-light">Selecting the right heatsink is based on for key considerations:</h4>
-                <ol *ngFor="let selection of selections">
-                    <hr class="border border-light-gray1/60 my-3 3xl:my-4">
-                    <li class="text-teal1 text-[13px] 3xl:text-base font-medium  lg:leading-[14px] 3xl:leading-[19.2px] flex gap-3 3xl:gap-4">{{selection.number}}<span class="text-dark-gray2 text-xs 3xl:text-sm font-light lg:leading-[20px] 3xl:leading-[22.4px] -mt-[2px]" [innerHTML]="selection.desc"></span></li>
-                </ol>
-                <hr class="border border-light-gray1/60 mt-3 3xl:mt-4">
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] my-6 3xl:my-8">Once you have calculated the required thermal resistance, you can select a heatsink that can handle this thermal load and maintain the device within its safe operating temperature range. The choice of heatsink will depend on factors like material, fin design, and whether it uses natural or forced convection. Remember to consider the thermal interface materials and their resistivity values as well.</p>
-                <figure class="py-6 3xl:py-8">
-                    <img height="598" width="252" loading="lazy" class="h-auto w-full object-cover" src="assets/news/blogs/heatsink/comparison.png" alt="Comparison Chart of Heatsink Configurations">
-                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">Figure 5: Comparison Chart of Heatsink Configurations</figcaption>
-                </figure>
-            </section>
-
-            <!-- General Recommendations -->
-             <section class="py-6 3xl:py-8">
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">General Recommendations</h3>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-6 3xl:mb-8">Our general recommendations are summarized below</p>
-                <figure class="py-6 3xl:py-8">
-                    <img height="598" width="252" loading="lazy" class="h-auto w-full object-cover" src="assets/news/blogs/heatsink/recommendations.png" alt="Heatsink Recommendation by Application">
-                    <figcaption class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4">Table 5: Heatsink Recommendation by Application</figcaption>
-                </figure>
-             </section>
-
-             <!-- Conclusion -->
-             <section class="py-6 3xl:py-8">
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">Conclusion</h3>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">Heatsinks maintain optimal operating temperatures, prevent overheating, and ensure the reliability of electronic devices. Heatsink design works on the principle of heat transfer, where the surface area available for conduction or convection influences the amount of heat dissipated. The fabrication of heatsinks is different, with different types of designs like pin fin, plate-fin, and stacked fin heatsinks tailored for specific applications and cooling requirements. Active and passive cooling methods are employed, utilizing natural or forced convection to dissipate heat effectively. Design optimization strategies, such as fin geometry and thermal interface materials, are crucial for enhancing heatsink performance.</p>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">Materials like aluminum, copper, heat pipes, graphite, and ceramics are commonly used for their high thermal conductivity. Selecting the right heatsink for a specific application involves calculating heat generation, determining device and ambient temperatures, identifying the convection type, and calculating thermal resistance to ensure that the device will operate within safe temperature limits. Heatsinks are indispensable components in electronics, ensuring efficient heat dissipation and optimal device performance.</p>
-            </section>
-
-            <!-- About Whizz Systems -->
-            <section class="py-6 3xl:py-8">
-                <h3 class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">About Whizz Systems</h3>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">Whizz Systems is an end-to-end Electronics Manufacturing Services firm. We specialize in Electronic Design and Manufacturing with an emphasis on NPI. We are based in Silicon Valley, and can smoothly transition projects to our new high-volume facility in Malaysia.</p>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] my-4 3xl:my-6">With over 30 years of experience, we have extensive experience supporting major companies like Xllinx, Amazon, Google as well as startups you may or may not have heard of to get their products to market.</p>
-                <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">Learn more: email us at <a class="underline cursor-pointer" href="mailto:sales@whizzsystems.com">sales&#64;whizzsystems.com</a> to connect with our team of industry experts about your projects today.</p>
-                <ol *ngFor="let info of infos">
-                    <hr class="border border-light-gray1/60 my-3 3xl:my-4">
-                    <li class="text-teal1 text-xs 3xl:text-base font-medium  lg:leading-[14px] 3xl:leading-[19.2px] flex gap-3 3xl:gap-4">{{info.number}}<span class="text-dark-gray2 text-xs 3xl:text-sm lg:leading-[20px] 3xl:leading-[22.4px] -mt-[2px]" [innerHTML]="info.desc"></span></li>
-                </ol>
-                <hr class="border border-light-gray1/60 mt-3 3xl:mt-4">
-            </section>
-        </div>
-        <!-- right div -->
-        <div class="w-full lg:w-1/2">
-            <div
-                class="w-11/12 sm:w-1/2 lg:w-3/4 2xl:w-[70%] justify-self-center lg:sticky lg:top-28 lg:h-[calc(100vh+1%)] lg:mt-40">
-                <div
-                    class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1 mb-6 3xl:mb-8">
-                    <h2
-                        class="text-3xl lg:text-[32px] 2xl:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold text-dark-gray2">
-                        Subscribe to our newsletter!</h2>
-                    <p
-                        class="text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] font-light my-6 3xl:y-8 text-dark-gray2">
-                        Get updates on the latest news & insights</p>
-                    <div class="flex items-center gap-6 3xl:gap-8">
-                        <input type="email" placeholder="Enter Your Email"
-                            class="w-full text-sm 3xl:text-base px-4 3xl:px-5 py-[6px] sm:py-[10px] 3xl:py-[14px] block rounded-md 3xl:rounded-lg border border-dark-gray1 focus:outline-none focus:border-teal1  bg-transparent placeholder-light-gray1 focus:placeholder-transparent">
-                            <a href="https://webforms.pipedrive.com/f/6UT1JKLeb6G1xtMMTPA4HRcQsTZefgpvRq9cSzG1TincmHlD6Wvfh3YCmSXUO7VklB"
-                            target="_blank"><app-animated-button heading="Subscribe" size="medium" [icon]="false"
-                            bg="white"></app-animated-button></a>
-                    </div>
-                </div>
-                <div
-                    class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1 bg-subscribe bg-cover">
-                    <h2
-                        class="text-white text-3xl lg:text-[32px] 2xl:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
-                        Learn more about Whizz Systems</h2>
-                    <app-animated-button routerLink="/services" heading="All services" size="medium" [icon]="true"
-                        bg="white"></app-animated-button>
-                </div>
-            </div>
-        </div>
+<section class="px-[4%] sm:pr-0 sm:pl-[6.3%] py-6 3xl:py-8">
+  <div class="w-full flex justify-between gap-1 sm:gap-12">
+    <!-- left div -->
+    <div class="hidden lg:block lg:w-[23%] 2xl:w-[19%] 3xl:w-[22%] mt-12">
+      <div
+        class="p-6 3xl:p-8 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray lg:sticky lg:top-28"
+      >
+        <h3
+          class="text-teal1 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] mb-6 3xl:mb-8"
+        >
+          In This Article
+        </h3>
+        <ul>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section1')"
+              [ngClass]="isActive('section1') ? 'text-teal1' : ''"
+              >Why do we need a Heatsink?</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section2')"
+              [ngClass]="isActive('section2') ? 'text-teal1' : ''"
+              >Consequences of Overheating</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section3')"
+              [ngClass]="isActive('section3') ? 'text-teal1' : ''"
+              >Working Principle and Concept</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section4')"
+              [ngClass]="isActive('section4') ? 'text-teal1' : ''"
+              >Active and Passive Heatsink</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section5')"
+              [ngClass]="isActive('section5') ? 'text-teal1' : ''"
+              >Types of Heatsink by Design</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section6')"
+              [ngClass]="isActive('section6') ? 'text-teal1' : ''"
+              >Types of Heatsink Based on Manufacturing</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section7')"
+              [ngClass]="isActive('section7') ? 'text-teal1' : ''"
+              >Design Optimization</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section8')"
+              [ngClass]="isActive('section8') ? 'text-teal1' : ''"
+              >Parametric Approach to Optimize Heatsink Design</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section9')"
+              [ngClass]="isActive('section9') ? 'text-teal1' : ''"
+              >General Rules</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section10')"
+              [ngClass]="isActive('section10') ? 'text-teal1' : ''"
+              >Recommended Heatsink Materials</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section11')"
+              [ngClass]="isActive('section11') ? 'text-teal1' : ''"
+              >Selecting the Right Heatsink</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section12')"
+              [ngClass]="isActive('section12') ? 'text-teal1' : ''"
+              >General Recommendations</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section13')"
+              [ngClass]="isActive('section13') ? 'text-teal1' : ''"
+              >Conclusion</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section14')"
+              [ngClass]="isActive('section14') ? 'text-teal1' : ''"
+              >About Whizz Systems</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
+    <!-- cener div -->
+    <div class="flex flex-col sm:w-4/5 lg:w-[55%] 2xl:w-[53%] 3xl:w-[47%]">
+      <!-- Why do we need a Heatsink? -->
+      <section id="section1" class="py-6 3xl:py-8">
+        <h2
+          class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium 3xl:font-bold mb-3 3xl:mb-4"
+        >
+          Heatsinks
+        </h2>
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          Why do we need a Heatsink?
+        </h3>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          If any heat source in an electronic device cannot be cooled
+          efficiently through conduction or convection, then a heatsink is
+          required to move the heat away from the heat source so that conduction
+          or convection is more evenly managed. Heat generation is one of the
+          most important challenges for electronic devices since it affects the
+          device’s reliability. It is mainly generated from the flow of
+          electrical current through various components in a circuit, such as
+          integrated circuits, transistors, and other electronic components. The
+          primary cause of heat generation in electronic circuits is electronic
+          resistance to the current flow. So, efficient thermal management
+          frameworks are essential to avoid overheating, ensuring a long
+          lifecycle and optimal safety of the electronic devices. [1]
+        </p>
+      </section>
+
+      <!-- Consequences of Overheating -->
+      <section id="section2" class="py-6 3xl:py-8">
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          Consequences of Overheating
+        </h3>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          When a device overheats, it can lead to performance issues, unexpected
+          shutdowns, and even permanent damage to the inside components. There
+          are several techniques for cooling, including different styles of
+          heatsinks, thermoelectric coolers, forced air systems, fans, and heat
+          channels. In power electronics, cooling systems must evacuate excess
+          heat to maintain reliability and power density. So, electronic
+          components should always operate within their rated operating
+          temperature range, the safe operating area (SOA).  [2]
+        </p>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Overheating can happen for different reasons, including intemperate
+          utilization, poor ventilation, and defective cooling systems. Extreme
+          heat can slow and even damage devices [3].
+        </p>
+      </section>
+
+      <!-- Working Principle and Concept -->
+      <section id="section3" class="py-6 3xl:py-8">
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          Working Principle and Concept
+        </h3>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Heatsinks operate on the fundamental principle that heat transfer from
+          a hot to a cool region is proportional to the available surface area,
+          as governed by the second law of thermodynamics. Heatsinks conduct
+          heat away from critical electronic components, maintaining them within
+          their rated operating temperature range. The absorbed heat is then
+          removed through natural or forced air convection.
+        </p>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Heatsinks function either passively through natural convection or
+          actively using mechanisms like fans or liquid cooling to improve heat
+          dissipation. Key performance factors for heatsink design include:
+        </p>
+        <hr class="border border-light-gray1/60 my-3 3xl:my-4" />
+        <div *ngFor="let factor of factors">
+          <p class="text-dark-gray2 3xl:text-xl">{{ factor }}</p>
+          <hr class="border border-light-gray1/60 my-3 3xl:my-4" />
+        </div>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] my-5 3xl:my-6"
+        >
+          Optimizing these parameters will enhance heat exchange efficiency or
+          thermal conductivity, resulting improvement of heat transfer
+          coefficient.
+        </p>
+      </section>
+
+      <!-- Active and Passive Heatsink -->
+      <section id="section4" class="py-6 3xl:py-8">
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          Active and Passive Heatsink
+        </h3>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Heatsinks are classified into passive and active cooling methods.
+          Passive cooling relies on natural convection and radiation for heat
+          dissipation without external assistance. On the other hand, active
+          cooling employs external devices like fans, pumps, or thermoelectric
+          coolers (TECs) to boost heat transfer and cooling efficiency. The
+          choice of a heatsink is determined by the necessary resistance to meet
+          component thermal requirements with active solutions such as forced
+          air or liquid cooling offering tailored thermal management solutions
+          at different levels. (See Fig. 1) [5]
+        </p>
+        <figure class="py-6 3xl:py-8 px-12 3xl:px-16">
+          <img
+            height="598"
+            width="252"
+            loading="lazy"
+            class="h-auto w-full object-cover"
+            src="assets/news/blogs/heatsink/natural-forced.png"
+            alt="Natural vs. Forced Convection"
+          />
+          <figcaption
+            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4"
+          >
+            Figure 1: Natural vs. Forced Convection
+          </figcaption>
+        </figure>
+        <figure class="py-6 3xl:py-8 px-12 3xl:px-16">
+          <img
+            height="598"
+            width="252"
+            loading="lazy"
+            class="h-auto w-full object-cover"
+            src="assets/news/blogs/heatsink/heatsink-summary.png"
+            alt="Heatsinks High-Level Summary"
+          />
+          <figcaption
+            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4"
+          >
+            Table 1: Heatsinks High-Level Summary
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Types of Heatsink by Design -->
+      <section id="section5" class="py-6 3xl:py-8">
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          Types of Heatsink by Design
+        </h3>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Heatsinks are classified into passive and active cooling methods.
+          Passive cooling relies on natural convection and radiation for heat
+          dissipation without external assistance. On the other hand, active
+          cooling employs external devices like fans, pumps, or thermoelectric
+          coolers (TECs) to boost heat transfer and cooling efficiency. The
+          choice of a heatsink is determined by the necessary resistance to meet
+          component thermal requirements with active solutions such as forced
+          air or liquid cooling offering tailored thermal management solutions
+          at different levels. (See Fig. 1) [5]
+        </p>
+        <figure class="py-6 3xl:py-8 px-12 3xl:px-16">
+          <img
+            height="598"
+            width="252"
+            loading="lazy"
+            class="h-auto w-full object-cover"
+            src="assets/news/blogs/heatsink/design-types.png"
+            alt="Types of Heatsink by Design"
+          />
+          <figcaption
+            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4"
+          >
+            Figure 2: Types of Heatsink by Design
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Types of Heatsink Based on Manufacturing -->
+      <section id="section6" class="py-6 3xl:py-8">
+        <h3
+          class="text-dark-gray2 text-base 3xl:text-xl font-medium lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8"
+        >
+          Types of Heatsink Based on Manufacturing
+        </h3>
+        <figure class="py-6 3xl:py-8 px-12 3xl:px-16">
+          <img
+            height="598"
+            width="252"
+            loading="lazy"
+            class="h-auto w-full object-cover"
+            src="assets/news/blogs/heatsink/considerations.png"
+            alt="Considerations by Heatsink Type"
+          />
+          <figcaption
+            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4"
+          >
+            Table 2: Considerations by Heatsink Type
+          </figcaption>
+        </figure>
+        <figure class="py-6 3xl:py-8 px-12 3xl:px-16">
+          <img
+            height="598"
+            width="252"
+            loading="lazy"
+            class="h-auto w-full object-cover"
+            src="assets/news/blogs/heatsink/materials-summary.png"
+            alt="Materials Summary"
+          />
+          <figcaption
+            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4"
+          >
+            Table 3: Materials Summary
+          </figcaption>
+        </figure>
+        <figure class="py-6 3xl:py-8 px-12 3xl:px-16">
+          <img
+            height="598"
+            width="252"
+            loading="lazy"
+            class="h-auto w-full object-cover"
+            src="assets/news/blogs/heatsink/manufacturing.png"
+            alt="Type of Heatsink Based on Manufacturing"
+          />
+          <figcaption
+            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4"
+          >
+            Figure 3: Type of Heatsink Based on Manufacturing
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Design Optimization -->
+      <section id="section7" class="py-6 3xl:py-8">
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          Design Optimization
+        </h3>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          To enhance the thermal performance of heatsinks in both natural and
+          forced convection, various design optimization strategies can be used.
+          Like optimizing fin designs such as trapezoidal, curved, and angled
+          fins can improve heat transfer efficiency, adding a cover plate over
+          straight fins can improve the chimney effect, resulting in more heat
+          transfer. In forced convection, adding internal flow channels can be
+          used to design high-performance heatsinks with efficient heat
+          dissipation capabilities.
+        </p>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Fin efficiency depends on length, thickness, thermal conductivity, and
+          heat transfer coefficient.
+        </p>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Common heatsinks have a fin aspect ratio between 3:1 and 5:1. In
+          forced convection applications, efficiency should be within the 40 to
+          70 % range. Also, expansion of the surface area, precise fin design,
+          material choice, and an integrated thermal management system are the
+          factors that improve the performance of a heatsink
+        </p>
+        <figure class="py-6 3xl:py-8 px-12 3xl:px-16">
+          <img
+            height="598"
+            width="252"
+            loading="lazy"
+            class="h-auto w-full object-cover"
+            src="assets/news/blogs/heatsink/design-optimization.png"
+            alt="Design Optimization in Heatsink"
+          />
+          <figcaption
+            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4"
+          >
+            Figure 4: Design Optimization in Heatsink
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Parametric Approach -->
+      <section id="section8" class="py-6 3xl:py-8">
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          Parametric Approach to Optimize Heatsink Design
+        </h3>
+        <h4
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          To optimize the relationship between design intent and design
+          response:
+        </h4>
+        <ol *ngFor="let approach of approaches">
+          <hr class="border border-light-gray1/60 my-3 3xl:my-4" />
+          <li
+            class="text-teal1 3xl:text-xl font-semibold 3xl:font-bold lg:leading-[20px] 3xl:leading-[28px] flex gap-3 3xl:gap-4"
+          >
+            {{ approach.number
+            }}<span
+              class="text-dark-gray2 3xl:text-xl font-normal leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4 -mt-[2px]"
+              >{{ approach.desc }}</span
+            >
+          </li>
+        </ol>
+        <hr class="border border-light-gray1/60 mt-3 3xl:mt-4" />
+      </section>
+
+      <!-- General Rules -->
+      <section id="section9" class="py-6 3xl:py-8">
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          General Rules
+        </h3>
+        <h4
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          These general rules apply to heatsinks:
+        </h4>
+        <ol *ngFor="let rule of rules">
+          <hr class="border border-light-gray1/60 my-3 3xl:my-4" />
+          <li
+            class="text-teal1 3xl:text-xl font-semibold 3xl:font-bold lg:leading-[20px] 3xl:leading-[28px] flex gap-3 3xl:gap-4"
+          >
+            {{ rule.number
+            }}<span
+              class="text-dark-gray2 3xl:text-xl font-normal leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4 -mt-[2px]"
+              [innerHTML]="rule.desc"
+            ></span>
+          </li>
+        </ol>
+        <hr class="border border-light-gray1/60 mt-3 3xl:mt-4" />
+      </section>
+
+      <!-- Recommended Heatsink Materials -->
+      <section id="section10" class="py-6 3xl:py-8">
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          Recommended Heatsink Materials
+        </h3>
+        <h4
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          The most frequent materials used in the construction of heatsinks are
+          those with high thermal conductivity.
+        </h4>
+        <figure class="py-6 3xl:py-8 px-12 3xl:px-16">
+          <img
+            height="598"
+            width="252"
+            loading="lazy"
+            class="h-auto w-full object-cover"
+            src="assets/news/blogs/heatsink/thermal-conductivity.png"
+            alt="Thermal Conductivity by Material"
+          />
+          <figcaption
+            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4"
+          >
+            Table 4: Thermal Conductivity by Material
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Selecting the Right Heatsink -->
+      <section id="section11" class="py-6 3xl:py-8">
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          Selecting the Right Heatsink
+        </h3>
+        <h4
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Selecting the right heatsink is based on for key considerations:
+        </h4>
+        <ol *ngFor="let selection of selections">
+          <hr class="border border-light-gray1/60 my-3 3xl:my-4" />
+          <li
+            class="text-teal1 3xl:text-xl font-semibold 3xl:font-bold lg:leading-[20px] 3xl:leading-[28px] flex gap-3 3xl:gap-4"
+          >
+            {{ selection.number
+            }}<span
+              class="text-dark-gray2 3xl:text-xl font-normal leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4 -mt-[2px]"
+              [innerHTML]="selection.desc"
+            ></span>
+          </li>
+        </ol>
+        <hr class="border border-light-gray1/60 mt-3 3xl:mt-4" />
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] my-5 3xl:my-6"
+        >
+          Once you have calculated the required thermal resistance, you can
+          select a heatsink that can handle this thermal load and maintain the
+          device within its safe operating temperature range. The choice of
+          heatsink will depend on factors like material, fin design, and whether
+          it uses natural or forced convection. Remember to consider the thermal
+          interface materials and their resistivity values as well.
+        </p>
+        <figure class="py-6 3xl:py-8 px-12 3xl:px-16">
+          <img
+            height="598"
+            width="252"
+            loading="lazy"
+            class="h-auto w-full object-cover"
+            src="assets/news/blogs/heatsink/comparison.png"
+            alt="Comparison Chart of Heatsink Configurations"
+          />
+          <figcaption
+            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4"
+          >
+            Figure 5: Comparison Chart of Heatsink Configurations
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- General Recommendations -->
+      <section id="section12" class="py-6 3xl:py-8">
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          General Recommendations
+        </h3>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Our general recommendations are summarized below
+        </p>
+        <figure class="py-6 3xl:py-8 px-12 3xl:px-16">
+          <img
+            height="598"
+            width="252"
+            loading="lazy"
+            class="h-auto w-full object-cover"
+            src="assets/news/blogs/heatsink/recommendations.png"
+            alt="Heatsink Recommendation by Application"
+          />
+          <figcaption
+            class="text-teal2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4"
+          >
+            Table 5: Heatsink Recommendation by Application
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Conclusion -->
+      <section id="section13" class="py-6 3xl:py-8">
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          Conclusion
+        </h3>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Heatsinks maintain optimal operating temperatures, prevent
+          overheating, and ensure the reliability of electronic devices.
+          Heatsink design works on the principle of heat transfer, where the
+          surface area available for conduction or convection influences the
+          amount of heat dissipated. The fabrication of heatsinks is different,
+          with different types of designs like pin fin, plate-fin, and stacked
+          fin heatsinks tailored for specific applications and cooling
+          requirements. Active and passive cooling methods are employed,
+          utilizing natural or forced convection to dissipate heat effectively.
+          Design optimization strategies, such as fin geometry and thermal
+          interface materials, are crucial for enhancing heatsink performance.
+        </p>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Materials like aluminum, copper, heat pipes, graphite, and ceramics
+          are commonly used for their high thermal conductivity. Selecting the
+          right heatsink for a specific application involves calculating heat
+          generation, determining device and ambient temperatures, identifying
+          the convection type, and calculating thermal resistance to ensure that
+          the device will operate within safe temperature limits. Heatsinks are
+          indispensable components in electronics, ensuring efficient heat
+          dissipation and optimal device performance.
+        </p>
+      </section>
+ 
+      <!-- Newsletter -->
+      <section class="py-6 3xl:py-8">
+        <div
+          class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1"
+        >
+          <div class="flex items-center justify-between">
+            <div>
+              <h3
+                class="text-dark-gray1 text-xl lg:text-2xl 3xl:text-3xl font-semibold 3xl:font-bold my-3 3xl:my-4"
+              >
+                Subscribe to our newsletter!
+              </h3>
+              <p
+                class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[15px] 3xl:leading-[19.2px]"
+              >
+                Get updates on the latest news & insights
+              </p>
+            </div>
+            <a
+              href="https://webforms.pipedrive.com/f/6UT1JKLeb6G1xtMMTPA4HRcQsTZefgpvRq9cSzG1TincmHlD6Wvfh3YCmSXUO7VklB"
+              target="_blank"
+              ><app-animated-button
+                heading="Subscribe"
+                size="medium"
+                [icon]="false"
+                bg="white"
+              ></app-animated-button
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Whizz Systems -->
+      <section id="section14" class="py-6 3xl:py-8">
+        <h3
+          class="text-dark-gray2 text-xl 3xl:text-2xl font-medium 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4"
+        >
+          About Whizz Systems
+        </h3>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Whizz Systems is an end-to-end Electronics Manufacturing Services
+          firm. We specialize in Electronic Design and Manufacturing with an
+          emphasis on NPI. We are based in Silicon Valley, and can smoothly
+          transition projects to our new high-volume facility in Malaysia.
+        </p>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          With over 30 years of experience, we have extensive experience
+          supporting major companies like Xllinx, Amazon, Google as well as
+          startups you may or may not have heard of to get their products to
+          market.
+        </p>
+        <p
+          class="text-dark-gray2 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Learn more: email us at
+          <a
+            class="underline cursor-pointer"
+            href="mailto:sales@whizzsystems.com"
+            >sales&#64;whizzsystems.com</a
+          >
+          to connect with our team of industry experts about your projects
+          today.
+        </p>
+        <ol *ngFor="let info of infos">
+          <hr class="border border-light-gray1/60 my-3 3xl:my-4" />
+          <li
+            class="text-teal1 3xl:text-xl font-semibold 3xl:font-bold lg:leading-[20px] 3xl:leading-[28px] flex gap-3 3xl:gap-4"
+          >
+            {{ info.number
+            }}<span
+              class="text-dark-gray2 3xl:text-xl font-normal leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4 -mt-[2px]"
+              [innerHTML]="info.desc"
+            ></span>
+          </li>
+        </ol>
+        <hr class="border border-light-gray1/60 mt-3 3xl:mt-4" />
+      </section>
+    </div>
+
+    <!-- right div -->
+    <section class="sm:ml-auto mb-56 mt-96">
+      <div
+        class="flex flex-col justify-center items-center space-y-3 3xl:space-y-4 sticky top-96"
+      >
+        <p
+          class="text-light-gray2 text-[10px] 3xl:text-xs font-semibold 3xl:font-bold"
+        >
+          SHARE
+        </p>
+        <a (click)="shareOnFacebook()" class="cursor-pointer"
+          ><svg
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+            /></svg
+        ></a>
+        <a (click)="shareOnLinkedIn()" class="cursor-pointer"
+          ><svg
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+            /></svg
+        ></a>
+        <a (click)="shareOnTwitter()" class="cursor-pointer"
+          ><svg
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+            /></svg
+        ></a>
+      </div>
+    </section>
+  </div>
 </section>
 
 <app-cnews [blogs]="blogs"></app-cnews>
