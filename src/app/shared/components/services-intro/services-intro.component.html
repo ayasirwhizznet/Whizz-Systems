@@ -9,15 +9,15 @@
     [ngClass]="{ 'order-1 lg:order-0': isImageLeft, 'order-0 lg:order-1': !isImageLeft }">
     <h4 class="text-teal1 text-sm 3xl:text-base font-semibold 3xl:font-bold lg:leading-[15px] 3xl:leading-[19.2px]">{{heading}}</h4>
     <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">{{title}}</h3>
-    <p class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]" [innerHTML]="desc1"></p>
+    <p class="text-dark-gray2 text-base 3xl:text-lg lg:leading-[24px] 3xl:leading-[28px]" [innerHTML]="desc1"></p>
     <p *ngIf="desc2"
-      class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mt-6 3xl:mt-8" [innerHTML]="desc2"></p>
+      class="text-dark-gray2 text-base 3xl:text-lg lg:leading-[24px] 3xl:leading-[28px] mt-6 3xl:mt-8" [innerHTML]="desc2"></p>
     <p *ngIf="desc3"
-      class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mt-6 3xl:mt-8">
+      class="text-dark-gray2 text-base 3xl:text-lg lg:leading-[24px] 3xl:leading-[28px] mt-6 3xl:mt-8">
       {{desc3}}</p>
-    <h4 *ngIf="subTitle" class="text-dark-gray2 text-sm 3xl:text-base font-semibold 3xl:font-bold lg:leading-[24px] 3xl:leading-[28px] mt-4 3xl:mt-6">{{subTitle}}
+    <h4 *ngIf="subTitle" class="text-dark-gray2 text-base 3xl:text-lg font-semibold 3xl:font-bold lg:leading-[24px] 3xl:leading-[28px] mt-4 3xl:mt-6">{{subTitle}}
     </h4>
-    <p *ngIf="desc4" class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mt-1">
+    <p *ngIf="desc4" class="text-dark-gray2 text-base 3xl:text-lg lg:leading-[24px] 3xl:leading-[28px] mt-1">
       {{desc4}}</p>
     <div *ngIf="btnText" class="mt-3 3xl:mt-4">
       <app-button heading="{{btnText}}" routerLink="{{navigate}}" icon="assets/shared/r-arrow.svg"

@@ -154,27 +154,27 @@ export class MobileHeaderComponent {
       title: 'Supply Chain Management',
       link: '/services/supply-chain-management',
       items: [
-        {
-          label: 'Component Engineering',
-          link: '/services/supply-chain-management',
-          fragment: 'ComponentEngineering',
-        },
-        {
-          label: 'Compliance Engineering',
-          link: '/services/supply-chain-management',
-          fragment: 'ComplianceEngineering',
-        },
-        {
-          label: 'Commodity Management',
-          link: '/services/supply-chain-management',
-          fragment: 'CommodityManagement',
-        },
-        {
-          label: 'Procurement Management',
-          link: '/services/supply-chain-management',
-          fragment: 'ProcurementManagement',
-        },
-      ],
+          {
+            label: 'Components Procurement & Planning',
+            link: '/services/supply-chain-management',
+            fragment: 'ProactiveSourcing',
+          },
+          {
+            label: 'Prototype Build Coordination',
+            link: '/services/supply-chain-management',
+            fragment: 'PrototypeBuildCoordination',
+          },
+          {
+            label: 'Global Sourcing & Broker Ecosystem',
+            link: '/services/supply-chain-management',
+            fragment: 'GlobalSourcing',
+          },
+          {
+            label: 'Inventory & Storage',
+            link: '/services/supply-chain-management',
+            fragment: 'Inventory&Storage',
+          },
+        ],
       open: false,
     },
 

@@ -60,27 +60,27 @@ export class FpgaComponent {
 
   benefits: any[] = [
     {
-      imgUrl: 'assets/services/engg&design/fpga/benefits.png',
+      imgUrl: 'assets/icons/expert-badge.svg',
       name: 'Proven Expertise',
       desc: 'Our team has a strong track record in delivering high-performance FPGA designs across diverse industries.',
     },
     {
-      imgUrl: 'assets/services/engg&design/fpga/benefits.png',
+      imgUrl: 'assets/icons/solution.svg',
       name: 'End-to-End Solutions',
       desc: 'We provide comprehensive services—ensuring a seamless design-to-production workflow.',
     },
     {
-      imgUrl: 'assets/services/engg&design/fpga/benefits.png',
+      imgUrl: 'assets/icons/connectivity.svg',
       name: 'Robust Connectivity',
       desc: 'We specialize in integrating standard buses l, and support high-speed SERDES interfaces along with protocols such as UART, I2C, SPI, and Ethernet.',
     },
     {
-      imgUrl: 'assets/services/engg&design/fpga/benefits.png',
+      imgUrl: 'assets/icons/search.svg',
       name: 'Rigorous Verification',
       desc: 'Our thorough functional verification and simulation processes ensure that every design meets the highest standards of reliability and performance.',
     },
     {
-      imgUrl: 'assets/services/engg&design/fpga/benefits.png',
+      imgUrl: 'assets/icons/client.svg',
       name: 'Client-Centric Approach',
       desc: 'We collaborate closely with our clients to turn complex ideas into market-ready solutions quickly, reducing time-to-market and overall costs.',
     },

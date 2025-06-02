@@ -73,22 +73,22 @@ export class SystemDesignComponent {
 
   benefits: any[] = [
     {
-      imgUrl: 'assets/services/engg&design/system-design/benefits.png',
+      imgUrl: 'assets/icons/expert-badge.svg',
       name: 'Comprehensive Expertise',
       desc: 'From architecture to compliance, we cover every aspect of system design under one roof.',
     },
     {
-      imgUrl: 'assets/services/engg&design/system-design/benefits.png',
+      imgUrl: 'assets/icons/invard-arrow.svg',
       name: 'Error Minimization',
       desc: 'Our precision-driven approach ensures clarity, reducing the risk of costly design errors.',
     },
     {
-      imgUrl: 'assets/services/engg&design/system-design/benefits.png',
+      imgUrl: 'assets/icons/rocket.svg',
       name: 'Future-Ready Solutions',
       desc: 'Designs are built with scalability and adaptability in mind, keeping pace with evolving technologies.',
     },
     {
-      imgUrl: 'assets/services/engg&design/system-design/benefits.png',
+      imgUrl: 'assets/icons/confident-badge.svg',
       name: 'Regulatory Confidence',
       desc: 'With compliance engineering, you can trust that your designs meet industry standards and certifications.',
     },

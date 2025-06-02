@@ -75,32 +75,32 @@ export class PcbLayoutComponent {
 
   benefits: any[] = [
     {
-      imgUrl: 'assets/services/engg&design/pcb/benefits.png',
+      imgUrl: 'assets/icons/expert-badge.svg',
       name: 'Expertise in High-Density Designs',
       desc: 'Specialized in complex layouts for constrained spaces and mixed-technology designs.',
     },
     {
-      imgUrl: 'assets/services/engg&design/pcb/benefits.png',
+      imgUrl: 'assets/icons/signal.svg',
       name: 'Signal Integrity Optimization',
       desc: 'Ensuring high-speed performance and reliable signal transmission.',
     },
     {
-      imgUrl: 'assets/services/engg&design/pcb/benefits.png',
+      imgUrl: 'assets/icons/excellence.svg',
       name: 'Design for Excellence (DFx)',
       desc: 'Optimized layouts for manufacturability, assembly, and testability.',
     },
     {
-      imgUrl: 'assets/services/engg&design/pcb/benefits.png',
+      imgUrl: 'assets/icons/leaf.svg',
       name: 'Power Distribution Mastery',
       desc: 'Efficient power plane planning for improved performance and thermal management.',
     },
     {
-      imgUrl: 'assets/services/engg&design/pcb/benefits.png',
+      imgUrl: 'assets/icons/file.svg',
       name: 'Accurate Manufacturing Files',
       desc: 'Properly prepared documentation for error-free fabrication and assembly.',
     },
     {
-      imgUrl: 'assets/services/engg&design/pcb/benefits.png',
+      imgUrl: 'assets/icons/handshake.svg',
       name: 'Close Collaboration with Manufacturing Teams',
       desc: 'Ensuring your design intent translates seamlessly into production.',
     },

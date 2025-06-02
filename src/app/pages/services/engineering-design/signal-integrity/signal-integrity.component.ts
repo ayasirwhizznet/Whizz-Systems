@@ -61,22 +61,22 @@ export class SignalIntegrityComponent {
 
   benefits: any = [
     {
-      imgUrl: 'assets/services/engg&design/signal-integrity/benefits.png',
+      imgUrl: 'assets/icons/support.svg',
       name: 'End-to-End Support ',
       desc: 'Comprehensive <b>pre- and post-layout services</b> tailored to modern electronics.',
     },
     {
-      imgUrl: 'assets/services/engg&design/signal-integrity/benefits.png',
+      imgUrl: 'assets/icons/speed.svg',
       name: 'High Speed Interface Expertise',
       desc: 'Mastery of DDR, PCIe, SerDes, and other critical high-speed technologies',
     },
     {
-      imgUrl: 'assets/services/engg&design/signal-integrity/benefits.png',
+      imgUrl: 'assets/icons/clock.svg',
       name: 'Accelerated Time-to-Market',
       desc: 'Reduction in design risks and iterations for faster product launches.',
     },
     {
-      imgUrl: 'assets/services/engg&design/signal-integrity/benefits.png',
+      imgUrl: 'assets/icons/cost.svg',
       name: 'Cost Optimized & Reliable Designs',
       desc: 'Manufacturable solutions that enhance reliability while controlling costs.',
     },

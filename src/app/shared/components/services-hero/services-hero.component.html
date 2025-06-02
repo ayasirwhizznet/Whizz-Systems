@@ -7,8 +7,7 @@
                 class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold my-6 3xl:my-8 w-[96%] sm:w-[57%] lg:w-full">
                 {{serviceTitle}}</h1>
             <h2
-                class="text-base lg:text-sm 2xl:text-base 3xl:text-xl font-extralight lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8 sm:w-[70%] lg:w-full">
-                {{serviceDesc}}
+                class="text-base lg:text-sm 2xl:text-base 3xl:text-xl font-extralight lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8 sm:w-[70%] lg:w-full" [innerHTML]="serviceDesc">
             </h2>
 
             <a href="{{navigate}}" target="_blank"><app-button heading="{{btnText}}" icon="assets/shared/webform.svg"

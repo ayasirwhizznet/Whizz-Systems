@@ -238,24 +238,24 @@ export class HeaderComponent implements OnInit {
         link: '/services/supply-chain-management',
         items: [
           {
-            label: 'Component Engineering',
+            label: 'Components Procurement & Planning',
             link: '/services/supply-chain-management',
-            fragment: 'ComponentEngineering',
+            fragment: 'ProactiveSourcing',
           },
           {
-            label: 'Compliance Engineering',
+            label: 'Prototype Build Coordination',
             link: '/services/supply-chain-management',
-            fragment: 'ComplianceEngineering',
+            fragment: 'PrototypeBuildCoordination',
           },
           {
-            label: 'Commodity Management',
+            label: 'Global Sourcing & Broker Ecosystem',
             link: '/services/supply-chain-management',
-            fragment: 'CommodityManagement',
+            fragment: 'GlobalSourcing',
           },
           {
-            label: 'Procurement Management',
+            label: 'Inventory & Storage',
             link: '/services/supply-chain-management',
-            fragment: 'ProcurementManagement',
+            fragment: 'Inventory&Storage',
           },
         ],
       },

@@ -200,12 +200,12 @@ serviceCategories: any = [
         {
           name: 'Component Engineering',
           link: '/services/supply-chain-management',
-          fragment: 'ComponentEngineering',
+          fragment: 'ProactiveSourcing',
         },
         {
           name: 'Compliance Engineering',
           link: '/services/supply-chain-management',
-          fragment: 'ComplianceEngineering',
+          fragment: 'PrototypeBuildCoordination',
         },
         {
           name: 'Procurement Engineering',

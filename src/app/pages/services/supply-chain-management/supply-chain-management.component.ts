@@ -21,33 +21,28 @@ import { CommonModule } from '@angular/common';
 })
 export class SupplyChainManagementComponent implements OnInit, OnDestroy {
   supplyChainServices = [
-    'Component Engineering',
-    'Compliance Engineering',
-    'Commodity Management',
-    'Procurement Management',
+    'Proactive Sourcing',
+    'Prototype Build Coordination',
+    'Global Sourcing',
+    'Inventory & Storage',
   ];
 
   benefits: any[] = [
     {
-      imgUrl: 'assets/services/supply-chain/benefits.png',
-      name: 'Integrated Across Stages',
-      desc: 'We address every step in your product’s lifecycle.',
+      imgUrl: 'assets/icons/puzzle.svg',
+      name: 'Design-Integrated Sourcing',
+      desc: 'Early collaboration with engineering allows us to secure parts in sync with your evolving BoM.',
     },
     {
-      imgUrl: 'assets/services/supply-chain/benefits.png',
-      name: 'Proactive Risk Mitigation',
-      desc: 'We manage risks before they become issues.',
+      imgUrl: 'assets/icons/circular-arrow.svg',
+      name: 'Risk Mitigation & Lifecycle Management',
+      desc: 'Ongoing BoM reviews and proactive alerts protect your production from EOL, allocation, and obsolescence.',
     },
     {
-      imgUrl: 'assets/services/supply-chain/benefits.png',
-      name: 'Seamless Transitions',
-      desc: 'Agile processes ensure timely delivery at every stage.',
-    },
-    {
-      imgUrl: 'assets/services/supply-chain/benefits.png',
-      name: 'End-to-end Compliance',
-      desc: 'Meet global standards with our expert assistance.',
-    },
+      imgUrl: 'assets/icons/glob.svg',
+      name: 'Inventory Control & Global Reach',
+      desc: 'Robotic inventory systems, combined with global sourcing partners, allow for speed, reliability, and cost-efficiency.',
+    }
   ];
 
   isSticky: boolean = true;
