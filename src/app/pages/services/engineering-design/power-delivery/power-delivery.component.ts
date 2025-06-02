@@ -38,22 +38,22 @@ export class PowerDeliveryComponent {
 
   benefits: any = [
     {
-      imgUrl: 'assets/services/engg&design/power-delivery/benefits.png',
+      imgUrl: 'assets/icons/expert-badge.svg',
       name: 'Proven PDN Optimization Expertise',
       desc: '25+ Years of experience ensuring robust power delivery.',
     },
     {
-      imgUrl: 'assets/services/engg&design/power-delivery/benefits.png',
+      imgUrl: 'assets/icons/clock.svg',
       name: 'First-Time-Right Designs',
       desc: 'Reduce design iterations and time-to-market.',
     },
     {
-      imgUrl: 'assets/services/engg&design/power-delivery/benefits.png',
+      imgUrl: 'assets/icons/support.svg',
       name: 'End-to-End Support',
       desc: 'Seamless integration with SI, PI, and thermal analysis.',
     },
     {
-      imgUrl: 'assets/services/engg&design/power-delivery/benefits.png',
+      imgUrl: 'assets/icons/cost.svg',
       name: 'Cost-Effective & Scalable Solutions',
       desc: 'Optimized designs that balance performance and cost.',
     },
