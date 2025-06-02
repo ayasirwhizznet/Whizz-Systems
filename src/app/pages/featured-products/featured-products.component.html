@@ -1,81 +1,157 @@
 <section class="px-0 sm:px-[6.3%] mb-8 lg:mb-12 3xl:mb-16">
   <div
-    class="px-4 py-8 sm:py-12 sm:px-8 lg:py-0 lg:px-0 lg:pl-[52px] 3xl:pl-16 bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl flex items-center lg:gap-[50px] 3xl:gap-16">
+    class="px-4 py-8 sm:py-12 sm:px-8 lg:py-0 lg:px-0 lg:pl-[52px] 3xl:pl-16 bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl flex items-center lg:gap-[50px] 3xl:gap-16"
+  >
     <div class="w-full lg:w-[47%] text-white">
       <h1
-        class="text-3xl lg:text-4xl 2xl:text-[46px] 3xl:text-[56px] lg:leading-[46px] 2xl:leading-[52px] 3xl:leading-[67.2px] font-bold mb-4 3xl:mb-6 w-[96%] sm:w-[57%] lg:w-full">
+        class="text-3xl lg:text-4xl 2xl:text-[46px] 3xl:text-[56px] lg:leading-[46px] 2xl:leading-[52px] 3xl:leading-[67.2px] font-bold mb-4 3xl:mb-6 w-[96%] sm:w-[57%] lg:w-full"
+      >
         Proven Board & System Designs, Tailored for Your Application
       </h1>
-      <h2 class="text-base 3xl:text-xl font-light text-light-gray1 mb-6 3xl:mb-8 w-[96%] sm:w-[57%] lg:w-full">
-        Accelerate Your Product Development with Our High-Performance, Scalable Designs for AI, 5G, Medical, and More.
-      </h2> 
-      <a href="https://webforms.pipedrive.com/f/6FrY8XOrvq6RD3Wh34QXfdNDhZ965bOGgUKq2uQw1me6FtQ56ixuOwtI5a45PI3nmX"
-                target="_blank"><app-button [size]="'medium'"  heading="Get started with a custom design" icon="assets/shared/webform.svg"></app-button></a>
+      <h2
+        class="text-base 3xl:text-xl font-light text-light-gray1 mb-6 3xl:mb-8 w-[96%] sm:w-[57%] lg:w-full"
+      >
+        Accelerate Your Product Development with Our High-Performance, Scalable
+        Designs for AI, 5G, Medical, and More.
+      </h2>
+      <a
+        href="https://webforms.pipedrive.com/f/6FrY8XOrvq6RD3Wh34QXfdNDhZ965bOGgUKq2uQw1me6FtQ56ixuOwtI5a45PI3nmX"
+        target="_blank"
+        ><app-button
+          [size]="'medium'"
+          heading="Get started with a custom design"
+          icon="assets/shared/webform.svg"
+        ></app-button
+      ></a>
     </div>
     <div class="hidden lg:block lg:w-[53%] relative">
-      <video 
+      <video
         class="absolute inset-0 w-full h-full object-cover sm:rounded-r-md 3xl:rounded-r-lg"
-        loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
-        <source src="assets/featured-products/hero-vedio.mp4" type="video/mp4" />
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        onloadedmetadata="this.muted = true"
+      >
+        <source
+          src="assets/featured-products/hero-vedio.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
       </video>
+
       <div
-        class="absolute inset-0 bg-gradient-to-t from-teal2 to-teal2 mix-blend-hard-light sm:rounded-r-md 3xl:rounded-r-lg" >
-      </div>
+        class="absolute inset-0 bg-gradient-to-t from-teal2 to-teal2 mix-blend-hard-light sm:rounded-r-md 3xl:rounded-r-lg"
+      ></div>
       <p class="h-[25rem] 3xl:h-[31rem]"></p>
     </div>
   </div>
 </section>
 
 <!-- Navbar -->
-<section [ngClass]="{ 'top-[13%] z-20': isSticky, 'z-30': !isSticky }"
-  class="hidden lg:flex justify-center gap-3 3xl:gap-4 px-[7.8%] lg:py-8 3xl:pt-10 3xl:pb-6 bg-white sticky top-0 transition-all duration-500 ease-in-out">
+<section
+  [ngClass]="{ 'top-[13%] z-20': isSticky, 'z-30': !isSticky }"
+  class="hidden lg:flex justify-center gap-3 3xl:gap-4 px-[7.8%] lg:py-8 3xl:pt-10 3xl:pb-6 bg-white sticky top-0 transition-all duration-500 ease-in-out"
+>
   <div>
-    <h4 class="text-sm 3xl:text-base text-dark-gray2 font-semibold mb-3 3xl:mb-4">
+    <h4
+      class="text-sm 3xl:text-base text-dark-gray2 font-semibold mb-3 3xl:mb-4"
+    >
       Boards & Kit Accessories
     </h4>
     <div
-      class="flex justify-center items-center gap-3 3xl:gap-4 border border-light-gray1 p-3 3xl:p-4 rounded-md 3xl:rounded-lg">
-      <a *ngFor="let category of boards" (click)="scrollToFragment(category.title)"
-        class="h-[70px] 3xl:h-[88px] w-[190px] 3xl:w-[247px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">
+      class="flex justify-center items-center gap-3 3xl:gap-4 border border-light-gray1 p-3 3xl:p-4 rounded-md 3xl:rounded-lg"
+    >
+      <a
+        *ngFor="let category of boards"
+        (click)="scrollToFragment(category.title)"
+        class="h-[70px] 3xl:h-[88px] w-[190px] 3xl:w-[247px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out"
+      >
         {{ category.title }}
       </a>
     </div>
   </div>
   <div>
-    <h4 class="text-sm 3xl:text-base text-dark-gray2 font-semibold mb-3 3xl:mb-4">
+    <h4
+      class="text-sm 3xl:text-base text-dark-gray2 font-semibold mb-3 3xl:mb-4"
+    >
       Miscellaneous
     </h4>
     <div
-      class="flex justify-center items-center gap-3 3xl:gap-4 border border-light-gray1 p-3 3xl:p-4 rounded-md 3xl:rounded-lg">
-      <a *ngFor="let category of miscellaneous" (click)="scrollToFragment(category.title)"
-        class="h-[70px] 3xl:h-[88px] w-[190px] 3xl:w-[247px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">
+      class="flex justify-center items-center gap-3 3xl:gap-4 border border-light-gray1 p-3 3xl:p-4 rounded-md 3xl:rounded-lg"
+    >
+      <a
+        *ngFor="let category of miscellaneous"
+        (click)="scrollToFragment(category.title)"
+        class="h-[70px] 3xl:h-[88px] w-[190px] 3xl:w-[247px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out"
+      >
         {{ category.title }}
       </a>
     </div>
   </div>
 </section>
 
-<section *ngFor="let section of boards; let i = index" class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16 bg-dark-gray2">
-  <h2 *ngIf="i == 0" class="text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[40px] 3xl:leading-[57.6px] text-white mb-4 3xl:mb-5"
-    id="Boards & Kit Accessories">
+<section
+  *ngFor="let section of boards; let i = index"
+  class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16 bg-dark-gray2"
+>
+  <h2
+    *ngIf="i == 0"
+    class="text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[40px] 3xl:leading-[57.6px] text-white mb-4 3xl:mb-5"
+    id="Boards & Kit Accessories"
+  >
     Boards & Kit Accessories
   </h2>
-  <h3 class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white mb-8 lg:mb-12 3xl:mb-16" id="{{section.title}}">
-    {{section.title}}
+  <h3
+    class="text-3xl 3xl:text-4xl 3xl:leading-[48px] text-white mb-8 lg:mb-12 3xl:mb-16"
+    id="{{ section.title }}"
+  >
+    {{ section.title }}
   </h3>
-  <div class="w-full h-full grid gap-6 3xl:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-    <a *ngFor="let product of section.products; let j = index" [routerLink]="[product.link]" class="cursor-pointer">
-      <div class="group relative w-full flex items-center gap-4 overflow-x-scroll no-scrollbar">
-        <div class="relative flex items-center w-full bg-white transition-all duration-700 ease-in-out group-hover:w-[86%] rounded-md 3xl:rounded-lg h-full">
+  <div
+    class="w-full h-full grid gap-6 3xl:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+  >
+    <a
+      *ngFor="let product of section.products; let j = index"
+      [routerLink]="[product.link]"
+      class="cursor-pointer"
+    >
+      <div
+        class="group relative w-full flex items-center gap-4 overflow-x-scroll no-scrollbar"
+      >
+        <div
+          class="relative flex items-center w-full bg-white transition-all duration-700 ease-in-out group-hover:w-[86%] rounded-md 3xl:rounded-lg h-full"
+        >
           <div class="flex-shrink-0 p-[0.75px]">
-            <img loading="lazy" width="104" height="106" class="w-20 h-auto lg:w-[104px] 3xl:w-32 object-cover rounded-l-md 3xl:rounded-l-lg" [src]="product.imgUrl" alt="{{ product.name }}" />
+            <img
+              loading="lazy"
+              width="104"
+              height="106"
+              class="w-20 h-auto lg:w-[104px] 3xl:w-32 object-cover rounded-l-md 3xl:rounded-l-lg"
+              [src]="product.imgUrl"
+              alt="{{ product.name }}"
+            />
           </div>
           <div class="px-4 lg:px-6 3xl:px-8 flex-shrink-0">
-            <h3 class="text-dark-gray2 sm:text-sm lg:text-base 3xl:text-xl w-4/5">{{ product.name }}</h3>
+            <h3
+              class="text-dark-gray2 sm:text-sm lg:text-base 3xl:text-xl w-4/5"
+            >
+              {{ product.name }}
+            </h3>
           </div>
         </div>
-        <div class="absolute right-0 top-0 translate-x-32 group-hover:translate-x-0 h-full grid place-items-center bg-teal2 rounded-md 3xl:rounded-lg px-3 transition-all duration-700 ease-in-out">
-          <img loading="lazy" width="16" height="106" class="h-auto object-cover w-4 3xl:w-6" src="assets/shared/r-arrow.svg" alt="Right Arrow" />
+        <div
+          class="absolute right-0 top-0 translate-x-32 group-hover:translate-x-0 h-full grid place-items-center bg-teal2 rounded-md 3xl:rounded-lg px-3 transition-all duration-700 ease-in-out"
+        >
+          <img
+            loading="lazy"
+            width="16"
+            height="106"
+            class="h-auto object-cover w-4 3xl:w-6"
+            src="assets/shared/r-arrow.svg"
+            alt="Right Arrow"
+          />
         </div>
       </div>
     </a>
@@ -84,26 +160,56 @@
 
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 my-8 lg:my-12 3xl:my-16">
   <h2
-    class="text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[40px] 3xl:leading-[57.6px] text-dark-gray2 mb-3 3xl:mb-4">
+    class="text-3xl lg:text-4xl 3xl:text-5xl font-bold leading-[40px] 3xl:leading-[57.6px] text-dark-gray2 mb-3 3xl:mb-4"
+  >
     Miscellaneous
   </h2>
-  <div class="w-full h-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 3xl:gap-8">
-    <div *ngFor="let products of miscellaneous; let j = index" id="{{ products.title }}">
-      <h3 class="text-dark-gray2 text-3xl 3xl:text-4xl 3xl:leading-[48px]  mb-8 lg:mb-12 3xl:mb-16">
+  <div
+    class="w-full h-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 3xl:gap-8"
+  >
+    <div
+      *ngFor="let products of miscellaneous; let j = index"
+      id="{{ products.title }}"
+    >
+      <h3
+        class="text-dark-gray2 text-3xl 3xl:text-4xl 3xl:leading-[48px] mb-8 lg:mb-12 3xl:mb-16"
+      >
         {{ products.title }}
       </h3>
       <a [routerLink]="[products.link]" class="cursor-pointer">
-        <div class="group relative w-full flex gap-4 overflow-x-scroll no-scrollbar">
-          <div class="relative flex items-center w-full bg-card-gray border border-light-gray1 transition-all duration-700 ease-in-out group-hover:w-[88%] rounded-md 3xl:rounded-lg h-full">
+        <div
+          class="group relative w-full flex gap-4 overflow-x-scroll no-scrollbar"
+        >
+          <div
+            class="relative flex items-center w-full bg-card-gray border border-light-gray1 transition-all duration-700 ease-in-out group-hover:w-[88%] rounded-md 3xl:rounded-lg h-full"
+          >
             <div class="flex-shrink-0 p-[0.75px]">
-              <img loading="lazy" width="106" height="106" class="w-[104px] h-auto 3xl:w-32 object-cover rounded-md 3xl:rounded-lg" [src]="products.imgUrl" alt="{{ products.name }}" />
+              <img
+                loading="lazy"
+                width="106"
+                height="106"
+                class="w-[104px] h-auto 3xl:w-32 object-cover rounded-md 3xl:rounded-lg"
+                [src]="products.imgUrl"
+                alt="{{ products.name }}"
+              />
             </div>
-            <div class="px-6 3xl:px-8"> 
-              <h3 class="text-dark-gray2 text-base 3xl:text-xl">{{ products.name }}</h3>
+            <div class="px-6 3xl:px-8">
+              <h3 class="text-dark-gray2 text-base 3xl:text-xl">
+                {{ products.name }}
+              </h3>
             </div>
           </div>
-          <div class="absolute right-0 top-0 translate-x-32 group-hover:translate-x-0 h-full grid place-items-center bg-teal2 rounded-md 3xl:rounded-lg px-3 transition-all duration-700 ease-in-out">
-            <img loading="lazy" width="16" height="106" class="object-cover h-auto w-4 3xl:w-6" src="assets/shared/r-arrow.svg" alt="Right Arrow" />
+          <div
+            class="absolute right-0 top-0 translate-x-32 group-hover:translate-x-0 h-full grid place-items-center bg-teal2 rounded-md 3xl:rounded-lg px-3 transition-all duration-700 ease-in-out"
+          >
+            <img
+              loading="lazy"
+              width="16"
+              height="106"
+              class="object-cover h-auto w-4 3xl:w-6"
+              src="assets/shared/r-arrow.svg"
+              alt="Right Arrow"
+            />
           </div>
         </div>
       </a>

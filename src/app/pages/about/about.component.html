@@ -1,283 +1,484 @@
 <!-- Hero -->
 <section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
-    <div class="relative p-8 lg:p-12 3xl:p-16">
-        <video class="absolute inset-0 w-full h-full object-cover sm:rounded-xl 3xl:rounded-2xl" loop muted autoplay
-            oncanplay="this.play()" onloadedmetadata="this.muted = true">
-            <source src="assets/about/heroVedio.mp4" type="video/mp4">
-        </video>
-        <div
-            class="absolute inset-0 bg-gradient-to-t from-teal2 to-teal2 mix-blend-hard-light sm:rounded-xl 3xl:rounded-2xl">
-        </div>
-        <div class="w-fit sm:w-2/3 lg:w-1/2 relative z-10 mx-auto py-12 lg:py-16 2xl:py-20 3xl:py-24">
-            <div
-                class="text-white p-6 lg:p-12 3xl:p-16 bg-dark-gray1 text-center rounded-md 3xl:rounded-lg mb-3 3xl:mb-4">
-                <h1
-                    class="text-[26px] sm:text-4xl lg:text-[39px] 2xl:text-5xl 3xl:text-[56px] lg:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-4 3xl:mb-6">
-                    Your End-to-End Electronics Design & Manufacturing Partner</h1>
-                <h2 class="text-base 3xl:text-xl font-extralight 3xl:font-light">Innovative solutions. Global
-                    expertise. Proven excellence.</h2>
-            </div>
-            <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
-                target="_blank"><button routerLink="/services"
-                    class="diagonal-swipe white-bg w-full relative overflow-hidden rounded-md 3xl:rounded-lg cursor-pointer text-nowrap px-2 sm:px-[14px] 3xl:px-[18px] py-[6px] sm:py-[10px] 3xl:py-[14px] border border-teal2">
-                    <span class="font-medium 3xl:font-semibold flex justify-between items-center text-sm 3xl:text-base">
-                        Get Started with Us
-                        <ng-container>
-                            <span><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512">
-                                    <path
-                                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
-                                </svg></span>
-                        </ng-container>
-                    </span>
-                </button></a>
-        </div>
+  <div class="relative p-8 lg:p-12 3xl:p-16">
+    <video
+      class="absolute inset-0 w-full h-full object-cover sm:rounded-xl 3xl:rounded-2xl"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      onloadedmetadata="this.muted = true"
+    >
+      <source src="assets/about/heroVedio.mp4" type="video/mp4" />
+    </video>
 
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-teal2 to-teal2 mix-blend-hard-light sm:rounded-xl 3xl:rounded-2xl"
+    ></div>
+    <div
+      class="w-fit sm:w-2/3 lg:w-1/2 relative z-10 mx-auto py-12 lg:py-16 2xl:py-20 3xl:py-24"
+    >
+      <div
+        class="text-white p-6 lg:p-12 3xl:p-16 bg-dark-gray1 text-center rounded-md 3xl:rounded-lg mb-3 3xl:mb-4"
+      >
+        <h1
+          class="text-[26px] sm:text-4xl lg:text-[39px] 2xl:text-5xl 3xl:text-[56px] lg:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-4 3xl:mb-6"
+        >
+          Your End-to-End Electronics Design & Manufacturing Partner
+        </h1>
+        <h2 class="text-base 3xl:text-xl font-extralight 3xl:font-light">
+          Innovative solutions. Global expertise. Proven excellence.
+        </h2>
+      </div>
+      <a
+        href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
+        target="_blank"
+        ><button
+          routerLink="/services"
+          class="diagonal-swipe white-bg w-full relative overflow-hidden rounded-md 3xl:rounded-lg cursor-pointer text-nowrap px-2 sm:px-[14px] 3xl:px-[18px] py-[6px] sm:py-[10px] 3xl:py-[14px] border border-teal2"
+        >
+          <span
+            class="font-medium 3xl:font-semibold flex justify-between items-center text-sm 3xl:text-base"
+          >
+            Get Started with Us
+            <ng-container>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20"
+                  width="20"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"
+                  /></svg
+              ></span>
+            </ng-container>
+          </span></button
+      ></a>
     </div>
+  </div>
 </section>
 
 <!-- Legacy -->
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-28 3xl:gap-40">
-        <div class="w-full lg:w-[45%] 3xl:w-[40%]">
-            <h2
-                class="text-3xl sm:text-4xl 3xl:text-5xl leading-[40px] 3xl:leading-[57.6px] text-dark-gray2 font-medium mb-3 3xl:mb-4">
-                A Legacy of Excellence, A Future of Innovation</h2>
-            <h4 class="text-dark-gray2 text-base 3xl:text-xl leading-[24px] 3xl:leading-[28px]">Delivering Advanced
-                Electronics Solutions Since 1999</h4>
-            <hr class="w-[35%] border border-light-gray1 opacity-60 my-3 3xl:my-4">
-            <p class="text-dark-gray2 text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] font-light mb-4 3xl:mb-6">
-                Whizz Systems is a leading provider of
-                electronic product design, development, and manufacturing services, proudly located in the heart of
-                Silicon Valley. Since
-                our inception in 1989, we’ve transformed from a specialized PCB design team into a multidisciplinary
-                powerhouse, bringing deep expertise across engineering and design, new product introduction (NPI),
-                advanced manufacturing, lab testing solutions, sustainable engineering, and end-to-end supply chain
-                management.</p>
-            <p class="text-dark-gray2 text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] font-light">We serve a
-                diverse range of industries—including defense and
-                aerospace, medical devices, automotive, consumer electronics, AI computing, and
-                telecommunications—earning the trust of both Fortune 100 companies and innovative startups. For over 30
-                years, we’ve been the go-to partner for turning groundbreaking ideas into market-ready products,
-                delivering exceptional quality, reliability, and innovation at every stage of the product lifecycle.</p>
-        </div>
-        <div class="w-full lg:w-[65%] 3xl:w-[60%] p-6 sm:p-10 lg:p-0">
-            <img loading="lazy" width="665" height="409" class="h-auto w-full object-cover"
-                src="assets/about/legacy.png" alt="WHizz Systems">
-        </div>
+  <div
+    class="flex flex-col lg:flex-row items-center gap-10 lg:gap-28 3xl:gap-40"
+  >
+    <div class="w-full lg:w-[45%] 3xl:w-[40%]">
+      <h2
+        class="text-3xl sm:text-4xl 3xl:text-5xl leading-[40px] 3xl:leading-[57.6px] text-dark-gray2 font-medium mb-3 3xl:mb-4"
+      >
+        A Legacy of Excellence, A Future of Innovation
+      </h2>
+      <h4
+        class="text-dark-gray2 text-base 3xl:text-xl leading-[24px] 3xl:leading-[28px]"
+      >
+        Delivering Advanced Electronics Solutions Since 1999
+      </h4>
+      <hr class="w-[35%] border border-light-gray1 opacity-60 my-3 3xl:my-4" />
+      <p
+        class="text-dark-gray2 text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] font-light mb-4 3xl:mb-6"
+      >
+        Whizz Systems is a leading provider of electronic product design,
+        development, and manufacturing services, proudly located in the heart of
+        Silicon Valley. Since our inception in 1989, we’ve transformed from a
+        specialized PCB design team into a multidisciplinary powerhouse,
+        bringing deep expertise across engineering and design, new product
+        introduction (NPI), advanced manufacturing, lab testing solutions,
+        sustainable engineering, and end-to-end supply chain management.
+      </p>
+      <p
+        class="text-dark-gray2 text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] font-light"
+      >
+        We serve a diverse range of industries—including defense and aerospace,
+        medical devices, automotive, consumer electronics, AI computing, and
+        telecommunications—earning the trust of both Fortune 100 companies and
+        innovative startups. For over 30 years, we’ve been the go-to partner for
+        turning groundbreaking ideas into market-ready products, delivering
+        exceptional quality, reliability, and innovation at every stage of the
+        product lifecycle.
+      </p>
     </div>
+    <div class="w-full lg:w-[65%] 3xl:w-[60%] p-6 sm:p-10 lg:p-0">
+      <img
+        loading="lazy"
+        width="665"
+        height="409"
+        class="h-auto w-full object-cover"
+        src="assets/about/legacy.png"
+        alt="WHizz Systems"
+      />
+    </div>
+  </div>
 </section>
 
 <!-- Experience -->
 <section>
-    <img loading="lazy" width="1520" height="109" class="w-full h-auto" src="assets/shared/divider-top.png" alt="img">
-    <div
-        class="px-[4%] sm:px-[9.3%] flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-32 3xl:gap-48 py-8 lg:py-12 3xl:py-16">
-        <div class="w-full lg:w-1/2 py-6 lg:py-20">
-            <h2
-                class="w-11/12 sm:w-3/5 lg:w-full text-3xl sm:text-4xl lg:text-[33px] 2xl:text-[52px] 3xl:text-[58px] lg:leading-[47px] 2xl:leading-[64px] 3xl:leading-[76.8px] text-dark-gray2 font-light mx-auto text-center lg:text-left">
-                <span class="text-teal2 font-medium">25+ Years</span> of Building<br> Growth in Electronic<br> Design &
-                Manufacturing
-            </h2>
-        </div>
-        <div class="w-full lg:w-1/2 flex flex-wrap justify-between items-between">
-            <div class=" grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-y-10 3xl:gap-y-16 sm:gap-x-16 3xl:gap-x-32">
-                <div class="text-center" *ngFor="let item of experience">
-                    <h2 class="text-4xl 3xl:text-5xl text-dark-gray2 font-bold">{{item.quantity}}<span
-                            class="text-3xl 3xl:text-4xl text-dark-gray2 font-bold">{{item.sign}}</span></h2>
-                    <h3 class="text-xl 3xl:text-2xl text-dark-gray2 font-bold">{{item.title}}</h3>
-                    <hr class="w-5/12 mx-auto border border-light-gray1 opacity-60 my-1 3xl:my-2">
-                    <p
-                        class="w-[55%] sm:w-[70%] lg:w-[88%] 3xl:w-[95%] mx-auto text-base 3xl:text-xl leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light">
-                        {{item.desc}}</p>
-                </div>
-            </div>
-        </div>
+  <img
+    loading="lazy"
+    width="1520"
+    height="109"
+    class="w-full h-auto"
+    src="assets/shared/divider-top.png"
+    alt="img"
+  />
+  <div
+    class="px-[4%] sm:px-[9.3%] flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-32 3xl:gap-48 py-8 lg:py-12 3xl:py-16"
+  >
+    <div class="w-full lg:w-1/2 py-6 lg:py-20">
+      <h2
+        class="w-11/12 sm:w-3/5 lg:w-full text-3xl sm:text-4xl lg:text-[33px] 2xl:text-[52px] 3xl:text-[58px] lg:leading-[47px] 2xl:leading-[64px] 3xl:leading-[76.8px] text-dark-gray2 font-light mx-auto text-center lg:text-left"
+      >
+        <span class="text-teal2 font-medium">25+ Years</span> of Building<br />
+        Growth in Electronic<br />
+        Design & Manufacturing
+      </h2>
     </div>
-    <img loading="lazy" width="1520" height="109" class="w-full h-auto" src="assets/shared/divider-bottom.png"
-        alt="img">
-</section>>
+    <div class="w-full lg:w-1/2 flex flex-wrap justify-between items-between">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-y-10 3xl:gap-y-16 sm:gap-x-16 3xl:gap-x-32"
+      >
+        <div class="text-center" *ngFor="let item of experience">
+          <h2 class="text-4xl 3xl:text-5xl text-dark-gray2 font-bold">
+            {{ item.quantity
+            }}<span class="text-3xl 3xl:text-4xl text-dark-gray2 font-bold">{{
+              item.sign
+            }}</span>
+          </h2>
+          <h3 class="text-xl 3xl:text-2xl text-dark-gray2 font-bold">
+            {{ item.title }}
+          </h3>
+          <hr
+            class="w-5/12 mx-auto border border-light-gray1 opacity-60 my-1 3xl:my-2"
+          />
+          <p
+            class="w-[55%] sm:w-[70%] lg:w-[88%] 3xl:w-[95%] mx-auto text-base 3xl:text-xl leading-[24px] 3xl:leading-[28px] text-dark-gray2 font-light"
+          >
+            {{ item.desc }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    loading="lazy"
+    width="1520"
+    height="109"
+    class="w-full h-auto"
+    src="assets/shared/divider-bottom.png"
+    alt="img"
+  />
+</section>
+>
 
 <!-- Unique Approach -->
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16 text-center">
-    <h2
-        class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium text-center mb-3 3xl:mb-4">
-        Our Unique Approach to Accelerate Your Product Journey</h2>
-    <h3 class="text-base 3xl:text-xl leading-[24px] 3xl:leading-[28px] text-dark-gray2">Comprehensive, Expert Solutions
-        Designed to Meet Your Unique Needs
-    </h3>
-    <hr class="w-[24%] lg:w-[13.5%] mx-auto border border-light-gray1 opacity-60 my-3 3xl:my-4">
-    <p
-        class="w-full sm:w-[80%] lg:w-[45%] 3xl:w-[40%] mx-auto text-dark-gray2 text-sm 3xl:text-base font-light leading-[24px] 3xl:leading-[28px]">
-        With decades of experience
-        serving diverse
-        industries, we’ve tailored our approach to provide everything you need for a seamless, efficient product
-        launch. By consolidating design, prototyping, manufacturing, and compliance under one roof, we eliminate
-        bottlenecks and accelerate your path to market.</p>
+  <h2
+    class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium text-center mb-3 3xl:mb-4"
+  >
+    Our Unique Approach to Accelerate Your Product Journey
+  </h2>
+  <h3
+    class="text-base 3xl:text-xl leading-[24px] 3xl:leading-[28px] text-dark-gray2"
+  >
+    Comprehensive, Expert Solutions Designed to Meet Your Unique Needs
+  </h3>
+  <hr
+    class="w-[24%] lg:w-[13.5%] mx-auto border border-light-gray1 opacity-60 my-3 3xl:my-4"
+  />
+  <p
+    class="w-full sm:w-[80%] lg:w-[45%] 3xl:w-[40%] mx-auto text-dark-gray2 text-sm 3xl:text-base font-light leading-[24px] 3xl:leading-[28px]"
+  >
+    With decades of experience serving diverse industries, we’ve tailored our
+    approach to provide everything you need for a seamless, efficient product
+    launch. By consolidating design, prototyping, manufacturing, and compliance
+    under one roof, we eliminate bottlenecks and accelerate your path to market.
+  </p>
 </section>
 
 <!--Dark Cards -->
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-between gap-10  sm:gap-16 lg:gap-28 3xl:gap-[153px]">
-        <div *ngFor="let item of concisely" class="mx-auto">
-            <div
-                class="w-[225px] 3xl:w-[270px] h-full px-6 3xl:px-8 py-8 3xl:py-10 bg-dark-gray1 rounded-md 3xl:rounded-lg text-white text-center">
-                <img loading="lazy" width="48" height="48" class="w-10 h-auto 3xl:w-12 mx-auto" [src]="item.imgUrl"
-                    alt="img">
-                <h4 class="text-sm 3xl:text-base font-medium 3xl:font-semibold my-1 3xl:my-2">{{item.title}}</h4>
-                <p class="text-sm 3xl:text-base font-thin">{{item.desc}}</p>
-            </div>
-        </div>
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-between gap-10 sm:gap-16 lg:gap-28 3xl:gap-[153px]"
+  >
+    <div *ngFor="let item of concisely" class="mx-auto">
+      <div
+        class="w-[225px] 3xl:w-[270px] h-full px-6 3xl:px-8 py-8 3xl:py-10 bg-dark-gray1 rounded-md 3xl:rounded-lg text-white text-center"
+      >
+        <img
+          loading="lazy"
+          width="48"
+          height="48"
+          class="w-10 h-auto 3xl:w-12 mx-auto"
+          [src]="item.imgUrl"
+          alt="img"
+        />
+        <h4
+          class="text-sm 3xl:text-base font-medium 3xl:font-semibold my-1 3xl:my-2"
+        >
+          {{ item.title }}
+        </h4>
+        <p class="text-sm 3xl:text-base font-thin">{{ item.desc }}</p>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- Address -->
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16 bg-teal2">
-    <h2
-        class="text-3xl lg:text-4xl 3xl:text-5xl font-medium lg:leading-[40px] 3xl:leading-[57.6px] text-dark-gray2 text-center mb-6 3xl:mb-8">
-        Global Footprint</h2>
-    <img loading="lazy" width="1237" height="637" class="h-full w-auto" src="assets/about/global-footprint.png"
-        alt="Global Footprint">
-    <div
-        class="w-[22rem] sm:w-[48rem] 3xl:w-[54rem] mx-auto bg-dark-gray1 text-white p-5 text-center rounded-md mt-8 overflow-x-scroll sm:overflow-x-hidden">
-        <table>
-            <tr class="flex">
-                <th *ngFor="let service of services; let i = index" [ngClass]="{'w-[5rem] 3xl:w-20 border-b': i == 0,
-            'text-xs w-[6.7rem] 3xl:w-[7.7rem] px-4 py-2 border-l ': i !== 0}"
-                    class="text-xs font-light grid place-items-center">
-                    {{ service }}
-                </th>
-            </tr>
-            <tr class="flex -mt-[0.5px]">
-                <td *ngFor="let service of santaClaraServices; let i = index" [ngClass]="{
-      'text-xs w-[5rem] 3xl:w-20 py-7 border-b text-npwrap': i === 0,
-      'text-xl 3xl:text-2xl w-[6.7rem] 3xl:w-[7.7rem] py-7 3xl:py-8 border-l border-t': i !== 0
-    }" class="text-xs font-light grid place-items-center">
-                    <ng-container *ngIf="i !== 0; else showService">
-                        <!-- Inline SVG for circle-check -->
-                        <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 
+  <h2
+    class="text-3xl lg:text-4xl 3xl:text-5xl font-medium lg:leading-[40px] 3xl:leading-[57.6px] text-dark-gray2 text-center mb-6 3xl:mb-8"
+  >
+    Global Footprint
+  </h2>
+  <img
+    loading="lazy"
+    width="1237"
+    height="637"
+    class="h-full w-auto"
+    src="assets/about/global-footprint.png"
+    alt="Global Footprint"
+  />
+  <div
+    class="w-[22rem] sm:w-[48rem] 3xl:w-[54rem] mx-auto bg-dark-gray1 text-white p-5 text-center rounded-md mt-8 overflow-x-scroll sm:overflow-x-hidden"
+  >
+    <table>
+      <tr class="flex">
+        <th
+          *ngFor="let service of services; let i = index"
+          [ngClass]="{
+            'w-[5rem] 3xl:w-20 border-b': i == 0,
+            'text-xs w-[6.7rem] 3xl:w-[7.7rem] px-4 py-2 border-l ': i !== 0
+          }"
+          class="text-xs font-light grid place-items-center"
+        >
+          {{ service }}
+        </th>
+      </tr>
+      <tr class="flex -mt-[0.5px]">
+        <td
+          *ngFor="let service of santaClaraServices; let i = index"
+          [ngClass]="{
+            'text-xs w-[5rem] 3xl:w-20 py-7 border-b text-npwrap': i === 0,
+            'text-xl 3xl:text-2xl w-[6.7rem] 3xl:w-[7.7rem] py-7 3xl:py-8 border-l border-t':
+              i !== 0
+          }"
+          class="text-xs font-light grid place-items-center"
+        >
+          <ng-container *ngIf="i !== 0; else showService">
+            <!-- Inline SVG for circle-check -->
+            <svg
+              class="w-5 h-5 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 
                                  0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 
-                                 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z" />
-                        </svg>
-                    </ng-container>
+                                 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"
+              />
+            </svg>
+          </ng-container>
 
-                    <ng-template #showService>
-                        {{ service }}
-                    </ng-template>
-                </td>
-
-            </tr>
-            <tr class="flex -mt-[1px]">
-                <td *ngFor="let service of malaysiaServices; let i = index" [ngClass]="{
-      'text-xs w-[5rem] 3xl:w-20': i === 0,
-      'text-xl 3xl:text-2xl w-[6.7rem] 3xl:w-[7.7rem] py-7 3xl:py-8 border-l border-t': i !== 0
-    }" class="text-xs font-light grid place-items-center py-6">
-
-                    <ng-container *ngIf="![0, 1, 2, 3].includes(i)">
-                        <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 
+          <ng-template #showService>
+            {{ service }}
+          </ng-template>
+        </td>
+      </tr>
+      <tr class="flex -mt-[1px]">
+        <td
+          *ngFor="let service of malaysiaServices; let i = index"
+          [ngClass]="{
+            'text-xs w-[5rem] 3xl:w-20': i === 0,
+            'text-xl 3xl:text-2xl w-[6.7rem] 3xl:w-[7.7rem] py-7 3xl:py-8 border-l border-t':
+              i !== 0
+          }"
+          class="text-xs font-light grid place-items-center py-6"
+        >
+          <ng-container *ngIf="![0, 1, 2, 3].includes(i)">
+            <svg
+              class="w-5 h-5 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 
         9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 
-        0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z" />
-                        </svg>
-                    </ng-container>
+        0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"
+              />
+            </svg>
+          </ng-container>
 
-                    {{ service }}
-                </td>
-
-            </tr>
-        </table>
-    </div>
+          {{ service }}
+        </td>
+      </tr>
+    </table>
+  </div>
 </section>
 
 <!-- Certifications -->
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <h2
-        class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium text-center mb-6 3xl:mb-8">
-        Recognized for
-        Excellence and
-        Compliance</h2>
-    <hr class="w-1/4 lh:w-[13%] mx-auto border border-light-gray1 opacity-60 my-3 3xl:my-4">
-    <p
-        class="w-full sm:w-[75%] lg:w-[43%] 3xl:w-[38%] mx-auto text-dark-gray2 text-center text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-8 lg:mb-12 3xl:mb-16">
-        We take pride in
-        delivering
-        exceptional solutions that meet the highest standards of quality and reliability. Our excellence has been
-        recognized with numerous industry certifications and prestigious awards, including the <i>Outstanding
-            Supplier Award – Development Systems </i> from Xilinx for our contributions to the launch of the Gen 6
-        Spartan and Virtex product families.</p>
-    <div class="flex justify-center lg:justify-between items-center flex-wrap gap-10 px-24">
-        <div *ngFor="let item of certifications" class="flex flex-col items-center">
-            <img loading="lazy" width="80" height="80" class="w-20 h-auto 3xl:w-24 mb-4 3xl:mb-6" [src]="item.imgUrl"
-                alt="{{item.alt}}">
-            <p class="text-xl 3xl:text-2xl font-medium 3xl:font-bold text-center">{{item.name}}</p>
-        </div>
+  <h2
+    class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium text-center mb-6 3xl:mb-8"
+  >
+    Recognized for Excellence and Compliance
+  </h2>
+  <hr
+    class="w-1/4 lh:w-[13%] mx-auto border border-light-gray1 opacity-60 my-3 3xl:my-4"
+  />
+  <p
+    class="w-full sm:w-[75%] lg:w-[43%] 3xl:w-[38%] mx-auto text-dark-gray2 text-center text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-8 lg:mb-12 3xl:mb-16"
+  >
+    We take pride in delivering exceptional solutions that meet the highest
+    standards of quality and reliability. Our excellence has been recognized
+    with numerous industry certifications and prestigious awards, including the
+    <i>Outstanding Supplier Award – Development Systems </i> from Xilinx for our
+    contributions to the launch of the Gen 6 Spartan and Virtex product
+    families.
+  </p>
+  <div
+    class="flex justify-center lg:justify-between items-center flex-wrap gap-10 px-24"
+  >
+    <div *ngFor="let item of certifications" class="flex flex-col items-center">
+      <img
+        loading="lazy"
+        width="80"
+        height="80"
+        class="w-20 h-auto 3xl:w-24 mb-4 3xl:mb-6"
+        [src]="item.imgUrl"
+        alt="{{ item.alt }}"
+      />
+      <p class="text-xl 3xl:text-2xl font-medium 3xl:font-bold text-center">
+        {{ item.name }}
+      </p>
     </div>
+  </div>
 </section>
 
 <!-- Passionate -->
 <section class="px-[4%] sm:px-[17%] py-8 lg:py-12 3xl:py-16">
-    <h3
-        class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium text-center mb-3 3xl:mb-4">
-        Built By Passionate People</h3>
-    <p
-        class="text-base 3xl:text-xl leading-[20px] 3xl:leading-[28px] text-dark-gray2 mb-8 lg:mb-12 3xl:mb-16 text-center">
-        Learn more about our leaders</p>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 3xl:gap-16">
-        <div class="relative group overflow-y-hidden text-white" *ngFor="let item of passionate let i = index">
-            <img loading="lazy" width="477" height="477" [src]="item.imgUrl" class="w-full h-auto object-cover"
-                alt="{{item.designation}} of Whizz systems: {{item.name}}">
-            <div
-                class="absolute inset-0 group-hover:bg-black group-hover:bg-opacity-30 rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">
-            </div>
-            <div [ngClass]="{'group-hover:-translate-y-[8rem] sm:group-hover:-translate-y-[12rem] lg:group-hover:-translate-y-[9rem] 3xl:group-hover:-translate-y-44': i === 1}"
-                class="absolute bottom-8 sm:bottom-12 lg:bottom-10 3xl:bottom-16 px-6 sm:px-12 lg:px-10 3xl:px-16 group-hover:-translate-y-44 sm:group-hover:-translate-y-60 lg:group-hover:-translate-y-48 3xl:group-hover:-translate-y-56 transition-all duration-300 ease-in-out">
-                <h2
-                    class="text-xl sm:text-4xl lg:text-4xl 3xl:text-5xl lg:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold">
-                    {{item.name}}</h2>
-                <h3
-                    class="text-xl sm:text-4xl lg:text-4xl 3xl:text-5xl lg:leading-[55px] 3xl:leading-[67.2px] font-light my-2">
-                    {{item.designation}}</h3>
-            </div>
-            <p [ngClass]="{'group-hover:-translate-y-[10rem] sm:group-hover:-translate-y-[14rem] lg:group-hover:-translate-y-[12em] 3xl:group-hover:-translate-y-[13.9rem]': i === 1}"
-                class="text-sm sm:text-lg lg:text-base 3xl:text-xl font-light px-6 sm:px-12 lg:px-10 3xl:px-16 absolute group-hover:-translate-y-52 sm:group-hover:-translate-y-72 lg:group-hover:-translate-y-60 3xl:group-hover:-translate-y-72  transition-all duration-300 ease-in-out">
-                {{item.desc}}</p>
-        </div>
+  <h3
+    class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium text-center mb-3 3xl:mb-4"
+  >
+    Built By Passionate People
+  </h3>
+  <p
+    class="text-base 3xl:text-xl leading-[20px] 3xl:leading-[28px] text-dark-gray2 mb-8 lg:mb-12 3xl:mb-16 text-center"
+  >
+    Learn more about our leaders
+  </p>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 3xl:gap-16">
+    <div
+      class="relative group overflow-y-hidden text-white"
+      *ngFor="let item of passionate; let i = index"
+    >
+      <img
+        loading="lazy"
+        width="477"
+        height="477"
+        [src]="item.imgUrl"
+        class="w-full h-auto object-cover"
+        alt="{{ item.designation }} of Whizz systems: {{ item.name }}"
+      />
+      <div
+        class="absolute inset-0 group-hover:bg-black group-hover:bg-opacity-30 rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out"
+      ></div>
+      <div
+        [ngClass]="{
+          'group-hover:-translate-y-[8rem] sm:group-hover:-translate-y-[12rem] lg:group-hover:-translate-y-[9rem] 3xl:group-hover:-translate-y-44':
+            i === 1
+        }"
+        class="absolute bottom-8 sm:bottom-12 lg:bottom-10 3xl:bottom-16 px-6 sm:px-12 lg:px-10 3xl:px-16 group-hover:-translate-y-44 sm:group-hover:-translate-y-60 lg:group-hover:-translate-y-48 3xl:group-hover:-translate-y-56 transition-all duration-300 ease-in-out"
+      >
+        <h2
+          class="text-xl sm:text-4xl lg:text-4xl 3xl:text-5xl lg:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold"
+        >
+          {{ item.name }}
+        </h2>
+        <h3
+          class="text-xl sm:text-4xl lg:text-4xl 3xl:text-5xl lg:leading-[55px] 3xl:leading-[67.2px] font-light my-2"
+        >
+          {{ item.designation }}
+        </h3>
+      </div>
+      <p
+        [ngClass]="{
+          'group-hover:-translate-y-[10rem] sm:group-hover:-translate-y-[14rem] lg:group-hover:-translate-y-[12em] 3xl:group-hover:-translate-y-[13.9rem]':
+            i === 1
+        }"
+        class="text-sm sm:text-lg lg:text-base 3xl:text-xl font-light px-6 sm:px-12 lg:px-10 3xl:px-16 absolute group-hover:-translate-y-52 sm:group-hover:-translate-y-72 lg:group-hover:-translate-y-60 3xl:group-hover:-translate-y-72 transition-all duration-300 ease-in-out"
+      >
+        {{ item.desc }}
+      </p>
     </div>
+  </div>
 </section>
 
 <!-- Collaborations -->
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <h3
-        class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium text-center mb-7 lg:mb-11 3xl:mb-14">
-        We’ve Collaborated With</h3>
+  <h3
+    class="text-3xl sm:text-4xl 3xl:text-5xl text-dark-gray2 lg:leading-[40px] 3xl:leading-[57.6px] font-medium text-center mb-7 lg:mb-11 3xl:mb-14"
+  >
+    We’ve Collaborated With
+  </h3>
+  <div
+    class="px-5 lg:px-40 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 place-items-center gap-6 lg:gap-8 3xl:gap-16"
+  >
     <div
-        class="px-5 lg:px-40 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 place-items-center gap-6 lg:gap-8 3xl:gap-16">
-        <div *ngFor="let item of collaborations let i = index" [ngClass]="{'sm:col-start-2 lg:col-auto': i === 8}"
-            class="p-6 3xl:p-8">
-            <img loading="lazy" width="109" height="30" class="w-full h-auto object-cover" src="{{item.imgUrl}}"
-                alt="{{item.alt}}">
-        </div>
+      *ngFor="let item of collaborations; let i = index"
+      [ngClass]="{ 'sm:col-start-2 lg:col-auto': i === 8 }"
+      class="p-6 3xl:p-8"
+    >
+      <img
+        loading="lazy"
+        width="109"
+        height="30"
+        class="w-full h-auto object-cover"
+        src="{{ item.imgUrl }}"
+        alt="{{ item.alt }}"
+      />
     </div>
+  </div>
 </section>
 
 <!-- Talk To Expert -->
 <section class="px-0 sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <div class="relative p-8 lg:p-12 3xl:p-16 rounded-md 3xl:rounded-lg">
-        <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg" loop muted autoplay
-            oncanplay="this.play()" onloadedmetadata="this.muted = true">
-            <source src="assets/hero/waves2.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-0 bg-video-overlay opacity-80 z-10 rounded-md 3xl:rounded-lg"></div>
-        <div class="relative z-20 text-white">
-            <h2
-                class="text-3xl sm:text-4xl lg:text-[52px] 3xl:text-[64px] lg:leading-[64px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4">
-                Let’s build together.</h2>
-            <p class="text-xl lg:text-2xl 3xl:text-[32px] 3xl:leading-[38px] mb-6 3xl:mb-8">Ready to start your next
-                project?</p>
-            <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
-                target="_blank"><app-button heading="Contact us today" [size]="'large'"
-                    icon="assets/shared/webform.svg"></app-button></a>
-        </div>
+  <div class="relative p-8 lg:p-12 3xl:p-16 rounded-md 3xl:rounded-lg">
+    <video
+      class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg"
+      loop
+      muted
+      autoplay
+      oncanplay="this.play()"
+      onloadedmetadata="this.muted = true"
+    >
+      <source src="assets/hero/waves2.mp4" type="video/mp4" />
+    </video>
+    <div
+      class="absolute inset-0 bg-video-overlay opacity-80 z-10 rounded-md 3xl:rounded-lg"
+    ></div>
+    <div class="relative z-20 text-white">
+      <h2
+        class="text-3xl sm:text-4xl lg:text-[52px] 3xl:text-[64px] lg:leading-[64px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4"
+      >
+        Let’s build together.
+      </h2>
+      <p
+        class="text-xl lg:text-2xl 3xl:text-[32px] 3xl:leading-[38px] mb-6 3xl:mb-8"
+      >
+        Ready to start your next project?
+      </p>
+      <a
+        href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
+        target="_blank"
+        ><app-button
+          heading="Contact us today"
+          [size]="'large'"
+          icon="assets/shared/webform.svg"
+        ></app-button
+      ></a>
     </div>
+  </div>
 </section>
