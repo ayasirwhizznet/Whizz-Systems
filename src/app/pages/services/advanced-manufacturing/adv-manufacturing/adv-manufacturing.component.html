@@ -1,0 +1,155 @@
+<!-- Services Hero -->
+<app-services-hero
+  serviceCategory="Advanced Manufacturing"
+  serviceTitle="Integrated Manufacturing Services for Complex Products"
+  serviceDesc="Bringing High-Compute, High-Pin-Count Designs to Life with Precision and Speed"
+  imgUrl="assets/services/advanced-manufacturing/adv/hero.png"
+  navigate="https://webforms.pipedrive.com/f/6ckwlVx6dLeTbpQfyegE6ld9KDDjsvOaNQzfC8d58zS7VVhHClx41A7vzJSEMvfQ0H"
+  btnText="Get Started with Whizz Manufacturing Capabilities"
+></app-services-hero>
+
+<!-- Introduction -->
+<app-services-intro
+  title="Integrated Manufacturing Services for Complex Products"
+  desc1="At Whizz Systems, advanced manufacturing goes far beyond traditional build-to-print assembly. We integrate engineering, supply chain, process control, and real-time validation into one seamless workflow—helping customers bring complex electronic products to market faster and with higher quality. From component procurement to prototype validation and ongoing production, we deliver complete ownership of your manufacturing pipeline."
+  imgUrl="assets/services/advanced-manufacturing/adv/introduction.png"
+></app-services-intro>
+
+<!-- Process Engineering -->
+<app-services-benefits heading="Process Engineering" title="Why Our Manufacturing Yield Is So High?" desc="Our Process Engineering team works hand-in-hand with design engineering to optimize each build before it hits the line. This synergy allows us to fine-tune solder chemistry, thermal profiles, and layout variables for each product type—whether it's a tiny module or a dense, copper-heavy board."
+    btnText="Small Button" navigate="/404" [benefitsData]="processess" [columns]="3"></app-services-benefits>
+
+<!-- Quality Assurance -->
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+<h4 class="text-teal1 text-sm 3xl:text-base font-semibold 3xl:font-bold lg:leading-[15px] 3xl:leading-[19.2px] mb-3 3xl:mb-4">Manufacturing Testing & Quality Assurance</h4>
+<h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px]">Ensuring First-Time Success, Every Time</h3>
+<p class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] my-3 3xl:my-4">At Whizz Systems, we take quality seriously—even during the first few prototypes. Our high-yield results are a direct outcome of a meticulous and layered manufacturing testing process, starting from the moment the kit is loaded onto the production floor. With multiple layers of inspection—manual, automated, and imaging-based—Whizz Systems ensures the highest quality for every build, from prototype to production. This rigorous, process-driven approach is why customers trust us with their most complex electronic assemblies.</p>
+<p class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] mb-10 3xl:mb-12">With multiple layers of inspection—manual, automated, and imaging-based—Whizz Systems ensures the highest quality for every build, from prototype to production. This rigorous, process-driven approach is why customers trust us with their most complex electronic assemblies.
+</p>
+<div class="grid lg:grid-cols-3 gap-6 3xl:gap-8">
+  <div
+    class="flex flex-col sm:flex-row lg:flex-col gap-6 3xl:gap-8"
+    [ngClass]="{ 'lg:pt-20 3xl:pt-24': i === 1 }"
+    *ngFor="let test of testing; let i = index"
+  >
+    <div class="relative group overflow-hidden rounded-lg" *ngFor="let item of test">
+      <!-- Image -->
+      <img
+        loading="lazy"
+        class="w-full h-auto object-cover"
+        [src]="item.img"
+        [alt]="item.title"
+      />
+
+      <!-- Gradient Overlay using ::before -->
+      <div class="absolute inset-0">
+        <div
+          class="absolute inset-0 transition-opacity duration-700 ease-in-out pointer-events-none group-hover:opacity-100 opacity-0"
+          style="background: linear-gradient(180deg, #01223900 0%, #000B12B2 70%);"
+        ></div>
+      </div>
+
+      <div
+        class="absolute bottom-0 left-0 w-full px-4 sm:px-6 lg:px-8 3xl:px-10 pb-8 transition-opacity duration-500 ease-in-out"
+        [ngClass]="{ 'opacity-100 group-hover:opacity-0': true }"
+      >
+        <h2 class="text-white text-xs 2xl:text-sm 3xl:text-base 2xl:font-medium 3xl:font-semibold">
+          {{ item.title }}
+        </h2>
+      </div>
+
+      <div
+        class="absolute bottom-0 left-0 w-full px-4 sm:px-6 lg:px-8 3xl:px-10 translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out pb-8 pt-8"
+      >
+        <h2
+          class="text-white text-xs 2xl:text-sm 3xl:text-base 2xl:font-medium 3xl:font-semibold mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+        >
+          {{ item.title }}
+        </h2>
+        <p
+          class="text-white text-xs 2xl:text-sm 3xl:text-base font-light 2xl:font-normal opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+          [innerHTML]="item.desc"
+        ></p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Global Manufacturing -->
+<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <h4
+        class="text-teal1 text-sm 3xl:text-base lg:leading-[15px] 3xl:leading-[19.2px]">
+        <strong>Global Manufacturing</strong> | Whizz Systems' Strategic Advantage</h4>
+    <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium lg:leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">
+        Bridging NPI Agility with Scalable Production</h3>
+    <p class="text-dark-gray2 text-sm 3xl:text-base font-light mb-8 3xl:mb-12">At Whizz Systems, we offer a truly global manufacturing model designed to support your product from early prototyping to full-scale production. Our manufacturing footprint includes a high-mix, low-volume <strong>NPI facility in Silicon Valley</strong> and a high-speed, cost-efficient <strong>production plant in Malaysia.</strong>
+</p>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 3xl:gap-8">
+        <div *ngFor="let facility of facilities" class="p-6 3xl:p-8 border border-light-gray1 rounded-md 3xl:rounded-lg">
+            <div class="flex items-center justify-between mb-3 3xl:mb-4">
+                <h4
+                    class="text-dark-gray2 text-sm 3xl:text-base font-semibold 3xl:font-bold lg:leading-[15px] 3xl:leading-[19.2px]">
+                    {{facility.title}}</h4>
+                <h4
+                    class="text-teal1 text-sm 3xl:text-base font-semibold 3xl:font-bold lg:leading-[15px] 3xl:leading-[19.2px]">
+                    {{facility.address}}</h4>
+            </div>
+            <p class="max-w-sm text-dark-gray2 text-sm 3xl:text-base font-light mb-6 3xl:mb-8">{{facility.intro}}</p>
+            <div *ngFor="let item of facility.desc">
+              <hr class="border border-light-gray1 opacity-60">
+              <p class="text-dark-gray2 text-sm 3xl:text-base font-light my-3 3xl:my-4" [innerHTML]="item"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Core Services Overview -->
+<app-services-core-services heading="Environmental Testing | <span class='font-normal'>Stress-Tested for Real-World Reliability</span>" title="Ensure your hardware meets performance standards—even in the toughest conditions" desc="At Whizz Systems, our commitment to quality doesn’t end at manufacturing. Once prototype boards are built and functionally debugged, we offer comprehensive environmental testing services to validate long-term durability and performance under extreme operating conditions. These tests are essential for customers who must meet internal quality standards or deliver verified data to their end users, particularly in industries like semiconductors, AI, and data centers."
+  [columns]="3" [coreServicesData]="coreServices" note="Sampling Protocols for Production" noteDesc="In full production, customers often require sampling protocols to validate ongoing reliability. For instance, data center customers may specify a 24- or 72-hour burn-in period for one in every ten boards out of a 1,000-unit batch. We accommodate these needs with the infrastructure to run extended environmental tests in parallel with ongoing manufacturing."></app-services-core-services>
+
+<!-- Benefits -->
+ <app-services-benefits heading="Fix Spacing | <span class='font-normal'>Shipping Smarter, Safer, and On-Brand</span>" [cutCard] = 'true'
+    title="Tailored Packaging Based on Product & Logistics Needs" desc="We start by analyzing key details: the size and fragility of the board, whether accessories or additional materials are included, and how many units will be shipped per package. Whether boards are sent individually or in bulk, we design packaging that mitigates damage risk during transit and handling.
+" [benefitsData]="benefits" note="Upfront Planning, Zero Surprises" noteDesc="Packaging is often overlooked, especially in early-stage startups. At Whizz Systems, we integrate packaging design into the initial planning process to eliminate surprises. This ensures readiness by the time the product is finalized, enabling a seamless transition from production to delivery without delays or packaging-related risks."
+    [columns]="2"></app-services-benefits>
+
+<!-- Mechanical Assembly -->
+ <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <h4 class="text-teal1 text-sm 3xl:text-base lg:leading-[15px] 3xl:leading-[19.2px] mb-3 3xl:mb-4"><b>Box Build & Mechanical Assembly</b> | From PCB To Full System Assemly</h4>
+    <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium lg:leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">High-Precision Mechanical Assembly at Whizz Systems</h3>
+    <p class="text-dark-gray2 text-sm 3xl:text-base lg:leading-[24px] 3xl:leading-[28px]">At Whizz Systems, we extend our manufacturing services beyond PCB assembly to deliver fully integrated systems through our in-house box build capabilities. Whether it’s assembling components into a compact enclosure or populating a full server chassis, our team handles mechanical integration with the same level of rigor as our electronic manufacturing processes.</p>
+ </section>
+
+ <!-- Enclosure Solutions -->
+ <section
+  class="px-[4%] sm:px-[9.3%] flex flex-col lg:flex-row items-stretch gap-4 lg:gap-[52px] 3xl:gap-16 py-8 lg:py-12 3xl:py-16">
+  <div class="w-full lg:w-1/2 border border-light-gray1 rounded-md 3xl:rounded-lg p-6 3xl:p-8">
+    <p class="text-dark-gray2 text-sm 3xl:text-base mb-6 3xl:mb-8">We support a range of enclosure solutions—from customer-supplied mechanical designs to fully engineered enclosures developed in collaboration with our team. Our box build services cover:</p>
+        <div *ngFor="let solution of enclosureSolutions">
+          <hr class="border border-light-gray1 opacity-60">
+            <p class="text-dark-gray2 text-sm 3xl:text-base my-3 3xl:my-4">{{solution}}</p>
+        </div>
+  </div>
+  <div class="w-full lg:w-1/2 p-10 sm:p-10 lg:p-0">
+    <img width="547" height="306" loading="lazy" class="object-cover w-full h-auto rounded-md 3xl-rounded-lg" src="assets/services/advanced-manufacturing/adv/enclosure-solutions.png" alt="enclosure solutions—from customer-supplied mechanical designs to fully engineered enclosures">
+  </div>
+</section>
+
+<!-- Capabilities -->
+  <section
+  class="px-[4%] sm:px-[9.3%] flex flex-col lg:flex-row items-center gap-4 lg:gap-[52px] 3xl:gap-16 py-8 lg:py-12 3xl:py-16">
+    <div class="w-full lg:w-1/2 p-10 sm:p-10 lg:p-0 order-2 lg:order-1">
+    <img width="547" height="306" loading="lazy" class="object-cover w-full h-auto rounded-md 3xl-rounded-lg" src="assets/services/advanced-manufacturing/adv/capabilities-and-tooling.png" alt="enclosure solutions—from customer-supplied mechanical designs to fully engineered enclosures">
+  </div>
+  <div class="w-full lg:w-1/2 order-1 lg:order-2">
+    <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium mb-3 3xl:mb-4">Capabilities & Tooling</h3>
+    <ul class="list-disc list-outside ml-5">
+        <li class="text-dark-gray2 text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px]" *ngFor="let capability of capabilities">{{capability}}</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact Advanced Manufacturing Expert -->
+<app-services-contact-experts slogan="Ready To Bring Your Complex Product To Life?" desc="Start Your Advanced Build!"
+navigate="https://webforms.pipedrive.com/f/6ckwlVx6dLeTbpQfyegE6ld9KDDjsvOaNQzfC8d58zS7VVhHClx41A7vzJSEMvfQ0H" btnText="Contact Us"></app-services-contact-experts>

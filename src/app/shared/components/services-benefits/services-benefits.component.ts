@@ -14,6 +14,8 @@ export class ServicesBenefitsComponent {
   @Input() btnText: string = '';
   @Input() navigate: string = '';
   @Input() columns!: number;
+  @Input() note: string = '';
+  @Input() noteDesc: string = '';
   @Input() benefitsData: any[] = [];
   @Input() cutCard: boolean = false;
 }

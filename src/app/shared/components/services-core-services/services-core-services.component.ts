@@ -12,5 +12,7 @@ export class ServicesCoreServicesComponent {
   @Input() title: string = '';
   @Input() desc: string = '';
   @Input() columns!: number;
+  @Input() note: string = '';
+  @Input() noteDesc: string = '';
   @Input() coreServicesData: any[] = [];
 }

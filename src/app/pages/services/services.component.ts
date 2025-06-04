@@ -150,23 +150,27 @@ serviceCategories: any = [
       desc: `Precision, scalability, and efficiency drive our advanced manufacturing capabilities. Whether assembling complex electronics, integrating mechanical enclosures, or designing system-level packaging, we ensure the highest quality while offering both local and offshore production flexibility.`,
       services: [
         {
-          name: 'Manufacturing Simulations',
+          name: 'Process Engineering',
           link: '/services/advanced-manufacturing',
         },
         {
-          name: 'Electronic Manufacturing Assembly',
+          name: 'Manufacturing Testing',
           link: '/services/advanced-manufacturing',
         },
         {
-          name: 'Mechanical Assembly',
+          name: 'Locations',
           link: '/services/advanced-manufacturing',
         },
         {
-          name: 'System Build & Packaging Design',
+          name: 'Environmental Testing',
           link: '/services/advanced-manufacturing',
         },
         {
-          name: 'Local & Offshore Capabilities',
+          name: 'Fix Spacing',
+          link: '/services/advanced-manufacturing',
+        },
+        {
+          name: 'Box Build',
           link: '/services/advanced-manufacturing',
         },
       ],
