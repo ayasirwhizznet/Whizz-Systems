@@ -16,11 +16,11 @@
 ></app-services-intro>
 
 <!-- Process Engineering -->
-<app-services-benefits heading="Process Engineering" title="Why Our Manufacturing Yield Is So High?" desc="Our Process Engineering team works hand-in-hand with design engineering to optimize each build before it hits the line. This synergy allows us to fine-tune solder chemistry, thermal profiles, and layout variables for each product type—whether it's a tiny module or a dense, copper-heavy board."
+<app-services-benefits id="ProcessEngineering" heading="Process Engineering" title="Why Our Manufacturing Yield Is So High?" desc="Our Process Engineering team works hand-in-hand with design engineering to optimize each build before it hits the line. This synergy allows us to fine-tune solder chemistry, thermal profiles, and layout variables for each product type—whether it's a tiny module or a dense, copper-heavy board."
     btnText="Small Button" navigate="/404" [benefitsData]="processess" [columns]="3"></app-services-benefits>
 
-<!-- Quality Assurance -->
-<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+<!-- Manufacturing Testing -->
+<section id="ManufacturingTesting" class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
 <h4 class="text-teal1 text-sm 3xl:text-base font-semibold 3xl:font-bold lg:leading-[15px] 3xl:leading-[19.2px] mb-3 3xl:mb-4">Manufacturing Testing & Quality Assurance</h4>
 <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px]">Ensuring First-Time Success, Every Time</h3>
 <p class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px] my-3 3xl:my-4">At Whizz Systems, we take quality seriously—even during the first few prototypes. Our high-yield results are a direct outcome of a meticulous and layered manufacturing testing process, starting from the moment the kit is loaded onto the production floor. With multiple layers of inspection—manual, automated, and imaging-based—Whizz Systems ensures the highest quality for every build, from prototype to production. This rigorous, process-driven approach is why customers trust us with their most complex electronic assemblies.</p>
@@ -77,7 +77,7 @@
 </section>
 
 <!-- Global Manufacturing -->
-<section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+<section id="Locations" class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
     <h4
         class="text-teal1 text-sm 3xl:text-base lg:leading-[15px] 3xl:leading-[19.2px]">
         <strong>Global Manufacturing</strong> | Whizz Systems' Strategic Advantage</h4>
@@ -104,24 +104,22 @@
     </div>
 </section>
 
-<!-- Core Services Overview -->
-<app-services-core-services heading="Environmental Testing | <span class='font-normal'>Stress-Tested for Real-World Reliability</span>" title="Ensure your hardware meets performance standards—even in the toughest conditions" desc="At Whizz Systems, our commitment to quality doesn’t end at manufacturing. Once prototype boards are built and functionally debugged, we offer comprehensive environmental testing services to validate long-term durability and performance under extreme operating conditions. These tests are essential for customers who must meet internal quality standards or deliver verified data to their end users, particularly in industries like semiconductors, AI, and data centers."
+<!-- Environmental Testing -->
+<app-services-core-services id="EnvironmentalTesting" heading="Environmental Testing | <span class='font-normal'>Stress-Tested for Real-World Reliability</span>" title="Ensure your hardware meets performance standards—even in the toughest conditions" desc="At Whizz Systems, our commitment to quality doesn’t end at manufacturing. Once prototype boards are built and functionally debugged, we offer comprehensive environmental testing services to validate long-term durability and performance under extreme operating conditions. These tests are essential for customers who must meet internal quality standards or deliver verified data to their end users, particularly in industries like semiconductors, AI, and data centers."
   [columns]="3" [coreServicesData]="coreServices" note="Sampling Protocols for Production" noteDesc="In full production, customers often require sampling protocols to validate ongoing reliability. For instance, data center customers may specify a 24- or 72-hour burn-in period for one in every ten boards out of a 1,000-unit batch. We accommodate these needs with the infrastructure to run extended environmental tests in parallel with ongoing manufacturing."></app-services-core-services>
 
-<!-- Benefits -->
- <app-services-benefits heading="Fix Spacing | <span class='font-normal'>Shipping Smarter, Safer, and On-Brand</span>" [cutCard] = 'true'
+<!-- Fix Spacing -->
+ <app-services-benefits id="FixSpacing" heading="Fix Spacing | <span class='font-normal'>Shipping Smarter, Safer, and On-Brand</span>" [cutCard] = 'true'
     title="Tailored Packaging Based on Product & Logistics Needs" desc="We start by analyzing key details: the size and fragility of the board, whether accessories or additional materials are included, and how many units will be shipped per package. Whether boards are sent individually or in bulk, we design packaging that mitigates damage risk during transit and handling.
 " [benefitsData]="benefits" note="Upfront Planning, Zero Surprises" noteDesc="Packaging is often overlooked, especially in early-stage startups. At Whizz Systems, we integrate packaging design into the initial planning process to eliminate surprises. This ensures readiness by the time the product is finalized, enabling a seamless transition from production to delivery without delays or packaging-related risks."
     [columns]="2"></app-services-benefits>
 
-<!-- Mechanical Assembly -->
- <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+<!-- Box Build -->
+ <section id="BoxBuild" class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
     <h4 class="text-teal1 text-sm 3xl:text-base lg:leading-[15px] 3xl:leading-[19.2px] mb-3 3xl:mb-4"><b>Box Build & Mechanical Assembly</b> | From PCB To Full System Assemly</h4>
     <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium lg:leading-[24px] 3xl:leading-[28.8px] my-3 3xl:my-4">High-Precision Mechanical Assembly at Whizz Systems</h3>
     <p class="text-dark-gray2 text-sm 3xl:text-base lg:leading-[24px] 3xl:leading-[28px]">At Whizz Systems, we extend our manufacturing services beyond PCB assembly to deliver fully integrated systems through our in-house box build capabilities. Whether it’s assembling components into a compact enclosure or populating a full server chassis, our team handles mechanical integration with the same level of rigor as our electronic manufacturing processes.</p>
  </section>
-
- <!-- Enclosure Solutions -->
  <section
   class="px-[4%] sm:px-[9.3%] flex flex-col lg:flex-row items-stretch gap-4 lg:gap-[52px] 3xl:gap-16 py-8 lg:py-12 3xl:py-16">
   <div class="w-full lg:w-1/2 border border-light-gray1 rounded-md 3xl:rounded-lg p-6 3xl:p-8">
@@ -135,8 +133,6 @@
     <img width="547" height="306" loading="lazy" class="object-cover w-full h-auto rounded-md 3xl-rounded-lg" src="assets/services/advanced-manufacturing/adv/enclosure-solutions.png" alt="enclosure solutions—from customer-supplied mechanical designs to fully engineered enclosures">
   </div>
 </section>
-
-<!-- Capabilities -->
   <section
   class="px-[4%] sm:px-[9.3%] flex flex-col lg:flex-row items-center gap-4 lg:gap-[52px] 3xl:gap-16 py-8 lg:py-12 3xl:py-16">
     <div class="w-full lg:w-1/2 p-10 sm:p-10 lg:p-0 order-2 lg:order-1">

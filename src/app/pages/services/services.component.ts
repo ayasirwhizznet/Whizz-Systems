@@ -149,31 +149,37 @@ serviceCategories: any = [
       name: 'Advanced Manufacturing',
       desc: `Precision, scalability, and efficiency drive our advanced manufacturing capabilities. Whether assembling complex electronics, integrating mechanical enclosures, or designing system-level packaging, we ensure the highest quality while offering both local and offshore production flexibility.`,
       services: [
-        {
-          name: 'Process Engineering',
-          link: '/services/advanced-manufacturing',
-        },
-        {
-          name: 'Manufacturing Testing',
-          link: '/services/advanced-manufacturing',
-        },
-        {
-          name: 'Locations',
-          link: '/services/advanced-manufacturing',
-        },
-        {
-          name: 'Environmental Testing',
-          link: '/services/advanced-manufacturing',
-        },
-        {
-          name: 'Fix Spacing',
-          link: '/services/advanced-manufacturing',
-        },
-        {
-          name: 'Box Build',
-          link: '/services/advanced-manufacturing',
-        },
-      ],
+          {
+            name: 'Process Engineering',
+            link: '/services/advanced-manufacturing',
+            fragment: 'ProcessEngineering'
+          },
+          {
+            name: 'Manufacturing Testing',
+            link: '/services/advanced-manufacturing',
+            fragment: 'ManufacturingTesting'
+          },
+          {
+            name: 'Locations',
+            link: '/services/advanced-manufacturing',
+            fragment: 'Locations'
+          },
+          {
+            name: 'Environmental Testing',
+            link: '/services/advanced-manufacturing',
+            fragment: 'EnvironmentalTesting'
+          },
+          {
+            name: 'Fix Spacing',
+            link: '/services/advanced-manufacturing',
+            fragment: 'FixSpacing'
+          },
+          {
+            name: 'Box Build',
+            link: '/services/advanced-manufacturing',
+            fragment: 'BoxBuild'
+          },
+        ],
     },
     {
       name: 'Lab Testing Solutions',

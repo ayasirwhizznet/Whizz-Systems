@@ -107,24 +107,34 @@ export class MobileHeaderComponent {
         link: '/services/advanced-manufacturing',
         items: [
           {
-            label: 'DFX Analysis',
-            link: '/services/advanced-manufacturing/dfx-analysis',
+            label: 'Process Engineering',
+            link: '/services/advanced-manufacturing',
+            fragment: 'ProcessEngineering'
           },
           {
-            label: 'FMAE  (Failure Mode and Effects Analysis)',
-            link: '/services/advanced-manufacturing/fame',
+            label: 'Manufacturing Testing',
+            link: '/services/advanced-manufacturing',
+            fragment: 'ManufacturingTesting'
           },
           {
-            label: 'Thermal Profiling & Reflow Soldering Optimization',
-            link: '/services/advanced-manufacturing/thermal-profiling',
+            label: 'Locations',
+            link: '/services/advanced-manufacturing',
+            fragment: 'Locations'
           },
           {
-            label: 'Mechanical System Build',
-            link: '/services/advanced-manufacturing/mechanical-system-build',
+            label: 'Environmental Testing',
+            link: '/services/advanced-manufacturing',
+            fragment: 'EnvironmentalTesting'
           },
           {
-            label: 'Packaging Design',
-            link: '/services/advanced-manufacturing/packaging-design',
+            label: 'Fix Spacing',
+            link: '/services/advanced-manufacturing',
+            fragment: 'FixSpacing'
+          },
+          {
+            label: 'Box Build',
+            link: '/services/advanced-manufacturing',
+            fragment: 'BoxBuild'
           },
         ],
       },
