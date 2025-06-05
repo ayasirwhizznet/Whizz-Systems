@@ -225,19 +225,25 @@ Analyze solder voids and joint integrity across multiple layers
     }
   }
 
-  scrollToService(fragment: string): void {
-    setTimeout(() => {
-      const element = document.getElementById(fragment?.replace(/\s/g, ''));
-      if (element) {
-        const viewportHeight = window.innerHeight;
-        const offsetPercentage = 10;
-        const offset = (window.innerHeight * offsetPercentage) / 100;
-        const topPosition = element.offsetTop - offset;
-        window.scrollTo({
-          top: topPosition,
-          behavior: 'smooth',
-        });
-      }
-    }, 1);
-  }
+  scrollToService(fragment: string, attempt: number = 0): void {
+  const maxAttempts = 10;
+  const delay = 100;
+
+  setTimeout(() => {
+    const element = document.getElementById(fragment?.replace(/\s/g, ''));
+    if (element) {
+      const offsetPercentage = 10;
+      const offset = (window.innerHeight * offsetPercentage) / 100;
+      const topPosition = element.offsetTop - offset;
+
+      window.scrollTo({
+        top: topPosition,
+        behavior: 'smooth',
+      });
+    } else if (attempt < maxAttempts) {
+      this.scrollToService(fragment, attempt + 1);
+    }
+  }, delay);
+}
+
 }
