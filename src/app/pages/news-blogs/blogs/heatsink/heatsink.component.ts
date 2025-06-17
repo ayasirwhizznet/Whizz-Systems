@@ -6,17 +6,25 @@ import { ActivatedRoute, NavigationEnd, Router, RouterLink } from '@angular/rout
 import { NewsComponent } from '@components/news/news.component';
 import { Meta } from '@angular/platform-browser';
 import { Subscription, filter } from 'rxjs';
+import { ButtonComponent } from '@components/button/button.component';
 
 @Component({
   selector: 'app-heatsink',
   standalone: true,
-  imports: [BlogTagComponent,CommonModule, AnimatedButton, RouterLink,NewsComponent],
+  imports: [BlogTagComponent,CommonModule, AnimatedButton, RouterLink,NewsComponent, ButtonComponent],
   templateUrl: './heatsink.component.html'
 })
 export class HeatsinkComponent {
   blogs: any[] = [
     {
-      imgUrl: 'assets/news/blogs/hardwareDesign/key-challenges.png',
+      imgUrl: 'assets/news/blogs/high-power/key-challenges.png',
+      date: 'June 10, 2025',
+      tags: ['AI Hardware','High Density PCB Design'],
+      title: 'Managing High-Power Demands in Next-Generation Hardware',
+      link: '/news-&-insights/high-power-demand',
+    },
+    {
+      imgUrl: 'assets/news/blog-6.png',
       date: 'May 14, 2025',
       tags: ['AI Hardware Design','High-density PCB design'],
       title: 'NextGen Hardware Design for High-Density, High-Complexity Systems',
@@ -285,14 +293,14 @@ Where, Tj is the maximum allowable junction temperature (°C), Ta is the maximum
       const pageUrl = window.location.href;
   
       const text = encodeURIComponent(
-        `🚀 Discover NextGen Hardware Design by Whizz Systems!\n\n` +
-          `High-density, high-complexity systems engineered for performance and scalability.\n\n` +
+        `🚀 Discover Heatsink by Whizz Systems!\n\n` +
+          `Heatsinks: Considerations, guidance, and best practices.\n\n` +
           `Proudly built by @whizzsystems.\n\n` +
           `${pageUrl}\n\n`
       );
   
       const hashtags = encodeURIComponent(
-        'whizzsystems,HighDensityHardwareDesign,AISystemThermal,SignalManagement'
+        'whizzsystems,ThermalManagement,AISystemThermal'
       );
   
       const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}`;

@@ -1,39 +1,76 @@
 <!-- Hero -->
-<app-services-hero serviceCategory="Engineering & Design"
+<app-services-hero
+  serviceCategory="Engineering & Design"
   serviceTitle="Innovative FPGA Design & Development"
   serviceDesc="Transforming Ideas into High-Performance Electronic Solutions"
-  imgUrl="assets/services/engg&design/fpga/hero.png" navigate="https://webforms.pipedrive.com/f/czGi8JAgoXTuxwq9JOAdJS5s7g9dl4WWtigzbM04kMA2DZCcN7OnkM10DS7rMiJd19" btnText="Get Started with Our FPGA Experts"></app-services-hero>
+  imgUrl="assets/services/engg&design/fpga/hero.png"
+  navigate="https://webforms.pipedrive.com/f/czGi8JAgoXTuxwq9JOAdJS5s7g9dl4WWtigzbM04kMA2DZCcN7OnkM10DS7rMiJd19"
+  btnText="Get Started with Our FPGA Experts"
+></app-services-hero>
 
 <!-- Introduction -->
-<app-services-intro heading="Leading-Edge FPGA Solutions" title="Leading the Way in FPGA Design and System Integration"
+<app-services-intro
+  heading="Leading-Edge FPGA Solutions"
+  title="Leading the Way in FPGA Design and System Integration"
   desc1="WHIZZ SYSTEMS INC. specializes in FPGA design and development, delivering comprehensive expertise across diverse platforms and technologies. We help transform complex ideas into high-performance, reliable digital systems by leveraging advanced design methodologies and state-of-the-art tools."
-  imgUrl="assets/services/engg&design/fpga/leading.png"></app-services-intro>
+  imgUrl="assets/services/engg&design/fpga/leading.png"
+></app-services-intro>
 
 <!-- Core Services -->
-<app-services-core-services heading="End-to-End FPGA Solutions"
-  title="Our FPGA Design Services" desc=" Tailored design, simulation, and integration services ensuring optimal performance and seamless connectivity." [columns]="4"
-  [coreServicesData]="coreServices"></app-services-core-services>
+<app-services-core-services
+  heading="End-to-End FPGA Solutions"
+  title="Our FPGA Design Services"
+  desc=" Tailored design, simulation, and integration services ensuring optimal performance and seamless connectivity."
+  [columns]="4"
+  [coreServicesData]="coreServices"
+></app-services-core-services>
 
 <!-- Expertise -->
-<section  class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16 grid grid-cols-1 lg:grid-cols-2 gap-6 3xl:gap-8">
-  <div *ngFor="let expertie of expertise">
-    <h4 class="text-teal1 text-sm 3xl:text-base font-semibold 3xl:font-bold lg:leading-[15px] 3xl:leading-[19.2px] mb-3 3xl:mb-4">{{expertie.heading}}</h4>
-    <h3 class="text-dark-gray2 text-xl 3xl:text-2xl font-medium lg:leading-[24px] 3xl:leading-[28.8px] mb-10 3xl:mb-12">{{expertie.title}}</h3>
-      <div class=" p-6 3xl:p-8 border border-light-gray1 rounded-md 3xl:rounded-lg">
-        <h5 class="text-dark-gray2 text-sm lg:text-xs 2xl:text-sm 3xl:text-base font-medium lg:leading-[15px] 3xl:leading-[19.2px] mb-6 3xl:mb-8">{{expertie.subTitle}}</h5>
-        <hr class="border border-light-gray1/60 mb-3 3xl:mb-4">
-        <div *ngFor="let point of expertie.desc">
-          <p class="text-dark-gray2 text-sm 3xl:text-base font-light">{{point}}</p>
-          <hr class="border border-light-gray1/60 my-3 3xl:my-4">
-        </div>
+<section
+  class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16 grid grid-cols-1 lg:grid-cols-2 gap-6 3xl:gap-8 items-stretch"
+>
+  <div *ngFor="let expertie of expertise" class="flex flex-col h-full">
+    <h4
+      class="text-teal1 text-sm 3xl:text-base font-semibold 3xl:font-bold lg:leading-[15px] 3xl:leading-[19.2px] mb-3 3xl:mb-4"
+    >
+      {{ expertie.heading }}
+    </h4>
+    <h3
+      class="text-dark-gray2 text-xl 3xl:text-2xl font-medium lg:leading-[24px] 3xl:leading-[28.8px] mb-10 3xl:mb-12"
+    >
+      {{ expertie.title }}
+    </h3>
+    <div
+      class="p-6 3xl:p-8 border border-light-gray1 rounded-md 3xl:rounded-lg flex-grow flex flex-col"
+    >
+      <h5
+        class="text-dark-gray2 text-sm lg:text-xs 2xl:text-sm 3xl:text-base font-medium lg:leading-[15px] 3xl:leading-[19.2px] mb-6 3xl:mb-8"
+      >
+        {{ expertie.subTitle }}
+      </h5>
+      <hr class="border border-light-gray1/60 mb-3 3xl:mb-4" />
+      <div *ngFor="let point of expertie.desc">
+        <p class="text-dark-gray2 text-sm 3xl:text-base font-light">
+          {{ point }}
+        </p>
+        <hr class="border border-light-gray1/60 my-3 3xl:my-4" />
       </div>
+    </div>
   </div>
 </section>
 
 <!-- Benefits -->
-<app-services-benefits1 heading="Benefits Overview" title="Why Choose Whizz Systems for FPGA Services?"
-  btnText="Small Button" navigate="/404" [benefitsData]="benefits"></app-services-benefits1>
+<app-services-benefits1
+  heading="Benefits Overview"
+  title="Why Choose Whizz Systems for FPGA Services?"
+  btnText="Small Button"
+  navigate="/404"
+  [benefitsData]="benefits"
+></app-services-benefits1>
 
 <!-- CTA -->
-<app-services-contact-experts slogan="Ready to Take Your FPGA Design to the Next Level?" navigate="https://webforms.pipedrive.com/f/czGi8JAgoXTuxwq9JOAdJS5s7g9dl4WWtigzbM04kMA2DZCcN7OnkM10DS7rMiJd19"
-  btnText="Get Started with Our FPGA Experts"></app-services-contact-experts>
+<app-services-contact-experts
+  slogan="Ready to Take Your FPGA Design to the Next Level?"
+  navigate="https://webforms.pipedrive.com/f/czGi8JAgoXTuxwq9JOAdJS5s7g9dl4WWtigzbM04kMA2DZCcN7OnkM10DS7rMiJd19"
+  btnText="Get Started with Our FPGA Experts"
+></app-services-contact-experts>

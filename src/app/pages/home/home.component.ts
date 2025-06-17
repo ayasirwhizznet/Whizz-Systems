@@ -22,7 +22,14 @@ import { NewsComponent } from '@components/news/news.component';
 export class HomeComponent {
   blogs: any[] = [
     {
-      imgUrl: 'assets/news/blogs/hardwareDesign/key-challenges.png',
+      imgUrl: 'assets/news/blogs/high-power/key-challenges.png',
+      date: 'June 10, 2025',
+      tags: ['AI Hardware','High Density PCB Design'],
+      title: 'Managing High-Power Demands in Next-Generation Hardware',
+      link: '/news-&-insights/high-power-demand',
+    },
+    {
+      imgUrl: 'assets/news/blog-6.png',
       date: 'May 14, 2025',
       tags: ['AI Hardware Design','High-density PCB design'],
       title: 'NextGen Hardware Design for High-Density, High-Complexity Systems',

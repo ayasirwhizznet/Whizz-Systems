@@ -10,34 +10,26 @@ import {
 import { AnimatedButton } from '@components/animated-button/animated-button.component';
 import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
-import { NewsCardComponent } from '@components/news-card/news-card.component';
 import { NewsComponent } from '@components/news/news.component';
 import { Subscription, filter } from 'rxjs';
 
 @Component({
-  selector: 'app-pcle-6',
+  selector: 'app-high-power-demand',
   standalone: true,
   imports: [
     CommonModule,
-    RouterLink,
-    ButtonComponent,
     AnimatedButton,
     BlogTagComponent,
+    ButtonComponent,
+    RouterLink,
     NewsComponent,
   ],
-  templateUrl: './pcle-6.component.html',
+  templateUrl: './high-power-demand.component.html',
 })
-export class Pcle6Component {
-  tags = ['Whitepapper', 'High-Speed Connectivity', 'Mechanical Design'];
+export class HighPowerDemandComponent {
+  tags = ['AI Hardware', 'High Density PCB Design', 'High-Pin Count Chips'];
 
   blogs: any[] = [
-    {
-      imgUrl: 'assets/news/blogs/high-power/key-challenges.png',
-      date: 'June 10, 2025',
-      tags: ['AI Hardware','High Density PCB Design'],
-      title: 'Managing High-Power Demands in Next-Generation Hardware',
-      link: '/news-&-insights/high-power-demand',
-    },
     {
       imgUrl: 'assets/news/blog-6.png',
       date: 'May 14, 2025',
@@ -45,6 +37,13 @@ export class Pcle6Component {
       title:
         'NextGen Hardware Design for High-Density, High-Complexity Systems',
       link: '/news-&-insights/hardware-design',
+    },
+    {
+      imgUrl: 'assets/news/blog-1.png',
+      date: 'May 29, 2024',
+      tags: ['Whitepaper', 'High Speed Connectivity'],
+      title: 'PCIe-6: Everything You Need to Know',
+      link: '/news-&-insights/whitepaper-pcle6',
     },
     {
       imgUrl: 'assets/news/blog-2.png',
@@ -70,6 +69,54 @@ export class Pcle6Component {
       link: '/news-&-insights/whitepaper-invensify',
     },
   ];
+
+  optimized: any[] = [
+    'Minimize IR drops',
+    'Ensure consistent, stable power delivery across the board',
+  ];
+  layout: any[] = [
+    'Trace widths',
+    'Via placements',
+    'Power distribution planes',
+  ];
+  robust: any[] = [
+    'Heat sinks',
+    'Thermal vias',
+    'Vapor chambers',
+    'Liquid cooling systems',
+  ];
+  advanced: any[] = [
+    'Ensure a robust power delivery network (PDN) design to <b>minimize voltage drops</b> and maintain stable power across the system.',
+    'Design for efficiency to minimize power loss and maximize performance.',
+    'Ensure system scalability to accommodate growing power demands over time.',
+    'Incorporate fail-safe mechanisms for power regulation and temperature control to enhance reliability.',
+    'Utilize advanced thermal management techniques like liquid cooling, thermal vias, and vapor chambers to manage heat in high-power designs.',
+    'Choose materials with superior thermal conductivity and implement effective heat dissipation strategies to improve component lifespan and reduce thermal stress.',
+    'Assess and test power systems under real-world conditions to identify potential vulnerabilities.',
+    'Focus on minimizing electromagnetic interference (EMI) and ensuring electromagnetic compatibility (EMC).',
+    'Consider environmental factors such as humidity and temperature variations for more resilient hardware solutions.',
+    'Adhere to industry standards for safety, performance, and compatibility to ensure system integration with other platforms.',
+    'Collaborate with experts skilled in optimizing layout, component selection, and managing high-current systems to reduce power losses and prevent instability due to voltage fluctuations.',
+  ];
+
+  partner: any[] = [
+    'Optimize your next board',
+    'Solve your power delivery challenges',
+    'Help you hit performance, thermal, and compliance targets faster'
+  ]
+
+  ngAfterViewInit() {
+    const links = document.querySelectorAll('.link-to-power');
+    links.forEach((link) => {
+      link.addEventListener('click', () => {
+        this.router.navigate(['/services/engineering-&-design/power-delivery']);
+      });
+    });
+  }
+
+  navigateToPowerDelivery() {
+    this.router.navigate(['/services/engineering-&-design/power-delivery']);
+  }
 
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
@@ -115,6 +162,8 @@ export class Pcle6Component {
     this.fragmentSubscription?.unsubscribe();
     this.navigationSubscription?.unsubscribe();
   }
+
+  private scrollTimeout: any;
 
   @HostListener('window:scroll', [])
   onScroll(): void {
@@ -166,14 +215,14 @@ export class Pcle6Component {
     const pageUrl = window.location.href;
 
     const text = encodeURIComponent(
-      `🚀 Discover PCIe-6 by Whizz Systems!\n\n` +
-        `Whizz Systems' Guide to PCIe-6.\n\n` +
+      `🚀 Discover Next-Generation Hardware Design by Whizz Systems!\n\n` +
+        `Managing High-Power Demands in Next-Generation Hardware.\n\n` +
         `Proudly built by @whizzsystems.\n\n` +
         `${pageUrl}\n\n`
     );
 
     const hashtags = encodeURIComponent(
-      'whizzsystems,MechanicalDesign,Whitepapper,SignalManagement'
+      'whizzsystems,AIHardware,HighDensityPCBDesign'
     );
 
     const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}`;

@@ -50,6 +50,14 @@ export const routes: Routes = [
           ),
         title: 'High Density Hardware Design',
       },
+      {
+        path: 'high-power-demand',
+        loadComponent: () =>
+          import('./blogs/high-power-demand/high-power-demand.component').then(
+            (m) => m.HighPowerDemandComponent
+          ),
+        title: 'High-Power Demands in Next-Generation Hardware',
+      },
     ],
   },
 ];

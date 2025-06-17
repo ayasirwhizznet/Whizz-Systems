@@ -52,22 +52,22 @@ export class FirmwareSoftwareDevelopmentComponent {
 
   benefits: any = [
     {
-      imgUrl: 'assets/services/engg&design/firmware-software/benefits.png',
+      imgUrl: 'assets/icons/expert-badge.svg',
       name: 'Hardware & Software Expertise',
       desc: 'Unlike traditional firmware developers, we design and manufacture the hardware itself, ensuring deeper integration and reliability.',
     },
     {
-      imgUrl: 'assets/services/engg&design/firmware-software/benefits.png',
+      imgUrl: 'assets/icons/performance.svg',
       name: 'Seamless System Optimization',
       desc: 'We fine-tune firmware to maximize performance, power efficiency, and communication between electronic components.',
     },
     {
-      imgUrl: 'assets/services/engg&design/firmware-software/benefits.png',
+      imgUrl: 'assets/icons/support.svg',
       name: 'End-to-End Manufacturing Support',
       desc: 'From prototyping to production, we deliver fully integrated electronic systems.',
     },
     {
-      imgUrl: 'assets/services/engg&design/firmware-software/benefits.png',
+      imgUrl: 'assets/icons/industry.svg',
       name: 'Cross-Industry Experience',
       desc: 'Supporting AI, automotive, industrial, medical, IoT, and consumer electronics.',
     },

@@ -62,27 +62,27 @@ export class SustainableEngineeringComponent {
 
   benefits: any[] = [
     {
-      imgUrl: 'assets/services/sustaining-egineering/benefits.png',
+      imgUrl: 'assets/icons/circular-arrow.svg',
       name: 'End-to-End Component Lifecycle Management',
       desc: 'We track, predict, and resolve EOL risks before they impact your production.',
     },
     {
-      imgUrl: 'assets/services/sustaining-egineering/benefits.png',
+      imgUrl: 'assets/icons/glob.svg',
       name: 'Global Network of Suppliers & Distributors',
       desc: 'Immediate access to critical components worldwide, minimizing sourcing delays.',
     },
     {
-      imgUrl: 'assets/services/sustaining-egineering/benefits.png',
+      imgUrl: 'assets/icons/ambrella.svg',
       name: 'Risk Mitigation & Compliance Assurance',
       desc: ' We help navigate compliance challenges and mitigate supply chain risks with trusted AVL partners.',
     },
     {
-      imgUrl: 'assets/services/sustaining-egineering/benefits.png',
+      imgUrl: 'assets/icons/plug.svg',
       name: 'Seamless Engineering Integration',
       desc: 'With in-house hardware design & manufacturing expertise, we ensure component replacements meet design and performance requirements.',
     },
     {
-      imgUrl: 'assets/services/sustaining-egineering/benefits.png',
+      imgUrl: 'assets/icons/cost.svg',
       name: 'Cost-Optimized Procurement Strategies',
       desc: 'We balance performance, reliability, and cost-efficiency through competitive sourcing and strategic risk buys.',
     },

@@ -1,0 +1,681 @@
+<!-- Hero -->
+<section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
+  <div
+    class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl"
+  >
+    <div
+      class="w-full lg:w-[47%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16"
+    >
+      <p
+        class="text-sm 3xl:text-base leading-[15px] 3xl:leading-[19.2px] mb-2 3xl:mb-[10px]"
+      >
+        June 10, 2025
+      </p>
+      <div class="flex items-center gap-2 flex-wrap mb-4 3xl:mb-6">
+        <div *ngFor="let tag of tags">
+          <app-blog-tag
+            text="{{ tag }}"
+            textColor="text-light-gray1"
+            borderColor="border-light-gray1"
+            borderRadius="rounded-[3px] 3xl:rounded-[4px]"
+          ></app-blog-tag>
+        </div>
+      </div>
+      <h1
+        class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-[96%] sm:w-[57%] lg:w-full"
+      >
+        Managing High-Power Demands in Next-Generation Hardware
+      </h1>
+      <p
+        class="text-base lg:text-sm 2xl:text-base 3xl:text-xl font-extralight lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8 sm:w-[70%] lg:w-full"
+      >
+        Master Power and Performance for AI Hardware Exceeding 1,500 Amps
+      </p>
+      <a
+        href="https://webforms.pipedrive.com/f/6UT1JKLeb6G1xtMMTPA4HRcQsTZefgpvRq9cSzG1TincmHlD6Wvfh3YCmSXUO7VklB"
+        target="_blank"
+        ><app-button
+          heading="Talk to Our Experts"
+          icon="assets/icons/webform.svg"
+          size="small"
+        ></app-button
+      ></a>
+      <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
+        <a routerLink="/" class="cursor-pointer">
+          <img
+            height="48"
+            width="48"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/icons/whizzicon.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+        <a routerLink="/" class="cursor-pointer">
+          <img
+            height="16"
+            width="109"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/icons/whizz.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/whizz-systems/?viewAsMember=true"
+          target="_blank"
+          class="cursor-pointer"
+        >
+          <img
+            height="24"
+            width="24"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/icons/linkedin.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/@WhizzSystemsCA"
+          target="_blank"
+          class="cursor-pointer"
+        >
+          <img
+            height="24"
+            width="24"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/icons/youtube.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="hidden lg:block lg:w-[53%]">
+      <img
+        height="587"
+        width="682"
+        loading="lazy"
+        class="h-auto w-full object-cover"
+        src="assets/news/blogs/high-power/hero.png"
+        alt="Building the Future of 5G Connectivity with Open Radio Unit Solutions"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Main Content -->
+<section class="px-[4%] sm:pr-0 sm:pl-[6.3%] py-6 3xl:py-8">
+  <div class="w-full flex justify-between gap-1 sm:gap-12">
+    <!-- left div -->
+    <div class="hidden lg:block lg:w-[23%] 2xl:w-[19%] 3xl:w-[22%] mt-12">
+      <div
+        class="p-6 3xl:p-8 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray lg:sticky lg:top-28"
+      >
+        <h3
+          class="text-teal1 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] mb-6 3xl:mb-8"
+        >
+          In This Article
+        </h3>
+        <ul>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section1')"
+              [ngClass]="isActive('section1') ? 'text-teal1' : ''"
+              >Why Power Delivery Is the New Frontier in AI Hardware Desige</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section2')"
+              [ngClass]="isActive('section2') ? 'text-teal1' : ''"
+              >Key Challenges in Power Delivery</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section3')"
+              [ngClass]="isActive('section3') ? 'text-teal1' : ''"
+              >Whizz Systems’s Approach and Expertise</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section4')"
+              [ngClass]="isActive('section4') ? 'text-teal1' : ''"
+              >Key Considerations for Customers</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section5')"
+              [ngClass]="isActive('section5') ? 'text-teal1' : ''"
+              >Real-World Success Example</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section5')"
+              [ngClass]="isActive('section6') ? 'text-teal1' : ''"
+              >Partner with Whizz Systems</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- cener div -->
+    <div class="flex flex-col sm:w-4/5 lg:w-[55%] 2xl:w-[53%] 3xl:w-[47%]">
+      <section id="section1" class="mb-6 3xl:mb-8">
+        <h2
+          class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-3 3xl:mb-4"
+        >
+          Why Power Delivery Is the New Frontier in AI Hardware Design
+        </h2>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          As next-generation AI hardware evolves, the power requirements for
+          <span class="font-semibold 3xl:font-bold"
+            >advanced accelerator modules</span
+          >
+          are reaching unprecedented levels. Designs today must handle extremely
+          high current demands<span class="font-semibold 3xl:font-bold"
+            >—exceeding 1,500 amps or more</span
+          >
+          for a single core—while maintaining energy efficiency and system
+          stability.
+          <span class="font-semibold 3xl:font-bold"
+            >High-performance AI accelerators</span
+          >
+          require not only substantial power but also intelligent power
+          management solutions that minimize losses and support continuous,
+          reliable operation. To meet these demands, companies need designs
+          capable of delivering power with precision, stability, and efficiency,
+          all while adhering to industry standards.
+        </p>
+
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          <span class="font-semibold 3xl:font-bold">At Whizz Systems</span>, we
+          help companies overcome these hurdles with
+          <a
+            routerLink="/services/engineering-&-design/power-delivery"
+            class="text-teal1 font-medium 3xl:font-bold underline underline-offset-2"
+            >optimized power delivery networks (PDNs)</a
+          >
+          and
+          <a
+            routerLink="/services/engineering-&-design/thermal-management"
+            class="text-teal1 font-medium 3xl:font-bold underline underline-offset-2"
+          >
+            advanced thermal solutions</a
+          >—and we have the
+          <span class="font-semibold 3xl:font-bold">in-house </span>
+          <a
+            routerLink="/services/advanced-manufacturing"
+            class="text-teal1 font-medium 3xl:font-bold underline underline-offset-2"
+            >manufacturing capabilities</a
+          >
+          to bring those designs to life with quality and precision.
+        </p>
+      </section>
+      <section id="section2" class="py-6 3xl:py-8">
+        <h2
+          class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-6 3xl:mb-8"
+        >
+          Key Challenges in High-Density Systems
+        </h2>
+        <h3
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4"
+        >
+          Why Traditional Designs Can’t Keep Up
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          The increased power demands of
+          <span class="font-semibold 3xl:font-bold">AI accelerators</span>
+          introduce multiple complex challenges in design and manufacturing,
+          especially when dealing with high-current needs. Traditional power
+          distribution methods, initially designed for more modest currents,
+          fall short in providing the stability required for
+          <span class="font-semibold 3xl:font-bold"
+            >systems operating above 1,500 amps.</span
+          >
+          Managing high-power requirements in such scenarios demands careful
+          consideration of
+          <a
+            routerLink="/services/engineering-&-design/power-delivery"
+            class="text-teal1 font-medium 3xl:font-bold underline underline-offset-2"
+            >power delivery networks (PDNs)</a
+          >, which must ensure consistent voltage levels, prevent excessive IR
+          drops, and minimize power losses.
+        </p>
+        <h3
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-medium 3xl:font-bold my-3 3xl:my-4"
+        >
+          Signal Integrity at Risk
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          One of the primary hurdles in designing high-power systems is
+          <span class="font-semibold 3xl:font-bold my-3 3xl:my-4"
+            >IR drop management</span
+          >. As current flows increase, the voltage drop across power paths
+          becomes more pronounced. These IR drops reduce the voltage at critical
+          points on the board, affecting component stability and performance.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] my-3 3xl:my-4"
+        >
+          Maintaining minimal IR drop is essential for systems where even minor
+          fluctuations in power delivery can compromise operation
+        </p>
+        <h3
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-medium 3xl:font-bold my-3 3xl:my-4"
+        >
+          Thermal Management Challenges
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          Furthermore, thermal management is a considerable challenge.
+          High-current systems generate significant amounts of heat, especially
+          when components are densely packed to reduce board size.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] my-3 3xl:my-4"
+        >
+          Without proper heat dissipation, components can reach temperatures
+          that lead to reduced efficiency, compromised lifespan, or outright
+          failure. The challenge of thermal management requires
+          <span class="font-semibold 3xl:font-bold"
+            >advanced cooling solutions</span
+          >
+          that can disperse heat effectively across all areas of the board,
+          including high-density sections.
+        </p>
+        <h3
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-medium 3xl:font-bold my-3 3xl:my-4"
+        >
+          Need for Energy Efficiency and Standards Compliance
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          In this evolving landscape, it is crucial for designs to
+          <span class="font-semibold 3xl:font-bold"
+            >meet industry standards</span
+          >
+          and provide energy-efficient solutions that balance performance with
+          power management.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] my-3 3xl:my-4"
+        >
+          Whizz Systems’ expertise in designing for high-power demands allows us
+          to meet these requirements, ensuring our designs are both
+          high-performing and compliant.
+        </p>
+        <figure class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
+          <img
+            loading="lazy"
+            height="598"
+            width="252"
+            class="w-full h-auto object-cover"
+            src="assets/news/blogs/high-power/key-challenges.png"
+            alt="Need for Energy Efficiency and Standards Compliance"
+          />
+        </figure>
+      </section>
+      <section id="section3" class="py-6 3xl:py-8">
+        <h2
+          class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-6 3xl:mb-8"
+        >
+          Whizz Systems’ Approach and Expertise
+        </h2>
+        <h3
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4"
+        >
+          How We Design for Extreme Power Performance
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          <span class="font-semibold 3xl:font-bold">Whizz Systems</span>
+          specializes in meeting the high-power demands of next-generation AI
+          hardware through
+          <span class="font-semibold 3xl:font-bold"
+            >comprehensive power delivery solutions</span
+          >. Our approach focuses on three core areas: efficient power
+          distribution, thermal management, and regulatory compliance, ensuring
+          reliable and energy-efficient designs.
+        </p>
+        <h3
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4"
+        >
+          Optimized Power Distribution Networks (PDNs)
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          We use advanced power distribution networks (PDNs) tailored to support
+          the intense power requirements of AI accelerators.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          Through optimized PDN topologies, we:
+        </p>
+        <ul class="list-disc list-inside ml-4">
+          <li
+            *ngFor="let point of optimized"
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            {{ point }}
+          </li>
+        </ul>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Our layouts carefully consider:
+        </p>
+        <ul class="list-disc list-inside ml-4">
+          <li
+            *ngFor="let point of layout"
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            {{ point }}
+          </li>
+        </ul>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] my-3 3xl:my-4"
+        >
+          All designed to reduce resistance and maintain voltage integrity
+          across the board. This meticulous attention to power flow helps
+          prevent common issues associated with high-current designs, such as
+          unstable operation or component failures.
+        </p>
+        <h3
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4"
+        >
+          Advanced Thermal Management
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          Thermal management is a crucial aspect of high-power system design.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          Our team incorporates advanced cooling solutions including:
+        </p>
+        <ul class="list-disc list-inside ml-4">
+          <li
+            *ngFor="let point of robust"
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+            [innerHTML]="point"
+          ></li>
+        </ul>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] my-3 3xl:my-4"
+        >
+          These solutions dissipate heat effectively, ensuring stable operation
+          even under demanding loads. They are carefully tailored to the
+          specific requirements of each design, accommodating the unique thermal
+          profile of high-power components and providing optimal heat
+          dissipation.
+        </p>
+        <h3
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4"
+        >
+          Regulatory Compliance
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          Our experience with industry standards allows us to design high-power
+          solutions that comply with regulatory requirements, ensuring that our
+          products meet the necessary guidelines for safety and efficiency.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] my-3 3xl:my-4"
+        >
+          By aligning our designs with these standards, we deliver reliable
+          solutions that our clients can seamlessly integrate into their AI
+          hardware platforms.
+        </p>
+        <figure class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
+          <img
+            loading="lazy"
+            height="598"
+            width="252"
+            class="w-full h-auto object-cover"
+            src="assets/news/blogs/high-power/approach.png"
+            alt="Regulatory Compliance"
+          />
+        </figure>
+      </section>
+      <section id="section4" class="py-6 3xl:py-8">
+        <h2
+          class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8"
+        >
+          Key Considerations for Customers
+        </h2>
+        <h3
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4"
+        >
+          What to Prioritize in High-Power Hardware Development
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          When developing hardware with
+          <span class="font-semibold 3xl:font-bold"
+            >high-power requirements</span
+          >, companies must address several crucial factors to achieve optimal
+          performance and reliability.
+        </p>
+        <ul class="list-disc list-outside pl-1 ml-4 my-3 3xl:my-4">
+          <li
+            *ngFor="let point of advanced"
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+            [innerHTML]="point"
+          ></li>
+        </ul>
+      </section>
+      <section class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
+        <div
+          class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1"
+        >
+          <div class="flex items-center justify-between">
+            <div>
+              <h3
+                class="text-dark-gray1 text-xl lg:text-[28px] 3xl:text-[32px] font-semibold 3xl:font-bold my-3 3xl:my-4"
+              >
+                Subscribe to our newsletter!
+              </h3>
+              <p
+                class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[15px] 3xl:leading-[19.2px]"
+              >
+                Get updates on the latest news & insights
+              </p>
+            </div>
+            <a
+              href="https://webforms.pipedrive.com/f/6UT1JKLeb6G1xtMMTPA4HRcQsTZefgpvRq9cSzG1TincmHlD6Wvfh3YCmSXUO7VklB"
+              target="_blank"
+              ><app-animated-button
+                heading="Subscribe"
+                size="medium"
+                [icon]="false"
+                bg="white"
+              ></app-animated-button
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section id="section5" class="py-6 3xl:py-8">
+        <h2
+          class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-medium mb-6 3xl:mb-8"
+        >
+          Real-World Success Example
+        </h2>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          An example of Whizz Systems’ expertise is demonstrated in our recent project involving a custom <span class="font-semibold 3xl:font-bold">Open Compute Project (OCP) Accelerator Module</span>, designed to handle extreme performance workloads. This advanced module required an impressive <span class="font-semibold 3xl:font-bold">1600A of current and over 2000W of power</span> to drive its AI acceleration capabilities at peak efficiency. To meet these demanding specifications, we implemented a carefully engineered <a
+            routerLink="/services/engineering-&-design/power-delivery"
+            class="text-teal1 font-medium 3xl:font-bold underline underline-offset-2"
+            >power delivery network (PDN)</a> strategy, coupled with advanced cooling solutions, ensuring stable thermal performance even under sustained full-load operation. Our innovative approach maintained a consistent operating temperature, safeguarded signal integrity, and enabled the module to deliver reliable, high-throughput processing in one of the most power-intensive designs we’ve ever realized. 
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] my-3 3xl:my-4"
+        >
+          Our deep familiarity with industry standards, including OCP guidelines, enabled us to develop a high-power solution that not only met but exceeded regulatory safety and efficiency requirements. By aligning our design approach with these stringent standards, we delivered a robust, standards-compliant solution that clients can confidently integrate into their next-generation AI hardware platforms. 
+        </p>
+      </section>
+      <section id="section6" class="mb-6 3xl:mb-8">
+        <h2
+          class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold"
+        >
+          Partner with Whizz Systems
+        </h2>
+        <h3
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold my-3 3xl:my-4"
+        >
+          Design Smarter. Perform Stronger.
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          Are you building next-gen AI hardware that demands high-current, high-reliability power delivery?<br>We’re here to help.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-3 3xl:mt-4"
+        >
+          Our team integrates PDN engineering, thermal management, mechanical design, and compliance expertise—all under one roof—to bring your vision to life.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+        >
+          Let’s talk. Discover how we can:
+        </p>
+        <ul class="list-disc list-inside ml-4">
+          <li
+            *ngFor="let point of partner"
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            {{ point }}
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- right div -->
+    <section class="sm:ml-auto mb-56 mt-96">
+      <div
+        class="flex flex-col justify-center items-center space-y-3 3xl:space-y-4 sticky top-96"
+      >
+        <p
+          class="text-light-gray2 text-[10px] 3xl:text-xs font-semibold 3xl:font-bold"
+        >
+          SHARE
+        </p>
+        <a (click)="shareOnFacebook()" class="cursor-pointer"
+          ><svg
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+            /></svg
+        ></a>
+        <a (click)="shareOnLinkedIn()" class="cursor-pointer"
+          ><svg
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+            /></svg
+        ></a>
+        <a (click)="shareOnTwitter()" class="cursor-pointer"
+          ><svg
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+            /></svg
+        ></a>
+      </div>
+    </section>
+  </div>
+</section>
+
+<!-- Marketing  -->
+<section class="px-0 sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+  <div
+    class="relative p-6 sm:p-10 lg:p-[52px] 3xl:p-16 sm:rounded-md 3xl:rounded-lg"
+  >
+    <video
+      class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg"
+      loop
+      muted
+      autoplay
+      oncanplay="this.play()"
+      onloadedmetadata="this.muted = true"
+    >
+      <source src="assets/hero/waves2.mp4" type="video/mp4" />
+    </video>
+    <div
+      class="absolute inset-0 bg-video-overlay opacity-80 z-[5] sm:rounded-md 3xl:rounded-lg"
+    ></div>
+    <div class="relative z-10 lg:w-[85%] 2xl:w-[80%] 3xl:w-[63%] text-white">
+      <h2
+        class="text-3xl sm:text-4xl lg:text-5xl 2xl:text-[52px] 3xl:text-[64px] 2xl:leading-[60px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4"
+      >
+        Are you building next-gen AI hardware that demands high-current,
+        high-reliability power delivery?
+      </h2>
+      <p
+        class="sm:text-xl lg:text-2xl 2xl:text-[26px] 3xl:text-[32px] 2xl:leading-[36px] 3xl:leading-[48px] mb-8 lg:mb-10 3xl:mb-12"
+      >
+        Sub header
+      </p>
+      <a
+        href="https://webforms.pipedrive.com/f/6N6NQL3vOqyi8paI5kxfU9RamXw4SrfQANt39TqTNyntlVSJ3mocCO0xg444OliGCn"
+        target="_blank"
+        ><app-button
+          heading="Contact us"
+          size="large"
+          icon="assets/icons/webform.svg"
+        ></app-button
+      ></a>
+    </div>
+  </div>
+</section>
+
+<!-- Latest News and Insights -->
+<app-cnews [blogs]="blogs"></app-cnews>

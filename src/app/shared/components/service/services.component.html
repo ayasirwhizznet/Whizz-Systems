@@ -6,12 +6,12 @@
         Services</h2>
       <div class="flex items-center gap-4 3xl:gap-6">
         <app-button size="medium" [routerLink]="'/services'" heading="All services"
-          icon="assets/shared/r-arrow.svg"></app-button>
+          icon="assets/icons/r-arrow.svg"></app-button>
         <div [className]="progress.abs == 0 ? 'pointer-events-none opacity-[0.6]':''">
-          <app-button size="medium" (click)="prevSlide()" icon="assets/shared/l-arrow.svg"></app-button>
+          <app-button size="medium" (click)="prevSlide()" icon="assets/icons/l-arrow.svg"></app-button>
         </div>
         <div [className]="progress.abs == progress.maxIdx ? 'pointer-events-none opacity-[0.6]':''">
-          <app-button size="medium" (click)="nextSlide()" icon="assets/shared/r-arrow.svg"></app-button>
+          <app-button size="medium" (click)="nextSlide()" icon="assets/icons/r-arrow.svg"></app-button>
         </div>
       </div>
     </div>

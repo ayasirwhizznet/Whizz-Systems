@@ -29,27 +29,27 @@ export class LabTestingSolutionsComponent implements OnInit, OnDestroy {
 
   benefits: any[] = [
     {
-      imgUrl: 'assets/services/lab-testing/benefits.png',
+      imgUrl: 'assets/icons/lab.svg',
       name: 'All-In-One Lab Services',
       desc: 'Comprehensive solutions for bring-up, validation, and characterization under one roof.',
     },
     {
-      imgUrl: 'assets/services/lab-testing/benefits.png',
+      imgUrl: 'assets/icons/tool.svg',
       name: 'Advanced Tools & Facilities',
       desc: ' Industry-grade equipment for precise diagnostics.',
     },
     {
-      imgUrl: 'assets/services/lab-testing/benefits.png',
+      imgUrl: 'assets/icons/glob.svg',
       name: 'Global Compliance Expertise',
       desc: 'Meet rigorous industry and regulatory standards.',
     },
     {
-      imgUrl: 'assets/services/lab-testing/benefits.png',
+      imgUrl: 'assets/icons/tailered.svg',
       name: 'Tailored Services',
       desc: 'Solutions customized for your product and industry.',
     },
     {
-      imgUrl: 'assets/services/lab-testing/benefits.png',
+      imgUrl: 'assets/icons/25.svg',
       name: 'Decades of Innovation',
       desc: 'Over 25 years ensuring the success of cutting-edge products.',
     },

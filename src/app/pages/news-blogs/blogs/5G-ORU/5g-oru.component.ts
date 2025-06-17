@@ -29,7 +29,14 @@ import { Subscription, filter } from 'rxjs';
 export class ORUComponent {
   blogs: any[] = [
     {
-      imgUrl: 'assets/news/blogs/hardwareDesign/key-challenges.png',
+      imgUrl: 'assets/news/blogs/high-power/key-challenges.png',
+      date: 'June 10, 2025',
+      tags: ['AI Hardware','High Density PCB Design'],
+      title: 'Managing High-Power Demands in Next-Generation Hardware',
+      link: '/news-&-insights/high-power-demand',
+    },
+    {
+      imgUrl: 'assets/news/blog-6.png',
       date: 'May 14, 2025',
       tags: ['AI Hardware Design', 'High-density PCB design'],
       title:
@@ -158,14 +165,14 @@ export class ORUComponent {
     const pageUrl = window.location.href;
 
     const text = encodeURIComponent(
-      `🚀 Discover NextGen Hardware Design by Whizz Systems!\n\n` +
-        `High-density, high-complexity systems engineered for performance and scalability.\n\n` +
+      `🚀 Discover 5G Connectivity by Whizz Systems!\n\n` +
+        `Building the Future of 5G Connectivity with Open Radio Unit Solutions.\n\n` +
         `Proudly built by @whizzsystems.\n\n` +
         `${pageUrl}\n\n`
     );
 
     const hashtags = encodeURIComponent(
-      'whizzsystems,HighDensityHardwareDesign,AISystemThermal,SignalManagement'
+      'whizzsystems,Heatsink,ThermalManagement,SignalManagement'
     );
 
     const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}`;

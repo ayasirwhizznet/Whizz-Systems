@@ -43,32 +43,32 @@ export class ThermalManagementComponent {
 
   benefits: any[] = [
     {
-      imgUrl: 'assets/services/engg&design/thermal-management/benefits.png',
+      imgUrl: 'assets/icons/25.svg',
       name: 'Decades of Expertise',
       desc: 'Over 25 years of success in electronic design and optimization.',
     },
     {
-      imgUrl: 'assets/services/engg&design/thermal-management/benefits.png',
+      imgUrl: 'assets/icons/puzzle.svg',
       name: 'Tailored Solutions',
       desc: 'Custom thermal strategies for unique product requirements.',
     },
     {
-      imgUrl: 'assets/services/engg&design/thermal-management/benefits.png',
+      imgUrl: 'assets/icons/connectivity.svg',
       name: 'Advanced Simulation Tools',
       desc: 'Accurate heat and airflow modeling using CFD analysis.',
     },
     {
-      imgUrl: 'assets/services/engg&design/thermal-management/benefits.png',
+      imgUrl: 'assets/icons/cooling.svg',
       name: 'Cutting-Edge Cooling Tech',
       desc: 'Vapor chambers, liquid cooling systems, and integrated designs.',
     },
     {
-      imgUrl: 'assets/services/engg&design/thermal-management/benefits.png',
+      imgUrl: 'assets/icons/drop.svg',
       name: 'Reliability in Any Environment',
       desc: 'Designs that meet thermal limits in even the most demanding conditions.',
     },
     {
-      imgUrl: 'assets/services/engg&design/thermal-management/benefits.png',
+      imgUrl: 'assets/icons/support.svg',
       name: 'Comprehensive Support',
       desc: 'From concept to optimization, we’re with you every step of the way.',
     },

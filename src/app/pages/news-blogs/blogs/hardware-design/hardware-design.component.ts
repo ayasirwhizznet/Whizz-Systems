@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, HostListener } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import {
   ActivatedRoute,
@@ -33,31 +33,6 @@ export class HardwareDesignComponent {
     'High-pin count chips',
   ];
 
-  cards: any[] = [
-    {
-      imageUrl: 'assets/news/blogs/blog-bottom/5g.png',
-      link: '/news-&-insights/whitepaper-5g-oru',
-      tags: ['Case Study', 'Hardware Design', 'Telecom Engineering'],
-      date: 'September  05, 2020',
-      title:
-        'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
-    },
-    {
-      imageUrl: 'assets/news/blogs/blog-bottom/heatsink.png',
-      link: '/news-&-insights/whitepaper-heatsink',
-      tags: ['Heatsink', 'Thermal Management'],
-      date: 'July 09, 2024',
-      title: 'Heatsinks: Considerations, guidance, and best practices.',
-    },
-    {
-      imageUrl: 'assets/news/blogs/blog-bottom/invensify.png',
-      link: '/news-&-insights/whitepaper-invensify',
-      tags: ['Case Study', 'Medical Devices'],
-      date: 'December 12, 2024',
-      title: 'Developing Smart Medical Devices: The Invensify Case Study',
-    },
-  ];
-
   points: any[] = [
     'The Complexity Behind the AI Hardware',
     'Key Challenges in High-Density Systems',
@@ -67,6 +42,13 @@ export class HardwareDesignComponent {
   ];
 
   blogs: any[] = [
+    {
+      imgUrl: 'assets/news/blogs/high-power/key-challenges.png',
+      date: 'June 10, 2025',
+      tags: ['AI Hardware','High Density PCB Design'],
+      title: 'Managing High-Power Demands in Next-Generation Hardware',
+      link: '/news-&-insights/high-power-demand',
+    },
     {
       imgUrl: 'assets/news/blog-1.png',
       date: 'May 29, 2024',
@@ -256,7 +238,7 @@ export class HardwareDesignComponent {
     const pageUrl = window.location.href;
 
     const text = encodeURIComponent(
-      `🚀 Discover NextGen Hardware Design by Whizz Systems!\n\n` +
+      `🚀 Discover High-density, high-complexity systems by Whizz Systems!\n\n` +
         `High-density, high-complexity systems engineered for performance and scalability.\n\n` +
         `Proudly built by @whizzsystems.\n\n` +
         `${pageUrl}\n\n`
