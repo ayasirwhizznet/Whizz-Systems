@@ -101,37 +101,7 @@ export class FeaturedProductsComponent {
           link: '/featured-products/xilinx-virtex-7-fpga-ws7203-b',
         },
       ],
-    },
-    // {
-    //   title: 'Kit Accessories',
-    //   products: [
-    //     {
-    //       name: 'Balun Transformer',
-    //       imgUrl: 'assets/featured-products/product.png',
-    //       link: '/404',
-    //     },
-    //     {
-    //       name: 'FMC Loopback Card',
-    //       imgUrl: 'assets/featured-products/product.png',
-    //       link: '/404',
-    //     },
-    //     {
-    //       name: 'PCIe Loopback Card',
-    //       imgUrl: 'assets/featured-products/product.png',
-    //       link: '/404',
-    //     },
-    //     {
-    //       name: 'FMC+ Loopback Card',
-    //       imgUrl: 'assets/featured-products/product.png',
-    //       link: '/404',
-    //     },
-    //     {
-    //       name: 'USB3/2 A Female to USB3 Micro B Male Adapter',
-    //       imgUrl: 'assets/featured-products/product.png',
-    //       link: '/404',
-    //     },
-    //   ],
-    // },
+    }
   ];
 
   miscellaneous: any[] = [

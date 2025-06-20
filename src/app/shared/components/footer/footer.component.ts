@@ -11,9 +11,9 @@ import { AnimatedButton } from '../animated-button/animated-button.component';
 })
 export class FooterComponent {
   privacyTerms: any[] = [
-    { label: 'Privacy', link: '/404' },
-    { label: 'Terms', link: '/404' },
-    { label: 'Settings', link: '/404' },
+    { label: 'Privacy', link: '/' },
+    { label: 'Terms', link: '/' },
+    { label: 'Settings', link: '/' },
   ];
 
   services: any[] = [

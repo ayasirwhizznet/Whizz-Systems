@@ -12,7 +12,6 @@ export class ServicesBenefitsComponent {
   @Input() title: string = '';
   @Input() desc: string = '';
   @Input() btnText: string = '';
-  @Input() navigate: string = '';
   @Input() columns!: number;
   @Input() note: string = '';
   @Input() noteDesc: string = '';

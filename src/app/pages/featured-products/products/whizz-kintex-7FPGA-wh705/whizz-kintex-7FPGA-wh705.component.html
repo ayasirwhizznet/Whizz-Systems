@@ -1,7 +1,9 @@
 <!-- Hero -->
-<app-product-hero productCategory="Featured Products | Evaluations Kits | WH705" productName="High-Performance Prototyping with the Whizz Kintex-7 FPGA WH705"
+<app-product-hero productCategory="Featured Products | Evaluations Kits | WH705"
+    productName="High-Performance Prototyping with the Whizz Kintex-7 FPGA WH705"
     productDesc="A Scalable and Customizable Evaluation Kit for High-Speed Applications"
-    btnText="Request a Custom Design" navigate="https://webforms.pipedrive.com/f/6xYdPMyjTBq8hv0xLz4bhrElL3dpAoBetKYSVMMyn1eMv50CfpxVIYAJlRYzoxOv2X"
+    btnText="Request a Custom Design"
+    navigate="https://webforms.pipedrive.com/f/6xYdPMyjTBq8hv0xLz4bhrElL3dpAoBetKYSVMMyn1eMv50CfpxVIYAJlRYzoxOv2X"
     imgUrl="assets/featured-products/products/vhk158/hero.png"></app-product-hero>
 
 <!-- Overview -->
@@ -9,11 +11,13 @@
     title="The WH705 – A Customizable Derivative of Xilinx’s KC705 Evaluation Kit"
     desc1="The Whizz Kintex-7 FPGA WH705 is a powerful evaluation kit designed to provide a seamless prototyping experience for high-speed serial transceiver applications. As a derivative of the AMD Kintex™ 7 FPGA KC705 Evaluation Kit, the WH705 retains its full feature set while being optimized for applications requiring high-performance connectivity and advanced memory interfacing."
     desc2="With integrated PCIe Gen2, SFP+, HDMI, and DDR3 memory support, this platform enables rapid development of networking, high-speed computing, and video display applications. The WH705 also supports FPGA Mezzanine Card (FMC) interfaces, allowing for expansion and customization based on project requirements."
-    desc3="<span class='text-teal1'>Whizz Systems offers full customization services to tailor this platform to your specific application needs.</span>" imgUrl="assets/featured-products/products/vhk158/overview.png">
+    desc3="<span class='text-teal1'>Whizz Systems offers full customization services to tailor this platform to your specific application needs.</span>"
+    imgUrl="assets/featured-products/products/vhk158/overview.png">
 </app-product-overview>
 
 <!-- Marketing -->
-<app-product-marketing slogan="Whizz Systems specialize in transforming development kits into fully productized, market-ready solutions for a wide range of industries"></app-product-marketing>
+<app-product-marketing
+    slogan="Whizz Systems specialize in transforming development kits into fully productized, market-ready solutions for a wide range of industries"></app-product-marketing>
 
 <!-- Key features -->
 <app-product-features heading="Key Features & Benefits"
@@ -34,10 +38,14 @@
             </h3>
             <p
                 class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">
-                Whizz Systems specializes in transforming FPGA evaluation kits into deployable, market-ready solutions. Our expertise in AMD Xilinx FPGA platforms enables us to optimize your WH705 kit for real-world applications with enhanced performance and custom features..
+                Whizz Systems specializes in transforming FPGA evaluation kits into
+                deployable, market-ready solutions. Our expertise in AMD Xilinx FPGA
+                platforms enables us to optimize your WH705 kit for real-world
+                applications with enhanced performance and custom features..
             </p>
-            <app-button heading="Request a Custom Version" routerLink="/404" icon="assets/icons/r-arrow.svg"
-                size="small"></app-button>
+            <a href="https://webforms.pipedrive.com/f/6xYdPMyjTBq8hv0xLz4bhrElL3dpAoBetKYSVMMyn1eMv50CfpxVIYAJlRYzoxOv2X"
+                target="_blank"><app-button heading="Request a Custom Version"
+                    icon="assets/icons/webform.svg" size="small"></app-button></a>
         </div>
         <div class="w-full lg:w-[51%] flex">
             <div class="sm:mr-[27%] lg:mr-0 lg:ml-[15%] 2xl:ml-[29%] 3xl:ml-[34.5%]">
@@ -56,9 +64,11 @@
     </div>
     <div class="p-6 3xl:p-8 bg-card-gray rounded-md 3xl:rounded-lg">
         <div class="grid grid-cols-12 gap-6 3xl:gap-8">
-            <div *ngFor="let customization of customizations; let i = index" [ngClass]="{ 'lg:col-start-2': i == 4 }" class="col-span-12 sm:col-span-6 lg:col-span-3">
+            <div *ngFor="let customization of customizations; let i = index" [ngClass]="{ 'lg:col-start-2': i == 4 }"
+                class="col-span-12 sm:col-span-6 lg:col-span-3">
                 <div class="p-6 3xl:p-8 bg-white border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
-                    <img loading="lazy" width="40" height="40" class="w-10 3xl:w-12" [src]="customization.imgUrl" [alt]="customization.name" />
+                    <img loading="lazy" width="40" height="40" class="w-10 3xl:w-12" [src]="customization.imgUrl"
+                        [alt]="customization.name" />
                     <div class="h-[5rem] sm:h-[6rem] 3xl:h-[7.5rem]">
                         <h3
                             class="text-dark-gray2 text-[13px] xl:text-xs 2xl:text-[13px] 3xl:text-base font-medium lg:leading-[15px] 3xl:leading-[19.2px] my-3 3xl:my-4">
@@ -79,7 +89,9 @@
 <section class="px-[4%] sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
     <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 3xl:gap-16">
         <div class="w-full lg:w-[44%] 2xl:w-[46.2%] order-2 lg:order-1 p-6 sm:p-10 lg:p-0">
-            <img loading="lazy" width="537" height="300" class="object-cover" src="assets/featured-products/products/vhk158/collaboration.png" alt="Trusted Expertise, Backed by Collaboration" />
+            <img loading="lazy" width="537" height="300" class="object-cover"
+                src="assets/featured-products/products/vhk158/collaboration.png"
+                alt="Trusted Expertise, Backed by Collaboration" />
         </div>
         <div class="w-full lg:w-[56%] 2xl::w-[53.8%] order-1 lg:order-2">
             <h4
@@ -92,14 +104,19 @@
             </h3>
             <p
                 class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[24px] 3xl:leading-[28px] mb-4 3xl:mb-6">
-                When you work with Whizz Systems, you gain access to a trusted partner with deep expertise in AMD Xilinx FPGA platforms. Our 25 years experience of servicing  AMD/Xilinx in developing reference designs, evaluation kits, and connectivity solutions allows us to bring industry-leading experience to your project.
+                When you work with Whizz Systems, you gain access to a trusted partner
+                with deep expertise in AMD Xilinx FPGA platforms. Our 25 years
+                experience of servicing AMD/Xilinx in developing reference designs,
+                evaluation kits, and connectivity solutions allows us to bring
+                industry-leading experience to your project.
             </p>
             <p class="text-dark-gray2 text-[13px] 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
-                We understand the <b>architecture, design methodologies, and best practices</b>
-                used in AMD Xilinx-based solutions because we’ve worked directly with
-                them. Now, we’re extending that expertise to you—whether you need <b>custom
-                FPGA solutions, modifications to existing development kits, or full
-                productization of your design.</b>
+                We understand the
+                <b>architecture, design methodologies, and best practices</b> used in
+                AMD Xilinx-based solutions because we’ve worked directly with them. Now,
+                we’re extending that expertise to you—whether you need
+                <b>custom FPGA solutions, modifications to existing development kits, or
+                    full productization of your design.</b>
             </p>
         </div>
     </div>
@@ -107,4 +124,6 @@
 
 <!-- Contact Experts -->
 <app-product-cta slogan="Looking to Productize Your Dev Kit? Let’s Build It Together!"
-    btnText="Request a Custom Design Consultation" navigate="https://webforms.pipedrive.com/f/6xYdPMyjTBq8hv0xLz4bhrElL3dpAoBetKYSVMMyn1eMv50CfpxVIYAJlRYzoxOv2X"  icon="assets/icons/webform.svg"></app-product-cta>
+    btnText="Request a Custom Design Consultation"
+    navigate="https://webforms.pipedrive.com/f/6xYdPMyjTBq8hv0xLz4bhrElL3dpAoBetKYSVMMyn1eMv50CfpxVIYAJlRYzoxOv2X"
+    icon="assets/icons/webform.svg"></app-product-cta>

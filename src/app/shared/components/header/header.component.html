@@ -85,51 +85,6 @@
               </a>
             </div>
           </div>
-
-          <div
-            *ngIf="
-              activeBottomSection === 'resources' &&
-              item.dropdown === 'resources'
-            "
-            class="w-[36rem] 3xl:w-[45rem] p-2 3xl:p-[10px] flex gap-2 3xl:gap-[10px] bg-card-gray absolute left-0 transform -translate-x-[70%] top-[68px] 3xl:top-[88px] z-50 rounded-br-lg rounded-bl-lg"
-          >
-            <div
-              class="w-[38rem] 3xl:w-[46rem] bg-white border border-light-gray1 p-6 3xl:p-8 pr-0 text-sm text-nowrap rounded-lg"
-            >
-              <div *ngFor="let item of resourceItems">
-                <a
-                  class="inline-block text-dark-gray2 hover:text-teal2 text-xs 3xl:text-[15px] 3xl:leading-[22.5px] font-medium 3xl:font-semibold cursor-pointer mb-3 3xl:mb-[14px]"
-                  routerLink="item.link"
-                  >{{ item.label }}</a
-                >
-              </div>
-            </div>
-            <div class="bg-dark-gray2 pt-6 3xl:pt-8 px-6 3xl:px-8 rounded-lg">
-              <h3
-                class="text-sm 3xl:text-[15px] font-medium 3xl:font-semibold mb-6 3xl:mb-8 text-light-gray1"
-              >
-                Featured Article
-              </h3>
-              <div
-                class="pt-6 3xl:pt-8 px-6 3xl:px-8 bg-white rounded-tl-lg rounded-tr-lg"
-              >
-                <h3
-                  class="text-xl 3xl:text-2xl font-bold text-dark-gray2 mb-6 3xl:mb-8"
-                >
-                  Interesting Blog Title that <br />
-                  Can Fit On Two Lines
-                </h3>
-                <img
-                  height="auto"
-                  width="auto"
-                  loading="lazy"
-                  class="object-cover"
-                  src="assets/header/resources/featured-article.png"
-                  alt="img"
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </ng-container>
     </div>
@@ -149,7 +104,7 @@
             <input type="search" placeholder="Search" (focusin)=focusin() (focusout)=focusout()
               class="w-full py-1 text-sm 3xl:text-base bg-transparent focus:outline-none placeholder-light-gray1 focus:placeholder-transparent" />
           </div>
-          <app-animated-button routerLink="/404" heading="Search" size="large" bg="white"></app-animated-button>
+          <app-animated-button routerLink="/" heading="Search" size="large" bg="white"></app-animated-button>
           <i (click)="toggleSearchbar()"
             class="bi bi-x-lg text-2xl 3xl:text-3xl cursor-pointer hover:text-teal1 ml-3"></i>
         </div>
@@ -356,7 +311,7 @@
             <input type="search" (focusin)=focusin() (focusout)=focusout() placeholder="Search"
               class="w-full py-1 sm:py-2 text-sm bg-transparent focus:outline-none placeholder-light-gray1 focus:placeholder-transparent" />
           </div>
-          <app-animated-button routerLink="/404" heading="Search" size="large" bg="white"></app-animated-button>
+          <app-animated-button routerLink="/" heading="Search" size="large" bg="white"></app-animated-button>
           <i (click)="toggleSearchbar()" class="bi bi-x-lg text-xl cursor-pointer hover:text-teal1 ml-2"></i>
         </div>
 

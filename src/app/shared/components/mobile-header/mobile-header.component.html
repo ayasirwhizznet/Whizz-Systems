@@ -105,15 +105,6 @@
           </a>
         </div>
       </ng-container>
-
-      <ng-container *ngIf="item.dropdown === 'resources'">
-        <div *ngFor="let blog of blogItems" class="mb-4">
-          <a [routerLink]="blog.link" class="block text-base text-dark-gray1 hover:text-teal1"
-            (click)="closeMenuSection()">
-            {{ blog.label }}
-          </a>
-        </div>
-      </ng-container>
     </div>
   </div>
   <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"

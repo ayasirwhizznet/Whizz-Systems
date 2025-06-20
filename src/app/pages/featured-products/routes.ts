@@ -13,34 +13,6 @@ export const routes: Routes = [
         title: 'Featured Products',
       },
       {
-        path: 'oru-open-radio-unit',
-        loadComponent: () =>
-          import('./oru/oru.component').then((m) => m.OruComponent),
-        title: '5G/4G Open Radio Unit',
-      },
-      {
-        path: 'loopback-cards',
-        loadComponent: () =>
-          import('./loopback-cards/loopback-cards.component').then(
-            (m) => m.LoopbackCardsComponent
-          ),
-        title: 'Loopback Cards',
-      },
-      {
-        path: 'xilinix-evaluation-kit',
-        loadComponent: () =>
-          import(
-            './xilinix-evaluation-kit/xilinix-evaluation-kit.component'
-          ).then((m) => m.XilinixEvaluationKitComponent),
-        title: 'Xilinix Evaluation Kit',
-      },
-      {
-        path: 'usb-3/2',
-        loadComponent: () =>
-          import('./usb/usb.component').then((m) => m.UsbComponent),
-        title: 'USB 3/2',
-      },
-      {
         path: 'whizz-kintex-7FPGA-WH705',
         loadComponent: () =>
           import('./products/whizz-kintex-7FPGA-wh705/whizz-kintex-7FPGA-wh705component').then(

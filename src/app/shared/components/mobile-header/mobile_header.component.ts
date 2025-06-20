@@ -201,20 +201,13 @@ export class MobileHeaderComponent {
   ];
 
   featuredProductItems: MenuItem[] = [
-    { label: '5G ORU Open Radio Unit', link: '/featured-products/5g-oru' },
-    { label: 'Loopback Cards', link: '/featured-products/loopback-cards' },
+    { label: '5G ORU Open Radio Unit', link: '/' },
+    { label: 'Loopback Cards', link: '/' },
     {
       label: 'Xilinx Evaluation Kit',
-      link: '/featured-products/xilinix-evaluation-kit',
+      link: '/',
     },
-    { label: 'USB 3/2', link: '/featured-products/usb-3/2' },
-  ];
-
-  blogItems: MenuItem[] = [
-    { label: 'News & Events', link: '/404' },
-    { label: 'Whitepapers', link: '/404' },
-    { label: 'Customer Stories', link: '/404' },
-    { label: 'FAQ', link: '/404' },
+    { label: 'USB 3/2', link: '/' },
   ];
 
   toggleMenuSection(item: MenuItem) {
