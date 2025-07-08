@@ -74,46 +74,6 @@
             "source": "https://www.whizzsystems.com/industries/",
             "destination": "https://www.whizzsystems.com/",
             "permanent": true
-        },
-        {
-            "source": "",
-            "destination": "",
-            "permanent": true
-        },
-        {
-            "source": "",
-            "destination": "",
-            "permanent": true
-        },
-        {
-            "source": "",
-            "destination": "",
-            "permanent": true
-        },
-        {
-            "source": "",
-            "destination": "",
-            "permanent": true
-        },
-        {
-            "source": "",
-            "destination": "",
-            "permanent": true
-        },
-        {
-            "source": "",
-            "destination": "",
-            "permanent": true
-        },
-        {
-            "source": "",
-            "destination": "",
-            "permanent": true
-        },
-        {
-            "source": "",
-            "destination": "",
-            "permanent": true
         }
     ]
 }
