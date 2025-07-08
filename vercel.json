@@ -1,0 +1,119 @@
+{
+    "redirects": [
+        {
+            "source": "https://www.whizzsystems.com/electronic-manufacturing-assembly-services/",
+            "destination": "https://www.whizzsystems.com/services/advanced-manufacturing",
+            "permanent": true
+        },
+        {
+            "source": "https://www.whizzsystems.com/eol-end-of-life-components-materials/",
+            "destination": "https://www.whizzsystems.com/services/sustainable_engineering",
+            "permanent": true
+        },
+        {
+            "source": "https://www.whizzsystems.com/contact-us/",
+            "destination": "https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
+            "permanent": true
+        },
+        {
+            "source": "https://www.whizzsystems.com/test-services-fp-ict-fct-burn-in/",
+            "destination": "https://www.whizzsystems.com/services/lab-testing-solutions",
+            "permanent": true
+        },
+        {
+            "source": "https://www.whizzsystems.com/microcontroller-software/",
+            "destination": "https://www.whizzsystems.com/services/engineering-&-design/firmware-software-development",
+            "permanent": true
+        },
+        {
+            "source": "https://www.whizzsystems.com/services/engineering-&-design/firmware-software-development",
+            "destination": "https://www.whizzsystems.com/services/engineering-&-design/pcb-layout",
+            "permanent": true
+        },
+        {
+            "source": "https://www.whizzsystems.com/usb-software/",
+            "destination": "https://www.whizzsystems.com/services/engineering-&-design/firmware-software-development",
+            "permanent": true
+        },
+        {
+            "source": "https://www.whizzsystems.com/connected-products/",
+            "destination": "https://www.whizzsystems.com/featured-products",
+            "permanent": true
+        },
+        {
+            "source": "https://www.whizzsystems.com/wp-content/uploads/2021/02/ORU-Whizz-Whitepaper_Rev6_Nov05-2020_QQS.pdf",
+            "destination": "https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru",
+            "permanent": true
+        },
+        {
+            "source": "https://www.whizzsystems.com/programmable-logic/",
+            "destination": "https://www.whizzsystems.com/services/engineering-&-design/firmware-software-development",
+            "permanent": true
+        },
+        {
+            "source": "https://www.whizzsystems.com/dsp-software/",
+            "destination": "https://www.whizzsystems.com/services/engineering-&-design/firmware-software-development",
+            "permanent": true
+        },
+        {
+            "source": "https://www.whizzsystems.com/cloud-connectivity-design-iot/",
+            "destination": "https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru",
+            "permanent": true
+        },
+        {
+            "source": "https://www.whizzsystems.com/package-design-simulation/",
+            "destination": "https://www.whizzsystems.com/services/advanced-manufacturing#BoxBuild",
+            "permanent": true
+        },
+        {
+            "source": "https://www.whizzsystems.com/pc-software/",
+            "destination": "https://www.whizzsystems.com/services/engineering-&-design/firmware-software-development",
+            "permanent": true
+        },
+        {
+            "source": "https://www.whizzsystems.com/industries/",
+            "destination": "https://www.whizzsystems.com/",
+            "permanent": true
+        },
+        {
+            "source": "",
+            "destination": "",
+            "permanent": true
+        },
+        {
+            "source": "",
+            "destination": "",
+            "permanent": true
+        },
+        {
+            "source": "",
+            "destination": "",
+            "permanent": true
+        },
+        {
+            "source": "",
+            "destination": "",
+            "permanent": true
+        },
+        {
+            "source": "",
+            "destination": "",
+            "permanent": true
+        },
+        {
+            "source": "",
+            "destination": "",
+            "permanent": true
+        },
+        {
+            "source": "",
+            "destination": "",
+            "permanent": true
+        },
+        {
+            "source": "",
+            "destination": "",
+            "permanent": true
+        }
+    ]
+}
