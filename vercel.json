@@ -486,7 +486,7 @@
             "permanent": true
         },
         {
-            "source": "/test-services-fp-ict-fct-burn-in//1000",
+            "source": "/test-services-fp-ict-fct-burn-in/:slug*",
             "destination": "/services/lab-testing-solutions",
             "permanent": true
         },
@@ -501,7 +501,7 @@
             "permanent": true
         },
         {
-            "source": "/fpga-design//1000",
+            "source": "/fpga-design/:slug*",
             "destination": "/services/engineering-&-design/fpga",
             "permanent": true
         }
