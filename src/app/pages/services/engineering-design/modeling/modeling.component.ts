@@ -20,17 +20,17 @@ import { ServicesIntroComponent } from '@components/services-intro/services-intr
 export class ModelingComponent {
   coreServices: any[] = [
     {
-      imgUrl: 'assets/services/engg&design/3D-modeling/assembly-drawings.png',
+      imgUrl: 'assets/services/engg&design/3d-modeling-mechanical-design/assembly-drawings.png',
       name: '3D Models & 2D Assembly Drawings',
       desc: 'Detailed, standards-compliant PCB component designs. Custom designs ensuring functionality and durability.',
     },
     {
-      imgUrl: 'assets/services/engg&design/3D-modeling/advanced-mechanical.png',
+      imgUrl: 'assets/services/engg&design/3d-modeling-mechanical-design/advanced-mechanical.png',
       name: 'Advanced Mechanical Component Design',
       desc: 'Specialized solutions for I/O brackets, trays, and ingress-protected enclosures. Pole-mounted or wall-mounted solutions.',
     },
     {
-      imgUrl: 'assets/services/engg&design/3D-modeling/fea.png',
+      imgUrl: 'assets/services/engg&design/3d-modeling-mechanical-design/fea.png',
       name: 'Finite Element Analysis (FEA)',
       desc: 'Structural analysis for longevity and performance. Identifying structural weaknesses before production.',
     },

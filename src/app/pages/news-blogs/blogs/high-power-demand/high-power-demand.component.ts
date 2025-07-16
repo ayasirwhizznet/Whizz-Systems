@@ -109,13 +109,13 @@ export class HighPowerDemandComponent {
     const links = document.querySelectorAll('.link-to-power');
     links.forEach((link) => {
       link.addEventListener('click', () => {
-        this.router.navigate(['/services/engineering-&-design/power-delivery']);
+        this.router.navigate(['/services/engineering-design/power-delivery-network-simulation']);
       });
     });
   }
 
   navigateToPowerDelivery() {
-    this.router.navigate(['/services/engineering-&-design/power-delivery']);
+    this.router.navigate(['/services/engineering-design/power-delivery-network-simulation']);
   }
 
   private fragmentSubscription!: Subscription;

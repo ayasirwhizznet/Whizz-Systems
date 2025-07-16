@@ -20,17 +20,17 @@ import { ServicesContactExpertsComponent } from '@components/services-contact-ex
 export class PowerDeliveryComponent {
   coreServices: any = [
     {
-      imgUrl: 'assets/services/engg&design/power-delivery/dc.png',
+      imgUrl: 'assets/services/engg&design/power-delivery-network-simulation/dc.png',
       name: 'DC Power Analysis',
       desc: 'IR Drop Analysis, Current Density Analysis, Joule Heating Simulations.',
     },
     {
-      imgUrl: 'assets/services/engg&design/power-delivery/ac.png',
+      imgUrl: 'assets/services/engg&design/power-delivery-network-simulation/ac.png',
       name: 'AC Power Analysis',
       desc: 'Capacitor Optimization & Impedance Reduction.',
     },
     {
-      imgUrl: 'assets/services/engg&design/power-delivery/end.png',
+      imgUrl: 'assets/services/engg&design/power-delivery-network-simulation/end.png',
       name: 'End-to-End Layout Optimization',
       desc: 'Enhancing reliability by embedding simulation insights into PCB designs.',
     },

@@ -22,17 +22,17 @@
         },
         {
             "source": "/microcontroller-software/",
-            "destination": "/services/engineering-&-design/firmware-software-development",
+            "destination": "/services/engineering-design/firmware-software-development",
             "permanent": true
         },
         {
-            "source": "/services/engineering-&-design/firmware-software-development",
-            "destination": "/services/engineering-&-design/pcb-layout",
+            "source": "/services/engineering-design/firmware-software-development",
+            "destination": "/services/engineering-design/pcb-layout",
             "permanent": true
         },
         {
             "source": "/usb-software/",
-            "destination": "/services/engineering-&-design/firmware-software-development",
+            "destination": "/services/engineering-design/firmware-software-development",
             "permanent": true
         },
         {
@@ -47,12 +47,12 @@
         },
         {
             "source": "/programmable-logic/",
-            "destination": "/services/engineering-&-design/firmware-software-development",
+            "destination": "/services/engineering-design/firmware-software-development",
             "permanent": true
         },
         {
             "source": "/dsp-software/",
-            "destination": "/services/engineering-&-design/firmware-software-development",
+            "destination": "/services/engineering-design/firmware-software-development",
             "permanent": true
         },
         {
@@ -67,7 +67,7 @@
         },
         {
             "source": "/pc-software/",
-            "destination": "/services/engineering-&-design/firmware-software-development",
+            "destination": "/services/engineering-design/firmware-software-development",
             "permanent": true
         },
         {
@@ -132,7 +132,7 @@
         },
         {
             "source": "/custom-pcb-design",
-            "destination": "/services/engineering-&-design/pcb-layout",
+            "destination": "/services/engineering-design/pcb-layout",
             "permanent": true
         },
         {
@@ -162,7 +162,7 @@
         },
         {
             "source": "/embedded-technology/",
-            "destination": "/services/engineering-&-design/firmware-software-development",
+            "destination": "/services/engineering-design/firmware-software-development",
             "permanent": true
         },
         {
@@ -202,7 +202,7 @@
         },
         {
             "source": "/wp-content/uploads/2021/09/5G-design-reference-platform.pdf",
-            "destination": "/services/engineering-&-design/system-design-&-schematics",
+            "destination": "/services/engineering-design/system-schematic-services",
             "permanent": true
         },
         {
@@ -216,8 +216,8 @@
             "permanent": true
         },
         {
-            "source": "/features-of-our-fpga-design-services/",
-            "destination": "/services/engineering-&-design/fpga",
+            "source": "/features-of-our-fpga-design-services-design-services/",
+            "destination": "/services/engineering-design/fpga-design-services",
             "permanent": true
         },
         {
@@ -246,8 +246,8 @@
             "permanent": true
         },
         {
-            "source": "/fpga-design/",
-            "destination": "/services/engineering-&-design/fpga",
+            "source": "/fpga-design-services-design/",
+            "destination": "/services/engineering-design/fpga-design-services",
             "permanent": true
         },
         {
@@ -281,8 +281,8 @@
             "permanent": true
         },
         {
-            "source": "/fpga-hardware-design/",
-            "destination": "/services/engineering-&-design/fpga",
+            "source": "/fpga-design-services-hardware-design/",
+            "destination": "/services/engineering-design/fpga-design-services",
             "permanent": true
         },
         {
@@ -292,12 +292,12 @@
         },
         {
             "source": "/case_studies/fpgas-accelerate-hardware-designs/",
-            "destination": "/services/engineering-&-design/fpga",
+            "destination": "/services/engineering-design/fpga-design-services",
             "permanent": true
         },
         {
             "source": "/complex-circuit-boards-for-large-small-pcbs/",
-            "destination": "/services/engineering-&-design/pcb-layout",
+            "destination": "/services/engineering-design/pcb-layout",
             "permanent": true
         },
         {
@@ -306,23 +306,23 @@
             "permanent": true
         },
         {
-            "source": "/fpga-development-and-fpga-prototyping/",
-            "destination": "/services/engineering-&-design/fpga",
+            "source": "/fpga-design-services-development-and-fpga-design-services-prototyping/",
+            "destination": "/services/engineering-design/fpga-design-services",
             "permanent": true
         },
         {
             "source": "/custom-pcb-design-for-data-centers/",
-            "destination": "/services/engineering-&-design/pcb-layout",
+            "destination": "/services/engineering-design/pcb-layout",
             "permanent": true
         },
         {
             "source": "/mechanical-and-thermal-design/",
-            "destination": "/services/engineering-&-design/thermal-management",
+            "destination": "/services/engineering-design/thermal-management-solutions",
             "permanent": true
         },
         {
             "source": "/signal-integrity-simulation",
-            "destination": "/services/engineering-&-design/signal-integrity-simulations",
+            "destination": "/services/engineering-design/signal-integrity-simulation-services",
             "permanent": true
         },
         {
@@ -332,17 +332,17 @@
         },
         {
             "source": "/signal-integrity-simulation/",
-            "destination": "/services/engineering-&-design/signal-integrity-simulations",
+            "destination": "/services/engineering-design/signal-integrity-simulation-services",
             "permanent": true
         },
         {
             "source": "/signal-integrity-simulation/",
-            "destination": "/services/engineering-&-design/signal-integrity-simulations",
+            "destination": "/services/engineering-design/signal-integrity-simulation-services",
             "permanent": true
         },
         {
             "source": "/custom-pcb-design/",
-            "destination": "/services/engineering-&-design/pcb-layout",
+            "destination": "/services/engineering-design/pcb-layout",
             "permanent": true
         },
         {
@@ -382,12 +382,12 @@
         },
         {
             "source": "/signal-integrity-simulation-offered-by-a-leading-product-engineering-service-provider-in-silicon-valley-california/",
-            "destination": "/services/engineering-&-design/signal-integrity-simulations",
+            "destination": "/services/engineering-design/signal-integrity-simulation-services",
             "permanent": true
         },
         {
             "source": "/news/signal-integrity-simulation-offered-by-a-leading-product-engineering-service-provider-in-silicon-valley-california/",
-            "destination": "/services/engineering-&-design/signal-integrity-simulations",
+            "destination": "/services/engineering-design/signal-integrity-simulation-services",
             "permanent": true
         },
         {
@@ -416,8 +416,8 @@
             "permanent": true
         },
         {
-            "source": "/custom-ip-development-and-fpga-design-services",
-            "destination": "/services/engineering-&-design/fpga",
+            "source": "/custom-ip-development-and-fpga-design-services-design-services",
+            "destination": "/services/engineering-design/fpga-design-services",
             "permanent": true
         },
         {
@@ -426,8 +426,8 @@
             "permanent": true
         },
         {
-            "source": "/custom-ip-development-and-fpga-design-services/",
-            "destination": "/services/engineering-&-design/fpga",
+            "source": "/custom-ip-development-and-fpga-design-services-design-services/",
+            "destination": "/services/engineering-design/fpga-design-services",
             "permanent": true
         },
         {
@@ -482,7 +482,7 @@
         },
         {
             "source": "/mechanical-and-thermal-design",
-            "destination": "/services/engineering-&-design/thermal-management",
+            "destination": "/services/engineering-design/thermal-management-solutions",
             "permanent": true
         },
         {
@@ -496,13 +496,13 @@
             "permanent": true
         },
         {
-            "source": "/fpga-design",
-            "destination": "/services/engineering-&-design/fpga",
+            "source": "/fpga-design-services-design",
+            "destination": "/services/engineering-design/fpga-design-services",
             "permanent": true
         },
         {
-            "source": "/fpga-design/:slug*",
-            "destination": "/services/engineering-&-design/fpga",
+            "source": "/fpga-design-services-design/:slug*",
+            "destination": "/services/engineering-design/fpga-design-services",
             "permanent": true
         }
     ]

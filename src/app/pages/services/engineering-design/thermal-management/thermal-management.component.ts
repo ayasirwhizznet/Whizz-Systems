@@ -6,7 +6,7 @@ import { ServicesCoreServicesComponent } from '@components/services-core-service
 import { ServicesBenefitsComponent } from '@components/services-benefits/services-benefits.component';
 
 @Component({
-  selector: 'app-thermal-management',
+  selector: 'app-thermal-management-solutions',
   standalone: true,
   imports: [
     ServicesHeroComponent,
@@ -20,22 +20,22 @@ import { ServicesBenefitsComponent } from '@components/services-benefits/service
 export class ThermalManagementComponent {
   coreServices: any[] = [
     {
-      imgUrl: 'assets/services/engg&design/thermal-management/cfd-analysis.png',
+      imgUrl: 'assets/services/engg&design/thermal-management-solutions/cfd-analysis.png',
       name: 'Thermal and CFD Analysis',
       desc: 'Simulating airflow and heat distribution to identify hotspots and optimize system performance.',
     },
     {
-      imgUrl: 'assets/services/engg&design/thermal-management/thermal-designs.png',
+      imgUrl: 'assets/services/engg&design/thermal-management-solutions/thermal-designs.png',
       name: 'Custom Thermal Designs',
       desc: 'Tailored designs for high-power components and space-limited systems.',
     },
     {
-      imgUrl: 'assets/services/engg&design/thermal-management/cooling-systems.png',
+      imgUrl: 'assets/services/engg&design/thermal-management-solutions/cooling-systems.png',
       name: 'Advanced Cooling Systems',
       desc: 'Vapor chambers, cold plates, liquid cooling, and integrated heatsink-enclosure designs for complex needs.',
     },
     {
-      imgUrl: 'assets/services/engg&design/thermal-management/parametric-studies.png',
+      imgUrl: 'assets/services/engg&design/thermal-management-solutions/parametric-studies.png',
       name: 'Parametric Studies',
       desc: 'Software-based thermal characterization to ensure optimal performance.',
     },

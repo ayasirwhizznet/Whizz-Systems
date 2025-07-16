@@ -11,7 +11,7 @@ export const routes: Routes = [
         title: 'Services',
       },
       {
-        path: 'engineering-&-design',
+        path: 'engineering-design',
         loadChildren: () =>
           import('./engineering-design/routes').then((m) => m.routes),
       },

@@ -149,32 +149,32 @@ export class HeaderComponent implements OnInit {
         items: [
           {
             label: 'System Design/Schematics',
-            link: '/services/engineering-&-design/system-design-&-schematics',
+            link: '/services/engineering-design/system-schematic-services',
           },
-          { label: 'FPGA Design', link: '/services/engineering-&-design/fpga' },
+          { label: 'FPGA Design', link: '/services/engineering-design/fpga-design-services' },
           {
             label: 'Firmware & Software Development',
-            link: '/services/engineering-&-design/firmware-software-development',
+            link: '/services/engineering-design/firmware-software-development',
           },
           {
             label: 'PCB Layout',
-            link: '/services/engineering-&-design/pcb-layout',
+            link: '/services/engineering-design/pcb-layout',
           },
           {
             label: '3D Modeling/Mechanical Engineering',
-            link: '/services/engineering-&-design/3D-modeling',
+            link: '/services/engineering-design/3d-modeling-mechanical-design',
           },
           {
             label: 'Signal Integrity Simulations',
-            link: '/services/engineering-&-design/signal-integrity-simulations',
+            link: '/services/engineering-design/signal-integrity-simulation-services',
           },
           {
             label: 'Power Delivery Network Simulations',
-            link: '/services/engineering-&-design/power-delivery',
+            link: '/services/engineering-design/power-delivery-network-simulation',
           },
           {
             label: 'Thermal Management/Thermal Simulation',
-            link: '/services/engineering-&-design/thermal-management',
+            link: '/services/engineering-design/thermal-management-solutions',
           },
         ],
       },

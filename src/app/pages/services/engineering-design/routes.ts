@@ -5,20 +5,28 @@ export const routes: Routes = [
     path: '',
     children: [
       {
-        path: 'system-design-&-schematics',
+        path: 'system-schematic-services',
         loadComponent: () =>
           import('./system-design-schematics/system-design.component').then(
             (m) => m.SystemDesignComponent
           ),
-        title: 'Expert Hardware Design & Schematics Services',
-        data: { description: 'Get expert hardware design & schematics solutions for efficient, high-performance electronics. Precision-driven PCB & circuit design.' }
+        title:
+          'System Design & Schematic Services | Hardware Design Company - Whizz Systems',
+        data: {
+          description: `Whizz Systems offers industry-leading system architecture and schematic design
+services, from FPGA customization to power budgeting and compliance engineering.`,
+        },
       },
       {
-        path: 'fpga',
+        path: 'fpga-design-services',
         loadComponent: () =>
           import('./fpga/fpga.component').then((m) => m.FpgaComponent),
-        title: 'FPGA Design & Development Experts | High-Performance Solutions',
-        data: { description: 'Get expert FPGA design & development for high-speed, efficient, and scalable solutions. Custom FPGA programming & optimization.' }
+        title:
+          'FPGA Design &amp; Development Services | Custom RTL Coding &amp; IP Integration - Whizz Systems',
+        data: {
+          description: `FPGA Design &amp; Development Services | Custom RTL Coding &amp; IP Integration - Whizz
+Systems`,
+        },
       },
       {
         path: 'pcb-layout',
@@ -26,57 +34,81 @@ export const routes: Routes = [
           import('./pcb-layout/pcb-layout.component').then(
             (m) => m.PcbLayoutComponent
           ),
-        title: 'PCB Layout & Design Services | Precision Engineering',
-        data: { description: 'Get expert PCB layout & design for high-performance circuits. Precision-driven PCB solutions for efficient and reliable electronics.' }
-
+        title:
+          'PCB Layout Services | High-Speed &amp; High-Density PCB Design – Whizz Systems',
+        data: {
+          description: `Whizz Systems delivers expert PCB layout services with high-speed routing, signal
+integrity optimization, power plane planning, and DFM/DFT for flawless fabrication and
+performance.`,
+        },
       },
       {
-        path: '3D-modeling',
+        path: '3d-modeling-mechanical-design',
         loadComponent: () =>
           import('./modeling/modeling.component').then(
             (m) => m.ModelingComponent
           ),
-        title: '3D Modeling Services with Expert Mechanical Engineering Solutions',
-        data: { description: 'Get precise 3D modeling services for mechanical engineering, prototyping, and product design. High-quality CAD models for innovation.' }
+        title:
+          '3D Modeling &amp; Mechanical Design Services | Enclosure Design for Electronics – Whizz Systems',
+        data: {
+          description: `Whizz Systems offers expert 3D modeling and mechanical design for electronic
+products. From CAD drawings to thermal enclosures and FEA analysis, we deliver
+production-ready designs that perform.`,
+        },
       },
       {
-        path: 'signal-integrity-simulations',
+        path: 'signal-integrity-simulation-services',
         loadComponent: () =>
           import('./signal-integrity/signal-integrity.component').then(
             (m) => m.SignalIntegrityComponent
           ),
-        title: 'Signal Integrity Simulations Optimized PCB Performance',
-        data: { description: 'Ensure reliable high-speed designs with expert signal integrity simulations. Reduce noise, EMI, and optimize PCB performance efficiently.' }
-
+        title:
+          'Signal Integrity Simulation Services for High-Speed PCB Design | Whizz Systems',
+        data: {
+          description: `Whizz Systems provides advanced pre- and post-layout signal integrity simulation services for high-speed
+PCB designs. Get reliable, optimized performance with DDR, PCIe, and SerDes simulation expertise.`,
+        },
       },
       {
-        path: 'power-delivery',
+        path: 'power-delivery-network-simulation',
         loadComponent: () =>
           import('./power-delivery/power-delivery.component').then(
             (m) => m.PowerDeliveryComponent
           ),
-        title: 'Power Delivery Network Simulations for Reliable Designs',
-        data: { description: 'Optimize power integrity with expert Power Delivery Network Simulations. Ensure stable voltage, reduce noise, and enhance PCB performance.' }
-
+        title:
+          'Power Delivery Network (PDN) Simulation Services | Whizz Systems',
+        data: {
+          description: `Whizz Systems offers advanced PDN simulation services for efficient, stable, and cost-effective
+power delivery in high-performance PCBs. Get IR drop, current density, and AC impedance
+analysis.`,
+        },
       },
       {
-        path: 'thermal-management',
+        path: 'thermal-management-solutions',
         loadComponent: () =>
           import('./thermal-management/thermal-management.component').then(
             (m) => m.ThermalManagementComponent
           ),
-        title: 'Thermal Management Solutions for Efficient Heat Control',
-        data: { description: 'Optimize device performance with expert thermal management solutions. Advanced thermal simulation for heat dissipation and reliability.' },
+        title: 'Thermal Management Solutions for Electronics | Whizz Systems',
+        data: {
+          description: `Boost performance and reliability with Whizz Systems&#39; thermal management services. We
+specialize in CFD thermal analysis, vapor chamber cooling, and custom thermal design for high-
+performance electronics.`,
+        },
       },
       {
         path: 'firmware-software-development',
         loadComponent: () =>
-          import('./firmware-software-development/firmware-software-development.component').then(
-            (m) => m.FirmwareSoftwareDevelopmentComponent
-          ),
-        title: 'Firmware Solutions & Software Development Experts',
-        data: { description: 'Get reliable firmware & software solutions for seamless device performance. Expert software & embedded system development for efficiency & security.' }
-
+          import(
+            './firmware-software-development/firmware-software-development.component'
+          ).then((m) => m.FirmwareSoftwareDevelopmentComponent),
+        title:
+          'Firmware &amp; Embedded Software Development Services | IoT &amp; RTOS Experts - Whizz Systems',
+        data: {
+          description: `Whizz Systems offers expert firmware and software development services for
+embedded systems, IoT, and cloud integration. From RTOS to UI apps, we build
+complete system solutions.`,
+        },
       },
     ],
   },
