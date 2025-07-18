@@ -1,44 +1,56 @@
 <section class="px-0 sm:px-[6.3%] mb-8 lg:mb-12 3xl:mb-16">
-  <div
-    class="relative p-8 lg:p-12 3xl:p-16 flex gap-8 lg:gap-14 3xl:gap-[59px] flex-col lg:flex-col justify-between"
-  >
-    <video
-      class="absolute inset-0 w-full h-full object-cover sm:rounded-xl 3xl:rounded-2xl"
-      autoplay
-      muted
-      playsinline
-      loop
-      preload="auto"
-      oncanplay="this.play()"
-      onloadedmetadata="this.muted = true"
-    >
-      <source src="assets/hero/rebot.mp4" type="video/mp4" />
-    </video>
+  <div class="relative h-[70vh] sm:h-[40vh] lg:h-[75vh] 2xl:h-[80vh] sm:rounded-xl 3xl:rounded-2xl">
+    @for (slide of slides; track $index; let i = $index) {
     <div
-      class="absolute inset-0 bg-gradient-to-t from-dark-gray1 to-dark-gray1 mix-blend-hard-light sm:rounded-xl 3xl:rounded-2xl"
-    ></div>
-    <div class="w-full lg:w-[70%] 2xl:w-[75%] relative z-10">
-      <h1
-        class="lg:px-2 3xl:px-3 text-white text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-bold sm:leading-[43px] lg:leading-[60px] 2xl:leading-[70px] 3xl:leading-[84px] lg:mt-16 3xl:mt-20 w-full sm:w-3/5 lg:w-full"
-      >
-        Powering the Future of Next Generation Electronics Design and
-        Manufacturing
-      </h1>
+      class="slide px-4 sm:px-8 lg:px-0 lg:pl-12 3xl:pl-16 py-0 lg:py-10 2xl:py-12 3xl:py-16 sm:rounded-xl 3xl:rounded-2xl"
+      [class.active]="currentSlide() === i">
+      <img class="img-first w-1/2 h-5/7 hidden lg:block" *ngIf="i == 0" src="assets/home/hero/slide1-ellipsis.png"
+        alt="Slide 1 Image" />
+      <img class="img-first hidden lg:block" [ngClass]="{
+          'h-2/3 2xl:h-[70%] w-1/2': i == 0,
+          'h-3/4 w-[45%] 2xl:h-3/4': i == 1,
+          'h-4/5 lg:mr-12 3x:mr-16 lg:mb-12 3x:mb-16': i == 2
+        }" [src]="slide.imgUrl" alt="Slide 1 Image" />
+      <div class="slide-content">
+        <h1
+          class="text-dark-gray1 text-2xl sm:text-3xl lg:text-[40px] 2xl:text-5xl 3xl:text-[64px] lg:leading-[50px] 2xl:leading-[70px] 3xl:leading-[102.4px] font-semibold 3xl:font-bold">
+          {{ slide.title }}
+        </h1>
+        <h2
+          class="text-white lg:text-2xl 2xl:text-3xl 3xl:text-[38px] font-semibold 3xl:font-bold max-w-xl 2xl:max-w-3xl">
+          {{ slide.subtitle }}
+        </h2>
+        <div class="flex justify-between items-center">
+          <div class="lg:w-3/5">
+            <p
+              class="text-white lg:text-lg 2xl:text-xl 3xl:text-2xl mt-8 3xl:mt-10 mb-6 3xl:mb-8 lg:max-w-[480px] 2xl:max-w-lg">
+              {{ slide.content }}
+            </p>
+            <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
+              target="_blank"><app-button heading="Contact us" icon="assets/icons/webform.svg"
+                [size]="'medium'"></app-button></a>
+
+            @if (slide.categories) {
+            <div class="categories mt-8 3xl:mt-10" [ngClass]="{
+                'justify-start': i == 0,
+                'justify-center max-w-xl 2xl:max-w-[46rem] 2xl:-ml-12 3xl:-ml-0':
+                  i == 1
+              }">
+              @for (category of slide.categories; track category) {
+              <div class="category flex items-center flex-wrap gap-7 3xl:gap-8" [innerHTML]="category"></div>
+              }
+            </div>
+            }
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="w-full lg:pl-[62%] z-10 mb-2 3xl:mb-4">
-      <h2
-        class="text-white font-light text-sm 3xl:text-lg mb-6 3xl:mb-8 max-w-[18rem] 3xl:max-w-sm"
-      >
-        We excel at bringing products to market swiftly while staying ahead of
-        the curve in material science and advanced assembly techniques. Let’s
-        innovate and scale together!
-      </h2>
-      <app-button
-        [size]="'large'"
-        heading="Learn more"
-        routerLink="/services"
-        icon="assets/icons/r-arrow.svg"
-      ></app-button>
+    }
+
+    <div class="square-indicators">
+      @for (slide of slides; track $index; let i = $index) {
+      <button (click)="goToSlide(i)" [class.active]="currentSlide() === i" class="square-indicator"></button>
+      }
     </div>
   </div>
 </section>
