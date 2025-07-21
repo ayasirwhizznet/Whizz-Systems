@@ -1,56 +1,151 @@
 <section class="px-0 sm:px-[6.3%] mb-8 lg:mb-12 3xl:mb-16">
-  <div class="relative h-[70vh] sm:h-[40vh] lg:h-[75vh] 2xl:h-[80vh] sm:rounded-xl 3xl:rounded-2xl">
-    @for (slide of slides; track $index; let i = $index) {
+  <div class="relative h-[70vh] sm:h-[40vh] lg:h-[75vh] 2xl:h-[80vh] sm:rounded-xl 3xl:rounded-2xl overflow-hidden">
+
+    <!-- Slide 1 -->
     <div
       class="slide px-4 sm:px-8 lg:px-0 lg:pl-12 3xl:pl-16 py-0 lg:py-10 2xl:py-12 3xl:py-16 sm:rounded-xl 3xl:rounded-2xl"
-      [class.active]="currentSlide() === i">
-      <img class="img-first w-1/2 h-5/7 hidden lg:block" *ngIf="i == 0" src="assets/home/hero/slide1-ellipsis.png"
+      [class.active]="currentSlide() === 0">
+      <img class="img-first w-1/2 h-5/7 hidden lg:block" src="assets/home/hero/slide1-ellipsis.png"
+        alt="Slide 1 Ellipsis" />
+      <img class="img-first hidden lg:block h-2/3 2xl:h-[70%] w-1/2" src="assets/home/hero/slide1.png"
         alt="Slide 1 Image" />
-      <img class="img-first hidden lg:block" [ngClass]="{
-          'h-2/3 2xl:h-[70%] w-1/2': i == 0,
-          'h-3/4 w-[45%] 2xl:h-3/4': i == 1,
-          'h-4/5 lg:mr-12 3x:mr-16 lg:mb-12 3x:mb-16': i == 2
-        }" [src]="slide.imgUrl" alt="Slide 1 Image" />
       <div class="slide-content">
         <h1
-          class="text-dark-gray1 text-2xl sm:text-3xl lg:text-[40px] 2xl:text-5xl 3xl:text-[64px] lg:leading-[50px] 2xl:leading-[70px] 3xl:leading-[102.4px] font-semibold 3xl:font-bold">
-          {{ slide.title }}
+          class="text-dark-gray1 text-2xl sm:text-3xl lg:text-[40px] 2xl:text-5xl 3xl:text-[64px] font-semibold 3xl:font-bold lg:leading-[50px] 2xl:leading-[70px] 3xl:leading-[102.4px]">
+          25+ Years Building What’s Next
         </h1>
-        <h2
-          class="text-white lg:text-2xl 2xl:text-3xl 3xl:text-[38px] font-semibold 3xl:font-bold max-w-xl 2xl:max-w-3xl">
-          {{ slide.subtitle }}
+        <h2 class="text-white lg:text-2xl 2xl:text-3xl 3xl:text-[38px] font-semibold 3xl:font-bold">
+          Trusted by the World’s Most Advanced Hardware Teams
         </h2>
         <div class="flex justify-between items-center">
           <div class="lg:w-3/5">
             <p
               class="text-white lg:text-lg 2xl:text-xl 3xl:text-2xl mt-8 3xl:mt-10 mb-6 3xl:mb-8 lg:max-w-[480px] 2xl:max-w-lg">
-              {{ slide.content }}
+              For over two decades, Whizz Systems has delivered high-performance
+              electronic solutions across AI compute, semiconductors,
+              networking, medical, defense, and more. Fortune 500s and
+              high-growth startups count on us to help them bring complex
+              systems to market—faster.
             </p>
             <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
-              target="_blank"><app-button heading="Contact us" icon="assets/icons/webform.svg"
-                [size]="'medium'"></app-button></a>
-
-            @if (slide.categories) {
-            <div class="categories mt-8 3xl:mt-10" [ngClass]="{
-                'justify-start': i == 0,
-                'justify-center max-w-xl 2xl:max-w-[46rem] 2xl:-ml-12 3xl:-ml-0':
-                  i == 1
-              }">
-              @for (category of slide.categories; track category) {
-              <div class="category flex items-center flex-wrap gap-7 3xl:gap-8" [innerHTML]="category"></div>
-              }
+              target="_blank">
+              <app-button heading="Contact us" icon="assets/icons/webform.svg" [size]="'medium'"></app-button>
+            </a>
+            <div class="categories mt-8 3xl:mt-10 justify-start">
+              <div class="category flex items-center flex-wrap gap-7 3xl:gap-8">
+                <img class="w-12 sm:w-16 3xl:w-[70px]" src="assets/home/ideas/14001.svg" />
+                <img class="w-12 sm:w-16 3xl:w-[70px]" src="assets/home/ideas/13485.svg" />
+                <img class="w-12 sm:w-16 3xl:w-[70px]" src="assets/home/ideas/9001.svg" />
+                <img class="w-12 sm:w-16 3xl:w-[70px]" src="assets/home/ideas/27001.svg" />
+                <img class="w-12 sm:w-16 3xl:w-[70px]" src="assets/home/ideas/itar.svg" />
+              </div>
             </div>
-            }
           </div>
         </div>
       </div>
     </div>
-    }
 
-    <div class="square-indicators">
-      @for (slide of slides; track $index; let i = $index) {
-      <button (click)="goToSlide(i)" [class.active]="currentSlide() === i" class="square-indicator"></button>
-      }
+    <!-- Slide 2 -->
+    <div
+      class="slide px-4 sm:px-8 lg:px-0 lg:pl-12 3xl:pl-16 py-0 lg:py-10 2xl:py-12 3xl:py-16 sm:rounded-xl 3xl:rounded-2xl"
+      [class.active]="currentSlide() === 1">
+      <img class="img-first hidden lg:block h-3/4 w-[45%] 2xl:h-3/4" src="assets/home/hero/slide2.png"
+        alt="Slide 2 Image" />
+      <div class="slide-content">
+        <h1
+          class="text-dark-gray1 text-2xl sm:text-3xl lg:text-[40px] 2xl:text-5xl 3xl:text-[64px] font-semibold 3xl:font-bold lg:leading-[50px] 2xl:leading-[70px] 3xl:leading-[102.4px]">
+          Pushing For What’s Next
+        </h1>
+        <h2
+          class="text-white lg:text-2xl 2xl:text-3xl 3xl:text-[38px] font-semibold 3xl:font-bold max-w-xl 2xl:max-w-3xl">
+          Engineering the next generation of high-performance systems — today.
+        </h2>
+        <div class="flex justify-between items-center">
+          <div class="lg:w-3/5">
+            <p
+              class="text-white lg:text-lg 2xl:text-xl 3xl:text-2xl mt-8 3xl:mt-10 mb-6 3xl:mb-8 lg:max-w-[480px] 2xl:max-w-lg">
+              From high-pin-count packages to extreme power and thermal
+              constraints, we engineer complex systems that push performance
+              boundaries in advanced compute platforms.
+            </p>
+            <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
+              target="_blank">
+              <app-button heading="Contact us" icon="assets/icons/webform.svg" [size]="'medium'"></app-button>
+            </a>
+            <div class="categories mt-8 3xl:mt-10 justify-center max-w-xl 2xl:max-w-[46rem] 2xl:-ml-12 3xl:-ml-0">
+              <div class="category flex items-center flex-wrap gap-3 3xl:gap-4">
+                <img class="w-8 2xl:w-10 3xl:w-[56px]" src="assets/home/hero/semiconductors.svg" alt="category" />
+                <span class="text-xs 2xl:text-sm 3xl:text-base text-white">Semiconductors</span>
+              </div>
+              <div class="category flex items-center flex-wrap gap-3 3xl:gap-4">
+                <img class="w-8 2xl:w-10 3xl:w-[56px]" src="assets/home/hero/defence-aerospace.svg" alt="category" />
+                <span class="text-xs 2xl:text-sm 3xl:text-base text-white">Defense & Aerospace</span>
+              </div>
+              <div class="category flex items-center flex-wrap gap-3 3xl:gap-4">
+                <img class="w-8 2xl:w-10 3xl:w-[56px]" src="assets/home/hero/robotics.svg" alt="category" />
+                <span class="text-xs 2xl:text-sm 3xl:text-base text-white">Robotics</span>
+              </div>
+              <div class="category flex items-center flex-wrap gap-3 3xl:gap-4">
+                <img class="w-8 2xl:w-10 3xl:w-[56px]" src="assets/home/hero/ai-compute.svg" alt="category" />
+                <span class="text-xs 2xl:text-sm 3xl:text-base text-white">AI Compute</span>
+              </div>
+              <div class="category flex items-center flex-wrap gap-3 3xl:gap-4">
+                <img class="w-8 2xl:w-10 3xl:w-[56px]" src="assets/home/hero/medical -devices.svg" alt="category" />
+                <span class="text-xs 2xl:text-sm 3xl:text-base text-white">Medical Devices</span>
+              </div>
+              <div class="category flex items-center flex-wrap gap-3 3xl:gap-4">
+                <img class="w-8 2xl:w-10 3xl:w-[56px]" src="assets/home/hero/servers-data-centers.svg" alt="category" />
+                <span class="text-xs 2xl:text-sm 3xl:text-base text-white">Servers & Data Centers</span>
+              </div>
+              <div class="category flex items-center flex-wrap gap-3 3xl:gap-4">
+                <img class="w-8 2xl:w-10 3xl:w-[56px]" src="assets/home/hero/cloud-compute.svg" alt="category" />
+                <span class="text-xs 2xl:text-sm 3xl:text-base text-white">Cloud Compute</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Slide 3 -->
+    <div
+      class="slide px-4 sm:px-8 lg:px-0 lg:pl-12 3xl:pl-16 py-0 lg:py-10 2xl:py-12 3xl:py-16 sm:rounded-xl 3xl:rounded-2xl"
+      [class.active]="currentSlide() === 2">
+      <img class="img-first hidden lg:block h-4/5 lg:mr-12 3xl:mr-16 lg:mb-12 3xl:mb-16"
+        src="assets/home/hero/slide3.png" alt="Slide 3 Image" />
+      <div class="slide-content">
+        <h1
+          class="text-dark-gray1 text-2xl sm:text-3xl lg:text-[40px] 2xl:text-5xl 3xl:text-[64px] font-semibold 3xl:font-bold lg:leading-[50px] 2xl:leading-[70px] 3xl:leading-[102.4px]">
+          All-in or Plug-in. You Choose.
+        </h1>
+        <h2
+          class="text-white lg:text-2xl 2xl:text-3xl 3xl:text-[38px] font-semibold 3xl:font-bold max-w-xl 2xl:max-w-3xl">
+          Engage at any stage and access only what you need
+        </h2>
+        <div class="flex justify-between items-center">
+          <div class="lg:w-3/5">
+            <p
+              class="text-white lg:text-lg 2xl:text-xl 3xl:text-2xl mt-8 3xl:mt-10 mb-6 3xl:mb-8 lg:max-w-[480px] 2xl:max-w-lg">
+              Whether starting from concept or scaling an NPI, Whizz Systems
+              delivers flexibility without compromise. All engineering, layout,
+              testing, and manufacturing is handled in-house—ready to plug into
+              your process, wherever you are
+            </p>
+            <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
+              target="_blank">
+              <app-button heading="Contact us" icon="assets/icons/webform.svg" [size]="'medium'"></app-button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicators -->
+    <div class="square-indicators">
+      <button (click)="goToSlide(0)" [class.active]="currentSlide() === 0" class="square-indicator"></button>
+      <button (click)="goToSlide(1)" [class.active]="currentSlide() === 1" class="square-indicator"></button>
+      <button (click)="goToSlide(2)" [class.active]="currentSlide() === 2" class="square-indicator"></button>
+    </div>
+
   </div>
 </section>
