@@ -26,6 +26,17 @@ export class HeroComponent implements OnInit {
 
   intervalId: any;
 
+  nextSlide() {
+    const next = (this.currentSlide() + 1) % 3;
+    this.currentSlide.set(next);
+  }
+
+  prevSlide() {
+    const prev = (this.currentSlide() - 1 + 3) % 3;
+    this.currentSlide.set(prev);
+  }
+
+
   autoSlide() {
     this.intervalId = setInterval(() => {
       const next = (this.currentSlide() + 1) % 3;

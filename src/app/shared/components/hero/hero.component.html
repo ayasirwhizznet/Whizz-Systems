@@ -3,7 +3,7 @@
 
     <!-- Slide 1 -->
     <div
-      class="slide px-4 sm:px-8 lg:px-0 lg:pl-12 3xl:pl-16 py-0 lg:py-10 2xl:py-12 3xl:py-16 sm:rounded-xl 3xl:rounded-2xl"
+      class="slide px-8 sm:px-8 lg:px-0 lg:pl-12 3xl:pl-16 py-0 lg:py-10 2xl:py-12 3xl:py-16 sm:rounded-xl 3xl:rounded-2xl"
       [class.active]="currentSlide() === 0">
       <img class="img-first w-1/2 h-5/7 hidden lg:block" src="assets/home/hero/slide1-ellipsis.png"
         alt="Slide 1 Ellipsis" />
@@ -47,7 +47,7 @@
 
     <!-- Slide 2 -->
     <div
-      class="slide px-4 sm:px-8 lg:px-0 lg:pl-12 3xl:pl-16 py-0 lg:py-10 2xl:py-12 3xl:py-16 sm:rounded-xl 3xl:rounded-2xl"
+      class="slide px-8 sm:px-8 lg:px-0 lg:pl-12 3xl:pl-16 py-0 lg:py-10 2xl:py-12 3xl:py-16 sm:rounded-xl 3xl:rounded-2xl"
       [class.active]="currentSlide() === 1">
       <img class="img-first hidden lg:block h-3/4 w-[45%] 2xl:h-3/4" src="assets/home/hero/slide2.png"
         alt="Slide 2 Image" />
@@ -57,8 +57,8 @@
           Pushing For What’s Next
         </h1>
         <h2
-          class="text-white lg:text-2xl 2xl:text-3xl 3xl:text-[38px] font-semibold 3xl:font-bold max-w-xl 2xl:max-w-3xl">
-          Engineering the next generation of high-performance systems — today.
+          class="text-white lg:text-2xl 2xl:text-3xl 3xl:text-[38px] font-semibold 3xl:font-bold">
+          Engineering the next generation of <br>high-performance systems — today.
         </h2>
         <div class="flex justify-between items-center">
           <div class="lg:w-3/5">
@@ -109,7 +109,7 @@
 
     <!-- Slide 3 -->
     <div
-      class="slide px-4 sm:px-8 lg:px-0 lg:pl-12 3xl:pl-16 py-0 lg:py-10 2xl:py-12 3xl:py-16 sm:rounded-xl 3xl:rounded-2xl"
+      class="slide px-8 sm:px-8 lg:px-0 lg:pl-12 3xl:pl-16 py-0 lg:py-10 2xl:py-12 3xl:py-16 sm:rounded-xl 3xl:rounded-2xl"
       [class.active]="currentSlide() === 2">
       <img class="img-first hidden lg:block h-4/5 lg:mr-12 3xl:mr-16 lg:mb-12 3xl:mb-16"
         src="assets/home/hero/slide3.png" alt="Slide 3 Image" />
@@ -119,7 +119,7 @@
           All-in or Plug-in. You Choose.
         </h1>
         <h2
-          class="text-white lg:text-2xl 2xl:text-3xl 3xl:text-[38px] font-semibold 3xl:font-bold max-w-xl 2xl:max-w-3xl">
+          class="text-white lg:text-2xl 2xl:text-3xl 3xl:text-[38px] font-semibold 3xl:font-bold">
           Engage at any stage and access only what you need
         </h2>
         <div class="flex justify-between items-center">
@@ -139,6 +139,23 @@
         </div>
       </div>
     </div>
+
+    <!-- Left Arrow -->
+    <button (click)="prevSlide()" aria-label="Previous Slide" class="absolute left-0 lg:left-2 2xl:left-3 3xl:left-4 top-1/2 -translate-y-1/2 z-20">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48" fill="none">
+        <path d="M30 7.5L14.9925 22.5075C14.5824 22.9176 14.5824 23.5824 14.9925 23.9925L30 39" stroke="white"
+          stroke-width="3" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <!-- Right Arrow -->
+    <button (click)="nextSlide()" aria-label="Next Slide" class="absolute right-0 md:right-1 lg:right-2 2xl:right-3 3xl:right-4 top-1/2 -translate-y-1/2 z-20">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48" fill="none">
+        <path d="M18 7.5L33.0075 22.5075C33.4176 22.9176 33.4176 23.5824 33.0075 23.9925L18 39" stroke="white"
+          stroke-width="3" stroke-linecap="round" />
+      </svg>
+    </button>
+
 
     <!-- Indicators -->
     <div class="square-indicators">
