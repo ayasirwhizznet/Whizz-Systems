@@ -17,6 +17,13 @@ import { Subscription, filter } from 'rxjs';
 export class InvensifyComponent {
   blogs: any[] = [
     {
+      imgUrl: 'assets/news/blogs/future-performance/scalability-&-hardware.png',
+      date: 'July 22, 2025',
+      tags: ['AI Hardware', 'Obsolescence Management'],
+      title: 'Future-Proof Architecture and Performance in Next-Generation Systems',
+      link: '/news-&-insights/future-architecture-performance',
+    },
+    {
       imgUrl: 'assets/news/blogs/high-power/key-challenges.png',
       date: 'June 10, 2025',
       tags: ['AI Hardware','High Density PCB Design'],

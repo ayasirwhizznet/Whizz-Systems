@@ -19,6 +19,13 @@ import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 export class BlogsComponent {
   blogs: any[] = [
     {
+      imgUrl: 'assets/news/blogs/future-performance/scalability-&-hardware.png',
+      date: 'July 22, 2025',
+      tags: ['AI Hardware', 'Modular Systems', 'Obsolescence Management'],
+      title: 'Future-Proof Architecture and Performance in Next-Generation Systems',
+      link: '/news-&-insights/future-architecture-performance',
+    },
+    {
       imgUrl: 'assets/news/blogs/high-power/key-challenges.png',
       date: 'June 10, 2025',
       tags: ['AI Hardware','High Density PCB Design','High-Pin Count Chips'],

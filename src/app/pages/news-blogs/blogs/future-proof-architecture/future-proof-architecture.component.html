@@ -1,0 +1,366 @@
+<!-- Hero -->
+<section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
+  <div
+    class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl"
+  >
+    <div
+      class="w-full lg:w-[47%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16"
+    >
+      <p
+        class="text-sm 3xl:text-base leading-[15px] 3xl:leading-[19.2px] mb-2 3xl:mb-[10px]"
+      >
+        July 22, 2025
+      </p>
+      <div class="flex items-center gap-2 flex-wrap mb-4 3xl:mb-6">
+        <div *ngFor="let tag of tags">
+          <app-blog-tag
+            text="{{ tag }}"
+            textColor="text-light-gray1"
+            borderColor="border-light-gray1"
+            borderRadius="rounded-[3px] 3xl:rounded-[4px]"
+          ></app-blog-tag>
+        </div>
+      </div>
+      <h1
+        class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-[96%] sm:w-[57%] lg:w-full"
+      >
+        Future-Proof Architecture and Performance in Next-Generation Systems
+      </h1>
+      <p
+        class="text-base lg:text-sm 2xl:text-base 3xl:text-xl font-extralight lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8 sm:w-[70%] lg:w-full"
+      >
+        Scalable, Adaptable Hardware Designs for Evolving AI Applications
+      </p>
+      <a
+        href="https://webforms.pipedrive.com/f/6aZrcYl8HV6WoERmp8951wRNZqGf4XEXRBVFyl9ju5UCaWcbjTjDoJ218DFJwiyDFp"
+        target="_blank"
+        ><app-button
+          heading="Talk to Our Experts"
+          icon="assets/icons/webform.svg"
+          size="small"
+        ></app-button
+      ></a>
+      <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
+        <a routerLink="/" class="cursor-pointer">
+          <img
+            height="48"
+            width="48"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/icons/whizzicon.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+        <a routerLink="/" class="cursor-pointer">
+          <img
+            height="16"
+            width="109"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/icons/whizz.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/whizz-systems/?viewAsMember=true"
+          target="_blank"
+          class="cursor-pointer"
+        >
+          <img
+            height="24"
+            width="24"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/icons/linkedin.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/@WhizzSystemsCA"
+          target="_blank"
+          class="cursor-pointer"
+        >
+          <img
+            height="24"
+            width="24"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/icons/youtube.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="hidden lg:block lg:w-[53%]">
+      <img
+        height="587"
+        width="682"
+        loading="lazy"
+        class="h-auto w-full object-cover"
+        src="assets/news/blogs/future-performance/hero.png"
+        alt="Future-Proof Architecture and Performance in Next-Generation Systems"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Main Content -->
+<section class="px-[4%] sm:pr-0 sm:pl-[6.3%] py-6 3xl:py-8">
+  <div class="w-full flex justify-between gap-1 sm:gap-12">
+    <!-- left div -->
+    <div class="hidden lg:block lg:w-[23%] 2xl:w-[19%] 3xl:w-[22%] mt-12">
+      <div
+        class="p-6 3xl:p-8 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray lg:sticky lg:top-28 3xl:top-36"
+      >
+        <h3
+          class="text-teal1 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] mb-6 3xl:mb-8"
+        >
+          In This Article
+        </h3>
+        <ul>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section1')"
+              [ngClass]="isActive('section1') ? 'text-teal1' : ''"
+              >Why Scalability and Adaptability Now Define Hardware Success </a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section2')"
+              [ngClass]="isActive('section2') ? 'text-teal1' : ''"
+              >The Challenges: Designing Systems That Last Beyond a Product Cycle</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section3')"
+              [ngClass]="isActive('section3') ? 'text-teal1' : ''"
+              >Systems’ Approach to Scalable, Reusable Design</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section4')"
+              [ngClass]="isActive('section4') ? 'text-teal1' : ''"
+              >What to Keep in Mind When Designing for the Future</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- center div -->
+    <div class="flex flex-col sm:w-4/5 lg:w-[55%] 2xl:w-[53%] 3xl:w-[47%]">
+      <section id="section1" class="mb-6 3xl:mb-8">
+        <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-3 3xl:mb-4">
+          Why Scalability and Adaptability Now Define Hardware Success
+        </h2>
+        <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">The rapid pace of AI development has placed hardware adaptability at the forefront of design requirements. Today’s AI applications demand <span class="font-semibold 3xl:font-bold">exceptional processing power</span> and <span class="font-semibold 3xl:font-bold">robust architectures</span> that can scale as technology advances.
+        </p>
+        <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+          A future-proof architecture not only meets present needs but also prepares systems for evolving demands, minimizing the need for extensive redesigns while enhancing compatibility with emerging technologies.
+        </p>
+        <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"><span class="font-semibold 3xl:font-bold">Whizz Systems</span> is committed to creating versatile architectures that extend the life of hardware by incorporating cutting-edge components, advanced configurations, and adaptable designs.</p>
+        <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">Our approach combines <span class="font-semibold 3xl:font-bold">state-of-the-art technology</span> and <span class="font-semibold 3xl:font-bold">modular structures</span> that allow for streamlined upgrades and integration, empowering AI systems to perform seamlessly across a variety of applications and environments.</p>
+        <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-6 3xl:mb-8">By focusing on scalability and reusability, we help clients achieve hardware that stands the test of time — saving on future development costs and accelerating adaptation to new demands.</p>
+        <figure class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
+          <img
+            loading="lazy"
+            height="598"
+            width="252"
+            class="w-full h-auto object-cover"
+            src="assets/news/blogs/future-performance/scalability-&-hardware.png"
+            alt="Why Scalability and Adaptability Now Define Hardware Success"
+          />
+        </figure>
+      </section>
+      <section id="section2" class="mb-6 3xl:mb-8">
+        <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold">
+          The Challenges: Designing Systems That Last Beyond a Product Cycle
+        </h2>
+        <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] my-3 3xl:my-4">Longevity, Reusability, and Future Compatibility in AI Hardware</h3>
+        <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">The AI hardware landscape presents unique challenges when it comes to <span class="font-semibold 3xl:font-bold">longevity and scalability</span>. Designing for the future requires <span class="font-semibold 3xl:font-bold">balancing immediate performance requirements with the flexibility to adapt to increased processing loads, power demands, and technological advances</span>. Traditional hardware, often optimized for current applications, can quickly become obsolete as AI evolves, necessitating costly upgrades or entirely new designs to support future applications.
+        </p>
+        <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+         Ensuring scalability means developing systems capable of handling both current and anticipated workloads, especially as AI applications become more computationally intensive. A major challenge lies in <span class="font-semibold 3xl:font-bold">designing architectures that integrate with future technologies</span> without a complete overhaul. This demands forward-thinking approaches, where each design aspect—whether related to components, power management, or system layout—supports incremental growth and future compatibility.
+        </p>
+        <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] my-3 3xl:my-4">Architecture Reuse: Extending Value Across Generations</h3>
+        <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+         A second key challenge is creating architecture reuse strategies. Reusable designs allow businesses to extend the lifecycle of existing hardware by adapting it to new applications, saving time and resources in future development. Effective reuse requires meticulous planning to ensure compatibility with various technologies and standards. Companies that lack a strategy for reusable architecture risk being locked into outdated designs, facing extensive costs and delays when adapting to new industry trends.
+        </p>
+        <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-6 3xl:mb-8">Through <span class="font-semibold 3xl:font-bold">expertise in modular and adaptable designs</span>, Whizz Systems addresses these challenges by <span class="font-semibold 3xl:font-bold">creating high-performance, future-proof architectures</span>. Our solutions support today’s needs while equipping hardware for tomorrow’s, allowing clients to stay competitive in a rapidly evolving industry.</p>
+        <figure class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
+          <img
+            loading="lazy"
+            height="598"
+            width="252"
+            class="w-full h-auto object-cover"
+            src="assets/news/blogs/future-performance/designing-challenges.png"
+            alt="The Challenges: Designing Systems That Last Beyond a Product Cycle"
+          />
+        </figure>
+      </section>
+      <section id="section3" class="mb-6 3xl:mb-8">
+        <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold">
+          Systems’ Approach to Scalable, Reusable Design
+        </h2>
+        <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] my-3 3xl:my-4">How We Help Future-Proof Your Hardware Platform</h3>
+        <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">Whizz Systems offers a multi-faceted approach to designing scalable, reusable architectures. By combining advanced technology with modular designs and forward-looking strategies, we ensure that each system remains relevant, adaptable, and efficient for years to come.
+        </p>
+       <h3 class="text-teal1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">1. Scalable Architecture Design</h3>
+       <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">At Whizz, we prioritize scalability in every aspect of our hardware designs. Our architectures are engineered to support growing processing demands and increased data throughput without compromising performance. We begin by evaluating potential future requirements for each project, considering factors such as increased computational loads and expanded memory needs. This proactive approach allows us to incorporate components and configurations that can scale up as required.</p>
+       <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">In our scalable architecture designs, we use modular and layered structures that simplify future upgrades. For example, by incorporating flexible backplanes and interchangeable modules, our designs allow for easy integration of new components as they become available. This means that as processing demands increase, new components or entire subsystems can be added without extensive redesigns.</p>
+       <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">Our recent projects in high-density AI hardware exemplify our commitment to scalability. By designing layouts with adaptable power delivery networks (PDNs) and advanced connectivity options, we allow clients to incorporate additional processing power, storage, or interfaces as needed. These scalable designs enable seamless hardware expansion, supporting AI systems through multiple generations of development.</p>
+       <h3 class="text-teal1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">2. Modular and Reusable Architecture</h3>
+       <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">Reusable architecture is a core strategy at Whizz Systems, offering clients a cost-effective path to adapting existing designs for new applications. Our modular approach means that designs can be customized for different applications without starting from scratch, making it easier to adapt hardware to changing industry requirements.</p>
+       <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">We start by creating a set of standardized modules, each optimized for specific functions such as processing, memory, or connectivity. These modules can be configured in various combinations, enabling clients to tailor their systems to specific use cases without requiring significant redesign. The modular nature of our designs also allows us to implement future technologies as they emerge. When new technologies become available, they can be integrated into existing designs, ensuring that systems remain relevant and capable of handling the latest advancements.</p>
+       <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">An example of this in practice is a high-performance board we designed for AI applications. This design featured modular components that could be rearranged or replaced to suit different processing loads. As newer components were released, they could be integrated into the existing architecture with minimal adjustment, extending the system’s usefulness and performance without needing a full replacement.</p>
+       <h3 class="text-teal1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">3. Incorporating State-of-the-Art Components and Technologies</h3>
+       <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">A future-proof architecture is only as strong as the components that comprise it. At Whizz Systems, we carefully select and incorporate cutting-edge components that provide high performance and compatibility with emerging technologies. Our component selection prioritizes power efficiency, reliability, and adaptability, ensuring that each system is equipped to support both current and future needs.</p>
+       <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">Our designs incorporate advanced components such as high-speed processors, scalable memory, and versatile communication interfaces that allow for seamless expansion. By using the latest in power-efficient technology, we create systems that handle increased workloads without excessive energy consumption, making them more sustainable in the long term.</p>
+       <h3 class="text-teal1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold lg:leading-[20px] 3xl:leading-[24px] mb-3 3xl:mb-4">4. Ensuring Compliance with Industry Standards</h3>
+       <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">Whizz Systems is committed to staying current with industry standards, ensuring our architectures are compatible with existing frameworks. Whether we’re following OCP guidelines or creating proprietary solutions, we design systems with interoperability and compatibility in mind. This approach enables our clients to integrate their hardware with other systems and infrastructures confidently, making upgrades and replacements straightforward in the future.</p>
+       <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">Our experience in designing compliant systems allows us to deliver architectures that not only meet current requirements but are prepared for evolving standards. This commitment to compliance ensures that our solutions remain competitive, capable, and interoperable as industry standards progress.</p>
+      </section>
+      <section class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
+        <div
+          class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1"
+        >
+          <div class="flex items-center justify-between">
+            <div>
+              <h3
+                class="text-dark-gray1 text-xl lg:text-[28px] 3xl:text-[32px] font-semibold 3xl:font-bold my-3 3xl:my-4"
+              >
+                Subscribe to our newsletter!
+              </h3>
+              <p
+                class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[15px] 3xl:leading-[19.2px]"
+              >
+                Get updates on the latest news & insights
+              </p>
+            </div>
+            <a
+              href="https://webforms.pipedrive.com/f/6UT1JKLeb6G1xtMMTPA4HRcQsTZefgpvRq9cSzG1TincmHlD6Wvfh3YCmSXUO7VklB"
+              target="_blank"
+              ><app-animated-button
+                heading="Subscribe"
+                size="medium"
+                [icon]="false"
+                bg="white"
+              ></app-animated-button
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section id="section4" class="mb-6 3xl:mb-8">
+        <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-3 3xl:mb-4">
+          What to Keep in Mind When Designing for the Future
+        </h2>
+        <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">When designing hardware with a future-proof architecture, companies need to <span class="font-semibold 3xl:font-bold">prioritize adaptability, performance,</span> and <span class="font-semibold 3xl:font-bold">cost-effectiveness</span> to stay competitive in a rapidly evolving landscape. Building systems that can grow, adapt, and integrate with future technologies helps maximize the return on investment and extend product lifespans. Below are key considerations that can guide companies toward creating flexible, high-performance hardware solutions.
+        </p>
+        <ul class="list-disc list-outside ml-4" *ngFor="let consideration of designConsiderations">
+            <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] ">{{consideration}}</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- right div -->
+    <section class="sm:ml-auto mb-56 mt-96">
+      <div
+        class="flex flex-col justify-center items-center space-y-3 3xl:space-y-4 sticky top-96"
+      >
+        <p
+          class="text-light-gray2 text-[10px] 3xl:text-xs font-semibold 3xl:font-bold"
+        >
+          SHARE
+        </p>
+        <a (click)="shareOnFacebook()" class="cursor-pointer"
+          ><svg
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+            /></svg
+        ></a>
+        <a (click)="shareOnLinkedIn()" class="cursor-pointer"
+          ><svg
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+            /></svg
+        ></a>
+        <a (click)="shareOnTwitter()" class="cursor-pointer"
+          ><svg
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+            /></svg
+        ></a>
+      </div>
+    </section>
+  </div>
+</section>
+
+<!-- Marketing  -->
+<section class="px-0 sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+  <div
+    class="relative p-6 sm:p-10 lg:p-[52px] 3xl:p-16 sm:rounded-md 3xl:rounded-lg"
+  >
+    <video
+      class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg"
+      loop
+      muted
+      autoplay
+      oncanplay="this.play()"
+      onloadedmetadata="this.muted = true"
+    >
+      <source src="assets/hero/waves2.mp4" type="video/mp4" />
+    </video>
+    <div
+      class="absolute inset-0 bg-video-overlay opacity-80 z-[5] sm:rounded-md 3xl:rounded-lg"
+    ></div>
+    <div class="relative z-10 lg:w-[85%] 2xl:w-[80%] 3xl:w-[63%] text-white">
+      <h2
+        class="text-3xl sm:text-4xl lg:text-5xl 2xl:text-[52px] 3xl:text-[64px] 2xl:leading-[60px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4"
+      >
+        Let’s Build Hardware That’s Ready for Tomorrow
+      </h2>
+      <p
+        class="sm:text-xl lg:text-2xl 2xl:text-[26px] 3xl:text-[32px] 2xl:leading-[36px] 3xl:leading-[48px] mb-8 lg:mb-10 3xl:mb-12"
+      >
+        Contact us today to future-proof your next platform — and accelerate your path to market.
+      </p>
+      <a
+        href="https://webforms.pipedrive.com/f/6aZrcYl8HV6WoERmp8951wRNZqGf4XEXRBVFyl9ju5UCaWcbjTjDoJ218DFJwiyDFp"
+        target="_blank"
+        ><app-button
+          heading="Talk to Our Engineering Team"
+          size="large"
+          icon="assets/icons/webform.svg"
+        ></app-button
+      ></a>
+    </div>
+  </div>
+</section>
+
+<!-- Latest News and Insights -->
+<app-cnews [blogs]="blogs"></app-cnews>

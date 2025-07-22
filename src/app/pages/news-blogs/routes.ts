@@ -58,6 +58,14 @@ export const routes: Routes = [
           ),
         title: 'High-Power Demands in Next-Generation Hardware',
       },
+      {
+        path: 'future-architecture-performance',
+        loadComponent: () =>
+          import('./blogs/future-proof-architecture/future-proof-architecture.component').then(
+            (m) => m.FutureProofArchitectureComponent
+          ),
+        title: 'Whizz | Future-Proof Architecture and Performance in Next-Generation Systems',
+      },
     ],
   },
 ];

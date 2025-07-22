@@ -1,12 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
-import {
-  ActivatedRoute,
-  NavigationEnd,
-  Router,
-  RouterLink,
-} from '@angular/router';
+import { ActivatedRoute, Router, NavigationEnd, RouterLink } from '@angular/router';
 import { AnimatedButton } from '@components/animated-button/animated-button.component';
 import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
@@ -14,29 +9,14 @@ import { NewsComponent } from '@components/news/news.component';
 import { Subscription, filter } from 'rxjs';
 
 @Component({
-  selector: 'app-high-power-demand',
+  selector: 'app-future-proof-architecture',
   standalone: true,
-  imports: [
-    CommonModule,
-    AnimatedButton,
-    BlogTagComponent,
-    ButtonComponent,
-    RouterLink,
-    NewsComponent,
-  ],
-  templateUrl: './high-power-demand.component.html',
+  imports: [CommonModule, BlogTagComponent, ButtonComponent, NewsComponent, AnimatedButton, RouterLink],
+  templateUrl: './future-proof-architecture.component.html'
 })
-export class HighPowerDemandComponent {
-  tags = ['AI Hardware', 'High Density PCB Design', 'High-Pin Count Chips'];
-
+export class FutureProofArchitectureComponent {
+  tags = ['AI Hardware', 'Modular Systems', 'Obsolescence Management'];
   blogs: any[] = [
-    {
-      imgUrl: 'assets/news/blogs/future-performance/scalability-&-hardware.png',
-      date: 'July 22, 2025',
-      tags: ['AI Hardware', 'Obsolescence Management'],
-      title: 'Future-Proof Architecture and Performance in Next-Generation Systems',
-      link: '/news-&-insights/future-architecture-performance',
-    },
     {
       imgUrl: 'assets/news/blog-6.png',
       date: 'May 14, 2025',
@@ -77,39 +57,12 @@ export class HighPowerDemandComponent {
     },
   ];
 
-  optimized: any[] = [
-    'Minimize IR drops',
-    'Ensure consistent, stable power delivery across the board',
-  ];
-  layout: any[] = [
-    'Trace widths',
-    'Via placements',
-    'Power distribution planes',
-  ];
-  robust: any[] = [
-    'Heat sinks',
-    'Thermal vias',
-    'Vapor chambers',
-    'Liquid cooling systems',
-  ];
-  advanced: any[] = [
-    'Ensure a robust power delivery network (PDN) design to <b>minimize voltage drops</b> and maintain stable power across the system.',
-    'Design for efficiency to minimize power loss and maximize performance.',
-    'Ensure system scalability to accommodate growing power demands over time.',
-    'Incorporate fail-safe mechanisms for power regulation and temperature control to enhance reliability.',
-    'Utilize advanced thermal management techniques like liquid cooling, thermal vias, and vapor chambers to manage heat in high-power designs.',
-    'Choose materials with superior thermal conductivity and implement effective heat dissipation strategies to improve component lifespan and reduce thermal stress.',
-    'Assess and test power systems under real-world conditions to identify potential vulnerabilities.',
-    'Focus on minimizing electromagnetic interference (EMI) and ensuring electromagnetic compatibility (EMC).',
-    'Consider environmental factors such as humidity and temperature variations for more resilient hardware solutions.',
-    'Adhere to industry standards for safety, performance, and compatibility to ensure system integration with other platforms.',
-    'Collaborate with experts skilled in optimizing layout, component selection, and managing high-current systems to reduce power losses and prevent instability due to voltage fluctuations.',
-  ];
-
-  partner: any[] = [
-    'Optimize your next board',
-    'Solve your power delivery challenges',
-    'Help you hit performance, thermal, and compliance targets faster'
+  designConsiderations: any[] = [
+    'Ensure hardware architecture scalability to meet future demands, prioritizing designs that allow for incremental expansions (e.g., processing power, memory).',
+    'Embrace modularity to create reusable, adaptable architectures, facilitating quick adaptation to new applications and reducing long-term costs.',
+    'Select high-performance, power-efficient components that ensure future compatibility, supporting system evolution with emerging technologies.',
+    'Adhere to industry standards for interoperability, enabling easier future upgrades, replacements, and broader system integration.',
+    'Collaborate with partners who specialize in modular, scalable systems to reduce long-term costs by enabling upgrades without full redesigns.'
   ]
 
   ngAfterViewInit() {
@@ -136,7 +89,7 @@ export class HighPowerDemandComponent {
     private route: ActivatedRoute,
     private router: Router,
     private meta: Meta
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     // share on linkdin logic
@@ -179,8 +132,6 @@ export class HighPowerDemandComponent {
       'section2',
       'section3',
       'section4',
-      'section5',
-      'section6',
     ];
     const headerOffset = 500;
 
@@ -222,14 +173,14 @@ export class HighPowerDemandComponent {
     const pageUrl = window.location.href;
 
     const text = encodeURIComponent(
-      `🚀 Discover Next-Generation Hardware Design by Whizz Systems!\n\n` +
-        `Managing High-Power Demands in Next-Generation Hardware.\n\n` +
-        `Proudly built by @whizzsystems.\n\n` +
-        `${pageUrl}\n\n`
+      `🚀 Discover Future-Proof Architecture and Performance in Next-Generation Systems!\n\n` +
+      `Scalable, Adaptable Hardware Designs for Evolving AI Applications.\n\n` +
+      `Proudly built by @whizzsystems.\n\n` +
+      `${pageUrl}\n\n`
     );
 
     const hashtags = encodeURIComponent(
-      'whizzsystems,AIHardware,HighDensityPCBDesign'
+      'whizzsystems,AIHardwareDesign,ModularSystems'
     );
 
     const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}`;
