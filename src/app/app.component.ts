@@ -5,7 +5,6 @@ import { FooterComponent } from '@components/footer/footer.component';
 import { HeaderComponent } from '@components/header/header.component';
 import { filter } from 'rxjs';
 import { Meta, Title } from '@angular/platform-browser';
-import { fragmentMap } from './config/fragments';
 declare let gtag: Function;
 
 @Component({
@@ -45,7 +44,7 @@ export class AppComponent implements OnInit {
           }
   
           // Fragment-based meta config
-          const fragmentMeta: Record<string, { title: string; description: string }> = fragmentMap;
+          const fragmentMeta: Record<string, { title: string; description: string }> = {};
   
           route.fragment.subscribe((fragment) => {
             if (fragment && fragmentMeta[fragment]) {

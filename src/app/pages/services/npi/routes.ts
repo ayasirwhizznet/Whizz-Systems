@@ -8,7 +8,13 @@ export const routes: Routes = [
         path: '',
         loadComponent: () =>
           import('./npi.component').then((m) => m.NpiComponent),
-        data: {title: 'NPI Solutions for Fast New Product Introduction',description: 'Speed up new product introduction with expert NPI solutions. From concept to launch, ensure smooth development and market success.' }
+        title:
+          'New Product Introduction (NPI) Services | Design to Compliance | Whizz Systems',
+        data: {
+          description: `Accelerate your product development with Whizz Systems&#39; expert NPI
+services—spanning system architecture, schematic design, CAM, prototyping, testing,
+and global compliance. Fast-track to scalable and reliable manufacturing.`,
+        },
       },
     ],
   },

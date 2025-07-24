@@ -62,7 +62,7 @@
         },
         {
             "source": "/package-design-simulation/",
-            "destination": "/services/advanced-manufacturing#BoxBuild",
+            "destination": "/services/advanced-manufacturing#box-build",
             "permanent": true
         },
         {
@@ -97,7 +97,7 @@
         },
         {
             "source": "/cloud-defined-storage-engine/",
-            "destination": "/services/supply-chain-management#Inventory&Storage",
+            "destination": "/services/supply-chain-management#inventory-and-storage",
             "permanent": true
         },
         {
@@ -107,7 +107,7 @@
         },
         {
             "source": "/material-sourcing-procurement-back/",
-            "destination": "/services/supply-chain-management#Inventory&Storage",
+            "destination": "/services/supply-chain-management#inventory-and-storage",
             "permanent": true
         },
         {
@@ -182,7 +182,7 @@
         },
         {
             "source": "/product/material-sourcing-procurement/",
-            "destination": "/services/supply-chain-management#ProactiveSourcing",
+            "destination": "/services/supply-chain-management#components-procurement-and-planning",
             "permanent": true
         },
         {
@@ -212,7 +212,7 @@
         },
         {
             "source": "/complete-box-build-ems-service/",
-            "destination": "/services/advanced-manufacturing#BoxBuild",
+            "destination": "/services/advanced-manufacturing#box-build",
             "permanent": true
         },
         {
@@ -222,7 +222,7 @@
         },
         {
             "source": "/material-sourcing-procurement",
-            "destination": "/services/supply-chain-management#ProactiveSourcing",
+            "destination": "/services/supply-chain-management#components-procurement-and-planning",
             "permanent": true
         },
         {
@@ -272,12 +272,12 @@
         },
         {
             "source": "/complete-box-built-ems-service",
-            "destination": "/services/advanced-manufacturing#BoxBuild",
+            "destination": "/services/advanced-manufacturing#box-build",
             "permanent": true
         },
         {
             "source": "/material-sourcing-procurement/",
-            "destination": "/services/supply-chain-management#GlobalSourcing",
+            "destination": "/services/supply-chain-management#global-sourcing-and-broker-ecosystem",
             "permanent": true
         },
         {
@@ -302,7 +302,7 @@
         },
         {
             "source": "/storage-products/",
-            "destination": "/services/supply-chain-management#Inventory&Storage",
+            "destination": "/services/supply-chain-management#inventory-and-storage",
             "permanent": true
         },
         {
@@ -367,7 +367,7 @@
         },
         {
             "source": "/news/whizz-systems-added-state-of-the-art-juki-ism500-intelligent-storage-system-in-house/",
-            "destination": "/services/supply-chain-management#Inventory&Storage",
+            "destination": "/services/supply-chain-management#inventory-and-storage",
             "permanent": true
         },
         {
@@ -377,7 +377,7 @@
         },
         {
             "source": "/storage-products-back/",
-            "destination": "/services/supply-chain-management#Inventory&Storage",
+            "destination": "/services/supply-chain-management#inventory-and-storage",
             "permanent": true
         },
         {
@@ -392,12 +392,12 @@
         },
         {
             "source": "/whizz-systems-added-3-newest-largest-intelligent-storage-system-juki-ism2000xl-fortress-in-house/",
-            "destination": "/services/supply-chain-management#Inventory&Storage",
+            "destination": "/services/supply-chain-management#inventory-and-storage",
             "permanent": true
         },
         {
             "source": "/whizz-systems-added-3-newest-largest-intelligent-storage-system-juki-ism2000xl-fortress-in-house/",
-            "destination": "/services/supply-chain-management#Inventory&Storage",
+            "destination": "/services/supply-chain-management#inventory-and-storage",
             "permanent": true
         },
         {
@@ -452,7 +452,7 @@
         },
         {
             "source": "/news/whizz-systems-added-3-newest-largest-intelligent-storage-system-juki-ism2000xl-fortress-in-house/",
-            "destination": "/services/supply-chain-management#Inventory&Storage",
+            "destination": "/services/supply-chain-management#inventory-and-storage",
             "permanent": true
         },
         {

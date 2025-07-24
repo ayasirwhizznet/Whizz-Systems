@@ -10,8 +10,10 @@ export const routes: Routes = [
           import('./adv-manufacturing/adv-manufacturing.component').then(
             (m) => m.AdvManufacturingComponent
           ),
-        title: 'Advanced Manufacturing for High-Quality Electronics',
-        data: { description: 'Optimize production with advanced manufacturing, supply chain solutions, and cutting-edge technology for efficient electronics manufacturing.' },
+        title: 'Advanced Electronic Manufacturing Services | Prototyping to Box Build | Whizz Systems',
+        data: { description: `Whizz Systems offers integrated electronic manufacturing services, including process
+engineering, prototyping, box build assembly, and environmental testing for complex
+products.` },
       }
     ],
   },

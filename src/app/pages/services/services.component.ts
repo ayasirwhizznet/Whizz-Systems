@@ -120,17 +120,17 @@ serviceCategories: any = [
         {
           name: 'System Level Architecture',
           link: '/services/npi',
-          fragment: 'SystemLevelArchitecture',
+          fragment: 'system-level-architecture',
         },
         {
           name: 'Schematic Design',
           link: '/services/npi',
-          fragment: 'SchematicDesign',
+          fragment: 'schematic-design',
         },
         {
           name: 'Computer Aided Manufacturing',
           link: '/services/npi',
-          fragment: 'ComputerAidedManufacturing',
+          fragment: 'computer-aided-manufacturing',
         },
         {
           name: 'Prototyping',
@@ -152,12 +152,12 @@ serviceCategories: any = [
           {
             name: 'Process Engineering',
             link: '/services/advanced-manufacturing',
-            fragment: 'ProcessEngineering'
+            fragment: 'process-engineering'
           },
           {
             name: 'Manufacturing Testing',
             link: '/services/advanced-manufacturing',
-            fragment: 'ManufacturingTesting'
+            fragment: 'manufacturing-testing'
           },
           {
             name: 'Locations',
@@ -167,17 +167,17 @@ serviceCategories: any = [
           {
             name: 'Environmental Testing',
             link: '/services/advanced-manufacturing',
-            fragment: 'EnvironmentalTesting'
+            fragment: 'environmental-testing'
           },
           {
             name: 'Fix Spacing',
             link: '/services/advanced-manufacturing',
-            fragment: 'FixSpacing'
+            fragment: 'fix-spacing'
           },
           {
             name: 'Box Build',
             link: '/services/advanced-manufacturing',
-            fragment: 'BoxBuild'
+            fragment: 'box-build'
           },
         ],
     },
@@ -189,7 +189,7 @@ serviceCategories: any = [
         {
           name: 'Board Bring Up',
           link: '/services/lab-testing-solutions',
-          fragment: 'BoardBringUp',
+          fragment: 'board-bring-up',
         },
         {
           name: 'Validation',
@@ -208,19 +208,24 @@ serviceCategories: any = [
       desc: `Managing electronic components is more complex than ever. Our supply chain solutions provide strategic sourcing, compliance oversight, and procurement expertise to mitigate risk, ensure availability, and keep your production on track.`,
       services: [
         {
-          name: 'Component Engineering',
+          name: 'Components Procurement & Planning',
           link: '/services/supply-chain-management',
-          fragment: 'ProactiveSourcing',
+          fragment: 'components-procurement-and-planning',
         },
         {
-          name: 'Compliance Engineering',
+          name: 'Prototype Build Coordination',
           link: '/services/supply-chain-management',
-          fragment: 'PrototypeBuildCoordination',
+          fragment: 'prototype-build-coordination',
         },
         {
-          name: 'Procurement Engineering',
+          name: 'Global Sourcing & Broker Ecosystem',
           link: '/services/supply-chain-management',
-          fragment: 'ProcurementEngineering',
+          fragment: 'global-sourcing-and-broker-ecosystem',
+        },
+        {
+          name: 'Inventory & Storage',
+          link: '/services/supply-chain-management',
+          fragment: 'inventory-and-storage',
         },
       ],
     },

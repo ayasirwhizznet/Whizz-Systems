@@ -76,17 +76,17 @@ export class MobileHeaderComponent {
         {
           label: 'System Level Architecture',
           link: '/services/npi',
-          fragment: 'SystemLevelArchitecture',
+          fragment: 'system-level-architecture',
         },
         {
           label: 'Schematic Design',
           link: '/services/npi',
-          fragment: 'SchematicDesign',
+          fragment: 'schematic-design',
         },
         {
           label: 'Computer Aided Manufacturing',
           link: '/services/npi',
-          fragment: 'ComputerAidedManufacturing',
+          fragment: 'computer-aided-manufacturing',
         },
         {
           label: 'Prototyping',
@@ -109,12 +109,12 @@ export class MobileHeaderComponent {
           {
             label: 'Process Engineering',
             link: '/services/advanced-manufacturing',
-            fragment: 'ProcessEngineering'
+            fragment: 'process-engineering'
           },
           {
             label: 'Manufacturing Testing',
             link: '/services/advanced-manufacturing',
-            fragment: 'ManufacturingTesting'
+            fragment: 'manufacturing-testing'
           },
           {
             label: 'Locations',
@@ -124,17 +124,17 @@ export class MobileHeaderComponent {
           {
             label: 'Environmental Testing',
             link: '/services/advanced-manufacturing',
-            fragment: 'EnvironmentalTesting'
+            fragment: 'environmental-testing'
           },
           {
             label: 'Fix Spacing',
             link: '/services/advanced-manufacturing',
-            fragment: 'FixSpacing'
+            fragment: 'fix-spacing'
           },
           {
             label: 'Box Build',
             link: '/services/advanced-manufacturing',
-            fragment: 'BoxBuild'
+            fragment: 'box-build'
           },
         ],
       },
@@ -145,7 +145,7 @@ export class MobileHeaderComponent {
         {
           label: 'Board Bring Up',
           link: '/services/lab-testing-solutions',
-          fragment: 'BoardBringUp',
+          fragment: 'board-bring-up',
         },
         {
           label: 'Validation',
@@ -167,22 +167,22 @@ export class MobileHeaderComponent {
           {
             label: 'Components Procurement & Planning',
             link: '/services/supply-chain-management',
-            fragment: 'ProactiveSourcing',
+            fragment: 'components-procurement-and-planning',
           },
           {
             label: 'Prototype Build Coordination',
             link: '/services/supply-chain-management',
-            fragment: 'PrototypeBuildCoordination',
+            fragment: 'prototype-build-coordination',
           },
           {
             label: 'Global Sourcing & Broker Ecosystem',
             link: '/services/supply-chain-management',
-            fragment: 'GlobalSourcing',
+            fragment: 'global-sourcing-and-broker-ecosystem',
           },
           {
             label: 'Inventory & Storage',
             link: '/services/supply-chain-management',
-            fragment: 'Inventory&Storage',
+            fragment: 'inventory-and-storage',
           },
         ],
       open: false,
