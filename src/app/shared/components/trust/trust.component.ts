@@ -36,62 +36,46 @@ export class TrustComponent implements AfterViewInit {
   constructor(@Inject(PLATFORM_ID) private platformId: object) {}
 
   async ngAfterViewInit() {
-    // Ensure Keen Slider runs only in the browser
-    if (isPlatformBrowser(this.platformId)) {
-      const KeenSlider = (await import('keen-slider')).default;
-      const animation = { duration: 7000, easing: (t: number) => t };
+  if (!isPlatformBrowser(this.platformId)) return;
 
-      this.slider = new KeenSlider(this.sliderRef.nativeElement, {
-        breakpoints: {
-          '(min-width: 0px)': {
-            loop: true,
-            renderMode: 'precision',
-            drag: false,
-            slides: { perView: 2, spacing: 30 },
-            created(s) {
-              s.moveToIdx(15, true, animation);
-            },
-            updated(s) {
-              s.moveToIdx(s.track.details.abs + 15, true, animation);
-            },
-            animationEnded(s) {
-              s.moveToIdx(s.track.details.abs + 15, true, animation);
-            },
-          },
-          '(min-width: 768px)': {
-            loop: true,
-            renderMode: 'precision',
-            drag: false,
-            slides: { perView: 3, spacing: 30 },
-            created(s) {
-              s.moveToIdx(5, true, animation);
-            },
-            updated(s) {
-              s.moveToIdx(s.track.details.abs + 5, true, animation);
-            },
-            animationEnded(s) {
-              s.moveToIdx(s.track.details.abs + 5, true, animation);
-            },
-          },
-          '(min-width: 1200px)': {
-            loop: true,
-            renderMode: 'precision',
-            drag: false,
-            slides: { perView: 4.5, spacing: 50 },
-            created(s) {
-              s.moveToIdx(5, true, animation);
-            },
-            updated(s) {
-              s.moveToIdx(s.track.details.abs + 5, true, animation);
-            },
-            animationEnded(s) {
-              s.moveToIdx(s.track.details.abs + 5, true, animation);
-            },
-          },
-        },
-      });
-    }
-  }
+  const KeenSlider = (await import('keen-slider')).default;
+
+  const autoplay = (step: number, duration: number) => {
+    const animation = { duration, easing: (t: number) => t };
+    return {
+      created(s: any) {
+        s.moveToIdx(step, true, animation);
+      },
+      updated(s: any) {
+        s.moveToIdx(s.track.details.abs + step, true, animation);
+      },
+      animationEnded(s: any) {
+        s.moveToIdx(s.track.details.abs + step, true, animation);
+      },
+    };
+  };
+
+  this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+    loop: true,
+    renderMode: 'precision',
+    drag: false,
+    breakpoints: {
+      '(min-width: 0px)': {
+        slides: { perView: 2, spacing: 30 },
+        ...autoplay(15, 25000), 
+      },
+      '(min-width: 768px)': {
+        slides: { perView: 3, spacing: 30 },
+        ...autoplay(5, 8000),
+      },
+      '(min-width: 1200px)': {
+        slides: { perView: 4.5, spacing: 50 },
+        ...autoplay(5, 7000),
+      },
+    },
+  });
+}
+
 
   ngOnDestroy() {
     if (

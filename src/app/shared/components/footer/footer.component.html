@@ -18,7 +18,7 @@
     <div
       class="p-6 3xl:p-8 flex flex-col items-center justify-between bg-card-gray rounded-md 3xl:rounded-lg text-center lg:text-left"
     >
-      <div class="self-center lg:self-start mb-32 lg:mb-0">
+      <div class="self-center lg:self-start mb-9 sm:mb-32 lg:mb-0">
         <img
           height="39"
           width="96"
@@ -47,11 +47,11 @@
       </div>
     </div>
     <div
-      class="grid grid-cols-12 gap-6 lg:gap-3 3xl:gap-8 bg-card-gray text-dark-gray2 p-6 3xl:p-8 rounded-md 3xl:rounded-lg text-center md:text-left"
+      class="grid grid-cols-12 gap-6 lg:gap-3 3xl:gap-8 bg-card-gray text-dark-gray2 p-6 3xl:p-8 rounded-md 3xl:rounded-lg text-left md:text-left"
     >
       <div class="col-span-12 md:col-span-6 lg:col-span-2 2xl:col-span-2">
         <h3
-          class="text-base lg:text-sm 3xl:text-base mb-4 3xl:mb-6 font-medium 3xl:font-semibold"
+          class="text-[20px] sm:text-base lg:text-sm 3xl:text-base mb-4 3xl:mb-6 font-medium 3xl:font-semibold"
         >
           Get in touch
         </h3>
@@ -82,23 +82,25 @@
             {{ item.label }}
           </a>
         </div>
-        <a class="underline cursor-pointer hover:text-teal1 transition-all duration-300 ease-in-out"
-   href="https://mail.google.com/mail/?view=cm&to=sales@whizzsystems.com&su=Request for Information&body="
-   target="_blank" rel="noopener noreferrer">
-   sales&#64;whizzsystems.com
-</a>
-
+        <a
+          class="underline cursor-pointer hover:text-teal1 transition-all duration-300 ease-in-out"
+          href="https://mail.google.com/mail/?view=cm&to=sales@whizzsystems.com&su=Request for Information&body="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          sales&#64;whizzsystems.com
+        </a>
       </div>
       <!-- Services -->
       <div class="col-span-12 md:col-span-6 lg:col-span-2 2xl:col-span-2">
         <h3
-          class="text-base lg:text-sm 3xl:text-base mb-4 lg:mb-6 3xl:mb-8 font-medium 3xl:font-semibold"
+          class="text-base lg:text-sm 3xl:text-base mb-1 sm:mb-4 lg:mb-6 3xl:mb-8 font-medium 3xl:font-semibold"
         >
           Services
         </h3>
         <div *ngFor="let item of services">
           <a
-            class="mb-3 3xl:mb-4 inline-block cursor-pointer hover:text-teal1 transition-all duration-300 ease-in-out"
+            class="sm:mb-3 3xl:mb-4 inline-block cursor-pointer hover:text-teal1 transition-all duration-300 ease-in-out"
             [routerLink]="item.link"
             >{{ item.label }}</a
           >
@@ -107,13 +109,13 @@
       <!-- Blog -->
       <div class="col-span-12 md:col-span-6 lg:col-span-2 2xl:col-span-1">
         <h3
-          class="text-base lg:text-sm 3xl:text-base mb-4 lg:mb-6 3xl:mb-8 font-medium 3xl:font-semibold"
+          class="text-base lg:text-sm 3xl:text-base mb-1 sm:mb-4 lg:mb-6 3xl:mb-8 font-medium 3xl:font-semibold"
         >
           Blog
         </h3>
         <div *ngFor="let item of blog">
           <a
-            class="mb-3 3xl:mb-4 inline-block cursor-pointer hover:text-teal1 text-nowrap transition-all duration-300 ease-in-out"
+            class="sm:mb-3 3xl:mb-4 inline-block cursor-pointer hover:text-teal1 text-nowrap transition-all duration-300 ease-in-out"
             [routerLink]="item.link"
             >{{ item.label }}</a
           >
@@ -122,16 +124,16 @@
       <!-- Social media -->
       <div class="col-span-12 md:col-span-6 lg:col-span-2 2xl:col-span-2">
         <h3
-          class="text-base lg:text-sm 3xl:text-base mb-4 lg:mb-6 3xl:mb-8 font-medium 3xl:font-semibold text-nowrap"
+          class="text-base lg:text-sm 3xl:text-base mb-1 sm:mb-4 lg:mb-6 3xl:mb-8 font-medium 3xl:font-semibold text-nowrap"
         >
           Social Media
         </h3>
         <div
           *ngFor="let item of socailMedia"
-          class="flex justify-center md:justify-start"
+          class="flex justify-start sm:justify-center md:justify-start"
         >
           <a
-            class="mb-3 3xl:mb-4 flex items-center cursor-pointer hover:text-teal1 transition-all duration-300 ease-in-out"
+            class="sm:mb-3 3xl:mb-4 flex items-center cursor-pointer hover:text-teal1 transition-all duration-300 ease-in-out"
             [href]="item.link"
             target="_blank"
           >
@@ -168,10 +170,10 @@
         </div>
       </div>
       <div
-        class="col-span-12 md:col-span-12 lg:col-span-4 2xl:col-span-5 grid justify-center lg:justify-end items-center lg:mr-6 2xl:mr-14 3xl:mr-16"
+        class="md:px-0 col-span-12 md:col-span-12 lg:col-span-4 2xl:col-span-5 grid justify-center lg:justify-end items-center lg:mr-6 2xl:mr-14 3xl:mr-16"
       >
         <div
-          class="w-64 lg:w-[13rem] 2xl:w-64 3xl:w-80 p-6 lg:p-4 2xl:p-6 3xl:p-8 bg-white border border-light-gray1 rounded-md 3xl:rounded-lg text-left"
+          class="md:w-64 lg:w-[13rem] 2xl:w-64 3xl:w-80 p-5 lg:p-4 2xl:p-6 3xl:p-8 bg-white border border-light-gray1 rounded-md 3xl:rounded-lg text-left"
         >
           <h1 class="text-2xl lg:text-xl 2xl:text-2xl 3xl:text-3xl font-bold">
             Subscribe to our newsletter!
@@ -179,15 +181,17 @@
           <p
             class="mt-3 3xl:mt-5 mb-5 3xl:mb-8 font-light text-base lg:text-xs 2xl:text-base 3xl:text-xl"
           >
-            Get updates on the <br />
-            latest news & insights
+            Get updates on the latest news & insights
           </p>
-          <app-animated-button
-            routerLink="/"
-            heading="Subscribe"
-            size="medium"
-            bg="teal-bg"
-          ></app-animated-button>
+          <a
+            href="https://webforms.pipedrive.com/f/6UT1JKLeb6G1xtMMTPA4HRcQsTZefgpvRq9cSzG1TincmHlD6Wvfh3YCmSXUO7VklB"
+            target="_blank" class="cursor-pointer"
+            ><app-animated-button
+              heading="Subscribe"
+              size="medium"
+              bg="teal-bg"
+            ></app-animated-button
+          ></a>
         </div>
       </div>
     </div>
