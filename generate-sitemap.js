@@ -1,9 +1,17 @@
-const {streamToPromise } = require("sitemap");
+const { SitemapStream, streamToPromise } = require("sitemap");
+const { createWriteStream } = require("fs");
 const path = require("path");
 
+// Replace with your real domain (must include trailing slash)
 const hostname = "https://www.whizzsystems.com/";
 
-const sitemapPath = path.join(__dirname, 'dist/whizz/sitemap.xml');
+const sitemap = new SitemapStream({ hostname });
+
+// ⚠️ Replace with actual path to your Angular build folder
+const sitemapPath = path.resolve(__dirname, "public/sitemap.xml");
+
+
+const writeStream = createWriteStream(sitemapPath);
 
 // Define static routes here (add your actual routes)
 const staticRoutes = [
