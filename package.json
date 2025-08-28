@@ -5,10 +5,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "sitemap": "node generate-sitemap.js"
+    "sitemap": "node generate-sitemap.js",
+    "postbuild": "npm run sitemap"
   },
   "private": true,
   "dependencies": {
