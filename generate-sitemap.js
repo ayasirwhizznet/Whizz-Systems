@@ -1,19 +1,12 @@
 const { SitemapStream, streamToPromise } = require("sitemap");
-const { createWriteStream } = require("fs");
 const path = require("path");
 const fs = require("fs");
 
 const hostname = "https://www.whizzsystems.com/";
 
 // ✅ Ensure public folder exists
-const publicFolder = path.resolve(__dirname, "public");
-if (!fs.existsSync(publicFolder)) {
-  fs.mkdirSync(publicFolder);
-}
-
-const sitemapPath = path.resolve(publicFolder, "sitemap.xml");
-const sitemap = new SitemapStream({ hostname });
-const writeStream = createWriteStream(sitemapPath);
+const path = require('path');
+const sitemapPath = path.join(__dirname, 'dist/whizz/sitemap.xml');
 
 // Define static routes here (add your actual routes)
 const staticRoutes = [
