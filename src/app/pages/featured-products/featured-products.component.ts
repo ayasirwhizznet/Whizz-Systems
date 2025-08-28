@@ -58,7 +58,7 @@ export class FeaturedProductsComponent {
         {
           name: 'Whizz Kintex 7 FPGA WS 707A',
           imgUrl: 'assets/featured-products/eva-2.png',
-          link: '/featured-products/whizz-virtex-7-fpga-design-services-wh707-a',
+          link: '/featured-products/whizz-virtex-7-fpga-wh707-a',
         },
         {
           name: 'Whizz Zyn SoC WZ 706',
@@ -68,7 +68,7 @@ export class FeaturedProductsComponent {
         {
           name: 'Whizz Kintex 7 FPGA WH 707 B',
           imgUrl: 'assets/featured-products/eva-4.png',
-          link: '/featured-products/whizz-virtex-7-fpga-design-services-ws707',
+          link: '/featured-products/whizz-virtex-7-fpga-ws707',
         },
       ],
     },
@@ -78,12 +78,12 @@ export class FeaturedProductsComponent {
         {
           name: 'Whizz Virtex 7 FPGA WS 709',
           imgUrl: 'assets/featured-products/con-1.png',
-          link: '/featured-products/whizz-virtex-7-fpga-design-services-ws709',
+          link: '/featured-products/whizz-virtex-7-fpga-ws709',
         },
         {
           name: 'Whizz Virtex 7 FPGA WS 7203A',
           imgUrl: 'assets/featured-products/con-2.png',
-          link: '/featured-products/xilinx-virtex-7-fpga-design-services-ws7203-a',
+          link: '/featured-products/xilinx-virtex-7-fpga-ws7203-a',
         },
       ],
     },
@@ -93,15 +93,15 @@ export class FeaturedProductsComponent {
         {
           name: 'Xilinx Kintex 7 FPGA KC724',
           imgUrl: 'assets/featured-products/cha-1.png',
-          link: '/featured-products/xilinx-kintex-7-fpga-design-services-kc724',
+          link: '/featured-products/xilinx-kintex-7-fpga-kc724',
         },
         {
           name: 'Xilinx Virtex 7 FPGA WS 7203',
           imgUrl: 'assets/featured-products/cha-2.png',
-          link: '/featured-products/xilinx-virtex-7-fpga-design-services-ws7203-b',
+          link: '/featured-products/xilinx-virtex-7-fpga-ws7203-b',
         },
       ],
-    }
+    },
   ];
 
   miscellaneous: any[] = [

@@ -1,15 +1,7 @@
-# robots.txt for https://www.whizzsystems.com/
+User-agent: Googlebot
+Disallow: /nogooglebot/
 
 User-agent: *
-Disallow: /admin/
-Disallow: /cgi-bin/
-Disallow: /tmp/
-Disallow: /private/
-Disallow: /login/
-Disallow: /wp-login.php
-Disallow: /wp-admin/
-
-# Allow everything else
 Allow: /
 
 Sitemap: https://www.whizzsystems.com/sitemap.xml
