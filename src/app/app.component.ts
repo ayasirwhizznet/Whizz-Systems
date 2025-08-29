@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
           });
 
           const canonicalUrl = `${window.location.origin}${event.urlAfterRedirects}`;
-
+          this.setRobotsMetaTag('index, follow');
           this.setCanonicalTag(canonicalUrl);
 
           // Get the deepest activated route
@@ -102,4 +102,14 @@ export class AppComponent implements OnInit {
       this.document.head.appendChild(link);
     }
   }
+
+  setRobotsMetaTag(content: string = 'index, follow') {
+  let metaTag = this.metaService.getTag('name="robots"');
+  if (metaTag) {
+    this.metaService.updateTag({ name: 'robots', content });
+  } else {
+    this.metaService.addTag({ name: 'robots', content });
+  }
+}
+
 }
