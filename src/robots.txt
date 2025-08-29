@@ -1,7 +1,7 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
 User-agent: *
 Allow: /
+
+# Disallow build and temp paths (not publicly served)
+Disallow: /assets/tmp/
 
 Sitemap: https://www.whizzsystems.com/sitemap.xml

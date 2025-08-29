@@ -1,4 +1,10 @@
 {
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
+
+{
     "redirects": [
         {
             "source": "/electronic-manufacturing-assembly-services/",

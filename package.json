@@ -5,6 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "prebuild": "node generate-sitemap.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "sitemap": "node generate-sitemap.js"
@@ -20,7 +21,7 @@
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/platform-server": "^18.2.13",
     "@angular/router": "^18.2.0",
-    "@nguniversal/express-engine": "^16.2.0",
+    
     "@vercel/speed-insights": "^1.1.0",
     "bootstrap-icons": "^1.11.3",
     "gsap": "^3.12.5",
