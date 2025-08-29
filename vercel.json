@@ -510,12 +510,12 @@
         },
         {
             "source": "/fpga",
-            "destination": "services/engineering-design/fpga-design-services",
+            "destination": "/services/engineering-design/fpga-design-services",
             "permanent": true
         },
         {
             "source": "/fpga/:slug*",
-            "destination": "services/engineering-design/fpga-design-services",
+            "destination": "/services/engineering-design/fpga-design-services",
             "permanent": true
         }
     ]
