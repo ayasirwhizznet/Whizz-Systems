@@ -12,6 +12,8 @@ import { filter } from 'rxjs';
 import { Meta, Title } from '@angular/platform-browser';
 import { DOCUMENT } from '@angular/common';
 declare let gtag: Function;
+import { PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -28,7 +30,8 @@ export class AppComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private metaService: Meta,
     private titleService: Title,
-    @Inject(DOCUMENT) private document: Document
+    @Inject(DOCUMENT) private document: Document,
+    @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
   async ngOnInit(): Promise<void> {
@@ -39,15 +42,18 @@ export class AppComponent implements OnInit {
           const currentRoute = this.router.url;
           this.layout = currentRoute !== '/404';
 
-          // Google Analytics pageview tracking
-          gtag('config', 'G-709E1EM7HP', {
-            page_path: event.urlAfterRedirects,
-          });
+          if (isPlatformBrowser(this.platformId)) {
+            // Google Analytics pageview tracking
+            if (typeof gtag !== 'undefined') {
+              gtag('config', 'G-709E1EM7HP', {
+                page_path: event.urlAfterRedirects,
+              });
+            }
 
-          const canonicalUrl = `${window.location.origin}${event.urlAfterRedirects}`;
-          this.setRobotsMetaTag('index, follow');
-          this.setCanonicalTag(canonicalUrl);
-
+            const canonicalUrl = `${window.location.origin}${event.urlAfterRedirects}`;
+            this.setRobotsMetaTag('index, follow');
+            this.setCanonicalTag(canonicalUrl);
+          }
           // Get the deepest activated route
           let route = this.activatedRoute;
           while (route.firstChild) {
@@ -72,15 +78,12 @@ export class AppComponent implements OnInit {
               const title = route.snapshot.data['title'];
               const description = route.snapshot.data['description'];
 
-              if (title) {
-                this.titleService.setTitle(title);
-              }
-              if (description) {
+              if (title) this.titleService.setTitle(title);
+              if (description)
                 this.metaService.updateTag({
                   name: 'description',
                   content: description,
                 });
-              }
             }
           });
         });
@@ -104,12 +107,11 @@ export class AppComponent implements OnInit {
   }
 
   setRobotsMetaTag(content: string = 'index, follow') {
-  let metaTag = this.metaService.getTag('name="robots"');
-  if (metaTag) {
-    this.metaService.updateTag({ name: 'robots', content });
-  } else {
-    this.metaService.addTag({ name: 'robots', content });
+    let metaTag = this.metaService.getTag('name="robots"');
+    if (metaTag) {
+      this.metaService.updateTag({ name: 'robots', content });
+    } else {
+      this.metaService.addTag({ name: 'robots', content });
+    }
   }
-}
-
 }

@@ -1,522 +1,530 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "angular.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist/whizz/browser"
+      }
+    }
   ],
+  "routes": [{ "src": "/(.*)", "dest": "/index.html" }],
   "redirects": [
-        {
-            "source": "/electronic-manufacturing-assembly-services/",
-            "destination": "/services/advanced-manufacturing",
-            "permanent": true
-        },
-        {
-            "source": "/eol-end-of-life-components-materials/",
-            "destination": "/services/sustainable_engineering",
-            "permanent": true
-        },
-        {
-            "source": "/contact-us/",
-            "destination": "https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
-            "permanent": true
-        },
-        {
-            "source": "/test-services-fp-ict-fct-burn-in/",
-            "destination": "/services/lab-testing-solutions",
-            "permanent": true
-        },
-        {
-            "source": "/microcontroller-software/",
-            "destination": "/services/engineering-design/firmware-software-development",
-            "permanent": true
-        },
-        {
-            "source": "/services/engineering-design/firmware-software-development",
-            "destination": "/services/engineering-design/pcb-layout",
-            "permanent": true
-        },
-        {
-            "source": "/usb-software/",
-            "destination": "/services/engineering-design/firmware-software-development",
-            "permanent": true
-        },
-        {
-            "source": "/connected-products/",
-            "destination": "/featured-products",
-            "permanent": true
-        },
-        {
-            "source": "/wp-content/uploads/2021/02/ORU-Whizz-Whitepaper_Rev6_Nov05-2020_QQS.pdf",
-            "destination": "/news-&-insights/whitepaper-5g-oru",
-            "permanent": true
-        },
-        {
-            "source": "/programmable-logic/",
-            "destination": "/services/engineering-design/firmware-software-development",
-            "permanent": true
-        },
-        {
-            "source": "/dsp-software/",
-            "destination": "/services/engineering-design/firmware-software-development",
-            "permanent": true
-        },
-        {
-            "source": "/cloud-connectivity-design-iot/",
-            "destination": "/news-&-insights/whitepaper-5g-oru",
-            "permanent": true
-        },
-        {
-            "source": "/package-design-simulation/",
-            "destination": "/services/advanced-manufacturing#box-build",
-            "permanent": true
-        },
-        {
-            "source": "/pc-software/",
-            "destination": "/services/engineering-design/firmware-software-development",
-            "permanent": true
-        },
-        {
-            "source": "/industries/",
-            "destination": "/",
-            "permanent": true
-        },
-        {
-            "source": "/circuit-board-design-services/",
-            "destination": "/services",
-            "permanent": true
-        },
-        {
-            "source": "/5g-oru/",
-            "destination": "/news-&-insights/whitepaper-5g-oru",
-            "permanent": true
-        },
-        {
-            "source": "/iso-90012015-quality-management-systems/",
-            "destination": "/services/npi#Compliance",
-            "permanent": true
-        },
-        {
-            "source": "/products/",
-            "destination": "/featured-products",
-            "permanent": true
-        },
-        {
-            "source": "/cloud-defined-storage-engine/",
-            "destination": "/services/supply-chain-management#inventory-and-storage",
-            "permanent": true
-        },
-        {
-            "source": "/jdm-products/",
-            "destination": "/featured-products",
-            "permanent": true
-        },
-        {
-            "source": "/material-sourcing-procurement-back/",
-            "destination": "/services/supply-chain-management#inventory-and-storage",
-            "permanent": true
-        },
-        {
-            "source": "/news/whizz-systems-inc-celebrates-20th-year-of-providing-electronics-product-design-manufacturing/",
-            "destination": "/about",
-            "permanent": true
-        },
-        {
-            "source": "/services/advanced-manufacturing/electronic-manufacturing-assembly",
-            "destination": "/services/advanced-manufacturing",
-            "permanent": true
-        },
-        {
-            "source": "/services/advanced-manufacturing/electronic-manufacturing-assembly",
-            "destination": "/services/advanced-manufacturing",
-            "permanent": true
-        },
-        {
-            "source": "/services/advanced-manufacturing/electronic-manufacturing-assembly",
-            "destination": "/services/advanced-manufacturing",
-            "permanent": true
-        },
-        {
-            "source": "/custom-pcb-design",
-            "destination": "/services/engineering-design/pcb-layout",
-            "permanent": true
-        },
-        {
-            "source": "/wp-content/uploads/2021/05/lifecycle-npi.pdf",
-            "destination": "/services/npi",
-            "permanent": true
-        },
-        {
-            "source": "/5g-design",
-            "destination": "/news-&-insights/whitepaper-5g-oru",
-            "permanent": true
-        },
-        {
-            "source": "/faqs/",
-            "destination": "/news-&-insights",
-            "permanent": true
-        },
-        {
-            "source": "/allnews/page/3/",
-            "destination": "/news-&-insights",
-            "permanent": true
-        },
-        {
-            "source": "/contact-us/",
-            "destination": "/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
-            "permanent": true
-        },
-        {
-            "source": "/embedded-technology/",
-            "destination": "/services/engineering-design/firmware-software-development",
-            "permanent": true
-        },
-        {
-            "source": "/services/advanced-manufacturing/mechanical-system-build",
-            "destination": "/services/advanced-manufacturing/",
-            "permanent": true
-        },
-        {
-            "source": "/services/advanced-manufacturing/dfx-analysis",
-            "destination": "/services/advanced-manufacturing",
-            "permanent": true
-        },
-        {
-            "source": "/services/advanced-manufacturing/thermal-profiling",
-            "destination": "/services/advanced-manufacturing",
-            "permanent": true
-        },
-        {
-            "source": "/product/material-sourcing-procurement/",
-            "destination": "/services/supply-chain-management#components-procurement-and-planning",
-            "permanent": true
-        },
-        {
-            "source": "/world-class-engineering-manufacturing/",
-            "destination": "/services",
-            "permanent": true
-        },
-        {
-            "source": "/electronic-manufacturing-assembly",
-            "destination": "/services/advanced-manufacturing",
-            "permanent": true
-        },
-        {
-            "source": "/services/advanced-manufacturing/fame",
-            "destination": "/services/advanced-manufacturing",
-            "permanent": true
-        },
-        {
-            "source": "/wp-content/uploads/2021/09/5G-design-reference-platform.pdf",
-            "destination": "/services/engineering-design/system-schematic-services",
-            "permanent": true
-        },
-        {
-            "source": "/news/whizz-systems-inc-continues-growth-amid-challenging-year/",
-            "destination": "/about",
-            "permanent": true
-        },
-        {
-            "source": "/complete-box-build-ems-service/",
-            "destination": "/services/advanced-manufacturing#box-build",
-            "permanent": true
-        },
-        {
-            "source": "/features-of-our-fpga-design-services-design-services/",
-            "destination": "/services/engineering-design/fpga-design-services",
-            "permanent": true
-        },
-        {
-            "source": "/material-sourcing-procurement",
-            "destination": "/services/supply-chain-management#components-procurement-and-planning",
-            "permanent": true
-        },
-        {
-            "source": "/product/storage-products/",
-            "destination": "/featured-products",
-            "permanent": true
-        },
-        {
-            "source": "/solutions",
-            "destination": "/services",
-            "permanent": true
-        },
-        {
-            "source": "/solutions",
-            "destination": "/services",
-            "permanent": true
-        },
-        {
-            "source": "/electron/",
-            "destination": "/services/advanced-manufacturing",
-            "permanent": true
-        },
-        {
-            "source": "/fpga-design-services-design/",
-            "destination": "/services/engineering-design/fpga-design-services",
-            "permanent": true
-        },
-        {
-            "source": "/help-desk/",
-            "destination": "/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
-            "permanent": true
-        },
-        {
-            "source": "/project/",
-            "destination": "/featured-products",
-            "permanent": true
-        },
-        {
-            "source": "/wp-content/uploads/2023/08/FPGA-Hardware-Design-Case-Study.pdf",
-            "destination": "/news-&-insights",
-            "permanent": true
-        },
-        {
-            "source": "/shop/",
-            "destination": "/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
-            "permanent": true
-        },
-        {
-            "source": "/complete-box-built-ems-service",
-            "destination": "/services/advanced-manufacturing#box-build",
-            "permanent": true
-        },
-        {
-            "source": "/material-sourcing-procurement/",
-            "destination": "/services/supply-chain-management#global-sourcing-and-broker-ecosystem",
-            "permanent": true
-        },
-        {
-            "source": "/fpga-design-services-hardware-design/",
-            "destination": "/services/engineering-design/fpga-design-services",
-            "permanent": true
-        },
-        {
-            "source": "/project-examples/",
-            "destination": "/featured-products",
-            "permanent": true
-        },
-        {
-            "source": "/case_studies/fpgas-accelerate-hardware-designs/",
-            "destination": "/services/engineering-design/fpga-design-services",
-            "permanent": true
-        },
-        {
-            "source": "/complex-circuit-boards-for-large-small-pcbs/",
-            "destination": "/services/engineering-design/pcb-layout",
-            "permanent": true
-        },
-        {
-            "source": "/storage-products/",
-            "destination": "/services/supply-chain-management#inventory-and-storage",
-            "permanent": true
-        },
-        {
-            "source": "/fpga-design-services-development-and-fpga-design-services-prototyping/",
-            "destination": "/services/engineering-design/fpga-design-services",
-            "permanent": true
-        },
-        {
-            "source": "/custom-pcb-design-for-data-centers/",
-            "destination": "/services/engineering-design/pcb-layout",
-            "permanent": true
-        },
-        {
-            "source": "/mechanical-and-thermal-design/",
-            "destination": "/services/engineering-design/thermal-management-solutions",
-            "permanent": true
-        },
-        {
-            "source": "/signal-integrity-simulation",
-            "destination": "/services/engineering-design/signal-integrity-simulation-services",
-            "permanent": true
-        },
-        {
-            "source": "/wp-content/uploads/2020/10/ORU-Whizz-Whitepaper_Rev4_QQS.pdf",
-            "destination": "/news-&-insights/whitepaper-5g-oru",
-            "permanent": true
-        },
-        {
-            "source": "/signal-integrity-simulation/",
-            "destination": "/services/engineering-design/signal-integrity-simulation-services",
-            "permanent": true
-        },
-        {
-            "source": "/signal-integrity-simulation/",
-            "destination": "/services/engineering-design/signal-integrity-simulation-services",
-            "permanent": true
-        },
-        {
-            "source": "/custom-pcb-design/",
-            "destination": "/services/engineering-design/pcb-layout",
-            "permanent": true
-        },
-        {
-            "source": "/npi-prototyping/",
-            "destination": "/services/npi#Prototyping",
-            "permanent": true
-        },
-        {
-            "source": "/news/",
-            "destination": "/news-&-insights",
-            "permanent": true
-        },
-        {
-            "source": "/allnews/page/2/",
-            "destination": "/news-&-insights",
-            "permanent": true
-        },
-        {
-            "source": "/npi-prototyping-back/",
-            "destination": "/services/npi#Prototyping",
-            "permanent": true
-        },
-        {
-            "source": "/news/whizz-systems-added-state-of-the-art-juki-ism500-intelligent-storage-system-in-house/",
-            "destination": "/services/supply-chain-management#inventory-and-storage",
-            "permanent": true
-        },
-        {
-            "source": "/allnews/",
-            "destination": "/news-&-insights",
-            "permanent": true
-        },
-        {
-            "source": "/storage-products-back/",
-            "destination": "/services/supply-chain-management#inventory-and-storage",
-            "permanent": true
-        },
-        {
-            "source": "/signal-integrity-simulation-offered-by-a-leading-product-engineering-service-provider-in-silicon-valley-california/",
-            "destination": "/services/engineering-design/signal-integrity-simulation-services",
-            "permanent": true
-        },
-        {
-            "source": "/news/signal-integrity-simulation-offered-by-a-leading-product-engineering-service-provider-in-silicon-valley-california/",
-            "destination": "/services/engineering-design/signal-integrity-simulation-services",
-            "permanent": true
-        },
-        {
-            "source": "/whizz-systems-added-3-newest-largest-intelligent-storage-system-juki-ism2000xl-fortress-in-house/",
-            "destination": "/services/supply-chain-management#inventory-and-storage",
-            "permanent": true
-        },
-        {
-            "source": "/whizz-systems-added-3-newest-largest-intelligent-storage-system-juki-ism2000xl-fortress-in-house/",
-            "destination": "/services/supply-chain-management#inventory-and-storage",
-            "permanent": true
-        },
-        {
-            "source": "/contacts-us/",
-            "destination": "/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
-            "permanent": true
-        },
-        {
-            "source": "/contacts-us/",
-            "destination": "/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
-            "permanent": true
-        },
-        {
-            "source": "/case-studies/",
-            "destination": "/news-&-insights",
-            "permanent": true
-        },
-        {
-            "source": "/custom-ip-development-and-fpga-design-services-design-services",
-            "destination": "/services/engineering-design/fpga-design-services",
-            "permanent": true
-        },
-        {
-            "source": "/npi-prototyping",
-            "destination": "/services/npi#Prototyping",
-            "permanent": true
-        },
-        {
-            "source": "/custom-ip-development-and-fpga-design-services-design-services/",
-            "destination": "/services/engineering-design/fpga-design-services",
-            "permanent": true
-        },
-        {
-            "source": "/media-news-2/",
-            "destination": "/news-&-insights",
-            "permanent": true
-        },
-        {
-            "source": "/media-news-2",
-            "destination": "/news-&-insights",
-            "permanent": true
-        },
-        {
-            "source": "/contact-us",
-            "destination": "/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
-            "permanent": true
-        },
-        {
-            "source": "/products/",
-            "destination": "/featured-products",
-            "permanent": true
-        },
-        {
-            "source": "/news/whizz-systems-added-3-newest-largest-intelligent-storage-system-juki-ism2000xl-fortress-in-house/",
-            "destination": "/services/supply-chain-management#inventory-and-storage",
-            "permanent": true
-        },
-        {
-            "source": "/about-us/",
-            "destination": "/about",
-            "permanent": true
-        },
-        {
-            "source": "/whizz-case-studies/",
-            "destination": "/news-&-insights",
-            "permanent": true
-        },
-        {
-            "source": "/news",
-            "destination": "/news-&-insights",
-            "permanent": true
-        },
-        {
-            "source": "/jdm-products",
-            "destination": "/featured-products",
-            "permanent": true
-        },
-        {
-            "source": "/products",
-            "destination": "/featured-products",
-            "permanent": true
-        },
-        {
-            "source": "/mechanical-and-thermal-design",
-            "destination": "/services/engineering-design/thermal-management-solutions",
-            "permanent": true
-        },
-        {
-            "source": "/test-services-fp-ict-fct-burn-in/:slug*",
-            "destination": "/services/lab-testing-solutions",
-            "permanent": true
-        },
-        {
-            "source": "/test-services-fp-ict-fct-burn-in",
-            "destination": "/services/lab-testing-solutions",
-            "permanent": true
-        },
-        {
-            "source": "/fpga-design-services-design",
-            "destination": "/services/engineering-design/fpga-design-services",
-            "permanent": true
-        },
-        {
-            "source": "/fpga-design-services-design/:slug*",
-            "destination": "/services/engineering-design/fpga-design-services",
-            "permanent": true
-        },
-        {
-            "source": "/fpga",
-            "destination": "/services/engineering-design/fpga-design-services",
-            "permanent": true
-        },
-        {
-            "source": "/fpga/:slug*",
-            "destination": "/services/engineering-design/fpga-design-services",
-            "permanent": true
-        }
-    ]
+    {
+      "source": "/electronic-manufacturing-assembly-services/",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/eol-end-of-life-components-materials/",
+      "destination": "/services/sustainable_engineering",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us/",
+      "destination": "https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
+      "permanent": true
+    },
+    {
+      "source": "/test-services-fp-ict-fct-burn-in/",
+      "destination": "/services/lab-testing-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/microcontroller-software/",
+      "destination": "/services/engineering-design/firmware-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/services/engineering-design/firmware-software-development",
+      "destination": "/services/engineering-design/pcb-layout",
+      "permanent": true
+    },
+    {
+      "source": "/usb-software/",
+      "destination": "/services/engineering-design/firmware-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/connected-products/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2021/02/ORU-Whizz-Whitepaper_Rev6_Nov05-2020_QQS.pdf",
+      "destination": "/news-&-insights/whitepaper-5g-oru",
+      "permanent": true
+    },
+    {
+      "source": "/programmable-logic/",
+      "destination": "/services/engineering-design/firmware-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/dsp-software/",
+      "destination": "/services/engineering-design/firmware-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/cloud-connectivity-design-iot/",
+      "destination": "/news-&-insights/whitepaper-5g-oru",
+      "permanent": true
+    },
+    {
+      "source": "/package-design-simulation/",
+      "destination": "/services/advanced-manufacturing#box-build",
+      "permanent": true
+    },
+    {
+      "source": "/pc-software/",
+      "destination": "/services/engineering-design/firmware-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/industries/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/circuit-board-design-services/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/5g-oru/",
+      "destination": "/news-&-insights/whitepaper-5g-oru",
+      "permanent": true
+    },
+    {
+      "source": "/iso-90012015-quality-management-systems/",
+      "destination": "/services/npi#Compliance",
+      "permanent": true
+    },
+    {
+      "source": "/products/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/cloud-defined-storage-engine/",
+      "destination": "/services/supply-chain-management#inventory-and-storage",
+      "permanent": true
+    },
+    {
+      "source": "/jdm-products/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/material-sourcing-procurement-back/",
+      "destination": "/services/supply-chain-management#inventory-and-storage",
+      "permanent": true
+    },
+    {
+      "source": "/news/whizz-systems-inc-celebrates-20th-year-of-providing-electronics-product-design-manufacturing/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/services/advanced-manufacturing/electronic-manufacturing-assembly",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/services/advanced-manufacturing/electronic-manufacturing-assembly",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/services/advanced-manufacturing/electronic-manufacturing-assembly",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/custom-pcb-design",
+      "destination": "/services/engineering-design/pcb-layout",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2021/05/lifecycle-npi.pdf",
+      "destination": "/services/npi",
+      "permanent": true
+    },
+    {
+      "source": "/5g-design",
+      "destination": "/news-&-insights/whitepaper-5g-oru",
+      "permanent": true
+    },
+    {
+      "source": "/faqs/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/allnews/page/3/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us/",
+      "destination": "/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
+      "permanent": true
+    },
+    {
+      "source": "/embedded-technology/",
+      "destination": "/services/engineering-design/firmware-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/services/advanced-manufacturing/mechanical-system-build",
+      "destination": "/services/advanced-manufacturing/",
+      "permanent": true
+    },
+    {
+      "source": "/services/advanced-manufacturing/dfx-analysis",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/services/advanced-manufacturing/thermal-profiling",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/product/material-sourcing-procurement/",
+      "destination": "/services/supply-chain-management#components-procurement-and-planning",
+      "permanent": true
+    },
+    {
+      "source": "/world-class-engineering-manufacturing/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/electronic-manufacturing-assembly",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/services/advanced-manufacturing/fame",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2021/09/5G-design-reference-platform.pdf",
+      "destination": "/services/engineering-design/system-schematic-services",
+      "permanent": true
+    },
+    {
+      "source": "/news/whizz-systems-inc-continues-growth-amid-challenging-year/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/complete-box-build-ems-service/",
+      "destination": "/services/advanced-manufacturing#box-build",
+      "permanent": true
+    },
+    {
+      "source": "/features-of-our-fpga-design-services-design-services/",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/material-sourcing-procurement",
+      "destination": "/services/supply-chain-management#components-procurement-and-planning",
+      "permanent": true
+    },
+    {
+      "source": "/product/storage-products/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/solutions",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/solutions",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/electron/",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/fpga-design-services-design/",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/help-desk/",
+      "destination": "/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
+      "permanent": true
+    },
+    {
+      "source": "/project/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/08/FPGA-Hardware-Design-Case-Study.pdf",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/shop/",
+      "destination": "/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
+      "permanent": true
+    },
+    {
+      "source": "/complete-box-built-ems-service",
+      "destination": "/services/advanced-manufacturing#box-build",
+      "permanent": true
+    },
+    {
+      "source": "/material-sourcing-procurement/",
+      "destination": "/services/supply-chain-management#global-sourcing-and-broker-ecosystem",
+      "permanent": true
+    },
+    {
+      "source": "/fpga-design-services-hardware-design/",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/project-examples/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/case_studies/fpgas-accelerate-hardware-designs/",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/complex-circuit-boards-for-large-small-pcbs/",
+      "destination": "/services/engineering-design/pcb-layout",
+      "permanent": true
+    },
+    {
+      "source": "/storage-products/",
+      "destination": "/services/supply-chain-management#inventory-and-storage",
+      "permanent": true
+    },
+    {
+      "source": "/fpga-design-services-development-and-fpga-design-services-prototyping/",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/custom-pcb-design-for-data-centers/",
+      "destination": "/services/engineering-design/pcb-layout",
+      "permanent": true
+    },
+    {
+      "source": "/mechanical-and-thermal-design/",
+      "destination": "/services/engineering-design/thermal-management-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/signal-integrity-simulation",
+      "destination": "/services/engineering-design/signal-integrity-simulation-services",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2020/10/ORU-Whizz-Whitepaper_Rev4_QQS.pdf",
+      "destination": "/news-&-insights/whitepaper-5g-oru",
+      "permanent": true
+    },
+    {
+      "source": "/signal-integrity-simulation/",
+      "destination": "/services/engineering-design/signal-integrity-simulation-services",
+      "permanent": true
+    },
+    {
+      "source": "/signal-integrity-simulation/",
+      "destination": "/services/engineering-design/signal-integrity-simulation-services",
+      "permanent": true
+    },
+    {
+      "source": "/custom-pcb-design/",
+      "destination": "/services/engineering-design/pcb-layout",
+      "permanent": true
+    },
+    {
+      "source": "/npi-prototyping/",
+      "destination": "/services/npi#Prototyping",
+      "permanent": true
+    },
+    {
+      "source": "/news/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/allnews/page/2/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/npi-prototyping-back/",
+      "destination": "/services/npi#Prototyping",
+      "permanent": true
+    },
+    {
+      "source": "/news/whizz-systems-added-state-of-the-art-juki-ism500-intelligent-storage-system-in-house/",
+      "destination": "/services/supply-chain-management#inventory-and-storage",
+      "permanent": true
+    },
+    {
+      "source": "/allnews/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/storage-products-back/",
+      "destination": "/services/supply-chain-management#inventory-and-storage",
+      "permanent": true
+    },
+    {
+      "source": "/signal-integrity-simulation-offered-by-a-leading-product-engineering-service-provider-in-silicon-valley-california/",
+      "destination": "/services/engineering-design/signal-integrity-simulation-services",
+      "permanent": true
+    },
+    {
+      "source": "/news/signal-integrity-simulation-offered-by-a-leading-product-engineering-service-provider-in-silicon-valley-california/",
+      "destination": "/services/engineering-design/signal-integrity-simulation-services",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-added-3-newest-largest-intelligent-storage-system-juki-ism2000xl-fortress-in-house/",
+      "destination": "/services/supply-chain-management#inventory-and-storage",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-added-3-newest-largest-intelligent-storage-system-juki-ism2000xl-fortress-in-house/",
+      "destination": "/services/supply-chain-management#inventory-and-storage",
+      "permanent": true
+    },
+    {
+      "source": "/contacts-us/",
+      "destination": "/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
+      "permanent": true
+    },
+    {
+      "source": "/contacts-us/",
+      "destination": "/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/custom-ip-development-and-fpga-design-services-design-services",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/npi-prototyping",
+      "destination": "/services/npi#Prototyping",
+      "permanent": true
+    },
+    {
+      "source": "/custom-ip-development-and-fpga-design-services-design-services/",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/media-news-2/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/media-news-2",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
+      "permanent": true
+    },
+    {
+      "source": "/products/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/news/whizz-systems-added-3-newest-largest-intelligent-storage-system-juki-ism2000xl-fortress-in-house/",
+      "destination": "/services/supply-chain-management#inventory-and-storage",
+      "permanent": true
+    },
+    {
+      "source": "/about-us/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-case-studies/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/news",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/jdm-products",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/products",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/mechanical-and-thermal-design",
+      "destination": "/services/engineering-design/thermal-management-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/test-services-fp-ict-fct-burn-in/:slug*",
+      "destination": "/services/lab-testing-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/test-services-fp-ict-fct-burn-in",
+      "destination": "/services/lab-testing-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/fpga-design-services-design",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/fpga-design-services-design/:slug*",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/fpga",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/fpga/:slug*",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    }
+  ]
 }

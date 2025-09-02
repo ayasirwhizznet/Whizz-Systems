@@ -15,13 +15,13 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/whizz",
+            "outputPath": "dist/whizz/browser",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "main": "src/main.ts",
             "polyfills": ["zone.js"],
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "tsconfig.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",
@@ -65,15 +65,50 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "Whizz:build"
+          },
           "configurations": {
             "production": {
-              "buildTarget": "Whizz:build:production"
+              "browserTarget": "Whizz:build:production"
             },
             "development": {
-              "buildTarget": "Whizz:build:development"
+              "browserTarget": "Whizz:build:development"
             }
           },
           "defaultConfiguration": "development"
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/whizz/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "tsconfig.json"
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "sourceMap": false
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true
+            }
+          }
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "browserTarget": "Whizz:build:production",
+            "serverTarget": "Whizz:server:production",
+            "routes": [
+              "/",
+              "/about",
+              "/services",
+              "/featured-products",
+              "/news-&-insights"
+            ]
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
@@ -88,24 +123,14 @@
               "src/assets",
               "src/robots.txt",
               "src/sitemap.xml",
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              { "glob": "**/*", "input": "public" }
             ],
             "styles": ["src/styles.scss"],
             "scripts": []
           }
-        },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server",
-          "options": {
-            "outputPath": "dist/Whizz/server",
-            "main": "src/server.ts",
-            "tsConfig": "tsconfig.server.json"
-          }
         }
       }
     }
-  }
+  },
+  "cli": { "analytics": false }
 }
