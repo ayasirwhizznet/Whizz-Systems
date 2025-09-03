@@ -5,11 +5,9 @@ export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: 'Whizz Systems',
+    title: 'Whizz Systems | EMS, Design, Engineering & Development Experts',
     data: {
-      description:
-        'Whizz Systems is a leading provider of innovative electronic design and manufacturing solutions. From concept to production, we deliver high-quality PCB design, prototyping, and assembly services tailored for startups and enterprises alike.',
-    },
+      description: `Whizz Systems provides EMS, advanced electronic design, engineering, and product development services with 25+ years of expertise in hi-tech industries.`},
   },
   {
     path: 'about',
