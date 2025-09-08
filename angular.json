@@ -89,6 +89,7 @@
         "prerender": {
           "builder": "@angular-devkit/build-angular:prerender",
           "options": {
+            "browserTarget": "Whizz:build:production",
             "routes": [
               "/",
               "/about",
