@@ -94,9 +94,7 @@
             "routes": [
               "/",
               "/about",
-              "/services",
-              "/featured-products",
-              "/news-&-insights"
+              "/services"
             ]
           }
         },
