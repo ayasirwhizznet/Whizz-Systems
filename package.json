@@ -10,7 +10,7 @@
     "sitemap": "node generate-sitemap.js",
     "build:ssr": "ng build && ng run Whizz:server:production",
     "prerender": "ng run Whizz:prerender",
-    "build": "ng build && ng run Whizz:server && ng run Whizz:prerender",
+    "build": "ng build && ng run Whizz:prerender",
     "vercel-build": "npm run build"
   },
   "private": true,
