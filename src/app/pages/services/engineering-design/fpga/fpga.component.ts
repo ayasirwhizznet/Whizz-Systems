@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, Inject, Renderer2 } from '@angular/core';
+import { CommonModule, DOCUMENT } from '@angular/common';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesCoreServicesComponent } from '@components/services-core-services/services-core-services.component';
 import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
 import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
-import { ServicesBenefits1Component } from "../../../../shared/components/services-benefits1/services-benefits1.component";
+import { ServicesBenefits1Component } from '../../../../shared/components/services-benefits1/services-benefits1.component';
 
 @Component({
   selector: 'app-fpga-design-services',
@@ -15,19 +15,21 @@ import { ServicesBenefits1Component } from "../../../../shared/components/servic
     ServicesContactExpertsComponent,
     ServicesCoreServicesComponent,
     ServicesIntroComponent,
-    ServicesBenefits1Component
-],
+    ServicesBenefits1Component,
+  ],
   templateUrl: './fpga.component.html',
 })
 export class FpgaComponent {
   coreServices: any[] = [
     {
-      imgUrl: 'assets/services/engg&design/fpga-design-services/architecture.png',
+      imgUrl:
+        'assets/services/engg&design/fpga-design-services/architecture.png',
       name: 'Architecture Design & RTL Coding',
       desc: 'Develop scalable FPGA architectures with optimized RTL coding to meet your system requirements',
     },
     {
-      imgUrl: 'assets/services/engg&design/fpga-design-services/verification.png',
+      imgUrl:
+        'assets/services/engg&design/fpga-design-services/verification.png',
       name: 'Functional Verification & Simulation',
       desc: 'Rigorous verification processes ensure FPGA/ASIC designs perform flawlessly under real-world conditions.',
     },
@@ -43,19 +45,19 @@ export class FpgaComponent {
     },
   ];
 
-  expertise:any[] = [
+  expertise: any[] = [
     {
       heading: 'Supported FPGA Families',
       title: 'Diverse FPGA Families for Every Need',
       subTitle: 'Our expertise spans a wide range of FPGA families, including:',
-      desc: ['Versal', 'Zynx', 'Virtex Ultrascale ', 'Agilex', 'Stratix']
+      desc: ['Versal', 'Zynx', 'Virtex Ultrascale ', 'Agilex', 'Stratix'],
     },
     {
       heading: 'Communication & Connectivity',
       title: 'Seamless IP Integration and High-Speed Connectivity',
       subTitle: 'Industry Standards',
-      desc: ['UART', 'I2C', 'SPI', 'Ethernet']
-    }
+      desc: ['UART', 'I2C', 'SPI', 'Ethernet'],
+    },
   ];
 
   benefits: any[] = [
@@ -85,4 +87,50 @@ export class FpgaComponent {
       desc: 'We collaborate closely with our clients to turn complex ideas into market-ready solutions quickly, reducing time-to-market and overall costs.',
     },
   ];
+
+  constructor(
+    private renderer: Renderer2,
+    @Inject(DOCUMENT) private document: Document
+  ) {}
+
+  ngOnInit(): void {
+    const jsonLdData = [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        serviceType: 'FPGA Design and Development Services',
+        provider: {
+          '@type': 'Organization',
+          name: 'Whizz Systems',
+          url: 'https://www.whizzsystems.com/',
+          logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+          sameAs: [
+            'https://www.linkedin.com/company/whizz-systems/',
+            'https://www.youtube.com/@WhizzSystemsCA',
+          ],
+        },
+        url: 'https://www.whizzsystems.com/services/engineering-design/fpga-design-services',
+        description:
+          'Whizz Systems provides FPGA design and development services including architecture design, RTL coding, verification, system integration, IP connectivity, and support for major FPGA families.',
+        areaServed: {
+          '@type': 'Place',
+          name: 'Worldwide',
+        },
+        offers: {
+          '@type': 'Offer',
+          name: 'FPGA Engineering Services',
+          description:
+            'Comprehensive FPGA engineering services covering design, development, testing, and production.',
+          url: 'https://www.whizzsystems.com/services/engineering-design/fpga-design-services',
+        },
+      },
+    ];
+
+    jsonLdData.forEach((entry) => {
+      const script = this.renderer.createElement('script');
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify(entry);
+      this.renderer.appendChild(this.document.body, script); // Or use this.document.body
+    });
+  }
 }

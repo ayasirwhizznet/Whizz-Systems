@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Inject, Renderer2 } from '@angular/core';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
 import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
 import { ServicesCoreServicesComponent } from '@components/services-core-services/services-core-services.component';
 import { ServicesIndustryComponent } from '@components/services-industry/services-industry.component';
 import { ServicesBenefitsComponent } from '@components/services-benefits/services-benefits.component';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-pcb-layout',
@@ -105,4 +106,50 @@ export class PcbLayoutComponent {
       desc: 'Ensuring your design intent translates seamlessly into production.',
     },
   ];
+
+  constructor(
+      private renderer: Renderer2,
+      @Inject(DOCUMENT) private document: Document
+    ) {}
+
+  ngOnInit(): void {
+    const jsonLdData = [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        serviceType: 'PCB Layout and Design Services',
+        provider: {
+          '@type': 'Organization',
+          name: 'Whizz Systems',
+          url: 'https://www.whizzsystems.com/',
+          logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+          sameAs: [
+            'https://www.linkedin.com/company/whizz-systems/',
+            'https://www.youtube.com/@WhizzSystemsCA',
+          ],
+        },
+        url: 'https://www.whizzsystems.com/services/engineering-design/pcb-layout-services',
+        description:
+          'Whizz Systems offers professional PCB layout and design services, including high-density PCB layouts, HDI PCB design, DfX optimization, and advanced PCB development solutions.',
+        areaServed: {
+          '@type': 'Place',
+          name: 'Worldwide',
+        },
+        offers: {
+          '@type': 'Offer',
+          name: 'PCB Layout Services',
+          description:
+            'High-density, HDI, and DfX-focused PCB layout and design services for complex electronic systems.',
+          url: 'https://www.whizzsystems.com/services/engineering-design/pcb-layout-services',
+        },
+      },
+    ];
+
+    jsonLdData.forEach((entry) => {
+      const script = this.renderer.createElement('script');
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify(entry);
+      this.renderer.appendChild(this.document.body, script);
+    });
+  }
 }

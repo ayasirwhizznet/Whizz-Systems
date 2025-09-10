@@ -22,10 +22,9 @@ services, from FPGA customization to power budgeting and compliance engineering.
         loadComponent: () =>
           import('./fpga/fpga.component').then((m) => m.FpgaComponent),
         title:
-          'FPGA Design &amp; Development Services | Custom RTL Coding &amp; IP Integration - Whizz Systems',
+          'FPGA Design & Development Services | Whizz Systems',
         data: {
-          description: `FPGA Design &amp; Development Services | Custom RTL Coding &amp; IP Integration - Whizz
-Systems`,
+          description: `Whizz Systems offers FPGA design and development services including architecture, RTL coding, verification, system integration, and support for major FPGA families.`,
         },
       },
       {
@@ -35,11 +34,9 @@ Systems`,
             (m) => m.PcbLayoutComponent
           ),
         title:
-          'PCB Layout Services | High-Speed &amp; High-Density PCB Design – Whizz Systems',
+          'PCB Layout & Design Services | High-Density & HDI PCB Experts',
         data: {
-          description: `Whizz Systems delivers expert PCB layout services with high-speed routing, signal
-integrity optimization, power plane planning, and DFM/DFT for flawless fabrication and
-performance.`,
+          description: `description" content="Whizz Systems provides PCB layout and design services including high-density PCB layouts, HDI design, DfX PCB development, and advanced electronic product engineering.`,
         },
       },
       {
