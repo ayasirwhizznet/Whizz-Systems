@@ -71,22 +71,20 @@ export class ServicesComponent implements AfterViewInit, OnDestroy {
 
     const KeenSlider = (await import('keen-slider')).default;
 
-    setTimeout(() => {
-      if (this.sliderRef?.nativeElement) {
-        this.slider = new KeenSlider(this.sliderRef.nativeElement, {
-          slideChanged: (slider) => {
-            this.progress = slider.track.details;
-          },
-          breakpoints: {
-            '(min-width: 0px)': { slides: { perView: 1, spacing: 50 } },
-            '(min-width: 640px)': { slides: { perView: 2, spacing: 60 } },
-            '(min-width: 1280px)': { slides: { perView: 4, spacing: 40 } },
-            '(min-width: 1536px)': { slides: { perView: 4, spacing: 52 } },
-            '(min-width: 1800px)': { slides: { perView: 4, spacing: 64 } },
-          },
-        });
-      }
-    }, 500);
+    if (this.sliderRef?.nativeElement) {
+      this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+        slideChanged: (slider) => {
+          this.progress = slider.track.details;
+        },
+        breakpoints: {
+          '(min-width: 0px)': { slides: { perView: 1, spacing: 50 } },
+          '(min-width: 640px)': { slides: { perView: 2, spacing: 60 } },
+          '(min-width: 1280px)': { slides: { perView: 4, spacing: 40 } },
+          '(min-width: 1536px)': { slides: { perView: 4, spacing: 52 } },
+          '(min-width: 1800px)': { slides: { perView: 4, spacing: 64 } },
+        },
+      });
+    }
   }
 
   ngOnDestroy() {
