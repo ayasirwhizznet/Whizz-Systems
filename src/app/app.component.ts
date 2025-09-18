@@ -1,16 +1,22 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import {
   Router,
   RouterOutlet,
   NavigationEnd,
   ActivatedRoute,
 } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import {
+  CommonModule,
+  DOCUMENT,
+  isPlatformBrowser,
+  isPlatformServer,
+} from '@angular/common';
 import { FooterComponent } from '@components/footer/footer.component';
 import { HeaderComponent } from '@components/header/header.component';
 import { filter } from 'rxjs';
 import { Meta, Title } from '@angular/platform-browser';
-import { DOCUMENT } from '@angular/common';
+import { environment } from '../environments/environment';
+
 declare let gtag: Function;
 
 @Component({
@@ -18,78 +24,76 @@ declare let gtag: Function;
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent, CommonModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
   layout = true;
+  private isBrowser: boolean;
+  private isServer: boolean;
+  private baseUrl: string;
 
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private metaService: Meta,
     private titleService: Title,
-    @Inject(DOCUMENT) private document: Document
-  ) {}
+    @Inject(DOCUMENT) private document: Document,
+    @Inject(PLATFORM_ID) private platformId: object
+  ) {
+    this.isBrowser = isPlatformBrowser(this.platformId);
+    this.isServer = isPlatformServer(this.platformId);
+    this.baseUrl = environment.baseUrl;
+  }
 
   async ngOnInit(): Promise<void> {
-    try {
-      this.router.events
-        .pipe(filter((event) => event instanceof NavigationEnd))
-        .subscribe((event: NavigationEnd) => {
-          const currentRoute = this.router.url;
-          this.layout = currentRoute !== '/404';
+    // ✅ Immediately set meta for SSR
+    this.setMetaFromRoute(this.activatedRoute);
 
-          // Google Analytics pageview tracking
+    // ✅ CSR: Keep listening for route changes for SPA navigation
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe((event: NavigationEnd) => {
+        const currentRoute = this.router.url;
+        this.layout = currentRoute !== '/404';
+
+        if (this.isBrowser && typeof gtag !== 'undefined') {
           gtag('config', 'G-709E1EM7HP', {
             page_path: event.urlAfterRedirects,
           });
+        }
 
-          const canonicalUrl = `${window.location.origin}${event.urlAfterRedirects}`;
-          this.setRobotsMetaTag('index, follow');
-          this.setCanonicalTag(canonicalUrl);
+        const canonicalUrl = `${this.baseUrl}${event.urlAfterRedirects}`;
+        this.setCanonicalTag(canonicalUrl);
+        this.setRobotsMetaTag('index, follow');
 
-          // Get the deepest activated route
-          let route = this.activatedRoute;
-          while (route.firstChild) {
-            route = route.firstChild;
-          }
+        // ✅ Update meta on client-side route change
+        this.setMetaFromRoute(this.activatedRoute);
+      });
+  }
 
-          // Fragment-based meta config
-          const fragmentMeta: Record<
-            string,
-            { title: string; description: string }
-          > = {};
+  private setMetaFromRoute(route: ActivatedRoute) {
+    let deepest = route;
+    while (deepest.firstChild) {
+      deepest = deepest.firstChild;
+    }
 
-          route.fragment.subscribe((fragment) => {
-            if (fragment && fragmentMeta[fragment]) {
-              const { title, description } = fragmentMeta[fragment];
-              this.titleService.setTitle(title);
-              this.metaService.updateTag({
-                name: 'description',
-                content: description,
-              });
-            } else {
-              const title = route.snapshot.data['title'];
-              const description = route.snapshot.data['description'];
+    const title = deepest.snapshot.data['title'];
+    const description = deepest.snapshot.data['description'];
+    const schema = deepest.snapshot.data['schema'];
 
-              if (title) {
-                this.titleService.setTitle(title);
-              }
-              if (description) {
-                this.metaService.updateTag({
-                  name: 'description',
-                  content: description,
-                });
-              }
-            }
-          });
-        });
-    } catch (error) {
-      console.error('Error while loading config:', error);
+    if (title) {
+      this.titleService.setTitle(title);
+    }
+    if (description) {
+      this.metaService.updateTag({ name: 'description', content: description });
+    }
+    if (schema) {
+      this.setJsonLdSchema(schema);
     }
   }
 
   setCanonicalTag(url: string) {
+    if (!url) return;
     let link: HTMLLinkElement | null = this.document.querySelector(
       "link[rel='canonical']"
     );
@@ -104,12 +108,30 @@ export class AppComponent implements OnInit {
   }
 
   setRobotsMetaTag(content: string = 'index, follow') {
-  let metaTag = this.metaService.getTag('name="robots"');
-  if (metaTag) {
-    this.metaService.updateTag({ name: 'robots', content });
-  } else {
-    this.metaService.addTag({ name: 'robots', content });
+    let metaTag = this.metaService.getTag('name="robots"');
+    if (metaTag) {
+      this.metaService.updateTag({ name: 'robots', content });
+    } else {
+      this.metaService.addTag({ name: 'robots', content });
+    }
   }
-}
 
+  private setJsonLdSchema(schema: any | any[]) {
+    if (!schema) return;
+
+    // Remove old schema tags first
+    const oldScripts = this.document.body.querySelectorAll(
+      'script[type="application/ld+json"]'
+    );
+    oldScripts.forEach((s) => s.remove());
+
+    const schemaArray = Array.isArray(schema) ? schema : [schema];
+
+    schemaArray.forEach((entry) => {
+      const script = this.document.createElement('script');
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify(entry);
+      this.document.body.appendChild(script);
+    });
+  }
 }

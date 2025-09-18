@@ -1,5 +1,5 @@
-import { Component, Inject, Renderer2 } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesCoreServicesComponent } from '@components/services-core-services/services-core-services.component';
 import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
@@ -20,7 +20,7 @@ import { ServicesBenefits1Component } from '../../../../shared/components/servic
   templateUrl: './fpga.component.html',
 })
 export class FpgaComponent {
-  coreServices: any[] = [
+  coreServices = [
     {
       imgUrl:
         'assets/services/engg&design/fpga-design-services/architecture.png',
@@ -45,12 +45,12 @@ export class FpgaComponent {
     },
   ];
 
-  expertise: any[] = [
+  expertise = [
     {
       heading: 'Supported FPGA Families',
       title: 'Diverse FPGA Families for Every Need',
       subTitle: 'Our expertise spans a wide range of FPGA families, including:',
-      desc: ['Versal', 'Zynx', 'Virtex Ultrascale ', 'Agilex', 'Stratix'],
+      desc: ['Versal', 'Zynx', 'Virtex Ultrascale', 'Agilex', 'Stratix'],
     },
     {
       heading: 'Communication & Connectivity',
@@ -60,7 +60,7 @@ export class FpgaComponent {
     },
   ];
 
-  benefits: any[] = [
+  benefits = [
     {
       imgUrl: 'assets/icons/expert-badge.svg',
       name: 'Proven Expertise',
@@ -74,7 +74,7 @@ export class FpgaComponent {
     {
       imgUrl: 'assets/icons/connectivity.svg',
       name: 'Robust Connectivity',
-      desc: 'We specialize in integrating standard buses l, and support high-speed SERDES interfaces along with protocols such as UART, I2C, SPI, and Ethernet.',
+      desc: 'We specialize in integrating standard buses and support high-speed SERDES interfaces along with protocols such as UART, I2C, SPI, and Ethernet.',
     },
     {
       imgUrl: 'assets/icons/search.svg',
@@ -87,50 +87,4 @@ export class FpgaComponent {
       desc: 'We collaborate closely with our clients to turn complex ideas into market-ready solutions quickly, reducing time-to-market and overall costs.',
     },
   ];
-
-  constructor(
-    private renderer: Renderer2,
-    @Inject(DOCUMENT) private document: Document
-  ) {}
-
-  ngOnInit(): void {
-    const jsonLdData = [
-      {
-        '@context': 'https://schema.org',
-        '@type': 'Service',
-        serviceType: 'FPGA Design and Development Services',
-        provider: {
-          '@type': 'Organization',
-          name: 'Whizz Systems',
-          url: 'https://www.whizzsystems.com/',
-          logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-          sameAs: [
-            'https://www.linkedin.com/company/whizz-systems/',
-            'https://www.youtube.com/@WhizzSystemsCA',
-          ],
-        },
-        url: 'https://www.whizzsystems.com/services/engineering-design/fpga-design-services',
-        description:
-          'Whizz Systems provides FPGA design and development services including architecture design, RTL coding, verification, system integration, IP connectivity, and support for major FPGA families.',
-        areaServed: {
-          '@type': 'Place',
-          name: 'Worldwide',
-        },
-        offers: {
-          '@type': 'Offer',
-          name: 'FPGA Engineering Services',
-          description:
-            'Comprehensive FPGA engineering services covering design, development, testing, and production.',
-          url: 'https://www.whizzsystems.com/services/engineering-design/fpga-design-services',
-        },
-      },
-    ];
-
-    jsonLdData.forEach((entry) => {
-      const script = this.renderer.createElement('script');
-      script.type = 'application/ld+json';
-      script.text = JSON.stringify(entry);
-      this.renderer.appendChild(this.document.body, script); // Or use this.document.body
-    });
-  }
 }

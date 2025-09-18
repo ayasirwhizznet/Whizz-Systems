@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, OnInit, signal } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, Inject, OnDestroy, OnInit, PLATFORM_ID, signal } from '@angular/core';
 import { ButtonComponent } from '@components/button/button.component';
 
 interface Slide {
@@ -17,14 +17,25 @@ interface Slide {
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
-export class HeroComponent implements OnInit {
+export class HeroComponent implements OnInit, OnDestroy {
   currentSlide = signal(0);
+  intervalId: any;
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngOnInit() {
-    this.autoSlide();
+    // Run auto-slide only in browser
+    if (isPlatformBrowser(this.platformId)) {
+      this.autoSlide();
+    }
   }
 
-  intervalId: any;
+  ngOnDestroy() {
+    // Clear interval when component is destroyed
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+  }
 
   nextSlide() {
     const next = (this.currentSlide() + 1) % 3;
@@ -36,13 +47,13 @@ export class HeroComponent implements OnInit {
     this.currentSlide.set(prev);
   }
 
-
   autoSlide() {
     this.intervalId = setInterval(() => {
       const next = (this.currentSlide() + 1) % 3;
       this.currentSlide.set(next);
     }, 6000);
   }
+
   goToSlide(index: number) {
     this.currentSlide.set(index);
   }

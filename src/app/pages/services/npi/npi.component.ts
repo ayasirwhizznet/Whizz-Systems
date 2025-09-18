@@ -1,11 +1,4 @@
-import {
-  Component,
-  OnInit,
-  OnDestroy,
-  HostListener,
-  Renderer2,
-  Inject,
-} from '@angular/core';
+import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import {
   ActivatedRoute,
   Router,
@@ -14,10 +7,11 @@ import {
 } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
 import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
+
 @Component({
   selector: 'app-npi',
   standalone: true,
@@ -54,10 +48,7 @@ export class NpiComponent implements OnInit, OnDestroy {
         name: 'Firmware & Software Development',
         link: '/services/engineering-design/firmware-software-development',
       },
-      {
-        name: 'PCB Layout',
-        link: '/services/engineering-design/pcb-layout',
-      },
+      { name: 'PCB Layout', link: '/services/engineering-design/pcb-layout' },
       {
         name: '3D Modeling/Mechanical Engineering',
         link: '/services/engineering-design/3d-modeling-mechanical-design',
@@ -77,31 +68,25 @@ export class NpiComponent implements OnInit, OnDestroy {
     ],
   };
 
+  // Sticky header state
   isSticky: boolean = true;
   lastScrollTop: number = 0;
 
   @HostListener('window:scroll', [])
   onScroll(): void {
     const currentScroll = window.scrollY;
-
-    if (currentScroll > this.lastScrollTop) {
-      this.isSticky = false;
-    } else {
-      this.isSticky = true;
-    }
+    this.isSticky = currentScroll <= this.lastScrollTop;
     this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
   }
 
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   private currentFragment: string | null = null;
-  constructor(
-    private route: ActivatedRoute,
-    private router: Router,
-    private renderer: Renderer2,
-    @Inject(DOCUMENT) private document: Document
-  ) {}
+
+  constructor(private route: ActivatedRoute, private router: Router) {}
+
   ngOnInit(): void {
+    // Subscribe to route fragment changes
     this.fragmentSubscription = this.route.fragment.subscribe((fragment) => {
       if (fragment) {
         this.currentFragment = fragment;
@@ -109,6 +94,7 @@ export class NpiComponent implements OnInit, OnDestroy {
       }
     });
 
+    // Listen for navigation end events
     this.navigationSubscription = this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
@@ -118,103 +104,18 @@ export class NpiComponent implements OnInit, OnDestroy {
           this.scrollToService(fragment);
         }
       });
-
-    const npiSchema = {
-      '@context': 'https://schema.org',
-      '@type': 'Service',
-      serviceType: 'NPI Services in Electronics',
-      provider: {
-        '@type': 'Organization',
-        name: 'Whizz Systems',
-        url: 'https://www.whizzsystems.com/',
-        logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-        sameAs: [
-          'https://www.linkedin.com/company/whizz-systems/',
-          'https://www.youtube.com/@WhizzSystemsCA',
-        ],
-      },
-      url: 'https://www.whizzsystems.com/services/npi',
-      description:
-        'Whizz Systems provides NPI services in electronics including system-level architecture, prototyping, compliance, testing, and manufacturing solutions for next-generation hardware.',
-      areaServed: {
-        '@type': 'Place',
-        name: 'Worldwide',
-      },
-      hasOfferCatalog: {
-        '@type': 'OfferCatalog',
-        name: 'NPI Services Catalog',
-        itemListElement: [
-          {
-            '@type': 'Offer',
-            itemOffered: {
-              '@type': 'Service',
-              name: 'System Level Architecture NPI Services',
-              description:
-                'Building strong foundations for next-generation hardware with system-level architecture design.',
-            },
-          },
-          {
-            '@type': 'Offer',
-            itemOffered: {
-              '@type': 'Service',
-              name: 'NPI Prototyping Solutions',
-              description:
-                'Rapid prototyping and refinement for electronic product development.',
-            },
-          },
-          {
-            '@type': 'Offer',
-            itemOffered: {
-              '@type': 'Service',
-              name: 'NPI Testing Services',
-              description:
-                'Comprehensive testing for quality, performance, and reliability.',
-            },
-          },
-          {
-            '@type': 'Offer',
-            itemOffered: {
-              '@type': 'Service',
-              name: 'NPI Compliance',
-              description:
-                'Ensuring adherence to industry standards and regulations for electronics manufacturing.',
-            },
-          },
-          {
-            '@type': 'Offer',
-            itemOffered: {
-              '@type': 'Service',
-              name: 'NPI Manufacturing Service',
-              description:
-                'Advanced assembly and manufacturing solutions for scalable electronics production.',
-            },
-          },
-        ],
-      },
-    };
-
-    const script = this.renderer.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(npiSchema);
-    this.renderer.appendChild(this.document.body, script);
   }
 
   ngOnDestroy(): void {
-    if (this.fragmentSubscription) {
-      this.fragmentSubscription.unsubscribe();
-    }
-    if (this.navigationSubscription) {
-      this.navigationSubscription.unsubscribe();
-    }
+    this.fragmentSubscription?.unsubscribe();
+    this.navigationSubscription?.unsubscribe();
   }
 
   scrollToService(fragment: string): void {
     setTimeout(() => {
-      const element = document.getElementById(fragment?.replace(/\s/g, ''));
+      const element = document.getElementById(fragment.replace(/\s/g, ''));
       if (element) {
-        const viewportHeight = window.innerHeight;
-        const offsetPercentage = 35;
-        const offset = (window.innerHeight * offsetPercentage) / 100;
+        const offset = (window.innerHeight * 35) / 100;
         const topPosition = element.offsetTop - offset;
         window.scrollTo({
           top: topPosition,

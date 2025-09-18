@@ -8,9 +8,9 @@
         [ngClass]="{'lg:grid-cols-3': columns === 3, 'lg:grid-cols-4': columns === 4}">
             <div *ngFor="let service of coreServicesData" class="p-6 3xl:p-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
                 <img height="152" width="241" loading="lazy" class="w-full h-auto rounded-md 3xl:rounded-lg" [src]="service.imgUrl" alt="{{service.name}}">
-                    <h3
+                    <h2
                         class="text-dark-gray2 font-bold mt-6 3xl:mt-8 mb-4 3xl:mb-5 text-sm 3xl:text-base">
-                        {{service.name}}</h3>
+                        {{service.name}}</h2>
                     <p class="text-dark-gray2 font-light text-sm 3xl:text-base" [innerHTML]="service.desc"></p>
             </div>
     </div>

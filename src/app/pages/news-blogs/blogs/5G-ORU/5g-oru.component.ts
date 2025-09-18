@@ -1,5 +1,5 @@
-import { Component, HostListener } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
 import { AnimatedButton } from '@components/animated-button/animated-button.component';
@@ -32,13 +32,14 @@ export class ORUComponent {
       imgUrl: 'assets/news/blogs/future-performance/scalability-&-hardware.png',
       date: 'July 22, 2025',
       tags: ['AI Hardware', 'Obsolescence Management'],
-      title: 'Future-Proof Architecture and Performance in Next-Generation Systems',
+      title:
+        'Future-Proof Architecture and Performance in Next-Generation Systems',
       link: '/news-&-insights/future-architecture-performance',
     },
     {
       imgUrl: 'assets/news/blogs/high-power/key-challenges.png',
       date: 'June 10, 2025',
-      tags: ['AI Hardware','High Density PCB Design'],
+      tags: ['AI Hardware', 'High Density PCB Design'],
       title: 'Managing High-Power Demands in Next-Generation Hardware',
       link: '/news-&-insights/high-power-demand',
     },
@@ -80,36 +81,42 @@ export class ORUComponent {
 
   isSticky = true;
   lastScrollTop = 0;
+  private isBrowser: boolean;
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private meta: Meta
-  ) {}
+    private meta: Meta,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {
+    this.isBrowser = isPlatformBrowser(this.platformId);
+  }
 
   ngOnInit(): void {
-    // share on linkdin logic
-    this.route.data.subscribe((data) => {
-      const url = encodeURIComponent(window.location.href);
-      this.meta.updateTag({ property: 'og:url', content: url });
-    });
+    if (this.isBrowser) {
+      // ✅ Only access window on browser
+      this.route.data.subscribe(() => {
+        const url = encodeURIComponent(window.location.href);
+        this.meta.updateTag({ property: 'og:url', content: url });
+      });
+    }
 
-    // When the fragment changes (via click or scroll), update the active section
     this.fragmentSubscription = this.route.fragment.subscribe((fragment) => {
-      if (fragment) {
+      if (this.isBrowser && fragment) {
         this.currentFragment = fragment;
         this.scrollToCategory(fragment);
       }
     });
 
-    // Handle navigation changes
     this.navigationSubscription = this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
-        const fragment = this.route.snapshot.fragment;
-        if (fragment && fragment !== this.currentFragment) {
-          this.currentFragment = fragment;
-          this.scrollToCategory(fragment);
+        if (this.isBrowser) {
+          const fragment = this.route.snapshot.fragment;
+          if (fragment && fragment !== this.currentFragment) {
+            this.currentFragment = fragment;
+            this.scrollToCategory(fragment);
+          }
         }
       });
   }
@@ -119,10 +126,10 @@ export class ORUComponent {
     this.navigationSubscription?.unsubscribe();
   }
 
-  private scrollTimeout: any;
-
   @HostListener('window:scroll', [])
   onScroll(): void {
+    if (!this.isBrowser) return;
+
     const sections = [
       'section1',
       'section2',
@@ -149,6 +156,8 @@ export class ORUComponent {
   }
 
   scrollToCategory(id: string): void {
+    if (!this.isBrowser) return;
+
     this.currentFragment = id;
     const el = document.getElementById(id);
     if (el) {
@@ -163,31 +172,34 @@ export class ORUComponent {
   }
 
   shareOnFacebook() {
+    if (!this.isBrowser) return;
+
     const url = encodeURIComponent(window.location.href);
     const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
     window.open(facebookShareUrl, '_blank');
   }
 
   shareOnTwitter() {
-    const pageUrl = window.location.href;
+    if (!this.isBrowser) return;
 
+    const pageUrl = window.location.href;
     const text = encodeURIComponent(
       `🚀 Discover 5G Connectivity by Whizz Systems!\n\n` +
         `Building the Future of 5G Connectivity with Open Radio Unit Solutions.\n\n` +
         `Proudly built by @whizzsystems.\n\n` +
         `${pageUrl}\n\n`
     );
-
     const hashtags = encodeURIComponent(
       'whizzsystems,Heatsink,ThermalManagement,SignalManagement'
     );
 
     const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}`;
-
     window.open(twitterUrl, '_blank');
   }
 
   shareOnLinkedIn(): void {
+    if (!this.isBrowser) return;
+
     const url = encodeURIComponent(window.location.href);
     const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
     window.open(linkedInShareUrl, '_blank');

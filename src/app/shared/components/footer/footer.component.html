@@ -41,7 +41,7 @@
             *ngFor="let item of privacyTerms"
             class="cursor-pointer hover:text-teal1 underline underline-offset-auto mt-9 3xl:mt-11 transition-all duration-300 ease-in-out"
           >
-            <a routerLink="item.link">{{ item.label }}</a>
+            <a [routerLink]="item.link">{{ item.label }}</a>
           </div>
         </div>
       </div>

@@ -1,83 +1,147 @@
 <!-- Hero -->
-<app-services-hero serviceCategory="NPI" serviceTitle="Future-Ready NPI: Designed for NexGen Demands and Innovation"
+<app-services-hero
+  serviceCategory="NPI"
+  serviceTitle="Future-Ready NPI: Designed for NexGen Demands and Innovation"
   serviceDesc="Over 30 Years of Expertise in Creating Complex, Scalable Solutions with Advanced Assembly and Material Science"
-  imgUrl="assets/services/npi/hero.png" navigate="https://webforms.pipedrive.com/f/cB57r13uakBSDeWVYp031poisiDTkU9NiMzW2BU28KkY7x8VeJukVfcVy2Ggh19zhx" btnText="Start Your NPI Project"></app-services-hero>
+  imgUrl="assets/services/npi/hero.png"
+  navigate="https://webforms.pipedrive.com/f/cB57r13uakBSDeWVYp031poisiDTkU9NiMzW2BU28KkY7x8VeJukVfcVy2Ggh19zhx"
+  btnText="Start Your NPI Project"
+></app-services-hero>
 
 <!-- NPI Navbar -->
-<section [ngClass]="{ 'top-[13%]': isSticky}"
-  class="hidden lg:block px-[9.3%] lg:py-10 3xl:py-16 bg-white sticky top-0 z-20">
+<section
+  [ngClass]="{ 'top-[13%]': isSticky }"
+  class="hidden lg:block px-[9.3%] lg:py-10 3xl:py-16 bg-white sticky top-0 z-20"
+>
   <div class="flex justify-center items-center gap-3 3xl:gap-4">
-    <a *ngFor="let service of npiServices" (click)="scrollToService(service)"
-      class="lg:w-44 2xl:w-48 lg:h-[72px] 3xl:w-[247px] 3xl:h-[88px] cursor-pointer grid place-items-center bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-normal 3xl:font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out" [innerHTML]="service"></a>
+    <a
+      *ngFor="let service of npiServices"
+      (click)="scrollToService(service)"
+      class="lg:w-44 2xl:w-48 lg:h-[72px] 3xl:w-[247px] 3xl:h-[88px] cursor-pointer grid place-items-center bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-normal 3xl:font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out"
+      [innerHTML]="service"
+    ></a>
   </div>
 </section>
 
 <!-- System Level Architecture -->
-<app-services-intro id="system-level-architecture" heading="System Level Architecture (SLA)" title="Build a Strong Foundation with System-Level
-     Architecture" desc1="At Whizz Systems, we specialize in designing robust System Level
+<app-services-intro
+  id="SystemLevelArchitecture"
+  heading="System Level Architecture (SLA)"
+  title="Build a Strong Foundation with System-Level
+     Architecture"
+  desc1="At Whizz Systems, we specialize in designing robust System Level
      Architectures (SLA) for New Product Introduction (NPI), ensuring seamless integration of hardware,
      software, and subsystems to achieve performance, scalability, and reliability goals. Whether you’re
      starting with an idea, a product definition document, or a high-level block diagram, Whizz has the
-     capability and experience to guide projects from concept to completion." subTitle="Key Services:" desc4="Creation of System & Power Block Diagrams • Definition of I2C, Clock, Reset, Configurations • Components Selection  
-  " imgUrl="assets/services/npi/introduction.png"></app-services-intro>
+     capability and experience to guide projects from concept to completion."
+  subTitle="Key Services:"
+  desc4="Creation of System & Power Block Diagrams • Definition of I2C, Clock, Reset, Configurations • Components Selection  
+  "
+  imgUrl="assets/services/npi/introduction.png"
+></app-services-intro>
 
 <!-- Schematic Design -->
-<app-services-intro id="schematic-design" heading="Schematic Design"
+<app-services-intro
+  id="SchematicDesign"
+  heading="Schematic Design"
   title="Engineering & Design: A Unified Approach to Product Development"
   desc1="At Whizz Systems, we don’t just design—we engineer with manufacturing, performance, and reliability in mind. Our in-house team of experts collaborates across multiple disciplines to create robust, scalable, and high-performance solutions that seamlessly transition from concept to production. By integrating engineering, design, and manufacturing early in the process, we ensure cost-effective, manufacturable, and high-quality products."
   subTitle="Key Services:"
   desc4="System Design/Schematics • FPGA Design • PCB Layout • 3D Modeling/Mechanical Engineering • Signal Integrity Simulations • Power Delivery Network Simulations • Thermal Management/Thermal Simulation "
-  [isImageLeft]="false" imgUrl="assets/services/npi/engg&design.png"></app-services-intro>
+  [isImageLeft]="false"
+  imgUrl="assets/services/npi/engg&design.png"
+></app-services-intro>
 
 <!-- Explore our engineering and design services -->
 <section>
-  <img height="109" width="1520" class="h-auto w-full" loading="lazy" src="assets/shared/divider-top.png" alt="img" />
+  <img
+    height="109"
+    width="1520"
+    class="h-auto w-full"
+    loading="lazy"
+    src="assets/shared/divider-top.png"
+    alt="img"
+  />
   <div class="py-6 3xl:py-8">
     <h2
-      class="text-2xl sm:text-3xl lg:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] text-dark-gray2 text-center font-semibold 3xl:font-bold my-6 3xl:my-8">
+      class="text-2xl sm:text-3xl lg:text-4xl 3xl:text-5xl lg:leading-[40px] 3xl:leading-[57.6px] text-dark-gray2 text-center font-semibold 3xl:font-bold my-6 3xl:my-8"
+    >
       Explore our Engineering and Design Services
     </h2>
     <div
-      class="w-11/12 xl:w-2/3 2xl:w-7/12 text-xs 3xl:text-base text-center py-6 3xl:py-8 flex justify-center items-center flex-wrap gap-3 3xl:gap-4 mx-auto">
-      <a *ngFor="let service of enggAndDesign.services" [routerLink]="service.link"
-        class="px-[2px] w-44 h-16 lg:w-48 lg:h-[72px] 3xl:w-[247px] 3xl:h-[88px] cursor-pointer grid place-items-center bg-card-gray hover:bg-dark-gray2 text-dark-gray2 border border-light-gray1 hover:text-white font-semibold rounded-md 3xl:rounded-lg transition-all duration-500 ease-in-out">{{
-        service.name }}
+      class="w-11/12 xl:w-2/3 2xl:w-7/12 text-xs 3xl:text-base text-center py-6 3xl:py-8 flex justify-center items-center flex-wrap gap-3 3xl:gap-4 mx-auto"
+    >
+      <a
+        *ngFor="let service of enggAndDesign.services"
+        [routerLink]="service.link"
+        class="px-[2px] w-44 h-16 lg:w-48 lg:h-[72px] 3xl:w-[247px] 3xl:h-[88px] cursor-pointer grid place-items-center bg-card-gray hover:bg-dark-gray2 text-dark-gray2 border border-light-gray1 hover:text-white font-semibold rounded-md 3xl:rounded-lg transition-all duration-500 ease-in-out"
+        >{{ service.name }}
       </a>
     </div>
   </div>
-  <img height="109" width="1520" class="h-auto w-full" loading="lazy" src="assets/shared/divider-bottom.png" alt="img" />
+  <img
+    height="109"
+    width="1520"
+    class="h-auto w-full"
+    loading="lazy"
+    src="assets/shared/divider-bottom.png"
+    alt="img"
+  />
 </section>
 
 <!-- Computer Aided Manufacturing -->
-<app-services-intro id="computer-aided-manufacturing" heading="Computer Aided Manufacturing"
+<app-services-intro
+  id="ComputerAidedManufacturing"
+  heading="Computer Aided Manufacturing"
   title="Optimizing Your Design for Manufacturing with Advanced CAM Services"
   desc1="At Whizz Systems, we ensure that every design is production-ready before it reaches the manufacturing floor. Our <a href='/services/supply-chain-management' class='font-medium 3xl:font-bold'>Computer-Aided Manufacturing (CAM)</a> Services streamline fabrication and assembly by optimizing <b class='font-medium 3xl:font-bold'>stack-up modelling,</b> DFx analysis, panellization, and <b class='font-medium 3xl:font-bold'>CAM editing,</b> <b class='text-teal1 font-medium 3xl:font-bold'>ensuring maximum yield and cost efficiency</b>. Whether your designing a product or a complex system, our expert engineers proactively refine designs to <b class='font-medium 3xl:font-bold'>eliminate errors and improve manufacturability<b>."
   subTitle="Key Services:"
   desc4="Stack-Up Modelling • DFx Analysis (DFM/DFA/DFT)  • Panellization Optimization • CAM Editing & Fabrication Readiness"
-  imgUrl="assets/services/npi/cam.png"></app-services-intro>
+  imgUrl="assets/services/npi/cam.png"
+></app-services-intro>
 
 <!-- Prototyping -->
-<app-services-intro id="Prototyping" heading="Prototyping" title="Validate and Refine Your Designs with Prototyping
-    Experts" desc1="Our prototyping services bridge the gap between concept and
+<app-services-intro
+  id="Prototyping"
+  heading="Prototyping"
+  title="Validate and Refine Your Designs with Prototyping
+    Experts"
+  desc1="Our prototyping services bridge the gap between concept and
     production, offering quick-turn prototypes, proof-of-concept models, and pre-production units. With
     in-house capabilities like simulation and multi-layer PCB assembly, we ensure your
-    prototype aligns perfectly with production standards." subTitle="Key Services:"
+    prototype aligns perfectly with production standards."
+  subTitle="Key Services:"
   desc4="Quick-turn prototypes • Proof-of-concept models • Engineering prototypes • Pre-production prototypes"
-  imgUrl="assets/services/npi/prototyping.png" [isImageLeft]="false"></app-services-intro>
+  imgUrl="assets/services/npi/prototyping.png"
+  [isImageLeft]="false"
+></app-services-intro>
 
 <!-- Testing -->
-<app-services-intro id="Testing" heading="Testing" title="Ensure Quality and Reliability with Rigorous Testing"
+<app-services-intro
+  id="Testing"
+  heading="Testing"
+  title="Ensure Quality and Reliability with Rigorous Testing"
   desc1="Whizz Systems provides comprehensive testing services to validate every aspect of your product. Our tests cover <b class='text-teal1 font-medium 3xl:font-bold'>Design Verification, Functional Validation</b> and <b class='text-teal1 font-medium 3xl:font-bold'>Environmental Resilience</b>. By addressing potential issues early, we reduce redesigns and accelerate time-to-market."
   subTitle="Key Tests:"
   desc4="Design Verification Testing (DVT) • Environmental Testing (Temperature, Vibration, Shock) • Automated Fault Detection"
-  imgUrl="assets/services/npi/testing.png"></app-services-intro>
+  imgUrl="assets/services/npi/testing.png"
+></app-services-intro>
 
 <!-- Compliance -->
-<app-services-intro id="Compliance" heading="Compliance" title="Navigate Compliance with Confidence"
+<app-services-intro
+  id="Compliance"
+  heading="Compliance"
+  title="Navigate Compliance with Confidence"
   desc1="We integrate compliance into the design process from the start, ensuring your product meets global regulatory standards.  like <b class='font-medium 3xl:font-bold'>RoHS, REACH, FCC,</b> and <b class='font-medium 3xl:font-bold'>CE</b>. Our collaboration with trusted third-party labs provides authoritative certification, reducing risk and streamlining market entry."
-  subTitle="Key Standards Covered:" desc4="RoHS & REACH • FCC & CE certification • EMI safety compliance"
-  imgUrl="assets/services/npi/compliance.png" [isImageLeft]="false"></app-services-intro>
+  subTitle="Key Standards Covered:"
+  desc4="RoHS & REACH • FCC & CE certification • EMI safety compliance"
+  imgUrl="assets/services/npi/compliance.png"
+  [isImageLeft]="false"
+></app-services-intro>
 
 <!-- Contact Expert -->
-<app-services-contact-experts slogan="Looking for an NPI Partner Who Can Handle Complexity?" navigate="https://webforms.pipedrive.com/f/cB57r13uakBSDeWVYp031poisiDTkU9NiMzW2BU28KkY7x8VeJukVfcVy2Ggh19zhx"
-  btnText="Start Your NPI Journey"></app-services-contact-experts>
+<app-services-contact-experts
+  slogan="Looking for an NPI Partner Who Can Handle Complexity?"
+  navigate="https://webforms.pipedrive.com/f/cB57r13uakBSDeWVYp031poisiDTkU9NiMzW2BU28KkY7x8VeJukVfcVy2Ggh19zhx"
+  btnText="Start Your NPI Journey"
+></app-services-contact-experts>

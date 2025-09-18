@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, HostListener, Inject, PLATFORM_ID, AfterViewInit, OnDestroy, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import { ActivatedRoute, Router, NavigationEnd, RouterLink } from '@angular/router';
 import { AnimatedButton } from '@components/animated-button/animated-button.component';
@@ -11,11 +11,19 @@ import { Subscription, filter } from 'rxjs';
 @Component({
   selector: 'app-future-proof-architecture',
   standalone: true,
-  imports: [CommonModule, BlogTagComponent, ButtonComponent, NewsComponent, AnimatedButton, RouterLink],
-  templateUrl: './future-proof-architecture.component.html'
+  imports: [
+    CommonModule,
+    BlogTagComponent,
+    ButtonComponent,
+    NewsComponent,
+    AnimatedButton,
+    RouterLink,
+  ],
+  templateUrl: './future-proof-architecture.component.html',
 })
-export class FutureProofArchitectureComponent {
+export class FutureProofArchitectureComponent implements OnInit, AfterViewInit, OnDestroy {
   tags = ['AI Hardware', 'Modular Systems', 'Obsolescence Management'];
+
   blogs: any[] = [
     {
       imgUrl: 'assets/news/blog-6.png',
@@ -57,26 +65,13 @@ export class FutureProofArchitectureComponent {
     },
   ];
 
-  designConsiderations: any[] = [
+  designConsiderations: string[] = [
     'Ensure hardware architecture scalability to meet future demands, prioritizing designs that allow for incremental expansions (e.g., processing power, memory).',
     'Embrace modularity to create reusable, adaptable architectures, facilitating quick adaptation to new applications and reducing long-term costs.',
     'Select high-performance, power-efficient components that ensure future compatibility, supporting system evolution with emerging technologies.',
     'Adhere to industry standards for interoperability, enabling easier future upgrades, replacements, and broader system integration.',
-    'Collaborate with partners who specialize in modular, scalable systems to reduce long-term costs by enabling upgrades without full redesigns.'
-  ]
-
-  ngAfterViewInit() {
-    const links = document.querySelectorAll('.link-to-power');
-    links.forEach((link) => {
-      link.addEventListener('click', () => {
-        this.router.navigate(['/services/engineering-design/power-delivery-network-simulation']);
-      });
-    });
-  }
-
-  navigateToPowerDelivery() {
-    this.router.navigate(['/services/engineering-design/power-delivery-network-simulation']);
-  }
+    'Collaborate with partners who specialize in modular, scalable systems to reduce long-term costs by enabling upgrades without full redesigns.',
+  ];
 
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
@@ -88,34 +83,52 @@ export class FutureProofArchitectureComponent {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private meta: Meta
-  ) { }
+    private meta: Meta,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
   ngOnInit(): void {
-    // share on linkdin logic
-    this.route.data.subscribe((data) => {
-      const url = encodeURIComponent(window.location.href);
-      this.meta.updateTag({ property: 'og:url', content: url });
-    });
+    if (isPlatformBrowser(this.platformId)) {
+      // Update meta tag with current URL (browser only)
+      this.route.data.subscribe(() => {
+        const url = encodeURIComponent(window.location.href);
+        this.meta.updateTag({ property: 'og:url', content: url });
+      });
+    }
 
-    // When the fragment changes (via click or scroll), update the active section
+    // Fragment scroll handling
     this.fragmentSubscription = this.route.fragment.subscribe((fragment) => {
-      if (fragment) {
+      if (isPlatformBrowser(this.platformId) && fragment) {
         this.currentFragment = fragment;
         this.scrollToCategory(fragment);
       }
     });
 
-    // Handle navigation changes
+    // Navigation change handling
     this.navigationSubscription = this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
-        const fragment = this.route.snapshot.fragment;
-        if (fragment && fragment !== this.currentFragment) {
-          this.currentFragment = fragment;
-          this.scrollToCategory(fragment);
+        if (isPlatformBrowser(this.platformId)) {
+          const fragment = this.route.snapshot.fragment;
+          if (fragment && fragment !== this.currentFragment) {
+            this.currentFragment = fragment;
+            this.scrollToCategory(fragment);
+          }
         }
       });
+  }
+
+  ngAfterViewInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      const links = document.querySelectorAll('.link-to-power');
+      links.forEach((link) => {
+        link.addEventListener('click', () => {
+          this.router.navigate([
+            '/services/engineering-design/power-delivery-network-simulation',
+          ]);
+        });
+      });
+    }
   }
 
   ngOnDestroy(): void {
@@ -123,16 +136,11 @@ export class FutureProofArchitectureComponent {
     this.navigationSubscription?.unsubscribe();
   }
 
-  private scrollTimeout: any;
-
   @HostListener('window:scroll', [])
   onScroll(): void {
-    const sections = [
-      'section1',
-      'section2',
-      'section3',
-      'section4',
-    ];
+    if (!isPlatformBrowser(this.platformId)) return;
+
+    const sections = ['section1', 'section2', 'section3', 'section4'];
     const headerOffset = 500;
 
     for (const id of sections) {
@@ -150,6 +158,8 @@ export class FutureProofArchitectureComponent {
   }
 
   scrollToCategory(id: string): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     this.currentFragment = id;
     const el = document.getElementById(id);
     if (el) {
@@ -163,20 +173,24 @@ export class FutureProofArchitectureComponent {
     return this.currentFragment === id;
   }
 
-  shareOnFacebook() {
+  shareOnFacebook(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     const url = encodeURIComponent(window.location.href);
     const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
     window.open(facebookShareUrl, '_blank');
   }
 
-  shareOnTwitter() {
+  shareOnTwitter(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     const pageUrl = window.location.href;
 
     const text = encodeURIComponent(
       `🚀 Discover Future-Proof Architecture and Performance in Next-Generation Systems!\n\n` +
-      `Scalable, Adaptable Hardware Designs for Evolving AI Applications.\n\n` +
-      `Proudly built by @whizzsystems.\n\n` +
-      `${pageUrl}\n\n`
+        `Scalable, Adaptable Hardware Designs for Evolving AI Applications.\n\n` +
+        `Proudly built by @whizzsystems.\n\n` +
+        `${pageUrl}\n\n`
     );
 
     const hashtags = encodeURIComponent(
@@ -184,11 +198,12 @@ export class FutureProofArchitectureComponent {
     );
 
     const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}`;
-
     window.open(twitterUrl, '_blank');
   }
 
   shareOnLinkedIn(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     const url = encodeURIComponent(window.location.href);
     const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
     window.open(linkedInShareUrl, '_blank');

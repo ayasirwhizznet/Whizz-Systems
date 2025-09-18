@@ -23,6 +23,78 @@ export const routes: Routes = [
           'NPI Services in Electronics | Prototyping, Testing & Manufacturing',
         data: {
           description: `Whizz Systems offers NPI services in electronics, including prototyping, testing, design, compliance, and manufacturing solutions for complex hardware.`,
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Service',
+              serviceType: 'NPI Services in Electronics',
+              provider: {
+                '@type': 'Organization',
+                name: 'Whizz Systems',
+                url: 'https://www.whizzsystems.com/',
+                logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                sameAs: [
+                  'https://www.linkedin.com/company/whizz-systems/',
+                  'https://www.youtube.com/@WhizzSystemsCA',
+                ],
+              },
+              url: 'https://www.whizzsystems.com/services/npi',
+              description:
+                'Whizz Systems provides NPI services in electronics including system-level architecture, prototyping, compliance, testing, and manufacturing solutions for next-generation hardware.',
+              areaServed: { '@type': 'Place', name: 'Worldwide' },
+              hasOfferCatalog: {
+                '@type': 'OfferCatalog',
+                name: 'NPI Services Catalog',
+                itemListElement: [
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'System Level Architecture NPI Services',
+                      description:
+                        'Building strong foundations for next-generation hardware with system-level architecture design.',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'NPI Prototyping Solutions',
+                      description:
+                        'Rapid prototyping and refinement for electronic product development.',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'NPI Testing Services',
+                      description:
+                        'Comprehensive testing for quality, performance, and reliability.',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'NPI Compliance',
+                      description:
+                        'Ensuring adherence to industry standards and regulations for electronics manufacturing.',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'NPI Manufacturing Service',
+                      description:
+                        'Advanced assembly and manufacturing solutions for scalable electronics production.',
+                    },
+                  },
+                ],
+              },
+            },
+          ],
         },
       },
       {
@@ -46,10 +118,65 @@ products.`,
             './lab-testing-solutions/lab-testing-solutions.component'
           ).then((m) => m.LabTestingSolutionsComponent),
         title:
-          'Lab Testing Solutions | Board Bring-Up, Validation & Characterization | Whizz Systems',
+          'Electronics Lab Testing Solutions | Component & Manufacturing Testing',
         data: {
           description:
-            'Discover Whizz Systems advanced lab testing solutions, including board bring-up, validation, and characterization. With 25+ years of experience, we ensure your electronic products meet the highest industry standards.',
+            'Whizz Systems provides advanced electronics lab testing solutions for components and manufacturing. Our testing services ensure quality, reliability, and compliance for complex electronic systems.',
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Service',
+              serviceType: 'Electronics Lab Testing Solutions',
+              provider: {
+                '@type': 'Organization',
+                name: 'Whizz Systems',
+                url: 'https://www.whizzsystems.com/',
+                logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                sameAs: [
+                  'https://www.linkedin.com/company/whizz-systems/',
+                  'https://www.youtube.com/@WhizzSystemsCA',
+                ],
+              },
+              url: 'https://www.whizzsystems.com/services/lab-testing-solutions',
+              description:
+                'Whizz Systems offers electronics lab testing services including electronic component testing, electronics manufacturing testing solutions, and compliance verification for high-reliability products.',
+              areaServed: {
+                '@type': 'Place',
+                name: 'Worldwide',
+              },
+              offers: {
+                '@type': 'Offer',
+                name: 'Electronics Lab Testing Solutions',
+                description:
+                  'Advanced electronics lab testing, component testing, and manufacturing validation services to ensure quality, compliance, and reliability.',
+                url: 'https://www.whizzsystems.com/services/lab-testing-solutions',
+              },
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://www.whizzsystems.com/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: 'Services',
+                  item: 'https://www.whizzsystems.com/services/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: 'Lab Testing Solutions',
+                  item: 'https://www.whizzsystems.com/services/lab-testing-solutions',
+                },
+              ],
+            },
+          ],
         },
       },
       {

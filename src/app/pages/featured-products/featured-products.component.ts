@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { ButtonComponent } from '@components/button/button.component';
 
@@ -10,30 +10,38 @@ import { ButtonComponent } from '@components/button/button.component';
   templateUrl: './featured-products.component.html',
 })
 export class FeaturedProductsComponent {
-  constructor(private router: Router) {}
-  isSticky: boolean = true;
-  lastScrollTop: number = 0;
+  isSticky = true;
+  lastScrollTop = 0;
+  private isBrowser: boolean;
+
+  constructor(
+    private router: Router,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {
+    this.isBrowser = isPlatformBrowser(this.platformId);
+  }
 
   @HostListener('window:scroll', [])
   onScroll(): void {
-    const currentScroll = window.scrollY;
+    if (!this.isBrowser) return; // ✅ Safe for SSR
 
-    if (currentScroll > this.lastScrollTop) {
-      this.isSticky = false;
-    } else {
-      this.isSticky = true;
-    }
+    const currentScroll = window.scrollY;
+    this.isSticky = currentScroll <= this.lastScrollTop;
     this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
   }
 
   scrollToFragment(fragment: string): void {
+    if (!this.isBrowser) return; // ✅ Safe for SSR
+
+    // Delay to allow DOM to render before scrolling
     setTimeout(() => {
       const element = document.getElementById(fragment);
       if (element) {
         const viewportHeight = window.innerHeight;
-        const offsetPercentage = 40;
-        const offset = (window.innerHeight * offsetPercentage) / 100;
+        const offsetPercentage = 40; // 40% offset from top
+        const offset = (viewportHeight * offsetPercentage) / 100;
         const topPosition = element.offsetTop - offset;
+
         window.scrollTo({
           top: topPosition,
           behavior: 'smooth',
@@ -42,17 +50,17 @@ export class FeaturedProductsComponent {
     }, 1);
   }
 
-  isEven(arr: any) {
-    return arr.length % 2 === 0 ? true : false;
+  isEven(arr: any[]): boolean {
+    return arr.length % 2 === 0;
   }
 
-  boards: any[] = [
+  boards = [
     {
       title: 'Evaluations Kit',
       products: [
         {
           name: 'Whizz Kintex 7 FPGA WH 705',
-          imgUrl: 'assets/featured-products/eva-1.png',
+          imgUrl: 'assets/featured-products/eva-1.png', // ✅ Relative path works with Angular SSR
           link: '/featured-products/whizz-kintex-7FPGA-WH705',
         },
         {
@@ -104,7 +112,7 @@ export class FeaturedProductsComponent {
     },
   ];
 
-  miscellaneous: any[] = [
+  miscellaneous = [
     {
       title: 'Medical Devices',
       name: 'Invensify Insuridge',

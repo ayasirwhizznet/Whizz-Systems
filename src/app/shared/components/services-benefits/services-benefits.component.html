@@ -13,9 +13,9 @@
             <div *ngFor="let benefit of benefitsData">
                 <div class="p-6 3xl:p-8 bg-white border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
                     <img height="50" width="40" loading="lazy" class="w-10 h-auto 3xl:w-12" [src]="benefit.imgUrl" alt="{{benefit.name}}">
-                    <h3
+                    <h2
                         class="text-dark-gray2 text-sm 3xl:text-base font-medium lg:leading-[15px] 3xl:leading-[19.2px] my-3 3xl:my-4">
-                        {{benefit.name}}</h3>
+                        {{benefit.name}}</h2>
                     <p class="text-dark-gray2 text-sm 3xl:text-base lg:leading-[24px] 3xl:leading-[28px]"
                         [innerHTML]="benefit.desc" [ngClass]="{'lg:w-2/3': cutCard}"></p>
                 </div>

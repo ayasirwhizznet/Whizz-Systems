@@ -1,16 +1,10 @@
-import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, HostListener, Inject, PLATFORM_ID, OnInit, OnDestroy } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
-import {
-  ActivatedRoute,
-  NavigationEnd,
-  Router,
-  RouterLink,
-} from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, RouterLink } from '@angular/router';
 import { AnimatedButton } from '@components/animated-button/animated-button.component';
 import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
-import { NewsCardComponent } from '@components/news-card/news-card.component';
 import { NewsComponent } from '@components/news/news.component';
 import { Subscription, filter } from 'rxjs';
 
@@ -23,14 +17,14 @@ import { Subscription, filter } from 'rxjs';
     ButtonComponent,
     AnimatedButton,
     BlogTagComponent,
-    NewsComponent,
+    NewsComponent
   ],
   templateUrl: './pcle-6.component.html',
 })
-export class Pcle6Component {
+export class Pcle6Component implements OnInit, OnDestroy {
   tags = ['Whitepapper', 'High-Speed Connectivity', 'Mechanical Design'];
 
-  blogs: any[] = [
+  blogs = [
     {
       imgUrl: 'assets/news/blogs/future-performance/scalability-&-hardware.png',
       date: 'July 22, 2025',
@@ -49,24 +43,21 @@ export class Pcle6Component {
       imgUrl: 'assets/news/blog-6.png',
       date: 'May 14, 2025',
       tags: ['AI Hardware Design', 'High-density PCB design'],
-      title:
-        'NextGen Hardware Design for High-Density, High-Complexity Systems',
+      title: 'NextGen Hardware Design for High-Density, High-Complexity Systems',
       link: '/news-&-insights/hardware-design',
     },
     {
       imgUrl: 'assets/news/blog-2.png',
       date: 'July 9, 2024',
       tags: ['Case Study', 'Hardware Design'],
-      title:
-        'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
+      title: 'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
       link: '/news-&-insights/whitepaper-5g-oru',
     },
     {
       imgUrl: 'assets/news/blog-3.png',
       date: 'July 9, 2024',
       tags: ['Whitepaper', 'Thermal Management'],
-      title:
-        'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
+      title: 'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
       link: '/news-&-insights/whitepaper-heatsink',
     },
     {
@@ -82,38 +73,35 @@ export class Pcle6Component {
   private navigationSubscription!: Subscription;
   currentFragment: string | null = null;
 
-  isSticky = true;
-  lastScrollTop = 0;
-
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private meta: Meta
+    private meta: Meta,
+    @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
   ngOnInit(): void {
-    // share on linkdin logic
-    this.route.data.subscribe((data) => {
+    if (isPlatformBrowser(this.platformId)) {
       const url = encodeURIComponent(window.location.href);
       this.meta.updateTag({ property: 'og:url', content: url });
-    });
+    }
 
-    // When the fragment changes (via click or scroll), update the active section
-    this.fragmentSubscription = this.route.fragment.subscribe((fragment) => {
-      if (fragment) {
+    this.fragmentSubscription = this.route.fragment.subscribe(fragment => {
+      if (isPlatformBrowser(this.platformId) && fragment) {
         this.currentFragment = fragment;
         this.scrollToCategory(fragment);
       }
     });
 
-    // Handle navigation changes
     this.navigationSubscription = this.router.events
-      .pipe(filter((event) => event instanceof NavigationEnd))
+      .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(() => {
-        const fragment = this.route.snapshot.fragment;
-        if (fragment && fragment !== this.currentFragment) {
-          this.currentFragment = fragment;
-          this.scrollToCategory(fragment);
+        if (isPlatformBrowser(this.platformId)) {
+          const fragment = this.route.snapshot.fragment;
+          if (fragment && fragment !== this.currentFragment) {
+            this.currentFragment = fragment;
+            this.scrollToCategory(fragment);
+          }
         }
       });
   }
@@ -125,14 +113,9 @@ export class Pcle6Component {
 
   @HostListener('window:scroll', [])
   onScroll(): void {
-    const sections = [
-      'section1',
-      'section2',
-      'section3',
-      'section4',
-      'section5',
-      'section6',
-    ];
+    if (!isPlatformBrowser(this.platformId)) return;
+
+    const sections = ['section1','section2','section3','section4','section5','section6'];
     const headerOffset = 500;
 
     for (const id of sections) {
@@ -140,7 +123,6 @@ export class Pcle6Component {
       if (el) {
         const rect = el.getBoundingClientRect();
         const adjustedTop = rect.top - headerOffset;
-
         if (adjustedTop <= 0 && rect.bottom > headerOffset) {
           this.currentFragment = id;
           break;
@@ -150,12 +132,12 @@ export class Pcle6Component {
   }
 
   scrollToCategory(id: string): void {
+    if (!isPlatformBrowser(this.platformId)) return;
     this.currentFragment = id;
     const el = document.getElementById(id);
     if (el) {
       const offset = window.innerHeight * 0.42;
-      const top = el.offsetTop - offset;
-      window.scrollTo({ top, behavior: 'smooth' });
+      window.scrollTo({ top: el.offsetTop - offset, behavior: 'smooth' });
     }
   }
 
@@ -163,34 +145,25 @@ export class Pcle6Component {
     return this.currentFragment === id;
   }
 
-  shareOnFacebook() {
+  shareOnFacebook(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
     const url = encodeURIComponent(window.location.href);
-    const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
-    window.open(facebookShareUrl, '_blank');
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
   }
 
-  shareOnTwitter() {
+  shareOnTwitter(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
     const pageUrl = window.location.href;
-
     const text = encodeURIComponent(
-      `🚀 Discover PCIe-6 by Whizz Systems!\n\n` +
-        `Whizz Systems' Guide to PCIe-6.\n\n` +
-        `Proudly built by @whizzsystems.\n\n` +
-        `${pageUrl}\n\n`
+      `🚀 Discover PCIe-6 by Whizz Systems!\n\nWhizz Systems' Guide to PCIe-6.\n\nProudly built by @whizzsystems.\n\n`
     );
-
-    const hashtags = encodeURIComponent(
-      'whizzsystems,MechanicalDesign,Whitepapper,SignalManagement'
-    );
-
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}`;
-
-    window.open(twitterUrl, '_blank');
+    const hashtags = encodeURIComponent('whizzsystems,MechanicalDesign,Whitepapper,SignalManagement');
+    window.open(`https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}&url=${encodeURIComponent(pageUrl)}`, '_blank');
   }
 
   shareOnLinkedIn(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
     const url = encodeURIComponent(window.location.href);
-    const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
-    window.open(linkedInShareUrl, '_blank');
+    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
   }
 }

@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
-import { ServicesBenefitsComponent } from '@components/services-benefits/services-benefits.component';
-import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
-import { ServicesCoreServicesComponent } from '@components/services-core-services/services-core-services.component';
+import { filter, Subscription } from 'rxjs';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
-import { Subscription, filter } from 'rxjs';
+import { ServicesBenefitsComponent } from '@components/services-benefits/services-benefits.component';
+import { ServicesCoreServicesComponent } from '@components/services-core-services/services-core-services.component';
+import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
 
 @Component({
   selector: 'app-adv-manufacturing',
@@ -21,10 +21,26 @@ import { Subscription, filter } from 'rxjs';
   ],
   templateUrl: './adv-manufacturing.component.html',
 })
-export class AdvManufacturingComponent {
+export class AdvManufacturingComponent implements OnInit, OnDestroy {
+  // Scroll sticky
+  isSticky: boolean = true;
+  lastScrollTop: number = 0;
 
-  services: string[] = ['Process Engineering', 'Manufacturing Testing','Locations', 'Environmental Testing', 'Fix Spacing', 'Box Build'];
-    
+  // Fragment subscriptions
+  private fragmentSubscription!: Subscription;
+  private navigationSubscription!: Subscription;
+  private currentFragment: string | null = null;
+
+  // Services
+  services: string[] = [
+    'Process Engineering',
+    'Manufacturing Testing',
+    'Locations',
+    'Environmental Testing',
+    'Fix Spacing',
+    'Box Build',
+  ];
+
   processess: any[] = [
     {
       imgUrl: 'assets/icons/excellence.svg',
@@ -47,8 +63,7 @@ export class AdvManufacturingComponent {
     {
       title: 'Fast Turns and NPI Agility',
       address: 'USA Facility',
-      intro:
-        'Located in the heart of Silicon Valley, our facility is optimized for quick-turn NPI and pilot builds.',
+      intro: 'Located in the heart of Silicon Valley, our facility is optimized for quick-turn NPI and pilot builds.',
       desc: [
         '<b>High equipment availability by design:</b> Low utilization ensures capacity for urgent programs.',
         '<b>Built for responsiveness:</b> We run one shift with the option to expand to a second.',
@@ -58,8 +73,7 @@ export class AdvManufacturingComponent {
     {
       title: 'High-Volume, High-Quality Production',
       address: 'Malaysia Facility',
-      intro:
-        'Established in 2008, our Malaysia facility is wholly owned and operated by Whizz Systems.',
+      intro: 'Established in 2008, our Malaysia facility is wholly owned and operated by Whizz Systems.',
       desc: [
         '80,000 sq. ft. state-of-the-art plant',
         'Equipped with high-speed Fuji lines for production-grade builds',
@@ -71,14 +85,12 @@ export class AdvManufacturingComponent {
 
   coreServices: any[] = [
     {
-      imgUrl:
-        'assets/services/advanced-manufacturing/adv/temp-cycling-testing.png',
+      imgUrl: 'assets/services/advanced-manufacturing/adv/temp-cycling-testing.png',
       name: 'Temperature Cycling & Burn-In Testing',
       desc: 'We begin by running temperature cycling programs in-house using our state-of-the-art environmental chambers. Boards are subjected to cycles of extreme high and low temperatures to evaluate performance degradation, determine failure points, and ensure continued functionality under fluctuating thermal conditions. Burn-in testing is also offered to simulate prolonged operation, often up to 24 hours or longer, as requested by the customer. These cycles help verify whether a design can sustain its electrical and mechanical performance under stress.',
     },
     {
-      imgUrl:
-        'assets/services/advanced-manufacturing/adv/validation-testing.png',
+      imgUrl: 'assets/services/advanced-manufacturing/adv/validation-testing.png',
       name: 'Vibration & Shock Testing',
       desc: 'For vibration and shock testing, we partner with certified independent labs that specialize in MIL-STD and industrial-grade standards. Boards are tested under mechanical stress to replicate conditions such as shipping, installation, or use in rugged environments. This phase helps identify weaknesses in component mounting, solder joints, and board structure to ensure resilience and mechanical reliability.',
     },
@@ -112,20 +124,20 @@ export class AdvManufacturingComponent {
     },
   ];
 
-  enclosureSolutions: any[] = [
+  enclosureSolutions: string[] = [
     'Board-level mechanical builds.',
     'Multi-board integration into chassis or server racks.',
     'System-level assembly with thermal, structural, and cable management in mind.',
   ];
 
-  capabilities: any[] = [
+  capabilities: string[] = [
     'Precision Assembly Tools: We use automated and calibrated tools to maintain high mechanical build accuracy and repeatability.',
     'Material Flexibility: Our team works with aluminum, plastics, metals, and even custom materials like wood where needed.',
     'Cable Management: We manufacture custom cables in-house and partner with trusted suppliers for complex assemblies. We manage routing, strain relief, and airflow optimization within each build.',
     'Cooling Solutions Integration: Our mechanical team ensures that cooling systems—fans, heat sinks, airflow ducts—are properly mounted and optimized for system reliability.',
   ];
 
-  testing: any[] = [
+  testing: any[][] = [
     [
       {
         img: 'assets/services/advanced-manufacturing/adv/kit-validation.png',
@@ -163,8 +175,7 @@ This manual step complements our automated systems and adds a human layer of qua
 <li>Solder joint integrity</li>
 <li>Misalignments or missing parts</li>
 <li>3D inspection of component</li></ul>
-Only after passing AOI does the batch proceed to the rest of the build, even if it's just 5 or 10 units.
-`,
+Only after passing AOI does the batch proceed to the rest of the build, even if it's just 5 or 10 units.`,
       },
       {
         img: 'assets/services/advanced-manufacturing/adv/x-ray.png',
@@ -178,72 +189,47 @@ Analyze solder voids and joint integrity across multiple layers
     ],
   ];
 
-  isSticky: boolean = true;
-  lastScrollTop: number = 0;
-
+  // Scroll logic
   @HostListener('window:scroll', [])
   onScroll(): void {
     const currentScroll = window.scrollY;
-
-    if (currentScroll > this.lastScrollTop) {
-      this.isSticky = false;
-    } else {
-      this.isSticky = true;
-    }
+    this.isSticky = currentScroll <= this.lastScrollTop;
     this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
   }
 
-  private fragmentSubscription!: Subscription;
-  private navigationSubscription!: Subscription;
-  private currentFragment: string | null = null;
-  constructor(private route: ActivatedRoute, private router: Router) {}
   ngOnInit(): void {
     this.fragmentSubscription = this.route.fragment.subscribe((fragment) => {
-      if (fragment) {
-        this.currentFragment = fragment;
-        this.scrollToService(fragment);
-      }
+      if (fragment) this.scrollToService(fragment);
     });
 
     this.navigationSubscription = this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
         const fragment = this.route.snapshot.fragment;
-        if (fragment && fragment !== this.currentFragment) {
-          this.currentFragment = fragment;
-          this.scrollToService(fragment);
-        }
+        if (fragment) this.scrollToService(fragment);
       });
   }
 
   ngOnDestroy(): void {
-    if (this.fragmentSubscription) {
-      this.fragmentSubscription.unsubscribe();
-    }
-    if (this.navigationSubscription) {
-      this.navigationSubscription.unsubscribe();
-    }
+    this.fragmentSubscription?.unsubscribe();
+    this.navigationSubscription?.unsubscribe();
   }
 
   scrollToService(fragment: string, attempt: number = 0): void {
-  const maxAttempts = 10;
-  const delay = 100;
+    const maxAttempts = 10;
+    const delay = 100;
 
-  setTimeout(() => {
-    const element = document.getElementById(fragment?.replace(/\s/g, ''));
-    if (element) {
-      const offsetPercentage = 10;
-      const offset = (window.innerHeight * offsetPercentage) / 100;
-      const topPosition = element.offsetTop - offset;
+    setTimeout(() => {
+      const element = document.getElementById(fragment?.replace(/\s/g, ''));
+      if (element) {
+        const offset = (window.innerHeight * 10) / 100;
+        const topPosition = element.offsetTop - offset;
+        window.scrollTo({ top: topPosition, behavior: 'smooth' });
+      } else if (attempt < maxAttempts) {
+        this.scrollToService(fragment, attempt + 1);
+      }
+    }, delay);
+  }
 
-      window.scrollTo({
-        top: topPosition,
-        behavior: 'smooth',
-      });
-    } else if (attempt < maxAttempts) {
-      this.scrollToService(fragment, attempt + 1);
-    }
-  }, delay);
-}
-
+  constructor(private route: ActivatedRoute, private router: Router) {}
 }
