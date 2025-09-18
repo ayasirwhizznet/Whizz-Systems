@@ -29,11 +29,6 @@
       "permanent": true
     },
     {
-      "source": "/services/engineering-design/firmware-software-development",
-      "destination": "/services/engineering-design/pcb-layout",
-      "permanent": true
-    },
-    {
       "source": "/usb-software/",
       "destination": "/services/engineering-design/firmware-software-development",
       "permanent": true
