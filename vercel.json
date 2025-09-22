@@ -14,11 +14,6 @@
       "permanent": true
     },
     {
-      "source": "/contact-us/",
-      "destination": "https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
-      "permanent": true
-    },
-    {
       "source": "/test-services-fp-ict-fct-burn-in/",
       "destination": "/services/lab-testing-solutions",
       "permanent": true
@@ -151,11 +146,6 @@
     {
       "source": "/allnews/page/3/",
       "destination": "/news-&-insights",
-      "permanent": true
-    },
-    {
-      "source": "/contact-us/",
-      "destination": "/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
       "permanent": true
     },
     {
@@ -439,11 +429,6 @@
       "permanent": true
     },
     {
-      "source": "/contact-us",
-      "destination": "/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L",
-      "permanent": true
-    },
-    {
       "source": "/products/",
       "destination": "/featured-products",
       "permanent": true
@@ -561,6 +546,181 @@
     {
       "source": "/services/engineering-&-design/fpga",
       "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/air-pollution-monitoring-system-design/",
+      "destination": "/services/engineering-design/system-schematic-services",
+      "permanent": true
+    },
+    {
+      "source": "/loopback-card/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/asic-evaluation-board-design/",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/pcb-layout-dfx/",
+      "destination": "/services/engineering-design/pcb-layout",
+      "permanent": true
+    },
+    {
+      "source": "/ic-package-design/",
+      "destination": "/services/engineering-design/3d-modeling-mechanical-design",
+      "permanent": true
+    },
+    {
+      "source": "/services/advanced-manufacturing/manufacturing-simulations",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/audio-video/",
+      "destination": "/services/lab-testing-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/team/muhammad-irfan/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/category/allnews/page/2/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/news/whizz-systems-inc-celebrates-20th-year-of-providing-electronics-product-design-manufacturing/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/services/advanced-manufacturing/electronic-manufacturing-assembly",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/custom-pcb-design",
+      "destination": "/services/engineering-design/pcb-layout",
+      "permanent": true
+    },
+    {
+      "source": "/5g-design",
+      "destination": "/news-&-insights/whitepaper-5g-oru",
+      "permanent": true
+    },
+    {
+      "source": "/faqs/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/allnews/page/3/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/embedded-technology/",
+      "destination": "/services/engineering-design/firmware-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/services/advanced-manufacturing/mechanical-system-build",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/careers/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/services/advanced-manufacturing/dfx-analysis",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/services/advanced-manufacturing/thermal-profiling",
+      "destination": "/services/engineering-design/thermal-management-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/view360/pcie-loopback-card/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/cloud-defined-storage-engine/",
+      "destination": "/services/engineering-design/system-schematic-services",
+      "permanent": true
+    },
+    {
+      "source": "/product/material-sourcing-procurement/",
+      "destination": "/services/supply-chain-management",
+      "permanent": true
+    },
+    {
+      "source": "/world-class-engineering-manufacturing/",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/services/advanced-manufacturing/fame",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/quantum-computing/",
+      "destination": "/services/engineering-design/signal-integrity-simulation-services",
+      "permanent": true
+    },
+    {
+      "source": "/computing-networking/",
+      "destination": "/services/engineering-design/system-schematic-services",
+      "permanent": true
+    },
+    {
+      "source": "/complete-box-build-ems-service/",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/environmental-iso-14001/",
+      "destination": "/services/sustainable_engineering",
+      "permanent": true
+    },
+    {
+      "source": "/news/npi-new/",
+      "destination": "/services/npi",
+      "permanent": true
+    },
+    {
+      "source": "/case_studies/broadband-wireless-technologies/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/product/fpga-development-and-fpga-prototyping/",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-inc-strengthens-team-with-new-director-of-sales-marketing/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-added-state-of-the-art-juki-ism500-intelligent-storage-system-in-house/",
+      "destination": "/services/advanced-manufacturing",
       "permanent": true
     }
   ]
