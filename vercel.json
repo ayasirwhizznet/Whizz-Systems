@@ -722,6 +722,11 @@
       "source": "/whizz-systems-added-state-of-the-art-juki-ism500-intelligent-storage-system-in-house/",
       "destination": "/services/advanced-manufacturing",
       "permanent": true
+    },
+    {
+      "source": "/download/FMC_loopback_user_guide_030515.pdf",
+      "destination": "/services",
+      "permanent": true
     }
   ]
 }
