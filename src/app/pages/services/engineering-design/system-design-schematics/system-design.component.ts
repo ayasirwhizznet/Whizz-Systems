@@ -34,7 +34,7 @@ export class SystemDesignComponent {
     {
       imgUrl: 'assets/services/engg&design/system-design/schematic.png',
       name: 'Schematic Design & Drafting',
-      desc: 'Our experts design <span class = "font-medium">circuit diagrams</span> using industry-leading tools  including: Cadence Concept, OrCAD,  Mentor Graphics, View Draw,and DxDesigner. These tools enable <span class = "font-medium">accurate schematic capture, simulation, and validation,</span> ensuring first-pass success in complex hardware designs.',
+      desc: 'Our experts design <span class = "font-medium">circuit diagrams</span> using industry-leading tools  including: Cadence Concept, OrCAD,  Mentor Graphics, View Draw,and DxDesigner. These tools enable <span class = "font-medium">accurate schematic capture, <a href="https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services" class="text-teal1">simulation, and validation</a>,</span> ensuring first-pass success in complex hardware designs.',
     },
     {
       imgUrl: 'assets/services/engg&design/system-design/power.png',
@@ -49,7 +49,7 @@ export class SystemDesignComponent {
     {
       imgUrl: 'assets/services/engg&design/system-design/fpga.png',
       name: 'FPGA-Based Custom Design',
-      desc: 'For unique requirements, we deliver FPGA-based solutions that offer unparalleled flexibility and high-performance functionality tailored to your specific processing needs.',
+      desc: 'For unique requirements, we deliver <a href="https://www.whizzsystems.com/services/engineering-design/fpga-design-services" class="text-teal1">FPGA-based solutions</a> that offer unparalleled flexibility and high-performance functionality tailored to your specific processing needs.',
     },
   ];
 

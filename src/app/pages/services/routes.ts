@@ -104,11 +104,72 @@ export const routes: Routes = [
             (m) => m.AdvManufacturingComponent
           ),
         title:
-          'Advanced Electronic Manufacturing Services | Prototyping to Box Build | Whizz Systems',
+          'Advanced Electronic Manufacturing & Assembly Services | Whizz Systems',
         data: {
-          description: `Whizz Systems offers integrated electronic manufacturing services, including process
-engineering, prototyping, box build assembly, and environmental testing for complex
-products.`,
+          description: `Whizz Systems provides advanced electronic manufacturing, assembly, and hardware design services. From NPI agility to scalable production, we deliver precision, quality, and speed for complex products.`,
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  name: 'Whizz Systems',
+                  url: 'https://www.whizzsystems.com/',
+                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                  sameAs: [
+                    'https://www.linkedin.com/company/whizz-systems/',
+                    'https://www.youtube.com/@WhizzSystemsCA',
+                  ],
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Services',
+                      item: 'https://www.whizzsystems.com/services/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'Advanced Manufacturing',
+                      item: 'https://www.whizzsystems.com/services/advanced-manufacturing',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'Service',
+                  name: 'Advanced Electronic Manufacturing Services',
+                  url: 'https://www.whizzsystems.com/services/advanced-manufacturing',
+                  description:
+                    'Whizz Systems provides advanced electronic manufacturing, electronic assembly, and hardware design services, combining NPI agility with scalable production and rigorous testing.',
+                  provider: {
+                    '@type': 'Organization',
+                    name: 'Whizz Systems',
+                    url: 'https://www.whizzsystems.com/',
+                  },
+                  serviceType: [
+                    'Advanced Electronic Manufacturing',
+                    'Advanced Electronic Assembly',
+                    'Advanced EMS Engineering',
+                    'End-to-End Hardware Design',
+                    'Advanced Hardware Design',
+                  ],
+                  areaServed: {
+                    '@type': 'Place',
+                    name: 'Global',
+                  },
+                },
+              ],
+            },
+          ],
         },
       },
       {

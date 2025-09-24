@@ -114,16 +114,6 @@
       "permanent": true
     },
     {
-      "source": "/services/advanced-manufacturing/electronic-manufacturing-assembly",
-      "destination": "/services/advanced-manufacturing",
-      "permanent": true
-    },
-    {
-      "source": "/services/advanced-manufacturing/electronic-manufacturing-assembly",
-      "destination": "/services/advanced-manufacturing",
-      "permanent": true
-    },
-    {
       "source": "/custom-pcb-design",
       "destination": "/services/engineering-design/pcb-layout",
       "permanent": true

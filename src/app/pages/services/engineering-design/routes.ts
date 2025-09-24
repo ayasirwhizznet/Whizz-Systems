@@ -11,10 +11,70 @@ export const routes: Routes = [
             (m) => m.SystemDesignComponent
           ),
         title:
-          'System Design & Schematic Services | Hardware Design Company - Whizz Systems',
+          'Schematic Design & Hardware Development Solutions | Whizz Systems',
         data: {
-          description: `Whizz Systems offers industry-leading system architecture and schematic design
-services, from FPGA customization to power budgeting and compliance engineering.`,
+          description: `Whizz Systems provides professional hardware schematic design, PCB schematic design, and electrical schematic services. From concept to schematic design phase, we deliver reliable and scalable solutions.`,
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Service',
+              serviceType: 'Schematic Design Services',
+              provider: {
+                '@type': 'Organization',
+                name: 'Whizz Systems',
+                url: 'https://www.whizzsystems.com/',
+                logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                sameAs: [
+                  'https://www.linkedin.com/company/whizz-systems/',
+                  'https://www.youtube.com/@WhizzSystemsCA',
+                ],
+              },
+              url: 'https://www.whizzsystems.com/services/engineering-design/system-schematic-services',
+              description:
+                'Whizz Systems offers schematic design services including hardware schematic design, PCB schematic design, electrical schematics, and schematic design phase services for complex electronic systems.',
+              areaServed: {
+                '@type': 'Place',
+                name: 'Worldwide',
+              },
+              offers: {
+                '@type': 'Offer',
+                name: 'System Schematic Design Services',
+                description:
+                  'Professional hardware, electrical, and PCB schematic design services to ensure reliable, scalable, and efficient electronic product development.',
+                url: 'https://www.whizzsystems.com/services/engineering-design/system-schematic-services',
+              },
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://www.whizzsystems.com/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: 'Services',
+                  item: 'https://www.whizzsystems.com/services/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: 'Engineering & Design',
+                  item: 'https://www.whizzsystems.com/services/engineering-design/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 4,
+                  name: 'System Schematic Services',
+                  item: 'https://www.whizzsystems.com/services/engineering-design/system-schematic-services',
+                },
+              ],
+            },
+          ],
         },
       },
       {
