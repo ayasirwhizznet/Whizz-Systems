@@ -1,10 +1,8 @@
 {
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
   "redirects": [
-     {
-      "source": "/(.*)",
-      "destination": "https://www.whizzsystems.com/$1",
-      "permanent": true
-    },
     {
       "source": "/electronic-manufacturing-assembly-services/",
       "destination": "/services/advanced-manufacturing",
@@ -720,8 +718,5 @@
       "destination": "/services",
       "permanent": true
     }
-  ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
