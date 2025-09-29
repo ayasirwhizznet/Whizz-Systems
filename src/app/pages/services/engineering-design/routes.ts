@@ -165,12 +165,88 @@ export const routes: Routes = [
           import('./modeling/modeling.component').then(
             (m) => m.ModelingComponent
           ),
-        title:
-          '3D Modeling &amp; Mechanical Design Services | Enclosure Design for Electronics – Whizz Systems',
+        title: 'Mechanical 3D Modeling & Design Services | Whizz Systems',
         data: {
-          description: `Whizz Systems offers expert 3D modeling and mechanical design for electronic
-products. From CAD drawings to thermal enclosures and FEA analysis, we deliver
-production-ready designs that perform.`,
+          description: `Mechanical 3D modeling and design services, including 3D parts modeling, FEA, and 2D assembly drawings. Optimize performance, manufacturability, and reliability with end-to-end support.`,
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  name: 'Whizz Systems',
+                  url: 'https://www.whizzsystems.com/',
+                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                  sameAs: [
+                    'https://www.linkedin.com/company/whizz-systems/',
+                    'https://www.youtube.com/@WhizzSystemsCA',
+                  ],
+                  address: {
+                    '@type': 'PostalAddress',
+                    streetAddress: '3240 Scott Blvd',
+                    addressLocality: 'Santa Clara',
+                    addressRegion: 'CA',
+                    postalCode: '95054',
+                    addressCountry: 'US',
+                  },
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Services',
+                      item: 'https://www.whizzsystems.com/services/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'Engineering & Design',
+                      item: 'https://www.whizzsystems.com/services/engineering-design/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 4,
+                      name: '3D Modeling & Mechanical Design',
+                      item: 'https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'Service',
+                  name: 'Mechanical 3D Modeling & Mechanical Design Services',
+                  url: 'https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design',
+                  description:
+                    'Whizz Systems provides 3D mechanical modeling and design services, including electronics packaging, finite element analysis (FEA), and 2D assembly drawings for optimized performance and manufacturability.',
+                  provider: {
+                    '@type': 'Organization',
+                    name: 'Whizz Systems',
+                    url: 'https://www.whizzsystems.com/',
+                  },
+                  serviceType: [
+                    'Mechanical 3D Modeling Services',
+                    'Mechanical 3D Parts Modeling Services',
+                    '3D Mechanical Modeling Services',
+                    'Mechanical 3D Design Services',
+                    'Electronics Packaging Mechanical Design',
+                    'Hardware 3D Modeling',
+                    '2D Assembly Drawings',
+                  ],
+                  areaServed: {
+                    '@type': 'Place',
+                    name: 'Global',
+                  },
+                },
+              ],
+            },
+          ],
         },
       },
       {
@@ -280,12 +356,89 @@ performance electronics.`,
           import(
             './firmware-software-development/firmware-software-development.component'
           ).then((m) => m.FirmwareSoftwareDevelopmentComponent),
-        title:
-          'Firmware &amp; Embedded Software Development Services | IoT &amp; RTOS Experts - Whizz Systems',
+        title: 'Firmware & Software Development Services | Whizz Systems',
         data: {
-          description: `Whizz Systems offers expert firmware and software development services for
-embedded systems, IoT, and cloud integration. From RTOS to UI apps, we build
-complete system solutions.`,
+          description: `Whizz Systems provides firmware and software development services, including bare-metal firmware, embedded systems, device drivers, IoT connectivity, and software-firmware integration. Trusted partner for end-to-end product development.`,
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  name: 'Whizz Systems',
+                  url: 'https://www.whizzsystems.com/',
+                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                  sameAs: [
+                    'https://www.linkedin.com/company/whizz-systems/',
+                    'https://www.youtube.com/@WhizzSystemsCA',
+                  ],
+                  address: {
+                    '@type': 'PostalAddress',
+                    streetAddress: '3240 Scott Blvd',
+                    addressLocality: 'Santa Clara',
+                    addressRegion: 'CA',
+                    postalCode: '95054',
+                    addressCountry: 'US',
+                  },
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Services',
+                      item: 'https://www.whizzsystems.com/services/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'Engineering & Design',
+                      item: 'https://www.whizzsystems.com/services/engineering-design/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 4,
+                      name: 'Firmware & Software Development',
+                      item: 'https://www.whizzsystems.com/services/engineering-design/firmware-software-development',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'Service',
+                  name: 'Firmware & Embedded Software Development Services',
+                  url: 'https://www.whizzsystems.com/services/engineering-design/firmware-software-development',
+                  description:
+                    'Whizz Systems provides firmware and software development services, including embedded systems, bare-metal firmware, kernel and driver development, IoT connectivity, UI applications, and system integration.',
+                  provider: {
+                    '@type': 'Organization',
+                    name: 'Whizz Systems',
+                    url: 'https://www.whizzsystems.com/',
+                  },
+                  serviceType: [
+                    'Firmware Design Service',
+                    'Firmware Testing Services',
+                    'Firmware Consultancy',
+                    'Embedded Firmware Design Services',
+                    'Embedded Systems Development',
+                    'Bare-Metal Firmware Development',
+                    'Firmware & Embedded Software Development',
+                    'Firmware and Software Solutions',
+                  ],
+                  areaServed: {
+                    '@type': 'Place',
+                    name: 'Global',
+                  },
+                },
+              ],
+            },
+          ],
         },
       },
     ],

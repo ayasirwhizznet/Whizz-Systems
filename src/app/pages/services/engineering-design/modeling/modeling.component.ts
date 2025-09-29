@@ -22,7 +22,7 @@ export class ModelingComponent {
     {
       imgUrl: 'assets/services/engg&design/3d-modeling-mechanical-design/assembly-drawings.png',
       name: '3D Models & 2D Assembly Drawings',
-      desc: 'Detailed, standards-compliant PCB component designs. Custom designs ensuring functionality and durability.',
+      desc: 'Detailed, standards-compliant <a href="https://www.whizzsystems.com/services/engineering-design/pcb-layout" class="text-teal1">PCB component designs</a>. Custom designs ensuring functionality and durability.',
     },
     {
       imgUrl: 'assets/services/engg&design/3d-modeling-mechanical-design/advanced-mechanical.png',

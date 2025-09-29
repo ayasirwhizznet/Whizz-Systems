@@ -64,7 +64,7 @@ export class FirmwareSoftwareDevelopmentComponent {
     {
       imgUrl: 'assets/icons/support.svg',
       name: 'End-to-End Manufacturing Support',
-      desc: 'From prototyping to production, we deliver fully integrated electronic systems.',
+      desc: 'From <a href="https://www.whizzsystems.com/services/npi" class="text-teal">prototyping to production</a>, we deliver fully integrated electronic systems.',
     },
     {
       imgUrl: 'assets/icons/industry.svg',
