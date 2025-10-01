@@ -125,7 +125,7 @@ export const routes: Routes = [
           ),
         title: 'PCB Layout & Design Services | High-Density & HDI PCB Experts',
         data: {
-          description: `description" content="Whizz Systems provides PCB layout and design services including high-density PCB layouts, HDI design, DfX PCB development, and advanced electronic product engineering.`,
+          description: `Whizz Systems provides PCB layout and design services including high-density PCB layouts, HDI design, DfX PCB development, and advanced electronic product engineering.`,
           schema: [
             {
               '@context': 'https://schema.org',
