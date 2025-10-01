@@ -8,7 +8,69 @@ export const routes: Routes = [
         path: '',
         loadComponent: () =>
           import('./services.component').then((m) => m.ServicesComponent),
-        title: 'Services',
+        title: 'Electronic Product Development Services | Whizz Solutions',
+        data: {
+          description:
+            'Whizz Systems delivers complete electronic product development services — from engineering & design to NPI, advanced manufacturing, lab testing, supply chain, and sustaining engineering.',
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  name: 'Whizz Systems',
+                  url: 'https://www.whizzsystems.com/',
+                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                  sameAs: [
+                    'https://www.linkedin.com/company/whizz-systems/',
+                    'https://www.youtube.com/@WhizzSystemsCA',
+                  ],
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Services',
+                      item: 'https://www.whizzsystems.com/services',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'Service',
+                  name: 'Electronic Product Development Services',
+                  url: 'https://www.whizzsystems.com/services',
+                  description:
+                    'Whizz Systems provides complete electronic product development services including engineering, NPI, advanced manufacturing, lab testing, supply chain management, and sustaining engineering.',
+                  provider: {
+                    '@type': 'Organization',
+                    name: 'Whizz Systems',
+                    url: 'https://www.whizzsystems.com/',
+                  },
+                  serviceType: [
+                    'Engineering & Design',
+                    'NPI',
+                    'Advanced Manufacturing',
+                    'Lab Testing Solutions',
+                    'Supply Chain Management',
+                    'Sustaining Engineering & Obsolescence Management',
+                  ],
+                  areaServed: {
+                    '@type': 'Place',
+                    name: 'Global',
+                  },
+                },
+              ],
+            },
+          ],
+        },
       },
       {
         path: 'engineering-design',

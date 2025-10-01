@@ -80,7 +80,7 @@ export class ServicesComponent implements OnInit, OnDestroy {
     },
     {
       name: 'NPI',
-      desc: `Bringing innovative hardware to market requires precision, efficiency, and deep technical expertise. We bridge the gap between concept and production with a seamless NPI process, ensuring design readiness, manufacturability, and compliance while accelerating time to market.`,
+      desc: `Bringing innovative hardware to market requires precision, efficiency, and deep technical expertise. We bridge the gap between concept and production with a seamless <a href="https://www.whizzsystems.com/services/npi" class="text-teal1">NPI process</a>, ensuring design readiness, manufacturability, and compliance while accelerating time to market.`,
       services: [
         { name: 'System Level Architecture', link: '/services/npi', fragment: 'system-level-architecture' },
         { name: 'Schematic Design', link: '/services/npi', fragment: 'schematic-design' },
@@ -92,7 +92,7 @@ export class ServicesComponent implements OnInit, OnDestroy {
     },
     {
       name: 'Advanced Manufacturing',
-      desc: `Precision, scalability, and efficiency drive our advanced manufacturing capabilities. Whether assembling complex electronics, integrating mechanical enclosures, or designing system-level packaging, we ensure the highest quality while offering both local and offshore production flexibility.`,
+      desc: `Precision, scalability, and efficiency drive our <a href="https://www.whizzsystems.com/services/advanced-manufacturing" class="text-teal1">advanced manufacturing</a> capabilities. Whether assembling complex electronics, integrating mechanical enclosures, or designing system-level packaging, we ensure the highest quality while offering both local and offshore production flexibility.`,
       services: [
         { name: 'Process Engineering', link: '/services/advanced-manufacturing', fragment: 'process-engineering' },
         { name: 'Manufacturing Testing', link: '/services/advanced-manufacturing', fragment: 'manufacturing-testing' },
@@ -104,7 +104,7 @@ export class ServicesComponent implements OnInit, OnDestroy {
     },
     {
       name: 'Lab Testing Solutions',
-      desc: `Reliability starts with rigorous validation. Our lab testing solutions ensure every board and system meets industry standards, from initial bring-up to full characterization, so your products perform flawlessly in real-world conditions.`,
+      desc: `Reliability starts with rigorous validation. Our <a href="https://www.whizzsystems.com/services/lab-testing-solutions" class="text-teal1">lab testing solutions</a> ensure every board and system meets industry standards, from initial bring-up to full characterization, so your products perform flawlessly in real-world conditions.`,
       services: [
         { name: 'Board Bring Up', link: '/services/lab-testing-solutions', fragment: 'board-bring-up' },
         { name: 'Validation', link: '/services/lab-testing-solutions', fragment: 'Validation' },
@@ -113,7 +113,7 @@ export class ServicesComponent implements OnInit, OnDestroy {
     },
     {
       name: 'Supply Chain Management',
-      desc: `Managing electronic components is more complex than ever. Our supply chain solutions provide strategic sourcing, compliance oversight, and procurement expertise to mitigate risk, ensure availability, and keep your production on track.`,
+      desc: `Managing electronic components is more complex than ever. Our <a href="https://www.whizzsystems.com/services/supply-chain-management" class="text-teal1">supply chain solutions</a> provide strategic sourcing, compliance oversight, and procurement expertise to mitigate risk, ensure availability, and keep your production on track.`,
       services: [
         { name: 'Components Procurement & Planning', link: '/services/supply-chain-management', fragment: 'components-procurement-and-planning' },
         { name: 'Prototype Build Coordination', link: '/services/supply-chain-management', fragment: 'prototype-build-coordination' },
@@ -123,7 +123,7 @@ export class ServicesComponent implements OnInit, OnDestroy {
     },
     {
       name: 'Sustaining Engineering & Obsolescence Management',
-      desc: `Technology evolves, but your product lifecycle doesn’t have to be a limitation. We proactively manage component lifecycles, mitigate EOL risks, and provide alternative sourcing strategies to keep your products viable and competitive.`,
+      desc: `Technology evolves, but your product lifecycle doesn’t have to be a limitation. We proactively <a href="https://www.whizzsystems.com/services/sustainable_engineering" class="text-teal1">manage component lifecycles</a>, mitigate EOL risks, and provide alternative sourcing strategies to keep your products viable and competitive.`,
       services: [
         { name: 'BOM Management', link: '/services/sustainable_engineering' },
         { name: 'EOL Management', link: '/services/sustainable_engineering' },

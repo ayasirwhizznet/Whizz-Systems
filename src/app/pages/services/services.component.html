@@ -7,7 +7,7 @@
         Powering the Future of Next-Gen Electronics Design and Manufacturing</h1>
       <p class="text-base sm:text-sm 2xl:text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8 sm:w-[70%] lg:w-full">At Whizz Systems, We leverage our <span
           class="text-teal2 font-medium">25+ years of expertise</span>—mastering the art of harmonizing <span
-          class="text-teal2 font-medium">power, thermal efficiency, performance</span>, and <span
+          class="text-teal2 font-medium">power, <a href="https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions">thermal efficiency</a>, performance</span>, and <span
           class="text-teal2 font-medium">cost</span> to bring next-generation complex products to life. Our engineering
         and design teams work together to take full ownership of the product development process—<span
           class="text-teal2 font-medium">from design to manufacturing</span>—helping you achieve faster time-to-market
@@ -50,9 +50,9 @@
   <div *ngFor="let category of serviceCategories"
     class="flex flex-col lg:flex-row justify-between gap-10 lg:gap-0 py-8 lg:py-12 3xl:py-16">
     <div [id]="category.name" class="w-full lg:w-[29.8%] mt-10 md:mt-0">
-      <h1 class="text-3xl lg:text-4xl 3xl:text-5xl font-bold 3xl:leading-[57.6px] text-dark-gray2 mb-6 3xl:mb-8">{{
-        category.name }}</h1>
-      <p class="text-sm 3xl:text-lg text-dark-gray1">{{ category.desc }}</p>
+      <h3 class="text-3xl lg:text-4xl 3xl:text-5xl font-bold 3xl:leading-[57.6px] text-dark-gray2 mb-6 3xl:mb-8">{{
+        category.name }}</h3>
+      <p class="text-sm 3xl:text-lg text-dark-gray1" [innerHTML]="category.desc"></p>
     </div>
     <div class="w-full lg:w-[59.49%]">
       <div class="grid grid-cols-2 gap-3 3xl:gap-4">
