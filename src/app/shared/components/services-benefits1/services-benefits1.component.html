@@ -14,8 +14,7 @@
                     <h3
                         class="text-dark-gray2 text-sm 3xl:text-base font-medium lg:leading-[15px] 3xl:leading-[19.2px] my-3 3xl:my-4">
                         {{benefit.name}}</h3>
-                    <p class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]">
-                        {{benefit.desc}}</p>
+                    <p class="text-dark-gray2 text-sm 3xl:text-base font-light lg:leading-[24px] 3xl:leading-[28px]"[innerHTML]="benefit.desc"></p>
                 </div>
             </div>
         </div>

@@ -330,11 +330,87 @@ export const routes: Routes = [
             (m) => m.PowerDeliveryComponent
           ),
         title:
-          'Power Delivery Network (PDN) Simulation Services | Whizz Systems',
+          'Power Delivery Network Simulation (PDN) Services | Whizz Systems',
         data: {
-          description: `Whizz Systems offers advanced PDN simulation services for efficient, stable, and cost-effective
-power delivery in high-performance PCBs. Get IR drop, current density, and AC impedance
-analysis.`,
+          description: `Advanced Power Delivery Network (PDN) simulations for reliable PCB performance. Ensure efficient, first-time-right designs with DC/AC power analysis and layout optimization.`,
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  name: 'Whizz Systems',
+                  url: 'https://www.whizzsystems.com/',
+                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                  sameAs: [
+                    'https://www.linkedin.com/company/whizz-systems/',
+                    'https://www.youtube.com/@WhizzSystemsCA',
+                  ],
+                  address: {
+                    '@type': 'PostalAddress',
+                    streetAddress: '3240 Scott Blvd',
+                    addressLocality: 'Santa Clara',
+                    addressRegion: 'CA',
+                    postalCode: '95054',
+                    addressCountry: 'US',
+                  },
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Services',
+                      item: 'https://www.whizzsystems.com/services/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'Engineering & Design',
+                      item: 'https://www.whizzsystems.com/services/engineering-design/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 4,
+                      name: 'Power Delivery Network Simulation',
+                      item: 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'Service',
+                  name: 'Power Delivery Network Simulation (PDN) Services',
+                  url: 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation',
+                  description:
+                    'Whizz Systems provides advanced Power Delivery Network (PDN) simulations and power integrity analysis to ensure reliable PCB performance, covering DC/AC analysis and layout optimization.',
+                  provider: {
+                    '@type': 'Organization',
+                    name: 'Whizz Systems',
+                    url: 'https://www.whizzsystems.com/',
+                  },
+                  serviceType: [
+                    'Power Delivery Network Simulation',
+                    'PDN Simulation Services',
+                    'PCB Power Integrity Analysis',
+                    'DC Power Analysis',
+                    'AC Power Analysis',
+                    'End-to-End Layout Optimization',
+                  ],
+                  areaServed: {
+                    '@type': 'Place',
+                    name: 'Global',
+                  },
+                },
+              ],
+            },
+          ],
         },
       },
       {
@@ -343,11 +419,87 @@ analysis.`,
           import('./thermal-management/thermal-management.component').then(
             (m) => m.ThermalManagementComponent
           ),
-        title: 'Thermal Management Solutions for Electronics | Whizz Systems',
+        title: 'Heatsink and Thermal Management Solutions | Whizz Systems',
         data: {
-          description: `Boost performance and reliability with Whizz Systems&#39; thermal management services. We
-specialize in CFD thermal analysis, vapor chamber cooling, and custom thermal design for high-
-performance electronics.`,
+          description: `Thermal management solutions including heatsink design, CFD analysis, and cooling systems for reliable electronics performance. Optimal regulation with thermal design and manufacturing services.`,
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  name: 'Whizz Systems',
+                  url: 'https://www.whizzsystems.com/',
+                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                  sameAs: [
+                    'https://www.linkedin.com/company/whizz-systems/',
+                    'https://www.youtube.com/@WhizzSystemsCA',
+                  ],
+                  address: {
+                    '@type': 'PostalAddress',
+                    streetAddress: '3240 Scott Blvd',
+                    addressLocality: 'Santa Clara',
+                    addressRegion: 'CA',
+                    postalCode: '95054',
+                    addressCountry: 'US',
+                  },
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Services',
+                      item: 'https://www.whizzsystems.com/services/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'Engineering & Design',
+                      item: 'https://www.whizzsystems.com/services/engineering-design/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 4,
+                      name: 'Thermal Management Solutions',
+                      item: 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'Service',
+                  name: 'Thermal Management Solutions for Electronics',
+                  url: 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions',
+                  description:
+                    'Whizz Systems provides advanced thermal management solutions including heatsink design, thermal CFD analysis, cooling systems, and thermal design manufacturing to ensure optimal electronic equipment performance.',
+                  provider: {
+                    '@type': 'Organization',
+                    name: 'Whizz Systems',
+                    url: 'https://www.whizzsystems.com/',
+                  },
+                  serviceType: [
+                    'Thermal Management Solutions',
+                    'Thermal Design Services',
+                    'Heatsink Thermal Management',
+                    'CFD Thermal Analysis',
+                    'Custom Thermal Design',
+                    'Electronics Cooling Systems',
+                  ],
+                  areaServed: {
+                    '@type': 'Place',
+                    name: 'Global',
+                  },
+                },
+              ],
+            },
+          ],
         },
       },
       {

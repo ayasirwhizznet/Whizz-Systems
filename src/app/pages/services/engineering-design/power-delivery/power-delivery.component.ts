@@ -32,7 +32,7 @@ export class PowerDeliveryComponent {
     {
       imgUrl: 'assets/services/engg&design/power-delivery-network-simulation/end.png',
       name: 'End-to-End Layout Optimization',
-      desc: 'Enhancing reliability by embedding simulation insights into PCB designs.',
+      desc: 'Enhancing reliability by embedding simulation insights into <a href="https://www.whizzsystems.com/services/engineering-design/pcb-layout" title="PCB designs" class="text-teal1">PCB designs</a>',
     },
   ];
 

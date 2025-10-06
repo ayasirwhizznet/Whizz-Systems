@@ -308,12 +308,79 @@ export const routes: Routes = [
           import(
             './supply-chain-management/supply-chain-management.component'
           ).then((m) => m.SupplyChainManagementComponent),
-        title:
-          'Global Electronics Supply Chain Management Services | Whizz Systems',
+        title: 'Electronics Supply Chain Management Solutions | Whizz Systems',
         data: {
-          description: `Accelerate your electronics product development with Whizz Systems’ proactive
-sourcing, inventory control, and global component procurement. Integrated with design,
-our SCM solutions ensure speed, reliability, and reduced risk`,
+          description: `Hi-tech supply chain management solutions for electronics, including early procurement, obsolescence management, inventory control, and global sourcing.`,
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  name: 'Whizz Systems',
+                  url: 'https://www.whizzsystems.com/',
+                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                  sameAs: [
+                    'https://www.linkedin.com/company/whizz-systems/',
+                    'https://www.youtube.com/@WhizzSystemsCA',
+                  ],
+                  address: {
+                    '@type': 'PostalAddress',
+                    streetAddress: '3240 Scott Blvd',
+                    addressLocality: 'Santa Clara',
+                    addressRegion: 'CA',
+                    postalCode: '95054',
+                    addressCountry: 'US',
+                  },
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Services',
+                      item: 'https://www.whizzsystems.com/services/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'Supply Chain Management',
+                      item: 'https://www.whizzsystems.com/services/supply-chain-management',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'Service',
+                  name: 'Electronics Supply Chain Management Solutions',
+                  url: 'https://www.whizzsystems.com/services/supply-chain-management',
+                  description:
+                    'Whizz Systems delivers hi-tech electronics supply chain management solutions including obsolescence management, global sourcing, inventory control, and lifecycle risk mitigation to accelerate builds and ensure reliability.',
+                  provider: {
+                    '@type': 'Organization',
+                    name: 'Whizz Systems',
+                    url: 'https://www.whizzsystems.com/',
+                  },
+                  serviceType: [
+                    'Hi-Tech Supply Chain Solutions',
+                    'Electronic Supply Chain Solutions',
+                    'Obsolescence Supply Chain',
+                    'Electronics Supply Chain Management',
+                  ],
+                  areaServed: {
+                    '@type': 'Place',
+                    name: 'Global',
+                  },
+                },
+              ],
+            },
+          ],
         },
       },
       {
@@ -326,7 +393,78 @@ our SCM solutions ensure speed, reliability, and reduced risk`,
           'Sustaining Engineering & Obsolescence Management | Whizz Systems',
         data: {
           description:
-            'Extend product lifecycles with Whizz Systems Sustaining Engineering & Obsolescence Management. We mitigate risks, manage EOL components, and optimize AVL strategies for uninterrupted production.',
+            'Sustaining engineering services, obsolescence management, and EOL product lifecycle support. From BoM management to risk mitigation, we keep your electronics reliable and future-ready.',
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  name: 'Whizz Systems',
+                  url: 'https://www.whizzsystems.com/',
+                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                  sameAs: [
+                    'https://www.linkedin.com/company/whizz-systems/',
+                    'https://www.youtube.com/@WhizzSystemsCA',
+                  ],
+                  address: {
+                    '@type': 'PostalAddress',
+                    streetAddress: '3240 Scott Blvd',
+                    addressLocality: 'Santa Clara',
+                    addressRegion: 'CA',
+                    postalCode: '95054',
+                    addressCountry: 'US',
+                  },
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Services',
+                      item: 'https://www.whizzsystems.com/services/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'Sustaining Engineering & Obsolescence Management',
+                      item: 'https://www.whizzsystems.com/services/sustainable_engineering',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'Service',
+                  name: 'Sustaining Engineering & Obsolescence Management',
+                  url: 'https://www.whizzsystems.com/services/sustainable_engineering',
+                  description:
+                    'Whizz Systems offers sustaining engineering solutions, electronic component obsolescence management, and EOL lifecycle support. Services include BoM management, AVL management, second sourcing, and proactive risk mitigation.',
+                  provider: {
+                    '@type': 'Organization',
+                    name: 'Whizz Systems',
+                    url: 'https://www.whizzsystems.com/',
+                  },
+                  serviceType: [
+                    'Sustaining Engineering Services',
+                    'Electronic Parts Obsolescence Management',
+                    'Electronic Component Obsolescence Management',
+                    'EOL Product Management',
+                    'Obsolescence Management Services',
+                  ],
+                  areaServed: {
+                    '@type': 'Place',
+                    name: 'Global',
+                  },
+                },
+              ],
+            },
+          ],
         },
       },
     ],
