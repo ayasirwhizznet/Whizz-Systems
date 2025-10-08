@@ -80,6 +80,8 @@ export class AppComponent implements OnInit {
     const title = deepest.snapshot.data['title'];
     const description = deepest.snapshot.data['description'];
     const schema = deepest.snapshot.data['schema'];
+    const og = deepest.snapshot.data['og'];
+    const twitter = deepest.snapshot.data['twitter'];
 
     if (title) {
       this.titleService.setTitle(title);
@@ -89,6 +91,23 @@ export class AppComponent implements OnInit {
     }
     if (schema) {
       this.setJsonLdSchema(schema);
+    }
+    if (og) {
+      Object.entries(og).forEach(([key, value]) => {
+        this.metaService.updateTag({
+          property: `og:${key}`,
+          content: value as string,
+        });
+      });
+    }
+
+    if (twitter) {
+      Object.entries(twitter).forEach(([key, value]) => {
+        this.metaService.updateTag({
+          name: `twitter:${key}`,
+          content: value as string,
+        });
+      });
     }
   }
 
