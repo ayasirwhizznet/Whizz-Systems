@@ -16,7 +16,152 @@ export const routes: Routes = [
         path: 'whitepaper-5g-oru',
         loadComponent: () =>
           import('./blogs/5G-ORU/5g-oru.component').then((m) => m.ORUComponent),
-        title: 'Whitepaper/5G ORU',
+        title:
+          '5G ORU Development | Open Radio Unit Design & Manufacturing | Whizz Systems',
+        data: {
+          description:
+            'description" content="5G ORU development — from open radio unit white box design to thermal, mechanical, and power optimization. Accelerate your next-gen 5G connectivity with our end-to-end engineering and manufacturing services.',
+          keywords:
+            '5g oru, 5G Open Radio Unit, open radio unit white box, 5g oru white box solution, 5G ORU Development, 5g radio design manufacturing services, Next-Gen 5G ORU, 5G ORU Design Engineering',
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Article',
+              headline:
+                'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
+              description:
+                'Explore Whizz Systems’ 5G ORU design and manufacturing expertise — delivering advanced open radio unit white box solutions for next-gen 5G networks.',
+              image:
+                'https://www.whizzsystems.com/assets/images/5g-oru-whitepaper.jpg',
+              author: {
+                '@type': 'Organization',
+                name: 'Whizz Systems',
+              },
+              publisher: {
+                '@type': 'Organization',
+                name: 'Whizz Systems',
+                logo: {
+                  '@type': 'ImageObject',
+                  url: 'https://www.whizzsystems.com/assets/images/logo.png',
+                },
+              },
+              url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru',
+              mainEntityOfPage:
+                'https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru',
+              datePublished: '2025-01-15',
+              dateModified: '2025-01-15',
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://www.whizzsystems.com/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: 'News & Insights',
+                  item: 'https://www.whizzsystems.com/news-&-insights/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: '5G ORU Development Whitepaper',
+                  item: 'https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru',
+                },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://www.whizzsystems.com/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: 'News & Insights',
+                  item: 'https://www.whizzsystems.com/news-&-insights/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: '5G ORU Development Whitepaper',
+                  item: 'https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru',
+                },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: [
+                {
+                  '@type': 'Question',
+                  name: 'What is a 5G Open Radio Unit (ORU)?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'A 5G Open Radio Unit (ORU) is a modular component of the Open RAN architecture that handles the radio frequency (RF) functions in a 5G network, enabling flexible and cost-efficient deployment of 5G infrastructure.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'What are the main challenges in 5G ORU design and manufacturing?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Key challenges include maintaining signal integrity at high frequencies, managing thermal dissipation, ensuring precise mechanical design, and sourcing reliable components across a global supply chain.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Does Whizz Systems provide 5G ORU design and manufacturing services?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Yes, Whizz Systems offers full 5G ORU development — including electrical, mechanical, and thermal design — as well as manufacturing and validation services for next-gen connectivity products.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'What are the benefits of Whizz Systems’ 5G ORU white box solutions?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Whizz Systems’ open radio unit white box designs provide flexibility, scalability, and reduced cost of deployment for telecom OEMs and network operators adopting open RAN architectures.',
+                  },
+                },
+              ],
+            },
+          ],
+          og: {
+            type: 'article',
+            title:
+              'Building the Future of 5G Connectivity with Open Radio Unit Solutions | Whizz Systems',
+            description:
+              'Explore Whizz Systems’ 5G ORU design and manufacturing expertise — delivering advanced open radio unit white box solutions for next-gen 5G networks.',
+            url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru',
+            site_name: 'Whizz Systems',
+            image: 'https://www.whizzsystems.com/assets/news/hero.png',
+            image_alt: '5G Open Radio Unit Solutions by Whizz Systems',
+            publisher: 'https://www.linkedin.com/company/whizz-systems/',
+            section: '5G ORU Development',
+            tag: '5G, ORU, Open Radio Unit, White Box Solutions, Connectivity',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'Next-Gen 5G ORU Development | Whizz Systems',
+            description:
+              'Whizz Systems leads in 5G ORU design, engineering, and manufacturing for open radio unit white box solutions.',
+            image: 'https://www.whizzsystems.com/assets/news/hero.png',
+            image_alt: 'Whizz Systems 5G ORU Development',
+            site: '@WhizzSystems',
+          },
+        },
       },
       {
         path: 'whitepaper-heatsink',

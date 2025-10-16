@@ -79,6 +79,7 @@ export class AppComponent implements OnInit {
 
     const title = deepest.snapshot.data['title'];
     const description = deepest.snapshot.data['description'];
+    const keywords = deepest.snapshot.data['keywords'];
     const schema = deepest.snapshot.data['schema'];
     const og = deepest.snapshot.data['og'];
     const twitter = deepest.snapshot.data['twitter'];
@@ -89,6 +90,9 @@ export class AppComponent implements OnInit {
     if (description) {
       this.metaService.updateTag({ name: 'description', content: description });
     }
+    if (keywords) {
+    this.metaService.updateTag({ name: 'keywords', content: keywords });
+  }
     if (schema) {
       this.setJsonLdSchema(schema);
     }
