@@ -20,7 +20,7 @@ export const routes: Routes = [
           '5G ORU Development | Open Radio Unit Design & Manufacturing | Whizz Systems',
         data: {
           description:
-            'description" content="5G ORU development — from open radio unit white box design to thermal, mechanical, and power optimization. Accelerate your next-gen 5G connectivity with our end-to-end engineering and manufacturing services.',
+            '5G ORU development — from open radio unit white box design to thermal, mechanical, and power optimization. Accelerate your next-gen 5G connectivity with our end-to-end engineering and manufacturing services.',
           keywords:
             '5g oru, 5G Open Radio Unit, open radio unit white box, 5g oru white box solution, 5G ORU Development, 5g radio design manufacturing services, Next-Gen 5G ORU, 5G ORU Design Engineering',
           schema: [
