@@ -169,7 +169,131 @@ export const routes: Routes = [
           import('./blogs/heatsink/heatsink.component').then(
             (m) => m.HeatsinkComponent
           ),
-        title: 'Whitepaper/HeatSink',
+        title:
+          'Heatsinks Guide | Heat Sink Design for PCB & Electronic Systems',
+        data: {
+          description:
+            'Comprehensive guide to heatsink design — covering active and passive heatsinks, types, materials, and optimization methods for reliable PCB thermal performance.',
+          keywords:
+            'heatsinks guide, heat sink design for PCB, active and passive heatsink, types of heatsinks, heatsink design book, heatsink design optimization, heatsink materials',
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Article',
+              headline:
+                'Heatsinks: Considerations, Guidance, and Best Practices for PCB & Electronic Systems',
+              description:
+                'Explore Whizz Systems’ comprehensive guide to heatsink design — covering types, materials, active vs. passive designs, and optimization techniques for advanced PCB systems.',
+              image:
+                'https://www.whizzsystems.com/assets/news/blogs/heatsink/hero.png',
+              author: {
+                '@type': 'Organization',
+                name: 'Whizz Systems',
+              },
+              publisher: {
+                '@type': 'Organization',
+                name: 'Whizz Systems',
+                logo: {
+                  '@type': 'ImageObject',
+                  url: 'https://www.whizzsystems.com/assets/images/logo.png',
+                },
+              },
+              url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink',
+              mainEntityOfPage:
+                'https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink',
+              datePublished: '2025-01-20',
+              dateModified: '2025-01-20',
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://www.whizzsystems.com/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: 'News & Insights',
+                  item: 'https://www.whizzsystems.com/news-&-insights/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: 'Heatsink Design Whitepaper',
+                  item: 'https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink',
+                },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: [
+                {
+                  '@type': 'Question',
+                  name: 'Why do we need a heatsink in electronic systems?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Heatsinks help dissipate excess heat from components such as CPUs, GPUs, and power devices, ensuring reliability, preventing thermal damage, and extending product lifespan.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'What are the types of heatsinks used in PCBs?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Common heatsink types include active heatsinks with fans, passive heatsinks that rely on natural convection, and hybrid types combining both. They can also vary by manufacturing—extruded, bonded-fin, skived, and cast heatsinks.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'What materials are best for heatsink design?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Aluminum and copper are the most common materials for heatsinks due to their excellent thermal conductivity, machinability, and cost-effectiveness.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'How do I select the right heatsink for my design?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Selecting a heatsink depends on power dissipation, available space, airflow, cost, and manufacturing constraints. Simulation and thermal analysis tools can help optimize selection.',
+                  },
+                },
+              ],
+            },
+          ],
+          og: {
+            type: 'article',
+            title:
+              'Heatsinks: Considerations, Guidance, and Best Practices | Whizz Systems',
+            description:
+              'A complete guide to heatsinks — learn about design principles, types, materials, and optimization for advanced electronics and PCB thermal management.',
+            url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink',
+            site_name: 'Whizz Systems',
+            image:
+              'https://www.whizzsystems.com/assets/news/blogs/heatsink/hero.png',
+            image_alt:
+              'Heatsink Design and Thermal Optimization Guide by Whizz Systems',
+            publisher: 'https://www.linkedin.com/company/whizz-systems/',
+            section: 'Thermal Management & PCB Design',
+            tag: 'Heatsink, Thermal Design, PCB Cooling, Electronics, Thermal Management',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'Heatsink Design & Optimization Guide | Whizz Systems',
+            description:
+              'Learn heatsink design best practices for PCBs, CPUs, and high-performance electronics. Active vs. passive heatsinks, materials, and optimization insights.',
+            image:
+              'https://www.whizzsystems.com/assets/news/blogs/heatsink/hero.png',
+            image_alt: 'Heatsink Design and Optimization by Whizz Systems',
+            site: '@WhizzSystems',
+          },
+        },
       },
       {
         path: 'whitepaper-invensify',
