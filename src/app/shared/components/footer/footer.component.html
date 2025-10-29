@@ -23,9 +23,10 @@
           height="39"
           width="96"
           loading="lazy"
-          class="w-24 h-auto 3xl:w-[122px] object-cover"
+          class="w-24 h-auto 3xl:w-[122px] object-cover cursor-pointer"
           src="assets/footer/black-logo.png"
           alt="Whizz_Logo"
+          routerLink="/"
         />
       </div>
       <div>
@@ -39,9 +40,9 @@
         >
           <div
             *ngFor="let item of privacyTerms"
-            class="cursor-pointer hover:text-teal1 underline underline-offset-auto mt-9 3xl:mt-11 transition-all duration-300 ease-in-out"
+            class=" underline underline-offset-auto mt-9 3xl:mt-11 transition-all duration-300 ease-in-out"
           >
-            <a [routerLink]="item.link">{{ item.label }}</a>
+            <p>{{ item.label }}</p>
           </div>
         </div>
       </div>
@@ -60,18 +61,18 @@
           North America <br />
           Silicon Valley HQ
         </h4>
-        <p>
+        <a href="https://maps.app.goo.gl/BnWjYbd2QKAkbxJF7" target="_blank">
           3240 Scott Blvd. <br />
           Santa Clara, CA 95051
-        </p>
+        </a>
 
         <h4 class="font-semibold mt-4 3xl:mt-6 mb-1">Global Office</h4>
-        <p>
+        <a href="https://maps.app.goo.gl/A57eqAL3Q5BXvNa5A" target="_blank">
           Lot 8, SMI Park Phase 2 <br class="block lg:hidden 3xl:block" />
           Jalan Hi-Tech 4 Sambungan <br class="block lg:hidden 3xl:block" />
           Kulim Hi-Tech Park 09000 <br class="block lg:hidden 3xl:block" />
           Kulim, KEDHA Malaysia
-        </p>
+        </a>
 
         <h4 class="font-semibold mt-4 3xl:mt-6 mb-1">Contact:</h4>
         <div *ngFor="let item of contacts">
