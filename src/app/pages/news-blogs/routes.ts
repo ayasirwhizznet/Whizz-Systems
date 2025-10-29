@@ -549,6 +549,14 @@ export const routes: Routes = [
           import('./blogs/hardware-design/hardware-design.component').then(
             (m) => m.HardwareDesignComponent
           ),
+        title: 'High-Power Hardware Design & Power Delivery Networks | Whizz Systems',
+      },
+      {
+        path: 'high-power-demand',
+        loadComponent: () =>
+          import('./blogs/high-power-demand/high-power-demand.component').then(
+            (m) => m.HighPowerDemandComponent
+          ),
         title:
           'High-Power Hardware Design & Power Delivery Networks | Whizz Systems',
         data: {
@@ -677,14 +685,6 @@ export const routes: Routes = [
             tag: 'High-Power Design, PDN, Thermal Management, AI Hardware, Power Optimization',
           },
         },
-      },
-      {
-        path: 'high-power-demand',
-        loadComponent: () =>
-          import('./blogs/high-power-demand/high-power-demand.component').then(
-            (m) => m.HighPowerDemandComponent
-          ),
-        title: 'High-Power Demands in Next-Generation Hardware',
       },
       {
         path: 'future-architecture-performance',
