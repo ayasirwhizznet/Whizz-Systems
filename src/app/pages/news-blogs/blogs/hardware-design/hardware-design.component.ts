@@ -87,22 +87,22 @@ export class HardwareDesignComponent implements OnInit, AfterViewInit, OnDestroy
 
   considerations = [
     {
-      title: '1. Prioritizing Signal Integrity',
+      title: '1. Prioritizing Signal Integrity in High-Density Systems',
       desc1:
         'Signal integrity remains a primary concern; effective design must <b>minimize interference</b> and <b>maintain data quality across densely packed components</b>, especially during high-speed data transfers.',
       desc2: 'A slight disruption in the signal can cause severe performance degradation, so choices must be made wisely.',
     },
     {
-      title: '2. Optimizing Ball Maps and Pin Counts',
+      title: '2. Optimizing Ball Maps and Pin Counts for AI Hardware',
       desc1:
         'Optimizing the ball map and pin configurations is crucial for managing high pin counts. Companies should work with design partners that have a proven track record with <b>complex layouts that minimize crosstalk</b> and <b>improve data transfer reliability</b>. This know-how is necessary to maintain system compatibility as designs grow in complexity.',
     },
     {
-      title: '3. Ensuring Efficient Power Distribution',
+      title: '3. Ensuring Efficient Power Distribution in Complex Boards',
       desc1: `Power distribution is another essential factor, particularly as AI hardware becomes more powerful. Efficient power flow across densely populated boards <b>reduces the risk of thermal issues</b> and <b>supports system reliability</b>. Partnering with a design specialist who excels in <span class="text-teal1 cursor-pointer link-to-power font-medium 3xl:font-bold underline underline-offset-2">advanced power management</span> can prevent costly delays and inefficiencies.`,
     },
     {
-      title: '4. Adhering to Industry Standards',
+      title: '4. Adhering to Industry Standards for Hardware Compliance',
       desc1:
         'It is extremely important for AI hardware companies to follow industry standards to produce compliant and competitive products. Standards such as the <b>Open Compute Project (OCP)</b> guarantee interoperability and reliability. Collaborating with specialists like Whizz Systems addresses these considerations effectively.',
     },
