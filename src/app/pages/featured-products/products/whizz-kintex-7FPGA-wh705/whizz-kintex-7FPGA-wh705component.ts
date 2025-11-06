@@ -82,7 +82,7 @@ export class VHK158Component {
     },
     {
       imgUrl: 'assets/featured-products/products/vhk158/customization.png',
-      name: 'Power & Thermal Optimization',
+      name: '<a href="https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink" title="Power & Thermal Optimization">Power & Thermal Optimization</a>',
       desc: 'Enhance power delivery and cooling mechanisms.',
     },
   ];

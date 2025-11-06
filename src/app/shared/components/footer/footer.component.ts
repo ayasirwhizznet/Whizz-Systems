@@ -51,6 +51,6 @@ export class FooterComponent {
 
   contacts: any[] = [
     { label: 'Direct: 408-980-0400', link: 'tel:408-980-0400' },
-    { label: 'Sales:408-409-6801', link: 'tel:408-409-6801' },
+    // { label: 'Sales:408-409-6801', link: 'tel:408-409-6801' },
   ];
 }
