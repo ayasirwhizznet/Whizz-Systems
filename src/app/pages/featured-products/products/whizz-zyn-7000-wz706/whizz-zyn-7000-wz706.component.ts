@@ -57,7 +57,7 @@ customizations: any[] = [
   },
   {
     imgUrl: 'assets/featured-products/products/vhk158/customization.png',
-    name: 'Complete System Development',
+    name: '<a href="https://www.whizzsystems.com/services/engineering-design/system-schematic-services" title="Complete System Development">Complete System Development</a>',
     desc: 'Design enclosures, firmware, and thermal solutions around the WZ706.',
   },
   {

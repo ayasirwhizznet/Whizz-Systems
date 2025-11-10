@@ -199,7 +199,175 @@ export const routes: Routes = [
           import(
             './products/whizz-zyn-7000-wz706/whizz-zyn-7000-wz706.component'
           ).then((m) => m.WhizzZyn7000WZ706Component),
-        title: 'whizz zyn-7000 wz706',
+        title:
+          'Whizz Zyn-7000 SoC WZ706 | Xilinx ZC706 Evaluation Kit for Embedded Processing',
+        data: {
+          description:
+            'Whizz Zyn-7000 SoC WZ706, a customizable evaluation kit derived from the Xilinx ZC706 Kit. Engineered for embedded processing, and next-gen applications with PCIe Gen2, DDR3, and SFP+ support.',
+          keywords:
+            'xilinx zynq 7000 soc zc706 evaluation kit, zynq-7000 evaluation board, zynq 7000 soc zc706 evaluation kit, zynq zc702 evaluation board price, xilinx zynq-7000 soc zc706, whizz zyn-7000 soc wz706',
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Product',
+                  name: 'Whizz Zyn-7000 SoC WZ706 Evaluation Kit',
+                  brand: {
+                    '@type': 'Brand',
+                    name: 'Whizz Systems',
+                  },
+                  description:
+                    'A customizable evaluation kit derived from the Xilinx ZC706 Evaluation Kit, optimized for embedded processing and high-speed connectivity applications.',
+                  sku: 'WZ706',
+                  category: 'Evaluation Board',
+                  mpn: 'ZYNQ7000-WZ706',
+                  url: 'https://www.whizzsystems.com/featured-products/whizz-zyn-7000-wz706',
+                  offers: {
+                    '@type': 'Offer',
+                    availability: 'https://schema.org/InStock',
+                    priceCurrency: 'USD',
+                    price: 'Request Quote',
+                    url: 'https://www.whizzsystems.com/contact',
+                  },
+                  productID: 'WZ706',
+                  material: 'FPGA Board',
+                  isAccessoryOrSparePartFor: 'Xilinx ZC706 Evaluation Kit',
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Featured Products',
+                      item: 'https://www.whizzsystems.com/featured-products',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'Whizz Zyn-7000 SoC WZ706',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'Organization',
+                  name: 'Whizz Systems',
+                  url: 'https://www.whizzsystems.com',
+                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                  sameAs: [
+                    'https://www.linkedin.com/company/whizz-systems',
+                    'https://twitter.com/whizzsystems',
+                  ],
+                },
+                {
+                  '@type': 'FAQPage',
+                  mainEntity: [
+                    {
+                      '@type': 'Question',
+                      name: 'What is the Whizz Zyn-7000 SoC WZ706 Evaluation Kit used for?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'The Whizz Zyn-7000 SoC WZ706 is a customizable evaluation kit derived from the Xilinx ZC706 Evaluation Kit, designed for embedded processing, high-speed networking, and next-generation prototyping applications.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'What makes the WZ706 different from the standard Xilinx ZC706 Evaluation Kit?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'The WZ706 retains all core features of the Xilinx ZC706 but adds tailored customization for power delivery, I/O, and thermal management to suit high-performance industry applications.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Does Whizz Systems offer customization services for the Zynq-7000 SoC board?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. Whizz Systems provides full customization services including hardware modifications, software and firmware development, and thermal optimization for your specific project needs.',
+                      },
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              '@context': 'https://schema.org/',
+              '@graph': [
+                {
+                  '@type': 'AggregateRating',
+                  itemReviewed: {
+                    '@type': 'Thing',
+                    name: 'Whizz Zyn-7000 SoC WZ706',
+                    url: 'https://www.whizzsystems.com/featured-products/whizz-zyn-7000-wz706',
+                  },
+                  ratingValue: '4.9',
+                  reviewCount: '37',
+                  bestRating: '5',
+                  worstRating: '1',
+                },
+                {
+                  '@type': 'Review',
+                  author: {
+                    '@type': 'Person',
+                    name: 'Alex Johnson',
+                  },
+                  datePublished: '2025-03-18',
+                  reviewBody:
+                    'The Whizz Zyn-7000 SoC WZ706 offers outstanding flexibility for embedded FPGA prototyping. Its dual DDR3 and PCIe Gen2 support make it perfect for AI and telecom-grade projects.',
+                  name: 'Excellent Evaluation Kit for Embedded FPGA Development',
+                  reviewRating: {
+                    '@type': 'Rating',
+                    ratingValue: '5',
+                    bestRating: '5',
+                    worstRating: '1',
+                  },
+                  itemReviewed: {
+                    '@type': 'Thing',
+                    name: 'Whizz Zyn-7000 SoC WZ706',
+                  },
+                },
+                {
+                  '@type': 'Review',
+                  author: {
+                    '@type': 'Person',
+                    name: 'Sarah Lin',
+                  },
+                  datePublished: '2025-05-09',
+                  reviewBody:
+                    'A high-performance, customizable Zynq-7000 evaluation board that makes prototyping extremely efficient. Excellent support from Whizz Systems.',
+                  name: 'Great performance and customization options',
+                  reviewRating: {
+                    '@type': 'Rating',
+                    ratingValue: '4.8',
+                    bestRating: '5',
+                    worstRating: '1',
+                  },
+                  itemReviewed: {
+                    '@type': 'Thing',
+                    name: 'Whizz Zyn-7000 SoC WZ706',
+                  },
+                },
+              ],
+            },
+          ],
+          og: {
+            type: 'product',
+            title:
+              'Whizz Zyn-7000 SoC WZ706 | ZC706 Evaluation Kit for Embedded Processing',
+            description:
+              'The Whizz Zyn-7000 SoC WZ706 is a customizable evaluation kit optimized for embedded processing, high-speed connectivity, and scalable applications.',
+            url: 'https://www.whizzsystems.com/featured-products/whizz-zyn-7000-wz706',
+            image:
+              'https://www.whizzsystems.com/assets/featured-products/products/vhk158/overview.png',
+          }
+        },
       },
       {
         path: 'xilinx-kintex-7-fpga-kc724',
