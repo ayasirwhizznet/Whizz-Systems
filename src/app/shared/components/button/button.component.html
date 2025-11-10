@@ -1,9 +1,9 @@
-<button [routerLink]="routerLink"
-  class="diagonal-swipe relative overflow-hidden rounded-md 3xl:rounded-lg {{ sizeClass }}">
+<a [routerLink]="routerLink"
+  class="diagonal-swipe relative overflow-hidden rounded-md 3xl:rounded-lg {{ sizeClass }} no-underline inline-block">
   <span class="flex justify-between items-center">
     {{ heading || '&nbsp;' }}
     <ng-container *ngIf="icon">
       <img height="16" width="16" loading="lazy" [src]="icon" alt="icon" class="w-3 h-auto sm:w-4 3xl:w-5" [ngClass]="{'ml-4 sm:ml-6 3xl:ml-8':heading}" />
     </ng-container>
   </span>
-</button>
+</a>

@@ -21,7 +21,7 @@
     <div class="flex items-center gap-9 3xl:gap-12 3xl:-ml-20">
       <ng-container *ngFor="let item of menuItems">
         <div class="relative cursor-pointer">
-          <button
+          <a
             [ngClass]="{
               'text-teal1':
                 (item.label !== 'About' && activeMenuItem === item.label) ||
@@ -58,7 +58,7 @@
                 d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
               />
             </svg>
-          </button>
+          </a>
 
           <div
             *ngIf="activeBottomSection === 'featured'"
@@ -135,9 +135,9 @@
               [sections]="serviceSections"
             ></app-header-section>
             <div class="p-6 3xl:p-8">
-              <button
+              <a
                 routerLink="/services"
-                class="diagonal-swipe w-full relative overflow-hidden rounded-lg cursor-pointer text-nowrap px-[18px] py-[11px] text-lg font-medium border-[1px] border-teal2"
+                class="diagonal-swipe w-full relative overflow-hidden rounded-lg cursor-pointer text-nowrap px-[18px] py-[11px] text-lg font-medium border-[1px] border-teal2 no-underline inline-block"
               >
                 <span
                   class="font-medium 3xl:font-semibold flex justify-between items-center"
@@ -155,7 +155,7 @@
                     />
                   </ng-container>
                 </span>
-              </button>
+              </a>
             </div>
           </div>
           <div
