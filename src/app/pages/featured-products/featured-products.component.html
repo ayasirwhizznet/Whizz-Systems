@@ -6,13 +6,12 @@
       <h1
         class="text-3xl lg:text-4xl 2xl:text-[46px] 3xl:text-[56px] lg:leading-[46px] 2xl:leading-[52px] 3xl:leading-[67.2px] font-bold mb-4 3xl:mb-6 w-[96%] sm:w-[57%] lg:w-full"
       >
-        Proven Board & System Designs, Tailored for Your Application
+      Whizz Products: Proven FPGA Development Boards & System Designs
       </h1>
       <h2
         class="text-base 3xl:text-xl font-light text-light-gray1 mb-6 3xl:mb-8 w-[96%] sm:w-[57%] lg:w-full"
       >
-        Accelerate Your Product Development with Our High-Performance, Scalable
-        Designs for AI, 5G, Medical, and More.
+      Accelerate Your Product Development with Whizz Systems Featured Products — High-Performance FPGA Development Kits for AI, 5G, Medical, and More.
       </h2>
       <a
         href="https://webforms.pipedrive.com/f/6FrY8XOrvq6RD3Wh34QXfdNDhZ965bOGgUKq2uQw1me6FtQ56ixuOwtI5a45PI3nmX"
@@ -55,39 +54,39 @@
   class="hidden lg:flex justify-center gap-3 3xl:gap-4 px-[7.8%] lg:py-8 3xl:pt-10 3xl:pb-6 bg-white sticky top-0 transition-all duration-500 ease-in-out"
 >
   <div>
-    <h4
+    <h2
       class="text-sm 3xl:text-base text-dark-gray2 font-semibold mb-3 3xl:mb-4"
     >
       Boards & Kit Accessories
-    </h4>
+    </h2>
     <div
       class="flex justify-center items-center gap-3 3xl:gap-4 border border-light-gray1 p-3 3xl:p-4 rounded-md 3xl:rounded-lg"
     >
-      <a
+      <h3
         *ngFor="let category of boards"
         (click)="scrollToFragment(category.title)"
         class="h-[70px] 3xl:h-[88px] w-[190px] 3xl:w-[247px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out"
       >
         {{ category.title }}
-      </a>
+      </h3>
     </div>
   </div>
   <div>
-    <h4
+    <h2
       class="text-sm 3xl:text-base text-dark-gray2 font-semibold mb-3 3xl:mb-4"
     >
       Miscellaneous
-    </h4>
+    </h2>
     <div
       class="flex justify-center items-center gap-3 3xl:gap-4 border border-light-gray1 p-3 3xl:p-4 rounded-md 3xl:rounded-lg"
     >
-      <a
+      <h3
         *ngFor="let category of miscellaneous"
         (click)="scrollToFragment(category.title)"
         class="h-[70px] 3xl:h-[88px] w-[190px] 3xl:w-[247px] cursor-pointer grid place-items-center px-2 bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out"
       >
         {{ category.title }}
-      </a>
+      </h3>
     </div>
   </div>
 </section>

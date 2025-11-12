@@ -10,7 +10,266 @@ export const routes: Routes = [
           import('./featured-products.component').then(
             (m) => m.FeaturedProductsComponent
           ),
-        title: 'Featured Products',
+        title: 'Whizz Products | FPGA Development Boards, Evaluation Kits & System Designs',
+        data: {
+          description: 'Whizz Systems featured products, high-performance FPGA development boards, evaluation kits, and demo boards. Accelerate innovation with scalable designs for AI, 5G, medical, and telecommunication applications.',
+          keywords: 'whizz products, fpga development boards, Whizz Systems featured products, Whizz Systems FPGA boards, Whizz evaluation kits, Whizz development kits, fpga evaluation board, fpga demo board, shop development boards & kits, fpga development kit',
+          og: {
+            type: 'website',
+            title: 'Whizz Products | FPGA Development Boards & Evaluation Kits',
+            description:
+              'Discover Whizz Systems’ FPGA development boards, evaluation kits, and customizable hardware for AI, 5G, and embedded systems.',
+            url: 'https://www.whizzsystems.com/featured-products',
+            video: 'https://www.whizzsystems.com/assets/featured-products/hero-vedio.mp4',
+          },
+          schema: [
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "WebPage",
+                  "@id": "https://www.whizzsystems.com/featured-products",
+                  "url": "https://www.whizzsystems.com/featured-products",
+                  "name": "Whizz Systems Featured Products | FPGA Development Boards & Evaluation Kits",
+                  "description": "Explore Whizz Systems’ featured FPGA development boards, evaluation kits, and connectivity kits. Accelerate your design process with scalable solutions for AI, 5G, medical, and telecom applications.",
+                  "inLanguage": "en",
+                  "publisher": {
+                    "@type": "Organization",
+                    "name": "Whizz Systems",
+                    "url": "https://www.whizzsystems.com",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://www.whizzsystems.com/assets/header/teal-logo.png"
+                    }
+                  },
+                  "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://www.whizzsystems.com/assets/featured-products/og-featured-products.jpg"
+                  },
+                  "video": {
+                    "@id": "#featuredProductsVideo"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://www.whizzsystems.com/"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Featured Products",
+                      "item": "https://www.whizzsystems.com/featured-products"
+                    }
+                  ]
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Whizz Systems",
+                  "url": "https://www.whizzsystems.com",
+                  "logo": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                  "sameAs": [
+                    "https://www.linkedin.com/company/whizz-systems",
+                    "https://twitter.com/whizzsystems"
+                  ],
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "54"
+                  }
+                },
+                {
+                  "@type": "ItemList",
+                  "name": "Whizz Systems Featured FPGA Products",
+                  "url": "https://www.whizzsystems.com/featured-products",
+                  "itemListOrder": "Ascending",
+                  "numberOfItems": 8,
+                  "itemListElement": [
+                    {
+                      "@type": "Product",
+                      "position": 1,
+                      "name": "Whizz Kintex 7 FPGA WH705",
+                      "url": "https://www.whizzsystems.com/featured-products/whizz-kintex-7FPGA-WH705",
+                      "image": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                      "brand": {
+                        "@type": "Brand",
+                        "name": "Whizz Systems"
+                      },
+                      "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.8",
+                        "reviewCount": "12"
+                      }
+                    },
+                    {
+                      "@type": "Product",
+                      "position": 2,
+                      "name": "Whizz Zyn-7000 SoC WZ706",
+                      "url": "https://www.whizzsystems.com/featured-products/whizz-zyn-7000-wz706",
+                      "image": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                      "brand": {
+                        "@type": "Brand",
+                        "name": "Whizz Systems"
+                      },
+                      "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.9",
+                        "reviewCount": "10"
+                      }
+                    },
+                    {
+                      "@type": "Product",
+                      "position": 3,
+                      "name": "Whizz Virtex 7 FPGA WH707-A",
+                      "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-wh707-a",
+                      "image": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                      "brand": {
+                        "@type": "Brand",
+                        "name": "Whizz Systems"
+                      },
+                      "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.7",
+                        "reviewCount": "9"
+                      }
+                    },
+                    {
+                      "@type": "Product",
+                      "position": 4,
+                      "name": "Whizz Virtex 7 FPGA WS707",
+                      "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws707",
+                      "image": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                      "brand": {
+                        "@type": "Brand",
+                        "name": "Whizz Systems"
+                      },
+                      "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.8",
+                        "reviewCount": "11"
+                      }
+                    },
+                    {
+                      "@type": "Product",
+                      "position": 5,
+                      "name": "Whizz Virtex 7 FPGA WS709",
+                      "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws709",
+                      "image": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                      "brand": {
+                        "@type": "Brand",
+                        "name": "Whizz Systems"
+                      },
+                      "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.9",
+                        "reviewCount": "15"
+                      }
+                    },
+                    {
+                      "@type": "Product",
+                      "position": 6,
+                      "name": "Xilinx Virtex 7 FPGA WS7203-A",
+                      "url": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-a",
+                      "image": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                      "brand": {
+                        "@type": "Brand",
+                        "name": "Xilinx"
+                      },
+                      "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.8",
+                        "reviewCount": "13"
+                      }
+                    },
+                    {
+                      "@type": "Product",
+                      "position": 7,
+                      "name": "Xilinx Kintex 7 FPGA KC724",
+                      "url": "https://www.whizzsystems.com/featured-products/xilinx-kintex-7-fpga-kc724",
+                      "image": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                      "brand": {
+                        "@type": "Brand",
+                        "name": "Xilinx"
+                      },
+                      "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.7",
+                        "reviewCount": "8"
+                      }
+                    },
+                    {
+                      "@type": "Product",
+                      "position": 8,
+                      "name": "Xilinx Virtex 7 FPGA WS7203-B",
+                      "url": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-b",
+                      "image": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                      "brand": {
+                        "@type": "Brand",
+                        "name": "Xilinx"
+                      },
+                      "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.9",
+                        "reviewCount": "7"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "@type": "VideoObject",
+                  "@id": "#featuredProductsVideo",
+                  "name": "Whizz Systems Featured Products Overview",
+                  "description": "A video showcase of Whizz Systems’ FPGA development boards, evaluation kits, and connectivity solutions.",
+                  "thumbnailUrl": "https://www.whizzsystems.com/assets/featured-products/og-featured-products.jpg",
+                  "uploadDate": "2025-02-15",
+                  "contentUrl": "https://www.whizzsystems.com/assets/featured-products/hero-vedio.mp4",
+                  "embedUrl": "https://www.whizzsystems.com/featured-products",
+                  "publisher": {
+                    "@type": "Organization",
+                    "name": "Whizz Systems",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://www.whizzsystems.com/assets/header/teal-logo.png"
+                    }
+                  }
+                },
+                {
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What types of FPGA boards does Whizz Systems offer?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Whizz Systems offers FPGA development boards, evaluation kits, and connectivity platforms including Kintex, Zynq, and Virtex-based designs."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Are these FPGA boards customizable?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, each Whizz Systems FPGA board can be tailored with hardware, firmware, and I/O modifications to suit your specific application needs."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How can I request a quote or purchase a Whizz FPGA development kit?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "You can request a quote or purchase through the contact section or individual product pages on the Whizz Systems website."
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+          ],
+        }
       },
       {
         path: 'whizz-kintex-7FPGA-WH705',
