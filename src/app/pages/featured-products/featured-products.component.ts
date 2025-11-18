@@ -74,7 +74,7 @@ export class FeaturedProductsComponent {
           link: '/featured-products/whizz-zyn-7000-wz706',
         },
         {
-          name: 'Whizz Kintex 7 FPGA WH 707 B',
+          name: 'Whizz Virtex-7 FPGA WS707',
           imgUrl: 'assets/featured-products/eva-4.png',
           link: '/featured-products/whizz-virtex-7-fpga-ws707',
         },
@@ -104,7 +104,7 @@ export class FeaturedProductsComponent {
           link: '/featured-products/xilinx-kintex-7-fpga-kc724',
         },
         {
-          name: 'Xilinx Virtex 7 FPGA WS 7203',
+          name: 'Xilinx Virtex-7 FPGA WS7203B',
           imgUrl: 'assets/featured-products/cha-2.png',
           link: '/featured-products/xilinx-virtex-7-fpga-ws7203-b',
         },

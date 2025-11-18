@@ -434,7 +434,130 @@ export const routes: Routes = [
           import(
             './products/whizz-virtex-7-fpga-wh707-a/whizz-virtex-7-fpga-wh707-a.component'
           ).then((m) => m.WhizzVirtex7FPGAWH707AComponent),
-        title: 'Whizz Virtex-7 FPGA WH707A',
+        title: 'Whizz Virtex-7 FPGA WH707A | Customizable AMD Virtex-7 VC707 Kit',
+        data: {
+          description:
+            'Explore the Whizz Virtex-7 FPGA WH707A— a customizable AMD Virtex-7 VC707 evaluation kit optimized for high-speed, scalable prototyping. Request pricing today.',
+          keywords:
+            'whizz virtex-7 fpga wh707a, amd virtex-7 vc707 evaluation kit, virtex-7 fpga evaluation kit, virtex-7 fpga, fpga virtex-7, xilinx fpga, evaluation kit, high-speed fpga board, wh707a, whizz systems',
+          og: {
+            type: 'product',
+            title: 'Whizz Virtex-7 FPGA WH707A | Customizable AMD Virtex-7 VC707 Evaluation Kit',
+            description:
+              'A high-performance, customizable AMD Virtex-7 VC707 derivative for advanced prototyping and high-speed FPGA applications.',
+            url: 'https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-wh707-a',
+            image: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+            site_name: 'Whizz Systems',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'Whizz Virtex-7 FPGA WH707A | Customizable AMD Virtex-7 VC707 Kit',
+            description:
+              'High-performance Virtex-7 FPGA WH707A evaluation kit engineered for scalable prototyping. Request a quote.',
+            image: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+          },
+          schema: [
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "WebPage",
+                  "@id": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-wh707-a",
+                  "name": "Whizz Virtex-7 FPGA WH707A",
+                  "description": "A customizable AMD Virtex-7 FPGA VC707 derivative optimized for high-speed prototyping.",
+                  "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-wh707-a"
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Featured Products",
+                      "item": "https://www.whizzsystems.com/featured-products"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Whizz Virtex-7 FPGA WH707A",
+                      "item": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-wh707-a"
+                    }
+                  ]
+                },
+                {
+                  "@type": "Product",
+                  "@id": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-wh707-a#product",
+                  "name": "Whizz Virtex-7 FPGA WH707A",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Whizz Systems"
+                  },
+                  "description": "A customizable AMD Virtex 7 FPGA VC707 evaluation kit optimized for high-speed applications.",
+                  "image": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                  "sku": "WH707A",
+                  "mpn": "WH707A",
+                  "productID": "WH707A",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-wh707-a"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "ratingCount": "12"
+                  }
+                },
+                {
+                  "@type": "VideoObject",
+                  "name": "Whizz Virtex-7 FPGA WH707A Overview",
+                  "description": "Overview video of the Virtex 7 WH707A FPGA evaluation kit.",
+                  "thumbnailUrl": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                  "uploadDate": "2024-01-01",
+                  "contentUrl": "https://www.whizzsystems.com/assets/featured-products/hero-vedio.mp4",
+                  "embedUrl": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-wh707-a"
+                },
+                {
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "Is the Whizz Virtex-7 FPGA WH707A customizable?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. The WH707A is a fully customizable derivative of the AMD Virtex-7 VC707 Evaluation Kit and can be modified for connectivity, memory, thermal, and system-level needs."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Is the Virtex-7 FPGA WH707A suitable for high-speed applications?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The WH707A is optimized for high-speed serial transceiver evaluation and complex FPGA prototyping, making it ideal for networking, telecom, and compute-intensive systems."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How can I get the price for the WH707A kit?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Pricing is available upon request. Contact Whizz Systems to get a customized quote for the WH707A evaluation kit."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Whizz Systems",
+                  "logo": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                  "url": "https://www.whizzsystems.com"
+                }
+              ]
+            }
+          ],
+        },
       },
       {
         path: 'whizz-virtex-7-fpga-ws707',
@@ -442,7 +565,195 @@ export const routes: Routes = [
           import(
             './products/whizz-virtex-7-fpga-ws707/whizz-virtex-7-fpga-ws707.component'
           ).then((m) => m.WhizzVirtex7FPGAWS707Component),
-        title: 'whizz virtex-7 fpga ws707',
+        title: 'Whizz Virtex-7 FPGA WS707 | Customizable Virtex-7 Evaluation Kit',
+        data: {
+          description:
+            'Whizz Virtex-7 FPGA WS707— a customizable high-speed AMD Virtex-7 VC707 derivative evaluation kit engineered for advanced prototyping, serial connectivity, and scalable system development.',
+          keywords:
+            'Whizz Virtex 7 FPGA WS 707, Whizz Virtex-7 FPGA WS707 price, customizable Virtex 7 FPGA WS707 evaluation kit, Virtex 7 FPGA WS707 for sale, Virtex 7 FPGA WS707 evaluation kit price, AMD Virtex 7 FPGA board, FPGA evaluation kit',
+          og: {
+            type: 'product',
+            title: 'Whizz Virtex-7 FPGA WS707 | Customizable Virtex-7 Evaluation Kit',
+            description:
+              'A high-performance, customizable AMD Virtex-7 VC707 derivative evaluation kit for next-generation prototyping and high-speed FPGA development.',
+            url: 'https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws707',
+            image: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+            site_name: 'Whizz Systems',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'Whizz Virtex-7 FPGA WS707 | Customizable High-Speed Evaluation Kit',
+            description:
+              'High-performance Virtex-7 WS707 FPGA evaluation kit engineered for advanced prototyping and connectivity applications.',
+            image: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+          },
+          schema: [
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+
+                {
+                  "@type": "Product",
+                  "name": "Whizz Featured FPGA Products",
+                  "image": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                  "description": "Whizz Systems provides a range of high-performance FPGA evaluation kits including Virtex-7, Kintex-7, and Zynq-7000 based development boards.",
+                  "brand": { "@type": "Brand", "name": "Whizz Systems" },
+                  "url": "https://www.whizzsystems.com/featured-products",
+                  "category": "FPGA Evaluation Kits",
+                  "sku": "MULTI-FPGA-LINEUP",
+                  "mpn": "WS-FPGA-SERIES",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0.00",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.whizzsystems.com/contact"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "114"
+                  },
+                  "hasPart": {
+                    "@type": "ItemList",
+                    "name": "Whizz Featured Products List",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Whizz Kintex-7 FPGA WH705",
+                        "url": "https://www.whizzsystems.com/featured-products/whizz-kintex-7FPGA-WH705"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Whizz Zynq-7000 WZ706",
+                        "url": "https://www.whizzsystems.com/featured-products/whizz-zyn-7000-wz706"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Whizz Virtex-7 FPGA WH707-A",
+                        "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-wh707-a"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "Whizz Virtex-7 FPGA WS707",
+                        "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws707"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "name": "Whizz Virtex-7 FPGA WS709",
+                        "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws709"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 6,
+                        "name": "Xilinx Virtex-7 FPGA WS7203-A",
+                        "url": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-a"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 7,
+                        "name": "Xilinx Kintex-7 FPGA KC724",
+                        "url": "https://www.whizzsystems.com/featured-products/xilinx-kintex-7-fpga-kc724"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 8,
+                        "name": "Xilinx Virtex-7 FPGA WS7203-B",
+                        "url": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-b"
+                      }
+                    ]
+                  }
+                },
+
+                {
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.whizzsystems.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Featured Products", "item": "https://www.whizzsystems.com/featured-products" }
+                  ]
+                },
+
+                {
+                  "@type": "Organization",
+                  "name": "Whizz Systems",
+                  "url": "https://www.whizzsystems.com",
+                  "logo": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                  "sameAs": [
+                    "https://www.linkedin.com/company/whizz-systems",
+                    "https://twitter.com/whizzsystems"
+                  ]
+                },
+
+                {
+                  "@type": "WebPage",
+                  "name": "Featured FPGA Development Boards & Evaluation Kits",
+                  "url": "https://www.whizzsystems.com/featured-products",
+                  "description": "High-performance FPGA evaluation boards including Virtex-7, Kintex-7, and Zynq-based platforms by Whizz Systems.",
+                  "publisher": {
+                    "@type": "Organization",
+                    "name": "Whizz Systems",
+                    "logo": "https://www.whizzsystems.com/assets/header/teal-logo.png"
+                  }
+                },
+
+                {
+                  "@type": "VideoObject",
+                  "name": "Whizz Systems Featured FPGA Products",
+                  "description": "Overview video showcasing Whizz Systems’ lineup of FPGA development boards and high-speed evaluation kits.",
+                  "thumbnailUrl": "https://www.whizzsystems.com/assets/featured-products/og-featured-products.jpg",
+                  "contentUrl": "https://www.whizzsystems.com/assets/featured-products/hero-vedio.mp4",
+                  "embedUrl": "https://www.whizzsystems.com/featured-products",
+                  "uploadDate": "2025-02-15",
+                  "duration": "PT2M30S",
+                  "publisher": {
+                    "@type": "Organization",
+                    "name": "Whizz Systems",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://www.whizzsystems.com/assets/header/teal-logo.png"
+                    }
+                  }
+                },
+
+                {
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What FPGA boards are included in Whizz Systems' featured lineup?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The lineup includes Virtex-7, Kintex-7, and Zynq-7000 based evaluation kits designed for high-speed prototyping and embedded development."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Can these boards be customized?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, Whizz Systems provides complete hardware, software, and firmware customization services."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How can I request a quote or buy a kit?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "You can request a quote via the Whizz Systems contact page or visit each product's page for more details."
+                      }
+                    }
+                  ]
+                }
+
+              ]
+            }
+          ],
+        },
       },
       {
         path: 'whizz-virtex-7-fpga-ws709',
@@ -450,7 +761,104 @@ export const routes: Routes = [
           import(
             './products/whizz-virtex-7-fpga-ws709/whizz-virtex-7-fpga-ws709.component'
           ).then((m) => m.WhizzVirtex7FPGAWS709Component),
-        title: 'whizz-virtex-7 fpga ws709',
+        title: 'Whizz Virtex-7 FPGA WS709 – Customizable High-Bandwidth Connectivity Kit',
+        data: {
+          description:
+            'Whizz Virtex-7 FPGA WS709, a customizable high-bandwidth platform based on the VC709 Connectivity Kit. Built for high-speed networking, data transfer, AI acceleration, and aerospace applications.',
+          keywords:
+            'Whizz Virtex 7 FPGA WS709, customizable Virtex 7 FPGA WS709 evaluation kit, Virtex 7 FPGA VC709 connectivity kit, FPGA high-speed connectivity, WS709 price',
+          og: {
+            type: 'product',
+            title: 'Whizz Virtex-7 FPGA WS709 – High-Speed Connectivity Evaluation Kit',
+            description:
+              'A high-performance, customizable Virtex-7 connectivity platform engineered for next-gen high-bandwidth applications.',
+            url: 'https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws709',
+            image: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+          },
+          schema: [
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+            
+                {
+                  "@type": "Product",
+                  "name": "Whizz Virtex-7 FPGA WS709",
+                  "image": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                  "description": "The Whizz Virtex-7 FPGA WS709 is a customizable high-bandwidth platform derived from the AMD Xilinx VC709 Connectivity Kit, engineered for 40Gb/s connectivity and high-performance applications.",
+                  "brand": { "@type": "Brand", "name": "Whizz Systems" },
+                  "sku": "WS709",
+                  "mpn": "WS709-FPGA-KIT",
+                  "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws709",
+                  "category": "FPGA Evaluation Kit",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0.00",
+                    "priceCurrency": "USD",
+                    "url": "https://www.whizzsystems.com/contact",
+                    "availability": "https://schema.org/InStock"
+                  }
+                },
+            
+                {
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.whizzsystems.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Featured Products", "item": "https://www.whizzsystems.com/featured-products" },
+                    { "@type": "ListItem", "position": 3, "name": "Whizz Virtex-7 FPGA WS709", "item": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws709" }
+                  ]
+                },
+            
+                {
+                  "@type": "Organization",
+                  "name": "Whizz Systems",
+                  "url": "https://www.whizzsystems.com",
+                  "logo": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                  "sameAs": [
+                    "https://www.linkedin.com/company/whizz-systems",
+                    "https://twitter.com/whizzsystems"
+                  ]
+                },
+            
+                {
+                  "@type": "WebPage",
+                  "name": "Whizz Virtex-7 FPGA WS709 – High-Bandwidth Connectivity Kit",
+                  "description": "A customizable 40Gb/s Virtex-7 connectivity platform designed for next-gen high-speed networking and computing applications.",
+                  "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws709"
+                },
+            
+                {
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What is the Whizz Virtex-7 FPGA WS709?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The WS709 is a high-speed connectivity platform based on the AMD Xilinx VC709 Connectivity Kit, supporting the XC7VX2000T FPGA."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Can the WS709 be customized?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, Whizz Systems offers complete hardware, firmware, and FPGA customization for the WS709 to match specific application needs."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How can I get pricing for the WS709 kit?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Pricing can be requested directly through the Whizz Systems contact page."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],            
+        },
       },
       {
         path: 'whizz-zyn-7000-wz706',
