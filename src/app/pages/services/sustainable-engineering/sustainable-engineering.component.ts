@@ -17,7 +17,7 @@ export class SustainableEngineeringComponent {
       name: 'BoM Management',
       description: [
         'Pre-screening for obsolete components before production',
-        'Identifying 2nd and 3rd sources to reduce <a href="https://www.whizzsystems.com/services/supply-chain-management" title="supply chain" class="text-teal1">supply chain</a> dependency',
+        'Identifying 2nd and 3rd sources to reduce supply chain dependency',
         'Analyzing impact of new component revisions on performance and manufacturability',
       ],
     },
@@ -36,7 +36,7 @@ export class SustainableEngineeringComponent {
       description: [
         'Optimizing AVL to ensure supplier reliability and cost-efficiency',
         'Managing supplier transitions to mitigate risks and reduce cost impact',
-        'Establishing on-shore and off-shore <a href="https://www.whizzsystems.com/services/supply-chain-management" title="supply chain" class="text-teal1">supply chain</a> flexibility'
+        'Establishing on-shore and off-shore supply chain flexibility'
       ],
     },
     {
@@ -44,7 +44,7 @@ export class SustainableEngineeringComponent {
       name: 'Second Sourcing & Risk Buying',
       description: [
         'Global sourcing of alternative components to maintain production continuity',
-        'Identifying 2nd and 3rd sources to reduce <a href="https://www.whizzsystems.com/services/supply-chain-management" title="supply chain" class="text-teal1">supply chain</a> dependency',
+        'Identifying 2nd and 3rd sources to reduce supply chain dependency',
         'Creating competitive tension between suppliers to improve lead times and cost efficiency',
       ],
     },
@@ -74,7 +74,7 @@ export class SustainableEngineeringComponent {
     {
       imgUrl: 'assets/icons/ambrella.svg',
       name: 'Risk Mitigation & Compliance Assurance',
-      desc: ' We help navigate compliance challenges and mitigate <a href="https://www.whizzsystems.com/services/supply-chain-management" title="supply chain" class="text-teal1">supply chain</a> risks with trusted AVL partners.',
+      desc: ' We help navigate compliance challenges and mitigate supply chain risks with trusted AVL partners.',
     },
     {
       imgUrl: 'assets/icons/plug.svg',
