@@ -206,23 +206,23 @@ export class HeaderComponent implements OnInit {
         },
         {
           title: 'Sustainable Engineering & Obsolescence Management',
-          link: '/services/sustainable_engineering',
+          link: '/services/sustainable-engineering',
           items: [
             {
               label: 'BOM Management',
-              link: '/services/sustainable_engineering',
+              link: '/services/sustainable-engineering',
             },
             {
               label: 'EOL Management',
-              link: '/services/sustainable_engineering',
+              link: '/services/sustainable-engineering',
             },
             {
               label: 'AVL Management',
-              link: '/services/sustainable_engineering',
+              link: '/services/sustainable-engineering',
             },
             {
               label: 'Second Sourcing/Risk Buying',
-              link: '/services/sustainable_engineering',
+              link: '/services/sustainable-engineering',
             },
           ],
         },

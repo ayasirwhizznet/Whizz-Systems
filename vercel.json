@@ -10,7 +10,7 @@
     },
     {
       "source": "/eol-end-of-life-components-materials/",
-      "destination": "/services/sustainable_engineering",
+      "destination": "/services/sustainable-engineering",
       "permanent": true
     },
     {
@@ -685,7 +685,7 @@
     },
     {
       "source": "/environmental-iso-14001/",
-      "destination": "/services/sustainable_engineering",
+      "destination": "/services/sustainable-engineering",
       "permanent": true
     },
     {

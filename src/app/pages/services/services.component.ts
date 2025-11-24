@@ -123,12 +123,12 @@ export class ServicesComponent implements OnInit, OnDestroy {
     },
     {
       name: 'Sustaining Engineering & Obsolescence Management',
-      desc: `Technology evolves, but your product lifecycle doesn’t have to be a limitation. We proactively <a href="https://www.whizzsystems.com/services/sustainable_engineering" class="text-teal1">manage component lifecycles</a>, mitigate EOL risks, and provide alternative sourcing strategies to keep your products viable and competitive.`,
+      desc: `Technology evolves, but your product lifecycle doesn’t have to be a limitation. We proactively <a href="https://www.whizzsystems.com/services/sustainable-engineering" class="text-teal1">manage component lifecycles</a>, mitigate EOL risks, and provide alternative sourcing strategies to keep your products viable and competitive.`,
       services: [
-        { name: 'BOM Management', link: '/services/sustainable_engineering' },
-        { name: 'EOL Management', link: '/services/sustainable_engineering' },
-        { name: 'AVL Management', link: '/services/sustainable_engineering' },
-        { name: 'Second Sourcing/Risk Buying', link: '/services/sustainable_engineering' },
+        { name: 'BOM Management', link: '/services/sustainable-engineering' },
+        { name: 'EOL Management', link: '/services/sustainable-engineering' },
+        { name: 'AVL Management', link: '/services/sustainable-engineering' },
+        { name: 'Second Sourcing/Risk Buying', link: '/services/sustainable-engineering' },
       ],
     },
   ];

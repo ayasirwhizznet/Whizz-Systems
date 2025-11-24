@@ -55,7 +55,7 @@ export class ServicesComponent implements AfterViewInit, OnDestroy {
       imgUrl: 'assets/home/services/sustainable.png',
       name: 'Sustaining Engineering & Obsolescence Management',
       desc: 'Keeping your product lines future-proof with proactive support and obsolescence solutions.',
-      link: '/services/sustainable_engineering',
+      link: '/services/sustainable-engineering',
     },
   ];
 

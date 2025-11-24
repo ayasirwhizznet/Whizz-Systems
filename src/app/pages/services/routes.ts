@@ -384,7 +384,7 @@ export const routes: Routes = [
         },
       },
       {
-        path: 'sustainable_engineering',
+        path: 'sustainable-engineering',
         loadComponent: () =>
           import(
             './sustainable-engineering/sustainable-engineering.component'
@@ -435,14 +435,14 @@ export const routes: Routes = [
                       '@type': 'ListItem',
                       position: 3,
                       name: 'Sustaining Engineering & Obsolescence Management',
-                      item: 'https://www.whizzsystems.com/services/sustainable_engineering',
+                      item: 'https://www.whizzsystems.com/services/sustainable-engineering',
                     },
                   ],
                 },
                 {
                   '@type': 'Service',
                   name: 'Sustaining Engineering & Obsolescence Management',
-                  url: 'https://www.whizzsystems.com/services/sustainable_engineering',
+                  url: 'https://www.whizzsystems.com/services/sustainable-engineering',
                   description:
                     'Whizz Systems offers sustaining engineering solutions, electronic component obsolescence management, and EOL lifecycle support. Services include BoM management, AVL management, second sourcing, and proactive risk mitigation.',
                   provider: {

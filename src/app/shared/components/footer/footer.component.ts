@@ -28,7 +28,7 @@ export class FooterComponent {
       label: 'Supply Chain Management',
       link: '/services/supply-chain-management',
     },
-    { label: 'Sustaining Engineering & Obsolescence Management', link: '/services/sustainable_engineering' },
+    { label: 'Sustaining Engineering & Obsolescence Management', link: '/services/sustainable-engineering' },
   ];
 
   blog: any[] = [
