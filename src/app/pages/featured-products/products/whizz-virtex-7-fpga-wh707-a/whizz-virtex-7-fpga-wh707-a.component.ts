@@ -36,7 +36,7 @@ export class WhizzVirtex7FPGAWH707AComponent {
     feature3: [
       '<b>Expansion –</b> FMC1-HPC, FMC2-HPC',
       '<b>Control & I/O –</b> Push buttons, DIP switches, Rotary Encoder, AMS FAN Header',
-      '<b>Power –</b> –12V wall adapter or ATX',
+      '<b>Power –</b> 12V wall adapter or ATX',
     ],
   };
 

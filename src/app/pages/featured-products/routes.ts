@@ -779,7 +779,7 @@ export const routes: Routes = [
             {
               "@context": "https://schema.org",
               "@graph": [
-            
+
                 {
                   "@type": "Product",
                   "name": "Whizz Virtex-7 FPGA WS709",
@@ -798,7 +798,7 @@ export const routes: Routes = [
                     "availability": "https://schema.org/InStock"
                   }
                 },
-            
+
                 {
                   "@type": "BreadcrumbList",
                   "itemListElement": [
@@ -807,7 +807,7 @@ export const routes: Routes = [
                     { "@type": "ListItem", "position": 3, "name": "Whizz Virtex-7 FPGA WS709", "item": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws709" }
                   ]
                 },
-            
+
                 {
                   "@type": "Organization",
                   "name": "Whizz Systems",
@@ -818,14 +818,14 @@ export const routes: Routes = [
                     "https://twitter.com/whizzsystems"
                   ]
                 },
-            
+
                 {
                   "@type": "WebPage",
                   "name": "Whizz Virtex-7 FPGA WS709 – High-Bandwidth Connectivity Kit",
                   "description": "A customizable 40Gb/s Virtex-7 connectivity platform designed for next-gen high-speed networking and computing applications.",
                   "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws709"
                 },
-            
+
                 {
                   "@type": "FAQPage",
                   "mainEntity": [
@@ -857,7 +857,7 @@ export const routes: Routes = [
                 }
               ]
             }
-          ],            
+          ],
         },
       },
       {
@@ -1021,7 +1021,173 @@ export const routes: Routes = [
           import(
             './products/xilinx-kintex-7-fpga-kc724/xilinx-kintex-7-fpga-kc724.component'
           ).then((m) => m.XilinxKintex7FPGAKC724Component),
-        title: 'xilinx kintex-7 fpga kc724',
+        title: 'Whizz Xilinx Kintex-7 FPGA KC724 | Kintex-7 KC724 Characterization Kit',
+        data: {
+          description:
+            'Whizz Xilinx Kintex-7 FPGA KC724 — a customizable Kintex-7 KC724 characterization kit for 12.5Gbps GTX transceiver testing, IBERT, Samtec BullsEye connectivity and full customization services.',
+          keywords:
+            'AMD Kintex 7 FPGA KC724 Characterization Kit, customizeable Kintex 7 FPGA KC724 Characterization Kit, customizebale Xilinx Kintex-7 FPGA KC724, Whizz Xilinx Kintex-7 FPGA KC724, KC724 evaluation kit',
+          og: {
+            title: "Whizz Xilinx Kintex-7 FPGA KC724 | Transceiver Characterization Kit",
+            description:
+              "High-speed transceiver characterization platform supporting 16 GTX transceivers at 12.5Gbps. Contact Whizz Systems for customization and pricing.",
+            image: "https://www.whizzsystems.com/assets/featured-products/products/KC724/hero.png",
+            url: "https://www.whizzsystems.com/featured-products/xilinx-kintex-7-fpga-kc724",
+            type: "product"
+          },
+
+          twitter: {
+            card: "summary_large_image",
+            title: "Whizz Xilinx Kintex-7 FPGA KC724",
+            description:
+              "Customizable Kintex-7 KC724 characterization kit for GTX transceiver evaluation and signal integrity testing.",
+            image: "https://www.whizzsystems.com/assets/featured-products/products/KC724/hero.png"
+          },
+          schema: [
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.whizzsystems.com/#website",
+                  "url": "https://www.whizzsystems.com/",
+                  "name": "Whizz Systems",
+                  "publisher": { "@id": "https://www.whizzsystems.com/#organization" }
+                },
+
+                {
+                  "@type": "Organization",
+                  "@id": "https://www.whizzsystems.com/#organization",
+                  "name": "Whizz Systems",
+                  "url": "https://www.whizzsystems.com",
+                  "logo": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                  "sameAs": [
+                    "https://www.linkedin.com/company/whizz-systems",
+                    "https://twitter.com/whizzsystems"
+                  ]
+                },
+
+                {
+                  "@type": "WebPage",
+                  "@id": "https://www.whizzsystems.com/featured-products/xilinx-kintex-7-fpga-kc724#webpage",
+                  "url": "https://www.whizzsystems.com/featured-products/xilinx-kintex-7-fpga-kc724",
+                  "name": "High-Speed Transceiver Characterization with the Xilinx Kintex-7 FPGA KC724",
+                  "description": "The Whizz Xilinx Kintex-7 FPGA KC724 is a comprehensive characterization kit for evaluating 12.5Gbps GTX transceivers and signal integrity testing.",
+                  "isPartOf": { "@id": "https://www.whizzsystems.com/#website" },
+                  "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://www.whizzsystems.com/assets/featured-products/products/KC724/hero.png"
+                  },
+                  "breadcrumb": { "@id": "https://www.whizzsystems.com/featured-products/xilinx-kintex-7-fpga-kc724#breadcrumb" }
+                },
+
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://www.whizzsystems.com/featured-products/xilinx-kintex-7-fpga-kc724#breadcrumb",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.whizzsystems.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Featured Products", "item": "https://www.whizzsystems.com/featured-products" },
+                    { "@type": "ListItem", "position": 3, "name": "Xilinx Kintex-7 FPGA KC724" }
+                  ]
+                },
+
+                {
+                  "@type": "Product",
+                  "@id": "https://www.whizzsystems.com/featured-products/xilinx-kintex-7-fpga-kc724#product",
+                  "name": "Whizz Xilinx Kintex-7 FPGA KC724",
+                  "description": "A Kintex-7 KC724 characterization kit supporting 16 GTX transceivers at 12.5Gbps, Samtec BullsEye connectivity, IBERT demo compatibility, and full customization services.",
+                  "image": "https://www.whizzsystems.com/assets/featured-products/products/KC724/hero.png",
+                  "sku": "KC724",
+                  "mpn": "KC724-WHIZZ",
+                  "brand": { "@type": "Brand", "name": "Whizz Systems" },
+                  "url": "https://www.whizzsystems.com/featured-products/xilinx-kintex-7-fpga-kc724",
+                  "category": "FPGA Characterization Kit",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0.00",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.whizzsystems.com/contact"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "reviewCount": "19"
+                  },
+                  "isAccessoryOrSparePartFor": {
+                    "@type": "Product",
+                    "name": "AMD Kintex™ 7 FPGA Platform"
+                  },
+                  "hasPart": {
+                    "@type": "ItemList",
+                    "itemListElement": [
+                      { "@type": "ListItem", "position": 1, "name": "Samtec BullsEye connector pads" },
+                      { "@type": "ListItem", "position": 2, "name": "FMC-HPC expansion connectors" },
+                      { "@type": "ListItem", "position": 3, "name": "IBERT demonstration compatibility" }
+                    ]
+                  }
+                },
+
+                {
+                  "@type": "VideoObject",
+                  "@id": "https://www.whizzsystems.com/featured-products/xilinx-kintex-7-fpga-kc724#video",
+                  "name": "Whizz Xilinx Kintex-7 FPGA KC724 Overview",
+                  "description": "Overview of the KC724 characterization kit, its GTX transceiver testing capabilities and customization options.",
+                  "thumbnailUrl": "https://www.whizzsystems.com/assets/featured-products/products/KC724/hero.png",
+                  "contentUrl": "https://www.whizzsystems.com/assets/featured-products/hero-vedio.mp4",
+                  "uploadDate": "2025-01-01",
+                  "duration": "PT2M00S",
+                  "publisher": { "@type": "Organization", "name": "Whizz Systems", "logo": "https://www.whizzsystems.com/assets/header/teal-logo.png" }
+                },
+
+                {
+                  "@type": "SiteNavigationElement",
+                  "name": ["Featured Products", "Services", "Blog", "Contact"],
+                  "url": [
+                    "https://www.whizzsystems.com/featured-products",
+                    "https://www.whizzsystems.com/services",
+                    "https://www.whizzsystems.com/news-&-insights",
+                    "https://www.whizzsystems.com/contact"
+                  ]
+                },
+
+                {
+                  "@type": "FAQPage",
+                  "@id": "https://www.whizzsystems.com/featured-products/xilinx-kintex-7-fpga-kc724#faq",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What FPGA does the KC724 support?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "The Whizz Xilinx Kintex-7 FPGA KC724 supports the XC7K410T Kintex-7 FPGA." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How many GTX transceivers does the KC724 support?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "The KC724 supports 16 GTX transceivers at 12.5Gbps for transceiver characterization and signal integrity testing." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Can Whizz Systems customize the KC724 kit?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Yes — Whizz Systems provides full customization services including clocking, FMC expansion, firmware, and thermal solutions." }
+                    }
+                  ]
+                },
+
+                {
+                  "@type": "ItemList",
+                  "name": "Related Featured Products",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws7203-a", "name": "Xilinx Virtex-7 FPGA WS7203A" },
+                    { "@type": "ListItem", "position": 2, "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws709", "name": "Whizz Virtex-7 FPGA WS709" },
+                    { "@type": "ListItem", "position": 3, "url": "https://www.whizzsystems.com/featured-products/whizz-kintex-7FPGA-WH705", "name": "Whizz Kintex-7 FPGA WH705" }
+                  ]
+                }
+
+              ]
+            },
+          ],
+        },
       },
       {
         path: 'xilinx-virtex-7-fpga-ws7203-a',
@@ -1029,7 +1195,144 @@ export const routes: Routes = [
           import(
             './products/xilinx-virtex-7-fpga-ws7203-a/xilinx-virtex-7-fpga-ws7203-a.component'
           ).then((m) => m.XilinxVirtex7FPGAWS7203AComponent),
-        title: 'xilinx virtex-7 fpga ws7203-a',
+        title: 'Customizable Xilinx Virtex-7 FPGA WS7203A | High-Speed GTX Evaluation Kit',
+        data: {
+          description:
+            'Customizable Xilinx Virtex-7 FPGA WS7203A, a high-speed GTX transceiver characterization kit designed for 12.5Gbps testing, signal integrity, and custom applications.',
+          keywords:
+            'Xilinx virtex 7 fpga ws 7203 price, customizable Xilinx virtex 7 FPGA WS7203A, customizable Virtex 7 FPGA VC7203, customizable AMD Virtex 7 FPGA VC7203 Characterization Kit, customizable Xilinx virtex 7 fpga ws 7203 evaluation kit, customizebale virtex 7 fpga ws 7203',
+          og: {
+            title: "Customizable Xilinx Virtex-7 FPGA WS7203A",
+            description:
+              "High-speed GTX transceiver characterization platform optimized for 12.5Gbps testing and advanced customization.",
+            image: "https://www.whizzsystems.com/assets/header/teal-logo.png",
+            url: "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-a",
+            type: "product"
+          },
+          schema: [
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.whizzsystems.com/#website",
+                  "url": "https://www.whizzsystems.com/",
+                  "name": "Whizz Systems",
+                  "publisher": {
+                    "@id": "https://www.whizzsystems.com/#organization"
+                  }
+                },
+                {
+                  "@type": "WebPage",
+                  "@id": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-a#webpage",
+                  "url": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-a",
+                  "name": "Xilinx Virtex-7 FPGA WS7203A",
+                  "isPartOf": { "@id": "https://www.whizzsystems.com/#website" },
+                  "description": "The customizable Xilinx Virtex-7 FPGA WS7203A is a high-speed GTX transceiver characterization and connectivity platform with 12.5Gbps GTX support, Samtec BullsEye connectors, and full customization options.",
+                  "breadcrumb": {
+                    "@id": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-a#breadcrumb"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-a#breadcrumb",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://www.whizzsystems.com/"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Featured Products",
+                      "item": "https://www.whizzsystems.com/featured-products/"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Xilinx Virtex-7 FPGA WS7203A"
+                    }
+                  ]
+                },
+                {
+                  "@type": "Organization",
+                  "@id": "https://www.whizzsystems.com/#organization",
+                  "name": "Whizz Systems",
+                  "url": "https://www.whizzsystems.com",
+                  "logo": "https://www.whizzsystems.com/assets/header/teal-logo.png"
+                },
+                {
+                  "@type": "Product",
+                  "@id": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-a#product",
+                  "name": "Xilinx Virtex-7 FPGA WS7203A",
+                  "description": "High-speed transceiver characterization platform with 12.5Gbps GTX transceivers, Samtec BullsEye connectors, and customizable FPGA features.",
+                  "image": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                  "sku": "WS7203A",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Whizz Systems"
+                  }
+                },
+                {
+                  "@type": "VideoObject",
+                  "@id": "https://www.whizzsystems.com/#ws7203-video",
+                  "name": "Whizz Systems Featured Products Video",
+                  "description": "An overview of Whizz Systems’ FPGA connectivity platforms and featured products.",
+                  "thumbnailUrl": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                  "contentUrl": "https://www.whizzsystems.com/assets/featured-products/hero-vedio.mp4",
+                  "uploadDate": "2024-01-01"
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  "name": [
+                    "Services",
+                    "Blog",
+                    "Social Media",
+                    "Featured Products"
+                  ],
+                  "url": [
+                    "https://www.whizzsystems.com/services",
+                    "https://www.whizzsystems.com/blog",
+                    "https://www.whizzsystems.com/social-media",
+                    "https://www.whizzsystems.com/featured-products"
+                  ]
+                },
+                {
+                  "@type": "FAQPage",
+                  "@id": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-a#faq",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What is the Xilinx Virtex-7 FPGA WS7203A used for?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The WS7203A is used for high-speed 12.5Gbps GTX transceiver characterization, signal integrity analysis, and customizable FPGA development."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Does the WS7203A support customization?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, Whizz Systems provides full customization for the WS7203A, including firmware, clocking, expansion I/O, and thermal optimization."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Which FPGA device does WS7203A support?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The WS7203A supports the Xilinx Virtex-7 XC7VX690T FPGA."
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+          ],
+        },
       },
       {
         path: 'xilinx-virtex-7-fpga-ws7203-b',
@@ -1037,7 +1340,148 @@ export const routes: Routes = [
           import(
             './products/xilinx-virtex-7-fpga-ws7203-b/xilinx-virtex-7-fpga-ws7203-b.component'
           ).then((m) => m.XilinxVirtex7FPGAWS7203BComponent),
-        title: 'xilinx virtex-7 fpga ws7203 b',
+        title: 'Xilinx Virtex-7 FPGA WS7203B | High-Speed GTX Transceiver Characterization Kit',
+        data: {
+          description:
+            'Explore the Xilinx Virtex-7 FPGA WS7203B, a customizable 12.5Gbps GTX transceiver characterization kit optimized for high-speed evaluation and signal integrity testing. Fully customizable by Whizz Systems.',
+          keywords:
+            'Xilinx Virtex 7 FPGA WS7203B, Whizz Virtex 7 FPGA WS7203B, Xilinx Virtex 7 FPGA WS7203B specs, Xilinx virtex 7 fpga ws 7203 b price, Customizable Virtex 7 FPGA WS7203B, AMD Virtex 7 FPGA WS7203B',
+          schema: [
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+
+                {
+                  "@type": "Organization",
+                  "@id": "https://www.whizzsystems.com#organization",
+                  "name": "Whizz Systems",
+                  "url": "https://www.whizzsystems.com",
+                  "logo": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                  "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+1-408-988-1849",
+                    "contactType": "technical support",
+                    "areaServed": "Worldwide"
+                  },
+                  "sameAs": [
+                    "https://www.linkedin.com/company/whizz-systems-inc/",
+                    "https://www.facebook.com/whizzsystems",
+                    "https://twitter.com/whizzsystems"
+                  ]
+                },
+
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.whizzsystems.com#website",
+                  "url": "https://www.whizzsystems.com",
+                  "name": "Whizz Systems",
+                  "publisher": {
+                    "@id": "https://www.whizzsystems.com#organization"
+                  }
+                },
+
+                {
+                  "@type": "WebPage",
+                  "@id": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-b#webpage",
+                  "url": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-b",
+                  "name": "Xilinx Virtex-7 FPGA WS7203B | High-Speed Transceiver Characterization Kit",
+                  "isPartOf": {
+                    "@id": "https://www.whizzsystems.com#website"
+                  },
+                  "description": "The Xilinx Virtex-7 FPGA WS7203B is a high-performance 12.5Gbps GTX transceiver characterization kit supporting the XC7VX690T FPGA with BullsEye connectors and Vivado/ISE compatibility.",
+                  "inLanguage": "en-US"
+                },
+
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-b#breadcrumb",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://www.whizzsystems.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Featured Products",
+                      "item": "https://www.whizzsystems.com/featured-products"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Xilinx Virtex-7 FPGA WS7203B"
+                    }
+                  ]
+                },
+
+                {
+                  "@type": "Product",
+                  "@id": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-b#product",
+                  "name": "Xilinx Virtex-7 FPGA WS7203B",
+                  "mpn": "WS7203B",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Whizz Systems"
+                  },
+                  "manufacturer": {
+                    "@type": "Organization",
+                    "name": "Whizz Systems"
+                  },
+                  "image": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+                  "description": "The Xilinx Virtex-7 FPGA WS7203B is a 12.5Gbps GTX transceiver characterization kit supporting the XC7VX690T FPGA with BullsEye connectors and Vivado/ISE compatibility.",
+                  "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-b",
+                    "price": "Contact for pricing",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock"
+                  }
+                },
+
+                {
+                  "@type": "FAQPage",
+                  "@id": "https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-b#faq",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What FPGA does the WS7203B support?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The WS7203B supports the Virtex-7 XC7VX690T FPGA."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What is the maximum GTX transceiver speed?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The platform supports 12.5Gbps GTX transceivers."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Does the WS7203B support IBERT?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, the WS7203B supports IBERT testing using Vivado or ISE design suites."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Can Whizz Systems customize the WS7203B?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, Whizz Systems provides full customization options including connectivity, firmware, thermal optimization, and more."
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+          ],
+        },
       },
     ],
   },
