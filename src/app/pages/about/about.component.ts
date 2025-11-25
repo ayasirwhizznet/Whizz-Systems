@@ -94,7 +94,7 @@ export class AboutComponent {
     },
     {
       imgUrl: 'assets/about/muhammadIrfan.png',
-      name: 'Muhammad Irfan',
+      name: '<a href="https://www.linkedin.com/in/muhammad-irfan-6616621" target="_blank">Muhammad Irfan</a>',
       designation: 'President',
       desc: `With a background in product development and manufacturing services, Muhammad co-founded Whizz Systems in 1999. His leadership has driven Whizz Systems' global presence across 3 continents, serving industries like computing, networking, medical, and defense.`,
     },

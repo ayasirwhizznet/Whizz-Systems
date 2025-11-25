@@ -92,7 +92,144 @@ export const routes: Routes = [
     path: 'about',
     loadComponent: () =>
       import('./pages/about/about.component').then((m) => m.AboutComponent),
-    title: 'About Us',
+    title: 'Whizz Systems - End-to-End Electronics Design & Manufacturing Partner',
+    data: {
+      description:
+        'Whizz Systems is an end-to-end electronics design, development and manufacturing partner. 30+ years of experience in PCB design, NPI, advanced manufacturing, lab testing, sustainable engineering and global supply chain management.',
+      keywords:
+        'electronics design and manufacturing, end-to-end electronics partner, PCB design, new product introduction, NPI, advanced manufacturing, lab testing solutions, sustainable engineering, supply chain management, Whizz Systems, Silicon Valley electronics',
+      og: {
+        title: "Whizz Systems — Your End-to-End Electronics Design & Manufacturing Partner",
+        description:
+          "Delivering advanced electronics solutions & manufacturing since 1999. Expertise across aerospace, medical, automotive, AI, telecom and more.",
+        image: "/mnt/data/3916b31f-eb0f-43be-8914-bc587ff9d0de.png",
+        url: "https://www.whizzsystems.com/about",
+        type: "website"
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "Whizz Systems — Your End-to-End Electronics Design & Manufacturing Partner",
+        description:
+          "Innovative solutions. Global expertise. Proven excellence — Whizz Systems delivers design, prototyping, manufacturing and compliance under one roof.",
+        image: "/mnt/data/3916b31f-eb0f-43be-8914-bc587ff9d0de.png"
+      },
+      schema: [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.whizzsystems.com/#organization",
+              "name": "Whizz Systems",
+              "url": "https://www.whizzsystems.com",
+              "logo": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/whizz-systems",
+                "https://twitter.com/whizzsystems",
+                "https://www.facebook.com/whizzsystems"
+              ],
+              "contactPoint": [
+                {
+                  "@type": "ContactPoint",
+                  "contactType": "sales",
+                  "telephone": "+1-408-988-1849",
+                  "areaServed": "Worldwide",
+                  "availableLanguage": "English"
+                },
+                {
+                  "@type": "ContactPoint",
+                  "contactType": "technical support",
+                  "telephone": "+1-408-988-1849",
+                  "areaServed": "Worldwide",
+                  "availableLanguage": "English"
+                }
+              ]
+            },
+
+            {
+              "@type": "WebSite",
+              "@id": "https://www.whizzsystems.com/#website",
+              "url": "https://www.whizzsystems.com",
+              "name": "Whizz Systems",
+              "publisher": { "@id": "https://www.whizzsystems.com/#organization" }
+            },
+
+            {
+              "@type": "WebPage",
+              "@id": "https://www.whizzsystems.com/about#webpage",
+              "url": "https://www.whizzsystems.com/about",
+              "name": "About Whizz Systems",
+              "description": "Whizz Systems is an end-to-end electronics design & manufacturing partner. Offering NPI, advanced manufacturing, lab testing, sustainable engineering and supply chain services.",
+              "isPartOf": { "@id": "https://www.whizzsystems.com/#website" },
+              "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": "/mnt/data/3916b31f-eb0f-43be-8914-bc587ff9d0de.png"
+              }
+            },
+
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.whizzsystems.com/about#breadcrumb",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.whizzsystems.com/" },
+                { "@type": "ListItem", "position": 2, "name": "About", "item": "https://www.whizzsystems.com/about" }
+              ]
+            },
+
+            {
+              "@type": "Person",
+              "@id": "https://www.whizzsystems.com/about#manny",
+              "name": "Manny Karim",
+              "jobTitle": "CEO",
+              "worksFor": { "@id": "https://www.whizzsystems.com/#organization" },
+              "description": "Manny Karim co-founded Whizz Systems and leads global operations, manufacturing and finance.",
+              "sameAs": []
+            },
+
+            {
+              "@type": "Person",
+              "@id": "https://www.whizzsystems.com/about#muhammad",
+              "name": "Muhammad Irfan",
+              "jobTitle": "President",
+              "worksFor": { "@id": "https://www.whizzsystems.com/#organization" },
+              "description": "Muhammad Irfan co-founded Whizz Systems and leads product development and global expansion.",
+              "sameAs": []
+            },
+
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.whizzsystems.com/about#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What services does Whizz Systems offer?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Whizz Systems offers electronics design, NPI, advanced manufacturing, lab testing, sustainable engineering, firmware and supply chain management."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Where is Whizz Systems located?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Whizz Systems is located in Silicon Valley with additional global offices and manufacturing facilities."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Which industries do you serve?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We serve defense & aerospace, medical devices, automotive, consumer electronics, AI computing, telecommunications and more."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+      ]
+    },
   },
   {
     path: 'services',

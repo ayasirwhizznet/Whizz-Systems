@@ -47,20 +47,20 @@
       </h4>
       <hr class="w-[35%] border border-light-gray1 opacity-60 my-3 3xl:my-4" />
       <p class="text-dark-gray2 text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] font-light mb-4 3xl:mb-6">
-        Whizz Systems is a leading provider of electronic product design,
+        <a href="https://www.whizzsystems.com/" target="_blank" class="text-teal1">Whizz Systems</a> is a leading provider of electronic product design,
         development, and manufacturing services, proudly located in the heart of
         Silicon Valley. Since our inception in 1989, we’ve transformed from a
-        specialized PCB design team into a multidisciplinary powerhouse,
+        <a href="https://www.whizzsystems.com/services/engineering-design/pcb-layout" target="_blank" class="text-teal1">specialized PCB design</a> team into a multidisciplinary powerhouse,
         bringing deep expertise across engineering and design, new product
-        introduction (NPI), advanced manufacturing, lab testing solutions,
-        sustainable engineering, and end-to-end supply chain management.
+        introduction (NPI), <a href="https://www.whizzsystems.com/services/advanced-manufacturing" target="_blank" class="text-teal1">advanced manufacturing</a>, lab testing solutions,
+        <a href="https://www.whizzsystems.com/services/sustainable_engineering" target="_blank" class="text-teal1">sustainable engineering</a>, and end-to-end supply chain management.
       </p>
       <p class="text-dark-gray2 text-sm 3xl:text-base leading-[24px] 3xl:leading-[28px] font-light">
         We serve a diverse range of industries—including defense and aerospace,
         medical devices, automotive, consumer electronics, AI computing, and
         telecommunications—earning the trust of both Fortune 100 companies and
         innovative startups. For over 30 years, we’ve been the go-to partner for
-        turning groundbreaking ideas into market-ready products, delivering
+        turning groundbreaking ideas into <a href="https://www.whizzsystems.com/featured-products" target="_blank" class="text-teal1">market-ready products</a>, delivering
         exceptional quality, reliability, and innovation at every stage of the
         product lifecycle.
       </p>
@@ -256,8 +256,7 @@
         }"
         class="absolute bottom-8 sm:bottom-12 lg:bottom-10 3xl:bottom-16 px-6 sm:px-12 lg:px-10 3xl:px-16 group-hover:-translate-y-44 sm:group-hover:-translate-y-60 lg:group-hover:-translate-y-48 3xl:group-hover:-translate-y-56 transition-all duration-300 ease-in-out">
         <h2
-          class="text-xl sm:text-4xl lg:text-4xl 3xl:text-5xl lg:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold">
-          {{ item.name }}
+          class="text-xl sm:text-4xl lg:text-4xl 3xl:text-5xl lg:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold" [innerHTML]="item.name">
         </h2>
         <h3 class="text-xl sm:text-4xl lg:text-4xl 3xl:text-5xl lg:leading-[55px] 3xl:leading-[67.2px] font-light my-2">
           {{ item.designation }}
