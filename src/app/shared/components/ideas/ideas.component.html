@@ -32,7 +32,7 @@
           Certifications</h3>
         <div class="flex justify-center sm:justify-start items-center flex-wrap gap-6 3xl:gap-8">
           <div *ngFor="let certificate of certifications">
-            <img height="76" width="76" loading="lazy" [src]='certificate' alt="img" class="w-14 h-auto xl:w-12 2xl:w-14 3xl:w-[70px]">
+            <img height="76" width="76" loading="lazy" [src]="certificate.imgUrl" [alt]="certificate.alt" class="w-14 h-auto xl:w-12 2xl:w-14 3xl:w-[70px]" />
           </div>
         </div>
       </div>

@@ -16,10 +16,10 @@ export class IdeasComponent {
   ];
 
   certifications = [
-    'assets/home/ideas/14001.svg',
-    'assets/home/ideas/13485.svg',
-    'assets/home/ideas/9001.svg',
-    'assets/home/ideas/27001.svg',
-    'assets/home/ideas/itar.svg',
+    { imgUrl: 'assets/home/ideas/14001.svg', alt: 'ISO 14001 Environmental Management Certification' },
+    { imgUrl: 'assets/home/ideas/13485.svg', alt: 'ISO 13485:2016 Medical Device Quality Management Certification' },
+    { imgUrl: 'assets/home/ideas/9001.svg', alt: 'ISO 9001:2015 Quality Management System Certification' },
+    { imgUrl: 'assets/home/ideas/27001.svg', alt: 'ISO 27001 Information Security Management Certification' },
+    { imgUrl: 'assets/home/ideas/itar.svg', alt: 'ITAR Registered — International Traffic in Arms Regulations Compliance' },
   ];
 }
