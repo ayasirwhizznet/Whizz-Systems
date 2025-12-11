@@ -19,6 +19,14 @@ import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 export class BlogsComponent {
   blogs: any[] = [
     {
+      imgUrl: 'assets/news/blogs/amd-vpk180/strategic.png',
+      date: 'Dec 06, 2025',
+      tags: ['Case Study'],
+      title:
+        'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
+      link: '/news-&-insights/amd-vpk180',
+    },
+    {
       imgUrl: 'assets/news/blogs/future-performance/scalability-&-hardware.png',
       date: 'July 22, 2025',
       tags: ['AI Hardware', 'Modular Systems', 'Obsolescence Management'],

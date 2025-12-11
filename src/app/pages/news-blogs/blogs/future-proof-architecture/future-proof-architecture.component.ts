@@ -26,6 +26,14 @@ export class FutureProofArchitectureComponent implements OnInit, AfterViewInit, 
 
   blogs: any[] = [
     {
+      imgUrl: 'assets/news/blogs/amd-vpk180/hero.png',
+      date: 'Dec 06, 2025',
+      tags: ['Case Study'],
+      title:
+        'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
+      link: '/news-&-insights/amd-vpk180',
+    },
+    {
       imgUrl: 'assets/news/blog-6.png',
       date: 'May 14, 2025',
       tags: ['AI Hardware Design', 'High-density PCB design'],
@@ -85,7 +93,7 @@ export class FutureProofArchitectureComponent implements OnInit, AfterViewInit, 
     private router: Router,
     private meta: Meta,
     @Inject(PLATFORM_ID) private platformId: Object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -188,9 +196,9 @@ export class FutureProofArchitectureComponent implements OnInit, AfterViewInit, 
 
     const text = encodeURIComponent(
       `🚀 Discover Future-Proof Architecture and Performance in Next-Generation Systems!\n\n` +
-        `Scalable, Adaptable Hardware Designs for Evolving AI Applications.\n\n` +
-        `Proudly built by @whizzsystems.\n\n` +
-        `${pageUrl}\n\n`
+      `Scalable, Adaptable Hardware Designs for Evolving AI Applications.\n\n` +
+      `Proudly built by @whizzsystems.\n\n` +
+      `${pageUrl}\n\n`
     );
 
     const hashtags = encodeURIComponent(

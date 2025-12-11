@@ -1,0 +1,384 @@
+<!-- Hero Section -->
+<section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
+    <div class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl">
+        <div
+            class="w-full lg:w-[47%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16">
+            <p class="text-sm 3xl:text-base leading-[15px] 3xl:leading-[19.2px] mb-2 3xl:mb-[10px]">
+                Dec 06, 2025
+            </p>
+            <div class="flex items-center gap-2 flex-wrap mb-4 3xl:mb-6">
+                <div *ngFor="let tag of tags">
+                    <app-blog-tag text="{{ tag }}" textColor="text-light-gray1" borderColor="border-light-gray1"
+                        borderRadius="rounded-[3px] 3xl:rounded-[4px]" [fromBlog]="true"></app-blog-tag>
+                </div>
+            </div>
+            <h1
+                class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-[96%] sm:w-[57%] lg:w-full">
+                AMD VPK180 Evaluation Board —
+                Versal Premium Adaptive SoC
+                Platform
+            </h1>
+            <p
+                class="text-base lg:text-sm 2xl:text-base 3xl:text-xl font-extralight lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8 sm:w-[70%] lg:w-full">
+                A single, versatile evaluation board engineered by <a href="https://www.whizzsystems.com/"
+                    class="text-teal1">Whizz Systems</a> to demonstrate
+                AMD Versal™ Premium capabilities across optical communications, data center
+                acceleration, aerospace, and testing/measurement.
+            </p>
+            <a href="https://webforms.pipedrive.com/f/6aZrcYl8HV6WoERmp8951wRNZqGf4XEXRBVFyl9ju5UCaWcbjTjDoJ218DFJwiyDFp"
+                target="_blank">
+                <app-button heading="Request a Design Brief" icon="assets/icons/webform.svg" size="small"></app-button>
+            </a>
+            <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
+                <a routerLink="/" class="cursor-pointer">
+                    <img height="48" width="48" class="h-auto w-full" loading="lazy" src="assets/icons/whizzicon.svg"
+                        alt="Whizz Systems" />
+                </a>
+                <a routerLink="/" class="cursor-pointer">
+                    <img height="16" width="109" class="h-auto w-full" loading="lazy" src="assets/icons/whizz.svg"
+                        alt="Whizz Systems" />
+                </a>
+                <a href="https://www.linkedin.com/company/whizz-systems/?viewAsMember=true" target="_blank"
+                    class="cursor-pointer">
+                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/icons/linkedin.svg"
+                        alt="Whizz Systems LinkedIn" />
+                </a>
+                <a href="https://www.youtube.com/@WhizzSystemsCA" target="_blank" class="cursor-pointer">
+                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/icons/youtube.svg"
+                        alt="Whizz Systems YouTube" />
+                </a>
+            </div>
+        </div>
+        <div class="hidden lg:block lg:w-[53%]">
+            <img height="587" width="682" loading="lazy" class="h-auto w-full object-cover"
+                src="assets/news/blogs/amd-vpk180/hero.png"
+                alt="AMD VPK180 Evaluation Board" />
+        </div>
+    </div>
+</section>
+
+<!-- Challenges & At a Glance Section -->
+<section class=" px-[4%] sm:px-[9.6%] py-4 lg:py-6 3xl:py-8">
+    <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 3xl:gap-20">
+        <!-- Challenges - Left Side -->
+        <div class="lg:w-[57%] 2xl:w-[56%]">
+            <h2 class="text-teal1 text-2xl 3xl:text-[32px] font-semibold 3xl:font-bold mb-4 3xl:mb-6">
+                Challenges
+            </h2>
+            <p class="text-dark-gray2 text-base 3xl:text-xl leading-[26px] 3xl:leading-[32px] mb-2 3xl:mb-4 ">
+                Deliver a single board that convincingly demonstrates the capabilities of AMD's Versal
+                Premium Adaptive SoC across multiple high-reliability markets.
+            </p>
+            <ul class="space-y-2 3xl:space-y-3 text-dark-gray2 text-base 3xl:text-xl leading-[26px] 3xl:leading-[32px]">
+                <li class="flex items-start gap-1">
+                    <span class="text-dark-gray2 mt-1">•</span>
+                    <span>Showcasing full Versal Premium SoC performance across telecom, datacenter, aerospace, and
+                        test/measurement.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-dark-gray2 mt-1">•</span>
+                    <span>Integrating optical transceivers and multiple form-factor ports while ensuring signal
+                        integrity and <a
+                            href="https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions"
+                            class="text-teal1">thermal stability</a>.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-dark-gray2 mt-1">•</span>
+                    <span>Supporting 100G/400G/800G interfaces and IEEE (eCPRI) compliance.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-dark-gray2 mt-1">•</span>
+                    <span>Optimization for manufacturability and developer ergonomics.</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- At a Glance - Right Side -->
+        <div
+            class="lg:w-[43%] 2xl:w-[44%] bg-card-gray border border-light-gray1 rounded-xl lg:rounded-2xl p-6 3xl:p-8">
+            <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-semibold 3xl:font-bold mb-4 3xl:mb-5">
+                At-a-glance
+            </h3>
+
+            <!-- Teal Pill Tags - 2+1 Grid Layout -->
+            <div class="mb-5 3xl:mb-6 ">
+                <!-- Top Row - 2 pills -->
+                <div class="flex gap-4 mb-4 justify-center">
+                    <div
+                        class="bg-teal2 text-white w-[180px] h-[68px] 3xl:w-[247px] 3xl:h-[88px] rounded-[8px] px-[18px] py-[14px] text-center flex flex-col justify-center transition-colors duration-300 hover:bg-dark-gray1 cursor-pointer">
+                        <p class="text-lg 3xl:text-xl font-semibold">XCVP1802</p>
+                        <p class="text-xs 3xl:text-sm opacity-90">Versal SoC</p>
+                    </div>
+                    <div
+                        class="bg-teal2 text-white w-[180px] h-[68px] 3xl:w-[247px] 3xl:h-[88px] rounded-[8px] px-[18px] py-[14px] text-center flex flex-col justify-center transition-colors duration-300 hover:bg-dark-gray1 cursor-pointer">
+                        <p class="text-lg 3xl:text-xl font-semibold">112G</p>
+                        <p class="text-xs 3xl:text-sm opacity-90">PAM4 transceivers</p>
+                    </div>
+                </div>
+                <!-- Bottom Row - 1 pill -->
+                <div class="flex justify-center">
+                    <div
+                        class="bg-teal2 text-white w-[180px] h-[68px] 3xl:w-[247px] 3xl:h-[88px] rounded-[8px] px-[18px] py-[14px] text-center flex flex-col justify-center transition-colors duration-300 hover:bg-dark-gray1 cursor-pointer">
+                        <p class="text-lg 3xl:text-xl font-semibold">12GB</p>
+                        <p class="text-xs 3xl:text-sm opacity-90">LPDDR4</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Applications Text -->
+            <p class="text-dark-gray2 text-base 3xl:text-[20px] leading-[22px] 3xl:leading-[26px] font-light">
+                Applications: Fiber optic networking, communications, data center acceleration, aerospace & testing.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Business Value Section -->
+<section class=" px-[4%] sm:px-[9.6%] py-4 lg:py-6 3xl:py-8">
+    <div class="bg-card-gray border border-light-gray1 rounded-lg lg:rounded-2xl p-6 lg:p-8 3xl:p-10 shadow-sm">
+        <h3 class="text-dark-gray1 text-lg lg:text-xl 3xl:text-2xl font-semibold 3xl:font-bold mb-4 3xl:mb-5">
+            Business Value
+        </h3>
+        <ul
+            class="space-y-2 3xl:space-y-3 text-dark-gray2 text-sm lg:text-base 3xl:text-lg leading-[24px] 3xl:leading-[28px] mb-6 3xl:mb-8">
+            <li class="flex items-start gap-2">
+                <span>•</span>
+                <span>Single evaluation platform for multiple markets, shortening customer time-to-evaluation.</span>
+            </li>
+            <li class="flex items-start gap-2">
+                <span>•</span>
+                <span>Production-ready layout to accelerate adoption and reduce development risk.</span>
+            </li>
+            <li class="flex items-start gap-2">
+                <span>•</span>
+                <span>Scalable architecture for migration to future link rates and protocols.</span>
+            </li>
+        </ul>
+        <a href="https://webforms.pipedrive.com/f/6aZrcYl8HV6WoERmp8951wRNZqGf4XEXRBVFyl9ju5UCaWcbjTjDoJ218DFJwiyDFp"
+            target="_blank">
+            <app-button heading="Discuss manufacturing & NPI" icon="assets/icons/r-arrow.svg" size="small"></app-button>
+        </a>
+    </div>
+</section>
+
+<!-- Whizz Systems Contribution Section -->
+<section class="px-[4%] sm:px-[9.6%] py-8 lg:py-12 3xl:py-16">
+    <div class="flex flex-col lg:flex-row gap-12 lg:gap-44 3xl:gap-52">
+        <!-- Left Content -->
+        <div class="lg:w-[57%] 2xl:w-[52%]">
+            <h2 class="text-teal1 text-2xl 3xl:text-[32px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
+                Whizz Systems' Contribution
+            </h2>
+
+            <!-- Hardware Architecture & Connectivity -->
+            <div class="mb-6 3xl:mb-8">
+                <h3 class="text-dark-gray1 text-lg 3xl:text-xl font-semibold mb-3 3xl:mb-4">
+                    Hardware Architecture & Connectivity
+                </h3>
+                <p
+                    class="text-dark-gray2 text-sm lg:text-base 3xl:text-lg leading-[24px] 3xl:leading-[28px] mb-3 3xl:mb-4">
+                    We designed and validated a production-ready board centered on AMD's Versal Premium SoC with
+                    high-speed optics and multiple expansion options.
+                </p>
+                <ul
+                    class="space-y-2 3xl:space-y-3 text-dark-gray2 text-sm lg:text-base 3xl:text-lg leading-[24px] 3xl:leading-[28px]">
+                    <li class="flex items-start gap-2">
+                        <span>•</span>
+                        <span>AMD XCVP1802 Versal Premium Adaptive SoC integration and bring up.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span>•</span>
+                        <span>112G PAM4 transceivers, routed for optimal SI.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span>•</span>
+                        <span>SFP-DD, QSFP-DD, QSFP and FMC+ connectivity for flexible evaluation.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span>•</span>
+                        <span>Support for 100GAUI / 400GAUI / 800GAUI profiles.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span>•</span>
+                        <span>1 Gbps RGMII management Ethernet & 12GB LPDDR4.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Validation & Compliance -->
+            <div>
+                <div class="flex items-center gap-3 mb-3 3xl:mb-4">
+                    <h3 class="text-dark-gray1 text-lg 3xl:text-xl font-semibold">
+                        Validation & Compliance
+                    </h3>
+                </div>
+                <p class="text-dark-gray2 text-sm lg:text-base 3xl:text-lg leading-[24px] 3xl:leading-[28px]">
+                    Extensive cross-discipline validation: electrical, <a
+                        href="https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services"
+                        class="text-teal1">signal integrity</a>, thermal, and manufacturability
+                    checks to meet AMD's standards.
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Side - Specs Card -->
+        <div class="lg:w-[43%] 2xl:w-[48%] lg:py-10">
+            <div class="bg-card-gray border border-light-gray1 rounded-lg lg:rounded-2xl overflow-hidden">
+                <!-- Card Header -->
+                <div class="flex items-center justify-between p-4 lg:p-6 3xl:p-8">
+                    <h4 class="text-dark-gray1 text-lg lg:text-xl 3xl:text-2xl font-semibold">
+                        VPK180 Evaluation Board
+                    </h4>
+                    <img src="assets/news/blogs/amd-vpk180/amd.png" alt="AMD" class="h-5 lg:h-6 3xl:h-8" />
+                </div>
+
+                <!-- Card Body - Teal Pills Grid -->
+                <div class="p-4 p-4 sm:p-6 3xl:pt-1 3xl:pb-8">
+                    <!-- Row 1 - 2 pills -->
+                    <div class="flex gap-4 mb-4 justify-center">
+                        <div
+                            class="bg-teal2 text-white w-[140px] h-[50px] lg:w-[180px] lg:h-[68px] 3xl:w-[247px] 3xl:h-[88px] rounded-[8px] text-center flex flex-col justify-center transition-colors duration-300 hover:bg-dark-gray1 cursor-pointer">
+                            <p class="text-base lg:text-lg 3xl:text-[24px] font-semibold">112G PAM4</p>
+                        </div>
+                        <div
+                            class="bg-teal2 text-white w-[140px] h-[50px] lg:w-[180px] lg:h-[68px] 3xl:w-[247px] 3xl:h-[88px] rounded-[8px] text-center flex flex-col justify-center transition-colors duration-300 hover:bg-dark-gray1 cursor-pointer">
+                            <p class="text-base lg:text-lg 3xl:text-[24px] font-semibold">12GB LPDDR4</p>
+                        </div>
+                    </div>
+                    <!-- Row 2 - 2 pills -->
+                    <div class="flex gap-4 mb-4 justify-center">
+                        <div
+                            class="bg-teal2 text-white w-[140px] h-[50px] lg:w-[180px] lg:h-[68px] 3xl:w-[247px] 3xl:h-[88px] rounded-[8px] text-center flex flex-col justify-center transition-colors duration-300 hover:bg-dark-gray1 cursor-pointer">
+                            <p class="text-base lg:text-lg 3xl:text-[24px] font-semibold">SFP-DD/QSFP-DD</p>
+                        </div>
+                        <div
+                            class="bg-teal2 text-white w-[140px] h-[50px] lg:w-[180px] lg:h-[68px] 3xl:w-[247px] 3xl:h-[88px] rounded-[8px] text-center flex flex-col justify-center transition-colors duration-300 hover:bg-dark-gray1 cursor-pointer">
+                            <p class="text-base lg:text-lg 3xl:text-[24px] font-semibold">OSFP/FMC+</p>
+                        </div>
+                    </div>
+                    <!-- Row 3 - 1 pill centered -->
+                    <div class="flex justify-center">
+                        <div
+                            class="bg-teal2 text-white w-[140px] h-[50px] lg:w-[180px] lg:h-[68px] 3xl:w-[247px] 3xl:h-[88px] rounded-[8px] text-center flex flex-col justify-center transition-colors duration-300 hover:bg-dark-gray1 cursor-pointer">
+                            <p class="text-base lg:text-lg 3xl:text-[24px] font-semibold">eCPRI Compliant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Subscribe Banner Section -->
+<section class="px-[4%] sm:px-[9.6%] py-6 lg:py-10 3xl:py-12">
+    <div
+        class="bg-teal2 rounded-[8px] px-6 py-8 lg:px-24 lg:py-12 3xl:px-[172px] 3xl:py-[64px] flex flex-col sm:flex-row items-center justify-between gap-[10px] relative overflow-hidden">
+        <!-- Left Content -->
+        <div class="z-10">
+            <h3
+                class="text-white text-xl lg:text-2xl 3xl:text-[28px] font-semibold text-center sm:text-left mb-1 3xl:mb-2">
+                Subscribe to our newsletter!
+            </h3>
+            <p class="text-white/80 text-sm lg:text-base 3xl:text-lg text-center sm:text-left font-light">
+                Get updates on the latest news & insights
+            </p>
+        </div>
+        <!-- Subscribe Button -->
+        <a href="https://webforms.pipedrive.com/f/6UT1JKLeb6G1xtMMTPA4HRcQsTZefgpvRq9cSzG1TincmHlD6Wvfh3YCmSXUO7VklB"
+            target="_blank"
+            class="z-10 diagonal-swipe-black relative overflow-hidden px-2 py-2 lg:px-4 lg:py-3 3xl:px-6 3xl:py-4 rounded-[8px] font-semibold text-sm lg:text-base 3xl:text-lg border border-dark-gray1 no-underline inline-block">
+            <span>Subscribe</span>
+        </a>
+        <!-- Background Image on Right -->
+        <img src="assets/news/blogs/amd-vpk180/sub-back.png" alt=""
+            class="absolute right-0 top-0 h-full w-auto object-fit opacity-50 hidden sm:block" />
+    </div>
+</section>
+
+<!-- Results & Strategic Partnership Section -->
+<section class="px-[4%] sm:px-[9.6%] py-8 lg:py-12 3xl:py-16">
+    <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 3xl:gap-16">
+        <!-- Left Content -->
+        <div class="lg:w-[55%]">
+            <h2 class="text-teal1 text-2xl 3xl:text-[32px] font-semibold 3xl:font-bold mb-4 3xl:mb-6">
+                Results & Strategic Partnership
+            </h2>
+            <p class="text-dark-gray2 text-sm lg:text-base 3xl:text-lg leading-[24px] 3xl:leading-[28px] mb-6 3xl:mb-8">
+                Whizz Systems delivered a validated VPK180 evaluation board aligned to AMD's engineering standards —
+                enabling a faster path for developers and OEM partners to evaluate Versal Premium capabilities across
+                high-reliability markets.
+            </p>
+
+            <!-- Impact -->
+            <div class="mb-6 3xl:mb-8 lg:pr-24">
+                <h3 class="text-dark-gray1 text-lg 3xl:text-xl font-semibold mb-3 3xl:mb-4">
+                    Impact
+                </h3>
+                <ul
+                    class="space-y-2 3xl:space-y-3 text-dark-gray2 text-sm lg:text-base 3xl:text-lg leading-[24px] 3xl:leading-[28px]">
+                    <li class="flex items-start gap-2">
+                        <span>•</span>
+                        <span>One platform that consolidates evaluation for telecom, data center, aerospace and lab
+                            measurement.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span>•</span>
+                        <span>Optimized signal integrity for 112G links and robust thermal / power delivery for the
+                            SoC.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span>•</span>
+                        <span>Manufacturing-ready documentation and test plans to support volume rollout.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Partnership -->
+            <div class="lg:pr-32">
+                <h3 class="text-dark-gray1 text-lg 3xl:text-xl font-semibold mb-3 3xl:mb-4">
+                    Partnership
+                </h3>
+                <p class="text-dark-gray2 text-sm lg:text-base 3xl:text-lg leading-[24px] 3xl:leading-[28px]">
+                    A long-term strategic partnership with AMD — delivering repeatable, <a href="https://www.whizzsystems.com/services/engineering-design/pcb-layout" class="text-teal1">High-precision design</a> and
+                    production execution.
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Side - Board Image -->
+        <div class="lg:w-[45%] flex items-center justify-center">
+            <img src="assets/news/blogs/amd-vpk180/strategic.png" alt="Versal Premium Adaptive SoC"
+                class="w-full h-auto object-contain" loading="lazy" />
+        </div>
+    </div>
+</section>
+
+
+<!-- Marketing  -->
+<section class="px-0 sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <div class="relative p-6 sm:p-10 lg:p-[52px] 3xl:p-16 sm:rounded-md 3xl:rounded-lg">
+        <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg" loop muted autoplay
+            oncanplay="this.play()" onloadedmetadata="this.muted = true">
+            <source src="assets/hero/waves2.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-video-overlay opacity-80 z-[5] sm:rounded-md 3xl:rounded-lg"></div>
+        <div class="relative z-10 lg:w-[85%] 2xl:w-[80%] 3xl:w-[63%] text-white">
+            <h2
+                class="text-3xl sm:text-4xl lg:text-5xl 2xl:text-[52px] 3xl:text-[64px] 2xl:leading-[60px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4">
+                Ready to evaluate Versal <br>Premium on your use case?
+            </h2>
+            <p
+                class="sm:text-xl lg:text-2xl 2xl:text-[26px] 3xl:text-[32px] 2xl:leading-[36px] 3xl:leading-[48px] mb-8 lg:mb-10 3xl:mb-12">
+                Talk to Whizz Systems about <a href="https://www.whizzsystems.com/services/advanced-manufacturing">Custom board <br>development</a>, evaluation units, and NPI support.
+            </p>
+            <a href="https://webforms.pipedrive.com/f/6aZrcYl8HV6WoERmp8951wRNZqGf4XEXRBVFyl9ju5UCaWcbjTjDoJ218DFJwiyDFp"
+                target="_blank"><app-button heading="Contact our hardware experts" size="large"
+                    icon="assets/icons/webform.svg"></app-button></a>
+        </div>
+    </div>
+</section>
+
+<!-- Latest News & Insights -->
+<app-cnews [blogs]="blogs"></app-cnews>

@@ -26,6 +26,14 @@ export class HighPowerDemandComponent implements OnInit, AfterViewInit, OnDestro
 
   blogs = [
     {
+      imgUrl: 'assets/news/blogs/amd-vpk180/hero.png',
+      date: 'Dec 06, 2025',
+      tags: ['Case Study'],
+      title:
+        'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
+      link: '/news-&-insights/amd-vpk180',
+    },
+    {
       imgUrl: 'assets/news/blogs/future-performance/scalability-&-hardware.png',
       date: 'July 22, 2025',
       tags: ['AI Hardware', 'Obsolescence Management'],
@@ -102,7 +110,7 @@ export class HighPowerDemandComponent implements OnInit, AfterViewInit, OnDestro
     private router: Router,
     private meta: Meta,
     @Inject(PLATFORM_ID) private platformId: Object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {

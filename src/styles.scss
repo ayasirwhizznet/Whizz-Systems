@@ -84,3 +84,34 @@ img.hover_img {
 .loader {
   @apply w-12 h-12 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin;
 }
+
+// Diagonal swipe effect for Subscribe button (black variant)
+.diagonal-swipe-black {
+  background-color: #ffffff;
+  color: #2a494c;
+  transition: color 0.5s;
+  z-index: 1;
+}
+.diagonal-swipe-black span {
+  position: relative;
+  z-index: 2;
+}
+.diagonal-swipe-black:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #2a494c transparent transparent transparent;
+  transition: border-width 0.5s;
+  z-index: 1;
+}
+.diagonal-swipe-black:hover {
+  color: #ffffff;
+}
+.diagonal-swipe-black:hover:after {
+  border-width: 250px 250px 0 0;
+  z-index: -1;
+}

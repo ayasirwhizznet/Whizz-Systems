@@ -154,6 +154,130 @@ export const routes: Routes = [
         },
       },
       {
+        path: 'amd-vpk180',
+        loadComponent: () =>
+          import('./blogs/amd-vpk180/amd-vpk180.component').then(
+            (m) => m.AmdVpk180Component
+          ),
+        title:
+          'AMD VPK180 Evaluation Board | Versal Premium Adaptive SoC | Whizz Systems',
+        data: {
+          description:
+            'Explore the AMD VPK180 evaluation board designed by Whizz Systems, featuring the Versal Premium VP1802 Adaptive SoC for high-performance FPGA applications.',
+          keywords:
+            'AMD VPK180, Versal Premium, Adaptive SoC, FPGA Evaluation Board, Whizz Systems, VP1802, High-Speed Design, SerDes, GTY Transceivers',
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Article',
+              headline:
+                'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
+              description:
+                'A single, versatile evaluation board engineered by Whizz Systems to demonstrate AMD Versal™ Premium capabilities across optical communications, data center acceleration, aerospace, and testing/measurement.',
+              image:
+                'https://www.whizzsystems.com/assets/news/blogs/amd-vpk180/hero.png',
+              author: {
+                '@type': 'Organization',
+                name: 'Whizz Systems',
+                url: 'https://www.whizzsystems.com/',
+              },
+              publisher: {
+                '@type': 'Organization',
+                name: 'Whizz Systems',
+                logo: {
+                  '@type': 'ImageObject',
+                  url: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                },
+              },
+              mainEntityOfPage:
+                'https://www.whizzsystems.com/news-&-insights/amd-vpk180',
+              datePublished: '2025-12-06',
+              dateModified: '2025-12-06',
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://www.whizzsystems.com/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: 'News & Insights',
+                  item: 'https://www.whizzsystems.com/news-&-insights/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: 'AMD VPK180 Evaluation Board',
+                  item: 'https://www.whizzsystems.com/news-&-insights/amd-vpk180',
+                },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: [
+                {
+                  '@type': 'Question',
+                  name: 'What is the AMD VPK180 Evaluation Board?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'The AMD VPK180 is a comprehensive evaluation board featuring the Versal Premium VP1802 Adaptive SoC, designed for high-performance applications in data centers, optical communications, aerospace, and test equipment.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Who designed the VPK180 evaluation board?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'The VPK180 evaluation board was designed and manufactured by Whizz Systems in collaboration with AMD, leveraging over 25 years of expertise in high-complexity FPGA design.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'What high-speed interfaces does VPK180 support?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'The VPK180 supports GTY transceivers with 112G PAM4 and 56G NRZ SerDes, DDR4 and LPDDR4 memory interfaces, QSFP-DD and QSFP28 optical modules, and FMC+ expansion connectivity.',
+                  },
+                },
+              ],
+            },
+          ],
+          og: {
+            type: 'article',
+            title:
+              'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
+            description:
+              'A versatile evaluation board engineered by Whizz Systems showcasing AMD Versal™ Premium capabilities for next-gen FPGA development.',
+            url: 'https://www.whizzsystems.com/news-&-insights/amd-vpk180',
+            site_name: 'Whizz Systems',
+            image:
+              'https://www.whizzsystems.com/assets/news/blogs/amd-vpk180/hero.png',
+            image_alt: 'AMD VPK180 Evaluation Board by Whizz Systems',
+            publisher: 'https://www.linkedin.com/company/whizz-systems/',
+            section: 'FPGA Development',
+            tag: 'AMD, Versal Premium, FPGA, Evaluation Board, Hardware Design',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title:
+              'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
+            description:
+              'Whizz Systems delivers a powerful evaluation board for AMD Versal™ Premium FPGA development.',
+            image:
+              'https://www.whizzsystems.com/assets/news/blogs/amd-vpk180/hero.png',
+            image_alt: 'AMD VPK180 Evaluation Board by Whizz Systems',
+            site: '@WhizzSystems',
+          },
+        },
+      },
+      {
         path: 'whitepaper-5g-oru',
         loadComponent: () =>
           import('./blogs/5G-ORU/5g-oru.component').then((m) => m.ORUComponent),
@@ -1090,6 +1214,162 @@ export const routes: Routes = [
               'https://www.whizzsystems.com/assets/news/blogs/future-performance/hero.png',
             image_alt: 'Whizz Systems AI Hardware Architecture and Design',
             site: '@WhizzSystems',
+          },
+        },
+      },
+      {
+        path: 'amd-vpk180-evaluation-board',
+        loadComponent: () =>
+          import(
+            './blogs/amd-vpk180/amd-vpk180.component'
+          ).then((m) => m.AmdVpk180Component),
+        title:
+          'AMD VPK180 Evaluation Board, Versal Premium Adaptive SoC | Whizz Systems',
+        data: {
+          description:
+            'Case Study: Whizz Systems engineered the AMD VPK180 Evaluation Board (Versal Premium Adaptive SoC). Read how we integrated 112G PAM4 transceivers, 12GB LPDDR4, SFP-DD/QSFP-DD/OSFP/FMC+ and ensured eCPRI compliance.',
+          keywords:
+            'VPK180 Evaluation Board, AMD VPK180 Evaluation Board, Vpk180 evaluation board price, AMD Versal Premium Series VPK180 Evaluation Kit, 112G PAM4, SFP-DD, QSFP-DD, OSFP, FMC+',
+          schema: [
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "@id": "https://www.whizzsystems.com/#organization",
+              "name": "Whizz Systems",
+              "url": "https://www.whizzsystems.com/",
+              "logo": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/whizz-systems",
+                "https://www.youtube.com/whizzsystems"
+              ],
+              "contactPoint": [
+                {
+                  "@type": "ContactPoint",
+                  "telephone": "+1-408-980-0400",
+                  "contactType": "customer service",
+                  "areaServed": "US"
+                },
+                {
+                  "@type": "ContactPoint",
+                  "telephone": "+60-4-xxxxxxx",
+                  "contactType": "sales",
+                  "areaServed": "Global"
+                }
+              ]
+            }
+            ,
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "@id": "https://www.whizzsystems.com/#website",
+              "url": "https://www.whizzsystems.com/",
+              "name": "Whizz Systems",
+              "publisher": { "@id": "https://www.whizzsystems.com/#organization" }
+            }
+            ,
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "@id": "https://www.whizzsystems.com/case-studies/amd-vpk180-evaluation-board/#breadcrumb",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.whizzsystems.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Case studies", "item": "https://www.whizzsystems.com/case-studies/" },
+                { "@type": "ListItem", "position": 3, "name": "AMD VPK180 Evaluation Board", "item": "https://www.whizzsystems.com/case-studies/amd-vpk180-evaluation-board/" }
+              ]
+            }
+            ,
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "@id": "https://www.whizzsystems.com/case-studies/amd-vpk180-evaluation-board/#webpage",
+              "url": "https://www.whizzsystems.com/case-studies/amd-vpk180-evaluation-board/",
+              "name": "AMD VPK180 Evaluation Board — Case Study",
+              "description": "Case study describing Whizz Systems' engineering and product development work for the AMD VPK180 Evaluation Board.",
+              "isPartOf": { "@id": "https://www.whizzsystems.com/#website" },
+              "breadcrumb": { "@id": "https://www.whizzsystems.com/case-studies/amd-vpk180-evaluation-board/#breadcrumb" },
+              "mainEntity": { "@id": "https://www.whizzsystems.com/case-studies/amd-vpk180-evaluation-board/#article" }
+            }
+            ,
+            {
+              "@context": "https://schema.org",
+              "@type": "TechArticle",
+              "@id": "https://www.whizzsystems.com/case-studies/amd-vpk180-evaluation-board/#article",
+              "mainEntityOfPage": { "@id": "https://www.whizzsystems.com/case-studies/amd-vpk180-evaluation-board/#webpage" },
+              "headline": "AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform",
+              "alternativeHeadline": "VPK180 Evaluation Board case study: AMD Versal Premium integration, 112G PAM4, SFP-DD/QSFP-DD/OSFP/FMC+",
+              "image": [
+                "https://www.whizzsystems.com/assets/case-studies/vpk180/hero.jpg",
+                "https://www.whizzsystems.com/assets/header/teal-logo.png"
+              ],
+              "author": { "@type": "Organization", "name": "Whizz Systems" },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Whizz Systems",
+                "logo": { "@type": "ImageObject", "url": "https://www.whizzsystems.com/assets/header/teal-logo.png" }
+              },
+              "datePublished": "2025-12-06",
+              "dateModified": "2025-12-06",
+              "description": "Whizz Systems partnered with AMD to design and validate the VPK180 Evaluation Board featuring AMD XCVP1802, 112G PAM4 transceivers, 12GB LPDDR4 and multi-form-factor optical ports.",
+              "keywords": "VPK180 Evaluation Board, AMD VPK180 Evaluation Board, Versal Premium, 112G PAM4, SFP-DD, QSFP-DD, OSFP, FMC+",
+              "mainEntity": { "@id": "https://www.whizzsystems.com/case-studies/amd-vpk180-evaluation-board/#faq" }
+            }
+            ,
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "@id": "https://www.whizzsystems.com/case-studies/amd-vpk180-evaluation-board/#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is the VPK180 Evaluation Board?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The VPK180 Evaluation Board is a single, versatile evaluation platform built around the AMD Versal Premium Adaptive SoC (XCVP1802) designed to demonstrate high-speed optical and data-center capabilities including 112G PAM4 transceivers and multi-form-factor ports."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What are the key hardware features of the AMD VPK180 Evaluation Board?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Key features include the AMD XCVP1802 Versal Premium Adaptive SoC, 112G PAM4 transceivers, 12GB LPDDR4, SFP-DD, QSFP-DD, OSFP, FMC+ expansion, and 1 Gbps RGMII management Ethernet. The board supports 100GAUI, 400GAUI and 800GAUI profiles and is designed for eCPRI compliance."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How can I find VPK180 evaluation board price?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pricing for evaluation boards and kits varies by configuration, quantity, and support level. For accurate pricing and lead-time, please contact Whizz Systems' sales team via the contact details on the page."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do I request an AMD Versal Premium Series VPK180 Evaluation Kit or evaluation unit?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Contact Whizz Systems through the site contact form or email sales@whizzsystems.com — include your application, required interfaces, and anticipated quantity so we can advise on kit availability and NPI support."
+                  }
+                }
+              ]
+            },
+          ],
+          og: {
+            site_name: "Whizz Systems",
+            title: "AMD VPK180 Evaluation Board — Whizz Systems",
+            description:
+              "Case Study: Whizz Systems engineered the AMD VPK180 Evaluation Board with Versal Premium Adaptive SoC and 112G PAM4 transceivers for telecom, data center, aerospace and test/measurement.",
+            type: "article",
+            url: "https://www.whizzsystems.com/case-studies/amd-vpk180-evaluation-board/",
+            image: "https://www.whizzsystems.com/assets/header/teal-logo.png"
+          },
+
+          twitter: {
+            card: "summary_large_image",
+            title: "AMD VPK180 Evaluation Board — Whizz Systems",
+            description:
+              "Whizz Systems partnered with AMD to deliver the VPK180 Evaluation Board — Versal Premium Adaptive SoC evaluation platform.",
+            image: "https://www.whizzsystems.com/assets/header/teal-logo.png"
           },
         },
       },

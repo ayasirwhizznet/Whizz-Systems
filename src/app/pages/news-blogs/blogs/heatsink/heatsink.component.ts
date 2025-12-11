@@ -24,6 +24,14 @@ import { ButtonComponent } from '@components/button/button.component';
 export class HeatsinkComponent implements OnInit, AfterViewInit, OnDestroy {
   blogs = [
     {
+      imgUrl: 'assets/news/blogs/amd-vpk180/hero.png',
+      date: 'Dec 06, 2025',
+      tags: ['Case Study'],
+      title:
+        'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
+      link: '/news-&-insights/amd-vpk180',
+    },
+    {
       imgUrl: 'assets/news/blogs/future-performance/scalability-&-hardware.png',
       date: 'July 22, 2025',
       tags: ['AI Hardware', 'Obsolescence Management'],
@@ -33,14 +41,14 @@ export class HeatsinkComponent implements OnInit, AfterViewInit, OnDestroy {
     {
       imgUrl: 'assets/news/blogs/high-power/key-challenges.png',
       date: 'June 10, 2025',
-      tags: ['AI Hardware','High Density PCB Design'],
+      tags: ['AI Hardware', 'High Density PCB Design'],
       title: 'Managing High-Power Demands in Next-Generation Hardware',
       link: '/news-&-insights/high-power-demand',
     },
     {
       imgUrl: 'assets/news/blog-6.png',
       date: 'May 14, 2025',
-      tags: ['AI Hardware Design','High-density PCB design'],
+      tags: ['AI Hardware Design', 'High-density PCB design'],
       title: 'NextGen Hardware Design for High-Density, High-Complexity Systems',
       link: '/news-&-insights/hardware-design',
     },
@@ -67,7 +75,7 @@ export class HeatsinkComponent implements OnInit, AfterViewInit, OnDestroy {
     }
   ];
 
-  tags = ['Whitepaper','Thermal Management','Cooling Solutions'];
+  tags = ['Whitepaper', 'Thermal Management', 'Cooling Solutions'];
 
   factors = ['Surface area', 'Material choice', 'Fin geometry', 'Base dimensions', 'Innovative elements like varying sizes, scales, and protrusions'];
 
@@ -133,21 +141,21 @@ export class HeatsinkComponent implements OnInit, AfterViewInit, OnDestroy {
     {
       imageUrl: 'assets/news/blogs/blog-bottom/5g.png',
       link: '/news-&-insights/whitepaper-5g-oru',
-      tags: ['Case Study','Hardware Design','Telecom Engineering'],
+      tags: ['Case Study', 'Hardware Design', 'Telecom Engineering'],
       date: 'September 05, 2020',
       title: 'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
     },
     {
       imageUrl: 'assets/news/blogs/blog-bottom/invensify.png',
       link: '/news-&-insights/whitepaper-invensify',
-      tags: ['Case Study','Medical Devices'],
+      tags: ['Case Study', 'Medical Devices'],
       date: 'December 12, 2024',
       title: 'Developing Smart Medical Devices: The Invensify Case Study',
     },
     {
       imageUrl: 'assets/news/blogs/blog-bottom/pcle6.png',
       link: '/news-&-insights/whitepaper-pcle6',
-      tags: ['Heatsink','Thermal Management'],
+      tags: ['Heatsink', 'Thermal Management'],
       date: 'May 29, 2024',
       title: 'PCIe-6: Everything You Need To Know',
     }
@@ -162,7 +170,7 @@ export class HeatsinkComponent implements OnInit, AfterViewInit, OnDestroy {
     private router: Router,
     private meta: Meta,
     @Inject(PLATFORM_ID) private platformId: Object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -214,7 +222,7 @@ export class HeatsinkComponent implements OnInit, AfterViewInit, OnDestroy {
   onScroll(): void {
     if (!isPlatformBrowser(this.platformId)) return;
 
-    const sections = Array.from({ length: 14 }, (_, i) => `section${i+1}`);
+    const sections = Array.from({ length: 14 }, (_, i) => `section${i + 1}`);
     const headerOffset = 500;
 
     for (const id of sections) {

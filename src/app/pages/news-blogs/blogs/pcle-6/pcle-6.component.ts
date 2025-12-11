@@ -26,6 +26,14 @@ export class Pcle6Component implements OnInit, OnDestroy {
 
   blogs = [
     {
+      imgUrl: 'assets/news/blogs/amd-vpk180/hero.png',
+      date: 'Dec 06, 2025',
+      tags: ['Case Study'],
+      title:
+        'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
+      link: '/news-&-insights/amd-vpk180',
+    },
+    {
       imgUrl: 'assets/news/blogs/future-performance/scalability-&-hardware.png',
       date: 'July 22, 2025',
       tags: ['AI Hardware', 'Obsolescence Management'],
@@ -35,7 +43,7 @@ export class Pcle6Component implements OnInit, OnDestroy {
     {
       imgUrl: 'assets/news/blogs/high-power/key-challenges.png',
       date: 'June 10, 2025',
-      tags: ['AI Hardware','High Density PCB Design'],
+      tags: ['AI Hardware', 'High Density PCB Design'],
       title: 'Managing High-Power Demands in Next-Generation Hardware',
       link: '/news-&-insights/high-power-demand',
     },
@@ -78,7 +86,7 @@ export class Pcle6Component implements OnInit, OnDestroy {
     private router: Router,
     private meta: Meta,
     @Inject(PLATFORM_ID) private platformId: Object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -115,7 +123,7 @@ export class Pcle6Component implements OnInit, OnDestroy {
   onScroll(): void {
     if (!isPlatformBrowser(this.platformId)) return;
 
-    const sections = ['section1','section2','section3','section4','section5','section6'];
+    const sections = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'];
     const headerOffset = 500;
 
     for (const id of sections) {

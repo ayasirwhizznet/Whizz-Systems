@@ -29,6 +29,14 @@ import { Subscription, filter } from 'rxjs';
 export class ORUComponent {
   blogs: any[] = [
     {
+      imgUrl: 'assets/news/blogs/amd-vpk180/hero.png',
+      date: 'Dec 06, 2025',
+      tags: ['Case Study'],
+      title:
+        'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
+      link: '/news-&-insights/amd-vpk180',
+    },
+    {
       imgUrl: 'assets/news/blogs/future-performance/scalability-&-hardware.png',
       date: 'July 22, 2025',
       tags: ['AI Hardware', 'Obsolescence Management'],
@@ -185,9 +193,9 @@ export class ORUComponent {
     const pageUrl = window.location.href;
     const text = encodeURIComponent(
       `🚀 Discover 5G Connectivity by Whizz Systems!\n\n` +
-        `Building the Future of 5G Connectivity with Open Radio Unit Solutions.\n\n` +
-        `Proudly built by @whizzsystems.\n\n` +
-        `${pageUrl}\n\n`
+      `Building the Future of 5G Connectivity with Open Radio Unit Solutions.\n\n` +
+      `Proudly built by @whizzsystems.\n\n` +
+      `${pageUrl}\n\n`
     );
     const hashtags = encodeURIComponent(
       'whizzsystems,Heatsink,ThermalManagement,SignalManagement'
