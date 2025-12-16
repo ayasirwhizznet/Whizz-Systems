@@ -722,6 +722,11 @@
       "source": "/download/FMC_loopback_user_guide_030515.pdf",
       "destination": "/services",
       "permanent": true
+    },
+    {
+      "source": "/news-&-insights/amd-vpk180",
+      "destination": "/case-studies/amd-vpk180",
+      "permanent": true
     }
   ]
 }
