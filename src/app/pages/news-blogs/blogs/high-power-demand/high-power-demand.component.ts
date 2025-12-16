@@ -7,6 +7,7 @@ import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
 import { NewsComponent } from '@components/news/news.component';
 import { Subscription, filter } from 'rxjs';
+import { blogList } from '../blogList';
 
 @Component({
   selector: 'app-high-power-demand',
@@ -24,58 +25,7 @@ import { Subscription, filter } from 'rxjs';
 export class HighPowerDemandComponent implements OnInit, AfterViewInit, OnDestroy {
   tags = ['AI Hardware', 'High Density PCB Design', 'High-Pin Count Chips'];
 
-  blogs = [
-    {
-      imgUrl: 'assets/news/blogs/amd-vpk180/hero.png',
-      date: 'Dec 06, 2025',
-      tags: ['Case Study'],
-      title:
-        'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
-      link: '/news-&-insights/amd-vpk180',
-    },
-    {
-      imgUrl: 'assets/news/blogs/future-performance/scalability-&-hardware.png',
-      date: 'July 22, 2025',
-      tags: ['AI Hardware', 'Obsolescence Management'],
-      title: 'Future-Proof Architecture and Performance in Next-Generation Systems',
-      link: '/news-&-insights/future-architecture-performance',
-    },
-    {
-      imgUrl: 'assets/news/blog-6.png',
-      date: 'May 14, 2025',
-      tags: ['AI Hardware Design', 'High-density PCB design'],
-      title: 'NextGen Hardware Design for High-Density, High-Complexity Systems',
-      link: '/news-&-insights/hardware-design',
-    },
-    {
-      imgUrl: 'assets/news/blog-1.png',
-      date: 'May 29, 2024',
-      tags: ['Whitepaper', 'High Speed Connectivity'],
-      title: 'PCIe-6: Everything You Need to Know',
-      link: '/news-&-insights/whitepaper-pcle6',
-    },
-    {
-      imgUrl: 'assets/news/blog-2.png',
-      date: 'July 9, 2024',
-      tags: ['Case Study', 'Hardware Design'],
-      title: 'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
-      link: '/news-&-insights/whitepaper-5g-oru',
-    },
-    {
-      imgUrl: 'assets/news/blog-3.png',
-      date: 'July 9, 2024',
-      tags: ['Whitepaper', 'Thermal Management'],
-      title: 'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
-      link: '/news-&-insights/whitepaper-heatsink',
-    },
-    {
-      imgUrl: 'assets/news/blog-4.png',
-      date: 'December 12, 2024',
-      tags: ['Case Study', 'Medical Devices'],
-      title: 'Engineering Smart Medical Devices: The Invensify Case Study',
-      link: '/news-&-insights/whitepaper-invensify',
-    },
-  ];
+  blogs = blogList;
 
   optimized = ['Minimize IR drops', 'Ensure consistent, stable power delivery across the board'];
   layout = ['Trace widths', 'Via placements', 'Power distribution planes'];

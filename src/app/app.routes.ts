@@ -246,6 +246,11 @@ export const routes: Routes = [
       import('./pages/news-blogs/routes').then((m) => m.routes),
   },
   {
+    path: 'case-studies',
+    loadChildren: () =>
+      import('./pages/case-studies/routes').then((m) => m.routes),
+  },
+  {
     path: '404',
     loadComponent: () =>
       import('./pages/error/404/404.component').then((m) => m.Page404Component),
