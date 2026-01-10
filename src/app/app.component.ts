@@ -66,7 +66,6 @@ export class AppComponent implements OnInit {
         this.setCanonicalTag(canonicalUrl);
         this.setRobotsMetaTag('index, follow');
 
-        // ✅ Update meta on client-side route change
         this.setMetaFromRoute(this.activatedRoute);
       });
   }
@@ -91,8 +90,8 @@ export class AppComponent implements OnInit {
       this.metaService.updateTag({ name: 'description', content: description });
     }
     if (keywords) {
-    this.metaService.updateTag({ name: 'keywords', content: keywords });
-  }
+      this.metaService.updateTag({ name: 'keywords', content: keywords });
+    }
     if (schema) {
       this.setJsonLdSchema(schema);
     }
