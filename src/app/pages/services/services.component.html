@@ -1,93 +1,515 @@
 <section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
-  <div class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl">
-    <div
-      class="w-full lg:w-[46.5%] 3xl:w-[45%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16">
+  <div
+    class="relative flex flex-col lg:flex-row items-center sm:rounded-xl 3xl:rounded-2xl overflow-hidden pl-10 pr-10 sm:pr-0 lg:pl-16 3xl:pl-20 py-20 lg:py-[120px] 3xl:py-[180px] bg-teal1 h-auto">
+
+    <!-- Left: Text Content -->
+    <div class="w-full lg:w-[55%] text-white flex flex-col justify-center z-10">
       <h1
-        class="text-3xl lg:text-4xl 2xl:text-[46px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[56px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-4 3xl:mb-6 w-[96%] sm:w-[57%] lg:w-full">
-        Powering the Future of Next-Gen Electronics Design and Manufacturing</h1>
-      <p class="text-base sm:text-sm 2xl:text-base 3xl:text-xl lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8 sm:w-[70%] lg:w-full">At Whizz Systems, We leverage our <span
-          class="text-teal2 font-medium">25+ years of expertise</span>—mastering the art of harmonizing <span
-          class="text-teal2 font-medium">power, <a href="https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions">thermal efficiency</a>, performance</span>, and <span
-          class="text-teal2 font-medium">cost</span> to bring next-generation complex products to life. Our engineering
-        and design teams work together to take full ownership of the product development process—<span
-          class="text-teal2 font-medium">from design to manufacturing</span>—helping you achieve faster time-to-market
-        with fewer design iterations.</p>
+        class="text-3xl sm:text-4xl lg:text-5xl 3xl:text-[64px] leading-snug lg:leading-tight 3xl:leading-[76.8px] font-bold mb-5 3xl:mb-7 3xl:max-w-[900px]">
+        End-to-End Hardware Development &amp; Manufacturing
+      </h1>
+      <p class="text-sm sm:text-base lg:text-lg 3xl:text-[24px] 3xl:leading-[38.4px] mb-8 3xl:mb-10 w-full lg:max-w-[500px] xl:max-w-[580px] 3xl:max-w-[688px] font-normal"
+        style="font-family: 'Roboto', sans-serif; color: white;">
+        Whizz Systems is an end-to-end hardware development and manufacturing partner, supporting companies from early
+        system architecture through design, validation, and full-scale production.
+      </p>
+      <div>
         <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
-        target="_blank"><app-button heading="Get in Touch to Start Building the Future"
-        icon="assets/icons/webform.svg" size="small"></app-button></a>
-    </div>
-    <div class="hidden lg:block lg:w-[53.5%] 3xl:w-[55%] relative">
-      <video 
-        class="absolute inset-0 w-full h-full object-cover z-0 rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-md 3xl:rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-md 3xl:rounded-br-lg"
-        loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
-        <source src="assets/hero/waves1.mp4" type="video/mp4">
-      </video>
-      <div
-        class="absolute inset-0 bg-video-overlay opacity-80 z-10 rounded-tl-[80px] 3xl:rounded-tl-[100px] rounded-tr-md 3xl:rounded-tr-lg rounded-bl-[80px] 3xl:rounded-bl-[100px] rounded-br-md 3xl:rounded-br-lg">
+          target="_blank"
+          class="inline-flex items-center gap-3 bg-white text-gray-800 font-medium text-sm 3xl:text-base px-6 py-3 3xl:px-8 3xl:py-4 rounded-md hover:bg-gray-100 transition-colors duration-300">
+          Contact Us
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
       </div>
-      <p class="h-[34rem] 2xl:h-[39rem] 3xl:h-[48rem]"></p>
+    </div>
+
+    <!-- Right: Image Illustration -->
+    <div
+      class="hidden lg:block absolute right-[-80px] 3xl:right-[-120px] top-0 h-full w-auto lg:w-[60%] 3xl:w-[1109px]">
+      <img src="assets/services/hero.png" alt="Hero Illustration" class="w-full h-full object-contain object-right">
     </div>
   </div>
 </section>
 
-<!-- Services Navbar -->
-<section [ngClass]="{ 'top-[13%] ': isSticky}"
-  class="hidden lg:block px-[9.3%] lg:py-10 3xl:py-16 bg-white sticky top-0 z-30 transition-all duration-500 ease-in-out">
-  <div class="flex justify-center items-center gap-3 3xl:gap-4">
-    <a *ngFor="let category of serviceCategories" (click)="scrollToCategory(category.name)"
-      class="lg:w-44 2xl:w-48 lg:h-[72px] 3xl:w-[247px] 3xl:h-[88px] cursor-pointer grid place-items-center bg-dark-gray1 hover:bg-dark-gray2 text-center text-white text-xs 3xl:text-base font-normal 3xl:font-medium rounded-md 3xl:rounded-lg transition-all duration-300 ease-in-out">{{category.name}}</a>
+<!-- Info Cards -->
+<section class="px-4 sm:px-[6.3%] py-8 lg:py-10 3xl:py-14">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 3xl:gap-6">
+
+    <!-- Card 1: Engineering Capabilities -->
+    <div class="flex items-center gap-6"
+      style="background: #F8F8F8; border: 1px solid #D9D9D9; border-radius: 16px; padding: 32px;">
+      <div class="flex-shrink-0">
+        <img src="assets/icons/excellence.svg" alt="Engineering Excellence" class="w-12 h-12 3xl:w-14 3xl:h-14">
+      </div>
+      <p class="text-sm 2xl:text-base 3xl:text-lg text-gray-600 leading-relaxed">
+        We design and manufacture complex electronic products in-house, integrating ASIC, FPGA, high-speed PCB design,
+        and system engineering under one ownership model.
+      </p>
+    </div>
+
+    <!-- Card 2: Global Facilities -->
+    <div class="flex items-center gap-6"
+      style="background: #F8F8F8; border: 1px solid #D9D9D9; border-radius: 16px; padding: 32px;">
+      <div class="flex-shrink-0">
+        <img src="assets/icons/glob.svg" alt="Global Facilities" class="w-12 h-12 3xl:w-14 3xl:h-14">
+      </div>
+      <p class="text-sm 2xl:text-base 3xl:text-lg text-gray-600 leading-relaxed">
+        Our facilities in Santa Clara, California and Malaysia support mid-low volume, high-complexity builds and
+        cost-optimized high-volume production worldwide.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Meaning of End-to-End Section -->
+<section class="block px-4 sm:px-[6.3%] py-12 lg:py-16 3xl:py-20 bg-white">
+  <div class="max-w-[1262px] mx-auto flex flex-col items-center">
+    <h2 class="text-center text-dark-gray2 text-2xl sm:text-3xl lg:text-[34px] 3xl:text-[42px] font-bold mb-4">
+      What Does End-to-End Hardware<br class="hidden sm:block"> Design & Manufacturing Mean?
+    </h2>
+    <p class="text-center text-gray-600 text-sm 3xl:text-base mb-12 max-w-[800px] mx-auto">
+      End-to-end hardware design and manufacturing covers every stage required<br> to take a hardware product from concept
+      to production, including:
+    </p>
+
+    <!-- Cards Container -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 3xl:gap-6 w-full max-w-[1060px] justify-items-center">
+      <div *ngFor="let card of meaningCards"
+        class="bg-card-gray border border-light-gray1 rounded-lg px-[18px] py-[14px] flex items-center justify-center text-center text-dark-gray2 font-semibold w-full sm:w-[247px] min-h-[88px] text-sm sm:text-base 3xl:text-[16px] leading-snug 3xl:leading-[24px]"
+        style="font-family: 'Roboto', sans-serif;">
+        {{ card }}
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- Slogan -->
- <section>
-  <img height="119" width="1520" loading="lazy" src="assets/shared/divider-top.png" alt="img">
-  <h2 class="text-teal1 text-xl sm:text-2xl lg:text-4xl 3xl:text-5xl font-light text-center lg:leading-[40px] 3xl:leading-[57.6px] my-8 lg:my-12 3xl:my-16 px-4 sm:px-0">All Manufacturing & Engineering Teams In-house</h2>
+<section class="bg-white">
+  <img height="119" width="1520" loading="lazy" class="w-full h-auto" src="assets/shared/divider-top.png" alt="img">
+  <div class="max-w-[1262px] mx-auto py-8 lg:py-12 3xl:py-16 px-4 sm:px-0">
+    <h2 class="text-teal1 text-xl sm:text-2xl lg:text-[36px] font-normal text-center leading-[1.4]">
+      At Whizz Systems, design and manufacturing are developed together,<br class="hidden lg:block">
+      ensuring hardware is optimized for performance, yield, cost, and scalability.
+    </h2>
+  </div>
   <img height="119" width="1520" loading="lazy" class="w-full h-auto" src="assets/shared/divider-bottom.png" alt="img">
- </section>
+</section>
 
-<section class="px-[4%] sm:px-[9.3%]">
-  <div *ngFor="let category of serviceCategories"
-    class="flex flex-col lg:flex-row justify-between gap-10 lg:gap-0 py-8 lg:py-12 3xl:py-16">
-    <div [id]="category.name" class="w-full lg:w-[29.8%] mt-10 md:mt-0">
-      <h3 class="text-3xl lg:text-4xl 3xl:text-5xl font-bold 3xl:leading-[57.6px] text-dark-gray2 mb-6 3xl:mb-8">{{
-        category.name }}</h3>
-      <p class="text-sm 3xl:text-lg text-dark-gray1" [innerHTML]="category.desc"></p>
+<!-- Approach Section -->
+<section class="px-4 py-8 sm:px-[9.3%] lg:py-12 3xl:px-[180px] 3xl:py-[64px] bg-white">
+  <h2 class="text-center text-2xl sm:text-3xl lg:text-[34px] 3xl:text-[42px] font-bold text-dark-gray2 mb-8 3xl:mb-10">
+    Our End-to-End Design & Manufacturing Approach
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 3xl:gap-8">
+    <!-- Card 1 -->
+    <div class="p-6 3xl:p-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
+      <img src="assets/services/end-1.png" alt="System Architecture"
+        class="w-full h-auto rounded-md 3xl:rounded-lg mb-6 3xl:mb-8">
+      <h3 class="text-dark-gray2 font-bold mb-4 text-base">System Architecture & Feasibility</h3>
+      <p class="text-dark-gray2 font-normal text-sm 3xl:text-base leading-relaxed">
+        We define system requirements, interfaces, performance targets, and constraints with manufacturing
+        considerations
+        built in from day one.
+      </p>
     </div>
-    <div class="w-full lg:w-[59.49%]">
-      <div class="grid grid-cols-2 gap-3 3xl:gap-4">
-        <a *ngFor="let service of category.services" [routerLink]="[service.link]" [fragment]="service.fragment"
-          class="group col-span-2 md:col-span-1">
+
+    <!-- Card 2 -->
+    <div class="p-6 3xl:p-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
+      <img src="assets/services/end-2.png" alt="ASIC, FPGA & Hardware Design"
+        class="w-full h-auto rounded-md 3xl:rounded-lg mb-6 3xl:mb-8">
+      <h3 class="text-dark-gray2 font-bold mb-4 text-base">ASIC, FPGA & Hardware Design</h3>
+      <p class="text-dark-gray2 font-normal text-sm 3xl:text-base leading-relaxed">
+        Our teams design ASICs, FPGA solutions, and complex hardware systems, including high-speed PCB design aligned
+        with
+        production realities.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="p-6 3xl:p-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
+      <img src="assets/services/end-3.png" alt="Testing, Analysis & Bring-Up"
+        class="w-full h-auto rounded-md 3xl:rounded-lg mb-6 3xl:mb-8">
+      <h3 class="text-dark-gray2 font-bold mb-4 text-base">Testing, Analysis & Bring-Up</h3>
+      <p class="text-dark-gray2 font-normal text-sm 3xl:text-base leading-relaxed">
+        We perform functional verification, SI/PI/thermal analysis, and prototype bring-up using the same processes and
+        standards required for production.
+      </p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="p-6 3xl:p-8 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg h-full">
+      <img src="assets/services/end-4.png" alt="In-House Manufacturing"
+        class="w-full h-auto rounded-md 3xl:rounded-lg mb-6 3xl:mb-8">
+      <h3 class="text-dark-gray2 font-bold mb-4 text-base">In-House Manufacturing & Global Production</h3>
+      <ul class="text-dark-gray2 font-normal text-sm 3xl:text-base leading-relaxed list-disc pl-4 space-y-2">
+        <li>Santa Clara, California — prototyping, NPI, and low-to-mid volume production.</li>
+        <li>Malaysia — cost-optimized, high-volume manufacturing for global distribution.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Partner Section -->
+<section class="px-4 py-8 sm:px-[9.3%] lg:py-12 3xl:px-[180px] 3xl:py-[64px] bg-white">
+  <h2 class="text-center text-2xl sm:text-3xl lg:text-[34px] 3xl:text-[42px] font-bold text-dark-gray2 mb-8 3xl:mb-10">
+    Who Needs an End-to-End Hardware Partner?
+  </h2>
+
+  <div class="flex flex-col lg:flex-row justify-center gap-6 max-w-full mx-auto">
+    <!-- Box 1 -->
+    <div
+      class="w-full lg:w-[480px] xl:w-[530px] 3xl:w-[610px] bg-card-gray border border-light-gray1 rounded-lg py-8 flex flex-col items-center">
+      <h3 class="text-center text-dark-gray2 font-bold text-sm 3xl:text-base mb-6 px-14">
+        Companies work with Whizz Systems when they
+      </h3>
+      <div class="w-full flex flex-col px-14">
+        <div class="py-4 border-t border-light-gray1 text-left text-dark-gray2 font-normal text-sm 3xl:text-base">
+          Are developing custom silicon or complex electronic systems
+        </div>
+        <div class="py-4 border-t border-light-gray1 text-left text-dark-gray2 font-normal text-sm 3xl:text-base">
+          Need a partner that can <strong>both design and manufacture</strong> the product
+        </div>
+        <div class="py-4 border-t border-light-gray1 text-left text-dark-gray2 font-normal text-sm 3xl:text-base">
+          Want early control over <strong>cost, yield, and production risk</strong>
+        </div>
+        <div class="py-4 border-t border-light-gray1 text-left text-dark-gray2 font-normal text-sm 3xl:text-base">
+          Are scaling from prototype to volume production
+        </div>
+        <div class="py-4 border-t border-light-gray1 text-left text-dark-gray2 font-normal text-sm 3xl:text-base">
+          Require a <strong>global manufacturing footprint</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div
+      class="w-full lg:w-[480px] xl:w-[540px] 2xl:w-[610px] bg-card-gray border border-light-gray1 rounded-lg py-8 flex flex-col items-center">
+      <h3 class="text-center text-dark-gray2 font-bold text-sm 3xl:text-base mb-6 px-14">
+        We commonly support
+      </h3>
+      <div class="w-full flex flex-col px-14">
+        <div class="py-4 border-t border-light-gray1 text-left text-dark-gray2 font-normal text-sm 3xl:text-base">
+          Semiconductor and deep-tech startups
+        </div>
+        <div class="py-4 border-t border-light-gray1 text-left text-dark-gray2 font-normal text-sm 3xl:text-base">
+          Established companies launching new hardware platforms
+        </div>
+        <div class="py-4 border-t border-light-gray1 text-left text-dark-gray2 font-normal text-sm 3xl:text-base">
+          R&D teams transitioning designs into production
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Reasons Section -->
+<section class="px-4 py-8 sm:px-[9.3%] lg:py-12 3xl:px-[180px] 3xl:py-[64px] bg-[#6ECEC9]">
+  <div class="max-w-[1560px] mx-auto">
+    <h2 class="text-center text-2xl sm:text-3xl lg:text-[34px] 3xl:text-[42px] font-bold text-white mb-4">
+      Why Companies Choose Whizz Systems
+    </h2>
+    <p
+      class="text-center text-white font-light text-sm 3xl:text-base leading-relaxed mb-8 3xl:mb-8 max-w-[800px] mx-auto opacity-100">
+      Our clients choose Whizz Systems to avoid handoff failures and ensure<br>
+      their hardware can be <strong>designed, built, and scaled successfully.</strong>
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 p-8">
+      <!-- Card 1 -->
+      <div class="bg-white border border-[#7BD4CF] rounded-lg p-8 flex flex-col items-center text-center h-full">
+        <img src="assets/services/icon-1.svg" alt="Design & Manufacturing" class="w-12 h-12 mb-4" />
+        <p class="text-dark-gray2 font-normal text-sm 3xl:text-base leading-normal">
+          Single partner for design & manufacturing
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white border border-[#7BD4CF] rounded-lg p-8 flex flex-col items-center text-center h-full">
+        <img src="assets/services/icon-2.svg" alt="Reduced Risk" class="w-12 h-12 mb-4" />
+        <p class="text-dark-gray2 font-normal text-sm 3xl:text-base leading-normal">
+          Reduced risk during transition from design to production
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white border border-[#7BD4CF] rounded-lg p-8 flex flex-col items-center text-center h-full">
+        <img src="assets/services/icon-3.svg" alt="Manufacturing Footprint" class="w-12 h-12 mb-4" />
+        <p class="text-dark-gray2 font-normal text-sm 3xl:text-base leading-normal">
+          Global manufacturing footprint with cost optimization
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white border border-[#7BD4CF] rounded-lg p-8 flex flex-col items-center text-center h-full">
+        <img src="assets/services/icon-4.svg" alt="ASIC & FPGA Expertise" class="w-12 h-12 mb-4" />
+        <p class="text-dark-gray2 font-normal text-sm 3xl:text-base leading-normal">
+          Deep expertise in ASIC, FPGA, & complex electronics
+        </p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white border border-[#7BD4CF] rounded-lg p-8 flex flex-col items-center text-center h-full">
+        <img src="assets/services/icon-5.svg" alt="Tight Feedback Loop" class="w-12 h-12 mb-4" />
+        <p class="text-dark-gray2 font-normal text-sm 3xl:text-base leading-normal">
+          Tight feedback loop between engineering & manufacturing teams
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Overview Grid Section -->
+<section class="block px-4 sm:px-[6.3%] py-12 lg:py-16 3xl:py-20 bg-white">
+  <!-- Heading -->
+  <h2 class="text-center text-dark-gray2 text-3xl sm:text-4xl 3xl:text-5xl font-bold mb-8 3xl:mb-8">
+    Services
+  </h2>
+
+  <!-- Overview Grid -->
+  <div class="flex flex-wrap gap-6 lg:gap-8 max-w-[1560px] mx-auto">
+    <!-- Card 1: Engineering & Design -->
+    <div
+      class="bg-card-gray border border-light-gray1 rounded-lg p-4 lg:p-6 3xl:p-8 flex flex-col gap-6 lg:gap-8 h-auto lg:min-h-[376px] w-full flex-none lg:w-[calc(66%-1rem)] lg:flex-none 3xl:w-[1050px]">
+      <div class="flex flex-col gap-3">
+        <h3 class="text-lg lg:text-base 2xl:text-lg 3xl:text-2xl font-bold text-dark-gray2">Engineering & Design</h3>
+        <p class="text-[11px] 2xl:text-[12px] font-normal text-dark-gray2 leading-[150%] max-w-[414px] opacity-90">
+          With all engineering disciplines in-house—hardware, mechanical, thermal, and power—we deeply understand the
+          complexity and requirements of modern electronics. From concept to production, we design high-performance,
+          manufacturable solutions that meet the toughest industry challenges.
+        </p>
+      </div>
+      <div class="flex flex-col sm:flex-row sm:flex-wrap gap-[10px]">
+        <a *ngFor="let service of serviceCategories[0].services" [routerLink]="[service.link]"
+          [fragment]="service.fragment"
+          class="group relative inline-flex items-center justify-center bg-white border border-light-gray1 rounded-[4px] transition-all duration-300 cursor-pointer overflow-hidden py-2 px-1.5 text-[11px] lg:py-[10px] lg:px-2 lg:text-[12px] xl:py-[12px] xl:px-2 xl:text-[13px] 3xl:py-[14px] 3xl:px-2 3xl:text-[14px] hover:bg-teal2 hover:border-teal2 text-dark-gray2 font-medium">
+          <!-- Default Content (Icon + Text) -->
+          <div class="flex items-center gap-1 transition-opacity duration-300 group-hover:opacity-0">
+            <img *ngIf="service.icon" [src]="service.icon" class="w-4 h-4 lg:w-5 lg:h-5 3xl:w-6 3xl:h-6" alt="icon">
+            <span class="whitespace-nowrap">{{ service.name }}</span>
+          </div>
+          <!-- Hover Content (Arrow) -->
           <div
-            class="cursor-pointer h-32 3xl:h-40 bg-card-gray border border-light-gray1 group-hover:border-white rounded-lg relative transition-all duration-700 ease-in-out group">
-            <div
-              class="absolute inset-0 bg-lines1 bg-contain bg-no-repeat transition-opacity duration-700 ease-in-out group-hover:opacity-0">
-            </div>
-            <div
-              class="absolute inset-0 bg-white transition-opacity ease-in-out opacity-0 group-hover:opacity-100 z-0 border-white">
-            </div>
-            <p
-              class="absolute top-1/2 transform -translate-y-1/2 z-10 text-lg 3xl:text-2xl text-dark-gray1 group-hover:text-white font-semibold 3xl:font-bold px-6 3xl:px-8 group-hover:pr-16 3xl:leading-[33.6px] smooth-padding transition-all duration-700 ease-in-out">
-              {{ service.name }}
-            </p>
-            <div class="w-full h-full flex absolute overflow-x-scroll no-scrollbar">
-              <div
-                class="w-full group-hover:w-[84%] group-hover:bg-dark-gray1 rounded-lg transition-all duration-700 ease-in-out group-hover:overflow-hidden">
-                <div
-                  class="absolute inset-0 top-[56%] left-[20%] bg-lines2 bg-contain bg-no-repeat opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out">
-                </div>
-              </div>
-              <div class="w-3 3xl:w-4 relative group-hover:bg-white transition-all duration-700 ease-in-out"></div>
-              <div class="relative transition-all duration-700 ease-in-out">
-                <div
-                  class="w-[52px] sm:w-10 lg:w-9 2xl:w-[46px] 3xl:w-14 h-full bg-teal2 rounded-lg grid place-items-center absolute z-20">
-                  <img height="126" width="18px" loading="lazy" class="h-auto w-[18px] 3xl:w-[22px]" src="assets/icons/r-arrow.svg" alt="arrow-img">
-                </div>
-              </div>
-            </div>
+            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-6 lg:h-6 text-dark-gray2" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
           </div>
         </a>
       </div>
+    </div>
+
+    <!-- Card 2: NPI -->
+    <div
+      class="bg-card-gray border border-light-gray1 rounded-lg p-4 lg:p-6 3xl:p-8 flex flex-col gap-6 lg:gap-8 h-auto lg:min-h-[376px] w-full flex-none lg:w-[calc(34%-1rem)] lg:flex-none 3xl:w-[465px]">
+      <div class="flex flex-col gap-3">
+        <h3 class="text-lg lg:text-base 2xl:text-lg 3xl:text-2xl font-bold text-dark-gray2">NPI</h3>
+        <p class="text-[11px] 2xl:text-[12px] font-normal text-dark-gray2 leading-[150%] max-w-[414px] opacity-90"
+          [innerHTML]="serviceCategories[1].desc"></p>
+      </div>
+      <div class="flex flex-col sm:flex-row sm:flex-wrap gap-[10px]">
+        <a *ngFor="let service of serviceCategories[1].services" [routerLink]="[service.link]"
+          [fragment]="service.fragment"
+          class="group relative inline-flex items-center justify-center bg-white border border-light-gray1 rounded-[4px] transition-all duration-300 cursor-pointer overflow-hidden py-2 px-1.5 text-[11px] lg:py-[10px] lg:px-2 lg:text-[12px] xl:py-[12px] xl:px-2 xl:text-[13px] 3xl:py-[14px] 3xl:px-2 3xl:text-[14px] hover:bg-teal2 hover:border-teal2 text-dark-gray2 font-medium">
+          <!-- Default Content (Icon + Text) -->
+          <div class="flex items-center gap-1 transition-opacity duration-300 group-hover:opacity-0">
+            <img *ngIf="service.icon" [src]="service.icon" class="w-4 h-4 lg:w-5 lg:h-5 3xl:w-6 3xl:h-6" alt="icon">
+            <span class="whitespace-nowrap">{{ service.name }}</span>
+          </div>
+          <!-- Hover Content (Arrow) -->
+          <div
+            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-6 lg:h-6 text-dark-gray2" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 3: Lab Testing Solutions -->
+    <div
+      class="bg-card-gray border border-light-gray1 rounded-lg p-6 lg:p-8 flex flex-col gap-6 lg:gap-8 h-auto lg:min-h-[376px] w-full flex-none lg:w-[calc(37%-1rem)] lg:flex-none 3xl:w-[565px]">
+      <div class="flex flex-col gap-3">
+        <h3 class="text-lg lg:text-base 2xl:text-lg 3xl:text-2xl font-bold text-dark-gray2">Lab Testing Solutions</h3>
+        <p class="text-[11px] 2xl:text-[12px] font-normal text-dark-gray2 leading-[150%] max-w-[414px] opacity-90"
+          [innerHTML]="serviceCategories[2].desc"></p>
+      </div>
+      <div class="flex flex-col sm:flex-row sm:flex-wrap gap-[10px]">
+        <a *ngFor="let service of serviceCategories[2].services" [routerLink]="[service.link]"
+          [fragment]="service.fragment"
+          class="group relative inline-flex items-center justify-center bg-white border border-light-gray1 rounded-[4px] transition-all duration-300 cursor-pointer overflow-hidden py-2 px-1.5 text-[11px] lg:py-[10px] lg:px-2 lg:text-[12px] xl:py-[12px] xl:px-2 xl:text-[13px] 3xl:py-[14px] 3xl:px-2 3xl:text-[14px] hover:bg-teal2 hover:border-teal2 text-dark-gray2 font-medium">
+          <!-- Default Content (Icon + Text) -->
+          <div class="flex items-center gap-1 transition-opacity duration-300 group-hover:opacity-0">
+            <img *ngIf="service.icon" [src]="service.icon" class="w-4 h-4 lg:w-5 lg:h-5 3xl:w-6 3xl:h-6" alt="icon">
+            <span class="whitespace-nowrap">{{ service.name }}</span>
+          </div>
+          <!-- Hover Content (Arrow) -->
+          <div
+            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-6 lg:h-6 text-dark-gray2" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 4: Advanced Manufacturing -->
+    <div
+      class="bg-card-gray border border-light-gray1 rounded-lg p-6 lg:p-8 flex flex-col gap-6 lg:gap-8 h-auto lg:min-h-[376px] w-full flex-none lg:w-[calc(63%-1rem)] lg:flex-none 3xl:w-[945px]">
+      <div class="flex flex-col gap-3">
+        <h3 class="text-lg lg:text-base 2xl:text-lg 3xl:text-2xl font-bold text-dark-gray2">Advanced Manufacturing</h3>
+        <p class="text-[11px] 2xl:text-[12px] font-normal text-dark-gray2 leading-[150%] max-w-[414px] opacity-90"
+          [innerHTML]="serviceCategories[3].desc"></p>
+      </div>
+      <div class="flex flex-col sm:flex-row sm:flex-wrap gap-[10px]">
+        <a *ngFor="let service of serviceCategories[3].services" [routerLink]="[service.link]"
+          [fragment]="service.fragment"
+          class="group relative inline-flex items-center justify-center bg-white border border-light-gray1 rounded-[4px] transition-all duration-300 cursor-pointer overflow-hidden py-2 px-1.5 text-[11px] lg:py-[10px] lg:px-2 lg:text-[12px] xl:py-[12px] xl:px-2 xl:text-[13px] 3xl:py-[14px] 3xl:px-2 3xl:text-[14px] hover:bg-teal2 hover:border-teal2 text-dark-gray2 font-medium">
+          <!-- Default Content (Icon + Text) -->
+          <div class="flex items-center gap-1 transition-opacity duration-300 group-hover:opacity-0">
+            <img *ngIf="service.icon" [src]="service.icon" class="w-4 h-4 lg:w-5 lg:h-5 3xl:w-6 3xl:h-6" alt="icon">
+            <span class="whitespace-nowrap">{{ service.name }}</span>
+          </div>
+          <!-- Hover Content (Arrow) -->
+          <div
+            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-6 lg:h-6 text-dark-gray2" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 5: Sustaining Engineering -->
+    <div
+      class="bg-card-gray border border-light-gray1 rounded-lg p-6 lg:p-8 flex flex-col gap-6 lg:gap-8 h-auto lg:min-h-[376px] w-full flex-none lg:w-[calc(63%-1rem)] lg:flex-none 3xl:w-[945px]">
+      <div class="flex flex-col gap-3">
+        <h3 class="text-lg lg:text-base 2xl:text-lg 3xl:text-2xl font-bold text-dark-gray2">Sustaining Engineering &
+          Obsolescence Management</h3>
+        <p class="text-[11px] 2xl:text-[12px] font-normal text-dark-gray2 leading-[150%] max-w-[414px] opacity-90"
+          [innerHTML]="serviceCategories[4].desc"></p>
+      </div>
+      <div class="flex flex-col sm:flex-row sm:flex-wrap gap-[10px]">
+        <a *ngFor="let service of serviceCategories[4].services" [routerLink]="[service.link]"
+          [fragment]="service.fragment"
+          class="group relative inline-flex items-center justify-center bg-white border border-light-gray1 rounded-[4px] transition-all duration-300 cursor-pointer overflow-hidden py-2 px-1.5 text-[11px] lg:py-[10px] lg:px-2 lg:text-[12px] xl:py-[12px] xl:px-2 xl:text-[13px] 3xl:py-[14px] 3xl:px-2 3xl:text-[14px] hover:bg-teal2 hover:border-teal2 text-dark-gray2 font-medium">
+          <!-- Default Content (Icon + Text) -->
+          <div class="flex items-center gap-1 transition-opacity duration-300 group-hover:opacity-0">
+            <img *ngIf="service.icon" [src]="service.icon" class="w-4 h-4 lg:w-5 lg:h-5 3xl:w-6 3xl:h-6" alt="icon">
+            <span class="whitespace-nowrap">{{ service.name }}</span>
+          </div>
+          <!-- Hover Content (Arrow) -->
+          <div
+            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-6 lg:h-6 text-dark-gray2" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 6: Supply Chain -->
+    <div
+      class="bg-card-gray border border-light-gray1 rounded-lg p-6 lg:p-8 flex flex-col gap-6 lg:gap-8 h-auto lg:min-h-[376px] w-full flex-none lg:w-[calc(37%-1rem)] lg:flex-none 3xl:w-[565px]">
+      <div class="flex flex-col gap-3">
+        <h3 class="text-lg lg:text-base 2xl:text-lg 3xl:text-2xl font-bold text-dark-gray2">Supply Chain Management</h3>
+        <p class="text-[11px] 2xl:text-[12px] font-normal text-dark-gray2 leading-[150%] max-w-[414px] opacity-90"
+          [innerHTML]="serviceCategories[5].desc"></p>
+      </div>
+      <div class="flex flex-col sm:flex-row sm:flex-wrap gap-[10px]">
+        <a *ngFor="let service of serviceCategories[5].services" [routerLink]="[service.link]"
+          [fragment]="service.fragment"
+          class="group relative inline-flex items-center justify-center bg-white border border-light-gray1 rounded-[4px] transition-all duration-300 cursor-pointer overflow-hidden py-2 px-1.5 text-[11px] lg:py-[10px] lg:px-2 lg:text-[12px] xl:py-[12px] xl:px-2 xl:text-[13px] 3xl:py-[14px] 3xl:px-2 3xl:text-[14px] hover:bg-teal2 hover:border-teal2 text-dark-gray2 font-medium">
+          <!-- Default Content (Icon + Text) -->
+          <div class="flex items-center gap-1 transition-opacity duration-300 group-hover:opacity-0">
+            <img *ngIf="service.icon" [src]="service.icon" class="w-4 h-4 lg:w-5 lg:h-5 3xl:w-6 3xl:h-6" alt="icon">
+            <span class="whitespace-nowrap">{{ service.name }}</span>
+          </div>
+          <!-- Hover Content (Arrow) -->
+          <div
+            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-6 lg:h-6 text-dark-gray2" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="px-4 sm:px-[6.3%] py-12 lg:py-16 3xl:py-20 bg-white">
+  <div class="mx-auto">
+    <h2 class="text-center text-dark-gray2 text-3xl lg:text-[40px] 3xl:text-[48px] font-bold mb-10 lg:mb-16">
+      Frequently Asked Questions
+    </h2>
+
+    <div class="flex flex-col gap-4 mx-auto">
+      <div *ngFor="let faq of faqs; let i = index"
+        class="border border-light-gray1 rounded-xl overflow-hidden bg-card-gray">
+        <button (click)="toggleFaq(i)"
+          class="w-full flex items-center justify-between py-5 px-5 sm:py-6 sm:px-8 text-left transition-all hover:opacity-80 focus:outline-none">
+          <div class="flex flex-col gap-3 sm:gap-4">
+            <span class="text-[15px] sm:text-base lg:text-xl 3xl:text-2xl font-semibold text-dark-gray2">{{ faq.question
+              }}</span>
+            <p *ngIf="faq.isOpen" class="text-gray-600 text-sm 3xl:text-base pr-6 sm:pr-10 leading-relaxed">
+              {{ faq.answer }}
+            </p>
+          </div>
+          <!-- Circular Toggle Button -->
+          <div
+            class="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 3xl:w-11 3xl:h-11 rounded-full border border-light-gray1 bg-white flex items-center justify-center relative shadow-sm">
+            <span class="absolute w-3 sm:w-4 h-0.5 bg-teal1"></span>
+            <span class="absolute w-3 sm:w-4 h-0.5 bg-teal1 transition-transform duration-300"
+              [class.rotate-90]="!faq.isOpen"></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block px-0 sm:px-[6.3%] py-12 lg:py-16 3xl:py-20 bg-white">
+  <div class="relative p-6 sm:p-10 lg:p-12 3xl:p-16 sm:rounded-xl 3xl:rounded-2xl overflow-hidden">
+    <video class="absolute inset-0 w-full h-full object-cover z-0" loop muted autoplay oncanplay="this.play()"
+      onloadedmetadata="this.muted = true">
+      <source src="assets/hero/waves2.mp4" type="video/mp4">
+    </video>
+    <div class="absolute inset-0 bg-video-overlay opacity-80 z-[5]"></div>
+    <div class="relative z-10 w-full lg:w-[85%] 3xl:w-[70%] text-white">
+      <h2
+        class="text-3xl sm:text-4xl lg:text-5xl 2xl:text-[52px] 3xl:text-[64px] 2xl:leading-[60px] 3xl:leading-[76.8px] font-bold mb-4 3xl:mb-6">
+        Ready To Build Or Scale Your Hardware?
+      </h2>
+
+      <p class="text-base sm:text-lg lg:text-xl xl:text-[26px] 3xl:text-[32px] xl:leading-[38px] 3xl:leading-[48px] font-normal lg:font-medium mb-8 lg:mb-10 3xl:mb-12 max-w-full lg:max-w-[600px] xl:max-w-[700px] 3xl:max-w-[791px]"
+        style="font-family: 'Roboto', sans-serif; color: white;">
+        Whether you need a partner to manage your entire hardware development and manufacturing program - or specialized
+        support at a specific stage - Whizz Systems can engage at the level that fits your team.
+      </p>
+
+      <a href="https://webforms.pipedrive.com/f/6iCHNNECUuqORf9rWJgygfwg3GR0OuWejL9ZkdXTDfW1Z5Gu2Kc2odVMCTOHP8Ub4L"
+        target="_blank">
+        <app-button heading="Request Information" icon="assets/icons/webform.svg" size="large"></app-button>
+      </a>
     </div>
   </div>
 </section>
