@@ -8,68 +8,138 @@ export const routes: Routes = [
         path: '',
         loadComponent: () =>
           import('./services.component').then((m) => m.ServicesComponent),
-        title: 'Electronic Product Development Services | Whizz Solutions',
+        title:
+          'End-to-End Hardware Design & Manufacturing Services | Whizz Systems',
         data: {
           description:
-            'Whizz Systems delivers complete electronic product development services — from engineering & design to NPI, advanced manufacturing, lab testing, supply chain, and sustaining engineering.',
+            'Whizz Systems delivers end-to-end hardware development and manufacturing services including ASIC, FPGA, high-speed PCB design, NPI, advanced manufacturing, lab testing, and supply chain management.',
           schema: [
             {
               '@context': 'https://schema.org',
-              '@graph': [
+              '@type': 'Organization',
+              name: 'Whizz Systems',
+              url: 'https://www.whizzsystems.com',
+              logo: 'https://www.whizzsystems.com/assets/images/logo.png',
+              contactPoint: {
+                '@type': 'ContactPoint',
+                telephone: '+1-408-980-0400',
+                contactType: 'Sales',
+                areaServed: 'Global',
+                availableLanguage: 'English',
+              },
+              address: [
                 {
-                  '@type': 'Organization',
-                  name: 'Whizz Systems',
-                  url: 'https://www.whizzsystems.com/',
-                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                  sameAs: [
-                    'https://www.linkedin.com/company/whizz-systems/',
-                    'https://www.youtube.com/@WhizzSystemsCA',
-                  ],
+                  '@type': 'PostalAddress',
+                  streetAddress: '3240 Scott Blvd.',
+                  addressLocality: 'Santa Clara',
+                  addressRegion: 'CA',
+                  postalCode: '95051',
+                  addressCountry: 'US',
                 },
                 {
-                  '@type': 'BreadcrumbList',
-                  itemListElement: [
-                    {
-                      '@type': 'ListItem',
-                      position: 1,
-                      name: 'Home',
-                      item: 'https://www.whizzsystems.com/',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 2,
-                      name: 'Services',
-                      item: 'https://www.whizzsystems.com/services',
-                    },
-                  ],
+                  '@type': 'PostalAddress',
+                  streetAddress:
+                    'Lot 8, SMI Park Phase 2, Jalan Hi-Tech 4 Sambungan',
+                  addressLocality: 'Kulim',
+                  addressRegion: 'Kedah',
+                  postalCode: '09000',
+                  addressCountry: 'MY',
                 },
+              ],
+              sameAs: [
+                'https://www.linkedin.com/company/whizz-systems',
+                'https://www.youtube.com/',
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Service',
+              name: 'End-to-End Hardware Development and Manufacturing',
+              serviceType: 'Hardware Design and Manufacturing',
+              provider: {
+                '@type': 'Organization',
+                name: 'Whizz Systems',
+              },
+              areaServed: 'Global',
+              description:
+                'End-to-end hardware development including system architecture, ASIC design, FPGA development, high-speed PCB design, NPI, advanced manufacturing, lab testing, and supply chain management.',
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: [
                 {
-                  '@type': 'Service',
-                  name: 'Electronic Product Development Services',
-                  url: 'https://www.whizzsystems.com/services',
-                  description:
-                    'Whizz Systems provides complete electronic product development services including engineering, NPI, advanced manufacturing, lab testing, supply chain management, and sustaining engineering.',
-                  provider: {
-                    '@type': 'Organization',
-                    name: 'Whizz Systems',
-                    url: 'https://www.whizzsystems.com/',
+                  '@type': 'Question',
+                  name: 'Do you manufacture the hardware you design?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Yes. Whizz Systems provides in-house manufacturing in Santa Clara and high-volume production in Malaysia, ensuring seamless transition from design to production.',
                   },
-                  serviceType: [
-                    'Engineering & Design',
-                    'NPI',
-                    'Advanced Manufacturing',
-                    'Lab Testing Solutions',
-                    'Supply Chain Management',
-                    'Sustaining Engineering & Obsolescence Management',
-                  ],
-                  areaServed: {
-                    '@type': 'Place',
-                    name: 'Global',
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Where are your manufacturing facilities located?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'We operate facilities in Santa Clara, California and Kulim, Malaysia to support prototyping, NPI, and high-volume production.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Can you scale from prototype to volume production?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Yes. Our integrated design and manufacturing model supports scaling from prototype validation to global volume production.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Why is in-house manufacturing important?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'In-house manufacturing reduces risk, improves feedback between engineering and production teams, and ensures optimized yield, cost, and scalability.',
                   },
                 },
               ],
             },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://www.whizzsystems.com/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: 'Services',
+                  item: 'https://www.whizzsystems.com/services',
+                },
+              ],
+            },
           ],
+          keywords: `end-to-end hardware development, hardware design and manufacturing services, ASIC development, FPGA design services, high-speed PCB design, advanced manufacturing services, NPI services, electronic manufacturing assembly`,
+          og: {
+            type: 'website',
+            title:
+              'End-to-End Hardware Development & Manufacturing | Whizz Systems',
+            description:
+              'Integrated hardware design and manufacturing services — from system architecture and ASIC/FPGA design to advanced manufacturing and global production.',
+            url: 'https://www.whizzsystems.com/services',
+            image: 'https://www.whizzsystems.com/assets/images/services-og.jpg',
+            site_name: 'Whizz Systems',
+          },
+
+          twitter: {
+            card: 'summary_large_image',
+            title: 'End-to-End Hardware Design & Manufacturing Services',
+            description:
+              'Whizz Systems provides ASIC, FPGA, PCB design, NPI, manufacturing, lab testing, and supply chain management under one integrated model.',
+            image: 'https://www.whizzsystems.com/assets/images/services-og.jpg',
+          },
         },
       },
       {
@@ -163,7 +233,7 @@ export const routes: Routes = [
         path: 'advanced-manufacturing',
         loadComponent: () =>
           import('./advanced-manufacturing/adv-manufacturing.component').then(
-            (m) => m.AdvManufacturingComponent
+            (m) => m.AdvManufacturingComponent,
           ),
         title:
           'Advanced Electronic Manufacturing & Assembly Services | Whizz Systems',
@@ -237,9 +307,9 @@ export const routes: Routes = [
       {
         path: 'lab-testing-solutions',
         loadComponent: () =>
-          import(
-            './lab-testing-solutions/lab-testing-solutions.component'
-          ).then((m) => m.LabTestingSolutionsComponent),
+          import('./lab-testing-solutions/lab-testing-solutions.component').then(
+            (m) => m.LabTestingSolutionsComponent,
+          ),
         title:
           'Electronics Lab Testing Solutions | Component & Manufacturing Testing',
         data: {
@@ -305,9 +375,9 @@ export const routes: Routes = [
       {
         path: 'supply-chain-management',
         loadComponent: () =>
-          import(
-            './supply-chain-management/supply-chain-management.component'
-          ).then((m) => m.SupplyChainManagementComponent),
+          import('./supply-chain-management/supply-chain-management.component').then(
+            (m) => m.SupplyChainManagementComponent,
+          ),
         title: 'Electronics Supply Chain Management Solutions | Whizz Systems',
         data: {
           description: `Hi-tech supply chain management solutions for electronics, including early procurement, obsolescence management, inventory control, and global sourcing.`,
@@ -386,9 +456,9 @@ export const routes: Routes = [
       {
         path: 'sustainable-engineering',
         loadComponent: () =>
-          import(
-            './sustainable-engineering/sustainable-engineering.component'
-          ).then((m) => m.SustainableEngineeringComponent),
+          import('./sustainable-engineering/sustainable-engineering.component').then(
+            (m) => m.SustainableEngineeringComponent,
+          ),
         title:
           'Sustaining Engineering & Obsolescence Management | Whizz Systems',
         data: {
