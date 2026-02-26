@@ -64,7 +64,8 @@ export class AppComponent implements OnInit {
 
         const canonicalUrl = `${this.baseUrl}${event.urlAfterRedirects}`;
         this.setCanonicalTag(canonicalUrl);
-        this.setRobotsMetaTag('index, follow');
+        const robotsConfig = currentRoute.includes('careers') ? 'noindex, follow' : 'index, follow';
+        this.setRobotsMetaTag(robotsConfig);
 
         this.setMetaFromRoute(this.activatedRoute);
       });

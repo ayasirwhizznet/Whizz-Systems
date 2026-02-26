@@ -251,6 +251,12 @@ export const routes: Routes = [
       import('./pages/case-studies/routes').then((m) => m.routes),
   },
   {
+    path: 'careers/manufacturing-manager',
+    loadComponent: () =>
+      import('./pages/careers/careers.component').then((m) => m.CareersComponent),
+    title: 'Careers',
+  },
+  {
     path: '404',
     loadComponent: () =>
       import('./pages/error/404/404.component').then((m) => m.Page404Component),
