@@ -727,6 +727,126 @@
       "source": "/news-&-insights/amd-vpk180",
       "destination": "/case-studies/amd-vpk180",
       "permanent": true
+    },
+    {
+      "source": "/embedded-technology.html",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/fmc-loopback-card.html",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/usb3-micro-b-plug-adapter",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/jobs/",
+      "destination": "/careers/manufacturing-manager",
+      "permanent": true
+    },
+    {
+      "source": "/jobs",
+      "destination": "/careers/manufacturing-manager",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/solutions",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/services/engineering-design/pcb-layout-services",
+      "destination": "/services/engineering-design/pcb-layout",
+      "permanent": true
+    },
+    {
+      "source": "/fpgas-accelerate-hardware/",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/fpgas-accelerate-hardware",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/smart-lighting-automation/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/smart-lighting-automation",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/conflict-minerals-policy-statement/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/conflict-minerals-policy-statement",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/software-solution/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/software-solution",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/category/allnews/page/4/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/category/allnews/page/4",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/complete-box-build-ems-service/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/complete-box-build-ems-service",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/case_studies/broadband-wireless-technologies/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/case_studies/broadband-wireless-technologies",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-added-state-of-the-art-juki-ism500-intelligent-storage-system-in-house/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-added-state-of-the-art-juki-ism500-intelligent-storage-system-in-house",
+      "destination": "/news-&-insights",
+      "permanent": true
     }
   ]
 }

@@ -1,0 +1,214 @@
+PROJECT: Whizz Systems Website
+
+PURPOSE:
+Corporate marketing and lead generation platform focused on:
+- Organic search rankings
+- AI search visibility (AEO / GEO)
+- High conversion performance
+
+TECH STACK:
+- Angular (Standalone Components)
+- TypeScript
+- Tailwind CSS
+- Vercel
+
+ARCHITECTURE:
+- src/app/pages/: routes and page layouts
+- src/app/shared/components/: reusable UI components (header, footer, buttons)
+- src/assets/: static images, videos, and media local to the project
+- vercel.json: routing and SEO redirect management
+
+RENDERING:
+- SSR (Server-Side Rendering) for SEO optimization
+- Pre-rendering for static-like performance on marketing pages
+
+DEPLOYMENT:
+- Hosted on Vercel
+- Production branch: main
+
+==================================================
+SEO GLOBAL RULES
+==================================================
+
+METADATA (REQUIRED ON EVERY PAGE):
+- unique title (50–60 chars)
+- meta description (140–160 chars)
+- canonical URL
+- OpenGraph tags
+- Twitter tags
+
+HEADING STRUCTURE:
+- One H1 per page
+- Logical H2–H3 hierarchy
+- Keyword-aligned headings
+
+CONTENT:
+- Primary keyword in first 100 words
+- Semantic keyword usage
+- Minimum 800 words for ranking pages
+- Human-first, not keyword-stuffed
+
+INTERNAL LINKING:
+- Link to all major service pages
+- No orphan pages
+- Descriptive anchor text
+
+IMAGE SEO:
+- Use responsive sizing
+- Keyword-relevant alt text
+- WebP/AVIF format for optimized loading
+
+TECHNICAL SEO:
+- Dynamic sitemap.xml
+- Optimized robots.txt
+- Canonical handling
+- Clean URLs
+
+SCHEMA:
+- Organization
+- LocalBusiness
+- Service
+- Breadcrumb
+- FAQ
+- Article (for blogs)
+
+CORE WEB VITALS:
+- LCP < 2.5s
+- CLS < 0.1
+- INP < 200ms
+
+==================================================
+AEO (ANSWER ENGINE OPTIMIZATION)
+==================================================
+
+CONTENT FORMAT FOR AI ANSWERS:
+- Use clear question-based H2/H3 headings
+- Provide direct 40–60 word answers below each question
+- Use definition-style paragraphs
+- Use bullet lists for steps and benefits
+
+ENTITY CLARITY:
+- Clearly define:
+  - What Whizz Systems is
+  - Services
+  - Industry
+  - Location
+- Keep business information consistent across pages
+
+FAQ STRATEGY:
+- Add FAQ section to all major pages
+- Each FAQ must have:
+  - concise answer
+  - schema markup
+
+AUTHORSHIP & TRUST:
+- Show:
+  - company expertise
+  - years of experience
+  - real projects
+  - testimonials
+
+TOPICAL AUTHORITY:
+- Create content clusters:
+  - main service page
+  - supporting blog articles
+  - use case pages
+
+==================================================
+GEO (GENERATIVE ENGINE OPTIMIZATION)
+==================================================
+
+AI-READABLE CONTENT STRUCTURE:
+- Short clear paragraphs
+- Definition blocks
+- Service summaries
+- Use cases
+- Step-by-step processes
+
+CITABLE CONTENT:
+- Include statistics
+- Include original insights
+- Include process explanations
+
+CONTEXTUAL COMPLETENESS:
+Each service page must answer:
+- What is it?
+- Who needs it?
+- How does it work?
+- Why choose Whizz Systems?
+- What results can be expected?
+
+BRAND MENTIONS:
+- Use the brand name naturally in content
+- Maintain consistent service naming
+
+MULTI-INTENT COVERAGE:
+Pages must satisfy:
+- informational intent
+- commercial intent
+- transactional intent
+
+==================================================
+PERFORMANCE RULES
+==================================================
+
+- Use lazy loading for heavy modules
+- Lazy load below-the-fold sections
+- Optimize fonts for minimal layout shift
+- Avoid large client-side libraries
+
+==================================================
+CONVERSION OPTIMIZATION
+==================================================
+
+- Every page must include:
+  - primary CTA
+  - secondary CTA
+- Above-the-fold value proposition
+- Trust signals:
+  - clients
+  - certifications
+  - testimonials
+
+==================================================
+WHEN GENERATING NEW PAGES
+==================================================
+
+REQUIRED FLOW:
+1. Keyword-focused URL
+2. SEO metadata
+3. Structured content
+4. Internal links
+5. FAQ section
+6. Schema
+7. Strong CTA
+
+==================================================
+BLOG CONTENT RULES
+==================================================
+
+- Table of contents
+- Author section
+- Publish & updated date
+- FAQ schema
+- Related posts
+- 1200+ words for pillar content
+
+==================================================
+ANALYTICS
+==================================================
+
+- Keep GA4 / GTM scripts intact in app.component.ts
+- Track:
+  - form submissions
+  - CTA clicks
+  - phone/email clicks
+
+==================================================
+DO NOT
+==================================================
+
+- Create duplicate pages for the same keyword
+- Break component design system
+- Use inline CSS
+- Block important pages in robots.txt

@@ -29,6 +29,7 @@
               "src/assets",
               "src/robots.txt",
               "src/sitemap.xml",
+              "src/LLM.txt",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -96,6 +97,7 @@
               "src/assets",
               "src/robots.txt",
               "src/sitemap.xml",
+              "src/LLM.txt",
               {
                 "glob": "**/*",
                 "input": "public"
