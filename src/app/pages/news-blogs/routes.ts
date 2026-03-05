@@ -8,7 +8,7 @@ export const routes: Routes = [
         path: '',
         loadComponent: () =>
           import('./featured-blogs/blogs.component').then(
-            (m) => m.BlogsComponent
+            (m) => m.BlogsComponent,
           ),
         title:
           'Whizz Bytes: Hardware Design Insights, AI & Electronics Engineering News',
@@ -157,7 +157,7 @@ export const routes: Routes = [
         path: 'amd-vpk180',
         loadComponent: () =>
           import('../case-studies/amd-vpk180/amd-vpk180.component').then(
-            (m) => m.AmdVpk180Component
+            (m) => m.AmdVpk180Component,
           ),
         title:
           'AMD VPK180 Evaluation Board | Versal Premium Adaptive SoC | Whizz Systems',
@@ -432,7 +432,7 @@ export const routes: Routes = [
         path: 'whitepaper-heatsink',
         loadComponent: () =>
           import('./blogs/heatsink/heatsink.component').then(
-            (m) => m.HeatsinkComponent
+            (m) => m.HeatsinkComponent,
           ),
         title:
           'Heatsinks Guide | Heat Sink Design for PCB & Electronic Systems',
@@ -564,7 +564,7 @@ export const routes: Routes = [
         path: 'whitepaper-invensify',
         loadComponent: () =>
           import('./blogs/invensify/invensify.component').then(
-            (m) => m.InvensifyComponent
+            (m) => m.InvensifyComponent,
           ),
         title:
           'Medical Device Development | Invensify & Whizz Systems Whitepaper',
@@ -675,7 +675,7 @@ export const routes: Routes = [
         path: 'whitepaper-pcle6',
         loadComponent: () =>
           import('./blogs/pcle-6/pcle-6.component').then(
-            (m) => m.Pcle6Component
+            (m) => m.Pcle6Component,
           ),
         title:
           'PCIe Gen 6 Design Guide | Insights on Signal Integrity, Power & Layout',
@@ -812,7 +812,7 @@ export const routes: Routes = [
         path: 'hardware-design',
         loadComponent: () =>
           import('./blogs/hardware-design/hardware-design.component').then(
-            (m) => m.HardwareDesignComponent
+            (m) => m.HardwareDesignComponent,
           ),
         title:
           'NextGen Hardware Design for High-Density, High-Complexity AI Systems',
@@ -946,7 +946,7 @@ export const routes: Routes = [
         path: 'high-power-demand',
         loadComponent: () =>
           import('./blogs/high-power-demand/high-power-demand.component').then(
-            (m) => m.HighPowerDemandComponent
+            (m) => m.HighPowerDemandComponent,
           ),
         title:
           'High-Power Hardware Design & Power Delivery Networks | Whizz Systems',
@@ -1080,9 +1080,9 @@ export const routes: Routes = [
       {
         path: 'future-architecture-performance',
         loadComponent: () =>
-          import(
-            './blogs/future-proof-architecture/future-proof-architecture.component'
-          ).then((m) => m.FutureProofArchitectureComponent),
+          import('./blogs/future-proof-architecture/future-proof-architecture.component').then(
+            (m) => m.FutureProofArchitectureComponent,
+          ),
         title:
           'Future-Proof Hardware Architecture for Next-Generation AI Systems',
         data: {
@@ -1221,12 +1221,124 @@ export const routes: Routes = [
         path: 'high-throughput-interconnect-topologies',
         loadComponent: () =>
           import('./blogs/enhance-performance/enhance-performance.component').then(
-            (m) => m.EnhancePerformanceComponent
+            (m) => m.EnhancePerformanceComponent,
           ),
         data: {
-          title: 'Enhancing Performance with Innovative Interconnect Topologies and Custom Solutions',
-          description: 'Designing High-Efficiency Communication Architectures for AI, HPC & OCP',
-         
+          title:
+            'Advanced Interconnect Architecture for High-Throughput System Design | Whizz Systems',
+          description:
+            'Explore advanced interconnect architecture for high-throughput system design. Learn how folded torus topologies, signal integrity optimization, and OCP-compliant architectures enable low-latency AI and HPC systems.',
+          keywords:
+            'advanced interconnect architecture, high-throughput system design, folded torus topology, 2D torus interconnect, AI accelerator communication, OCP compliant hardware design, signal integrity in high-speed systems',
+          og: {
+            type: 'article',
+            title:
+              'Advanced Interconnect Architecture for High-Throughput System Design',
+            description:
+              'Discover how optimized interconnect architecture drives AI, HPC, and next-generation system performance with low latency and high data throughput.',
+            url: 'https://www.whizzsystems.com/news-&-insights/high-throughput-interconnect-topologies',
+            image:
+              'https://www.whizzsystems.com/assets/news/blogs/performance/hero.png',
+            site_name: 'Whizz Systems',
+          },
+
+          twitter: {
+            card: 'summary_large_image',
+            title: 'Advanced Interconnect Architecture for AI & HPC Systems',
+            description:
+              'Optimize high-throughput system design with folded torus topologies, signal integrity control, and scalable interconnect architectures.',
+            image:
+              'https://www.whizzsystems.com/assets/news/blogs/performance/hero.png',
+          },
+
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@type': 'TechArticle',
+              headline:
+                'Advanced Interconnect Architecture for High-Throughput System Design',
+              description:
+                'A deep technical guide on designing advanced interconnect architectures for AI, HPC, and high-density compute platforms.',
+              author: {
+                '@type': 'Organization',
+                name: 'Whizz Systems',
+              },
+              publisher: {
+                '@type': 'Organization',
+                name: 'Whizz Systems',
+                logo: {
+                  '@type': 'ImageObject',
+                  url: 'https://www.whizzsystems.com/assets/images/logo.png',
+                },
+              },
+              mainEntityOfPage:
+                'https://www.whizzsystems.com/news-&-insights/high-throughput-interconnect-topologies',
+              datePublished: '2026-01-15',
+              dateModified: '2026-01-15',
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://www.whizzsystems.com/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: 'News & Insights',
+                  item: 'https://www.whizzsystems.com/news-&-insights/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: 'Advanced Interconnect Architecture',
+                  item: 'https://www.whizzsystems.com/news-&-insights/high-throughput-interconnect-topologies',
+                },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: [
+                {
+                  '@type': 'Question',
+                  name: 'Why is interconnect architecture critical for AI and HPC systems?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Interconnect architecture determines latency, bandwidth, and data integrity between modules. Poor interconnect design creates bottlenecks even when compute silicon is fully optimized.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'What is a folded torus topology?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'A folded torus topology is a multi-path interconnect structure that reduces communication distance between modules, lowering latency and improving data throughput in high-density systems.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'How does OCP compliance affect interconnect design?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'OCP compliance introduces mechanical, electrical, and thermal constraints that require careful architectural balancing to maintain performance while ensuring ecosystem compatibility.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'How do you ensure signal integrity in high-speed interconnects?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Signal integrity is maintained through impedance-controlled routing, optimized grounding, trace length matching, material selection, and comprehensive SI validation.',
+                  },
+                },
+              ],
+            },
+          ],
         },
       },
     ],

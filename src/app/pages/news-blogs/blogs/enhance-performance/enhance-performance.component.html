@@ -1,530 +1,898 @@
 <!-- Hero -->
 <section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
-    <div class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl">
-        <div
-            class="w-full lg:w-[47%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16">
-            <p class="text-sm 3xl:text-base leading-[15px] 3xl:leading-[19.2px] mb-2 3xl:mb-[10px]">
-                March 2, 2026
-            </p>
-            <div class="flex items-center gap-2 flex-wrap mb-4 3xl:mb-6">
-                <div *ngFor="let tag of tags">
-                    <app-blog-tag text="{{ tag }}" textColor="text-light-gray1" borderColor="border-light-gray1"
-                        borderRadius="rounded-[3px] 3xl:rounded-[4px]" [fromBlog]="true"></app-blog-tag>
-                </div>
-            </div>
-            <h1
-                class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-[96%] sm:w-[57%] lg:w-full">
-                Enhancing Performance with Innovative Interconnect Topologies and Custom Solutions
-            </h1>
-            <p
-                class="text-base lg:text-sm 2xl:text-base 3xl:text-xl font-extralight lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8 sm:w-[70%] lg:w-full">
-                Designing High-Efficiency Communication Architectures for AI, HPC & OCP
-            </p>
-            <a href="https://webforms.pipedrive.com/f/5X8g8JGNLEfTh3VwXJvh0z0QVhSGR9clSH4DMESaVuKH1ijQWWcvMhKGlocQuVu9H5"
-                target="_blank"><app-button heading="Get Custom Solution" icon="assets/icons/webform.svg"
-                    size="small"></app-button></a>
-            <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
-                <a routerLink="/" class="cursor-pointer">
-                    <img height="48" width="48" class="h-auto w-full" loading="lazy" src="assets/icons/whizzicon.svg"
-                        alt="Whizz Systems" />
-                </a>
-                <a routerLink="/" class="cursor-pointer">
-                    <img height="16" width="109" class="h-auto w-full" loading="lazy" src="assets/icons/whizz.svg"
-                        alt="Whizz Systems" />
-                </a>
-                <a href="https://www.linkedin.com/company/whizz-systems/?viewAsMember=true" target="_blank"
-                    class="cursor-pointer">
-                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/icons/linkedin.svg"
-                        alt="Whizz Systems" />
-                </a>
-                <a href="https://www.youtube.com/@WhizzSystemsCA" target="_blank" class="cursor-pointer">
-                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/icons/youtube.svg"
-                        alt="Whizz Systems" />
-                </a>
-            </div>
+  <div
+    class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl"
+  >
+    <div
+      class="w-full lg:w-[47%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16"
+    >
+      <p
+        class="text-sm 3xl:text-base leading-[15px] 3xl:leading-[19.2px] mb-2 3xl:mb-[10px]"
+      >
+        March 2, 2026
+      </p>
+      <div class="flex items-center gap-2 flex-wrap mb-4 3xl:mb-6">
+        <div *ngFor="let tag of tags">
+          <app-blog-tag
+            text="{{ tag }}"
+            textColor="text-light-gray1"
+            borderColor="border-light-gray1"
+            borderRadius="rounded-[3px] 3xl:rounded-[4px]"
+            [fromBlog]="true"
+          ></app-blog-tag>
         </div>
-        <div class="hidden lg:block lg:w-[53%]">
-            <img height="587" width="682" loading="lazy" class="h-auto w-full object-cover"
-                src="assets/news/blogs/performance/hero.png"
-                alt="Building the Future of 5G Connectivity with Open Radio Unit Solutions" />
-        </div>
+      </div>
+      <h1
+        class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-[96%] sm:w-[57%] lg:w-full"
+      >
+        Enhancing Performance with Innovative Interconnect Topologies and Custom
+        Solutions
+      </h1>
+      <p
+        class="text-base lg:text-sm 2xl:text-base 3xl:text-xl font-extralight lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8 sm:w-[70%] lg:w-full"
+      >
+        Designing High-Efficiency Communication Architectures for AI, HPC & OCP
+      </p>
+      <a
+        href="https://webforms.pipedrive.com/f/5VLgpgwTn7XsJBOWpFjG6zsBF7EzMhsNPlwaiVaeo1DvumJERCCDUmE5GrVOwFasfx"
+        target="_blank"
+        ><app-button
+          heading="Get Custom Solution"
+          icon="assets/icons/webform.svg"
+          size="small"
+        ></app-button
+      ></a>
+      <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
+        <a routerLink="/" class="cursor-pointer">
+          <img
+            height="48"
+            width="48"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/icons/whizzicon.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+        <a routerLink="/" class="cursor-pointer">
+          <img
+            height="16"
+            width="109"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/icons/whizz.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/whizz-systems/?viewAsMember=true"
+          target="_blank"
+          class="cursor-pointer"
+        >
+          <img
+            height="24"
+            width="24"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/icons/linkedin.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/@WhizzSystemsCA"
+          target="_blank"
+          class="cursor-pointer"
+        >
+          <img
+            height="24"
+            width="24"
+            class="h-auto w-full"
+            loading="lazy"
+            src="assets/icons/youtube.svg"
+            alt="Whizz Systems"
+          />
+        </a>
+      </div>
     </div>
+    <div class="hidden lg:block lg:w-[53%]">
+      <img
+        height="587"
+        width="682"
+        loading="lazy"
+        class="h-auto w-full object-cover"
+        src="assets/news/blogs/performance/hero.png"
+        alt="Building the Future of 5G Connectivity with Open Radio Unit Solutions"
+      />
+    </div>
+  </div>
 </section>
 
 <!-- Main Content -->
 <section class="px-[4%] sm:pr-0 sm:pl-[6.3%] py-6 3xl:py-8">
-    <div class="w-full flex justify-between gap-1 sm:gap-16">
-        <!-- left div -->
-        <div class="hidden lg:block lg:w-[23%] 2xl:w-[19%] 3xl:w-[22%] mt-12">
-            <div
-                class="p-6 3xl:p-8 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray lg:sticky lg:top-28 3xl:top-36">
-                <h3
-                    class="text-teal1 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] mb-6 3xl:mb-8">
-                    In This Article
-                </h3>
-                <ul>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section1')"
-                            [ngClass]="isActive('section1') ? 'text-teal1' : ''">Advanced Interconnect Architecture for
-                            High-Throughput System Design</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section2')"
-                            [ngClass]="isActive('section2') ? 'text-teal1' : ''">Why Interconnect Architecture Is Now a
-                            System-Level Performance Driver?</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section3')"
-                            [ngClass]="isActive('section3') ? 'text-teal1' : ''">Whizz Systems’ Approach:
-                            Architecture-Driven Interconnect Design</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section4')"
-                            [ngClass]="isActive('section4') ? 'text-teal1' : ''">Precision-Driven Design for Seamless
-                            High-Speed Communication</a>
-                    </li>
-                    <!-- Sub items -->
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal italic leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section5')"
-                            [ngClass]="isActive('section5') ? 'text-teal1' : ''">1. Advanced Interconnect Topologies</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal italic leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section6')"
-                            [ngClass]="isActive('section6') ? 'text-teal1' : ''">2. Balancing Innovation with
-                            Compliance</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal italic leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section7')"
-                            [ngClass]="isActive('section7') ? 'text-teal1' : ''">3. Signal Integrity and Noise
-                            Reduction</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal italic leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section8')"
-                            [ngClass]="isActive('section8') ? 'text-teal1' : ''">4. Scalable Solutions for Future
-                            Adaptability</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section9')"
-                            [ngClass]="isActive('section9') ? 'text-teal1' : ''">Critical Factors in Designing
-                            High-Performance Interconnect Systems</a>
-                    </li>
-                    <!-- Sub items for section 9 -->
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section10')"
-                            [ngClass]="isActive('section10') ? 'text-teal1' : ''">Choosing the Right Interconnect
-                            Topology</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section11')"
-                            [ngClass]="isActive('section11') ? 'text-teal1' : ''">Compliance vs. Customization</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section12')"
-                            [ngClass]="isActive('section12') ? 'text-teal1' : ''">Future-Proofing and Scalability</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section13')"
-                            [ngClass]="isActive('section13') ? 'text-teal1' : ''">Ensuring Reliable Communication</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section14')"
-                            [ngClass]="isActive('section14') ? 'text-teal1' : ''">Power and Thermal Management</a>
-                    </li>
+  <div class="w-full flex justify-between gap-1 sm:gap-16">
+    <!-- left div -->
+    <div class="hidden lg:block lg:w-[23%] 2xl:w-[19%] 3xl:w-[22%] mt-12">
+      <div
+        class="p-6 3xl:p-8 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray lg:sticky lg:top-28 3xl:top-36"
+      >
+        <h3
+          class="text-teal1 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] mb-6 3xl:mb-8"
+        >
+          In This Article
+        </h3>
+        <ul>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section1')"
+              [ngClass]="isActive('section1') ? 'text-teal1' : ''"
+              >Advanced Interconnect Architecture for High-Throughput System
+              Design</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section2')"
+              [ngClass]="isActive('section2') ? 'text-teal1' : ''"
+              >Why Interconnect Architecture Is Now a System-Level Performance
+              Driver?</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section3')"
+              [ngClass]="isActive('section3') ? 'text-teal1' : ''"
+              >Whizz Systems’ Approach: Architecture-Driven Interconnect
+              Design</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section4')"
+              [ngClass]="isActive('section4') ? 'text-teal1' : ''"
+              >Precision-Driven Design for Seamless High-Speed Communication</a
+            >
+          </li>
+          <!-- Sub items -->
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-normal italic leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section5')"
+              [ngClass]="isActive('section5') ? 'text-teal1' : ''"
+              >1. Advanced Interconnect Topologies</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-normal italic leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section6')"
+              [ngClass]="isActive('section6') ? 'text-teal1' : ''"
+              >2. Balancing Innovation with Compliance</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-normal italic leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section7')"
+              [ngClass]="isActive('section7') ? 'text-teal1' : ''"
+              >3. Signal Integrity and Noise Reduction</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-normal italic leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section8')"
+              [ngClass]="isActive('section8') ? 'text-teal1' : ''"
+              >4. Scalable Solutions for Future Adaptability</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section9')"
+              [ngClass]="isActive('section9') ? 'text-teal1' : ''"
+              >Critical Factors in Designing High-Performance Interconnect
+              Systems</a
+            >
+          </li>
+          <!-- Sub items for section 9 -->
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section10')"
+              [ngClass]="isActive('section10') ? 'text-teal1' : ''"
+              >Choosing the Right Interconnect Topology</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section11')"
+              [ngClass]="isActive('section11') ? 'text-teal1' : ''"
+              >Compliance vs. Customization</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section12')"
+              [ngClass]="isActive('section12') ? 'text-teal1' : ''"
+              >Future-Proofing and Scalability</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section13')"
+              [ngClass]="isActive('section13') ? 'text-teal1' : ''"
+              >Ensuring Reliable Communication</a
+            >
+          </li>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section14')"
+              [ngClass]="isActive('section14') ? 'text-teal1' : ''"
+              >Power and Thermal Management</a
+            >
+          </li>
 
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-0 cursor-pointer">
-                        <a (click)="scrollToCategory('section16')"
-                            [ngClass]="isActive('section16') ? 'text-teal1' : ''">Partnering with Experts</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- center div -->
-        <div class="flex flex-col sm:w-4/5 lg:w-[55%] 2xl:w-[53%] 3xl:w-[47%]">
-            <section id="section1" class="mb-6 3xl:mb-8">
-                <h2
-                    class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-3 3xl:mb-4">
-                    Advanced Interconnect Architecture for High-Throughput System Design
-                </h2>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    As AI accelerators grow more powerful and compute density increases, the real system
-                    bottleneck is no longer just processing power, it's communication.
-                </p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Next-generation AI, high-performance computing (HPC), and data
-                    infrastructure platforms demand ultra-fast, low-latency communication
-                    between modules. When interconnect architecture is not optimized,
-                    systems experience hidden performance losses, increased latency, signal
-                    integrity degradation, and scalability limitations.
-                </p>
-
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    In high-density platforms, inefficient interconnect design can silently
-                    reduce system-level performance, even when silicon and firmware are
-                    fully optimized.
-                </p>
-
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    At Whizz Systems, we design innovative interconnect architectures,
-                    including sophisticated folded torus topologies, to optimize data flow
-                    and throughput. Our expertise enables every module within a system to
-                    communicate efficiently, minimizing latency while maintaining peak
-                    performance.
-                </p>
-
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Beyond raw performance, we focus on compliance with industry standards,
-                    such as the Open Compute Project (OCP), delivering solutions that are
-                    both high-performing and standards-compliant. Whether developing
-                    standardized architectures or fully customized interconnect systems,
-                    Whizz Systems combines precision engineering with creative design to
-                    meet the demands of next-generation hardware.
-                </p>
-                <figure class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
-                    <img loading="lazy" height="500" width="800"
-                        class="w-full h-auto object-cover rounded-xl 3xl:rounded-2xl"
-                        src="assets/news/blogs/performance/pic-1.png"
-                        alt="Advanced Interconnect Architecture for High-Throughput System Design" />
-                </figure>
-            </section>
-            <section id="section2" class="py-6 3xl:py-8">
-                <h2
-                    class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
-                    Why Interconnect Architecture Is Now a System-Level Performance Driver?
-                </h2>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    In NextGen hardware systems, efficient inter-module communication presents a complex engineering
-                    challenge.
-                </p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    High-density architectures require interconnect topologies capable of managing data flow effectively
-                    across multiple modules without introducing:
-                </p>
-                <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Latency
-                        accumulation</li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Signal integrity
-                        degradation</li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Crosstalk and
-                        EMI interference</li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Routing
-                        congestion</li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Electrical
-                        instability under high load</li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Spatial
-                        constraints within limited chassis volumes</li>
-                </ul>
-
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Traditional linear or bus-based configurations often struggle to deliver the bandwidth and latency
-                    requirements necessary for AI accelerators and high-performance data platforms. As systems scale in
-                    complexity, these architectures can create data bottlenecks that limit overall system performance.
-                </p>
-
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Advanced interconnect topologies, such as 2D folded torus structures, mitigate these issues by
-                    establishing multiple communication pathways between modules. However, implementing these topologies
-                    requires sophisticated routing strategies, impedance control, trace length management, and
-                    comprehensive signal integrity validation.
-                </p>
-
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    At the same time, high-performance designs must often comply with industry standards such as OCP.
-                    These standards promote interoperability and ecosystem compatibility but introduce strict
-                    mechanical, electrical, and thermal constraints that can limit design flexibility.
-                </p>
-
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Balancing architectural innovation with compliance and manufacturability requires deep system-level
-                    expertise.
-                </p>
-                <figure class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
-                    <img loading="lazy" height="500" width="800"
-                        class="w-full h-auto object-cover rounded-xl 3xl:rounded-2xl"
-                        src="assets/news/blogs/performance/pic-2.png"
-                        alt="Why Interconnect Architecture Is Now a System-Level Performance Driver?" />
-                </figure>
-            </section>
-            <section id="section3" class="py-6 3xl:py-8">
-                <h2
-                    class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
-                    Whizz Systems’ Approach: Architecture-Driven Interconnect Design
-                </h2>
-                <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4" id="section4">
-                    Precision-Driven Design for Seamless High-Speed Communication
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Whizz Systems leverages advanced interconnect topologies and balanced compliance strategies to
-                    deliver solutions that support high data throughput and minimize latency. Our approach focuses on
-                    precision in design, ensuring that every hardware element contributes to seamless communication and
-                    consistent performance.
-                </p>
-
-                <h3 id="section5" class="text-teal1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    1. Advanced Interconnect Topologies
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Our strength lies in developing complex topologies that meet the high data requirements of NextGen
-                    systems. For example, our expertise in 2D folded torus structures allows multiple data pathways,
-                    optimizing information flow across modules. By connecting each module through a folded structure,
-                    the system benefits from shorter data paths and reduced communication delays, translating to lower
-                    latency and higher efficiency.
-                </p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    We enhance data fidelity through advanced signal integrity techniques and fail-safe measures,
-                    ensuring inter-module communication remains stable even under high processing loads.
-                </p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    In a recent high-performance AI project, we employed a folded torus topology to connect multiple
-                    accelerator modules. This minimized latency while optimizing data transfer speeds, resulting in a
-                    system capable of handling large data volumes with minimal delay.
-                </p>
-
-                <h3 id="section6" class="text-teal1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    2. Balancing Innovation with Compliance
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    A significant part of our approach lies in balancing innovative designs with adherence to
-                    established standards. For clients requiring compliance with OCP guidelines, we tailor our solutions
-                    to meet these strict requirements while maintaining high performance.
-                </p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Our familiarity with OCP standards ensures seamless integration with other OCP-compliant systems.
-                </p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    When compliance isn't required, we create fully customized interconnect solutions tailored to unique
-                    client needs. For example, in a custom project for a specialized data-processing application, we
-                    developed a proprietary interconnect system optimized for high throughput and minimal noise.
-                </p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    By designing the solution from the ground up, we met the client's unique requirements without
-                    sacrificing performance. This dual approach, innovating within and outside of standard guidelines,
-                    allows us to meet a wide range of project needs while maintaining Whizz's commitment to performance
-                    excellence.
-                </p>
-
-                <h3 id="section7" class="text-teal1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    3. Signal Integrity and Noise Reduction
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    At Whizz, we prioritize signal integrity in high-performance interconnects, essential for
-                    high-density systems.
-                </p>
-                <h4 class="text-dark-gray1 text-lg 3xl:text-xl font-bold my-2 3xl:my-3">
-                    Ensuring Reliable Communication in Dense Systems
-                </h4>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Our design process emphasizes noise management and data fidelity through techniques like
-                    impedance-controlled routing, optimized grounding, and precision trace placement. High-quality
-                    materials further enhance signal clarity, minimizing EMI and crosstalk.
-                </p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    In a recent AI accelerator project, these techniques allowed us to maintain high data fidelity and
-                    low noise, delivering a stable, high-performance solution despite the system's dense design.
-                </p>
-
-                <h3 id="section8" class="text-teal1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    4. Scalable Solutions for Future Adaptability
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Beyond meeting immediate requirements, Whizz Systems designs scalable interconnect solutions capable
-                    of supporting future upgrades. Our topologies are crafted with adaptability in mind, allowing
-                    clients to expand their systems as their processing needs grow.
-                </p>
-                <h4 class="text-dark-gray1 text-lg 3xl:text-xl font-bold my-2 3xl:my-3">
-                    Designing Interconnects That Grow With Your System
-                </h4>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    We include configurations that allow for future inter-module expansions, helping clients stay ahead
-                    in a constantly evolving industry. This forward-thinking approach extends the life of each design,
-                    reducing the need for extensive overhauls and making future adaptation more efficient.
-                </p>
-                <figure class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
-                    <img loading="lazy" height="400" width="800" class="w-full h-auto object-cover"
-                        src="assets/news/blogs/performance/pic-3.png" alt="Certifications" />
-                </figure>
-                <section class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
-                    <div
-                        class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <h3
-                                    class="text-dark-gray1 text-xl lg:text-[28px] 3xl:text-[32px] font-semibold 3xl:font-bold my-3 3xl:my-4">
-                                    Subscribe to Our Newsletter for Design Insights
-                                </h3>
-                                <p
-                                    class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[15px] 3xl:leading-[19.2px]">
-                                    Get updates on the latest news & insights
-                                </p>
-                            </div>
-                            <a href="https://webforms.pipedrive.com/f/6UT1JKLeb6G1xtMMTPA4HRcQsTZefgpvRq9cSzG1TincmHlD6Wvfh3YCmSXUO7VklB"
-                                target="_blank"><app-animated-button heading="Subscribe" size="medium" [icon]="false"
-                                    bg="white"></app-animated-button></a>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <section id="section9" class="py-6 3xl:py-8">
-                <h2
-                    class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-3 3xl:mb-4">
-                    Critical Factors in Designing High-Performance Interconnect Systems
-                </h2>
-
-                <h3 id="section10" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    Choosing the Right Interconnect Topology
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Customers should prioritize selecting an interconnect architecture that minimizes latency and
-                    maximizes data throughput. Advanced designs, such as folded torus architectures, provide efficient
-                    communication across modules while optimizing overall system performance.
-                </p>
-
-                <h3 id="section11" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    Compliance vs. Customization
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    It's important to determine whether the system must align with industry standards, such as the Open
-                    Compute Project (OCP), or if a fully customized solution is more suitable. Evaluate the trade-offs
-                    between off-the-shelf and tailored approaches to ensure both immediate functionality and long-term
-                    adaptability.
-                </p>
-
-                <h3 id="section12" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    Future-Proofing and Scalability
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Future-proofing is vital for high-performance systems. Customers should focus on modular, scalable
-                    architectures that allow for:
-                </p>
-                <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Seamless
-                        integration of additional components</li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Adaptability as
-                        processing needs evolve</li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Compatibility
-                        with future technological advancements</li>
-                </ul>
-
-                <h3 id="section13" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    Ensuring Reliable Communication
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    High-speed interconnect systems must manage noise and crosstalk to maintain data fidelity. This
-                    involves:
-                </p>
-                <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Implementing
-                        robust communication between accelerators and modules</li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Using advanced
-                        routing and error-correction techniques</li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Optimizing data
-                        flow while minimizing latency</li>
-                </ul>
-
-                <h3 id="section14" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    Power and Thermal Management
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Efficient power distribution and effective thermal management are critical for system reliability.
-                    Customers should select solutions that prevent hotspots and maintain stable performance during high
-                    workloads.
-                </p>
-            </section>
-            <section id="section16" class="mb-6 3xl:mb-8">
-                <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold">
-                    Partner with Whizz Systems to Innovate Interconnect Topologies and Enhance Performance
-                </h2>
-                <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    Design Smarter. Perform Stronger with Proven PDN Expertise.
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Building next-generation AI hardware that demands high-current, high-reliability power delivery?
-                </p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    At <span class="font-bold">Whizz Systems</span>, we deliver architecture-driven solutions that unify
-                    PDN engineering, advanced interconnect design, thermal strategy, and compliance expertise, ensuring
-                    your hardware performs reliably under real-world conditions.
-                </p>
-                <h4 class="text-dark-gray1 text-lg 3xl:text-xl font-bold my-2 3xl:my-3">
-                    Let's Talk. Discover How We Can:
-                </h4>
-                <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Optimize your
-                        next board for high-throughput system performance</li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Solve complex
-                        power delivery and high-current distribution challenges</li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Improve signal
-                        integrity and minimize EMI in dense designs</li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Align with OCP
-                        and industry compliance requirements</li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Hit performance,
-                        thermal, and reliability targets faster</li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">Design scalable
-                        architectures ready for future expansion</li>
-                </ul>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] font-medium">
-                    Build smarter. Perform stronger. Get custom solutions today.
-                </p>
-            </section>
-        </div>
-
-        <!-- right div -->
-        <section class="sm:ml-auto mb-56 mt-96">
-            <div class="flex flex-col justify-center items-center space-y-3 3xl:space-y-4 sticky top-96">
-                <p class="text-light-gray2 text-[10px] 3xl:text-xs font-semibold 3xl:font-bold">
-                    SHARE
-                </p>
-                <a (click)="shareOnLinkedIn()" class="cursor-pointer"><svg height="20" width="20"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path
-                            d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
-                    </svg></a>
-                <a (click)="shareOnTwitter()" class="cursor-pointer"><svg height="20" width="20"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path
-                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
-                    </svg></a>
-            </div>
-        </section>
+          <li
+            class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-0 cursor-pointer"
+          >
+            <a
+              (click)="scrollToCategory('section16')"
+              [ngClass]="isActive('section16') ? 'text-teal1' : ''"
+              >Partnering with Experts</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
+    <!-- center div -->
+    <div class="flex flex-col sm:w-4/5 lg:w-[55%] 2xl:w-[53%] 3xl:w-[47%]">
+      <section id="section1" class="mb-6 3xl:mb-8">
+        <h1
+          class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-3 3xl:mb-4"
+        >
+          Advanced Interconnect Architecture for High-Throughput System Design
+        </h1>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          As AI accelerators grow more powerful and compute density increases,
+          the real system bottleneck is no longer just processing power, it's
+          communication.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Next-generation AI, high-performance computing (HPC), and data
+          infrastructure platforms demand ultra-fast, low-latency communication
+          between modules. When interconnect architecture is not optimized,
+          systems experience hidden performance losses, increased latency,
+          signal integrity degradation, and scalability limitations.
+        </p>
+
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          In high-density platforms, inefficient interconnect design can
+          silently reduce system-level performance, even when silicon and
+          firmware are fully optimized.
+        </p>
+
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          At
+          <a href="https://www.whizzsystems.com/" class="text-teal1">
+            Whizz Systems
+          </a>
+          , we design innovative interconnect architectures, including
+          sophisticated folded torus topologies, to optimize data flow and
+          throughput. Our expertise enables every module within a system to
+          communicate efficiently, minimizing latency while maintaining peak
+          performance.
+        </p>
+
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Beyond raw performance, we focus on compliance with industry
+          standards, such as the Open Compute Project (OCP), delivering
+          solutions that are both high-performing and standards-compliant.
+          Whether developing standardized architectures or fully customized
+          interconnect systems, Whizz Systems combines precision engineering
+          with creative design to meet the demands of next-generation hardware.
+        </p>
+        <figure class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
+          <img
+            loading="lazy"
+            height="500"
+            width="800"
+            class="w-full h-auto object-cover rounded-xl 3xl:rounded-2xl"
+            src="assets/news/blogs/performance/pic-1.png"
+            alt="high throughput system design"
+          />
+        </figure>
+      </section>
+      <section id="section2" class="py-6 3xl:py-8">
+        <h2
+          class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-6 3xl:mb-8"
+        >
+          Why Interconnect Architecture Is Now a System-Level Performance
+          Driver?
+        </h2>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          In NextGen hardware systems, efficient inter-module communication
+          presents a complex engineering challenge.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          High-density architectures require interconnect topologies capable of
+          managing data flow effectively across multiple modules without
+          introducing:
+        </p>
+        <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Latency accumulation
+          </li>
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Signal integrity degradation
+          </li>
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Crosstalk and EMI interference
+          </li>
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Routing congestion
+          </li>
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Electrical instability under high load
+          </li>
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Spatial constraints within limited chassis volumes
+          </li>
+        </ul>
+
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Traditional linear or bus-based configurations often struggle to
+          deliver the bandwidth and latency requirements necessary for AI
+          accelerators and high-performance data platforms. As systems scale in
+          complexity, these architectures can create data bottlenecks that limit
+          overall system performance.
+        </p>
+
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Advanced interconnect topologies, such as 2D folded torus structures,
+          mitigate these issues by establishing multiple communication pathways
+          between modules. However, implementing these topologies requires
+          sophisticated routing strategies, impedance control, trace length
+          management, and comprehensive signal integrity validation.
+        </p>
+
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          At the same time, high-performance designs must often comply with
+          industry standards such as OCP. These standards promote
+          interoperability and ecosystem compatibility but introduce strict
+          mechanical, electrical, and thermal constraints that can limit design
+          flexibility.
+        </p>
+
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Balancing architectural innovation with compliance and
+          manufacturability requires deep system-level expertise.
+        </p>
+        <figure class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
+          <img
+            loading="lazy"
+            height="500"
+            width="800"
+            class="w-full h-auto object-cover rounded-xl 3xl:rounded-2xl"
+            src="assets/news/blogs/performance/pic-2.png"
+            alt="advance interconnect topologies"
+          />
+        </figure>
+      </section>
+      <section id="section3" class="py-6 3xl:py-8">
+        <h2
+          class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-6 3xl:mb-8"
+        >
+          Whizz Systems’ Approach: Architecture-Driven Interconnect Design
+        </h2>
+        <h3
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4"
+          id="section4"
+        >
+          Precision-Driven Design for Seamless High-Speed Communication
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Whizz Systems leverages advanced interconnect topologies and balanced
+          compliance strategies to deliver solutions that support high data
+          throughput and minimize latency. Our approach focuses on precision in
+          design, ensuring that every hardware element contributes to seamless
+          communication and consistent performance.
+        </p>
+
+        <h4
+          id="section5"
+          class="text-teal1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4"
+        >
+          1. Advanced Interconnect Topologies
+        </h4>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Our strength lies in developing complex topologies that meet the high
+          data requirements of NextGen systems. For example, our expertise in 2D
+          folded torus structures allows multiple data pathways, optimizing
+          information flow across modules. By connecting each module through a
+          folded structure, the system benefits from shorter data paths and
+          reduced communication delays, translating to lower latency and higher
+          efficiency.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          We enhance data fidelity through advanced signal integrity techniques
+          and fail-safe measures, ensuring inter-module communication remains
+          stable even under high processing loads.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          In a recent high-performance AI project, we employed a folded torus
+          topology to connect multiple accelerator modules. This minimized
+          latency while optimizing data transfer speeds, resulting in a system
+          capable of handling large data volumes with minimal delay.
+        </p>
+
+        <h4
+          id="section6"
+          class="text-teal1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4"
+        >
+          2. Balancing Innovation with Compliance
+        </h4>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          A significant part of our approach lies in balancing innovative
+          designs with adherence to established standards. For clients requiring
+          compliance with OCP guidelines, we tailor our solutions to meet these
+          strict requirements while maintaining high performance.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Our familiarity with OCP standards ensures seamless integration with
+          other OCP-compliant systems.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          When compliance isn't required, we create fully customized
+          interconnect solutions tailored to unique client needs. For example,
+          in a custom project for a specialized data-processing application, we
+          developed a proprietary interconnect system optimized for high
+          throughput and minimal noise.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          By designing the solution from the ground up, we met the client's
+          unique requirements without sacrificing performance. This dual
+          approach, innovating within and outside of standard guidelines, allows
+          us to meet a wide range of project needs while maintaining Whizz's
+          commitment to performance excellence.
+        </p>
+
+        <h4
+          id="section7"
+          class="text-teal1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4"
+        >
+          3. Signal Integrity and Noise Reduction
+        </h4>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          At Whizz, we prioritize signal integrity in high-performance
+          interconnects, essential for high-density systems.
+        </p>
+        <h4 class="text-dark-gray1 text-lg 3xl:text-xl font-bold my-2 3xl:my-3">
+          Ensuring Reliable Communication in Dense Systems
+        </h4>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Our design process emphasizes noise management and data fidelity
+          through techniques like impedance-controlled routing, optimized
+          grounding, and precision trace placement. High-quality materials
+          further enhance signal clarity, minimizing EMI and crosstalk.
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          In a recent AI accelerator project, these techniques allowed us to
+          maintain high data fidelity and low noise, delivering a stable,
+          high-performance solution despite the system's dense design.
+        </p>
+
+        <h4
+          id="section8"
+          class="text-teal1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4"
+        >
+          4. Scalable Solutions for Future Adaptability
+        </h4>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Beyond meeting immediate requirements, Whizz Systems designs scalable
+          interconnect solutions capable of supporting future upgrades. Our
+          topologies are crafted with adaptability in mind, allowing clients to
+          expand their systems as their processing needs grow.
+        </p>
+        <h4 class="text-dark-gray1 text-lg 3xl:text-xl font-bold my-2 3xl:my-3">
+          Designing Interconnects That Grow With Your System
+        </h4>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          We include configurations that allow for future inter-module
+          expansions, helping clients stay ahead in a constantly evolving
+          industry. This forward-thinking approach extends the life of each
+          design, reducing the need for extensive overhauls and making future
+          adaptation more efficient.
+        </p>
+        <figure class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
+          <img
+            loading="lazy"
+            height="400"
+            width="800"
+            class="w-full h-auto object-cover"
+            src="assets/news/blogs/performance/pic-3.png"
+            alt="OCP Compliance"
+          />
+        </figure>
+        <section class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
+          <div
+            class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1"
+          >
+            <div class="flex items-center justify-between">
+              <div>
+                <h3
+                  class="text-dark-gray1 text-xl lg:text-[28px] 3xl:text-[32px] font-semibold 3xl:font-bold my-3 3xl:my-4"
+                >
+                  Subscribe to Our Newsletter for Design Insights
+                </h3>
+                <p
+                  class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[15px] 3xl:leading-[19.2px]"
+                >
+                  Get updates on the latest news & insights
+                </p>
+              </div>
+              <a
+                href="https://webforms.pipedrive.com/f/6UT1JKLeb6G1xtMMTPA4HRcQsTZefgpvRq9cSzG1TincmHlD6Wvfh3YCmSXUO7VklB"
+                target="_blank"
+                ><app-animated-button
+                  heading="Subscribe"
+                  size="medium"
+                  [icon]="false"
+                  bg="white"
+                ></app-animated-button
+              ></a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="section9" class="py-6 3xl:py-8">
+        <h2
+          class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-3 3xl:mb-4"
+        >
+          Critical Factors in Designing High-Performance Interconnect Systems
+        </h2>
+
+        <h3
+          id="section10"
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4"
+        >
+          Choosing the Right Interconnect Topology
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Customers should prioritize selecting an interconnect architecture
+          that minimizes latency and maximizes data throughput. Advanced
+          designs, such as folded torus architectures, provide efficient
+          communication across modules while optimizing overall system
+          performance.
+        </p>
+
+        <h3
+          id="section11"
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4"
+        >
+          Compliance vs. Customization
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          It's important to determine whether the system must align with
+          industry standards, such as the Open Compute Project (OCP), or if a
+          fully customized solution is more suitable. Evaluate the trade-offs
+          between off-the-shelf and tailored approaches to ensure both immediate
+          functionality and long-term adaptability.
+        </p>
+
+        <h3
+          id="section12"
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4"
+        >
+          Future-Proofing and Scalability
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Future-proofing is vital for high-performance systems. Customers
+          should focus on modular, scalable architectures that allow for:
+        </p>
+        <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Seamless integration of additional components
+          </li>
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Adaptability as processing needs evolve
+          </li>
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Compatibility with future technological advancements
+          </li>
+        </ul>
+
+        <h3
+          id="section13"
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4"
+        >
+          Ensuring Reliable Communication
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          High-speed interconnect systems must manage noise and crosstalk to
+          maintain data fidelity. This involves:
+        </p>
+        <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Implementing robust communication between accelerators and modules
+          </li>
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Using advanced routing and error-correction techniques
+          </li>
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Optimizing data flow while minimizing latency
+          </li>
+        </ul>
+
+        <h3
+          id="section14"
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4"
+        >
+          Power and Thermal Management
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Efficient power distribution and effective
+          <a
+            href="https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions"
+            class="text-teal1"
+          >
+            thermal management
+          </a>
+          are critical for system reliability. Customers should select solutions
+          that prevent hotspots and maintain stable performance during high
+          workloads.
+        </p>
+      </section>
+      <section id="section16" class="mb-6 3xl:mb-8">
+        <h2
+          class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold"
+        >
+          Partner with Whizz Systems to Innovate Interconnect Topologies and
+          Enhance Performance
+        </h2>
+        <h3
+          class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4"
+        >
+          Design Smarter. Perform Stronger with Proven PDN Expertise.
+        </h3>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          Building next-generation AI hardware that demands high-current,
+          high-reliability power delivery?
+        </p>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4"
+        >
+          At <span class="font-bold">Whizz Systems</span>, we deliver
+          architecture-driven solutions that unify PDN engineering, advanced
+          interconnect design, thermal strategy, and compliance expertise,
+          ensuring your hardware performs reliably under real-world conditions.
+        </p>
+        <h4 class="text-dark-gray1 text-lg 3xl:text-xl font-bold my-2 3xl:my-3">
+          Let's Talk. Discover How We Can:
+        </h4>
+        <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Optimize your next board for high-throughput system performance
+          </li>
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Solve complex power delivery and high-current distribution
+            challenges
+          </li>
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Improve signal integrity and minimize EMI in dense designs
+          </li>
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Align with OCP and industry compliance requirements
+          </li>
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Hit performance, thermal, and reliability targets faster
+          </li>
+          <li
+            class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]"
+          >
+            Design scalable architectures ready for future expansion
+          </li>
+        </ul>
+        <p
+          class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] font-medium"
+        >
+          Build smarter. Perform stronger. Get custom solutions today.
+        </p>
+      </section>
+    </div>
+
+    <!-- right div -->
+    <section class="sm:ml-auto mb-56 mt-96">
+      <div
+        class="flex flex-col justify-center items-center space-y-3 3xl:space-y-4 sticky top-96"
+      >
+        <p
+          class="text-light-gray2 text-[10px] 3xl:text-xs font-semibold 3xl:font-bold"
+        >
+          SHARE
+        </p>
+        <a (click)="shareOnLinkedIn()" class="cursor-pointer"
+          ><svg
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+            /></svg
+        ></a>
+        <a (click)="shareOnTwitter()" class="cursor-pointer"
+          ><svg
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+            /></svg
+        ></a>
+      </div>
+    </section>
+  </div>
 </section>
 
 <!-- Marketing  -->
 <section class="px-0 sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
-    <div class="relative p-6 sm:p-10 lg:p-[52px] 3xl:p-16 sm:rounded-md 3xl:rounded-lg">
-        <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg" loop muted autoplay
-            oncanplay="this.play()" onloadedmetadata="this.muted = true">
-            <source src="assets/hero/waves2.mp4" type="video/mp4" />
-        </video>
-        <div class="absolute inset-0 bg-video-overlay opacity-80 z-[5] sm:rounded-md 3xl:rounded-lg"></div>
-        <div class="relative z-10 lg:w-[85%] 2xl:w-[80%] 3xl:w-[63%] text-white">
-            <h2
-                class="text-3xl sm:text-4xl lg:text-5xl 2xl:text-[52px] 3xl:text-[64px] 2xl:leading-[60px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4">
-                Build High-Performance Communication Architectures with Confidence
-            </h2>
-            <p
-                class="sm:text-xl lg:text-2xl 2xl:text-[26px] 3xl:text-[32px] 2xl:leading-[36px] 3xl:leading-[48px] mb-8 lg:mb-10 3xl:mb-12">
-                Contact us to discuss how we can support your next-generation hardware project.
-            </p>
-            <a href="https://webforms.pipedrive.com/f/5X8g8JGNLEfTh3VwXJvh0z0QVhSGR9clSH4DMESaVuKH1ijQWWcvMhKGlocQuVu9H5"
-                target="_blank"><app-button heading="Talk to Our Engineering Team" size="large"
-                    icon="assets/icons/webform.svg"></app-button></a>
-        </div>
+  <div
+    class="relative p-6 sm:p-10 lg:p-[52px] 3xl:p-16 sm:rounded-md 3xl:rounded-lg"
+  >
+    <video
+      class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg"
+      loop
+      muted
+      autoplay
+      oncanplay="this.play()"
+      onloadedmetadata="this.muted = true"
+    >
+      <source src="assets/hero/waves2.mp4" type="video/mp4" />
+    </video>
+    <div
+      class="absolute inset-0 bg-video-overlay opacity-80 z-[5] sm:rounded-md 3xl:rounded-lg"
+    ></div>
+    <div class="relative z-10 lg:w-[85%] 2xl:w-[80%] 3xl:w-[63%] text-white">
+      <h2
+        class="text-3xl sm:text-4xl lg:text-5xl 2xl:text-[52px] 3xl:text-[64px] 2xl:leading-[60px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4"
+      >
+        Build High-Performance Communication Architectures with Confidence
+      </h2>
+      <p
+        class="sm:text-xl lg:text-2xl 2xl:text-[26px] 3xl:text-[32px] 2xl:leading-[36px] 3xl:leading-[48px] mb-8 lg:mb-10 3xl:mb-12"
+      >
+        Contact us to discuss how we can support your next-generation hardware
+        project.
+      </p>
+      <a
+        href="https://webforms.pipedrive.com/f/5VLgpgwTn7XsJBOWpFjG6zsBF7EzMhsNPlwaiVaeo1DvumJERCCDUmE5GrVOwFasfx"
+        target="_blank"
+        ><app-button
+          heading="Talk to Our Engineering Team"
+          size="large"
+          icon="assets/icons/webform.svg"
+        ></app-button
+      ></a>
     </div>
+  </div>
 </section>
 
 <!-- Latest News and Insights -->
