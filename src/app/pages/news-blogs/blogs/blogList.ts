@@ -8,6 +8,13 @@ export interface BlogItem {
 
 export const blogList: BlogItem[] = [
     {
+        imgUrl: 'assets/news/blogs/performance/pic-1.png',
+        date: 'March 2, 2026',
+        tags: ['Interconnect Architecture','OCP Compliance'],
+        title: 'Enhancing Performance with Innovative Interconnect Topologies and Custom Solutions',
+        link: '/news-&-insights/high-throughput-interconnect-topologies',
+    },
+    {
         imgUrl: 'assets/news/blogs/amd-vpk180/hero.png',
         date: 'Dec 06, 2025',
         tags: ['Case Study'],

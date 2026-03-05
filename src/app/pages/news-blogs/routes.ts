@@ -1217,6 +1217,18 @@ export const routes: Routes = [
           },
         },
       },
+      {
+        path: 'high-throughput-interconnect-topologies',
+        loadComponent: () =>
+          import('./blogs/enhance-performance/enhance-performance.component').then(
+            (m) => m.EnhancePerformanceComponent
+          ),
+        data: {
+          title: 'Enhancing Performance with Innovative Interconnect Topologies and Custom Solutions',
+          description: 'Designing High-Efficiency Communication Architectures for AI, HPC & OCP',
+         
+        },
+      },
     ],
   },
 ];
