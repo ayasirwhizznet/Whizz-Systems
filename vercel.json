@@ -2,7 +2,18 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "redirects": [
+    "redirects": [
+      {
+        "source": "/(.*)",
+        "has": [
+          {
+            "type": "host",
+            "value": "whizzsystems.com"
+          }
+        ],
+        "destination": "https://www.whizzsystems.com/$1",
+        "permanent": true
+      },
     {
       "source": "/electronic-manufacturing-assembly-services/",
       "destination": "/services/advanced-manufacturing",
