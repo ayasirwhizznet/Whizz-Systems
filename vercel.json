@@ -847,6 +847,36 @@
       "source": "/whizz-systems-added-state-of-the-art-juki-ism500-intelligent-storage-system-in-house",
       "destination": "/news-&-insights",
       "permanent": true
+    },
+    {
+      "source": "/fpga-design.html",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/pcb-layout-dfx.html",
+      "destination": "/services/engineering-design/pcb-layout",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2016/08/sq-ll-78078.jpg",
+      "destination": "/assets/featured-products/products/vhk158/hero.png",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2016/08/sq-51.jpg",
+      "destination": "/assets/featured-products/products/vhk158/hero.png",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2016/09/ABS_hi_res_13485.png",
+      "destination": "/assets/featured-products/products/vhk158/hero.png",
+      "permanent": true
+    },
+    {
+      "source": "/internet-of-things-design.html/",
+      "destination": "/services",
+      "permanent": true
     }
   ]
 }
