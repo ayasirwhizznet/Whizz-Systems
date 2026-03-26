@@ -888,6 +888,21 @@
       "source": "/internet-of-things-design.html/",
       "destination": "/services",
       "permanent": true
+    },
+    {
+      "source": "/blog/How-Embedded-Design-Services-ensure-every-day-appliances-work",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/circuit-board-design-services/",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
     }
   ]
 }

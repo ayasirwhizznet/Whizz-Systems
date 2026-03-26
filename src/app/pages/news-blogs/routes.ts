@@ -1341,6 +1341,146 @@ export const routes: Routes = [
           ],
         },
       },
+      {
+        path: 'high-speed-ai-design-si-techniques',
+        loadComponent: () =>
+          import('./blogs/high-speed-ai-design/high-speed-ai-design.component').then(
+            (m) => m.HighSpeedAiDesignComponent,
+          ),
+        data: {
+          title: 'High-Speed AI Design Challenges & Robust SI Techniques | Whizz Systems',
+          description: 'Master high-speed AI hardware design. Explore signal integrity (SI) challenges like crosstalk and jitter, and learn robust simulation and routing techniques.',
+          keywords: 'AI hardware design, Signal Integrity, SI techniques, high-speed PCB design, crosstalk, jitter, eye diagram, PCB simulation',
+          og: {
+            type: "article",
+            title: "High-Speed AI Design Challenges & Robust SI Techniques",
+            description:
+              "Deep dive into the Signal Integrity challenges of AI hardware and the robust techniques used to mitigate them.",
+            url: "https://www.whizzsystems.com/high-speed-ai-design-si-techniques",
+            image: "https://www.whizzsystems.com/assets/news/blogs/high-speed-ai-design-si-techniques/hero.png",
+            site_name: "Whizz Systems"
+          },
+
+          twitter: {
+            card: "summary_large_image",
+            title: "High-Speed AI Design Challenges & Robust SI Techniques",
+            description:
+              "Learn how to tackle crosstalk and jitter in high-speed AI hardware designs.",
+            image: "https://www.whizzsystems.com/assets/news/blogs/high-speed-ai-design-si-techniques/hero.png"
+          },
+          schema: [
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.whizzsystems.com/"
+                  }, {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Resources",
+                    "item": "https://www.whizzsystems.com/resources"
+                  }, {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "AI Design Challenges",
+                    "item": "https://www.whizzsystems.com/news-&-insights/high-speed-ai-design-robust-si-techniques"
+                  }]
+                },
+                {
+                  "@type": "FAQPage",
+                  "mainEntity": [{
+                    "@type": "Question",
+                    "name": "Why is signal integrity critical in AI hardware?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Signal integrity is critical because AI hardware operates at extremely high speeds. Any distortion, such as crosstalk or jitter, can lead to data errors and reduced system performance."
+                    }
+                  }, {
+                    "@type": "Question",
+                    "name": "How do you mitigate crosstalk in high-speed designs?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Techniques include increasing the spacing between differential pairs, using proper ground planes, and implementing back-drilling to remove via stubs."
+                    }
+                  }]
+                },
+                {
+                  "@type": "HowTo",
+                  "name": "How to Ensure Robust Signal Integrity in AI Design",
+                  "step": [
+                    {
+                      "@type": "HowToStep",
+                      "text": "Perform Pre-Layout Simulation to determine stackup and impedance requirements."
+                    },
+                    {
+                      "@type": "HowToStep",
+                      "text": "Implement Differential Pair Routing with strict length matching."
+                    },
+                    {
+                      "@type": "HowToStep",
+                      "text": "Apply Back-drilling to eliminate stubs in high-frequency signal paths."
+                    },
+                    {
+                      "@type": "HowToStep",
+                      "text": "Validate with Eye Diagram analysis post-layout."
+                    }
+                  ]
+                }
+              ]
+            }
+            ,
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Article",
+                  "headline": "High-Speed AI Design Challenges & Robust SI Techniques",
+                  "description": "Technical guide on overcoming signal integrity issues like jitter and crosstalk in AI hardware design.",
+                  "image": "https://www.whizzsystems.com/assets/news/blogs/high-speed-ai-design-si-techniques/hero.png",
+                  "author": {
+                    "@type": "Organization",
+                    "name": "Whizz Systems"
+                  },
+                  "publisher": {
+                    "@type": "Organization",
+                    "name": "Whizz Systems",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://www.whizzsystems.com/logo.png"
+                    }
+                  },
+                  "datePublished": "2024-05-20",
+                  "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://www.whizzsystems.com/news-&-insights/high-speed-ai-design-robust-si-techniques"
+                  }
+                },
+                {
+                  "@type": "ImageObject",
+                  "contentUrl": "https://www.whizzsystems.com/images/eye-diagram-analysis.jpg",
+                  "description": "An eye diagram showing signal quality and jitter in a high-speed AI data path.",
+                  "name": "AI Hardware Eye Diagram"
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Whizz Systems",
+                  "url": "https://www.whizzsystems.com/",
+                  "logo": "https://www.whizzsystems.com/logo.png",
+                  "sameAs": [
+                    "https://www.linkedin.com/company/whizzsystems",
+                  ]
+                }
+              ]
+            }
+            ,
+          ],
+        },
+      },
     ],
   },
 ];

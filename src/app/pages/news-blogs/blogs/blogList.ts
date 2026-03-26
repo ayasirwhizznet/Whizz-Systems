@@ -8,6 +8,13 @@ export interface BlogItem {
 
 export const blogList: BlogItem[] = [
     {
+        imgUrl: 'assets/news/blogs/high-speed-ai-design-si-techniques/pic-1.png',
+        date: 'March 13, 2026',
+        tags: ['AI Hardware Design','Signal Integrity'],
+        title: 'High-Speed AI Design Challenges & Robust SI Techniques',
+        link: '/news-&-insights/high-speed-ai-design-si-techniques',
+    },
+    {
         imgUrl: 'assets/news/blogs/performance/pic-1.png',
         date: 'March 2, 2026',
         tags: ['Interconnect Architecture','OCP Compliance'],

@@ -1,0 +1,681 @@
+<!-- Hero -->
+<section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
+    <div class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl">
+        <div
+            class="w-full lg:w-[47%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16">
+            <p class="text-sm 3xl:text-base leading-[15px] 3xl:leading-[19.2px] mb-2 3xl:mb-[10px]">
+                March 13, 2026
+            </p>
+            <div class="flex items-center gap-2 flex-wrap mb-4 3xl:mb-6">
+                <div *ngFor="let tag of tags">
+                    <app-blog-tag text="{{ tag }}" textColor="text-light-gray1" borderColor="border-light-gray1"
+                        borderRadius="rounded-[3px] 3xl:rounded-[4px]" [fromBlog]="true"></app-blog-tag>
+                </div>
+            </div>
+            <h1
+                class="text-3xl lg:text-4xl 2xl:text-[44px] 3xl:text-[56px] lg:leading-[45px] 2xl:leading-[55px] 3xl:leading-[67.2px] font-semibold 3xl:font-bold mb-6 3xl:mb-8 w-[96%] sm:w-[57%] lg:w-full">
+                High-Speed AI Design Challenges & Robust SI Techniques
+            </h1>
+            <p
+                class="text-base lg:text-sm 2xl:text-base 3xl:text-xl font-extralight lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8 sm:w-[70%] lg:w-full">
+                Advanced <a
+                    href="https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services"
+                    class="text-teal1">
+                    signal integrity
+                </a>
+                techniques for high-speed AI hardware design
+            </p>
+            <a href="https://webforms.pipedrive.com/f/72j2NVhjizQr0xaPEelZAaVct45iZ29EaI05DMuuKO9RzZVU9bZuAzToE9tSGNaC5B"
+                target="_blank"><app-button heading="Get Custom Solution" icon="assets/icons/webform.svg"
+                    size="small"></app-button></a>
+            <div class="flex items-center gap-3 3xl:gap-4 mt-6 3xl:mt-8">
+                <a routerLink="/" class="cursor-pointer">
+                    <img height="48" width="48" class="h-auto w-full" loading="lazy" src="assets/icons/whizzicon.svg"
+                        alt="Whizz Systems" />
+                </a>
+                <a routerLink="/" class="cursor-pointer">
+                    <img height="16" width="109" class="h-auto w-full" loading="lazy" src="assets/icons/whizz.svg"
+                        alt="Whizz Systems" />
+                </a>
+                <a href="https://www.linkedin.com/company/whizz-systems/?viewAsMember=true" target="_blank"
+                    class="cursor-pointer">
+                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/icons/linkedin.svg"
+                        alt="Whizz Systems" />
+                </a>
+                <a href="https://www.youtube.com/@WhizzSystemsCA" target="_blank" class="cursor-pointer">
+                    <img height="24" width="24" class="h-auto w-full" loading="lazy" src="assets/icons/youtube.svg"
+                        alt="Whizz Systems" />
+                </a>
+            </div>
+        </div>
+        <div class="hidden lg:block lg:w-[53%]">
+            <img height="587" width="682" loading="lazy" class="h-auto w-full object-cover"
+                src="assets/news/blogs/high-speed-ai-design-si-techniques/hero.png"
+                alt="Building the Future of 5G Connectivity with Open Radio Unit Solutions" />
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="px-[4%] sm:pr-0 sm:pl-[6.3%] py-6 3xl:py-8">
+    <div class="w-full flex justify-between gap-1 sm:gap-24">
+        <!-- left div -->
+        <div class="hidden lg:block lg:w-[23%] 2xl:w-[19%] 3xl:w-[22%] mt-12">
+            <div
+                class="p-6 3xl:p-8 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray lg:sticky lg:top-28 3xl:top-36">
+                <h3
+                    class="text-teal1 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] mb-6 3xl:mb-8">
+                    In This Article
+                </h3>
+                <ul>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section1')"
+                            [ngClass]="isActive('section1') ? 'text-teal1' : ''">Why Signal Integrity Is Critical for
+                            High-Speed AI Hardware Design</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section2')"
+                            [ngClass]="isActive('section2') ? 'text-teal1' : ''">Signal Integrity Challenges in
+                            High-Speed AI Hardware Design</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section3')"
+                            [ngClass]="isActive('section3') ? 'text-teal1' : ''">Whizz Systems’ Approach to High-Speed
+                            Signal Integrity Engineering</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section4')"
+                            [ngClass]="isActive('section4') ? 'text-teal1' : ''">Precision Signal Engineering for
+                            Next-Generation Hardware</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section5')"
+                            [ngClass]="isActive('section5') ? 'text-teal1' : ''">Design Optimization for High-Speed PCB
+                            Performance</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section6')"
+                            [ngClass]="isActive('section6') ? 'text-teal1' : ''">Advanced Simulation and Signal
+                            Analysis</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section7')"
+                            [ngClass]="isActive('section7') ? 'text-teal1' : ''">Crosstalk Mitigation and EMI
+                            Control</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section8')"
+                            [ngClass]="isActive('section8') ? 'text-teal1' : ''">Critical Signal Integrity
+                            Considerations for High-Speed Hardware Projects</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section9')"
+                            [ngClass]="isActive('section9') ? 'text-teal1' : ''">Early Signal Integrity Planning</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section10')"
+                            [ngClass]="isActive('section10') ? 'text-teal1' : ''">Application-Specific Design
+                            Strategies</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section11')"
+                            [ngClass]="isActive('section11') ? 'text-teal1' : ''">Validation Through Testing and
+                            Measurement</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section12')"
+                            [ngClass]="isActive('section12') ? 'text-teal1' : ''">Evaluating Total Cost of Ownership</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        <a (click)="scrollToCategory('section13')"
+                            [ngClass]="isActive('section13') ? 'text-teal1' : ''">Partner with Whizz Systems to Innovate
+                            Interconnect Topologies and Enhance Performance</a>
+                    </li>
+                    <li
+                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-0 cursor-pointer">
+                        <a (click)="scrollToCategory('section14')"
+                            [ngClass]="isActive('section14') ? 'text-teal1' : ''">Engineering Reliable High-Speed
+                            Systems with Advanced SI Expertise</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- center div -->
+        <div class="flex flex-col sm:w-4/5 lg:w-[55%] 2xl:w-[53%] 3xl:w-[47%]">
+            <section id="section1" class="mb-6 3xl:mb-8">
+                <h2
+                    class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-3 3xl:mb-4">
+                    Why Signal Integrity Is Critical for High-Speed AI Hardware Design
+                </h2>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    The rapid growth of high-speed hardware and Artificial Intelligence (AI) is pushing electronics
+                    design to new limits. In these advanced systems, ensuring strong signal integrity is no longer
+                    optional; it's essential for reliable performance.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Newer workloads, such as AI, HPC systems, telecom infrastructure, and data center hardware,
+                    require extremely fast and reliable data transport. But as speeds increase, hardware densifies,
+                    and so on, this introduces issues such as impedance mismatch, crosstalk, signal attenuation,
+                    skin effect, bugs, and EMI (electromagnetic interference) that engineers have to address.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Signal integrity, defined as a measure of signal quality on an electrical circuit, is essential for
+                    signals passing through a circuit without distortion or bit error. Little signal disturbances can
+                    also affect performance in <a
+                        href="https://www.whizzsystems.com/services/engineering-design/pcb-layout" class="text-teal1">
+                        high-speed PCB design
+                    </a>
+
+                    bit error rate (BER) and even instability of the system.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    The growing demands of AI workloads are pushing the limits of bandwidth and compute
+                    density, making it essential to address signal integrity challenges early in the hardware design
+                    process. This article explores modern signal integrity techniques, design strategies, and
+                    simulation approaches that engineers can use to build reliable high-speed AI hardware
+                    systems.
+                </p>
+                <figure class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
+                    <img loading="lazy" height="500" width="800"
+                        class="w-full h-auto object-cover rounded-xl 3xl:rounded-2xl"
+                        src="assets/news/blogs/high-speed-ai-design-si-techniques/pic-1.png"
+                        alt="High-Speed AI Hardware Design" />
+                </figure>
+            </section>
+            <section id="section2" class="py-6 3xl:py-8">
+                <h2
+                    class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
+                    Signal Integrity Challenges in High-Speed AI Hardware Design
+                </h2>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    In NextGen hardware systems, efficient inter-module communication presents a complex
+                    engineering challenge.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    At high frequencies, electrical signals behave more like electromagnetic waves than simple
+                    voltage levels. This introduces issues such as:
+                </p>
+                <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Trace impedance mismatches
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Signal reflections
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Power supply noise
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Crosstalk between adjacent traces
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Electromagnetic interference (EMI)
+                    </li>
+                </ul>
+
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    If not addressed properly, these problems can cause data corruption, system instability, and
+                    increased bit error rates.
+                </p>
+
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    One of the most common issues in high-speed PCB design is signal degradation. As signals
+                    travel through conductive materials, they lose strength due to resistive losses, parasitic
+                    capacitance, and inductance. These effects distort signal waveforms and reduce data
+                    reliability.
+                </p>
+
+                <h3 id="section4" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
+                    Increasing Complexity in Dense AI Hardware
+                </h3>
+
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    In AI hardware architectures, the problem becomes even more complex due to dense
+                    packaging and high I/O speeds. With tightly packed components and extremely fast switching
+                    frequencies, routing signals without interference becomes significantly more difficult.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Additionally, power integrity and signal integrity are closely related. Fast switching currents in
+                    high-performance processors and accelerators can introduce noise into the power distribution
+                    network, which in turn affects signal stability.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Without a comprehensive signal integrity strategy that includes design optimization, advanced
+                    materials, and simulation analysis, hardware teams risk higher development costs,
+                    performance limitations, and delayed product launches.
+                </p>
+
+                <figure class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
+                    <img loading="lazy" height="500" width="800"
+                        class="w-full h-auto object-cover rounded-xl 3xl:rounded-2xl"
+                        src="assets/news/blogs/high-speed-ai-design-si-techniques/pic-2.png"
+                        alt="Signal Integrity Challenges in High-Speed AI Hardware Design" />
+                </figure>
+            </section>
+            <section id="section3" class="py-6 3xl:py-8">
+                <h2
+                    class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
+                    Whizz Systems' Approach to High-Speed Signal Integrity Engineering
+                </h2>
+                <h3 class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4" id="section4">
+                    Precision Signal Engineering for Next-Generation Hardware
+                </h3>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    At <a href="https://www.whizzsystems.com/" class="text-teal1">
+                        Whizz Systems
+                    </a>
+                    , our approach to signal integrity in
+                    <a href="https://www.whizzsystems.com/news-&-insights/high-throughput-interconnect-topologies"
+                        class="text-teal1">
+                        High-speed ai hardware
+                    </a>
+
+                    engineering expertise with advanced simulation and design optimization techniques.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Our engineers implement architecture-aware signal integrity strategies that address
+                    transmission line effects, impedance control, noise reduction, and high-speed routing
+                    challenges from the earliest stages of hardware development.
+                </p>
+
+                <h3 id="section5" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
+                    Design Optimization for High-Speed PCB Performance
+                </h3>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Effective signal integrity techniques begin with a well-designed PCB stackup, which directly
+                    affects impedance control and signal propagation.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Material selection plays a critical role in maintaining signal quality. Depending on performance
+                    requirements, materials such as:
+                </p>
+                <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        FR4
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Megtron
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        EM-892
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Astra MT77
+                    </li>
+                </ul>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    May be used to optimize electrical performance.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Additional design practices include:
+                </p>
+                <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Controlled impedance routing
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Optimized trace lengths
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Reduced via inductance with 3D via structures
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Proper grounding strategies
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Strategic decoupling capacitor placement
+                    </li>
+                </ul>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Together, these techniques reduce signal loss, reflections, and electromagnetic interference,
+                    ensuring stable high-speed communication.
+                </p>
+
+                <h3 id="section6" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
+                    Advanced Simulation and Signal Analysis
+                </h3>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Modern signal integrity simulation tools play a crucial role in identifying potential issues before
+                    PCB fabrication.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Using simulation environments, engineers can:
+                </p>
+                <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Analyze signal propagation behavior
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Detect impedance discontinuities
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Evaluate noise coupling between traces
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Perform Time Domain Reflectometry (TDR) analysis
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Conduct frequency-domain modeling
+                    </li>
+                </ul>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    This predictive approach allows teams to resolve signal issues before Gerber tape-out,
+                    significantly reducing costly design iterations.
+                </p>
+
+                <h3 id="section7" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
+                    Crosstalk Mitigation and EMI Control
+                </h3>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    In dense AI hardware systems, crosstalk and EMI can significantly affect signal quality.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Whizz Systems implements routing strategies that include:
+                </p>
+                <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Optimized spacing between high-speed traces
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Ground reference planes for signal isolation
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Shielding structures using ground vias
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Controlled trace coupling
+                    </li>
+                </ul>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    These techniques reduce unwanted electromagnetic coupling and ensure reliable high-speed
+                    data transmission across complex circuit boards.
+                </p>
+
+                <figure class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
+                    <img loading="lazy" height="400" width="800" class="w-full h-auto object-cover"
+                        src="assets/news/blogs/high-speed-ai-design-si-techniques/pic-3.png"
+                        alt="Crosstalk Mitigation and EMI Control" />
+                </figure>
+            </section>
+            <section id="section8" class="py-6 3xl:py-8">
+                <h2
+                    class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-3 3xl:mb-4">
+                    Critical Signal Integrity Considerations for High-Speed Hardware Projects
+                </h2>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Organizations developing AI hardware, high-speed communication systems, or advanced
+                    electronic platforms should evaluate several signal integrity factors early in the design
+                    process.
+                </p>
+
+                <h3 id="section9" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
+                    Early Signal Integrity Planning
+                </h3>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Signal integrity challenges are most effectively addressed during the architecture and layout
+                    stages of hardware development.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Engaging SI experts early allows teams to design systems that naturally minimize noise,
+                    impedance mismatches, and routing inefficiencies, preventing expensive redesign cycles.
+                </p>
+
+                <h3 id="section10" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
+                    Application-Specific Design Strategies
+                </h3>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Every system has unique requirements depending on operating frequency, voltage levels, and
+                    performance targets.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Whether the project involves AI accelerators, telecommunications hardware, or consumer
+                    electronics, engineers must tailor design strategies, materials, and simulation tools to the
+                    specific operating environment.
+                </p>
+
+                <h3 id="section11" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
+                    Validation Through Testing and Measurement
+                </h3>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Post-design testing ensures that signal integrity assumptions hold in real-world conditions.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Advanced validation methods may include:
+                </p>
+                <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Eye-diagram analysis
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Signal quality measurements
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Time-Domain Reflectometry (TDR)
+                    </li>
+                </ul>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    These methods help detect signal degradation issues that may not appear during initial
+                    simulations.
+                </p>
+
+                <h3 id="section12" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
+                    Evaluating Total Cost of Ownership
+                </h3>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    While implementing advanced signal integrity techniques may increase initial design costs, the
+                    long-term benefits far outweigh the investment.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Poor signal integrity can result in:
+                </p>
+                <ul class="list-disc list-inside ml-4 mb-3 3xl:mb-4">
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Higher system error rates
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Product reliability issues
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Warranty claims
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px]">
+                        Brand reputation damage
+                    </li>
+                </ul>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Investing in robust signal integrity engineering ensures better product performance, improved
+                    reliability, and reduced long-term operational costs.
+                </p>
+            </section>
+            <section class="py-6 3xl:py-8 lg:-mx-11 3xl:-m-10">
+                <div
+                    class="p-8 lg:p-10 2xl:p-12 3xl:p-16 bg-card-gray rounded-md 3xl:rounded-lg border border-light-gray1">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3
+                                class="text-dark-gray1 text-xl lg:text-[28px] 3xl:text-[32px] font-semibold 3xl:font-bold my-3 3xl:my-4">
+                                Subscribe to our newsletter!
+                            </h3>
+                            <p
+                                class="text-dark-gray2 text-[13px] 3xl:text-base font-light leading-[15px] 3xl:leading-[19.2px]">
+                                Get updates on the latest news & insights
+                            </p>
+                        </div>
+                        <a href="https://webforms.pipedrive.com/f/6UT1JKLeb6G1xtMMTPA4HRcQsTZefgpvRq9cSzG1TincmHlD6Wvfh3YCmSXUO7VklB"
+                            target="_blank"><app-animated-button heading="Subscribe" size="medium" [icon]="false"
+                                bg="white"></app-animated-button></a>
+                    </div>
+                </div>
+            </section>
+            <section id="section13" class="mb-6 3xl:mb-8">
+                <h2 class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold">
+                    Partner with Whizz Systems to Optimize Signal Integrity
+                    in High-Speed AI Hardware
+                </h2>
+                <h3 id="section14" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
+                    Engineering Reliable High-Speed Systems with Advanced SI Expertise
+                </h3>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Designing reliable high-speed AI hardware and next-generation electronic systems requires
+                    deep expertise in signal integrity engineering, advanced PCB stackup design, and high-speed
+                    simulation techniques.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    At Whizz Systems, we help engineering teams address complex signal integrity challenges,
+                    including impedance control, crosstalk mitigation, EMI reduction, and high-speed signal
+                    routing. Our design and simulation expertise ensures stable data transmission and reliable
+                    performance in demanding AI and high-frequency hardware environments.
+                </p>
+            </section>
+            <section class="mb-6 3xl:mb-8">
+                <div class="seo-comparison-block">
+                    <style>
+                        .seo-comparison-block h2 {
+                            margin-top: 0;
+                            color: #0073aa;
+                            margin-bottom: 10px;
+                        }
+
+                        table {
+                            width: 100%;
+                            border-collapse: collapse;
+                        }
+
+                        th,
+                        td {
+                            border: 1px solid #ddd;
+                            padding: 12px;
+                            text-align: left;
+                        }
+
+                        th {
+                            background-color: #f4f4f4;
+                        }
+                    </style>
+
+                    <h2>AI Signal Integrity: Challenges vs. Solutions</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Challenge</th>
+                                <th>Impact on AI Hardware</th>
+                                <th>Robust SI Solution</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Crosstalk</strong></td>
+                                <td>Signal interference between adjacent traces.</td>
+                                <td>Increased trace spacing & 3W rule implementation.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Jitter</strong></td>
+                                <td>Timing errors leading to data corruption.</td>
+                                <td>Precise clock distribution & jitter-cleaning buffers.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Via Stubs</strong></td>
+                                <td>Reflections at high frequencies (>10GHz).</td>
+                                <td>Back-drilling and blind/buried via technology.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- right div -->
+        <section class="sm:ml-auto mb-56 mt-96">
+            <div class="flex flex-col justify-center items-center space-y-3 3xl:space-y-4 sticky top-96">
+                <p class="text-light-gray2 text-[10px] 3xl:text-xs font-semibold 3xl:font-bold">
+                    SHARE
+                </p>
+                <a (click)="shareOnLinkedIn()" class="cursor-pointer"><svg height="20" width="20"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                    </svg></a>
+                <a (click)="shareOnTwitter()" class="cursor-pointer"><svg height="20" width="20"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg></a>
+            </div>
+        </section>
+    </div>
+</section>
+
+<!-- Marketing  -->
+<section class="px-0 sm:px-[9.3%] py-8 lg:py-12 3xl:py-16">
+    <div class="relative p-6 sm:p-10 lg:p-[52px] 3xl:p-16 sm:rounded-md 3xl:rounded-lg">
+        <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg" loop muted autoplay
+            oncanplay="this.play()" onloadedmetadata="this.muted = true">
+            <source src="assets/hero/waves2.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-video-overlay opacity-80 z-[5] sm:rounded-md 3xl:rounded-lg"></div>
+        <div class="relative z-10 lg:w-[85%] 2xl:w-[80%] 3xl:w-[63%] text-white">
+            <h2
+                class="text-3xl sm:text-4xl lg:text-5xl 2xl:text-[52px] 3xl:text-[64px] 2xl:leading-[60px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4">
+                Design High-Speed Hardware with Robust Signal Integrity
+            </h2>
+            <p
+                class="sm:text-xl lg:text-2xl 2xl:text-[26px] 3xl:text-[32px] 2xl:leading-[36px] 3xl:leading-[48px] mb-8 lg:mb-10 3xl:mb-12">
+                alk to our engineering team to learn how Whizz Systems can help optimize your high-speed AI hardware and
+                PCB designs for reliable signal performance.
+            </p>
+            <a href="https://webforms.pipedrive.com/f/72j2NVhjizQr0xaPEelZAaVct45iZ29EaI05DMuuKO9RzZVU9bZuAzToE9tSGNaC5B"
+                target="_blank"><app-button heading="Talk to Our Engineering Team" size="large"
+                    icon="assets/icons/webform.svg"></app-button></a>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="px-4 sm:px-[6.3%] py-12 lg:py-16 3xl:py-20 bg-white">
+    <div class="mx-auto">
+        <h2 class="text-center text-dark-gray2 text-3xl lg:text-[40px] 3xl:text-[48px] font-bold mb-10 lg:mb-16">
+            Frequently Asked Questions
+        </h2>
+
+        <div class="flex flex-col gap-4 mx-auto">
+            <div *ngFor="let faq of faqs; let i = index"
+                class="border border-light-gray1 rounded-xl overflow-hidden bg-card-gray">
+                <button (click)="toggleFaq(i)"
+                    class="w-full flex items-center justify-between py-5 px-5 sm:p-6 text-left transition-all hover:opacity-80 focus:outline-none">
+                    <h4 class="flex flex-col gap-3 sm:gap-4">
+                        <span class="text-[15px] sm:text-base lg:text-xl 3xl:text-2xl font-semibold text-dark-gray2">{{
+                            faq.question }}</span>
+                        <p *ngIf="faq.isOpen"
+                            class="text-gray-600 text-sm 3xl:text-base pr-6 sm:pr-10 leading-relaxed lg:w-[60%]">
+                            {{ faq.answer }}
+                        </p>
+                    </h4>
+                    <!-- Circular Toggle Button -->
+                    <div
+                        class="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 3xl:w-11 3xl:h-11 rounded-full border border-light-gray1 bg-white flex items-center justify-center relative shadow-sm">
+                        <span class="absolute w-3 sm:w-4 h-0.5 bg-teal1"></span>
+                        <span class="absolute w-3 sm:w-4 h-0.5 bg-teal1 transition-transform duration-300"
+                            [class.rotate-90]="!faq.isOpen"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest News and Insights -->
+<app-cnews [blogs]="blogs"></app-cnews>
