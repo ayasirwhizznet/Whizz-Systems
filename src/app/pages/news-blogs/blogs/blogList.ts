@@ -8,6 +8,13 @@ export interface BlogItem {
 
 export const blogList: BlogItem[] = [
     {
+        imgUrl: 'assets/news/blogs/product-manufacturing/pillar-41.png',
+        date: 'May 22, 2026',
+        tags: ['Whitepapper', 'Signal Integrity', 'AI Hardware Design'],
+        title: 'How Whizz Systems Delivers: End-to-End Product Manufacturing Reliability',
+        link: '/news-&-insights/end-to-end-product-manufacturing-reliability',
+    },
+    {
         imgUrl: 'assets/news/blogs/high-speed-ai-design-si-techniques/pic-1.png',
         date: 'March 13, 2026',
         tags: ['AI Hardware Design','Signal Integrity'],

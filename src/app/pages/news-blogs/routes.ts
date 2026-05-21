@@ -1462,7 +1462,7 @@ export const routes: Routes = [
                 },
                 {
                   "@type": "ImageObject",
-                  "contentUrl": "https://www.whizzsystems.com/images/eye-diagram-analysis.jpg",
+                  "contentUrl": "https://www.whizzsystems.com/assets/news/blogs/high-speed-ai-design-si-techniques/hero.png",
                   "description": "An eye diagram showing signal quality and jitter in a high-speed AI data path.",
                   "name": "AI Hardware Eye Diagram"
                 },
@@ -1475,6 +1475,165 @@ export const routes: Routes = [
                     "https://www.linkedin.com/company/whizzsystems",
                   ]
                 }
+              ]
+            }
+            ,
+          ],
+        },
+      },
+      {
+        path: 'end-to-end-product-manufacturing-reliability',
+        loadComponent: () =>
+          import('./blogs/product-manufacturing/product-manufacturing.component').then(
+            (m) => m.ProductManufacturingComponent,
+          ),
+        data: {
+          title: 'End-to-End Product Manufacturing Reliability | Whizz Systems Whitepaper',
+          description: 'Discover how Whizz Systems delivers end-to-end product manufacturing reliability through DFX analysis, FMEA, thermal profiling, advanced inspection, reliability testing, compliant sourcing, and engineering-grade packaging.',
+          keywords: 'product manufacturing reliability, PCB manufacturing reliability, electronics manufacturing reliability, DFX analysis, FMEA electronics manufacturing, thermal profiling PCB assembly, AOI inspection, SPI inspection, 3D X-ray PCB inspection, reliability testing electronics, engineering-grade packaging, electronics quality assurance',
+          og: {
+            type: "article",
+            title: "How Whizz Systems Delivers End-to-End Product Manufacturing Reliability",
+            description:
+              "A comprehensive look at the seven engineering pillars that ensure every product leaving Whizz Systems is built to perform, last, and comply.",
+            url: "https://www.whizzsystems.com/news-&-insights/end-to-end-product-manufacturing-reliability",
+            image: "https://www.whizzsystems.com/assets/news/blogs/product-manufacturing/hero.png",
+            site_name: "Whizz Systems"
+          },
+          schema: [
+            {
+              "@context": "https://schema.org",
+              "@type": "TechArticle",
+              "headline": "How Whizz Systems Delivers End-to-End Product Manufacturing Reliability",
+              "description": "A technical whitepaper explaining the engineering pillars, reliability validation methods, inspection technologies, and manufacturing systems used by Whizz Systems to deliver highly reliable electronics.",
+              "image": "https://www.whizzsystems.com/assets/news/blogs/product-manufacturing/hero.png",
+              "author": {
+                "@type": "Organization",
+                "name": "Whizz Systems"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Whizz Systems",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.whizzsystems.com/assets/header/teal-logo.png"
+                }
+              },
+              "datePublished": "2026-05-08",
+              "dateModified": "2026-05-08",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://www.whizzsystems.com/news-&-insights/end-to-end-product-manufacturing-reliability"
+              }
+            }
+            ,
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.whizzsystems.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "News & Insights",
+                  "item": "https://www.whizzsystems.com/news-&-insights/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "End-to-End Product Manufacturing Reliability",
+                  "item": "https://www.whizzsystems.com/news-&-insights/end-to-end-product-manufacturing-reliability"
+                }
+              ]
+            }
+            ,
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is product manufacturing reliability in electronics?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Product manufacturing reliability refers to the engineering processes, inspection systems, testing methods, and supply chain controls used to ensure electronic products perform consistently throughout their operational lifecycle."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why is DFX analysis important in PCB manufacturing?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "DFX analysis helps identify manufacturability, assembly, and testing risks early in the design phase, reducing defects, rework costs, and field failures."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What inspection technologies does Whizz Systems use?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Whizz Systems uses SPI, AOI, and 3D X-ray inspection technologies to detect solder defects, component placement issues, and hidden assembly failures."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How does reliability testing improve electronics manufacturing?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Reliability testing validates product durability under thermal, humidity, vibration, and mechanical stress conditions before shipment, reducing field failures and warranty risks."
+                  }
+                }
+              ]
+            }
+            ,
+            {
+              "@context": "https://schema.org",
+              "@type": "HowTo",
+              "name": "How to Improve Product Manufacturing Reliability in Electronics",
+              "description": "Key engineering processes used to improve reliability in PCB and electronics manufacturing.",
+              "step": [
+                {
+                  "@type": "HowToStep",
+                  "name": "Validate the Design with DFX Analysis",
+                  "text": "Perform DFM, DFA, and DFT reviews to identify manufacturing and testing risks before production."
+                },
+                {
+                  "@type": "HowToStep",
+                  "name": "Analyze Failure Risks with FMEA",
+                  "text": "Use Failure Mode and Effects Analysis to proactively identify and eliminate high-risk failure points."
+                },
+                {
+                  "@type": "HowToStep",
+                  "name": "Optimize Reflow Thermal Profiles",
+                  "text": "Use thermal profiling systems to achieve consistent solder joint reliability across production runs."
+                },
+                {
+                  "@type": "HowToStep",
+                  "name": "Implement Multi-Layer Inspection",
+                  "text": "Deploy SPI, AOI, and 3D X-ray inspection systems to identify hidden manufacturing defects."
+                },
+                {
+                  "@type": "HowToStep",
+                  "name": "Perform Reliability Testing",
+                  "text": "Validate products under vibration, humidity, thermal shock, and accelerated life testing conditions."
+                }
+              ]
+            }
+            ,
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Whizz Systems",
+              "url": "https://www.whizzsystems.com",
+              "logo": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/whizz-systems/",
+                "https://www.youtube.com/@WhizzSystemsCA"
               ]
             }
             ,
