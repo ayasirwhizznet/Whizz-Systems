@@ -1,6 +1,6 @@
 <!-- Hero -->
 <section class="px-0 sm:px-[6.3%] pb-8 lg:pb-12 3xl:pb-16">
-    <div class="flex items-center lg:gap-10 3xl:gap-[61px] bg-dark-gray1 sm:rounded-xl 3xl:rounded-2xl">
+    <div class="flex items-center lg:gap-10 3xl:gap-[61px] bg-[#003735] sm:rounded-xl 3xl:rounded-2xl">
         <div
             class="w-full lg:w-[47%] text-white px-4 py-8 sm:py-12 sm:px-8 lg:py-12 3xl:py-16 lg:px-0 lg:pl-12 3xl:pl-16">
             <p class="text-sm 3xl:text-base leading-[15px] 3xl:leading-[19.2px] mb-2 3xl:mb-[10px]">
@@ -18,7 +18,8 @@
             </h1>
             <p
                 class="text-base lg:text-sm 2xl:text-base 3xl:text-xl font-extralight lg:leading-[20px] 3xl:leading-[24px] mb-6 3xl:mb-8 sm:w-[70%] lg:w-full">
-                A comprehensive look at the seven engineering pillars that ensure every product leaving Whizz Systems is built to perform, last and comply.
+                A comprehensive look at the seven engineering pillars that ensure every product leaving Whizz Systems is
+                built to perform, last and comply.
             </p>
             <a href="https://webforms.pipedrive.com/f/cku5kYt7lCy4sdsuOqy4jhAEo03Ehca96mdJDi5Ko0T80X8lNLPNdm2xX3N7OE3rHR"
                 target="_blank"><app-button heading="Get Custom Solution" icon="assets/icons/webform.svg"
@@ -57,161 +58,92 @@
         <!-- left div -->
         <div class="hidden lg:block lg:w-[23%] 2xl:w-[19%] 3xl:w-[22%]">
             <div
-                class="p-6 3xl:p-8 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray lg:sticky lg:top-28 3xl:top-36">
+                class="p-4 border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray lg:sticky lg:top-28 3xl:top-36">
                 <h3
                     class="text-teal1 text-xl 3xl:text-2xl font-medium leading-[24px] 3xl:leading-[28.8px] mb-6 3xl:mb-8">
-                    In This Article
+                    In This Whitepaper
                 </h3>
                 <ul>
                     <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        class="text-dark-gray2 text-xs 3xl:text-base font-bold leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
                         <a (click)="scrollToCategory('section1')"
                             [ngClass]="isActive('section1') ? 'text-teal1' : ''">Executive Summary</a>
                     </li>
                     <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section2')"
-                            [ngClass]="isActive('section2') ? 'text-teal1' : ''">At a Glance</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section3')"
-                            [ngClass]="isActive('section3') ? 'text-teal1' : ''">The Challenge: Why PCBA Reliability Demands a Systematic Approach</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        class="text-dark-gray2 text-xs 3xl:text-base font-bold leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
                         <a (click)="scrollToCategory('section4')"
-                            [ngClass]="isActive('section4') ? 'text-teal1' : ''">Pillar 1: Global Supply Chain Management</a>
+                            [ngClass]="isActive('section4') ? 'text-teal1' : ''">Pillar 1: Global Supply Chain
+                            Management</a>
                     </li>
                     <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section5')"
-                            [ngClass]="isActive('section5') ? 'text-teal1' : ''">Sourcing Quality from the Ground Up</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer pl-3 3xl:pl-4">
                         <a (click)="scrollToCategory('section6')"
-                            [ngClass]="isActive('section6') ? 'text-teal1' : ''">The Four-Phase Supply Management Framework</a>
+                            [ngClass]="isActive('section6') ? 'text-teal1' : ''">The Four-Phase Supply Management
+                            Framework</a>
                     </li>
                     <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        class="text-dark-gray2 text-xs 3xl:text-base font-bold leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
                         <a (click)="scrollToCategory('section7')"
-                            [ngClass]="isActive('section7') ? 'text-teal1' : ''">Pillar 2: Design for Excellence (DFX)</a>
+                            [ngClass]="isActive('section7') ? 'text-teal1' : ''">Pillar 2: Design for Excellence
+                            (DFX)</a>
                     </li>
                     <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section8')"
-                            [ngClass]="isActive('section8') ? 'text-teal1' : ''">Engineering Reliability Before Manufacturing Begins</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section9')"
-                            [ngClass]="isActive('section9') ? 'text-teal1' : ''">Design for Manufacturability (DFM)</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section10')"
-                            [ngClass]="isActive('section10') ? 'text-teal1' : ''">Design for Assembly (DFA)</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section11')"
-                            [ngClass]="isActive('section11') ? 'text-teal1' : ''">Design for Test (DFT)</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        class="text-dark-gray2 text-xs 3xl:text-base font-bold leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
                         <a (click)="scrollToCategory('section12')"
-                            [ngClass]="isActive('section12') ? 'text-teal1' : ''">Pillar 3: Failure Mode & Effects Analysis (FMEA)</a>
+                            [ngClass]="isActive('section12') ? 'text-teal1' : ''">Pillar 3: Failure Mode &amp; Effects
+                            Analysis (FMEA)</a>
                     </li>
                     <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section13')"
-                            [ngClass]="isActive('section13') ? 'text-teal1' : ''">Proactive Risk Elimination Powered by Data</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section14')"
-                            [ngClass]="isActive('section14') ? 'text-teal1' : ''">The Whizz FMEA Methodology</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        class="text-dark-gray2 text-xs 3xl:text-base font-bold leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
                         <a (click)="scrollToCategory('section15')"
-                            [ngClass]="isActive('section15') ? 'text-teal1' : ''">Pillar 4: Thermal Profiling & Reflow Soldering Optimization</a>
+                            [ngClass]="isActive('section15') ? 'text-teal1' : ''">Pillar 4: Thermal Profiling &amp;
+                            Reflow Soldering Optimization</a>
                     </li>
                     <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section16')"
-                            [ngClass]="isActive('section16') ? 'text-teal1' : ''">Perfecting Every Solder Joint — Every Time</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer pl-3 3xl:pl-4">
                         <a (click)="scrollToCategory('section17')"
                             [ngClass]="isActive('section17') ? 'text-teal1' : ''">The Whizz Thermal Profiling Setup</a>
                     </li>
                     <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        class="text-dark-gray2 text-xs 3xl:text-base font-bold leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
                         <a (click)="scrollToCategory('section18')"
-                            [ngClass]="isActive('section18') ? 'text-teal1' : ''">Pillar 5: Advanced PCBA Inspection Capabilities</a>
+                            [ngClass]="isActive('section18') ? 'text-teal1' : ''">Pillar 5: Advanced PCBA Inspection
+                            Capabilities</a>
                     </li>
                     <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section19')"
-                            [ngClass]="isActive('section19') ? 'text-teal1' : ''">Detecting Defects Invisible to the Human Eye</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section20')"
-                            [ngClass]="isActive('section20') ? 'text-teal1' : ''">Tier 1: Solder Paste Inspection (SPI)</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section21')"
-                            [ngClass]="isActive('section21') ? 'text-teal1' : ''">Tier 2: Automated Optical Inspection (AOI)</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section22')"
-                            [ngClass]="isActive('section22') ? 'text-teal1' : ''">Tier 3: 3D X-Ray Inspection</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        class="text-dark-gray2 text-xs 3xl:text-base font-bold leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
                         <a (click)="scrollToCategory('section23')"
-                            [ngClass]="isActive('section23') ? 'text-teal1' : ''">Pillar 6: Reliability Testing & Validation</a>
+                            [ngClass]="isActive('section23') ? 'text-teal1' : ''">Pillar 6: Reliability Testing &amp;
+                            Validation</a>
                     </li>
                     <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section24')"
-                            [ngClass]="isActive('section24') ? 'text-teal1' : ''">Simulating Years of Real-World Use Before Shipment</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer pl-3 3xl:pl-4">
                         <a (click)="scrollToCategory('section25')"
-                            [ngClass]="isActive('section25') ? 'text-teal1' : ''">Reliability Design Testing (RDT) Equipment</a>
+                            [ngClass]="isActive('section25') ? 'text-teal1' : ''">Reliability Design Testing (RDT)
+                            Equipment</a>
                     </li>
                     <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer pl-3 3xl:pl-4">
                         <a (click)="scrollToCategory('section26')"
                             [ngClass]="isActive('section26') ? 'text-teal1' : ''">Environmental Chamber Tests</a>
                     </li>
                     <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer pl-3 3xl:pl-4">
                         <a (click)="scrollToCategory('section27')"
-                            [ngClass]="isActive('section27') ? 'text-teal1' : ''">Strain Gauge & Deflection Testing</a>
+                            [ngClass]="isActive('section27') ? 'text-teal1' : ''">Strain Gauge &amp; Deflection
+                            Testing</a>
                     </li>
                     <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
+                        class="text-dark-gray2 text-xs 3xl:text-base font-bold leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
                         <a (click)="scrollToCategory('section28')"
-                            [ngClass]="isActive('section28') ? 'text-teal1' : ''">Pillar 7: Engineering-Grade Packaging Design</a>
+                            [ngClass]="isActive('section28') ? 'text-teal1' : ''">Pillar 7: Engineering-Grade Packaging
+                            Design</a>
                     </li>
                     <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-normal leading-[20px] 3xl:leading-[28px] mb-3 3xl:mb-4 cursor-pointer">
-                        <a (click)="scrollToCategory('section29')"
-                            [ngClass]="isActive('section29') ? 'text-teal1' : ''">Protecting Your Product Through Every Mile of the Supply Chain</a>
-                    </li>
-                    <li
-                        class="text-dark-gray2 text-xs 3xl:text-base font-medium leading-[20px] 3xl:leading-[28px] mb-0 cursor-pointer">
+                        class="text-dark-gray2 text-xs 3xl:text-base font-bold leading-[20px] 3xl:leading-[28px] mb-0 cursor-pointer">
                         <a (click)="scrollToCategory('section30')"
-                            [ngClass]="isActive('section30') ? 'text-teal1' : ''">Why Whizz Systems? The Reliability Partner Your Products Deserve</a>
+                            [ngClass]="isActive('section30') ? 'text-teal1' : ''">Why Whizz Systems? The Reliability
+                            Partner Your Products Deserve</a>
                     </li>
                 </ul>
             </div>
@@ -219,122 +151,70 @@
         <!-- center div -->
         <div class="flex flex-col sm:w-4/5 lg:w-[55%] 2xl:w-[53%] 3xl:w-[47%]">
             <section id="section1">
-                <h2
-                    class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-3 3xl:mb-4">
-                    Executive Summary
-                </h2>
                 <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    In today's mission-critical electronics landscape, a single product failure doesn't just cost money
-                    — it costs customers, reputation, and market position. At Whizz Systems, we have engineered a
-                    comprehensive, standards-driven reliability framework that addresses every phase of the PCB
-                    lifecycle: from component sourcing to final-mile packaging.
+                    In today's electronics industry, the reliability of a product is often determined by the quality and
+                    consistency of its Printed Circuit Board Assembly (PCBA). As PCBAs become increasingly complex—with
+                    higher component densities, tighter tolerances, faster signal speeds, and more demanding operating
+                    environments—manufacturers must implement rigorous processes to ensure long-term performance and
+                    reliability.
                 </p>
                 <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    This white paper outlines the seven core pillars of the Whizz Systems quality assurance process,
-                    demonstrating how our engineering-first approach consistently delivers products with superior
-                    Mean-Time-Between-Failure (MTBF), near-zero defect rates, and full regulatory compliance for global
-                    markets.
+                    At Whizz Systems, reliability is engineered into every PCBA through a structured manufacturing
+                    framework that combines industry standards, customer-specific requirements, and rigorous quality
+                    controls. Our approach begins by understanding the functional, performance, and environmental
+                    requirements of each application, allowing us to establish reliability criteria that align with our
+                    customers' expectations and end-use conditions.
                 </p>
-            </section>
-            <section id="section2" class="pb-6 3xl:pb-8">
-                <h2
-                    class="text-dark-gray1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-2 3xl:mb-3">
-                    At a Glance
-                </h2>
-                <ul class="list-disc list-outside ml-5 mb-6 3xl:mb-8  3xl:space-y-4">
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        IPC-compliant Design for Excellence (DFX) analysis eliminates manufacturing defects before a
-                        single board is built.
-                    </li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        Relyence® FMEA systematically identifies and prioritizes failure risk across every component
-                        and process step.
-                    </li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        <a href="https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions" class="text-teal1">Advanced thermal profiling</a> ensures precise, repeatable reflow soldering for every product run.
-                    </li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        Multi-layer inspection — SPI, AOI, and 3D X-ray — catches defects invisible to human or
-                        optical-only methods.
-                    </li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        Accelerated Life Testing, thermal shock, humidity, vibration, and strain gauge testing validate
-                        real-world durability.
-                    </li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        ISTA-certified packaging engineering protects product integrity through every mile of the
-                        global supply chain.
-                    </li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        Full RoHS-3 and REACH compliance reporting for all components and materials.
-                    </li>
-                </ul>
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-2 3xl:gap-3 md:mx-[-30px] py-6 3xl:py-8">
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    Our engineering and manufacturing teams follow established industry standards, including IPC
+                    requirements and best practices, to ensure that every PCB assembly meets stringent quality,
+                    reliability, and safety objectives. In addition, environmental factors such as temperature extremes,
+                    humidity, vibration, mechanical stress, and operating conditions are considered throughout the
+                    product lifecycle to verify long-term performance and durability.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    The Whizz Reliability Framework™ represents more than 25 years of experience developing and
+                    manufacturing next-generation electronic platforms for customers across industrial, medical,
+                    networking, telecommunications, aerospace, and emerging technology markets. It combines the lessons
+                    learned from thousands of complex PCB assemblies into a structured methodology designed to reduce
+                    risk, improve quality, accelerate production readiness, and ensure long-term product reliability.
+                </p>
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                    The Whizz Reliability Framework™ at a Glance
+                </p>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-2 3xl:gap-3 py-10 3xl:py-12">
                     <div
-                        class="p-3 3xl:p-4 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg text-center">
-                        <p class="text-teal1 text-4xl 3xl:text-5xl font-bold leading-none mb-2 3xl:mb-3">7</p>
-                        <p class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold">Engineering Pillars</p>
+                        class="group px-4 py-[14px] bg-card-gray hover:bg-dark-gray2 border border-light-gray1 rounded-md 3xl:rounded-lg text-center transition-colors duration-300">
+                        <p class="text-teal1 text-4xl 3xl:text-5xl font-bold leading-none mb-0">7</p>
+                        <p
+                            class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold group-hover:text-white transition-colors duration-300">
+                            Engineering Pillars</p>
                     </div>
                     <div
-                        class="p-3 3xl:p-4 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg text-center">
-                        <p class="text-teal1 text-4xl 3xl:text-5xl font-bold leading-none mb-2 3xl:mb-3">4</p>
-                        <p class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold">Supply Chain Phases</p>
+                        class="group px-4 py-[14px] bg-card-gray hover:bg-dark-gray2 border border-light-gray1 rounded-md 3xl:rounded-lg text-center transition-colors duration-300">
+                        <p class="text-teal1 text-4xl 3xl:text-5xl font-bold leading-none mb-0">4</p>
+                        <p
+                            class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold group-hover:text-white transition-colors duration-300">
+                            Supply Chain Phases</p>
                     </div>
                     <div
-                        class="p-3 3xl:p-4 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg text-center">
-                        <p class="text-teal1 text-4xl 3xl:text-5xl font-bold leading-none mb-2 3xl:mb-3">3</p>
-                        <p class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold">Inspection Technologies</p>
+                        class="group px-4 py-[14px] bg-card-gray hover:bg-dark-gray2 border border-light-gray1 rounded-md 3xl:rounded-lg text-center transition-colors duration-300">
+                        <p class="text-teal1 text-4xl 3xl:text-5xl font-bold leading-none mb-0">3</p>
+                        <p
+                            class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold group-hover:text-white transition-colors duration-300">
+                            Inspection Technologies</p>
                     </div>
                     <div
-                        class="p-3 3xl:p-4 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg text-center">
-                        <p class="text-teal1 text-4xl 3xl:text-5xl font-bold leading-none mb-2 3xl:mb-3">6</p>
-                        <p class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold">Reliability Test Types</p>
+                        class="group px-4 py-[14px] bg-card-gray hover:bg-dark-gray2 border border-light-gray1 rounded-md 3xl:rounded-lg text-center transition-colors duration-300">
+                        <p class="text-teal1 text-4xl 3xl:text-5xl font-bold leading-none mb-0">6</p>
+                        <p
+                            class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold group-hover:text-white transition-colors duration-300">
+                            Reliability Test Types</p>
                     </div>
                 </div>
-            </section>
-            <section id="section3" class="py-6 3xl:py-8">
-                <h2
-                    class="text-teal1 text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold mb-6 3xl:mb-8">
-                    The Challenge: Why PCBA Reliability Demands a Systematic Approach
-                </h2>
                 <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Printed Circuit Boards are the nervous system of every <a href="https://www.whizzsystems.com/news-&-insights/future-architecture-performance" class="text-teal1">modern electronic product</a> — from consumer
-                    devices and industrial equipment to medical systems and defense electronics. A single reliability
-                    failure can cascade into costly product recalls, warranty claims, brand damage, or safety incidents.
-                    Yet reliability is not a single-point check. It is the cumulative result of hundreds of engineering
-                    decisions made across design, sourcing, manufacturing, testing, and logistics.
-                </p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Compounding this challenge are increasingly demanding regulatory environments (RoHS-3, REACH, IPC
-                    standards), shrinking product lifecycles, and growing customer expectations for zero-defect delivery.
-                    Achieving this level of reliability requires a structured, repeatable, and data-driven approach — not
-                    ad-hoc inspection.
-                </p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Whizz Systems addresses this complexity with a holistic reliability framework anchored in three core
-                    commitments:
-                </p>
-                <ul class="list-disc list-outside ml-5 mb-6 3xl:mb-8 mt-0 3xl:space-y-4">
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        <span class="font-semibold 3xl:font-bold text-dark-gray1">Customer-First Requirements:</span>
-                        Every reliability criterion is calibrated to the actual functionality and performance
-                        expectations of the customer — not generic industry defaults.
-                    </li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        <span class="font-semibold 3xl:font-bold text-dark-gray1">Standards Compliance:</span>
-                        All processes align with IPC (Association Connecting Electronics Industries) guidelines,
-                        ensuring designs meet industrial rules, quality benchmarks, and safety norms.
-                    </li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        <span class="font-semibold 3xl:font-bold text-dark-gray1">Environmental Resilience:</span>
-                        Temperature variation, humidity, mechanical vibration, and other real-world stressors are
-                        systematically validated throughout the entire product lifecycle.
-                    </li>
-                </ul>
-                <p
-                    class="text-teal1 text-xl lg:text-2xl 3xl:text-[32px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold text-center">
-                    Reliability is not a final inspection step — it is an engineering discipline woven into every phase
-                    of product development at Whizz Systems
+                    The following sections explore the seven engineering pillars that form the foundation of Whizz
+                    Systems' approach to delivering reliable PCB assemblies.
                 </p>
             </section>
             <section id="section4" class="py-6 3xl:py-8">
@@ -352,89 +232,46 @@
                     leading root causes of field failures in contract-manufactured electronics.
                 </p>
                 <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Whizz Systems operates a four-phase <a href="https://www.whizzsystems.com/services/supply-chain-management" class="text-teal1">global supply management</a> process that systematically eliminates
+                    Whizz Systems operates a four-phase <a
+                        href="https://www.whizzsystems.com/services/supply-chain-management" class="text-teal1">global
+                        supply management</a> process that systematically eliminates
                     component risk and ensures uninterrupted, compliant supply — regardless of market conditions.
                 </p>
                 <h3 id="section6" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
                     The Four-Phase Supply Management Framework
                 </h3>
-                <figure class="py-6 3xl:py-8">
+                <figure class="py-12 3xl:py-16">
                     <img loading="lazy" height="400" width="800"
                         class="w-full h-auto object-contain rounded-xl 3xl:rounded-2xl"
-                        src="assets/news/blogs/product-manufacturing/pillar-1.png"
+                        src="assets/news/blogs/product-manufacturing/framework.png"
                         alt="Whizz Systems Global Supply Management Framework" />
                     <figcaption
-                        class="text-teal1 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4 text-center">
+                        class="text-dark-gray1 text-[13px] 3xl:text-base font-semibold 3xl:font-bold mt-3 3xl:mt-4 text-center">
                         Whizz Systems Global Supply Management Framework
                     </figcaption>
                 </figure>
-                <div class="overflow-x-auto mb-6 3xl:mb-8 border border-dark-gray1">
-                    <table class="w-full border-collapse">
-                        <thead>
-                            <tr class="bg-[#00332E]">
-                                <th
-                                    class="text-left text-white text-sm 3xl:text-base font-bold px-5 3xl:px-8 py-4 3xl:py-5 border-r border-dark-gray1 w-[26%] lg:w-[24%]">
-                                    Phase
-                                </th>
-                                <th
-                                    class="text-left text-white text-sm 3xl:text-base font-bold px-5 3xl:px-8 py-4 3xl:py-5">
-                                    Key Activities & Outcomes
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="bg-white border-b border-dark-gray1">
-                                <td
-                                    class="text-dark-gray2 text-sm 3xl:text-base font-normal leading-[22px] 3xl:leading-[26px] px-5 3xl:px-8 py-4 3xl:py-5 align-top border-r border-dark-gray1">
-                                    <a href="https://www.whizzsystems.com/services/sustainable-engineering" class="text-teal1">Component Engineering</a>
-                                </td>
-                                <td
-                                    class="text-dark-gray2 text-sm 3xl:text-base font-normal leading-[22px] 3xl:leading-[26px] px-5 3xl:px-8 py-4 3xl:py-5 align-top">
-                                    Approved Vendor List (AVL) management; secondary source qualification; datasheet
-                                    verification; continuous lifecycle monitoring to prevent obsolescence-driven supply
-                                    disruptions.
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-b border-dark-gray1">
-                                <td
-                                    class="text-dark-gray2 text-sm 3xl:text-base font-normal leading-[22px] 3xl:leading-[26px] px-5 3xl:px-8 py-4 3xl:py-5 align-top border-r border-dark-gray1">
-                                    Compliance Engineering
-                                </td>
-                                <td
-                                    class="text-dark-gray2 text-sm 3xl:text-base font-normal leading-[22px] 3xl:leading-[26px] px-5 3xl:px-8 py-4 3xl:py-5 align-top">
-                                    Full RoHS-3 (2011/65/EU + EU 2015/863) and REACH (EC 1907/2006 + SVHC) compliance
-                                    reporting; hazardous substance verification for all components and materials used in
-                                    production.
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-b border-dark-gray1">
-                                <td
-                                    class="text-dark-gray2 text-sm 3xl:text-base font-normal leading-[22px] 3xl:leading-[26px] px-5 3xl:px-8 py-4 3xl:py-5 align-top border-r border-dark-gray1">
-                                    Commodity Management
-                                </td>
-                                <td
-                                    class="text-dark-gray2 text-sm 3xl:text-base font-normal leading-[22px] 3xl:leading-[26px] px-5 3xl:px-8 py-4 3xl:py-5 align-top">
-                                    Strategic risk management to identify and prevent supply chain disruptions;
-                                    lead-time management aligned to production schedules; proactive buffer strategies for
-                                    at-risk commodities.
-                                </td>
-                            </tr>
-                            <tr class="bg-white">
-                                <td
-                                    class="text-dark-gray2 text-sm 3xl:text-base font-normal leading-[22px] 3xl:leading-[26px] px-5 3xl:px-8 py-4 3xl:py-5 align-top border-r border-dark-gray1">
-                                    Procurement Management
-                                </td>
-                                <td
-                                    class="text-dark-gray2 text-sm 3xl:text-base font-normal leading-[22px] 3xl:leading-[26px] px-5 3xl:px-8 py-4 3xl:py-5 align-top">
-                                    End-to-end purchasing process from Risk Buy identification to Purchase Order issuance;
-                                    End-of-Life (EOL) part transition management ensuring smooth migration to qualified
-                                    alternatives.
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="flex flex-col gap-3 3xl:gap-4 mb-6 3xl:mb-8">
+                    <div *ngFor="let phase of supplyChainPhases; let i = index"
+                        class="border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray overflow-hidden">
+                        <button (click)="toggleSupplyPhase(i)"
+                            class="w-full flex items-center gap-4 3xl:gap-5 px-5 pt-5 3xl:px-6 3xl:pt-6 text-left focus:outline-none"
+                            [ngClass]="phase.isOpen ? 'pb-2 3xl:pb-3' : 'pb-5 3xl:pb-6'">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 3xl:w-9 3xl:h-9 rounded-full border border-light-gray1 bg-white flex items-center justify-center relative">
+                                <span class="absolute w-3 3xl:w-3.5 h-0.5 bg-teal1"></span>
+                                <span class="absolute w-3 3xl:w-3.5 h-0.5 bg-teal1 transition-transform duration-300"
+                                    [class.rotate-90]="!phase.isOpen"></span>
+                            </div>
+                            <span class="text-dark-gray1 text-xl 3xl:text-2xl font-medium 3xl:font-bold">{{ phase.title
+                                }}</span>
+                        </button>
+                        <p *ngIf="phase.isOpen"
+                            class="text-dark-gray2 text-sm 3xl:text-base leading-[22px] 3xl:leading-[26px] px-5 pb-5 3xl:px-6 3xl:pb-6 pl-14 3xl:pl-16 -mt-1 3xl:-mt-2">
+                            {{ phase.content }}
+                        </p>
+                    </div>
                 </div>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-10 3xl:my-12">
                     By qualifying vendors against proven performance records and continuously monitoring component
                     lifecycle status, Whizz Systems eliminates the hidden reliability risks that commodity sourcing
                     routinely introduces. Every component that enters production has been verified, qualified, and
@@ -459,46 +296,46 @@
                     Whizz Systems integrates DFX (Design for Excellence) analysis into every product development cycle,
                     providing a structured engineering review across three critical dimensions: DFM, DFA, and DFT.
                 </p>
-                <figure class="py-6 3xl:py-8">
+                <figure class="py-12 3xl:py-16">
                     <img loading="lazy" height="400" width="800"
                         class="w-full h-auto object-contain rounded-xl 3xl:rounded-2xl"
-                        src="assets/news/blogs/product-manufacturing/pillar-2.png"
+                        src="assets/news/blogs/product-manufacturing/framework2.png"
                         alt="Whizz Systems Design for Excellence (DFX) Framework — DFM, DFA, DFT" />
                     <figcaption
-                        class="text-teal1 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4 text-center">
+                        class="text-dark-gray1 text-[13px] 3xl:text-base font-semibold 3xl:font-bold mt-3 3xl:mt-4 text-center">
                         Whizz Systems Design for Excellence (DFX) Framework — DFM, DFA, DFT
                     </figcaption>
                 </figure>
-                <h3 id="section9" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    Design for Manufacturability (DFM)
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    DFM analysis validates that board designs can be reliably produced at scale. Whizz engineers
-                    systematically review drill accuracy and <a href="https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services" class="text-teal1">signal layer integrity</a>, power and ground plane distribution,
-                    soldermask application accuracy, silk screen label precision, board dimension validation, micro via
-                    reliability, and penalization strategies to mitigate production risk.
-                </p>
-                <h3 id="section10" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    Design for Assembly (DFA)
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    DFA ensures components can be assembled accurately and efficiently. The analysis covers component
-                    placement feasibility, padstack design for proper pad placement, solder paste volume and application
-                    accuracy, and pin-to-pad alignment to guarantee precise component integration at production speeds.
-                </p>
-                <h3 id="section11" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    Design for Test (DFT)
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    DFT analysis confirms the assembled product can be tested comprehensively. Whizz engineers conduct
-                    test point analysis to ensure strategically positioned access points enable thorough functional
-                    verification — reducing the risk of undetected defects shipping to the customer.
-                </p>
-                <p
-                    class="text-teal1 text-2xl lg:text-3xl 3xl:text-[40px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold text-center my-10">
-                    DFM + DFA + DFT together create a closed-loop design review system that identifies and resolves
-                    manufacturability issues before they translate into defects, rework costs, or field failures.
-                </p>
+                <div class="flex flex-col gap-3 3xl:gap-4 mb-6 3xl:mb-8">
+                    <div *ngFor="let phase of dfxPhases; let i = index"
+                        class="border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray overflow-hidden">
+                        <button (click)="toggleDfxPhase(i)"
+                            class="w-full flex items-center gap-4 3xl:gap-5 px-5 pt-5 3xl:px-6 3xl:pt-6 text-left focus:outline-none"
+                            [ngClass]="phase.isOpen ? 'pb-2 3xl:pb-3' : 'pb-5 3xl:pb-6'">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 3xl:w-9 3xl:h-9 rounded-full border border-light-gray1 bg-white flex items-center justify-center relative">
+                                <span class="absolute w-3 3xl:w-3.5 h-0.5 bg-teal1"></span>
+                                <span class="absolute w-3 3xl:w-3.5 h-0.5 bg-teal1 transition-transform duration-300"
+                                    [class.rotate-90]="!phase.isOpen"></span>
+                            </div>
+                            <span class="text-dark-gray1 text-xl 3xl:text-2xl font-medium 3xl:font-bold">{{ phase.title
+                                }}</span>
+                        </button>
+                        <p *ngIf="phase.isOpen"
+                            class="text-dark-gray2 text-sm 3xl:text-base leading-[22px] 3xl:leading-[26px] px-5 pb-5 3xl:px-6 3xl:pb-6 pl-14 3xl:pl-16 -mt-1 3xl:-mt-2">
+                            {{ phase.content }}
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-stretch gap-4 p-3 3xl:p-4 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg mt-10 3xl:mt-12">
+                    <img loading="lazy" width="40" class="h-auto w-9 3xl:w-10 flex-shrink-0 self-stretch"
+                        src="assets/news/blogs/product-manufacturing/left.png" alt="" />
+                    <p class="text-dark-gray2 text-[28px] 3xl:text-3xl font-light leading-[40px] 3xl:leading-[44px]">
+                        DFM + DFA + DFT together create a closed-loop design review system that identifies and resolves
+                        manufacturability issues before they translate into defects, rework costs, or field failures.
+                    </p>
+                </div>
             </section>
             <section id="section12" class="py-6 3xl:py-8">
                 <h2
@@ -515,7 +352,8 @@
                 </p>
                 <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
                     Whizz Systems uses Relyence® FMEA — an industry-leading platform trusted by aerospace, defense, and
-                    medical device manufacturers — to analyze every potential failure mode in both components and assembly
+                    medical device manufacturers — to analyze every potential failure mode in both components and
+                    assembly
                     processes.
                 </p>
                 <h3 id="section14" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
@@ -523,302 +361,289 @@
                 </h3>
                 <ul class="list-disc list-outside ml-5 mb-6 3xl:mb-8  3xl:space-y-4">
                     <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        <span class="font-semibold 3xl:font-bold text-dark-gray1">System Decomposition:</span>
+                        System Decomposition:
                         The overall design and manufacturing process is broken down into subsystems and individual
                         components for granular analysis.
                     </li>
                     <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        <span class="font-semibold 3xl:font-bold text-dark-gray1">Failure Mode Identification:</span>
+                        Failure Mode Identification:
                         Each subsystem is analyzed for every possible failure mode and its downstream effects on product
                         performance and safety.
                     </li>
                     <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        <span class="font-semibold 3xl:font-bold text-dark-gray1">Severity Prioritization:</span>
-                        Failure modes are ranked by severity score, directing engineering resources to the highest-impact
+                        Severity Prioritization:
+                        Failure modes are ranked by severity score, directing engineering resources to the
+                        highest-impact
                         risks first.
                     </li>
                     <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        <span class="font-semibold 3xl:font-bold text-dark-gray1">Design & Process Refinement:</span>
-                        FMEA insights directly drive improvements to <a href="https://www.whizzsystems.com/services/advanced-manufacturing" class="text-teal1">product designs and manufacturing</a> workflows —
+                        Design & Process Refinement:
+                        FMEA insights directly drive improvements to <a
+                            href="https://www.whizzsystems.com/services/advanced-manufacturing"
+                            class="text-teal1">product designs and manufacturing</a> workflows —
                         measurably increasing MTBF and reducing warranty costs.
                     </li>
                 </ul>
-                <div class="mb-3 3xl:mb-4 border border-dark-gray1">
+                <div class="mb-3 3xl:mb-4 overflow-hidden rounded-md 3xl:rounded-lg">
                     <table class="w-full table-fixed border-collapse text-[7px] sm:text-[8px] 3xl:text-[9px]">
                         <colgroup>
+                            <col style="width:12%" />
+                            <col style="width:8%" />
+                            <col style="width:9%" />
+                            <col style="width:10%" />
+                            <col style="width:10%" />
+                            <col style="width:8%" />
+                            <col style="width:9%" />
                             <col style="width:14%" />
                             <col style="width:9%" />
-                            <col style="width:8%" />
-                            <col style="width:8%" />
-                            <col style="width:9%" />
-                            <col style="width:9%" />
-                            <col style="width:9%" />
-                            <col style="width:9%" />
-                            <col style="width:9%" />
-                            <col style="width:8%" />
-                            <col style="width:8%" />
+                            <col style="width:11%" />
                         </colgroup>
                         <thead>
-                            <tr class="bg-dark-gray1">
+                            <tr class="bg-[#013735]">
                                 <th
-                                    class="text-left text-white font-bold px-1 py-1 border border-dark-gray1 leading-[10px] break-words align-top">
-                                    Function
-                                </th>
-                                <th
-                                    class="text-left text-white font-bold px-1 py-1 border border-dark-gray1 leading-[10px] break-words align-top">
+                                    class="text-left text-white font-bold px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Failure Mode
                                 </th>
                                 <th
-                                    class="text-center text-white font-bold px-0.5 py-1 border border-dark-gray1 leading-[10px] break-words align-top">
+                                    class="text-center text-white font-bold px-1 py-2 3xl:py-3 leading-[10px] break-words align-top">
                                     Failure Mode<br />Severity
                                 </th>
                                 <th
-                                    class="text-center text-white font-bold px-0.5 py-1 border border-dark-gray1 leading-[10px] break-words align-top">
+                                    class="text-center text-white font-bold px-1 py-2 3xl:py-3 leading-[10px] break-words align-top">
                                     Failure Mode<br />Revised<br />Severity
                                 </th>
                                 <th
-                                    class="text-left text-white font-bold px-1 py-1 border border-dark-gray1 leading-[10px] break-words align-top">
+                                    class="text-left text-white font-bold px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Effect
                                 </th>
                                 <th
-                                    class="text-left text-white font-bold px-1 py-1 border border-dark-gray1 leading-[10px] break-words align-top">
+                                    class="text-left text-white font-bold px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     End Effect
                                 </th>
                                 <th
-                                    class="text-center text-white font-bold px-0.5 py-1 border border-dark-gray1 leading-[10px] break-words align-top">
+                                    class="text-center text-white font-bold px-1 py-2 3xl:py-3 leading-[10px] break-words align-top">
                                     Effect<br />Severity
                                 </th>
                                 <th
-                                    class="text-center text-white font-bold px-0.5 py-1 border border-dark-gray1 leading-[10px] break-words align-top">
+                                    class="text-center text-white font-bold px-1 py-2 3xl:py-3 leading-[10px] break-words align-top">
                                     Effect<br />Revised<br />Severity
                                 </th>
                                 <th
-                                    class="text-left text-white font-bold px-1 py-1 border border-dark-gray1 leading-[10px] break-words align-top">
+                                    class="text-left text-white font-bold px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Cause
                                 </th>
                                 <th
-                                    class="text-center text-white font-bold px-0.5 py-1 border border-dark-gray1 leading-[10px] break-words align-top">
+                                    class="text-center text-white font-bold px-1 py-2 3xl:py-3 leading-[10px] break-words align-top">
                                     Occur-<br />rence
                                 </th>
                                 <th
-                                    class="text-center text-white font-bold px-0.5 py-1 border border-dark-gray1 leading-[10px] break-words align-top">
+                                    class="text-center text-white font-bold px-1 py-2 3xl:py-3 leading-[10px] break-words align-top">
                                     Revised<br />Occur-<br />rence
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="bg-white">
-                                <td rowspan="6"
-                                    class="text-dark-gray2 font-normal leading-[10px] px-1 py-1 align-top border border-dark-gray1 break-words">
-                                    Provides convenient flying, aerial surveillance and video recording functionality and
-                                    experience
-                                </td>
-                                <td rowspan="2"
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                            <tr class="bg-[#E9F6F6]">
+                                <td
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Low battery life
                                 </td>
-                                <td rowspan="2"
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    7
-                                </td>
-                                <td rowspan="2"
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    6
-                                </td>
-                                <td rowspan="2"
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                <td
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    7</td>
+                                <td
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    6</td>
+                                <td
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Possible collision
                                 </td>
-                                <td rowspan="2"
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                <td
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Drone inoperable
                                 </td>
-                                <td rowspan="2"
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    7
-                                </td>
-                                <td rowspan="2"
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    6
-                                </td>
                                 <td
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    7</td>
+                                <td
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    6</td>
+                                <td
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Degraded battery
                                 </td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    5
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    5</td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    1
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    1</td>
                             </tr>
                             <tr class="bg-white">
+                                <td class="px-2 py-2 3xl:px-3 3xl:py-3"></td>
+                                <td class="px-1 py-2 3xl:py-3"></td>
+                                <td class="px-1 py-2 3xl:py-3"></td>
+                                <td class="px-2 py-2 3xl:px-3 3xl:py-3"></td>
+                                <td class="px-2 py-2 3xl:px-3 3xl:py-3"></td>
+                                <td class="px-1 py-2 3xl:py-3"></td>
+                                <td class="px-1 py-2 3xl:py-3"></td>
                                 <td
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Cathode wear out
                                 </td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    7
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    7</td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    4
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    4</td>
                             </tr>
-                            <tr class="bg-white">
+                            <tr class="bg-[#E9F6F6]">
                                 <td
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Battery leaking
                                 </td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    10
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    10</td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    10
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    10</td>
                                 <td
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Legal and safety issue
                                 </td>
                                 <td
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Legal and safety issue
                                 </td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    10
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    10</td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    10
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    10</td>
                                 <td
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Manufacturing &amp; packaging defects
                                 </td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    2
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    2</td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    1
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    1</td>
                             </tr>
                             <tr class="bg-white">
-                                <td rowspan="3"
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                <td
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Structural imbalance
                                 </td>
-                                <td rowspan="3"
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    10
-                                </td>
-                                <td rowspan="3"
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    10
-                                </td>
                                 <td
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    10</td>
+                                <td
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    10</td>
+                                <td
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Collision
                                 </td>
                                 <td
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Drone inoperable
                                 </td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    10
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    10</td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    10
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    10</td>
                                 <td
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Structural failure
                                 </td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    4
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    4</td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    1
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    1</td>
                             </tr>
-                            <tr class="bg-white">
-                                <td rowspan="2"
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                            <tr class="bg-[#E9F6F6]">
+                                <td class="px-2 py-2 3xl:px-3 3xl:py-3"></td>
+                                <td class="px-1 py-2 3xl:py-3"></td>
+                                <td class="px-1 py-2 3xl:py-3"></td>
+                                <td
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Unable to fly straight
                                 </td>
-                                <td rowspan="2"
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                <td
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Drone uncontrollable
                                 </td>
-                                <td rowspan="2"
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    5
-                                </td>
-                                <td rowspan="2"
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    4
-                                </td>
                                 <td
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    5</td>
+                                <td
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    4</td>
+                                <td
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     High winds and gusts
                                 </td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    3
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    3</td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    3
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    3</td>
                             </tr>
                             <tr class="bg-white">
+                                <td class="px-2 py-2 3xl:px-3 3xl:py-3"></td>
+                                <td class="px-1 py-2 3xl:py-3"></td>
+                                <td class="px-1 py-2 3xl:py-3"></td>
+                                <td class="px-2 py-2 3xl:px-3 3xl:py-3"></td>
+                                <td class="px-2 py-2 3xl:px-3 3xl:py-3"></td>
+                                <td class="px-1 py-2 3xl:py-3"></td>
+                                <td class="px-1 py-2 3xl:py-3"></td>
                                 <td
-                                    class="text-dark-gray2 font-normal px-1 py-1 align-top border border-dark-gray1 leading-[10px] break-words">
+                                    class="text-dark-gray2 font-normal px-2 py-2 3xl:px-3 3xl:py-3 leading-[10px] break-words align-top">
                                     Motor malfunction
                                 </td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    2
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    2</td>
                                 <td
-                                    class="text-dark-gray2 font-normal text-center px-1 py-1 align-top border border-dark-gray1 leading-[10px]">
-                                    2
-                                </td>
+                                    class="text-dark-gray2 font-normal text-center px-1 py-2 3xl:py-3 leading-[10px] align-top">
+                                    2</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <p
-                    class="text-teal1 text-[13px] 3xl:text-base font-medium 3xl:font-bold mb-6 3xl:mb-8 text-center">
+                    class="text-dark-gray1 text-[13px] 3xl:text-base font-semibold 3xl:font-bold mb-6 3xl:mb-8 text-center">
                     Sample FMEA Sheet
                 </p>
-                <figure class="py-6 3xl:py-8">
-                    <img loading="lazy" height="400" width="800"
-                        class="w-full h-auto object-contain"
-                        src="assets/news/blogs/product-manufacturing/pillar-3.png"
-                        alt="Parts Contributing 80% of Failure Rate chart" />
-                    <figcaption
-                        class="text-teal1 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4 text-center">
-                        Failure Rate based on Reliability Prediction
-                    </figcaption>
-                </figure>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-6 3xl:mb-8">
                     This data-driven approach transforms reliability from a reactive exercise into a proactive
                     engineering discipline — systematically catching potential failures before they ever reach the
                     customer. Products engineered through this FMEA process consistently achieve higher MTBF scores and
                     lower warranty return rates.
                 </p>
+                <figure class="py-6 3xl:py-8">
+                    <p class="text-teal1 text-base 3xl:text-xl font-semibold 3xl:font-bold text-center mb-6 3xl:mb-8">
+                        Parts Contributing 80% of Failure Rate
+                    </p>
+                    <img loading="lazy" height="400" width="800"
+                        class="w-full h-auto object-contain rounded-xl 3xl:rounded-2xl"
+                        src="assets/news/blogs/product-manufacturing/chart.png"
+                        alt="Parts Contributing 80% of Failure Rate" />
+                    <figcaption
+                        class="text-dark-gray1 text-[13px] 3xl:text-base font-semibold 3xl:font-bold mt-3 3xl:mt-4 text-center">
+                        Failure Rate based on Reliability Prediction
+                    </figcaption>
+                </figure>
             </section>
             <section id="section15" class="py-6 3xl:py-8">
                 <h2
@@ -829,7 +654,8 @@
                     Perfecting Every Solder Joint — Every Time
                 </h3>
                 <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Solder joint quality is one of the single most critical determinants of PCB reliability in the field.
+                    Solder joint quality is one of the single most critical determinants of PCB reliability in the
+                    field.
                     Cold solder joints, bridging, and incomplete reflow are among the most common causes of early-life
                     product failures — and they are almost entirely preventable with rigorous process control.
                 </p>
@@ -839,26 +665,6 @@
                     active profiling and optimization, temperature gradients across the board lead to inconsistent joint
                     formation.
                 </p>
-                <h3 id="section17" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    The Whizz Thermal Profiling Setup
-                </h3>
-                <ul class="list-disc list-outside ml-5 mb-6 3xl:mb-8  3xl:space-y-4">
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        <span class="font-semibold 3xl:font-bold text-dark-gray1">ECD Gold M.O.L.E Thermal Profiler</span>
-                        — industry-standard hardware providing real-time temperature measurement at multiple board
-                        locations simultaneously.
-                    </li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        <span class="font-semibold 3xl:font-bold text-dark-gray1">Precision Thermocouples</span>
-                        — strategically placed measurement points across the board surface to capture the full thermal
-                        map.
-                    </li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        <span class="font-semibold 3xl:font-bold text-dark-gray1">Temperature Data Logger</span>
-                        — continuous capture during each oven pass, generating detailed thermal curve data for engineering
-                        analysis and optimization.
-                    </li>
-                </ul>
                 <figure class="py-6 3xl:py-8">
                     <img loading="lazy" height="400" width="800"
                         class="w-full h-auto object-contain rounded-xl 3xl:rounded-2xl"
@@ -869,23 +675,65 @@
                         ECD Gold M.O.L.E Thermal Profiler — Whizz Systems Production Equipment
                     </figcaption>
                 </figure>
+                <h3 id="section17" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
+                    The Whizz Thermal Profiling Setup
+                </h3>
+                <ul class="list-disc list-outside ml-5 mb-6 3xl:mb-8  3xl:space-y-4">
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
+                        <span class="font-semibold 3xl:font-bold text-dark-gray1">ECD Gold M.O.L.E Thermal
+                            Profiler</span>
+                        — industry-standard hardware providing real-time temperature measurement at multiple board
+                        locations simultaneously.
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
+                        <span class="font-semibold 3xl:font-bold text-dark-gray1">Precision Thermocouples</span>
+                        — strategically placed measurement points across the board surface to capture the full thermal
+                        map.
+                    </li>
+                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
+                        <span class="font-semibold 3xl:font-bold text-dark-gray1">Temperature Data Logger</span>
+                        — continuous capture during each oven pass, generating detailed thermal curve data for
+                        engineering
+                        analysis and optimization.
+                    </li>
+                </ul>
                 <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
                     The complete profiling setup is passed through the Vitronics Soltec reflow oven under a controlled
                     nitrogen (N2) atmosphere. Engineers analyze the resulting thermal curve and optimize zone
                     temperatures, conveyor speed, and atmospheric parameters to achieve uniform, repeatable heat
                     distribution across the entire board surface.
                 </p>
-                <figure class="py-6 3xl:py-8">
-                    <img loading="lazy" height="400" width="800"
-                        class="w-full h-auto object-contain rounded-xl 3xl:rounded-2xl"
-                        src="assets/news/blogs/product-manufacturing/pillar-42.png"
-                        alt="PCB Reflow Profile and Vitronics Soltec reflow oven with N2" />
-                </figure>
-                <p
-                    class="text-teal1 text-2xl lg:text-3xl 3xl:text-[40px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold text-center my-10">
-                    Optimized reflow profiling eliminates the primary root cause of solder joint failures — producing
-                    consistent, high-quality joints that perform reliably across the full operational life of the product.
-                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 3xl:gap-[26px] py-6 3xl:py-8">
+                    <figure>
+                        <img loading="lazy" height="400" width="400"
+                            class="w-full h-auto object-cover rounded-xl 3xl:rounded-2xl"
+                            src="assets/news/blogs/product-manufacturing/pillar-42.png" alt="PCB Reflow Profile" />
+                        <figcaption
+                            class="text-dark-gray1 text-[13px] 3xl:text-base font-semibold 3xl:font-bold mt-3 3xl:mt-4 text-center">
+                            PCB Reflow Profile
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img loading="lazy" height="400" width="400"
+                            class="w-full h-auto object-cover rounded-xl 3xl:rounded-2xl"
+                            src="assets/news/blogs/product-manufacturing/pillar-43.png"
+                            alt="Vitronics Soltec with N2" />
+                        <figcaption
+                            class="text-dark-gray1 text-[13px] 3xl:text-base font-semibold 3xl:font-bold mt-3 3xl:mt-4 text-center">
+                            Vitronics Soltec with N2
+                        </figcaption>
+                    </figure>
+                </div>
+                <div
+                    class="flex items-stretch gap-4 p-3 3xl:p-4 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg mt-10 3xl:mt-12">
+                    <img loading="lazy" width="40" class="h-auto w-9 3xl:w-10 flex-shrink-0 self-stretch"
+                        src="assets/news/blogs/product-manufacturing/left.png" alt="" />
+                    <p class="text-dark-gray2 text-[28px] 3xl:text-3xl font-light leading-[40px] 3xl:leading-[44px]">
+                        Optimized reflow profiling eliminates the primary root cause of solder joint failures —
+                        producing consistent, high-quality joints that perform reliably across the full operational life
+                        of the product.
+                    </p>
+                </div>
             </section>
             <section id="section18" class="py-6 3xl:py-8">
                 <h2
@@ -895,60 +743,60 @@
                 <h3 id="section19" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
                     Detecting Defects Invisible to the Human Eye
                 </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
+                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-6 3xl:mb-8">
                     Whizz Systems deploys a three-tier automated inspection strategy that catches defects at every stage
                     of the assembly process — well before they have any chance of reaching the customer. Each layer
                     targets a different failure mode at a different stage of production.
                 </p>
-                <h3 id="section20" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    Tier 1: Solder Paste Inspection (SPI)
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Applied immediately after solder paste printing, SPI precisely measures paste volume, area, height,
-                    and placement accuracy for every pad on the board. Catching paste defects at this stage — before
-                    components are placed and before reflow — is significantly more cost-effective than downstream rework.
-                    Insufficient or misplaced paste is a direct predictor of solder joint failure.
-                </p>
-                <h3 id="section21" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    Tier 2: Automated Optical Inspection (AOI)
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    AOI is deployed twice in the Whizz production line: pre-reflow (verifying component placement accuracy
-                    and polarity) and post-reflow (inspecting solder joint formation and assembly quality). The system
-                    automatically detects misaligned components, missing parts, polarity errors, tombstoning, insufficient
-                    solder, and bridging — defects that manual inspection routinely misses, especially on fine-pitch
-                    components.
-                </p>
-                <figure class="py-6 3xl:py-8">
-                    <img loading="lazy" height="400" width="800"
-                        class="w-full h-auto object-contain rounded-xl 3xl:rounded-2xl"
-                        src="assets/news/blogs/product-manufacturing/pillar-51.png"
-                        alt="Automated Optical Inspection machine and Solder Paste Inspection machine" />
-                </figure>
-                <h3 id="section22" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    Tier 3: 3D X-Ray Inspection
-                </h3>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    For hidden solder joint structures — such as Ball Grid Array (BGA), QFN, and other bottom-terminated
-                    components — Whizz Systems uses cutting-edge 3D X-ray technology (Nordson DAGE XD7600 Ruby X-Plane).
-                    X-ray inspection penetrates component bodies to reveal solder voids, bridging, incomplete reflow, and
-                    cold joints that no optical inspection method can detect.
-                </p>
-                <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    This capability is critical for high-density, high-reliability board assemblies where hidden defects
-                    carry the highest failure potential — and where traditional inspection tools are completely blind.
-                </p>
-                <figure class="py-6 3xl:py-8">
-                    <img loading="lazy" height="400" width="800"
-                        class="w-full h-auto object-contain rounded-xl 3xl:rounded-2xl"
-                        src="assets/news/blogs/product-manufacturing/pillar-52.png"
-                        alt="3D X-Ray machine and PCB X-Ray inspection" />
-                </figure>
-                <p
-                    class="text-teal1 text-2xl lg:text-3xl 3xl:text-[40px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold text-center my-10">
-                    Three overlapping inspection layers — SPI, AOI, and 3D X-ray — provide defect coverage that no single
-                    inspection method can achieve alone.
-                </p>
+                <div class="flex flex-col gap-3 3xl:gap-4 mb-6 3xl:mb-8">
+                    <div *ngFor="let phase of inspectionPhases; let i = index"
+                        class="border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray overflow-hidden">
+                        <button (click)="toggleInspectionPhase(i)"
+                            class="w-full flex items-center gap-4 3xl:gap-5 px-5 pt-5 3xl:px-6 3xl:pt-6 text-left focus:outline-none"
+                            [ngClass]="phase.isOpen ? 'pb-2 3xl:pb-3' : 'pb-5 3xl:pb-6'">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 3xl:w-9 3xl:h-9 rounded-full border border-light-gray1 bg-white flex items-center justify-center relative">
+                                <span class="absolute w-3 3xl:w-3.5 h-0.5 bg-teal1"></span>
+                                <span class="absolute w-3 3xl:w-3.5 h-0.5 bg-teal1 transition-transform duration-300"
+                                    [class.rotate-90]="!phase.isOpen"></span>
+                            </div>
+                            <span class="text-dark-gray1 text-xl 3xl:text-2xl font-medium 3xl:font-bold">{{ phase.title
+                                }}</span>
+                        </button>
+                        <div *ngIf="phase.isOpen" class="px-5 pb-5 3xl:px-6 3xl:pb-6 pl-14 3xl:pl-16 -mt-1 3xl:-mt-2">
+                            <p *ngFor="let paragraph of phase.paragraphs; let last = last"
+                                class="text-dark-gray2 text-sm 3xl:text-base leading-[22px] 3xl:leading-[26px]"
+                                [ngClass]="last && phase.images.length ? 'mb-4 3xl:mb-6' : 'mb-3 3xl:mb-4'">
+                                {{ paragraph }}
+                            </p>
+
+                            <div
+                                [ngClass]="phase.images.length > 1 ? 'grid grid-cols-1 sm:grid-cols-2 gap-[8px]' : 'flex justify-center'">
+                                <!-- Added w-full so the figure wrapper stretches fully -->
+                                <figure *ngFor="let image of phase.images" class="w-full">
+                                    <!-- Added 'block mx-auto' to center the image -->
+                                    <img loading="lazy" height="400" width="400"
+                                        class="block mx-auto h-auto object-cover rounded-xl 3xl:rounded-2xl"
+                                        [src]="image.src" [alt]="image.caption" />
+                                    <figcaption
+                                        class="text-dark-gray1 text-[13px] 3xl:text-base font-semibold 3xl:font-bold mt-3 3xl:mt-4 text-center">
+                                        {{ image.caption }}
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex items-stretch gap-4 p-3 3xl:p-4 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg mt-10 3xl:mt-12">
+                    <img loading="lazy" width="40" class="h-auto w-9 3xl:w-10 flex-shrink-0 self-stretch"
+                        src="assets/news/blogs/product-manufacturing/left.png" alt="" />
+                    <p class="text-dark-gray2 text-[28px] 3xl:text-3xl font-light leading-[40px] 3xl:leading-[44px]">
+                        Three overlapping inspection layers — SPI, AOI, and 3D X-ray — provide defect coverage that no
+                        single
+                        inspection method can achieve alone.
+                    </p>
+                </div>
             </section>
             <section id="section23" class="py-6 3xl:py-8">
                 <h2
@@ -959,7 +807,9 @@
                     Simulating Years of Real-World Use Before Shipment
                 </h3>
                 <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Inspection confirms what was built. <a href="https://www.whizzsystems.com/services/lab-testing-solutions" class="text-teal1">Reliability testing</a> validates how long it will perform in the
+                    Inspection confirms what was built. <a
+                        href="https://www.whizzsystems.com/services/lab-testing-solutions"
+                        class="text-teal1">Reliability testing</a> validates how long it will perform in the
                     field. Whizz Systems subjects every product to a comprehensive test regimen that exposes weaknesses
                     under conditions far more demanding than typical operating environments — because if a product is
                     going to fail, it is far better to find that out in our lab than in your customer's hands.
@@ -967,105 +817,32 @@
                 <h3 id="section25" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
                     Reliability Design Testing (RDT) Equipment
                 </h3>
-                <figure class="py-6 3xl:py-8">
-                    <img loading="lazy" height="400" width="800"
-                        class="w-full h-auto object-contain rounded-xl 3xl:rounded-2xl"
-                        src="assets/news/blogs/product-manufacturing/pillar-61.png"
-                        alt="Reliability Design Testing equipment — Thermal Shock, HAST Autoclave, Temperature and Humidity, Mechanical Vibration" />
-                    <figcaption
-                        class="text-teal1 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4 text-center">
-                        Reliability Design Testing Equipment Suite — Thermal Shock, HAST/Autoclave, Temperature &amp;
-                        Humidity, Mechanical Vibration
-                    </figcaption>
-                </figure>
-                <div class="mb-6 3xl:mb-8 border border-dark-gray1">
-                    <table class="w-full table-fixed border-collapse">
-                        <thead>
-                            <tr class="bg-dark-gray1">
-                                <th
-                                    class="text-left text-white text-sm 3xl:text-base font-bold px-4 3xl:px-6 py-3 3xl:py-4 border border-dark-gray1 w-[28%]">
-                                    Phase
-                                </th>
-                                <th
-                                    class="text-left text-white text-sm 3xl:text-base font-bold px-4 3xl:px-6 py-3 3xl:py-4 border border-dark-gray1">
-                                    Key Activities &amp; Outcomes
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="bg-white">
-                                <td
-                                    class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold px-4 3xl:px-6 py-3 3xl:py-4 align-top border border-dark-gray1 leading-[22px] 3xl:leading-[26px]">
-                                    Accelerated Life Testing (ALT)
-                                </td>
-                                <td
-                                    class="text-dark-gray2 text-sm 3xl:text-base font-normal px-4 3xl:px-6 py-3 3xl:py-4 align-top border border-dark-gray1 leading-[22px] 3xl:leading-[26px]">
-                                    Products stressed at elevated temperature, voltage, and operational intensity to
-                                    simulate years of real-world use in weeks — revealing latent failure modes before they
-                                    emerge in the field.
-                                </td>
-                            </tr>
-                            <tr class="bg-white">
-                                <td
-                                    class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold px-4 3xl:px-6 py-3 3xl:py-4 align-top border border-dark-gray1 leading-[22px] 3xl:leading-[26px]">
-                                    Thermal Shock Testing
-                                </td>
-                                <td
-                                    class="text-dark-gray2 text-sm 3xl:text-base font-normal px-4 3xl:px-6 py-3 3xl:py-4 align-top border border-dark-gray1 leading-[22px] 3xl:leading-[26px]">
-                                    Rapid temperature transitions (-65°C cold zone; +200°C hot zone; 7s transfer time;
-                                    &lt;5 min recovery) expose thermal expansion incompatibilities in solder joints,
-                                    substrates, and interfaces.
-                                </td>
-                            </tr>
-                            <tr class="bg-white">
-                                <td
-                                    class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold px-4 3xl:px-6 py-3 3xl:py-4 align-top border border-dark-gray1 leading-[22px] 3xl:leading-[26px]">
-                                    HAST/ Autoclave Testing
-                                </td>
-                                <td
-                                    class="text-dark-gray2 text-sm 3xl:text-base font-normal px-4 3xl:px-6 py-3 3xl:py-4 align-top border border-dark-gray1 leading-[22px] 3xl:leading-[26px]">
-                                    High-Accelerated Temperature &amp; Humidity Stress (up to 179°C, 30–100% RH, 1–2.5 atm)
-                                    rapidly accelerates moisture-driven failure mechanisms for evaluation of humidity
-                                    robustness.
-                                </td>
-                            </tr>
-                            <tr class="bg-white">
-                                <td
-                                    class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold px-4 3xl:px-6 py-3 3xl:py-4 align-top border border-dark-gray1 leading-[22px] 3xl:leading-[26px]">
-                                    Temperature &amp; Humidity Testing
-                                </td>
-                                <td
-                                    class="text-dark-gray2 text-sm 3xl:text-base font-normal px-4 3xl:px-6 py-3 3xl:py-4 align-top border border-dark-gray1 leading-[22px] 3xl:leading-[26px]">
-                                    Sustained exposure (-35°C to +150°C; 10–98% RH; 3°C/min ramp rate) validates product
-                                    performance across the full spectrum of real-world environmental conditions.
-                                </td>
-                            </tr>
-                            <tr class="bg-white">
-                                <td
-                                    class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold px-4 3xl:px-6 py-3 3xl:py-4 align-top border border-dark-gray1 leading-[22px] 3xl:leading-[26px]">
-                                    Vibration &amp; Shock Testing
-                                </td>
-                                <td
-                                    class="text-dark-gray2 text-sm 3xl:text-base font-normal px-4 3xl:px-6 py-3 3xl:py-4 align-top border border-dark-gray1 leading-[22px] 3xl:leading-[26px]">
-                                    Structural integrity validation (5.1 kN sine / 4.2 kN random; 190 cm/s velocity; 2.54 cm
-                                    peak-peak displacement) simulates transportation and in-service mechanical stress
-                                    profiles.
-                                </td>
-                            </tr>
-                            <tr class="bg-white">
-                                <td
-                                    class="text-dark-gray1 text-sm 3xl:text-base font-semibold 3xl:font-bold px-4 3xl:px-6 py-3 3xl:py-4 align-top border border-dark-gray1 leading-[22px] 3xl:leading-[26px]">
-                                    Strain Gauge / Deflection Testing
-                                </td>
-                                <td
-                                    class="text-dark-gray2 text-sm 3xl:text-base font-normal px-4 3xl:px-6 py-3 3xl:py-4 align-top border border-dark-gray1 leading-[22px] 3xl:leading-[26px]">
-                                    Precision strain gauges measure PCB flexure and component stress under mechanical load
-                                    — identifying board-level stress concentrations that cause solder joint fatigue or
-                                    component cracking over time.
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-6 3xl:py-8">
+                    <div *ngFor="let rdt of rdtEquipments; let i = index" class="border border-light-gray1 rounded-md 3xl:rounded-lg p-3 3xl:p-4 bg-card-gray flex flex-col">
+                        <div>
+                            <div class="border border-light-gray1 rounded bg-[#F8F9FA] flex justify-center items-center overflow-hidden transition-all duration-300" [ngClass]="rdt.isOpen ? 'h-28 3xl:h-36 p-2' : 'h-56 3xl:h-64 p-4'">
+                                <img [src]="rdt.image" [alt]="rdt.title" class="max-h-full max-w-full object-contain" />
+                            </div>
+                            <div class="flex justify-between items-center mt-4 3xl:mt-5 gap-2">
+                                <h4 class="text-dark-gray1 text-xl 3xl:text-2xl font-bold">{{ rdt.title }}</h4>
+                                <button (click)="toggleRdt(i)" class="flex-shrink-0 w-6 h-6 3xl:w-8 3xl:h-8 rounded-full bg-white flex items-center justify-center relative shadow-sm hover:opacity-80 transition-all focus:outline-none cursor-pointer">
+                                    <span class="absolute w-3 h-0.5 bg-teal1"></span>
+                                    <span class="absolute w-3 h-0.5 bg-teal1 transition-transform duration-300" [class.rotate-90]="!rdt.isOpen"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="grid transition-all duration-300" [ngClass]="rdt.isOpen ? 'grid-rows-[1fr] opacity-100 mt-3 3xl:mt-4' : 'grid-rows-[0fr] opacity-0 mt-0'">
+                            <div class="overflow-hidden">
+                                <p class="text-dark-gray2 text-xs 3xl:text-sm leading-relaxed pb-1 pr-6">
+                                    {{ rdt.description }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-dark-gray1 text-xs 3xl:text-sm font-semibold mb-6 3xl:mb-8">
+                    Reliability Design Testing Equipment Suite — Thermal Shock, <br class="hidden sm:block"/>
+                    HAST/Autoclave, Temperature &amp; Humidity, Mechanical Vibration
                 </div>
                 <h3 id="section26" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
                     Environmental Chamber Tests
@@ -1076,29 +853,39 @@
                         src="assets/news/blogs/product-manufacturing/pillar-62.png"
                         alt="Environmental Chamber Tests at Whizz Systems Facility" />
                     <figcaption
-                        class="text-teal1 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4 text-center">
+                        class="text-grey2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4 text-center">
                         Environmental Chamber Tests at Whizz Systems Facility
                     </figcaption>
                 </figure>
-                <h3 id="section27" class="text-dark-gray1 text-xl 3xl:text-2xl font-bold my-3 3xl:my-4">
-                    Strain Gauge &amp; Deflection Testing
-                </h3>
                 <figure class="py-6 3xl:py-8">
                     <img loading="lazy" height="400" width="800"
-                        class="w-full h-auto object-contain rounded-xl 3xl:rounded-2xl"
+                        class="block mx-auto w-auto h-auto object-contain rounded-xl 3xl:rounded-2xl"
                         src="assets/news/blogs/product-manufacturing/pillar-63.png"
                         alt="Strain Gauge Deflection Testing — Vibration Data Plots and PCB Under Test" />
                     <figcaption
-                        class="text-teal1 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4 text-center">
+                        class="text-grey2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4 text-center">
                         Strain Gauge Deflection Testing – Vibration Data Plots &amp; PCB Under Test
                     </figcaption>
                 </figure>
                 <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    In addition to environmental and mechanical testing, Whizz Systems creates mockup <a href="https://www.whizzsystems.com/services/engineering-design/pcb-layout" class="text-teal1">PCBA assemblies and chip packages</a> specifically to optimize reflow solder parameters before committing production boards.
+                    In addition to environmental and mechanical testing, Whizz Systems creates mockup <a
+                        href="https://www.whizzsystems.com/services/engineering-design/pcb-layout"
+                        class="text-teal1">PCBA assemblies and chip packages</a> specifically to optimize reflow solder
+                    parameters before committing production boards.
                     These controlled mockups allow engineers to fine-tune process settings under real production
                     conditions — reducing first-article risk and ensuring process stability from day one of volume
                     production.
                 </p>
+                <figure class="py-6 3xl:py-8">
+                    <img loading="lazy" height="400" width="800"
+                        class="block mx-auto w-auto h-auto object-contain rounded-xl 3xl:rounded-2xl"
+                        src="assets/news/blogs/product-manufacturing/pillar-64.png"
+                        alt="Strain Gauge Deflection Testing — Vibration Data Plots and PCB Under Test" />
+                    <figcaption
+                        class="text-grey2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4 text-center">
+                        Strain Gauge Deflection Testing — Vibration Data Plots & PCB Under Test
+                    </figcaption>
+                </figure>
             </section>
             <section id="section28" class="py-6 3xl:py-8">
                 <h2
@@ -1120,47 +907,66 @@
                         src="assets/news/blogs/product-manufacturing/pillar-71.png"
                         alt="Packaging Types at Whizz Systems — Outbound, Outbound Bulk, Inbound, and Accessories" />
                     <figcaption
-                        class="text-teal1 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4 text-center">
+                        class="text-gray2 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4 text-center">
                         Whizz Systems Packaging Types — Outbound, Outbound Bulk, Inbound, and Accessories
                     </figcaption>
                 </figure>
                 <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Whizz packaging solutions are engineered to maintain product integrity from the production floor to the
+                    Whizz packaging solutions are engineered to maintain product integrity from the production floor to
+                    the
                     customer's facility, covering four packaging categories — Outbound, Outbound Bulk, Inbound, and
                     Accessories — each designed for the specific protection requirements of its use case.
                 </p>
-                <ul class="list-disc list-outside ml-5 mb-6 3xl:mb-8  3xl:space-y-4">
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        <span class="font-semibold 3xl:font-bold text-dark-gray1">Shock &amp; Vibration Absorption:</span>
-                        Custom foam geometries, ESD-safe trays, and structural outer cartons that dissipate mechanical
-                        energy from handling drops, conveyor impacts, and transportation vibration.
-                    </li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        <span class="font-semibold 3xl:font-bold text-dark-gray1">Environmental Shielding:</span>
-                        Protection against humidity, electrostatic discharge (ESD), contamination, and temperature
-                        excursions for sensitive PCB assemblies in transit.
-                    </li>
-                    <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        <span class="font-semibold 3xl:font-bold text-dark-gray1">ISTA-Certified Drop Testing:</span>
-                        Every packaging design is validated with drop tests following ISTA (International Safe Transit
-                        Association) standards — the global benchmark for transit packaging performance.
-                    </li>
-                </ul>
-                <figure class="py-6 3xl:py-8">
-                    <img loading="lazy" height="400" width="800"
-                        class="w-full h-auto object-contain rounded-xl 3xl:rounded-2xl"
-                        src="assets/news/blogs/product-manufacturing/pillar-72.png"
-                        alt="Packaging design engineering illustration and engineered product packaging" />
-                    <figcaption
-                        class="text-teal1 text-[13px] 3xl:text-base font-medium 3xl:font-bold mt-3 3xl:mt-4 text-center">
-                        Packaging Design · Packaging
-                    </figcaption>
-                </figure>
-                <p
-                    class="text-teal1 text-2xl lg:text-3xl 3xl:text-[40px] 3xl:leading-[38.4px] font-semibold 3xl:font-bold text-center my-10">
-                    Every Whizz Systems product ships with engineered, ISTA-validated packaging — because your product's
-                    quality journey doesn't end at our shipping dock.
-                </p>
+                <div class="flex flex-col gap-3 3xl:gap-4 mb-6 3xl:mb-8">
+                    <div *ngFor="let phase of designPhases; let i = index"
+                        class="border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray overflow-hidden">
+                        <button (click)="toggleSupplyPhase(i)"
+                            class="w-full flex items-center gap-4 3xl:gap-5 px-5 pt-5 3xl:px-6 3xl:pt-6 text-left focus:outline-none"
+                            [ngClass]="phase.isOpen ? 'pb-2 3xl:pb-3' : 'pb-5 3xl:pb-6'">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 3xl:w-9 3xl:h-9 rounded-full border border-light-gray1 bg-white flex items-center justify-center relative">
+                                <span class="absolute w-3 3xl:w-3.5 h-0.5 bg-teal1"></span>
+                                <span class="absolute w-3 3xl:w-3.5 h-0.5 bg-teal1 transition-transform duration-300"
+                                    [class.rotate-90]="!phase.isOpen"></span>
+                            </div>
+                            <span class="text-dark-gray1 text-xl 3xl:text-2xl font-medium 3xl:font-bold">{{ phase.title
+                                }}</span>
+                        </button>
+                        <p *ngIf="phase.isOpen"
+                            class="text-dark-gray2 text-sm 3xl:text-base leading-[22px] 3xl:leading-[26px] px-5 pb-5 3xl:px-6 3xl:pb-6 pl-14 3xl:pl-16 -mt-1 3xl:-mt-2">
+                            {{ phase.content }}
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 3xl:gap-[26px] py-6 3xl:py-8">
+                    <figure>
+                        <img loading="lazy" height="400" width="400"
+                            class="w-full h-auto object-cover rounded-xl 3xl:rounded-2xl"
+                            src="assets/news/blogs/product-manufacturing/pillar-72.png" alt="PCB Reflow Profile" />
+                        <figcaption
+                            class="text-dark-gray1 text-[13px] 3xl:text-base font-semibold 3xl:font-bold mt-3 3xl:mt-4 text-center">
+                            PCB Reflow Profile
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img loading="lazy" height="400" width="400"
+                            class="w-full h-auto object-cover rounded-xl 3xl:rounded-2xl"
+                            src="assets/news/blogs/product-manufacturing/pillar-73.png"
+                            alt="Vitronics Soltec with N2" />
+                        <figcaption
+                            class="text-dark-gray1 text-[13px] 3xl:text-base font-semibold 3xl:font-bold mt-3 3xl:mt-4 text-center">
+                            Vitronics Soltec with N2
+                        </figcaption>
+                    </figure>
+                </div>
+                <div
+                    class="flex items-stretch gap-4 p-3 3xl:p-4 bg-card-gray border border-light-gray1 rounded-md 3xl:rounded-lg mt-10 3xl:mt-12">
+                    <img loading="lazy" width="40" class="h-auto w-9 3xl:w-10 flex-shrink-0 self-stretch"
+                        src="assets/news/blogs/product-manufacturing/left.png" alt="" />
+                    <p class="text-dark-gray2 text-[28px] 3xl:text-3xl font-light leading-[40px] 3xl:leading-[44px]">
+                        Optimized reflow profiling eliminates the primary root cause of solder joint failures — producing consistent, high-quality joints that perform reliably across the full operational life of the product.
+                    </p>
+                </div>
             </section>
             <section id="section30" class="py-6 3xl:py-8 mb-6 3xl:mb-8">
                 <h2
@@ -1192,11 +998,13 @@
                         Products are validated under conditions more extreme than they will ever face in the field.
                     </li>
                     <li class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mt-0">
-                        Packaging is engineered and ISTA-certified to protect product integrity to the final destination.
+                        Packaging is engineered and ISTA-certified to protect product integrity to the final
+                        destination.
                     </li>
                 </ul>
                 <p class="text-dark-gray2 text-base 3xl:text-xl leading-[30px] 3xl:leading-[36px] mb-3 3xl:mb-4">
-                    Whether you are developing a <a href="https://www.whizzsystems.com/services/npi" class="text-teal1">new electronic product</a>, qualifying a contract manufacturer, or seeking
+                    Whether you are developing a <a href="https://www.whizzsystems.com/services/npi"
+                        class="text-teal1">new electronic product</a>, qualifying a contract manufacturer, or seeking
                     to reduce field failure rates and warranty costs in an existing product line — Whizz Systems has the
                     capabilities, certifications, and commitment to deliver.
                 </p>
@@ -1207,8 +1015,7 @@
         <!-- right div -->
         <div class="hidden lg:block lg:w-[23%] 2xl:w-[19%] 3xl:w-[22%] shrink-0">
             <div class="relative rounded-md 3xl:rounded-lg overflow-hidden border border-light-gray1">
-                <img height="598" width="252" loading="lazy"
-                    class="w-full h-auto block"
+                <img height="598" width="252" loading="lazy" class="w-full h-auto block"
                     src="assets/news/blogs/product-manufacturing/manufacturing.png"
                     alt="Transforming Ideas into Market-Ready Products" />
                 <div class="absolute inset-0 flex flex-col items-start px-6 3xl:px-8 py-8 3xl:py-10">
