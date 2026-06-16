@@ -177,24 +177,28 @@ export class ProductManufacturingComponent implements OnInit, AfterViewInit, OnD
 
   designPhases = [
     {
-      title: 'Design for Manufacturability (DFM)',
+      title: 'Shock & Vibration Absorption',
       content:
-        'DFM analysis validates that board designs can be reliably produced at scale. Whizz engineers systematically review drill accuracy and signal layer integrity, power and ground plane distribution, soldermask application accuracy, silk screen label precision, board dimension validation, micro via reliability, and penalization strategies to mitigate production risk.',
+        'Custom foam geometries, ESD-safe trays, and structural outer cartons that dissipate mechanical energy from handling drops, conveyor impacts, and transportation vibration.',
       isOpen: false,
     },
     {
-      title: 'Design for Assembly (DFA)',
+      title: 'Environmental Shielding',
       content:
-        'DFA ensures components can be assembled accurately and efficiently. The analysis covers component placement feasibility, padstack design for proper pad placement, solder paste volume and application accuracy, and pin-to-pad alignment to guarantee precise component integration at production speeds.',
+        'Protection against humidity, electrostatic discharge (ESD), contamination, and temperature excursions for sensitive PCB assemblies in transit.',
       isOpen: false,
     },
     {
-      title: 'Design for Test (DFT)',
+      title: 'ISTA-Certified Drop Testing',
       content:
-        'DFT analysis confirms the assembled product can be tested comprehensively. Whizz engineers conduct test point analysis to ensure strategically positioned access points enable thorough functional verification — reducing the risk of undetected defects shipping to the customer.',
+        'Every packaging design is validated with drop tests following ISTA (International Safe Transit Association) standards — the global benchmark for transit packaging performance.',
       isOpen: false,
     },
   ];
+
+  toggleDesignPhase(index: number): void {
+    this.designPhases[index].isOpen = !this.designPhases[index].isOpen;
+  }
 
   toggleSupplyPhase(index: number): void {
     this.supplyChainPhases[index].isOpen = !this.supplyChainPhases[index].isOpen;

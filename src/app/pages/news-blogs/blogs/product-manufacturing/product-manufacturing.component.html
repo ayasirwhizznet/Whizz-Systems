@@ -920,7 +920,7 @@
                 <div class="flex flex-col gap-3 3xl:gap-4 mb-6 3xl:mb-8">
                     <div *ngFor="let phase of designPhases; let i = index"
                         class="border border-light-gray1 rounded-md 3xl:rounded-lg bg-card-gray overflow-hidden">
-                        <button (click)="toggleSupplyPhase(i)"
+                        <button (click)="toggleDesignPhase(i)"
                             class="w-full flex items-center gap-4 3xl:gap-5 px-5 pt-5 3xl:px-6 3xl:pt-6 text-left focus:outline-none"
                             [ngClass]="phase.isOpen ? 'pb-2 3xl:pb-3' : 'pb-5 3xl:pb-6'">
                             <div
