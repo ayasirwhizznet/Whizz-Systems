@@ -25,8 +25,9 @@ import { blogList } from '../blogList';
 export class ProductManufacturingComponent implements OnInit, AfterViewInit, OnDestroy {
   tags = ['Whitepapper', 'Signal Integrity', 'AI Hardware Design'];
 
-  blogs = blogList;
-
+  blogs = blogList.filter(
+    blog => blog.link !== '/news-&-insights/end-to-end-product-manufacturing-reliability'
+  );
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   currentFragment: string | null = null;
