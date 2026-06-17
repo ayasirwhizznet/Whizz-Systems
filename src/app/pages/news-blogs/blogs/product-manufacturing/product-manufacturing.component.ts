@@ -31,6 +31,8 @@ export class ProductManufacturingComponent implements OnInit, AfterViewInit, OnD
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   currentFragment: string | null = null;
+  lastScrollTop = 0;
+  isHeaderVisible = true;
 
   constructor(
     private route: ActivatedRoute,
@@ -87,6 +89,10 @@ export class ProductManufacturingComponent implements OnInit, AfterViewInit, OnD
   @HostListener('window:scroll', [])
   onScroll(): void {
     if (!isPlatformBrowser(this.platformId)) return;
+
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    this.isHeaderVisible = currentScroll <= this.lastScrollTop;
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 
     const sections = [
       'section1',
