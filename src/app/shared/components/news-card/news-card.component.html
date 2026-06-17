@@ -2,47 +2,45 @@
   [routerLink]="navigate"
   class="news-card group cursor-pointer block relative overflow-hidden h-[22rem] 3xl:h-[25.4rem]"
 >
-  <!-- Wrapper: static background image -->
-  <div
-    class="news-card__wrapper relative h-full w-full overflow-hidden rounded-md 3xl:rounded-lg"
-  >
-    <img
-      loading="lazy"
-      [src]="imageUrl"
-      class="absolute inset-0 w-full h-full object-cover pointer-events-none"
-      [alt]="title"
-    />
+  <div class="news-card__wrapper relative h-full w-full overflow-hidden">
+    <div class="news-card__card-body">
+      <div class="news-card__container">
+        <img
+          loading="lazy"
+          [src]="imageUrl"
+          class="news-card__bg-image absolute inset-0 w-full h-full object-cover pointer-events-none"
+          [alt]="title"
+        />
 
-    <!-- Parent: whole block moves up on hover, read more revealed from bottom -->
-    <div class="news-card__parent relative z-[2]">
-      <div class="news-card__content-area">
-        <div class="news-card__expand-spacer" aria-hidden="true"></div>
-        <div class="news-card__white-card">
-          <div class="news-card__white-card-inner">
-            <div class="flex items-center gap-2 3xl:gap-2 flex-wrap mb-3 3xl:mb-4">
-              <div *ngFor="let tag of tags">
-                <app-blog-tag
-                  text="{{ tag }}"
-                  textColor="text-dark-gray2"
-                  borderColor="border-dark-gray2"
-                  borderRadius="rounded-md 3xl:rounded-lg"
-                ></app-blog-tag>
+        <div class="news-card__content-area">
+          <div class="news-card__expand-spacer" aria-hidden="true"></div>
+          <div class="news-card__white-card">
+            <div class="news-card__white-card-inner">
+              <div class="flex items-center gap-2 3xl:gap-2 flex-wrap mb-3 3xl:mb-4">
+                <div *ngFor="let tag of tags">
+                  <app-blog-tag
+                    text="{{ tag }}"
+                    textColor="text-dark-gray2"
+                    borderColor="border-dark-gray2"
+                    borderRadius="rounded-md 3xl:rounded-lg"
+                  ></app-blog-tag>
+                </div>
               </div>
+              <p class="text-dark-gray2 text-xs 3xl:text-sm font-medium 3xl:font-semibold mb-1 3xl:mb-2">
+                {{ date }}
+              </p>
+              <h3 class="text-dark-gray2 text-lg 3xl:text-2xl font-semibold 3xl:font-bold line-clamp">
+                {{ title }}
+              </h3>
             </div>
-            <p class="text-dark-gray2 text-xs 3xl:text-sm font-medium 3xl:font-semibold mb-1 3xl:mb-2">
-              {{ date }}
-            </p>
-            <h3 class="text-dark-gray2 text-lg 3xl:text-2xl font-semibold 3xl:font-bold line-clamp">
-              {{ title }}
-            </h3>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- <div class="news-card__gap1"></div> -->
-      <div class="news-card__gap"></div>
-
-      <div class="news-card__read-more bg-white -m-[1px]">
+    <div class="news-card__footer">
+      <div class="news-card__gap" aria-hidden="true"></div>
+      <div class="news-card__read-more">
         <button
           type="button"
           class="text-sm 3xl:text-base flex items-center justify-between font-medium 3xl:font-bold bg-dark-gray1 w-full h-full px-5 3xl:px-6 text-white rounded-md 3xl:rounded-lg"
