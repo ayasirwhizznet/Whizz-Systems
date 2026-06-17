@@ -13,14 +13,6 @@
       [alt]="title"
     />
 
-    <img
-      *ngIf="thumbnailUrl"
-      loading="lazy"
-      [src]="thumbnailUrl"
-      class="news-card__thumbnail absolute top-4 left-4 3xl:top-5 3xl:left-5 z-[1] w-[42%] max-w-[9.5rem] 3xl:max-w-[11rem] aspect-[4/3] object-cover rounded border-2 border-white pointer-events-none"
-      [alt]="title"
-    />
-
     <!-- Parent: whole block moves up on hover, read more revealed from bottom -->
     <div class="news-card__parent relative z-[2]">
       <div class="news-card__content-area">
