@@ -29,7 +29,7 @@ export const blogList: BlogItem[] = [
         link: '/news-&-insights/high-throughput-interconnect-topologies',
     },
     {
-        imgUrl: 'assets/news/blogs/amd-vpk180/hero.png',
+        imgUrl: 'assets/news/blog-1.png',
         date: 'Dec 06, 2025',
         tags: ['Case Study'],
         title: 'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
