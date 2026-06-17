@@ -12,5 +12,6 @@ export class BlogTagComponent {
   @Input() textColor: string = '';
   @Input() borderColor: string = '';
   @Input() borderRadius: string = '';
+  @Input() backgroundColor: string = '';
   @Input() fromBlog: boolean = false;
 }

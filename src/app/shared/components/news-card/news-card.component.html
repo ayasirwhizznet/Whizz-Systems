@@ -20,12 +20,13 @@
         <div class="news-card__white-card">
           <div class="news-card__white-card-inner">
             <div class="flex items-center gap-2 3xl:gap-2 flex-wrap mb-3 3xl:mb-4">
-              <div *ngFor="let tag of tags">
+              <div *ngFor="let tag of tags; let i = index">
                 <app-blog-tag
                   text="{{ tag }}"
-                  textColor="text-dark-gray2"
+                  [textColor]="i === 0 ? 'text-[#F8F8F8] group-hover:text-dark-gray2' : 'text-dark-gray2'"
                   borderColor="border-dark-gray2"
                   borderRadius="rounded-md 3xl:rounded-lg"
+                  [backgroundColor]="i === 0 ? 'bg-dark-gray2 group-hover:bg-transparent' : ''"
                 ></app-blog-tag>
               </div>
             </div>

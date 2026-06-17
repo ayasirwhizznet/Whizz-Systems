@@ -12,6 +12,7 @@ import { RouterLink } from '@angular/router';
 })
 export class NewsCardComponent {
   @Input() imageUrl: string = '';
+  @Input() thumbnailUrl: string = '';
   @Input() date: string = '';
   @Input() title: string = '';
   @Input() tags: string[] = [];
