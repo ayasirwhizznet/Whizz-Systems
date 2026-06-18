@@ -10,7 +10,7 @@ export const blogList: BlogItem[] = [
     {
         imgUrl: 'assets/news/blogs/product-manufacturing/hero.png',
         date: 'May 22, 2026',
-        tags: ['Whitepapper', 'Signal Integrity', 'AI Hardware Design'],
+        tags: ['Manufacturing Quality', 'PCBA'],
         title: 'How Whizz Systems Delivers: End-to-End Product Manufacturing Reliability',
         link: '/news-&-insights/end-to-end-product-manufacturing-reliability',
     },
