@@ -7,7 +7,7 @@ import { NewsComponent } from '@components/news/news.component';
 import { Meta } from '@angular/platform-browser';
 import { Subscription, filter } from 'rxjs';
 import { ButtonComponent } from '@components/button/button.component';
-import { blogList } from '../blogList';
+import { getOtherBlogs } from '../blogList';
 
 @Component({
   selector: 'app-heatsink',
@@ -23,7 +23,7 @@ import { blogList } from '../blogList';
   templateUrl: './heatsink.component.html',
 })
 export class HeatsinkComponent implements OnInit, AfterViewInit, OnDestroy {
-  blogs = blogList;
+  blogs = getOtherBlogs('/news-&-insights/whitepaper-heatsink');
 
   tags = ['Whitepaper', 'Thermal Management', 'Cooling Solutions'];
 
@@ -114,6 +114,8 @@ export class HeatsinkComponent implements OnInit, AfterViewInit, OnDestroy {
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   currentFragment: string | null = null;
+  lastScrollTop = 0;
+  isHeaderVisible = true;
 
   constructor(
     private route: ActivatedRoute,
@@ -171,6 +173,10 @@ export class HeatsinkComponent implements OnInit, AfterViewInit, OnDestroy {
   @HostListener('window:scroll', [])
   onScroll(): void {
     if (!isPlatformBrowser(this.platformId)) return;
+
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    this.isHeaderVisible = currentScroll <= this.lastScrollTop;
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 
     const sections = Array.from({ length: 14 }, (_, i) => `section${i + 1}`);
     const headerOffset = 500;

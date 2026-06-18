@@ -7,7 +7,7 @@ import { ButtonComponent } from '@components/button/button.component';
 import { NewsComponent } from '@components/news/news.component';
 import { AnimatedButton } from '@components/animated-button/animated-button.component';
 import { Subscription, filter } from 'rxjs';
-import { blogList } from '../blogList';
+import { getOtherBlogs } from '../blogList';
 
 @Component({
   selector: 'app-product-manufacturing',
@@ -23,11 +23,9 @@ import { blogList } from '../blogList';
   styleUrls: ['./product-manufacturing.component.scss'],
 })
 export class ProductManufacturingComponent implements OnInit, AfterViewInit, OnDestroy {
-  tags = ['Whitepapper', 'Signal Integrity', 'AI Hardware Design'];
+  tags = ['Manufacturing Quality', 'PCBA'];
 
-  blogs = blogList.filter(
-    blog => blog.link !== '/news-&-insights/end-to-end-product-manufacturing-reliability'
-  );
+  blogs = getOtherBlogs('/news-&-insights/end-to-end-product-manufacturing-reliability');
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   currentFragment: string | null = null;

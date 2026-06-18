@@ -15,7 +15,7 @@ import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
 import { NewsComponent } from '@components/news/news.component';
 import { Subscription, filter } from 'rxjs';
-import { blogList } from '../blogList';
+import { getOtherBlogs } from '../blogList';
 
 @Component({
   selector: 'app-hardware-design',
@@ -34,7 +34,7 @@ export class HardwareDesignComponent implements OnInit, AfterViewInit, OnDestroy
     'Key Considerations for Customers',
   ];
 
-  blogs = blogList;
+  blogs = getOtherBlogs('/news-&-insights/hardware-design');
 
   pinCounts = ['Pin configuration,', 'Signal routing, and', 'Thermal management'];
   signals1 = ['Data corruption', 'Reduced System Performance.'];
@@ -69,6 +69,8 @@ export class HardwareDesignComponent implements OnInit, AfterViewInit, OnDestroy
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   currentFragment: string | null = null;
+  lastScrollTop = 0;
+  isHeaderVisible = true;
 
   constructor(
     private route: ActivatedRoute,
@@ -125,6 +127,10 @@ export class HardwareDesignComponent implements OnInit, AfterViewInit, OnDestroy
   @HostListener('window:scroll', [])
   onScroll(): void {
     if (!isPlatformBrowser(this.platformId)) return;
+
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    this.isHeaderVisible = currentScroll <= this.lastScrollTop;
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 
     const sections = ['section1', 'section2', 'section3', 'section4', 'section5'];
     const headerOffset = 500;

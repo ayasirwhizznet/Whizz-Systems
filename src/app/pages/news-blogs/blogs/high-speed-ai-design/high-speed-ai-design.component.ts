@@ -7,7 +7,7 @@ import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
 import { NewsComponent } from '@components/news/news.component';
 import { Subscription, filter } from 'rxjs';
-import { blogList } from '../blogList';
+import { getOtherBlogs } from '../blogList';
 
 @Component({
   selector: 'app-high-speed-ai-design',
@@ -24,11 +24,13 @@ import { blogList } from '../blogList';
 export class HighSpeedAiDesignComponent implements OnInit, AfterViewInit, OnDestroy {
   tags = ['High-Speed AI Design', 'Signal Integrity', 'AI Hardware Design'];
 
-  blogs = blogList;
+  blogs = getOtherBlogs('/news-&-insights/high-speed-ai-design-si-techniques');
 
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   currentFragment: string | null = null;
+  lastScrollTop = 0;
+  isHeaderVisible = true;
 
   constructor(
     private route: ActivatedRoute,
@@ -85,6 +87,10 @@ export class HighSpeedAiDesignComponent implements OnInit, AfterViewInit, OnDest
   @HostListener('window:scroll', [])
   onScroll(): void {
     if (!isPlatformBrowser(this.platformId)) return;
+
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    this.isHeaderVisible = currentScroll <= this.lastScrollTop;
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 
     const sections = [
       'section1',

@@ -8,7 +8,7 @@ export interface BlogItem {
 
 export const blogList: BlogItem[] = [
     {
-        imgUrl: 'assets/news/blogs/product-manufacturing/pillar-41.png',
+        imgUrl: 'assets/news/blogs/product-manufacturing/hero.png',
         date: 'May 22, 2026',
         tags: ['Whitepapper', 'Signal Integrity', 'AI Hardware Design'],
         title: 'How Whizz Systems Delivers: End-to-End Product Manufacturing Reliability',
@@ -85,3 +85,6 @@ export const blogList: BlogItem[] = [
         link: '/news-&-insights/whitepaper-invensify',
     },
 ];
+
+export const getOtherBlogs = (currentLink: string): BlogItem[] =>
+    blogList.filter((blog) => blog.link !== currentLink);

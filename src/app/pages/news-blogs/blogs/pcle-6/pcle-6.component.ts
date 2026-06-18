@@ -7,7 +7,7 @@ import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
 import { NewsComponent } from '@components/news/news.component';
 import { Subscription, filter } from 'rxjs';
-import { blogList } from '../blogList';
+import { getOtherBlogs } from '../blogList';
 
 @Component({
   selector: 'app-pcle-6',
@@ -25,11 +25,13 @@ import { blogList } from '../blogList';
 export class Pcle6Component implements OnInit, OnDestroy {
   tags = ['Whitepapper', 'High-Speed Connectivity', 'Mechanical Design'];
 
-  blogs = blogList;
+  blogs = getOtherBlogs('/news-&-insights/whitepaper-pcle6');
 
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   currentFragment: string | null = null;
+  lastScrollTop = 0;
+  isHeaderVisible = true;
 
   constructor(
     private route: ActivatedRoute,
@@ -72,6 +74,10 @@ export class Pcle6Component implements OnInit, OnDestroy {
   @HostListener('window:scroll', [])
   onScroll(): void {
     if (!isPlatformBrowser(this.platformId)) return;
+
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    this.isHeaderVisible = currentScroll <= this.lastScrollTop;
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 
     const sections = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'];
     const headerOffset = 500;

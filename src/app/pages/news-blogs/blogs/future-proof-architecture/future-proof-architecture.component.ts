@@ -7,7 +7,7 @@ import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
 import { NewsComponent } from '@components/news/news.component';
 import { Subscription, filter } from 'rxjs';
-import { blogList } from '../blogList';
+import { getOtherBlogs } from '../blogList';
 
 @Component({
   selector: 'app-future-proof-architecture',
@@ -25,7 +25,7 @@ import { blogList } from '../blogList';
 export class FutureProofArchitectureComponent implements OnInit, AfterViewInit, OnDestroy {
   tags = ['AI Hardware', 'Modular Systems', 'Obsolescence Management'];
 
-  blogs = blogList;
+  blogs = getOtherBlogs('/news-&-insights/future-architecture-performance');
 
   designConsiderations: string[] = [
     'Ensure hardware architecture scalability to meet future demands, prioritizing designs that allow for incremental expansions (e.g., processing power, memory).',
@@ -39,8 +39,8 @@ export class FutureProofArchitectureComponent implements OnInit, AfterViewInit, 
   private navigationSubscription!: Subscription;
   currentFragment: string | null = null;
 
-  isSticky = true;
   lastScrollTop = 0;
+  isHeaderVisible = true;
 
   constructor(
     private route: ActivatedRoute,
@@ -101,6 +101,10 @@ export class FutureProofArchitectureComponent implements OnInit, AfterViewInit, 
   @HostListener('window:scroll', [])
   onScroll(): void {
     if (!isPlatformBrowser(this.platformId)) return;
+
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    this.isHeaderVisible = currentScroll <= this.lastScrollTop;
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 
     const sections = ['section1', 'section2', 'section3', 'section4'];
     const headerOffset = 500;

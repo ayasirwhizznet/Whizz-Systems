@@ -7,7 +7,7 @@ import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
 import { NewsComponent } from '@components/news/news.component';
 import { Subscription, filter } from 'rxjs';
-import { blogList } from '../blogList';
+import { getOtherBlogs } from '../blogList';
 
 @Component({
   selector: 'app-invensify',
@@ -23,7 +23,7 @@ import { blogList } from '../blogList';
   templateUrl: './invensify.component.html'
 })
 export class InvensifyComponent implements OnInit, OnDestroy {
-  blogs = blogList;
+  blogs = getOtherBlogs('/news-&-insights/whitepaper-invensify');
 
   tags = ['Medical Devices', 'PCB Layout', 'Hardware Design'];
 
@@ -62,6 +62,8 @@ export class InvensifyComponent implements OnInit, OnDestroy {
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   currentFragment: string | null = null;
+  lastScrollTop = 0;
+  isHeaderVisible = true;
 
   constructor(
     private route: ActivatedRoute,
@@ -104,6 +106,10 @@ export class InvensifyComponent implements OnInit, OnDestroy {
   @HostListener('window:scroll', [])
   onScroll(): void {
     if (!isPlatformBrowser(this.platformId)) return;
+
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    this.isHeaderVisible = currentScroll <= this.lastScrollTop;
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 
     const sections = ['section1', 'section2', 'section3', 'section4'];
     const headerOffset = 500;

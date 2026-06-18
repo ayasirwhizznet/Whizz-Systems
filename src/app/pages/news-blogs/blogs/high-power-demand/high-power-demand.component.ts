@@ -7,7 +7,7 @@ import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
 import { NewsComponent } from '@components/news/news.component';
 import { Subscription, filter } from 'rxjs';
-import { blogList } from '../blogList';
+import { getOtherBlogs } from '../blogList';
 
 @Component({
   selector: 'app-high-power-demand',
@@ -25,7 +25,7 @@ import { blogList } from '../blogList';
 export class HighPowerDemandComponent implements OnInit, AfterViewInit, OnDestroy {
   tags = ['AI Hardware', 'High Density PCB Design', 'High-Pin Count Chips'];
 
-  blogs = blogList;
+  blogs = getOtherBlogs('/news-&-insights/high-power-demand');
 
   optimized = ['Minimize IR drops', 'Ensure consistent, stable power delivery across the board'];
   layout = ['Trace widths', 'Via placements', 'Power distribution planes'];
@@ -54,6 +54,8 @@ export class HighPowerDemandComponent implements OnInit, AfterViewInit, OnDestro
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   currentFragment: string | null = null;
+  lastScrollTop = 0;
+  isHeaderVisible = true;
 
   constructor(
     private route: ActivatedRoute,
@@ -110,6 +112,10 @@ export class HighPowerDemandComponent implements OnInit, AfterViewInit, OnDestro
   @HostListener('window:scroll', [])
   onScroll(): void {
     if (!isPlatformBrowser(this.platformId)) return;
+
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    this.isHeaderVisible = currentScroll <= this.lastScrollTop;
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 
     const sections = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'];
     const headerOffset = 500;

@@ -12,7 +12,7 @@ import {
 import { NewsComponent } from '@components/news/news.component';
 import { Meta } from '@angular/platform-browser';
 import { Subscription, filter } from 'rxjs';
-import { blogList } from '../blogList';
+import { getOtherBlogs } from '../blogList';
 
 @Component({
   selector: 'app-5g-oru',
@@ -28,14 +28,14 @@ import { blogList } from '../blogList';
   templateUrl: './5g-oru.component.html',
 })
 export class ORUComponent {
-  blogs = blogList;
+  blogs = getOtherBlogs('/news-&-insights/whitepaper-5g-oru');
 
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   currentFragment: string | null = null;
 
-  isSticky = true;
   lastScrollTop = 0;
+  isHeaderVisible = true;
   private isBrowser: boolean;
 
   constructor(
@@ -84,6 +84,10 @@ export class ORUComponent {
   @HostListener('window:scroll', [])
   onScroll(): void {
     if (!this.isBrowser) return;
+
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    this.isHeaderVisible = currentScroll <= this.lastScrollTop;
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 
     const sections = [
       'section1',

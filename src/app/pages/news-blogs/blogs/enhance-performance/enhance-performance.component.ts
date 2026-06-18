@@ -7,7 +7,7 @@ import { BlogTagComponent } from '@components/blog-tag/blog-tag.component';
 import { ButtonComponent } from '@components/button/button.component';
 import { NewsComponent } from '@components/news/news.component';
 import { Subscription, filter } from 'rxjs';
-import { blogList } from '../blogList';
+import { getOtherBlogs } from '../blogList';
 
 @Component({
   selector: 'app-enhance-performance',
@@ -24,7 +24,7 @@ import { blogList } from '../blogList';
 export class EnhancePerformanceComponent implements OnInit, AfterViewInit, OnDestroy {
   tags = ['Interconnect Architecture', 'OCP Compliance', 'High-Throughput System'];
 
-  blogs = blogList;
+  blogs = getOtherBlogs('/news-&-insights/high-throughput-interconnect-topologies');
 
   optimized = ['Minimize IR drops', 'Ensure consistent, stable power delivery across the board'];
   layout = ['Trace widths', 'Via placements', 'Power distribution planes'];
@@ -53,6 +53,8 @@ export class EnhancePerformanceComponent implements OnInit, AfterViewInit, OnDes
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   currentFragment: string | null = null;
+  lastScrollTop = 0;
+  isHeaderVisible = true;
 
   constructor(
     private route: ActivatedRoute,
@@ -109,6 +111,10 @@ export class EnhancePerformanceComponent implements OnInit, AfterViewInit, OnDes
   @HostListener('window:scroll', [])
   onScroll(): void {
     if (!isPlatformBrowser(this.platformId)) return;
+
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    this.isHeaderVisible = currentScroll <= this.lastScrollTop;
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 
     const sections = [
       'section1',
