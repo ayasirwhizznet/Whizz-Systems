@@ -1488,9 +1488,9 @@ export const routes: Routes = [
             (m) => m.ProductManufacturingComponent,
           ),
         data: {
-          title: 'End-to-End Product Manufacturing Reliability | Whizz Systems Whitepaper',
-          description: 'Discover how Whizz Systems delivers end-to-end product manufacturing reliability through DFX analysis, FMEA, thermal profiling, advanced inspection, reliability testing, compliant sourcing, and engineering-grade packaging.',
+          title: 'End-to-End High Reliability Electronics Manufacturing | Whizz Systems Whitepaper',
           keywords: 'product manufacturing reliability, PCB manufacturing reliability, electronics manufacturing reliability, DFX analysis, FMEA electronics manufacturing, thermal profiling PCB assembly, AOI inspection, SPI inspection, 3D X-ray PCB inspection, reliability testing electronics, engineering-grade packaging, electronics quality assurance',
+          description: 'Discover how Whizz Systems delivers end-to-end high-reliability electronics manufacturing through DFX analysis, FMEA, thermal profiling, advanced inspection, reliability testing, compliant sourcing, and packaging.',
           og: {
             type: "article",
             title: "How Whizz Systems Delivers End-to-End Product Manufacturing Reliability",
