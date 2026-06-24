@@ -139,39 +139,4 @@ export class FutureProofArchitectureComponent implements OnInit, AfterViewInit, 
     return this.currentFragment === id;
   }
 
-  shareOnFacebook(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-
-    const url = encodeURIComponent(window.location.href);
-    const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
-    window.open(facebookShareUrl, '_blank');
-  }
-
-  shareOnTwitter(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-
-    const pageUrl = window.location.href;
-
-    const text = encodeURIComponent(
-      `🚀 Discover Future-Proof Architecture and Performance in Next-Generation Systems!\n\n` +
-      `Scalable, Adaptable Hardware Designs for Evolving AI Applications.\n\n` +
-      `Proudly built by @whizzsystems.\n\n` +
-      `${pageUrl}\n\n`
-    );
-
-    const hashtags = encodeURIComponent(
-      'whizzsystems,AIHardwareDesign,ModularSystems'
-    );
-
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}`;
-    window.open(twitterUrl, '_blank');
-  }
-
-  shareOnLinkedIn(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-
-    const url = encodeURIComponent(window.location.href);
-    const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
-    window.open(linkedInShareUrl, '_blank');
-  }
 }

@@ -130,37 +130,4 @@ export class ORUComponent {
     return this.currentFragment === id;
   }
 
-  shareOnFacebook() {
-    if (!this.isBrowser) return;
-
-    const url = encodeURIComponent(window.location.href);
-    const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
-    window.open(facebookShareUrl, '_blank');
-  }
-
-  shareOnTwitter() {
-    if (!this.isBrowser) return;
-
-    const pageUrl = window.location.href;
-    const text = encodeURIComponent(
-      `🚀 Discover 5G Connectivity by Whizz Systems!\n\n` +
-      `Building the Future of 5G Connectivity with Open Radio Unit Solutions.\n\n` +
-      `Proudly built by @whizzsystems.\n\n` +
-      `${pageUrl}\n\n`
-    );
-    const hashtags = encodeURIComponent(
-      'whizzsystems,Heatsink,ThermalManagement,SignalManagement'
-    );
-
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}`;
-    window.open(twitterUrl, '_blank');
-  }
-
-  shareOnLinkedIn(): void {
-    if (!this.isBrowser) return;
-
-    const url = encodeURIComponent(window.location.href);
-    const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
-    window.open(linkedInShareUrl, '_blank');
-  }
 }

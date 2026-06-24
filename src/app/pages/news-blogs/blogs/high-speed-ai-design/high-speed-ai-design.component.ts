@@ -137,22 +137,6 @@ export class HighSpeedAiDesignComponent implements OnInit, AfterViewInit, OnDest
     return this.currentFragment === id;
   }
 
-  shareOnTwitter(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-    const pageUrl = window.location.href;
-    const text = encodeURIComponent(
-      `🚀 High-Speed AI Design Challenges & Robust SI Techniques\n\nProudly built by @whizzsystems.\n\n`
-    );
-    const hashtags = encodeURIComponent('High-Speed AI Design,Signal Integrity,AI Hardware Design');
-    window.open(`https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}&url=${encodeURIComponent(pageUrl)}`, '_blank');
-  }
-
-  shareOnLinkedIn(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
-  }
-
   faqs: any[] = [
     {
       question: 'Why is signal integrity important in AI hardware?',

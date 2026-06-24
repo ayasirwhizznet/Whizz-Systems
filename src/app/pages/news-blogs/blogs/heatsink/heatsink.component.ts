@@ -209,25 +209,4 @@ export class HeatsinkComponent implements OnInit, AfterViewInit, OnDestroy {
     return this.currentFragment === id;
   }
 
-  shareOnFacebook(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
-  }
-
-  shareOnTwitter(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-    const pageUrl = window.location.href;
-    const text = encodeURIComponent(
-      `🚀 Discover Heatsink by Whizz Systems!\n\nHeatsinks: Considerations, guidance, and best practices.\n\nProudly built by @whizzsystems.\n\n`
-    );
-    const hashtags = encodeURIComponent('whizzsystems,ThermalManagement,AISystemThermal');
-    window.open(`https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}&url=${encodeURIComponent(pageUrl)}`, '_blank');
-  }
-
-  shareOnLinkedIn(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
-  }
 }

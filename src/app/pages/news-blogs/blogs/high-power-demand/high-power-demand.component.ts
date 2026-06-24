@@ -152,25 +152,4 @@ export class HighPowerDemandComponent implements OnInit, AfterViewInit, OnDestro
     this.router.navigate(['/services/engineering-design/power-delivery-network-simulation']);
   }
 
-  shareOnFacebook(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
-  }
-
-  shareOnTwitter(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-    const pageUrl = window.location.href;
-    const text = encodeURIComponent(
-      `🚀 Discover Next-Generation Hardware Design by Whizz Systems!\n\nManaging High-Power Demands in Next-Generation Hardware.\n\nProudly built by @whizzsystems.\n\n`
-    );
-    const hashtags = encodeURIComponent('whizzsystems,AIHardware,HighDensityPCBDesign');
-    window.open(`https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}&url=${encodeURIComponent(pageUrl)}`, '_blank');
-  }
-
-  shareOnLinkedIn(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
-  }
 }

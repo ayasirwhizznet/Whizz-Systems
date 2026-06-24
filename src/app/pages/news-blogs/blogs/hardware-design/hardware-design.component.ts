@@ -164,30 +164,6 @@ export class HardwareDesignComponent implements OnInit, AfterViewInit, OnDestroy
     return this.currentFragment === id;
   }
 
-  shareOnFacebook(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
-  }
-
-  shareOnTwitter(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-
-    const text = encodeURIComponent(
-      `🚀 Discover High-density, high-complexity systems by Whizz Systems!\n\nHigh-density, high-complexity systems engineered for performance and scalability.\n\nProudly built by @whizzsystems.`
-    );
-
-    const hashtags = encodeURIComponent('whizzsystems,HighDensityHardwareDesign,AISystemThermal,SignalManagement');
-    const pageUrl = window.location.href;
-    window.open(`https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}&url=${encodeURIComponent(pageUrl)}`, '_blank');
-  }
-
-  shareOnLinkedIn(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
-  }
-
   navigateToPowerDelivery(): void {
     if (!isPlatformBrowser(this.platformId)) return;
     this.router.navigate(['/services/engineering-design/power-delivery-network-simulation']);

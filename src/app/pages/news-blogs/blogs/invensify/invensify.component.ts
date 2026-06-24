@@ -141,25 +141,4 @@ export class InvensifyComponent implements OnInit, OnDestroy {
     return this.currentFragment === id;
   }
 
-  shareOnFacebook(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
-  }
-
-  shareOnTwitter(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-    const pageUrl = window.location.href;
-    const text = encodeURIComponent(
-      `🚀 Discover Medical Logistics by Whizz Systems!\n\nBuilding the Future of Medical Logistics with Invensify.\n\nProudly built by @whizzsystems.\n\n`
-    );
-    const hashtags = encodeURIComponent('whizzsystems,MedicalDevices,PCBLayout,SignalManagement');
-    window.open(`https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}&url=${encodeURIComponent(pageUrl)}`, '_blank');
-  }
-
-  shareOnLinkedIn(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
-  }
 }
