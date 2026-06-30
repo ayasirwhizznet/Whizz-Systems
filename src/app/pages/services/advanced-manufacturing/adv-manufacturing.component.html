@@ -186,3 +186,36 @@
 <app-services-contact-experts slogan="Ready To Bring Your Complex Product To Life?" desc="Start Your Advanced Build!"
   navigate="https://webforms.pipedrive.com/f/6ckwlVx6dLeTbpQfyegE6ld9KDDjsvOaNQzfC8d58zS7VVhHClx41A7vzJSEMvfQ0H"
   btnText="Contact Us"></app-services-contact-experts>
+
+<!-- FAQ Section -->
+<section class="px-4 sm:px-[6.3%] py-12 lg:py-16 3xl:py-20 bg-white">
+    <div class="mx-auto">
+        <h2 class="text-center text-dark-gray2 text-3xl lg:text-[40px] 3xl:text-[48px] font-bold mb-10 lg:mb-16">
+            Frequently Asked Questions
+        </h2>
+
+        <div class="flex flex-col gap-4 mx-auto">
+            <div *ngFor="let faq of faqs; let i = index"
+                class="border border-light-gray1 rounded-xl overflow-hidden bg-card-gray">
+                <button (click)="toggleFaq(i)"
+                    class="w-full flex items-center justify-between py-5 px-5 sm:p-6 text-left transition-all hover:opacity-80 focus:outline-none">
+                    <h4 class="flex flex-col gap-3 sm:gap-4">
+                        <span class="text-[15px] sm:text-base lg:text-xl 3xl:text-2xl font-semibold text-dark-gray2">{{
+                            faq.question }}</span>
+                        <p *ngIf="faq.isOpen"
+                            class="text-gray-600 text-sm 3xl:text-base pr-6 sm:pr-10 leading-relaxed lg:w-[60%]">
+                            {{ faq.answer }}
+                        </p>
+                    </h4>
+                    <!-- Circular Toggle Button -->
+                    <div
+                        class="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 3xl:w-11 3xl:h-11 rounded-full border border-light-gray1 bg-white flex items-center justify-center relative shadow-sm">
+                        <span class="absolute w-3 sm:w-4 h-0.5 bg-teal1"></span>
+                        <span class="absolute w-3 sm:w-4 h-0.5 bg-teal1 transition-transform duration-300"
+                            [class.rotate-90]="!faq.isOpen"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

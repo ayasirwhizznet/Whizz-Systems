@@ -109,4 +109,46 @@ export class Pcle6Component implements OnInit, OnDestroy {
     return this.currentFragment === id;
   }
 
+  faqs: any[] = [
+    {
+      question: 'What Is PCIe 6.0 and Why Is It Important for Next-Generation Systems?',
+      answer: 'PCIe 6.0 represents a significant advancement in high-speed connectivity, enabling substantially higher bandwidth to support AI infrastructure, data centers, networking platforms, and high-performance computing systems. As workloads continue to demand faster data movement among processors, accelerators, memory, and storage, PCIe 6.0 provides the performance foundation required for future computing architectures.',
+      isOpen: false
+    },
+    {
+      question: 'What Design Challenges Are Associated with PCIe 6.0 Implementation?',
+      answer: 'As signaling speeds increase, engineers face tighter margins for signal integrity, channel loss, crosstalk, and power efficiency. PCIe 6.0 implementations require careful attention to PCB design, interconnect selection, validation methodologies, and compliance requirements to ensure reliable high-speed communication.',
+      isOpen: false
+    },
+    {
+      question: 'Why Is Signal Integrity Critical for PCIe 6.0 Designs?',
+      answer: 'At next-generation data rates, even minor signal quality issues can significantly impact system performance and reliability. Successful PCIe 6.0 implementations depend on controlled impedance, optimized routing, loss management, and comprehensive signal integrity analysis throughout the design process.',
+      isOpen: false
+    },
+    {
+      question: "How Are PCIe 6.0 Platforms Validated and Tested?",
+      answer: 'Validation involves a combination of simulation, compliance testing, protocol analysis, and signal integrity verification. Engineers evaluate channel performance, interoperability, and overall system behavior to ensure designs meet performance objectives and industry standards before deployment.',
+      isOpen: false
+    },
+    {
+      question: "How Do Engineers Determine Which PCIe Generation Is Appropriate for a New Design?",
+      answer: 'The choice depends on application bandwidth requirements, scalability objectives, power constraints, and long-term product strategy. While previous PCIe generations remain suitable for many applications, PCIe 6.0 provides the headroom needed for emerging AI, networking, and data-intensive workloads.',
+      isOpen: false
+    },
+    {
+      question: "How Is PCIe Used in AI, Networking, and Embedded Systems?",
+      answer: 'PCIe serves as a high-bandwidth communication backbone connecting processors, accelerators, memory subsystems, storage devices, and networking hardware. Its scalability and performance make it a critical technology for modern embedded systems, cloud infrastructure, AI platforms, and telecommunications equipment.',
+      isOpen: false
+    },
+    {
+      question: "Why Is PCIe 6.0 Important for AI and High-Performance Computing?",
+      answer: 'AI training, inference, and high-performance computing workloads depend on moving large volumes of data with minimal latency. PCIe 6.0 delivers significantly higher bandwidth and improved data transfer efficiency, enabling faster communication between processors, accelerators, memory, and storage. This increased performance helps support the growing demands of next-generation computing platforms.',
+      isOpen: false
+    },
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
+
 }

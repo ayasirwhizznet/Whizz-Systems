@@ -104,4 +104,41 @@ export class LabTestingSolutionsComponent implements OnInit, OnDestroy {
       }
     }, 1);
   }
+
+  faqs: any[] = [
+    {
+      question: 'What Are Lab Testing Solutions for Electronic Products?',
+      answer: 'Lab testing solutions validate that electronic products meet their functional, performance, reliability, and quality requirements before production or deployment. Through comprehensive testing and verification, engineering teams can identify design issues early, reduce product risk, and ensure systems perform as intended under real-world operating conditions.',
+      isOpen: false
+    },
+    {
+      question: 'Why Is Functional Testing Important in Electronic Product Development?',
+      answer: 'Functional testing verifies that a product performs according to its design specifications before it moves into production. By validating hardware functionality, identifying defects early, and confirming system performance, functional testing helps reduce costly redesigns, improve product quality, and increase confidence during manufacturing and deployment.',
+      isOpen: false
+    },
+    {
+      question: 'What Testing Services Should Be Completed Before Bringing an Electronic Product to Market?',
+      answer: 'Before commercialization, electronic products should undergo a structured verification and validation process that may include functional testing, system validation, reliability assessment, environmental testing, and failure analysis. Performing these evaluations before production helps identify potential issues early, supports regulatory and quality requirements, and improves long-term product reliability.',
+      isOpen: false
+    },
+    {
+      question: "How Do Lab Testing Solutions Improve Product Reliability and Manufacturing Readiness?",
+      answer: 'Lab testing provides valuable insight into how a product performs under expected operating conditions. By validating functionality, analyzing failures, and verifying design performance before manufacturing, organizations can improve product reliability, reduce production risks, and accelerate the transition from development to volume manufacturing.',
+      isOpen: false
+    },
+    {
+      question: "How Can Specialized Testing Support High-Performance Electronics and AI Hardware?",
+      answer: 'High-performance computing, AI systems, and other advanced electronic platforms require rigorous testing to validate power delivery, thermal performance, signal integrity, and overall system reliability. A comprehensive testing strategy helps engineering teams identify potential performance limitations early, ensuring complex hardware platforms are ready for production and long-term operation.',
+      isOpen: false
+    },
+    {
+      question: "What Is the Difference Between Verification and Validation in Hardware Testing?",
+      answer: 'Verification confirms that a product has been designed according to its specifications, while validation ensures it performs as intended in its real-world application. Together, these processes help identify defects early, improve product quality, and reduce the risk of failures after deployment. A comprehensive testing strategy incorporates both verification and validation to support reliable product development.',
+      isOpen: false
+    },
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }

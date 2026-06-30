@@ -232,4 +232,41 @@ Analyze solder voids and joint integrity across multiple layers
   }
 
   constructor(private route: ActivatedRoute, private router: Router) {}
+
+  faqs: any[] = [
+    {
+      question: 'What Is Advanced Manufacturing for Electronic Hardware Products?',
+      answer: 'Advanced manufacturing combines engineering expertise, manufacturing processes, supply chain coordination, and quality management to transform a product design into a production-ready solution. By integrating these capabilities throughout the product lifecycle, organizations can improve manufacturability, accelerate time to market, and scale production while maintaining consistent quality and reliability.',
+      isOpen: false
+    },
+    {
+      question: 'What Are the Benefits of an End-to-End Hardware Manufacturing Partner?',
+      answer: 'Working with an end-to-end manufacturing partner streamlines the transition from design to production by bringing engineering, prototyping, manufacturing, testing, and supply chain management under a unified process. This integrated approach improves collaboration, reduces development risks, minimizes costly design iterations, and enables faster product commercialization while maintaining quality throughout the manufacturing lifecycle.',
+      isOpen: false
+    },
+    {
+      question: 'How Does Advanced Manufacturing Support New Product Introduction (NPI)?',
+      answer: 'Successful New Product Introduction (NPI) requires more than building prototypes. It involves validating manufacturability, refining production processes, establishing quality controls, coordinating supply chain readiness, and preparing products for scalable manufacturing. A structured NPI process helps identify potential issues early, reducing delays and ensuring a smoother transition into volume production.',
+      isOpen: false
+    },
+    {
+      question: "Why Is Supply Chain and Component Management Important in Electronics Manufacturing?",
+      answer: 'Component availability, supplier reliability, and procurement planning play a critical role in manufacturing success. Effective supply chain management helps mitigate sourcing risks, improve production continuity, and ensure that critical components are available when needed. Integrating procurement with engineering and manufacturing planning also supports cost optimization and long-term product reliability.',
+      isOpen: false
+    },
+    {
+      question: "How Can Startups and Technology Companies Accelerate Hardware Product Commercialization?",
+      answer: 'Bringing an innovative hardware product to market requires close coordination between engineering, prototyping, manufacturing, testing, and production scaling. An integrated manufacturing approach helps startups and technology companies reduce development complexity, validate designs earlier, and transition more efficiently from concept to production, allowing them to focus on innovation while preparing for commercial success.',
+      isOpen: false
+    },
+    {
+      question: "How Does Design for Manufacturing (DFM) Improve Production Efficiency?",
+      answer: 'Design for Manufacturing (DFM) evaluates a product during development to ensure it can be manufactured efficiently, consistently, and cost-effectively. By identifying potential production challenges early, DFM helps reduce manufacturing defects, improve production yields, shorten assembly time, and accelerate the transition from prototype to volume manufacturing.',
+      isOpen: false
+    },
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }

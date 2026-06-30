@@ -139,4 +139,41 @@ export class FutureProofArchitectureComponent implements OnInit, AfterViewInit, 
     return this.currentFragment === id;
   }
 
+  faqs: any[] = [
+    {
+      question: 'How Can Organizations Future-Proof AI Hardware Platforms and Infrastructure?',
+      answer: 'Future-proofing begins with architectural decisions that support long-term scalability rather than short-term performance targets. As AI models, accelerators, and system requirements continue to evolve, organizations need platforms that can accommodate future upgrades without requiring major redesigns. A modular, standards-based approach helps extend product lifecycles, reduce engineering rework, and protect investments in rapidly changing technology environments.',
+      isOpen: false
+    },
+    {
+      question: 'Why Is Modular Architecture Important for Long-Term AI Performance?',
+      answer: 'Modern AI systems must adapt to increasing compute demands, evolving memory requirements, and emerging interconnect technologies. Modular architectures enable targeted upgrades of key subsystems while preserving the broader platform investment. This flexibility helps organizations scale performance, accelerate deployment cycles, and remain competitive as technology requirements evolve.',
+      isOpen: false
+    },
+    {
+      question: 'How Does Open, Standards-Based Architecture Support Future Expansion?',
+      answer: 'Open architectures help reduce vendor lock-in and improve interoperability across hardware, software, and manufacturing ecosystems. By building around widely adopted standards, organizations can more easily integrate new technologies, support future upgrades, and respond to changing market requirements without disrupting existing infrastructure.',
+      isOpen: false
+    },
+    {
+      question: "How Can AI and Intelligent Systems Be Designed for Future Software and Feature Upgrades?",
+      answer: 'Future-ready systems should be designed with upgradeability in mind from the earliest stages of development. This includes scalable compute resources, flexible communication architectures, and software-defined capabilities that allow functionality to evolve. Such an approach enables organizations to deploy new features, support changing workloads, and extend system value without extensive hardware modifications.',
+      isOpen: false
+    },
+    {
+      question: "What Architectural Principles Help Organizations Adapt to Future Technology Changes?",
+      answer: 'Successful next-generation platforms prioritize scalability, flexibility, interoperability, and lifecycle management. These principles help organizations navigate evolving performance requirements, technology transitions, and supply-chain challenges while maintaining long-term system reliability and operational efficiency.',
+      isOpen: false
+    },
+    {
+      question: "Why Is Scalability Essential for Next-Generation AI Infrastructure?",
+      answer: 'AI workloads continue to grow in complexity, requiring hardware platforms that can support increasing compute capacity, memory bandwidth, and high-speed connectivity. Designing for scalability allows organizations to expand system capabilities over time without major architectural redesigns, helping protect long-term technology investments and support evolving performance requirements.',
+      isOpen: false
+    },
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
+
 }
