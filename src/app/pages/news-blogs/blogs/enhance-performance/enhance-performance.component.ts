@@ -167,5 +167,47 @@ export class EnhancePerformanceComponent implements OnInit, AfterViewInit, OnDes
     this.router.navigate(['/services/engineering-design/power-delivery-network-simulation']);
   }
 
+  faqs: any[] = [
+    {
+      question: 'What Are High-Throughput Interconnect Topologies and Why Are They Important?',
+      answer: 'High-throughput interconnect topologies define how modules within a system communicate and exchange data. In AI, HPC, and data infrastructure applications, interconnect architecture directly impacts latency, bandwidth, and overall system performance. As compute density increases, inefficient communication pathways can become a significant bottleneck, limiting the effectiveness of otherwise powerful hardware platforms. Selecting the right topology helps ensure efficient data movement and consistent system-level performance.',
+      isOpen: false
+    },
+    {
+      question: 'How Do Advanced Interconnect Topologies Improve AI and HPC Performance?',
+      answer: 'Advanced interconnect topologies create multiple communication pathways between system modules, reducing latency and improving data flow. Architectures such as folded torus topologies help minimize communication delays by shortening data paths and distributing traffic more efficiently across the system. This enables AI accelerators and high-performance computing platforms to process large volumes of data while maintaining high throughput and scalability.',
+      isOpen: false
+    },
+    {
+      question: 'What Factors Should Engineers Consider When Designing High-Speed Interconnect Architectures?',
+      answer: 'Successful high-speed interconnect design requires careful attention to latency, bandwidth, routing complexity, signal integrity, electromagnetic interference (EMI), impedance control, and thermal constraints. Engineers must also consider system scalability and future expansion requirements. A well-designed architecture balances these factors to deliver reliable communication and long-term performance.',
+      isOpen: false
+    },
+    {
+      question: "How Does Signal Integrity Affect High-Performance Interconnect Systems?",
+      answer: 'Signal integrity plays a critical role in maintaining reliable communication between modules in dense computing environments. Poor signal quality can lead to data corruption, increased latency, and reduced system performance. Techniques such as impedance-controlled routing, optimized grounding strategies, precision trace placement, and noise reduction measures help preserve data fidelity and minimize crosstalk in high-speed designs.',
+      isOpen: false
+    },
+    {
+      question: "How Can Organizations Balance OCP Compliance with Custom Interconnect Requirements?",
+      answer: 'Many high-performance systems must comply with Open Compute Project (OCP) standards to ensure interoperability and ecosystem compatibility. However, some applications require customized architectures to meet unique performance objectives. The most effective approach balances compliance requirements with design flexibility, allowing organizations to leverage industry standards while optimizing interconnect performance for specific workloads.',
+      isOpen: false
+    },
+    {
+      question: "Why Is Scalability Important in Interconnect Architecture Design?",
+      answer: 'Scalable interconnect architectures enable systems to grow as processing requirements increase. By designing communication pathways that support future module additions and evolving workloads, organizations can extend the lifespan of their hardware investments and reduce the need for major redesigns. Scalable architectures also help maintain performance as AI and HPC environments continue to expand.',
+      isOpen: false
+    },
+    {
+      question: "How Do Interconnect Topologies Influence System Scalability?",
+      answer: 'Interconnect topology determines how efficiently processors, accelerators, memory, and networking resources communicate as systems grow. A scalable topology minimizes communication bottlenecks, maintains low latency, and supports increasing bandwidth demands, enabling AI and high-performance computing platforms to expand without sacrificing overall performance.',
+      isOpen: false
+    },
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
+
 }
 
