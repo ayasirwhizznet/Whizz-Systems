@@ -87,4 +87,36 @@ export class FpgaComponent {
       desc: 'We collaborate closely with our clients to turn complex ideas into market-ready solutions quickly, reducing time-to-market and overall costs.',
     },
   ];
+
+  faqs: any[] = [
+    {
+      question: 'What Is FPGA Design And When Should It Be Used?',
+      answer: 'FPGA design involves developing programmable hardware that can be customized to meet complex processing, connectivity, and control requirements. FPGAs are ideal for applications requiring high performance, parallel processing, rapid development, or evolving functionality, making them well suited for AI, networking, telecommunications, aerospace, defense, and embedded computing applications.',
+      isOpen: false
+    },
+    {
+      question: 'How Does FPGA Development Accelerate Hardware Innovation?',
+      answer: 'Unlike fixed-function hardware, FPGAs allow engineers to rapidly prototype, validate, and refine hardware designs without manufacturing custom silicon. This flexibility shortens development cycles, enables faster iteration, and allows software and hardware development to progress in parallel, accelerating overall product innovation.',
+      isOpen: false
+    },
+    {
+      question: 'When Should Engineers Choose an FPGA Instead of an ASIC?',
+      answer: 'FPGAs are often the preferred choice when flexibility, faster time-to-market, lower development costs, or design updates are important. They allow engineers to validate system architectures and adapt functionality throughout development, while ASICs are generally better suited for high-volume production where maximum performance and unit cost optimization are the primary objectives.',
+      isOpen: false
+    },
+    {
+      question: 'What Industries Benefit Most From FPGA-Based Solutions?',
+      answer: 'FPGA technology supports a wide range of industries, including AI compute, semiconductor testing, telecommunications, 5G infrastructure, medical devices, aerospace, defense, cloud computing, and industrial automation. These applications benefit from the high-speed processing, adaptability, and performance that programmable logic provides.',
+      isOpen: false
+    },
+    {
+      question: 'How Does FPGA Prototyping Reduce Development Risk?',
+      answer: 'FPGA prototyping enables engineering teams to verify functionality, validate interfaces, optimize performance, and identify design issues before committing to production hardware. Early validation reduces redesign costs, improves product quality, and provides greater confidence before transitioning into manufacturing.',
+      isOpen: false
+    }
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }

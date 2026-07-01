@@ -1,5 +1,6 @@
 import { ServicesBenefitsComponent } from '@components/services-benefits/services-benefits.component';
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
 import { ServicesCoreServicesComponent } from '@components/services-core-services/services-core-services.component';
@@ -9,6 +10,7 @@ import { ServicesIntroComponent } from '@components/services-intro/services-intr
   selector: 'app-modeling',
   standalone: true,
   imports: [
+    CommonModule,
     ServicesHeroComponent,
     ServicesIntroComponent,
     ServicesContactExpertsComponent,
@@ -68,4 +70,36 @@ export class ModelingComponent {
       desc: 'Seamless supply chain handling to ensure efficient production and timely delivery.',
     },
   ];
+
+  faqs: any[] = [
+    {
+      question: 'Why Is Mechanical Design Important For Electronic Products?',
+      answer: 'Mechanical design ensures that electronic systems are structurally sound, manufacturable, and optimized for their intended operating environment. It considers enclosure design, component placement, thermal requirements, manufacturability, and system integration to create products that not only perform reliably but can also be efficiently assembled and deployed. Integrating mechanical engineering early in the design process helps reduce costly redesigns and improves overall product quality.',
+      isOpen: false
+    },
+    {
+      question: 'How Does 3d Modeling Improve Hardware Development?',
+      answer: '3D modeling enables engineering teams to visualize product assemblies, verify mechanical fit, evaluate clearances, and identify potential integration issues before prototypes are built. By validating designs digitally, organizations can reduce development time, improve collaboration across engineering disciplines, and accelerate the transition from concept to manufacturing.',
+      isOpen: false
+    },
+    {
+      question: 'What Factors Influence Enclosure Design For Electronics?',
+      answer: 'Electronic enclosure design must balance structural integrity, thermal management, manufacturability, accessibility, and environmental protection. Factors such as component dimensions, airflow, connector placement, serviceability, regulatory requirements, and mechanical constraints all influence enclosure design. Considering these requirements early helps ensure the final product meets both performance and manufacturing objectives.',
+      isOpen: false
+    },
+    {
+      question: 'How Does Mechanical Engineering Support Manufacturability?',
+      answer: 'Mechanical engineering improves manufacturability by designing products that can be assembled efficiently, manufactured consistently, and maintained throughout their lifecycle. Optimizing part geometry, material selection, assembly methods, and production tolerances helps reduce manufacturing complexity, lower production costs, and improve product reliability.',
+      isOpen: false
+    },
+    {
+      question: 'Why Should Electrical And Mechanical Teams Collaborate Early?',
+      answer: 'Successful hardware development depends on close collaboration between electrical and mechanical engineering teams. Coordinating enclosure design, PCB placement, connector locations, thermal requirements, and manufacturing constraints early in development helps prevent integration issues, reduce redesigns, and accelerate product delivery while ensuring optimal system performance.',
+      isOpen: false
+    }
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }

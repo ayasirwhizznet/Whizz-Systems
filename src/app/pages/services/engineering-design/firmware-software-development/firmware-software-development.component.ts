@@ -72,4 +72,36 @@ export class FirmwareSoftwareDevelopmentComponent {
       desc: 'Supporting AI, automotive, industrial, medical, IoT, and consumer electronics.',
     },
   ];
+
+  faqs: any[] = [
+    {
+      question: 'What Is Embedded Firmware Development?',
+      answer: 'Embedded firmware development creates the low-level software that controls and manages electronic hardware. Firmware enables processors, microcontrollers, FPGAs, and peripheral devices to communicate, initialize system resources, and execute application-specific functions that allow hardware to operate reliably.',
+      isOpen: false
+    },
+    {
+      question: 'How Does Firmware Interact With Hardware Components?',
+      answer: 'Firmware acts as the bridge between hardware and higher-level software by controlling processors, memory, communication interfaces, sensors, and peripheral devices. Close integration between firmware and hardware ensures reliable system operation, efficient resource utilization, and optimal overall performance throughout the product lifecycle.',
+      isOpen: false
+    },
+    {
+      question: 'Why Is Firmware Critical For Embedded Electronic Systems?',
+      answer: 'Modern electronic products rely on firmware to manage device initialization, communication protocols, hardware control, diagnostics, and system monitoring. Well-designed firmware improves product stability, enables new functionality, simplifies updates, and supports long-term reliability in complex embedded systems.',
+      isOpen: false
+    },
+    {
+      question: 'What Should Be Considered During Firmware Architecture Design?',
+      answer: 'Firmware architecture should be designed with scalability, maintainability, security, performance, and hardware compatibility in mind. Early collaboration between firmware and hardware engineering teams helps ensure efficient system integration, reduces development challenges, and supports future product enhancements.',
+      isOpen: false
+    },
+    {
+      question: 'How Does Firmware Validation Improve Product Reliability?',
+      answer: 'Firmware validation verifies that software performs correctly under expected operating conditions while interacting reliably with hardware. Comprehensive testing helps identify functional issues, improve system stability, reduce deployment risks, and ensure products perform consistently throughout their operational lifecycle.',
+      isOpen: false
+    }
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }

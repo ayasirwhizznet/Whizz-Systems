@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ServicesIntroComponent } from '@components/services-intro/services-intro.component';
 import { ServicesHeroComponent } from '@components/services-hero/services-hero.component';
 import { ServicesContactExpertsComponent } from '@components/services-contact-experts/services-contact-experts.component';
@@ -10,6 +11,7 @@ import { ServicesBenefitsComponent } from '@components/services-benefits/service
   selector: 'app-system-design',
   standalone: true,
   imports: [
+    CommonModule,
     ServicesIntroComponent,
     ServicesHeroComponent,
     ServicesContactExpertsComponent,
@@ -93,4 +95,36 @@ export class SystemDesignComponent {
       desc: 'With compliance engineering, you can trust that your designs meet industry standards and certifications.',
     },
   ];
+
+  faqs: any[] = [
+    {
+      question: 'What is a System Schematic in Electronic Product Development?',
+      answer: 'A system schematic is the foundation of an electronic product, defining how components, interfaces, power distribution, and signal paths work together before PCB layout begins. A well-developed schematic establishes a clear design intent, enables cross-functional collaboration, and helps ensure that downstream activities—including PCB layout, simulation, manufacturing, and testing—are built on a reliable engineering foundation.',
+      isOpen: false
+    },
+    {
+      question: 'Why is Schematic Design Important before PCB Layout?',
+      answer: 'PCB layout depends on the accuracy and completeness of the system schematic. Decisions made during schematic development influence signal integrity, power delivery, manufacturability, and overall system performance. Investing time in a robust schematic reduces design revisions, minimizes engineering risks, and creates a smoother transition into layout and manufacturing.',
+      isOpen: false
+    },
+    {
+      question: 'How Does Schematic Review Reduce Hardware Design Risks?',
+      answer: 'Schematic reviews allow engineering teams to identify potential issues before physical design begins. Reviewing component selection, interface connectivity, power architecture, and design requirements early helps prevent costly PCB redesigns, improves first-pass success, and reduces project timelines by resolving problems before fabrication.',
+      isOpen: false
+    },
+    {
+      question: 'What Should Be Included In A High-Quality Electronic Schematic?',
+      answer: 'A high-quality schematic clearly defines functional blocks, component relationships, power distribution, signal connectivity, design constraints, and interface requirements. It should also support downstream engineering activities such as PCB layout, simulation, firmware development, testing, and manufacturing, ensuring every stakeholder works from a consistent design reference.',
+      isOpen: false
+    },
+    {
+      question: 'How Does Schematic Design Improve Product Manufacturability?',
+      answer: 'Good schematic design considers manufacturing requirements from the earliest stages of development. Selecting appropriate components, planning for testability, and coordinating with PCB layout and manufacturing teams help reduce production challenges, improve assembly efficiency, and accelerate the path from concept to production.',
+      isOpen: false
+    }
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }
