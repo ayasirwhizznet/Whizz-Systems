@@ -34,14 +34,14 @@
                 class="border border-light-gray1 rounded-xl overflow-hidden bg-card-gray">
                 <button (click)="toggleFaq(i)"
                     class="w-full flex items-center justify-between py-5 px-5 sm:p-6 text-left transition-all hover:opacity-80 focus:outline-none">
-                    <h4 class="flex flex-col gap-3 sm:gap-4">
+                    <h3 class="flex flex-col gap-3 sm:gap-4">
                         <span class="text-[15px] sm:text-base lg:text-xl 3xl:text-2xl font-semibold text-dark-gray2">{{
                             faq.question }}</span>
                         <p *ngIf="faq.isOpen"
                             class="text-gray-600 text-sm 3xl:text-base pr-6 sm:pr-10 leading-relaxed lg:w-[60%]">
                             {{ faq.answer }}
                         </p>
-                    </h4>
+                    </h3>
                     <!-- Circular Toggle Button -->
                     <div
                         class="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 3xl:w-11 3xl:h-11 rounded-full border border-light-gray1 bg-white flex items-center justify-center relative shadow-sm">
