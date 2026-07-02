@@ -1,214 +1,65 @@
-PROJECT: Whizz Systems Website
+# Whizz Systems
 
-PURPOSE:
-Corporate marketing and lead generation platform focused on:
-- Organic search rankings
-- AI search visibility (AEO / GEO)
-- High conversion performance
+> Whizz Systems is a premier technology solutions provider specializing in electronic product design, hardware engineering, advanced manufacturing, and turnkey NPI (New Product Introduction) services.
 
-TECH STACK:
-- Angular (Standalone Components)
-- TypeScript
-- Tailwind CSS
-- Vercel
+## Core Resources
 
-ARCHITECTURE:
-- src/app/pages/: routes and page layouts
-- src/app/shared/components/: reusable UI components (header, footer, buttons)
-- src/assets/: static images, videos, and media local to the project
-- vercel.json: routing and SEO redirect management
+- [Homepage](https://www.whizzsystems.com/)
+- [About Us](https://www.whizzsystems.com/about)
+- [Services Overview](https://www.whizzsystems.com/services)
+- [Featured Products](https://www.whizzsystems.com/featured-products)
+- [News & Insights](https://www.whizzsystems.com/news-&-insights)
 
-RENDERING:
-- SSR (Server-Side Rendering) for SEO optimization
-- Pre-rendering for static-like performance on marketing pages
+## Informational & Engineering White Papers
 
-DEPLOYMENT:
-- Hosted on Vercel
-- Production branch: main
+Technical documentation, design optimizations, and engineering assets for users and engineers.
 
-==================================================
-SEO GLOBAL RULES
-==================================================
+- [Whitepaper: Invensify Optimization](https://www.whizzsystems.com/news-&-insights/whitepaper-invensify)
+- [Whitepaper: 5G ORU Systems](https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru)
+- [Whitepaper: Heatsink & Thermal Design](https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink)
+- [Whitepaper: PCIe Gen 6 Architecture](https://www.whizzsystems.com/news-&-insights/whitepaper-pcle6)
 
-METADATA (REQUIRED ON EVERY PAGE):
-- unique title (50–60 chars)
-- meta description (140–160 chars)
-- canonical URL
-- OpenGraph tags
-- Twitter tags
+## Engineering & Technical Insights
 
-HEADING STRUCTURE:
-- One H1 per page
-- Logical H2–H3 hierarchy
-- Keyword-aligned headings
+Deep-dive articles covering high-performance hardware, signal integrity, and architecture.
 
-CONTENT:
-- Primary keyword in first 100 words
-- Semantic keyword usage
-- Minimum 800 words for ranking pages
-- Human-first, not keyword-stuffed
+- [High-Speed AI Design & Signal Integrity Techniques](https://www.whizzsystems.com/news-&-insights/high-speed-ai-design-si-techniques)
+- [End-to-End Product Manufacturing Reliability](https://www.whizzsystems.com/news-&-insights/end-to-end-product-manufacturing-reliability)
+- [Future Architecture & Performance Protocols](https://www.whizzsystems.com/news-&-insights/future-architecture-performance)
+- [Managing High Power Demand in Modern Electronics](https://www.whizzsystems.com/news-&-insights/high-power-demand)
+- [Foundations of Advanced Hardware Design](https://www.whizzsystems.com/news-&-insights/hardware-design)
 
-INTERNAL LINKING:
-- Link to all major service pages
-- No orphan pages
-- Descriptive anchor text
+## Engineering Design Services
 
-IMAGE SEO:
-- Use responsive sizing
-- Keyword-relevant alt text
-- WebP/AVIF format for optimized loading
+- [System Schematic Services](https://www.whizzsystems.com/services/engineering-design/system-schematic-services)
+- [FPGA Design Services](https://www.whizzsystems.com/services/engineering-design/fpga-design-services)
+- [Firmware & Software Development](https://www.whizzsystems.com/services/engineering-design/firmware-software-development)
+- [PCB Layout & Routing](https://www.whizzsystems.com/services/engineering-design/pcb-layout)
+- [3D Modeling & Mechanical Design](https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design)
+- [Signal Integrity & Simulation Services](https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services)
+- [Power Delivery Network (PDN) Simulation](https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation)
+- [Thermal Management Solutions](https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions)
 
-TECHNICAL SEO:
-- Dynamic sitemap.xml
-- Optimized robots.txt
-- Canonical handling
-- Clean URLs
+## Manufacturing & Operational Services
 
-SCHEMA:
-- Organization
-- LocalBusiness
-- Service
-- Breadcrumb
-- FAQ
-- Article (for blogs)
+- [NPI (New Product Introduction)](https://www.whizzsystems.com/services/npi)
+- [Advanced Manufacturing & Assembly](https://www.whizzsystems.com/services/advanced-manufacturing)
+- [Lab Testing & Validation Solutions](https://www.whizzsystems.com/services/lab-testing-solutions)
+- [Supply Chain Management](https://www.whizzsystems.com/services/supply-chain-management)
+- [Sustainable Engineering Practices](https://www.whizzsystems.com/services/sustainable-engineering)
 
-CORE WEB VITALS:
-- LCP < 2.5s
-- CLS < 0.1
-- INP < 200ms
+## Hardware & FPGA Products
 
-==================================================
-AEO (ANSWER ENGINE OPTIMIZATION)
-==================================================
+- [Whizz Kintex-7 FPGA (WH705)](https://www.whizzsystems.com/featured-products/whizz-kintex-7FPGA-WH705)
+- [Whizz Virtex-7 FPGA (WH707-A)](https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-wh707-a)
+- [Whizz Virtex-7 FPGA (WS707)](https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws707)
+- [Whizz Virtex-7 FPGA (WS709)](https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws709)
+- [Xilinx Kintex-7 FPGA (KC724)](https://www.whizzsystems.com/featured-products/xilinx-kintex-7-fpga-kc724)
+- [Xilinx Virtex-7 FPGA (WS7203-A)](https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-a)
+- [Xilinx Virtex-7 FPGA (WS7203-B)](https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-b)
+- [Whizz Zynq-7000 (WZ706)](https://www.whizzsystems.com/featured-products/whizz-zyn-7000-wz706)
 
-CONTENT FORMAT FOR AI ANSWERS:
-- Use clear question-based H2/H3 headings
-- Provide direct 40–60 word answers below each question
-- Use definition-style paragraphs
-- Use bullet lists for steps and benefits
+## Case Studies & Careers
 
-ENTITY CLARITY:
-- Clearly define:
-  - What Whizz Systems is
-  - Services
-  - Industry
-  - Location
-- Keep business information consistent across pages
-
-FAQ STRATEGY:
-- Add FAQ section to all major pages
-- Each FAQ must have:
-  - concise answer
-  - schema markup
-
-AUTHORSHIP & TRUST:
-- Show:
-  - company expertise
-  - years of experience
-  - real projects
-  - testimonials
-
-TOPICAL AUTHORITY:
-- Create content clusters:
-  - main service page
-  - supporting blog articles
-  - use case pages
-
-==================================================
-GEO (GENERATIVE ENGINE OPTIMIZATION)
-==================================================
-
-AI-READABLE CONTENT STRUCTURE:
-- Short clear paragraphs
-- Definition blocks
-- Service summaries
-- Use cases
-- Step-by-step processes
-
-CITABLE CONTENT:
-- Include statistics
-- Include original insights
-- Include process explanations
-
-CONTEXTUAL COMPLETENESS:
-Each service page must answer:
-- What is it?
-- Who needs it?
-- How does it work?
-- Why choose Whizz Systems?
-- What results can be expected?
-
-BRAND MENTIONS:
-- Use the brand name naturally in content
-- Maintain consistent service naming
-
-MULTI-INTENT COVERAGE:
-Pages must satisfy:
-- informational intent
-- commercial intent
-- transactional intent
-
-==================================================
-PERFORMANCE RULES
-==================================================
-
-- Use lazy loading for heavy modules
-- Lazy load below-the-fold sections
-- Optimize fonts for minimal layout shift
-- Avoid large client-side libraries
-
-==================================================
-CONVERSION OPTIMIZATION
-==================================================
-
-- Every page must include:
-  - primary CTA
-  - secondary CTA
-- Above-the-fold value proposition
-- Trust signals:
-  - clients
-  - certifications
-  - testimonials
-
-==================================================
-WHEN GENERATING NEW PAGES
-==================================================
-
-REQUIRED FLOW:
-1. Keyword-focused URL
-2. SEO metadata
-3. Structured content
-4. Internal links
-5. FAQ section
-6. Schema
-7. Strong CTA
-
-==================================================
-BLOG CONTENT RULES
-==================================================
-
-- Table of contents
-- Author section
-- Publish & updated date
-- FAQ schema
-- Related posts
-- 1200+ words for pillar content
-
-==================================================
-ANALYTICS
-==================================================
-
-- Keep GA4 / GTM scripts intact in app.component.ts
-- Track:
-  - form submissions
-  - CTA clicks
-  - phone/email clicks
-
-==================================================
-DO NOT
-==================================================
-
-- Create duplicate pages for the same keyword
-- Break component design system
-- Use inline CSS
-- Block important pages in robots.txt
+- [AMD VPK180 Hardware Case Study](https://www.whizzsystems.com/case-studies/amd-vpk180)
+- [Careers: Manufacturing Manager](https://www.whizzsystems.com/careers/manufacturing-manager)

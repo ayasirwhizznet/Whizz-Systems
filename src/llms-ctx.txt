@@ -1,0 +1,24 @@
+# Whizz Systems Developer & Content Context
+
+This file outlines the internal rules, engineering standards, and structural guidelines for generating and maintaining the Whizz Systems web platform.
+
+## Architecture & Rendering
+- **Tech Stack:** Angular (Standalone Components), TypeScript, Tailwind CSS, Vercel.
+- **Rendering:** SSR (Server-Side Rendering) for SEO optimization, Pre-rendering for static-like performance on marketing and informational pages.
+- **Paths:** `src/app/pages/` for layouts, `src/app/shared/components/` for UI, `src/assets/` for local media/PDFs.
+
+## Content, AEO, & GEO Guidelines
+- **Intent Coverage:** Content must explicitly fulfill transactional, commercial, and informational intents (specifically targeting engineers and technical users via white papers).
+- **AI Formatting:** Use clear question-based H2/H3 headings followed by direct 40–60 word answer blocks. Include technical statistics and process explanations.
+- **Schema Requirements:** Deploy `Organization`, `LocalBusiness`, `Service`, `FAQ`, and `TechArticle` or `DigitalDocument` markup for engineering assets.
+
+## Core Web Vitals Targets
+- LCP < 2.5s
+- CLS < 0.1
+- INP < 200ms
+
+## System Constraints (DO NOT)
+- Do not create duplicate pages for the same keyword.
+- Do not break the component design system.
+- Do not use inline CSS.
+- Do not block white paper landing pages or major service structures in `robots.txt`.
