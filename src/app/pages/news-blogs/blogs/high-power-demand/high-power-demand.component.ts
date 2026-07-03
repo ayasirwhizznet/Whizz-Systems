@@ -29,7 +29,7 @@ export class HighPowerDemandComponent implements OnInit, AfterViewInit, OnDestro
 
   optimized = ['Minimize IR drops', 'Ensure consistent, stable power delivery across the board'];
   layout = ['Trace widths', 'Via placements', 'Power distribution planes'];
-  robust = ['Heat sinks', 'Thermal vias', 'Vapor chambers', 'Liquid cooling systems'];
+  robust = [ `<a href='https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink' class='text-teal1'>Heat sinks</a>`, 'Thermal vias', 'Vapor chambers', 'Liquid cooling systems'];
 
   advanced = [
     'Ensure a robust power delivery network (PDN) design to <b>minimize voltage drops</b> and maintain stable power across the system.',
