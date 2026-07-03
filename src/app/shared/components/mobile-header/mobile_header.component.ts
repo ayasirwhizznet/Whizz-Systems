@@ -191,11 +191,27 @@ export class MobileHeaderComponent {
     {
       title: 'Sustainable Engineering & Obsolescence Management',
       items: [
-        { label: 'BOM Management', link: '/services/sustainable-engineering' },
-        { label: 'EOL Management', link: '/services/sustainable-engineering' },
-        { label: 'AVL Management', link: '/services/sustainable-engineering' },
-        { label: 'Second Sourcing / Risk Buying', link: '/services/sustainable-engineering' },
-      ],
+            {
+              label: 'BOM Management',
+              link: '/services/sustainable-engineering',
+              fragment: 'bom-management',
+            },
+            {
+              label: 'EOL Management',
+              link: '/services/sustainable-engineering',
+              fragment: 'eol-management',
+            },
+            {
+              label: 'AVL Management',
+              link: '/services/sustainable-engineering',
+              fragment: 'avl-management',
+            },
+            {
+              label: 'Second Sourcing/Risk Buying',
+              link: '/services/sustainable-engineering',
+              fragment: 'second-sourcing',
+            },
+          ],
       open: false,
     },
   ];

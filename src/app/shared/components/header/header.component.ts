@@ -211,18 +211,22 @@ export class HeaderComponent implements OnInit {
             {
               label: 'BOM Management',
               link: '/services/sustainable-engineering',
+              fragment: 'bom-management',
             },
             {
               label: 'EOL Management',
               link: '/services/sustainable-engineering',
+              fragment: 'eol-management',
             },
             {
               label: 'AVL Management',
               link: '/services/sustainable-engineering',
+              fragment: 'avl-management',
             },
             {
               label: 'Second Sourcing/Risk Buying',
               link: '/services/sustainable-engineering',
+              fragment: 'second-sourcing',
             },
           ],
         },
