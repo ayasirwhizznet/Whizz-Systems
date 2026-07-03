@@ -41,7 +41,7 @@ export class SustainableEngineeringComponent {
       description: [
         'Optimizing AVL to ensure supplier reliability and cost-efficiency',
         'Managing supplier transitions to mitigate risks and reduce cost impact',
-        'Establishing on-shore and off-shore supply chain flexibility'
+        `Establishing <a href='https://www.whizzsystems.com/services/supply-chain-management' class='text-teal1'>on-shore and off-shore supply chain</a> flexibility`
       ],
     },
     {
