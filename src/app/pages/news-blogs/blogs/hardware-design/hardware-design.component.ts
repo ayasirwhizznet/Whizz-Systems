@@ -168,4 +168,36 @@ export class HardwareDesignComponent implements OnInit, AfterViewInit, OnDestroy
     if (!isPlatformBrowser(this.platformId)) return;
     this.router.navigate(['/services/engineering-design/power-delivery-network-simulation']);
   }
+
+  faqs: any[] = [
+    {
+      question: 'What Are the Key Stages of Hardware Design?',
+      answer: 'Successful hardware design follows a structured development process that begins with system architecture and schematic design, progresses through PCB layout, simulation, mechanical integration, prototyping, validation, and manufacturing readiness. Each stage builds upon the previous one to ensure the final product meets performance, reliability, and manufacturability requirements while minimizing development risks.',
+      isOpen: false
+    },
+    {
+      question: 'How Can Engineering Teams Reduce Hardware Development Risks?',
+      answer: 'Reducing development risk starts with early planning and cross-functional collaboration. Validating system architecture, performing design simulations, reviewing schematics, considering manufacturability, and verifying designs through testing help identify issues before production. A systematic engineering approach minimizes redesigns, improves product quality, and accelerates time-to-market.',
+      isOpen: false
+    },
+    {
+      question: 'Why Is System-Level Planning Important in Hardware Design?',
+      answer: 'System-level planning ensures that electrical, mechanical, thermal, firmware, manufacturing, and testing requirements are considered together from the beginning of a project. Taking a holistic approach helps engineering teams optimize performance, reduce integration challenges, and deliver products that transition more efficiently into production.',
+      isOpen: false
+    },
+    {
+      question: 'What Challenges Are Common in Modern Hardware Development?',
+      answer: 'Today\'s electronic systems must support higher processing speeds, increased power densities, tighter mechanical constraints, and shorter development timelines. Successfully addressing challenges such as signal integrity, thermal management, power delivery, manufacturability, and supply chain readiness requires a coordinated engineering strategy throughout the product development lifecycle.',
+      isOpen: false
+    },
+    {
+      question: 'How Do Engineering Decisions Impact Long-Term Product Reliability?',
+      answer: 'Many product reliability issues originate during the design phase. Decisions involving component selection, PCB architecture, thermal management, power integrity, and manufacturing processes directly influence long-term performance. Making informed engineering decisions early helps improve product quality while reducing maintenance and lifecycle costs.',
+      isOpen: false
+    }
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }

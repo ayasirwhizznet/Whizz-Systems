@@ -76,23 +76,28 @@ export class ServicesComponent implements OnInit, OnDestroy {
 
   faqs: any[] = [
     {
-      question: 'Do you manufacture the hardware you design?',
-      answer: 'Yes, Whizz Systems can design and manufacture the hardware we develop, ensuring full accountability from concept through production.',
+      question: 'What Engineering and Manufacturing Services Does Whizz Systems Offer?',
+      answer: 'Whizz Systems offers comprehensive services spanning the entire hardware development lifecycle, including engineering design, PCB layout, FPGA development, firmware and software engineering, signal integrity and power integrity simulation, thermal management, mechanical design, New Product Introduction (NPI), advanced manufacturing, lab testing, and supply chain management. These integrated capabilities enable customers to develop complex electronic products more efficiently and with greater confidence.',
       isOpen: false
     },
     {
-      question: 'Where are your manufacturing facilities located?',
-      answer: 'We operate manufacturing facilities in Santa Clara, California, and Malaysia, allowing us to support both rapid prototyping and cost-efficient high-volume production.',
+      question: 'Can Whizz Systems Support the Entire Hardware Development Lifecycle?',
+      answer: 'Yes. Whizz Systems provides end-to-end support from concept development and system architecture through engineering design, prototyping, product validation, manufacturing, testing, and production scaling. This integrated development model improves collaboration between engineering disciplines while helping reduce delays, redesigns, and manufacturing risks.',
       isOpen: false
     },
     {
-      question: 'Can you scale from prototype to volume production?',
-      answer: 'Yes. Our design and manufacturing processes are designed to scale products from early prototypes to full production.',
+      question: 'How Does Whizz Systems Help Reduce Product Development Risk?',
+      answer: 'Reducing development risk begins with early engineering collaboration and continues throughout the product lifecycle. By combining design reviews, simulation, validation, manufacturing planning, testing, and supply chain coordination, Whizz Systems helps identify potential issues before production, improving first-pass success and reducing costly design iterations.',
       isOpen: false
     },
     {
-      question: 'Why is in-house manufacturing important?',
-      answer: 'It reduces risk, shortens iteration cycles, and ensures designs are optimized for yield, cost, and quality.',
+      question: 'Which Industries Benefit From Whizz Systems\' Services?',
+      answer: 'Our engineering and manufacturing services support organizations developing products for artificial intelligence, networking, telecommunications, semiconductors, aerospace, defense, industrial automation, and other technology-driven industries. These sectors require high-performance, reliable hardware that benefits from integrated engineering and manufacturing expertise.',
+      isOpen: false
+    },
+    {
+      question: 'How Does Whizz Systems Ensure Product Quality From Design Through Manufacturing?',
+      answer: 'Product quality is built into every stage of the development process. By integrating engineering design, simulation, verification, testing, manufacturing readiness, and quality management, Whizz Systems helps ensure products are optimized for performance, manufacturability, and long-term reliability before entering production.',
       isOpen: false
     }
   ];

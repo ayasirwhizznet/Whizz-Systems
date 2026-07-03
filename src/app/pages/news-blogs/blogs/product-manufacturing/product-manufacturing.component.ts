@@ -315,5 +315,32 @@ export class ProductManufacturingComponent implements OnInit, AfterViewInit, OnD
   toggleRdt(index: number) {
     this.rdtEquipments[index].isOpen = !this.rdtEquipments[index].isOpen;
   }
+
+  faqs: any[] = [
+    {
+      question: 'What is product manufacturing reliability in electronics?',
+      answer: 'Product manufacturing reliability refers to the engineering processes, inspection systems, testing methods, and supply chain controls used to ensure electronic products perform consistently throughout their operational lifecycle.',
+      isOpen: false
+    },
+    {
+      question: 'Why is DFX analysis important in PCB manufacturing?',
+      answer: 'DFX analysis helps identify manufacturability, assembly, and testing risks early in the design phase, reducing defects, rework costs, and field failures.',
+      isOpen: false
+    },
+    {
+      question: 'What inspection technologies does Whizz Systems use?',
+      answer: 'Whizz Systems uses SPI, AOI, and 3D X-ray inspection technologies to detect solder defects, component placement issues, and hidden assembly failures.',
+      isOpen: false
+    },
+    {
+      question: 'How does reliability testing improve electronics manufacturing?',
+      answer: 'Reliability testing validates product durability under thermal, humidity, vibration, and mechanical stress conditions before shipment, reducing field failures and warranty risks.',
+      isOpen: false
+    }
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }
 

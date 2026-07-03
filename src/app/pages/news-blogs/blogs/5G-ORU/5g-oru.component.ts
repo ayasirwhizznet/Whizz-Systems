@@ -130,4 +130,35 @@ export class ORUComponent {
     return this.currentFragment === id;
   }
 
+  faqs: any[] = [
+    {
+      question: 'What Is an Open Radio Unit (ORU)?',
+      answer: 'An Open Radio Unit (ORU) is a key component of Open RAN architecture that provides the radio functionality required for wireless communication while supporting standardized interfaces between network elements. This open architecture enables greater interoperability, flexibility, and innovation across modern 5G infrastructure.',
+      isOpen: false
+    },
+    {
+      question: 'How Does ORU Support Open RAN Architecture?',
+      answer: 'ORUs enable Open RAN by separating hardware and software through standardized, open interfaces. This approach allows operators to integrate equipment from multiple vendors, improve deployment flexibility, and accelerate innovation while reducing dependence on proprietary network architectures.',
+      isOpen: false
+    },
+    {
+      question: 'What Design Challenges Exist in 5G ORU Development?',
+      answer: 'Developing ORU platforms requires engineers to address high-speed data transmission, signal integrity, power delivery, thermal management, synchronization, and manufacturing requirements simultaneously. Successfully balancing these considerations is essential for achieving reliable performance in demanding 5G environments.',
+      isOpen: false
+    },
+    {
+      question: 'How Do High-Speed Interfaces Improve ORU Performance?',
+      answer: 'High-speed interfaces enable rapid communication between processing devices, networking components, and radio subsystems. Maintaining signal integrity, minimizing latency, and optimizing bandwidth help ensure ORU platforms can efficiently support modern 5G workloads and evolving network demands.',
+      isOpen: false
+    },
+    {
+      question: 'What Engineering Considerations Are Important for ORU Hardware?',
+      answer: 'Successful ORU development requires an integrated engineering approach that considers electrical design, mechanical integration, thermal performance, PCB layout, manufacturing readiness, and long-term reliability. Coordinating these disciplines early helps reduce development risk while supporting scalable, production-ready hardware.',
+      isOpen: false
+    }
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }

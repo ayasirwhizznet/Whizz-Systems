@@ -124,4 +124,36 @@ export class NpiComponent implements OnInit, OnDestroy {
       }
     }, 1);
   }
+
+  faqs: any[] = [
+    {
+      question: 'What Is New Product Introduction (NPI)?',
+      answer: 'New Product Introduction (NPI) is the structured process of transforming a product concept into a production-ready solution. It brings together engineering, prototyping, manufacturing, testing, supply chain planning, and quality management to validate designs before volume production. A well-executed NPI process helps reduce development risk, improve product quality, and accelerate time-to-market by ensuring products are ready for efficient manufacturing.',
+      isOpen: false
+    },
+    {
+      question: 'Why Is NPI Important for Electronic Product Development?',
+      answer: 'Electronic products become increasingly complex as they integrate high-speed interfaces, advanced components, and sophisticated manufacturing requirements. NPI helps engineering teams validate designs early, identify manufacturing challenges, coordinate supply chain readiness, and establish quality processes before production begins. This structured approach minimizes costly redesigns while improving product reliability and production efficiency.',
+      isOpen: false
+    },
+    {
+      question: 'What Are the Stages of a Successful NPI Process?',
+      answer: 'A successful NPI process typically includes product planning, engineering design, prototype development, design verification, manufacturing readiness, process validation, pilot production, and full-scale manufacturing. Each stage builds confidence in the product while reducing technical and manufacturing risks before commercialization.',
+      isOpen: false
+    },
+    {
+      question: 'How Does NPI Reduce Manufacturing Risks?',
+      answer: 'NPI reduces manufacturing risks by identifying potential production issues before they impact volume manufacturing. Early collaboration between engineering, manufacturing, testing, and supply chain teams allows organizations to validate manufacturability, optimize production processes, verify component availability, and establish quality controls that improve first-pass production success.',
+      isOpen: false
+    },
+    {
+      question: 'How Does Engineering Collaboration Improve NPI Success?',
+      answer: 'Successful NPI depends on collaboration across multiple engineering disciplines. Electrical, mechanical, firmware, manufacturing, testing, and supply chain teams work together throughout development to resolve issues early, optimize product performance, and ensure a seamless transition from design to manufacturing. This integrated approach shortens development cycles while improving overall product quality.',
+      isOpen: false
+    }
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }

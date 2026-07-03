@@ -199,29 +199,30 @@ export const routes: Routes = [
             {
               "@type": "FAQPage",
               "@id": "https://www.whizzsystems.com/about#faq",
+              "url": "https://www.whizzsystems.com/about",
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "What services does Whizz Systems offer?",
+                  "name": "What Does Whizz Systems Specialize In?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Whizz Systems offers electronics design, NPI, advanced manufacturing, lab testing, sustainable engineering, firmware and supply chain management."
+                    "text": "Whizz Systems specializes in end-to-end electronic product development, combining advanced engineering, manufacturing, validation, and supply chain expertise to help customers develop high-performance hardware solutions. Our multidisciplinary approach supports every stage of the product lifecycle, from initial concept through production and long-term product success."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Where is Whizz Systems located?",
+                  "name": "What Industries Does Whizz Systems Serve?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Whizz Systems is located in Silicon Valley with additional global offices and manufacturing facilities."
+                    "text": "We work with organizations developing advanced technologies across AI, networking, telecommunications, semiconductors, aerospace, defense, industrial electronics, and other high-performance computing applications. Our engineering teams support customers developing complex products that require precision design, manufacturing excellence, and reliable system integration."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Which industries do you serve?",
+                  "name": "What Makes Whizz Systems Different From Traditional EMS Providers?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "We serve defense & aerospace, medical devices, automotive, consumer electronics, AI computing, telecommunications and more."
+                    "text": "Unlike traditional Electronic Manufacturing Services (EMS) providers that primarily focus on production, Whizz Systems combines engineering design, simulation, validation, manufacturing, testing, and supply chain management within a single development ecosystem. This integrated approach enables earlier problem identification, improved collaboration across disciplines, and a smoother transition from design to manufacturing while reducing overall project risk."
                   }
                 }
               ]

@@ -113,4 +113,26 @@ export class AboutComponent {
   santaClaraServices = ['Santa Clara', '', '', '', '', '', ''];
 
   malaysiaServices = ['Malaysia', '', '', '', '', '', ''];
+
+  faqs: any[] = [
+    {
+      question: 'What Does Whizz Systems Specialize In?',
+      answer: 'Whizz Systems specializes in end-to-end electronic product development, combining advanced engineering, manufacturing, validation, and supply chain expertise to help customers develop high-performance hardware solutions. Our multidisciplinary approach supports every stage of the product lifecycle, from initial concept through production and long-term product success.',
+      isOpen: false
+    },
+    {
+      question: 'What Industries Does Whizz Systems Serve?',
+      answer: 'We work with organizations developing advanced technologies across AI, networking, telecommunications, semiconductors, aerospace, defense, industrial electronics, and other high-performance computing applications. Our engineering teams support customers developing complex products that require precision design, manufacturing excellence, and reliable system integration.',
+      isOpen: false
+    },
+    {
+      question: 'What Makes Whizz Systems Different From Traditional EMS Providers?',
+      answer: 'Unlike traditional Electronic Manufacturing Services (EMS) providers that primarily focus on production, Whizz Systems combines engineering design, simulation, validation, manufacturing, testing, and supply chain management within a single development ecosystem. This integrated approach enables earlier problem identification, improved collaboration across disciplines, and a smoother transition from design to manufacturing while reducing overall project risk.',
+      isOpen: false
+    }
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }

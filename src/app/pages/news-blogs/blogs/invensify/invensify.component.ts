@@ -141,4 +141,35 @@ export class InvensifyComponent implements OnInit, OnDestroy {
     return this.currentFragment === id;
   }
 
+  faqs: any[] = [
+    {
+      question: 'What Engineering Challenges Does This Solution Address?',
+      answer: 'Modern electronic products require engineering teams to manage increasing complexity across hardware design, manufacturing, system integration, and product validation. This solution focuses on helping organizations streamline development, improve engineering collaboration, and reduce product development risks throughout the lifecycle.',
+      isOpen: false
+    },
+    {
+      question: 'How Does System Integration Improve Product Performance?',
+      answer: 'System integration ensures that electrical, mechanical, firmware, manufacturing, and testing activities work together as a unified development process. Early integration helps identify compatibility issues, improve overall system performance, and reduce costly redesigns later in the project.',
+      isOpen: false
+    },
+    {
+      question: 'Why Is End-to-End Engineering Important for Complex Hardware?',
+      answer: 'Complex electronic systems depend on close coordination between multiple engineering disciplines. An end-to-end engineering approach improves communication, accelerates problem resolution, enhances manufacturability, and supports a more efficient transition from concept to production.',
+      isOpen: false
+    },
+    {
+      question: 'How Does Design Optimization Improve Manufacturability?',
+      answer: 'Design optimization evaluates product architecture, component selection, PCB layout, thermal performance, and manufacturing requirements throughout development. Addressing these considerations early helps reduce production challenges, improve manufacturing efficiency, and increase product reliability.',
+      isOpen: false
+    },
+    {
+      question: 'What Best Practices Help Accelerate Hardware Development?',
+      answer: 'Successful hardware development combines early planning, cross-functional engineering collaboration, design validation, simulation, prototype verification, and manufacturing readiness. Following these best practices enables organizations to reduce project risk, shorten development cycles, and deliver higher-quality products more efficiently.',
+      isOpen: false
+    }
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }
