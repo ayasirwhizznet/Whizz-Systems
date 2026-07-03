@@ -51,19 +51,19 @@
         <!-- Gradient Overlay using ::before -->
         <div class="absolute inset-0">
           <div
-            class="absolute inset-0 transition-opacity duration-700 ease-in-out pointer-events-none group-hover:opacity-100 opacity-0"
+            class="absolute inset-0 transition-opacity duration-900 ease-in-out pointer-events-none group-hover:opacity-100 opacity-0"
             style="
-              background: linear-gradient(180deg, #01223900 0%, #000b12b2 70%);
+              background: #2a494c;
             "></div>
         </div>
 
         <!-- Text Overlay Container -->
         <div class="absolute bottom-0 left-0 w-full px-4 sm:px-6 lg:px-8 3xl:px-10 pb-6 3xl:pb-8">
-          <div class="transition-all duration-700 ease-in-out transform group-hover:-translate-y-3">
+          <div class="transition-all duration-1000 ease-in-out transform group-hover:-translate-y-3">
             <h2 class="text-white text-xs 2xl:text-sm 3xl:text-base 2xl:font-medium 3xl:font-semibold mb-2">
               {{ item.title }}
             </h2>
-            <p class="text-white text-xs 2xl:text-sm 3xl:text-base font-light 2xl:font-normal max-h-0 group-hover:max-h-[200px] overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-700 ease-in-out"
+            <p class="text-white text-xs 2xl:text-sm 3xl:text-base font-light 2xl:font-normal max-h-0 group-hover:max-h-[300px] overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-700 ease-in-out"
               [innerHTML]="item.desc"></p>
           </div>
         </div>
