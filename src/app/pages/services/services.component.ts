@@ -70,7 +70,7 @@ export class ServicesComponent implements OnInit, OnDestroy {
     '3D modeling/mechanical engineering',
     'Signal integrity (SI), power integrity (PI), & thermal analysis',
     'Prototype bring-up & validation',
-    'Advance manufacturing',
+    'Advanced manufacturing',
     'Design for manufacturability (DFM) & supply chain alignment'
   ];
 
