@@ -903,6 +903,56 @@
       "source": "/circuit-board-design-services/",
       "destination": "/services/engineering-design/fpga-design-services",
       "permanent": true
+    },
+    {
+      "source": "/blog/Consulting-to-Succeed-Electronic-Design-Consultants",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/blog-detail.php?blog=Solutions-through-Experience-–-Engineering-Services",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/news-&-insights/high-speed-ai-design-robust-si-techniques",
+      "destination": "/news-&-insights/high-speed-ai-design-si-techniques",
+      "permanent": true
+    },
+    {
+      "source": "/blog/Look-to-the-Future",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-inc-continues-growth-adds-marketing-associate/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/blog/Human-Factor-and-Ergonomics",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/blog/IoT-Engineering-is-a-Need-of-the-Hour",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/resources",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/blog/Multipurpose-Engineering-Works",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/blog/Collaboration-with-Xilinx-FPGA-Development-Services",
+      "destination": "/news-&-insights",
+      "permanent": true
     }
   ]
 }
