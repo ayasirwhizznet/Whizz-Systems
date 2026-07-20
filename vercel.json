@@ -1,19 +1,17 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
-    "redirects": [
-      {
-        "source": "/(.*)",
-        "has": [
-          {
-            "type": "host",
-            "value": "whizzsystems.com"
-          }
-        ],
-        "destination": "https://www.whizzsystems.com/$1",
-        "permanent": true
-      },
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "whizzsystems.com"
+        }
+      ],
+      "destination": "https://www.whizzsystems.com/$1",
+      "permanent": true
+    },
     {
       "source": "/electronic-manufacturing-assembly-services/",
       "destination": "/services/advanced-manufacturing",
@@ -910,7 +908,14 @@
       "permanent": true
     },
     {
-      "source": "/blog-detail.php?blog=Solutions-through-Experience-–-Engineering-Services",
+      "source": "/blog-detail.php",
+      "has": [
+        {
+          "type": "query",
+          "key": "blog",
+          "value": "Solutions-through-Experience---Engineering-Services"
+        }
+      ],
       "destination": "/news-&-insights",
       "permanent": true
     },
