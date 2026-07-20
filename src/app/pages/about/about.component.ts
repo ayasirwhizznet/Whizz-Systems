@@ -10,6 +10,7 @@ import { ButtonComponent } from '@components/button/button.component';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
+  
   experience = [
     {
       quantity: '10',
