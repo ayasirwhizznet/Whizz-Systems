@@ -913,6 +913,18 @@
         {
           "type": "query",
           "key": "blog",
+          "value": "Solutions-through-Experience-–-Engineering-Services"
+        }
+      ],
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/blog-detail.php",
+      "has": [
+        {
+          "type": "query",
+          "key": "blog",
           "value": "Solutions-through-Experience---Engineering-Services"
         }
       ],
