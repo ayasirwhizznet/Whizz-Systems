@@ -26,6 +26,8 @@
 
 .keen-slider__slide {
   transition: width 0 ease-in-out;
+  /* Prevent flex-shrink packing all slides before/without KeenSlider widths */
+  flex-shrink: 0;
 }
 .keen-slider:not([data-keen-slider-disabled]) {
   align-content: flex-start;
@@ -45,8 +47,8 @@
 .keen-slider:not([data-keen-slider-disabled]) .keen-slider__slide {
   position: relative;
   overflow: hidden;
-  width: 100%;
   min-height: 100%;
+  /* Don't force width:100% — KeenSlider sets min/max-width inline */
 }
 .keen-slider:not([data-keen-slider-disabled])[data-keen-slider-reverse] {
   flex-direction: row-reverse;

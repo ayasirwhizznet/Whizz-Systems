@@ -8,23 +8,16 @@ export interface BlogItem {
 
 export const blogList: BlogItem[] = [
     {
-        imgUrl: 'assets/news/blogs/product-manufacturing/hero.png',
-        date: 'May 22, 2026',
-        tags: ['Manufacturing Quality', 'PCBA'],
-        title: 'How Whizz Systems Delivers: End-to-End Product Manufacturing Reliability',
-        link: '/news-&-insights/end-to-end-product-manufacturing-reliability',
-    },
-    {
         imgUrl: 'assets/news/product-1.png',
         date: 'March 13, 2026',
-        tags: ['Article', 'High-Speed AI Design','Signal Integrity'],
+        tags: ['Article', 'High-Speed AI Design'],
         title: 'High-Speed AI Design Challenges & Robust SI Techniques',
         link: '/news-&-insights/high-speed-ai-design-si-techniques',
     },
     {
         imgUrl: 'assets/news/product-2.png',
         date: 'March 2, 2026',
-        tags: ['Article', 'Interconnect Architecture','OCP Compliance'],
+        tags: ['Article', 'Interconnect Architecture'],
         title: 'Enhancing Performance with Innovative Interconnect Topologies and Custom Solutions',
         link: '/news-&-insights/high-throughput-interconnect-topologies',
     },
@@ -83,6 +76,13 @@ export const blogList: BlogItem[] = [
         tags: ['Case Study', 'Medical Devices'],
         title: 'Engineering Smart Medical Devices: The Invensify Case Study',
         link: '/news-&-insights/whitepaper-invensify',
+    },
+    {
+        imgUrl: 'assets/news/blogs/product-manufacturing/hero.png',
+        date: 'May 22, 2026',
+        tags: ['Manufacturing Quality', 'PCBA'],
+        title: 'How Whizz Systems Delivers: End-to-End Product Manufacturing Reliability',
+        link: '/news-&-insights/end-to-end-product-manufacturing-reliability',
     },
 ];
 

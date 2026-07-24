@@ -1,6 +1,9 @@
 <a
   [routerLink]="navigate"
   class="news-card group cursor-pointer block relative overflow-hidden h-[22rem] 3xl:h-[25.4rem]"
+  [class.news-card--fixed-inset]="!!contentInset"
+  [attr.data-content-inset]="contentInset || null"
+  [style.--news-card-content-inset]="contentInset || null"
 >
   <!-- Wrapper: static background image -->
   <div
@@ -9,7 +12,8 @@
     <img
       loading="lazy"
       [src]="imageUrl"
-      class="news-card__bg-image w-full h-full absolute inset-0 object-cover pointer-events-none"
+      class="news-card__bg-image w-full h-full absolute inset-0 pointer-events-none"
+      [class.object-cover]="objectCover"
       [alt]="title"
     />
 
@@ -33,7 +37,10 @@
             <p class="text-dark-gray2 text-xs 3xl:text-sm font-medium 3xl:font-semibold mb-1 3xl:mb-2">
               {{ date }}
             </p>
-            <h3 class="text-dark-gray2 text-lg 3xl:text-2xl font-semibold 3xl:font-bold line-clamp">
+            <h3
+              class="text-dark-gray2 text-lg 3xl:text-2xl font-semibold 3xl:font-bold line-clamp"
+              [style.--news-card-line-clamp]="lineClamp"
+            >
               {{ title }}
             </h3>
           </div>
@@ -41,7 +48,7 @@
       </div>
 
       <!-- <div class="news-card__gap1"></div> -->
-      <div class="news-card__gap"></div>
+      <div class="news-card__gap" [style.background]="gapColor"></div>
 
       <div class="news-card__read-more bg-white -m-[1px]">
         <button

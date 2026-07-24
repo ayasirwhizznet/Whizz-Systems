@@ -4,6 +4,36 @@
   transition: color 1s;
   z-index: 1;
 }
+
+/* Explicit sizing prevents utility-class ordering from overriding medium buttons. */
+.diagonal-swipe.button--medium {
+  box-sizing: border-box;
+  display: inline-flex;
+  height: 2.25rem;
+  padding: 0.5rem 0.75rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #7bd4cf;
+  background: #f8f8f8;
+}
+
+@media (min-width: 640px) {
+  .diagonal-swipe.button--medium {
+    height: 2.5rem;
+    padding: 0.625rem 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .diagonal-swipe.button--medium {
+    height: 3rem;
+    padding: 0.875rem 1.125rem;
+    border-radius: 0.5rem;
+  }
+}
+
 .diagonal-swipe span {
   position: relative;
   z-index: 2;

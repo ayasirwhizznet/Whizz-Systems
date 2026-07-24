@@ -29,7 +29,8 @@ module.exports = {
         "card-gray": "#F8F8F8",
         "card-border": "#dddddd",
         "light-gray": "#EEEEEE",
-        "video-overlay": "#00a99f"
+        "video-overlay": "#00a99f",
+        "card-bg": "rgba(248, 248, 248, 0.90)"
       },
     },
   },

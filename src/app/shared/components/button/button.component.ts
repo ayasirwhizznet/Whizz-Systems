@@ -20,7 +20,7 @@ export class ButtonComponent {
       case 'small':
         return 'px-2 sm:px-[14px] 3xl:px-[18px] py-1 sm:py-[6px] 3xl:py-[14px] text-[10px] text-xs 3xl:text-sm font-semibold border border-teal2';
       case 'medium':
-        return 'px-2 sm:px-[14px] 3xl:px-[18px] py-[6px] sm:py-[10px] 3xl:py-[14px] text-sm 3xl:text-base font-medium 3xl:font-semibold border border-teal2';
+        return 'box-border h-9 sm:h-10 3xl:h-12 px-3 sm:px-4 3xl:px-[18px] py-2 sm:py-[10px] 3xl:py-[14px] flex-col justify-center items-center gap-2 text-sm 3xl:text-base font-medium 3xl:font-semibold border border-teal2';
       case 'large':
         return 'px-2 sm:px-[14px] 3xl:px-[18px] py-2 sm:py-3 3xl:py-[14px] text-sm 3xl:text-lg font-medium 3xl:font-semibold border border-teal2';
       default:

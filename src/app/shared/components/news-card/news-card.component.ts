@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BlogTagComponent } from '../blog-tag/blog-tag.component';
 import { RouterLink } from '@angular/router';
@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [CommonModule, BlogTagComponent, RouterLink],
   templateUrl: './news-card.component.html',
-  styleUrl: './news-card.component.scss'
+  styleUrl: './news-card.component.scss',
 })
 export class NewsCardComponent {
   @Input() imageUrl: string = '';
@@ -17,4 +17,20 @@ export class NewsCardComponent {
   @Input() title: string = '';
   @Input() tags: string[] = [];
   @Input() navigate: string = '';
+  @Input() lineClamp: number = 2;
+  @Input() objectCover: boolean = false;
+  @Input() gapColor: string = '#fff';
+  /** Overrides `--news-card-inset` (e.g. `'16px'`). Leave empty for responsive defaults. */
+  @Input() contentInset: string = '';
+
+  /** Inherit override through KeenSlider host wrappers. */
+  @HostBinding('style.--news-card-content-inset')
+  get hostContentInset(): string | null {
+    return this.contentInset || null;
+  }
+
+  @HostBinding('attr.data-content-inset')
+  get hostContentInsetAttr(): string | null {
+    return this.contentInset || null;
+  }
 }

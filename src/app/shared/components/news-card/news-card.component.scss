@@ -7,19 +7,19 @@
 }
 
 @media (min-width: 1024px) {
-  .news-card {
+  .news-card:not(.news-card--fixed-inset) {
     --news-card-inset: 1.25rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .news-card {
+  .news-card:not(.news-card--fixed-inset) {
     --news-card-inset: 1.5rem;
   }
 }
 
 @media (min-width: 1536px) {
-  .news-card {
+  .news-card:not(.news-card--fixed-inset) {
     --news-card-inset: 1.75rem;
   }
 }
@@ -27,10 +27,30 @@
 @media (min-width: 1800px) {
   .news-card {
     --news-card-btn-h: 3.125rem;
-    --news-card-inset: 2rem;
     --news-card-gap: 2rem;
     --news-card-radius: 0.5rem;
   }
+
+  .news-card:not(.news-card--fixed-inset) {
+    --news-card-inset: 2rem;
+  }
+}
+
+/* Locked inset from `[contentInset]` — wins over responsive defaults */
+.news-card.news-card--fixed-inset {
+  --news-card-inset: var(--news-card-content-inset);
+}
+
+.news-card.news-card--fixed-inset .news-card__content-area {
+  padding: var(--news-card-content-inset);
+}
+
+:host([data-content-inset]) .news-card {
+  --news-card-inset: var(--news-card-content-inset);
+}
+
+:host([data-content-inset]) .news-card__content-area {
+  padding: var(--news-card-content-inset);
 }
 
 .news-card__bg-image {
@@ -42,12 +62,23 @@
 }
 
 .line-clamp {
+  --news-card-title-line-height: 1.75rem;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: var(--news-card-line-clamp, 2);
   -webkit-box-orient: vertical;
+  height: calc(
+    var(--news-card-title-line-height) * var(--news-card-line-clamp, 2)
+  );
+  line-height: var(--news-card-title-line-height);
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
+}
+
+@media (min-width: 1800px) {
+  .line-clamp {
+    --news-card-title-line-height: 2rem;
+  }
 }
 
 // Parent slides up/down in sync with white card expand/collapse

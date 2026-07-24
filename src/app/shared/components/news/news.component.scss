@@ -1,0 +1,12 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+/* News-insights only — overrides default sm:px-[9.3%] */
+.cnews-section.cnews-section--from-news {
+  @media (min-width: 640px) {
+    padding-left: 6.3% !important;
+    padding-right: 6.3% !important;
+  }
+}
