@@ -190,6 +190,7 @@
   [fromNews]="true"
   subtitle="Real-world success stories showcasing innovative engineering solutions and measurable results."
   viewAllLabel="View All"
+  viewAllLink="/news-&-insights/all-posts"
   buttonSize="medium"
   [contentInset]="'16px'"
   [lineClamp]="3"
@@ -208,7 +209,7 @@
         complex hardware challenges.
       </p>
       <div class="pt-1">
-        <app-button routerLink="/news-&-insights" [size]="'medium'" heading="View All"
+        <app-button routerLink="/news-&-insights/all-posts" [size]="'medium'" heading="View All"
           icon="assets/icons/r-arrow.svg"></app-button>
       </div>
     </div>
@@ -252,3 +253,25 @@
   buttonSize="small"
   [contentInset]="'16px'"
 ></app-cnews>
+
+<!-- Contact to Experts -->
+<section class="px-[4%] sm:px-[6.3%] py-8 lg:py-12 3xl:py-16">
+    <div class="relative p-6 sm:p-10 lg:p-[52px] 3xl:p-16 sm:rounded-md 3xl:rounded-lg">
+        <video class="absolute inset-0 w-full h-full object-cover z-0 rounded-md 3xl:rounded-lg" loop muted autoplay
+            oncanplay="this.play()" onloadedmetadata="this.muted = true">
+            <source src="assets/hero/waves2.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-video-overlay opacity-80 z-[5] sm:rounded-md 3xl:rounded-lg"></div>
+        <div class="relative z-10 xl:w-11/12 2xl:w-5/6 3xl:w-4/5 text-white">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl 2xl:text-[52px] 3xl:text-[64px] 2xl:leading-[60px] 3xl:leading-[76.8px] font-bold mb-3 3xl:mb-4">
+                Design High-Speed Hardware with<br> Robust Signal Integrity
+            </h2>
+
+            <h2 
+                class="text-2xl 3xl:text-[32px] 2xl:leading-[48px] 3xl:leading-[48px] font-normal mb-8 lg:mb-10 3xl:mb-12">
+                Talk to our engineering team to learn how Whizz Systems can help<br> optimize your high-speed AI hardware and PCB designs for reliable<br> signal performance.</h2>
+
+            <a href="https://webforms.pipedrive.com/f/73OVO0l5Deo2lYjNE60qY8rL0iIUE7Pm7JzFG1RAIKu5F5MIiylgnQ6V4Quvs9QO1Z" target="_blank"><app-button heading="Talk to Our Engineering Team" icon="assets/icons/webform.svg" size="large"></app-button></a>
+        </div>
+    </div>
+</section>
