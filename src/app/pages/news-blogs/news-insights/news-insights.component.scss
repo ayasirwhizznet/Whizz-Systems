@@ -119,20 +119,6 @@
     }
   }
 
-  /* Hover: gray expands over image, content stays put */
-  &:hover &__expand,
-  &:has(.series-featured__gray:hover) &__expand {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  &:hover &__gray,
-  &:has(.series-featured__gray:hover) &__gray {
-    background: transparent;
-    border-color: transparent;
-    box-shadow: none;
-    backdrop-filter: none;
-  }
 }
 
 /* ===== Side right cards ===== */
@@ -233,42 +219,6 @@
 
 /* ===== Newsletter banner (Figma 1895:4928) ===== */
 .newsletter-banner {
-  /* Teal patterned frame — slightly wider on left/right */
-  padding: 1rem 1.25rem;
-
-  @media (min-width: 640px) {
-    padding: 1.125rem 1.75rem;
-  }
-
-  @media (min-width: 1024px) {
-    padding: 1.25rem 2rem;
-  }
-
-  @media (min-width: 1800px) {
-    padding: 1.5rem 2.5rem;
-  }
-
-  &__inner {
-    border-radius: 0.5rem;
-    padding: 1.25rem 1.5rem;
-
-    @media (min-width: 640px) {
-      padding: 1.5rem 2rem;
-    }
-
-    @media (min-width: 1024px) {
-      padding: 1.75rem 2.5rem;
-    }
-
-    @media (min-width: 1536px) {
-      padding: 2rem 3rem;
-    }
-
-    @media (min-width: 1800px) {
-      border-radius: 0.75rem;
-      padding: 2.25rem 3.5rem;
-    }
-  }
 
   &__title {
     font-size: 1.25rem;

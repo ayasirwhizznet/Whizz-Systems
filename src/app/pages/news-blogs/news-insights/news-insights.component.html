@@ -10,23 +10,23 @@
   <div
     class="relative h-[500px] sm:h-[420px] md:h-[480px] lg:h-[520px] 2xl:h-[600px] 3xl:h-[667px] rounded-xl 3xl:rounded-2xl overflow-hidden shadow-lg border border-light-gray1/40 flex items-center">
     <!-- Slides -->
-    <div *ngFor="let slide of slides; let i = index"
+    <div
       class="slide absolute inset-0 w-full h-full flex items-center pl-[24px] pr-[24px] md:pl-[40px] lg:pl-[60px] 2xl:pl-[100px] 3xl:pl-[133px]"
-      [class.active]="currentSlide() === i">
+      [class.active]="currentSlide() === 0">
       <!-- Slide background image -->
-      <img [src]="slide.imgUrl" alt="{{ slide.title }}" class="absolute inset-0 w-full h-full object-cover" />
+      <img [src]="slides[0].imgUrl" [alt]="slides[0].title" class="absolute inset-0 w-full h-full object-cover" />
 
       <!-- Gradient overlay for better text contrast/blend -->
       <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div>
 
       <!-- Glassmorphic Content Card -->
       <div
-        class="relative z-10 w-full md:w-[520px] lg:w-[580px] 2xl:w-[650px] 3xl:w-[718px] bg-card-bg backdrop-blur-md p-4 sm:p-5 lg:p-[24px] rounded-[4px] border border-white/40 shadow-2xl flex flex-col justify-between transition-all duration-500">
-        <div class="flex flex-col gap-5 lg:gap-[24px] md:mt-7">
+        class="relative z-10 pr-4 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-10 2xl:pr-[65px] 3xl:pr-[77px] w-full h-[390px] sm:h-[350px] md:h-[400px] lg:h-[420px] 2xl:h-[460px] 3xl:h-[484px] md:w-[520px] lg:w-[580px] 2xl:w-[650px] 3xl:w-[766px] bg-card-bg backdrop-blur-md p-4 sm:p-5 lg:p-[24px] rounded-[4px] border border-white/40 shadow-2xl flex flex-col justify-between transition-all duration-500">
+        <div class="flex flex-col gap-5 lg:gap-[24px] ">
           <div class="flex flex-col gap-4">
             <!-- Tags list -->
             <div class="flex items-center gap-2 flex-wrap">
-              <div *ngFor="let tag of slide.tags; let i = index">
+              <div *ngFor="let tag of slides[0].tags; let i = index">
                 <app-blog-tag text="{{ tag }}" [textColor]="i === 0 ? 'text-[#F8F8F8]' : 'text-dark-gray2'"
                   borderColor="border-dark-gray2" borderRadius="rounded-md 3xl:rounded-lg"
                   [backgroundColor]="i === 0 ? 'bg-dark-gray2' : ''"></app-blog-tag>
@@ -35,28 +35,78 @@
 
             <!-- Date -->
             <p class="text-sm sm:text-base text-dark-gray2 font-normal leading-none">
-              {{ slide.date }}
+              {{ slides[0].date }}
             </p>
-          </div>
+          </div>  
 
           <!-- Title -->
           <h2
-            class="text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-[38px] 3xl:text-[48px] font-bold text-dark-gray2 leading-tight lg:leading-[125%]">
-            {{ slide.title }}
+            class="text-base sm:text-lg md:text-xl lg:text-[30px] 2xl:text-[42px] 3xl:text-[48px] font-bold text-dark-gray2 leading-tight lg:leading-[125%]">
+            {{ slides[0].title }}
           </h2>
 
           <!-- Description -->
           <p
-            class="text-[11px] sm:text-base lg:text-lg 3xl:text-xl text-dark-gray2 leading-relaxed font-normal line-clamp-3 md:line-clamp-none">
-            {{ slide.description }}
+            class="text-[11px] sm:text-base lg:text-base 3xl:text-lg text-dark-gray2 leading-relaxed font-normal line-clamp-3 md:line-clamp-none">
+            {{ slides[0].description }}
           </p>
         </div>
 
         <!-- Read more button -->
         <div class="mt-4 lg:mt-6 3xl:mt-8">
-          <app-button [routerLink]="slide.link" heading="Read more" icon="assets/icons/r-arrow.svg"
+          <app-button [routerLink]="slides[0].link" heading="Read more" icon="assets/icons/r-arrow.svg"
             size="medium"></app-button>
         </div>
+      </div>
+    </div>
+
+    <div
+      class="slide absolute inset-0 w-full h-full flex items-center pl-[24px] pr-[24px] md:pl-[40px] lg:pl-[60px] 2xl:pl-[100px] 3xl:pl-[133px]"
+      [class.active]="currentSlide() === 1">
+      <img [src]="slides[1].imgUrl" [alt]="slides[1].title" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div>
+      <div class="relative z-10 pr-4 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-10 2xl:pr-[65px] 3xl:pr-[77px] w-full h-[390px] sm:h-[350px] md:h-[400px] lg:h-[420px] 2xl:h-[460px] 3xl:h-[484px] md:w-[520px] lg:w-[580px] 2xl:w-[650px] 3xl:w-[766px] bg-card-bg backdrop-blur-md p-4 sm:p-5 lg:p-[24px] rounded-[4px] border border-white/40 shadow-2xl flex flex-col justify-between transition-all duration-500">
+        <div class="flex flex-col gap-5 lg:gap-[24px] ">
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-2 flex-wrap">
+              <div *ngFor="let tag of slides[1].tags; let i = index">
+                <app-blog-tag text="{{ tag }}" [textColor]="i === 0 ? 'text-[#F8F8F8]' : 'text-dark-gray2'" borderColor="border-dark-gray2" borderRadius="rounded-md 3xl:rounded-lg" [backgroundColor]="i === 0 ? 'bg-dark-gray2' : ''"></app-blog-tag>
+              </div>
+            </div>
+            <p class="text-sm sm:text-base text-dark-gray2 font-normal leading-none">{{ slides[1].date }}</p>
+          </div>
+          <h2
+            class="text-base sm:text-lg md:text-xl lg:text-[30px] 2xl:text-[42px] 3xl:text-[48px] font-bold text-dark-gray2 leading-tight lg:leading-[125%]">{{ slides[1].title }}</h2>
+          <p
+            class="text-[11px] sm:text-base lg:text-base 3xl:text-lg text-dark-gray2 leading-relaxed font-normal line-clamp-3 md:line-clamp-none">{{ slides[1].description }}</p>
+        </div>
+        <div class="mt-4 lg:mt-6 3xl:mt-8"><app-button [routerLink]="slides[1].link" heading="Read more" icon="assets/icons/r-arrow.svg" size="medium"></app-button></div>
+      </div>
+    </div>
+
+    <div
+      class="slide absolute inset-0 w-full h-full flex items-center pl-[24px] pr-[24px] md:pl-[40px] lg:pl-[60px] 2xl:pl-[100px] 3xl:pl-[133px]"
+      [class.active]="currentSlide() === 2">
+      <img [src]="slides[2].imgUrl" [alt]="slides[2].title" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div>
+      <div class="relative z-10 pr-4 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-10 2xl:pr-[65px] 3xl:pr-[77px] w-full h-[390px] sm:h-[350px] md:h-[400px] lg:h-[420px] 2xl:h-[460px] 3xl:h-[484px] md:w-[520px] lg:w-[580px] 2xl:w-[650px] 3xl:w-[766px] bg-card-bg backdrop-blur-md p-4 sm:p-5 lg:p-[24px] rounded-[4px] border border-white/40 shadow-2xl flex flex-col justify-between transition-all duration-500">
+        <div class="flex flex-col gap-5 lg:gap-[24px] ">
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-2 flex-wrap">
+              <div *ngFor="let tag of slides[2].tags; let i = index">
+                <app-blog-tag text="{{ tag }}" [textColor]="i === 0 ? 'text-[#F8F8F8]' : 'text-dark-gray2'" borderColor="border-dark-gray2" borderRadius="rounded-md 3xl:rounded-lg" [backgroundColor]="i === 0 ? 'bg-dark-gray2' : ''"></app-blog-tag>
+              </div>
+            </div>
+            <p class="text-sm sm:text-base text-dark-gray2 font-normal leading-none">{{ slides[2].date }}</p>
+          </div>
+          <h2
+            class="text-base sm:text-lg md:text-xl lg:text-[30px] 2xl:text-[42px] 3xl:text-[48px] font-bold text-dark-gray2 leading-tight lg:leading-[125%]">{{ slides[2].title }}</h2>
+          <p
+            class="text-[11px] sm:text-base lg:text-base 3xl:text-lg text-dark-gray2 leading-relaxed font-normal line-clamp-3 md:line-clamp-none">{{ slides[2].description }}</p>
+        </div>
+        <div class="mt-4 lg:mt-6 3xl:mt-8"><app-button [routerLink]="slides[2].link" heading="Read more" icon="assets/icons/r-arrow.svg" size="medium"></app-button></div>
+
+
       </div>
     </div>
 
@@ -89,7 +139,7 @@
   <div class="flex flex-col xl:flex-row gap-6 lg:gap-8 3xl:gap-[32px] items-stretch">
     <!-- Featured (left) -->
     <div
-      class="series-featured relative min-h-[420px] sm:min-h-[480px] xl:h-[520px] 2xl:h-[580px] 3xl:h-[611px] xl:w-[60%] min-w-0 rounded-lg border border-light-gray1 overflow-hidden">
+      class="series-featured relative min-h-[420px] sm:min-h-[480px] h-auto xl:w-[60%] min-w-0 rounded-lg border border-light-gray1 overflow-hidden">
       <img [src]="seriesFeatured.imgUrl" [alt]="seriesFeatured.title" loading="lazy"
         class="absolute inset-0 w-full h-full object-cover" />
 
@@ -163,10 +213,10 @@
 
 <!-- Subscribe to our newsletter! -->
 <section class="px-[4%] sm:px-[6.3%] py-8 lg:py-12 3xl:py-16">
-  <div class="newsletter-banner overflow-hidden rounded-lg 3xl:rounded-xl bg-cover bg-center bg-no-repeat"
+  <div class="newsletter-banner overflow-hidden rounded-lg 3xl:rounded-xl bg-cover bg-center bg-no-repeat t-4 sm:p-5 lg:p-6 xl:p-8"
     style="background-image: url('assets/news/bg.png')">
     <div
-      class="newsletter-banner__inner bg-card-gray flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+      class="newsletter-banner__inner bg-card-gray flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between !rounded-[4px] !px-4 !py-4 sm:!px-6 sm:!py-5 lg:!px-8 lg:!py-6 xl:!px-9 xl:!py-7 3xl:!px-10 3xl:!py-8 ">
       <div class="min-w-0">
         <h3 class="newsletter-banner__title text-dark-gray2">
           Subscribe to our newsletter!
@@ -193,7 +243,7 @@
   viewAllLink="/news-&-insights/all-posts"
   buttonSize="medium"
   [contentInset]="'16px'"
-  [lineClamp]="3"
+  [lineClamp]="2"
 ></app-cnews>
 
 <!-- White Papers — copy left, 2 featured cards right -->
@@ -271,7 +321,7 @@
                 class="text-2xl 3xl:text-[32px] leading-6 2xl:leading-[40px] 3xl:leading-[48px] font-normal mb-8 lg:mb-10 3xl:mb-12">
                 Talk to our engineering team to learn how Whizz Systems can help<br> optimize your high-speed AI hardware and PCB designs for reliable<br> signal performance.</h2>
 
-            <a href="https://webforms.pipedrive.com/f/73OVO0l5Deo2lYjNE60qY8rL0iIUE7Pm7JzFG1RAIKu5F5MIiylgnQ6V4Quvs9QO1Z" target="_blank"><app-button heading="Talk to Our Engineering Team" icon="assets/icons/webform.svg" size="large"></app-button></a>
+            <a href="https://webforms.pipedrive.com/f/6zfEWqtVw8emJVzx0qNO1gV5uJlldmGiN4ojzejQ2uYcBca3H92x023ymwroxxQLkf" target="_blank"><app-button heading="Talk to Our Engineering Team" icon="assets/icons/webform.svg" size="large"></app-button></a>
         </div>
     </div>
 </section>

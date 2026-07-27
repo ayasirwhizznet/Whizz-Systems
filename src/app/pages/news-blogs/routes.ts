@@ -11,8 +11,267 @@ export const routes: Routes = [
             (m) => m.NewsInsightsComponent,
           ),
         title:
-          'News and Insights',
-
+          'Whizz Bytes: Hardware Design Insights, AI & Electronics Engineering News',
+        data: {
+          description:
+            'Explore expert views, industry insights, and breaking news on hardware design, high-speed AI engineering, PCB design, and advanced electronics manufacturing from Whizz Systems.',
+          keywords:
+            'hardware design insights, electronics engineering news, AI hardware blogs, PCB design articles, power delivery and thermal management, 5G hardware trends, Whizz Systems news',
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'CollectionPage',
+                  '@id':
+                    'https://www.whizzsystems.com/news-&-insights/#webpage',
+                  url: 'https://www.whizzsystems.com/news-&-insights',
+                  name: 'Whizz Bytes: Hardware Design Insights, AI & Electronics Engineering News',
+                  description:
+                    'Explore expert views, industry insights, and breaking news on hardware design, high-speed AI engineering, PCB design, and advanced electronics manufacturing.',
+                  publisher: {
+                    '@type': 'Organization',
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                    name: 'Whizz Systems',
+                    url: 'https://www.whizzsystems.com',
+                    logo: {
+                      '@type': 'ImageObject',
+                      url: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                    },
+                    sameAs: [
+                      'https://www.linkedin.com/company/whizz-systems',
+                      'https://www.youtube.com/@whizzsystems',
+                    ],
+                  },
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  '@id':
+                    'https://www.whizzsystems.com/news-&-insights/#breadcrumb',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'News & Insights',
+                      item: 'https://www.whizzsystems.com/news-&-insights',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'ItemList',
+                  '@id':
+                    'https://www.whizzsystems.com/news-&-insights/#itemlist',
+                  name: 'Featured Blog Posts & News',
+                  numberOfItems: 11,
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      item: {
+                        '@type': 'BlogPosting',
+                        headline:
+                          'How Whizz Systems Delivers: End-to-End Product Manufacturing Reliability',
+                        datePublished: '2026-05-22',
+                        articleSection: 'PCBA',
+                        publisher: {
+                          '@id': 'https://www.whizzsystems.com/#organization',
+                        },
+                        mainEntityOfPage:
+                          'https://www.whizzsystems.com/how-whizz-systems-delivers-end-to-end-product-manufacturing-reliability',
+                      },
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      item: {
+                        '@type': 'BlogPosting',
+                        headline:
+                          'High-Speed AI Design Challenges & Robust SI Techniques',
+                        datePublished: '2026-03-13',
+                        articleSection: 'High-Speed AI Design',
+                        publisher: {
+                          '@id': 'https://www.whizzsystems.com/#organization',
+                        },
+                        mainEntityOfPage:
+                          'https://www.whizzsystems.com/high-speed-ai-design-challenges-robust-si-techniques',
+                      },
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      item: {
+                        '@type': 'BlogPosting',
+                        headline:
+                          'Enhancing Performance with Innovative Interconnect Topologies and Custom Solutions',
+                        datePublished: '2026-03-02',
+                        articleSection: 'Interconnect Architecture',
+                        publisher: {
+                          '@id': 'https://www.whizzsystems.com/#organization',
+                        },
+                        mainEntityOfPage:
+                          'https://www.whizzsystems.com/enhancing-performance-innovative-interconnect-topologies',
+                      },
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 4,
+                      item: {
+                        '@type': 'BlogPosting',
+                        headline:
+                          'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
+                        datePublished: '2025-12-06',
+                        articleSection: 'Case Study',
+                        publisher: {
+                          '@id': 'https://www.whizzsystems.com/#organization',
+                        },
+                        mainEntityOfPage:
+                          'https://www.whizzsystems.com/amd-vpk180-evaluation-board',
+                      },
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 5,
+                      item: {
+                        '@type': 'BlogPosting',
+                        headline:
+                          'Future-Proof Architecture and Performance in Next-Generation Systems',
+                        datePublished: '2025-07-22',
+                        articleSection: 'AI Hardware',
+                        publisher: {
+                          '@id': 'https://www.whizzsystems.com/#organization',
+                        },
+                        mainEntityOfPage:
+                          'https://www.whizzsystems.com/future-proof-architecture-performance-next-gen-systems',
+                      },
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 6,
+                      item: {
+                        '@type': 'BlogPosting',
+                        headline:
+                          'Managing High-Power Demands in Next-Generation Hardware',
+                        datePublished: '2025-06-10',
+                        articleSection: 'AI Hardware',
+                        publisher: {
+                          '@id': 'https://www.whizzsystems.com/#organization',
+                        },
+                        mainEntityOfPage:
+                          'https://www.whizzsystems.com/managing-high-power-demands-next-gen-hardware',
+                      },
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 7,
+                      item: {
+                        '@type': 'BlogPosting',
+                        headline:
+                          'NextGen Hardware Design for High-Density, High-Complexity Systems',
+                        datePublished: '2025-05-14',
+                        articleSection: 'AI Hardware Design',
+                        publisher: {
+                          '@id': 'https://www.whizzsystems.com/#organization',
+                        },
+                        mainEntityOfPage:
+                          'https://www.whizzsystems.com/nextgen-hardware-design-high-density-systems',
+                      },
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 8,
+                      item: {
+                        '@type': 'BlogPosting',
+                        headline: 'PCIe-6: Everything You Need to Know',
+                        datePublished: '2024-05-29',
+                        articleSection: 'High Speed Connectivity',
+                        publisher: {
+                          '@id': 'https://www.whizzsystems.com/#organization',
+                        },
+                        mainEntityOfPage:
+                          'https://www.whizzsystems.com/pcie-6-everything-you-need-to-know',
+                      },
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 9,
+                      item: {
+                        '@type': 'BlogPosting',
+                        headline:
+                          'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
+                        datePublished: '2024-07-09',
+                        articleSection: 'Hardware Design',
+                        publisher: {
+                          '@id': 'https://www.whizzsystems.com/#organization',
+                        },
+                        mainEntityOfPage:
+                          'https://www.whizzsystems.com/building-future-5g-connectivity-open-radio-unit',
+                      },
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 10,
+                      item: {
+                        '@type': 'BlogPosting',
+                        headline:
+                          'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
+                        datePublished: '2024-07-09',
+                        articleSection: 'Thermal Management',
+                        publisher: {
+                          '@id': 'https://www.whizzsystems.com/#organization',
+                        },
+                        mainEntityOfPage:
+                          'https://www.whizzsystems.com/heatsinks-uncovered-thermal-management',
+                      },
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 11,
+                      item: {
+                        '@type': 'BlogPosting',
+                        headline:
+                          'Engineering Smart Medical Devices: The Invensify Case Study',
+                        datePublished: '2024-12-12',
+                        articleSection: 'Medical Devices',
+                        publisher: {
+                          '@id': 'https://www.whizzsystems.com/#organization',
+                        },
+                        mainEntityOfPage:
+                          'https://www.whizzsystems.com/engineering-smart-medical-devices-invensify',
+                      },
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          og: {
+            type: 'website',
+            url: 'https://www.whizzsystems.com/news-&-insights',
+            title:
+              'Whizz Bytes: Hardware Design Insights, AI & Electronics Engineering News',
+            description:
+              'Explore expert views, industry insights, and breaking news on hardware design, high-speed AI engineering, PCB design, and advanced electronics manufacturing.',
+            image:
+              'https://www.whizzsystems.com/assets/news/news-insights/hero-2.png',
+            site_name: 'Whizz Systems',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            url: 'https://www.whizzsystems.com/news-&-insights',
+            title:
+              'Whizz Bytes: Hardware Design Insights, AI & Electronics Engineering News',
+            description:
+              'Explore expert views, industry insights, and breaking news on hardware design, high-speed AI engineering, PCB design, and advanced electronics manufacturing.',
+            image:
+              'https://www.whizzsystems.com/assets/news/news-insights/hero-2.png',
+          },
+        },
       },
       {
         path: 'all-posts',
@@ -20,146 +279,218 @@ export const routes: Routes = [
           import('./featured-blogs/blogs.component').then(
             (m) => m.BlogsComponent,
           ),
-        title:
-          'Whizz Bytes: Hardware Design Insights, AI & Electronics Engineering News',
+        title: 'All Posts & Insights | Whizz Systems Hardware Engineering Blog',
         data: {
           description:
-            'Stay informed with expert insights, industry updates, from Whizz Systems. Explore blogs on AI hardware design, PCB layout, power delivery, and next-gen electronics innovation.',
+            'Browse the complete archive of articles, case studies, whitepapers, and news updates from Whizz Systems covering AI hardware, high-speed PCB design, and medical electronics.',
           keywords:
             'hardware design insights, electronics engineering news, AI hardware blogs, PCB design articles, power delivery and thermal management, 5G hardware trends, Whizz Systems news',
           schema: [
             {
               '@context': 'https://schema.org',
-              '@type': 'Blog',
-              name: 'Whizz Bytes: News & Insights | Whizz Systems',
-              url: 'https://www.whizzsystems.com/news-&-insights/',
-              description:
-                'Whizz Bytes features expert articles, opinions, and news on AI hardware, PCB design, power delivery, and next-generation electronics engineering.',
-              publisher: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-                logo: {
-                  '@type': 'ImageObject',
-                  url: 'https://www.whizzsystems.com/assets/images/logo.png',
-                },
-              },
-              blogPost: [
+              '@graph': [
                 {
-                  '@type': 'BlogPosting',
-                  headline:
-                    'Future-Proof Architecture and Performance in Next-Generation Systems',
-                  url: 'https://www.whizzsystems.com/news-&-insights/future-architecture-performance',
-                },
-                {
-                  '@type': 'BlogPosting',
-                  headline:
-                    'Managing High-Power Demands in Next-Generation Hardware',
-                  url: 'https://www.whizzsystems.com/news-&-insights/high-power-demand',
-                },
-                {
-                  '@type': 'BlogPosting',
-                  headline:
-                    'NextGen Hardware Design for High-Density, High-Complexity Systems',
-                  url: 'https://www.whizzsystems.com/news-&-insights/hardware-design',
-                },
-                {
-                  '@type': 'BlogPosting',
-                  headline:
-                    'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
-                  url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru',
-                },
-                {
-                  '@type': 'BlogPosting',
-                  headline:
-                    'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
-                  url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink',
-                },
-                {
-                  '@type': 'BlogPosting',
-                  headline: 'Whizz Systems PCIe Gen 6',
-                  url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-pcle6',
-                },
-                {
-                  '@type': 'BlogPosting',
-                  headline:
-                    'Whizz Systems & Invensify: Engineering Smart, Reliable, and Efficient Medical Devices',
-                  url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-invensify',
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                {
-                  '@type': 'ListItem',
-                  position: 1,
-                  name: 'Home',
-                  item: 'https://www.whizzsystems.com/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 2,
-                  name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/news-&-insights/',
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What topics does Whizz Bytes cover?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Whizz Bytes by Whizz Systems covers hardware engineering, AI systems, PCB design, power delivery, thermal management, and next-generation electronics insights.',
+                  '@type': 'Blog',
+                  '@id':
+                    'https://www.whizzsystems.com/news-&-insights/all-posts/#blog',
+                  url: 'https://www.whizzsystems.com/news-&-insights/all-posts',
+                  name: 'Whizz Systems - Complete Blog & Technical Insights Archive',
+                  description:
+                    'Complete archive of articles, case studies, whitepapers, and hardware news from Whizz Systems.',
+                  publisher: {
+                    '@type': 'Organization',
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                    name: 'Whizz Systems',
+                    url: 'https://www.whizzsystems.com',
+                    logo: {
+                      '@type': 'ImageObject',
+                      url: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                    },
+                    sameAs: [
+                      'https://www.linkedin.com/company/whizz-systems',
+                      'https://www.youtube.com/@whizzsystems',
+                    ],
                   },
+                  blogPost: [
+                    {
+                      '@type': 'BlogPosting',
+                      headline:
+                        'How Whizz Systems Delivers: End-to-End Product Manufacturing Reliability',
+                      datePublished: '2026-05-22',
+                      articleSection: 'PCBA',
+                      publisher: {
+                        '@id': 'https://www.whizzsystems.com/#organization',
+                      },
+                      mainEntityOfPage:
+                        'https://www.whizzsystems.com/how-whizz-systems-delivers-end-to-end-product-manufacturing-reliability',
+                    },
+                    {
+                      '@type': 'BlogPosting',
+                      headline:
+                        'High-Speed AI Design Challenges & Robust SI Techniques',
+                      datePublished: '2026-03-13',
+                      articleSection: 'High-Speed AI Design',
+                      publisher: {
+                        '@id': 'https://www.whizzsystems.com/#organization',
+                      },
+                      mainEntityOfPage:
+                        'https://www.whizzsystems.com/high-speed-ai-design-challenges-robust-si-techniques',
+                    },
+                    {
+                      '@type': 'BlogPosting',
+                      headline:
+                        'Enhancing Performance with Innovative Interconnect Topologies and Custom Solutions',
+                      datePublished: '2026-03-02',
+                      articleSection: 'Interconnect Architecture',
+                      publisher: {
+                        '@id': 'https://www.whizzsystems.com/#organization',
+                      },
+                      mainEntityOfPage:
+                        'https://www.whizzsystems.com/enhancing-performance-innovative-interconnect-topologies',
+                    },
+                    {
+                      '@type': 'BlogPosting',
+                      headline:
+                        'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
+                      datePublished: '2025-12-06',
+                      articleSection: 'Case Study',
+                      publisher: {
+                        '@id': 'https://www.whizzsystems.com/#organization',
+                      },
+                      mainEntityOfPage:
+                        'https://www.whizzsystems.com/amd-vpk180-evaluation-board',
+                    },
+                    {
+                      '@type': 'BlogPosting',
+                      headline:
+                        'Future-Proof Architecture and Performance in Next-Generation Systems',
+                      datePublished: '2025-07-22',
+                      articleSection: 'AI Hardware',
+                      publisher: {
+                        '@id': 'https://www.whizzsystems.com/#organization',
+                      },
+                      mainEntityOfPage:
+                        'https://www.whizzsystems.com/future-proof-architecture-performance-next-gen-systems',
+                    },
+                    {
+                      '@type': 'BlogPosting',
+                      headline:
+                        'Managing High-Power Demands in Next-Generation Hardware',
+                      datePublished: '2025-06-10',
+                      articleSection: 'AI Hardware',
+                      publisher: {
+                        '@id': 'https://www.whizzsystems.com/#organization',
+                      },
+                      mainEntityOfPage:
+                        'https://www.whizzsystems.com/managing-high-power-demands-next-gen-hardware',
+                    },
+                    {
+                      '@type': 'BlogPosting',
+                      headline:
+                        'NextGen Hardware Design for High-Density, High-Complexity Systems',
+                      datePublished: '2025-05-14',
+                      articleSection: 'AI Hardware Design',
+                      publisher: {
+                        '@id': 'https://www.whizzsystems.com/#organization',
+                      },
+                      mainEntityOfPage:
+                        'https://www.whizzsystems.com/nextgen-hardware-design-high-density-systems',
+                    },
+                    {
+                      '@type': 'BlogPosting',
+                      headline: 'PCIe-6: Everything You Need to Know',
+                      datePublished: '2024-05-29',
+                      articleSection: 'High Speed Connectivity',
+                      publisher: {
+                        '@id': 'https://www.whizzsystems.com/#organization',
+                      },
+                      mainEntityOfPage:
+                        'https://www.whizzsystems.com/pcie-6-everything-you-need-to-know',
+                    },
+                    {
+                      '@type': 'BlogPosting',
+                      headline:
+                        'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
+                      datePublished: '2024-07-09',
+                      articleSection: 'Hardware Design',
+                      publisher: {
+                        '@id': 'https://www.whizzsystems.com/#organization',
+                      },
+                      mainEntityOfPage:
+                        'https://www.whizzsystems.com/building-future-5g-connectivity-open-radio-unit',
+                    },
+                    {
+                      '@type': 'BlogPosting',
+                      headline:
+                        'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
+                      datePublished: '2024-07-09',
+                      articleSection: 'Thermal Management',
+                      publisher: {
+                        '@id': 'https://www.whizzsystems.com/#organization',
+                      },
+                      mainEntityOfPage:
+                        'https://www.whizzsystems.com/heatsinks-uncovered-thermal-management',
+                    },
+                    {
+                      '@type': 'BlogPosting',
+                      headline:
+                        'Engineering Smart Medical Devices: The Invensify Case Study',
+                      datePublished: '2024-12-12',
+                      articleSection: 'Medical Devices',
+                      publisher: {
+                        '@id': 'https://www.whizzsystems.com/#organization',
+                      },
+                      mainEntityOfPage:
+                        'https://www.whizzsystems.com/engineering-smart-medical-devices-invensify',
+                    },
+                  ],
                 },
                 {
-                  '@type': 'Question',
-                  name: 'Who writes the articles on Whizz Bytes?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'The articles on Whizz Bytes are written by Whizz Systems engineers and industry experts specializing in advanced hardware design and manufacturing technologies.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How often is new content published on Whizz Bytes?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'New insights and blog posts are published regularly as Whizz Systems releases new technologies, case studies, and thought-leadership pieces in the electronics domain.',
-                  },
+                  '@type': 'BreadcrumbList',
+                  '@id':
+                    'https://www.whizzsystems.com/news-&-insights/all-posts/#breadcrumb',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'News & Insights',
+                      item: 'https://www.whizzsystems.com/news-&-insights',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'All Posts',
+                      item: 'https://www.whizzsystems.com/news-&-insights/all-posts',
+                    },
+                  ],
                 },
               ],
             },
           ],
           og: {
             type: 'website',
+            url: 'https://www.whizzsystems.com/news-&-insights/all-posts',
             title:
-              'Whizz Bytes: Hardware Design Insights & Technology News | Whizz Systems',
+              'All Posts & Insights | Whizz Systems Hardware Engineering Blog',
             description:
-              'Explore expert articles and industry perspectives on AI hardware design, high-density systems, and next-generation electronics from Whizz Systems.',
-            url: 'https://www.whizzsystems.com/news-&-insights/',
+              'Browse the complete archive of articles, case studies, whitepapers, and news updates from Whizz Systems.',
+            image: 'https://www.whizzsystems.com/assets/news/hero.mp4',
             site_name: 'Whizz Systems',
-            image:
-              'https://www.whizzsystems.com/assets/images/whizz-bytes-cover.jpg',
-            image_alt: 'Whizz Bytes Hardware Design and Technology News Cover',
-            publisher: 'https://www.linkedin.com/company/whizz-systems/',
-            section: 'News & Insights',
-            tag: 'AI Hardware, Electronics, PCB Design, System Architecture, Innovation',
           },
           twitter: {
             card: 'summary_large_image',
-            title: 'Whizz Bytes: Expert Views & AI Hardware Design Insights',
+            url: 'https://www.whizzsystems.com/news-&-insights/all-posts',
+            title:
+              'All Posts & Insights | Whizz Systems Hardware Engineering Blog',
             description:
-              'Read the latest in AI hardware design, system architecture, and electronics innovation from Whizz Systems experts.',
-            image:
-              'https://www.whizzsystems.com/assets/images/whizz-bytes-cover.jpg',
-            image_alt: 'Whizz Bytes AI Hardware Design and Technology Insights',
-            site: '@WhizzSystems',
+              'Browse the complete archive of articles, case studies, whitepapers, and news updates from Whizz Systems.',
+            image: 'https://www.whizzsystems.com/assets/news/hero.mp4',
           },
         },
       },

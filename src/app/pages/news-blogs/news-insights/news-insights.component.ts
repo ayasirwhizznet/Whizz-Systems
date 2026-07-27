@@ -155,7 +155,7 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
     {
         imgUrl: 'assets/news/news-insights/latest-4.png',
         date: 'May 22, 2026',
-        tags: ['Whitepapper','AI Hardware Design'],
+        tags: ['Whitepaper','AI Hardware Design'],
         title: 'How Whizz Systems Delivers: End-to-End Product Manufacturing Reliability',
         link: '/news-&-insights/end-to-end-product-manufacturing-reliability',
     },
@@ -224,7 +224,7 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
       imgUrl: 'assets/news/news-insights/hero-2.png',
       date: 'June 10, 2025',
       tags: ['AI Hardware', 'High Density PCB Design'],
-      title: 'Managing High-Power Demands in Next-Generation Hardware',
+      title: 'Managing High-Power Demands in Next-Generation AI Hardware Design',
       description:
         'Master Power and Performance for AI Hardware Exceeding 1,500 Amps',
       link: '/news-&-insights/high-power-demand',
@@ -233,7 +233,7 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
       imgUrl: 'assets/news/news-insights/hero-3.png',
       date: 'May 29, 2024',
       tags: ['Whitepaper', 'High Speed Connectivity'],
-      title: 'PCIe-6: Everything You Need to Know',
+      title: 'Whizz Systems Guide to PCIe-6',
       description: 'A comprehensive 101 from our engineering team',
       link: '/news-&-insights/whitepaper-pcle6',
     },
