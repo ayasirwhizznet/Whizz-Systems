@@ -1,5 +1,10 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
   "redirects": [
     {
       "source": "/(.*)",
@@ -969,6 +974,801 @@
     {
       "source": "/blog/Collaboration-with-Xilinx-FPGA-Development-Services",
       "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/%20rel=nofollow",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/%20rel=nofollow/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/internet-of-things-design.html",
+      "destination": "/services/engineering-design/pcb-layout",
+      "permanent": true
+    },
+    {
+      "source": "/firmwareandsoftware.html",
+      "destination": "/services/engineering-design/firmware-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/production-turnkey-production-solutions.html",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/aboutus-high-mix-low-volume.html",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/board-design-product-design-center.html",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/embedded-technology.html/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/industrial-manufacturing-services.html",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/npiandquickturnprotos.html",
+      "destination": "/services/npi",
+      "permanent": true
+    },
+    {
+      "source": "/custom-ip-development.html",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/services.html",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/%20%20rel=nofollow",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/%20%20rel=nofollow/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/How-one-of-the-Greatest-Technologies-Came-to-Be",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/blog/How-one-of-the-Greatest-Technologies-Came-to-Be/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/mechanicalandthermaldesign.html",
+      "destination": "/services/engineering-design/3d-modeling-mechanical-design",
+      "permanent": true
+    },
+    {
+      "source": "/images/slider/slide1.jpg",
+      "destination": "/assets/home/hero/slide1.png",
+      "permanent": true
+    },
+    {
+      "source": "/computing-advanced-assembly-services.html",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/pci-loopback-card.html",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/fpga-design-advanced-fpga-design.html",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/medical-electronics-manufacturing/",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/medical-electronics-manufacturing",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/5g-design/",
+      "destination": "/news-&-insights/whitepaper-invensify",
+      "permanent": true
+    },
+    {
+      "source": "/audio-video-back/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/audio-video-back",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/complete-box-built-ems-service-back/",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/complete-box-built-ems-service-back",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/consumer-electronics/",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/consumer-electronics",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/consumer-electronics-back/",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/consumer-electronics-back",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/corporate/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/corporate",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/custom-ip-development-and-fpga-design-services-back/",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/custom-ip-development-and-fpga-design-services-back",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/customer-testimonial/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/customer-testimonial",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/defense-aerospace/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/defense-aerospace",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/defense-aerospace-back/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/defense-aerospace-back",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/edge-devices/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/edge-devices",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/edge-devices-internet-of-things-back/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/edge-devices-internet-of-things-back",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/electronic-manufacturing-assembly/",
+      "destination": "/services/advanced-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/electronics-design-manufacturing-services/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/electronics-design-manufacturing-services",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/embedded-technology-back/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/embedded-technology-back",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/features-of-our-fpga-design-services/",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/features-of-our-fpga-design-services",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/features-of-our-fpga-design-services-back/",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/features-of-our-fpga-design-services-back",
+      "destination": "/services/engineering-design/fpga-design-services",
+      "permanent": true
+    },
+    {
+      "source": "/industrial-manufacturing-services-back/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/industrial-manufacturing-services-back",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/ip-integration-and-design-verification/",
+      "destination": "/services/lab-testing-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/ip-integration-and-design-verification",
+      "destination": "/services/lab-testing-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/iso-iec-270012013/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/iso-iec-270012013",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/media-news/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/media-news",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/medical-electronics-manufacturing-back/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/medical-electronics-manufacturing-back",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/new-rfq/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/new-rfq",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/news/ip-integration-and-design-verification/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/news/ip-integration-and-design-verification",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/news/partner-for-lifecycle-npi-taken-to-a-new-level/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/news/partner-for-lifecycle-npi-taken-to-a-new-level",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/news/whizz-adds-csz-environmental-chamber-controller/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/news/whizz-adds-csz-environmental-chamber-controller",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/news/whizz-systems-inc-installs-crest-ultrasonics-powersonic/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/news/whizz-systems-inc-installs-crest-ultrasonics-powersonic",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/npi-new/",
+      "destination": "/services/npi",
+      "permanent": true
+    },
+    {
+      "source": "/npi-new",
+      "destination": "/services/npi",
+      "permanent": true
+    },
+    {
+      "source": "/odm-jdm/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/odm-jdm",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/oem-customer-service/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/oem-customer-service",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/operating-systems/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/operating-systems",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/product/audio-video/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/audio-video",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/base-station-design-iot/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/base-station-design-iot",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/cloud-connectivity-design-iot/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/cloud-connectivity-design-iot",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/complete-box-built-ems-service/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/complete-box-built-ems-service",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/edge-devices/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/edge-devices",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/edge-devices-internet-of-things/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/edge-devices-internet-of-things",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/features-of-our-fpga-design-services/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/features-of-our-fpga-design-services",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/ip-integration-and-design-verification/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/ip-integration-and-design-verification",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/npi-prototyping/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/npi-prototyping",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/rework-engineering-change-order/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/rework-engineering-change-order",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/sensor-networking-iot/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/sensor-networking-iot",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/software/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/software",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/test-services-fp-ict-fct-burn-in/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/product/test-services-fp-ict-fct-burn-in",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/production/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/production",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/rf-wireless-software/",
+      "destination": "/services/engineering-design/firmware-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/rf-wireless-software",
+      "destination": "/services/engineering-design/firmware-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/samsung-partnered-with-whizz-systems/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/samsung-partnered-with-whizz-systems",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/semiconductors/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/semiconductors",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sensor-networking-iot-back/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sensor-networking-iot-back",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/shop",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/shop/page/3/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/shop/page/3",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/shop/page/4/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/shop/page/4",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap-services/",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap-services",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/software/",
+      "destination": "/services/engineering-design/firmware-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/software",
+      "destination": "/services/engineering-design/firmware-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/software-back/",
+      "destination": "/services/engineering-design/firmware-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/software-back",
+      "destination": "/services/engineering-design/firmware-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/terms-of-use/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/terms-of-use",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/test-services-fp-ict-fct-burn-in-back/",
+      "destination": "/services/lab-testing-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/test-services-fp-ict-fct-burn-in-back",
+      "destination": "/services/lab-testing-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/uncategorized/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/uncategorized",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/videos/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/videos",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-corporate/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-corporate",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-has-a-brand-new-seica-s40-pilot-lx-tester-in-house/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-has-a-brand-new-seica-s40-pilot-lx-tester-in-house",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-inc-celebrates-20th-year-of-providing-electronics-product-design-manufacturing",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-inc-celebrates-20th-year-of-providing-electronics-product-design-manufacturing/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-inc-increases-production-with-juki-storage-towers/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-inc-increases-production-with-juki-storage-towers",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-promotional-video/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-promotional-video",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-to-host-complimentary-tech-lunch-learn/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/whizz-systems-to-host-complimentary-tech-lunch-learn",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/whizzsystems/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/whizzsystems",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/xilinx-design/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/xilinx-design",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/xilinx-testimonial/",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/xilinx-testimonial",
+      "destination": "/featured-products",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2016/09/ABS_hi_res_14001.png",
+      "destination": "/assets/home/hero/slide1.png",
+      "permanent": true
+    },
+    {
+      "source": "/beta/contact-us/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/beta/contact-us",
+      "destination": "/about",
       "permanent": true
     }
   ]
