@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
     private metaService: Meta,
     private titleService: Title,
     @Inject(DOCUMENT) private document: Document,
-    @Inject(PLATFORM_ID) private platformId: object
+    @Inject(PLATFORM_ID) private platformId: object,
   ) {
     this.isBrowser = isPlatformBrowser(this.platformId);
     this.isServer = isPlatformServer(this.platformId);
@@ -64,7 +64,9 @@ export class AppComponent implements OnInit {
 
         const canonicalUrl = `${this.baseUrl}${event.urlAfterRedirects}`;
         this.setCanonicalTag(canonicalUrl);
-        const robotsConfig = currentRoute.includes('careers') ? 'noindex, follow' : 'index, follow';
+        const robotsConfig = currentRoute.includes('careers')
+          ? 'noindex, follow'
+          : 'index, follow';
         this.setRobotsMetaTag(robotsConfig);
 
         this.setMetaFromRoute(this.activatedRoute);
@@ -118,7 +120,7 @@ export class AppComponent implements OnInit {
   setCanonicalTag(url: string) {
     if (!url) return;
     let link: HTMLLinkElement | null = this.document.querySelector(
-      "link[rel='canonical']"
+      "link[rel='canonical']",
     );
     if (link) {
       link.setAttribute('href', url);
@@ -144,7 +146,7 @@ export class AppComponent implements OnInit {
 
     // Remove old schema tags first
     const oldScripts = this.document.body.querySelectorAll(
-      'script[type="application/ld+json"]'
+      'script[type="application/ld+json"]',
     );
     oldScripts.forEach((s) => s.remove());
 
