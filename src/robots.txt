@@ -1,7 +1,10 @@
 User-agent: Googlebot
 Disallow: /nogooglebot/
 Disallow: /careers/manufacturing-manager
+Disallow: /*?*
+
 User-agent: *
 Allow: /
+Disallow: /*?*
 
 Sitemap: https://www.whizzsystems.com/sitemap.xml

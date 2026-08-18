@@ -1770,6 +1770,31 @@
       "source": "/beta/contact-us",
       "destination": "/about",
       "permanent": true
+    },
+    {
+      "source": "/whizz-systems-inc-awarded-for-elite-contract-services/",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/blog/Faulting-the-Internet-of-Things-for-the-Mirai-Malware-Cyber-Attack-was-not-entirely-True",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2021/06/PARTNERFORLIFECYCLE.pdf",
+      "destination": "/news-&-insights",
+      "permanent": true
+    },
+    {
+      "source": "/?page_id=1468",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/?p=4277",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
