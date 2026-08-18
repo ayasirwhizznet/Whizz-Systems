@@ -1787,12 +1787,26 @@
       "permanent": true
     },
     {
-      "source": "/?page_id=1468",
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "page_id",
+          "value": "1468"
+        }
+      ],
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "/?p=4277",
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "4277"
+        }
+      ],
       "destination": "/",
       "permanent": true
     }
