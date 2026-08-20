@@ -34,7 +34,7 @@ export class HardwareDesignComponent implements OnInit, AfterViewInit, OnDestroy
     'Key Considerations for Customers',
   ];
 
-  blogs = getOtherBlogs('/news-&-insights/hardware-design');
+  blogs = getOtherBlogs('/insights/high-density-ai-hardware-design');
 
   pinCounts = ['Pin configuration,', 'Signal routing, and', 'Thermal management'];
   signals1 = ['Data corruption', 'Reduced System Performance.'];
@@ -62,7 +62,7 @@ export class HardwareDesignComponent implements OnInit, AfterViewInit, OnDestroy
     {
       title: '4. Adhering to Industry Standards for Hardware Compliance',
       desc1:
-        `It is extremely important for AI hardware companies to follow industry standards to produce compliant and competitive products. Standards such as the <a href='https://www.whizzsystems.com/news-&-insights/high-throughput-interconnect-topologies' class='text-teal1'> Open Compute Project (OCP)</a> guarantee interoperability and reliability. Collaborating with specialists like Whizz Systems addresses these considerations effectively.`,
+        `It is extremely important for AI hardware companies to follow industry standards to produce compliant and competitive products. Standards such as the <a href='https://www.whizzsystems.com/insights/high-throughput-interconnect-topologies' class='text-teal1'> Open Compute Project (OCP)</a> guarantee interoperability and reliability. Collaborating with specialists like Whizz Systems addresses these considerations effectively.`,
     },
   ];
 

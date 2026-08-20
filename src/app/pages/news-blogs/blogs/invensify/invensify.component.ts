@@ -23,7 +23,7 @@ import { getOtherBlogs } from '../blogList';
   templateUrl: './invensify.component.html'
 })
 export class InvensifyComponent implements OnInit, OnDestroy {
-  blogs = getOtherBlogs('/news-&-insights/whitepaper-invensify');
+  blogs = getOtherBlogs('/insights/whitepaper-invensify');
 
   tags = ['Medical Devices', 'PCB Layout', 'Hardware Design'];
 
@@ -38,21 +38,21 @@ export class InvensifyComponent implements OnInit, OnDestroy {
   cards = [
     {
       imageUrl: 'assets/news/blogs/blog-bottom/5g.png',
-      link: '/news-&-insights/whitepaper-5g-oru',
+      link: '/insights/5g-oru-development',
       tags: ['Case Study', 'Hardware Design', 'Telecom Engineering'],
       date: 'September 05, 2020',
       title: 'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
     },
     {
       imageUrl: 'assets/news/blogs/blog-bottom/heatsink.png',
-      link: '/news-&-insights/whitepaper-heatsink',
+      link: '/insights/heatsink-design-guide',
       tags: ['Heatsink', 'Thermal Management'],
       date: 'July 09, 2024',
       title: 'Heatsinks: Considerations, guidance, and best practices.',
     },
     {
       imageUrl: 'assets/news/blogs/blog-bottom/pcle6.png',
-      link: '/news-&-insights/whitepaper-pcle6',
+      link: '/insights/pcie-gen-6-design-guide',
       tags: ['Heatsink', 'Thermal Management'],
       date: 'May 29, 2024',
       title: 'PCIe-6: Everything You Need To Know',

@@ -32,10 +32,10 @@ export class FooterComponent {
   ];
 
   blog: any[] = [
-    { label: 'White Papers', link: '/news-&-insights' },
-    { label: 'Case studies', link: '/news-&-insights' },
-    { label: 'News', link: '/news-&-insights' },
-    { label: 'FAQ', link: '/news-&-insights' },
+    { label: 'White Papers', link: '/insights' },
+    { label: 'Case studies', link: '/insights' },
+    { label: 'News', link: '/insights' },
+    { label: 'FAQ', link: '/insights' },
   ];
 
   socailMedia: any[] = [

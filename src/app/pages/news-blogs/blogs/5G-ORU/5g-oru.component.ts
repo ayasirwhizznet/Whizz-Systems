@@ -28,7 +28,7 @@ import { getOtherBlogs } from '../blogList';
   templateUrl: './5g-oru.component.html',
 })
 export class ORUComponent {
-  blogs = getOtherBlogs('/news-&-insights/whitepaper-5g-oru');
+  blogs = getOtherBlogs('/insights/5g-oru-development');
 
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;

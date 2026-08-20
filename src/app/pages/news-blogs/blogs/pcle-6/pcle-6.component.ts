@@ -25,7 +25,7 @@ import { getOtherBlogs } from '../blogList';
 export class Pcle6Component implements OnInit, OnDestroy {
   tags = ['Whitepapper', 'High-Speed Connectivity', 'Mechanical Design'];
 
-  blogs = getOtherBlogs('/news-&-insights/whitepaper-pcle6');
+  blogs = getOtherBlogs('/insights/pcie-gen-6-design-guide');
 
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;

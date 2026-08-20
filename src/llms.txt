@@ -8,26 +8,26 @@
 - [About Us](https://www.whizzsystems.com/about)
 - [Services Overview](https://www.whizzsystems.com/services)
 - [Featured Products](https://www.whizzsystems.com/featured-products)
-- [News & Insights](https://www.whizzsystems.com/news-&-insights)
+- [News & Insights](https://www.whizzsystems.com/insights)
 
 ## Informational & Engineering White Papers
 
 Technical documentation, design optimizations, and engineering assets for users and engineers.
 
-- [Whitepaper: Invensify Optimization](https://www.whizzsystems.com/news-&-insights/whitepaper-invensify)
-- [Whitepaper: 5G ORU Systems](https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru)
-- [Whitepaper: Heatsink & Thermal Design](https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink)
-- [Whitepaper: PCIe Gen 6 Architecture](https://www.whizzsystems.com/news-&-insights/whitepaper-pcle6)
+- [Whitepaper: Invensify Optimization](https://www.whizzsystems.com/insights/whitepaper-invensify)
+- [Whitepaper: 5G ORU Systems](https://www.whizzsystems.com/insights/5g-oru-development)
+- [Whitepaper: Heatsink & Thermal Design](https://www.whizzsystems.com/insights/heatsink-design-guide)
+- [Whitepaper: PCIe Gen 6 Architecture](https://www.whizzsystems.com/insights/pcie-gen-6-design-guide)
 
 ## Engineering & Technical Insights
 
 Deep-dive articles covering high-performance hardware, signal integrity, and architecture.
 
-- [High-Speed AI Design & Signal Integrity Techniques](https://www.whizzsystems.com/news-&-insights/high-speed-ai-design-si-techniques)
-- [End-to-End Product Manufacturing Reliability](https://www.whizzsystems.com/news-&-insights/end-to-end-product-manufacturing-reliability)
-- [Future Architecture & Performance Protocols](https://www.whizzsystems.com/news-&-insights/future-architecture-performance)
-- [Managing High Power Demand in Modern Electronics](https://www.whizzsystems.com/news-&-insights/high-power-demand)
-- [Foundations of Advanced Hardware Design](https://www.whizzsystems.com/news-&-insights/hardware-design)
+- [High-Speed AI Design & Signal Integrity Techniques](https://www.whizzsystems.com/insights/high-speed-ai-design-si-techniques)
+- [End-to-End Product Manufacturing Reliability](https://www.whizzsystems.com/insights/end-to-end-product-manufacturing-reliability)
+- [Future Architecture & Performance Protocols](https://www.whizzsystems.com/insights/future-proof-ai-hardware-architecture)
+- [Managing High Power Demand in Modern Electronics](https://www.whizzsystems.com/insights/high-power-demand)
+- [Foundations of Advanced Hardware Design](https://www.whizzsystems.com/insights/high-density-ai-hardware-design)
 
 ## Engineering Design Services
 
@@ -50,7 +50,7 @@ Deep-dive articles covering high-performance hardware, signal integrity, and arc
 
 ## Hardware & FPGA Products
 
-- [Whizz Kintex-7 FPGA (WH705)](https://www.whizzsystems.com/featured-products/whizz-kintex-7FPGA-WH705)
+- [Whizz Kintex-7 FPGA (WH705)](https://www.whizzsystems.com/featured-products/whizz-kintex-7-fpga-wh705)
 - [Whizz Virtex-7 FPGA (WH707-A)](https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-wh707-a)
 - [Whizz Virtex-7 FPGA (WS707)](https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws707)
 - [Whizz Virtex-7 FPGA (WS709)](https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws709)

@@ -93,7 +93,7 @@ export const routes: Routes = [
                       "@type": "Product",
                       "position": 1,
                       "name": "Whizz Kintex 7 FPGA WH705",
-                      "url": "https://www.whizzsystems.com/featured-products/whizz-kintex-7FPGA-WH705",
+                      "url": "https://www.whizzsystems.com/featured-products/whizz-kintex-7-fpga-wh705",
                       "image": "https://www.whizzsystems.com/assets/header/teal-logo.png",
                       "brand": {
                         "@type": "Brand",
@@ -272,7 +272,7 @@ export const routes: Routes = [
         }
       },
       {
-        path: 'whizz-kintex-7FPGA-WH705',
+        path: 'whizz-kintex-7-fpga-wh705',
         loadComponent: () =>
           import(
             './products/whizz-kintex-7FPGA-wh705/whizz-kintex-7FPGA-wh705component'
@@ -304,7 +304,7 @@ export const routes: Routes = [
                   category: 'FPGA Evaluation Board',
                   offers: {
                     '@type': 'Offer',
-                    url: 'https://www.whizzsystems.com/featured-products/whizz-kintex-7FPGA-WH705',
+                    url: 'https://www.whizzsystems.com/featured-products/whizz-kintex-7-fpga-wh705',
                     priceCurrency: 'USD',
                     price: 'Request a quote',
                     availability: 'https://schema.org/InStock',
@@ -369,7 +369,7 @@ export const routes: Routes = [
                 {
                   '@type': 'WebPage',
                   name: 'Whizz Kintex-7 FPGA WH705',
-                  url: 'https://www.whizzsystems.com/featured-products/whizz-kintex-7FPGA-WH705',
+                  url: 'https://www.whizzsystems.com/featured-products/whizz-kintex-7-fpga-wh705',
                   description:
                     'Explore Whizz Systems’ Kintex-7 FPGA WH705 evaluation kit — engineered for high-performance and scalable customization.',
                 },
@@ -419,7 +419,7 @@ export const routes: Routes = [
               'Whizz Kintex-7 FPGA WH705 | High-Speed Customizable Evaluation Kit',
             description:
               'High-performance FPGA evaluation board with PCIe Gen2, SFP+, HDMI, DDR3, and FMC expansion options. Built for scalability and custom engineering.',
-            url: 'https://www.whizzsystems.com/featured-products/whizz-kintex-7FPGA-WH705',
+            url: 'https://www.whizzsystems.com/featured-products/whizz-kintex-7-fpga-wh705',
             image:
               'https://www.whizzsystems.com/assets/featured-products/products/vhk158/hero.png',
           },
@@ -622,7 +622,7 @@ export const routes: Routes = [
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Whizz Kintex-7 FPGA WH705",
-                        "url": "https://www.whizzsystems.com/featured-products/whizz-kintex-7FPGA-WH705"
+                        "url": "https://www.whizzsystems.com/featured-products/whizz-kintex-7-fpga-wh705"
                       },
                       {
                         "@type": "ListItem",
@@ -1147,7 +1147,7 @@ export const routes: Routes = [
                   "url": [
                     "https://www.whizzsystems.com/featured-products",
                     "https://www.whizzsystems.com/services",
-                    "https://www.whizzsystems.com/news-&-insights",
+                    "https://www.whizzsystems.com/insights",
                     "https://www.whizzsystems.com/contact"
                   ]
                 },
@@ -1180,7 +1180,7 @@ export const routes: Routes = [
                   "itemListElement": [
                     { "@type": "ListItem", "position": 1, "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws7203-a", "name": "Xilinx Virtex-7 FPGA WS7203A" },
                     { "@type": "ListItem", "position": 2, "url": "https://www.whizzsystems.com/featured-products/whizz-virtex-7-fpga-ws709", "name": "Whizz Virtex-7 FPGA WS709" },
-                    { "@type": "ListItem", "position": 3, "url": "https://www.whizzsystems.com/featured-products/whizz-kintex-7FPGA-WH705", "name": "Whizz Kintex-7 FPGA WH705" }
+                    { "@type": "ListItem", "position": 3, "url": "https://www.whizzsystems.com/featured-products/whizz-kintex-7-fpga-wh705", "name": "Whizz Kintex-7 FPGA WH705" }
                   ]
                 }
 

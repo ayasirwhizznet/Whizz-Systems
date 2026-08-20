@@ -85,6 +85,74 @@ export const routes: Routes = [
           description:
             'High-quality electronics manufacturing services with global supply chain support.',
         },
+        {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.whizzsystems.com/#organization",
+      "name": "Whizz Systems",
+      "legalName": "Whizz Systems, Inc.",
+      "url": "https://www.whizzsystems.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.whizzsystems.com/#logo",
+        "url": "https://www.whizzsystems.com/assets/header/teal-logo.png",
+        "width": 220,
+        "height": 88,
+        "caption": "Whizz Systems"
+      },
+      "image": { "@id": "https://www.whizzsystems.com/#logo" },
+      "description": `Whizz Systems is an end-to-end electronics design and manufacturing
+        partner providing hardware engineering, PCB design, NPI, advanced manufacturing, lab testing
+        and supply chain management.`,
+      "foundingDate": "1999",
+      "telephone": "+1-408-980-0400",
+      "email": "sales@whizzsystems.com",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "3240 Scott Blvd",
+          "addressLocality": "Santa Clara",
+          "addressRegion": "CA",
+          "postalCode": "95054",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Lot 8, SMI Park Phase 2, Jalan Hi-Tech 4 Sambungan, Kulim Hi-Tech Park",
+          "addressLocality": "Kulim",
+          "addressRegion": "Kedah",
+          "postalCode": "09000",
+          "addressCountry": "MY"
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+1-408-980-0400",
+          "email": "sales@whizzsystems.com",
+          "areaServed": "Worldwide",
+          "availableLanguage": ["English"]
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/whizz-systems/",
+        "https://www.youtube.com/@WhizzSystemsCA"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.whizzsystems.com/#website",
+      "url": "https://www.whizzsystems.com/",
+      "name": "Whizz Systems",
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://www.whizzsystems.com/#organization" }
+    }
+  ]
+},
+
       ],
     },
   },
@@ -242,7 +310,7 @@ export const routes: Routes = [
       import('./pages/featured-products/routes').then((m) => m.routes),
   },
   {
-    path: 'news-&-insights',
+    path: 'insights',
     loadChildren: () =>
       import('./pages/news-blogs/routes').then((m) => m.routes),
   },

@@ -46,7 +46,7 @@ export const routes: Routes = [
                                 },
                             },
                             mainEntityOfPage:
-                                'https://www.whizzsystems.com/news-&-insights/amd-vpk180',
+                                'https://www.whizzsystems.com/insights/amd-vpk180',
                             datePublished: '2025-12-06',
                             dateModified: '2025-12-06',
                         },
@@ -64,13 +64,13 @@ export const routes: Routes = [
                                     '@type': 'ListItem',
                                     position: 2,
                                     name: 'News & Insights',
-                                    item: 'https://www.whizzsystems.com/news-&-insights/',
+                                    item: 'https://www.whizzsystems.com/insights/',
                                 },
                                 {
                                     '@type': 'ListItem',
                                     position: 3,
                                     name: 'AMD VPK180 Evaluation Board',
-                                    item: 'https://www.whizzsystems.com/news-&-insights/amd-vpk180',
+                                    item: 'https://www.whizzsystems.com/insights/amd-vpk180',
                                 },
                             ],
                         },
@@ -111,7 +111,7 @@ export const routes: Routes = [
                             'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
                         description:
                             'A versatile evaluation board engineered by Whizz Systems showcasing AMD Versal™ Premium capabilities for next-gen FPGA development.',
-                        url: 'https://www.whizzsystems.com/news-&-insights/amd-vpk180',
+                        url: 'https://www.whizzsystems.com/insights/amd-vpk180',
                         site_name: 'Whizz Systems',
                         image:
                             'https://www.whizzsystems.com/assets/news/blogs/amd-vpk180/hero.png',

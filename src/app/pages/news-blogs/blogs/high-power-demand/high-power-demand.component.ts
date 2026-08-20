@@ -25,11 +25,11 @@ import { getOtherBlogs } from '../blogList';
 export class HighPowerDemandComponent implements OnInit, AfterViewInit, OnDestroy {
   tags = ['AI Hardware', 'High Density PCB Design', 'High-Pin Count Chips'];
 
-  blogs = getOtherBlogs('/news-&-insights/high-power-demand');
+  blogs = getOtherBlogs('/insights/high-power-demand');
 
   optimized = ['Minimize IR drops', 'Ensure consistent, stable power delivery across the board'];
   layout = ['Trace widths', 'Via placements', 'Power distribution planes'];
-  robust = [ `<a href='https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink' class='text-teal1'>Heat sinks</a>`, 'Thermal vias', 'Vapor chambers', 'Liquid cooling systems'];
+  robust = [ `<a href='https://www.whizzsystems.com/insights/heatsink-design-guide' class='text-teal1'>Heat sinks</a>`, 'Thermal vias', 'Vapor chambers', 'Liquid cooling systems'];
 
   advanced = [
     'Ensure a robust power delivery network (PDN) design to <b>minimize voltage drops</b> and maintain stable power across the system.',

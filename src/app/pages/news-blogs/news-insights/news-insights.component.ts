@@ -50,7 +50,7 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
     date: 'March 13, 2026',
     tags: ['Article', 'High-Speed AI Design', 'Signal Integrity'],
     title: 'High-Speed AI Design Challenges & Robust SI Techniques',
-    link: '/news-&-insights/high-speed-ai-design-si-techniques',
+    link: '/insights/high-speed-ai-design-si-techniques',
     description:
       'Advanced signal integrity techniques for high-speed AI hardware design',
   };
@@ -62,7 +62,7 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
       tags: ['Article', 'Interconnect Architecture', 'OCP Compliance'],
       title:
         'Enhancing Performance with Innovative Interconnect Topologies and Custom Solutions',
-      link: '/news-&-insights/high-throughput-interconnect-topologies',
+      link: '/insights/high-throughput-interconnect-topologies',
     },
     {
       imgUrl: 'assets/news/news-insights/next-3.png',
@@ -70,7 +70,7 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
       tags: ['AI Hardware', 'Obsolescence Management'],
       title:
         'Future-Proof Architecture and Performance in Next-Generation Systems',
-      link: '/news-&-insights/future-architecture-performance',
+      link: '/insights/future-proof-ai-hardware-architecture',
     },
   ];
 
@@ -91,7 +91,7 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
       tags: ['Case Study', 'Medical Devices'],
       title:
         'Whizz Systems & Invensify: Engineering a Smart, Reliable, and Efficient Medical Refrigeration System',
-      link: '/news-&-insights/whitepaper-invensify',
+      link: '/insights/whitepaper-invensify',
     },
     {
       imgUrl: 'assets/news/news-insights/case-3.png',
@@ -99,7 +99,7 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
       tags: ['Case Study', 'Hardware Design'],
       title:
         'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
-      link: '/news-&-insights/whitepaper-5g-oru',
+      link: '/insights/5g-oru-development',
     },
     {
       imgUrl: 'assets/news/blog-3.png',
@@ -107,7 +107,7 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
       tags: ['Whitepaper', 'Thermal Management'],
       title:
         'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
-      link: '/news-&-insights/whitepaper-heatsink',
+      link: '/insights/heatsink-design-guide',
     },
   ];
 
@@ -118,14 +118,14 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
       tags: ['Whitepaper', 'Thermal Management'],
       title:
         'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
-      link: '/news-&-insights/whitepaper-heatsink',
+      link: '/insights/heatsink-design-guide',
     },
     {
       imgUrl: 'assets/news/news-insights/white-2.png',
       date: 'May 29, 2024',
       tags: ['Whitepaper', 'High Speed Connectivity'],
       title: 'PCIe-6: Everything You Need to Know',
-      link: '/news-&-insights/whitepaper-pcle6',
+      link: '/insights/pcie-gen-6-design-guide',
     },
   ];
 
@@ -136,28 +136,28 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
         date: 'May 14, 2025',
         tags: ['Article','AI Hardware Design',],
         title: 'NextGen Hardware Design for High-Density, High-Complexity Systems',
-        link: '/news-&-insights/hardware-design',
+        link: '/insights/high-density-ai-hardware-design',
     },
     {
         imgUrl: 'assets/news/news-insights/latest-2.png',
         date: 'March 2, 2026',
         tags: ['Article', 'Interconnect Architecture'],
         title: 'Enhancing Performance with Innovative Interconnect Topologies and Custom Solutions',
-        link: '/news-&-insights/high-throughput-interconnect-topologies',
+        link: '/insights/high-throughput-interconnect-topologies',
     },
     {
         imgUrl: 'assets/news/news-insights/latest-3.png',
         date: 'March 13, 2026',
         tags: ['Article','High-Pin Count Chips'],
         title: 'High-Speed AI Design Challenges & Robust SI Techniques',
-        link: '/news-&-insights/high-speed-ai-design-si-techniques',
+        link: '/insights/high-speed-ai-design-si-techniques',
     },
     {
         imgUrl: 'assets/news/news-insights/latest-4.png',
         date: 'May 22, 2026',
         tags: ['Whitepaper','AI Hardware Design'],
         title: 'How Whizz Systems Delivers: End-to-End Product Manufacturing Reliability',
-        link: '/news-&-insights/end-to-end-product-manufacturing-reliability',
+        link: '/insights/end-to-end-product-manufacturing-reliability',
     },
     {
         imgUrl: 'assets/news/product-3.png',
@@ -171,42 +171,42 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
         date: 'July 22, 2025',
         tags: ['AI Hardware', 'Obsolescence Management'],
         title: 'Future-Proof Architecture and Performance in Next-Generation Systems',
-        link: '/news-&-insights/future-architecture-performance',
+        link: '/insights/future-proof-ai-hardware-architecture',
     },
     {
         imgUrl: 'assets/news/blogs/high-power/key-challenges.png',
         date: 'June 10, 2025',
         tags: ['AI Hardware', 'High Density PCB Design'],
         title: 'Managing High-Power Demands in Next-Generation Hardware',
-        link: '/news-&-insights/high-power-demand',
+        link: '/insights/high-power-demand',
     },
     {
         imgUrl: 'assets/news/blog-1.png',
         date: 'May 29, 2024',
         tags: ['Whitepaper', 'High Speed Connectivity'],
         title: 'PCIe-6: Everything You Need to Know',
-        link: '/news-&-insights/whitepaper-pcle6',
+        link: '/insights/pcie-gen-6-design-guide',
     },
     {
         imgUrl: 'assets/news/blog-2.png',
         date: 'July 9, 2024',
         tags: ['Case Study', 'Hardware Design'],
         title: 'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
-        link: '/news-&-insights/whitepaper-5g-oru',
+        link: '/insights/5g-oru-development',
     },
     {
         imgUrl: 'assets/news/blog-3.png',
         date: 'July 9, 2024',
         tags: ['Whitepaper', 'Thermal Management'],
         title: 'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
-        link: '/news-&-insights/whitepaper-heatsink',
+        link: '/insights/heatsink-design-guide',
     },
     {
         imgUrl: 'assets/news/blog-4.png',
         date: 'December 12, 2024',
         tags: ['Case Study', 'Medical Devices'],
         title: 'Engineering Smart Medical Devices: The Invensify Case Study',
-        link: '/news-&-insights/whitepaper-invensify',
+        link: '/insights/whitepaper-invensify',
     },
 ];
   slides: CarouselSlide[] = [
@@ -218,7 +218,7 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
         'How Whizz Systems Delivers: End-to-End Product Manufacturing Reliability',
       description:
         'A comprehensive look at the seven engineering pillars that ensure every product leaving Whizz Systems is built to perform, last and comply.',
-      link: '/news-&-insights/end-to-end-product-manufacturing-reliability',
+      link: '/insights/end-to-end-product-manufacturing-reliability',
     },
     {
       imgUrl: 'assets/news/news-insights/hero-2.png',
@@ -227,7 +227,7 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
       title: 'Managing High-Power Demands in Next-Generation AI Hardware Design',
       description:
         'Master Power and Performance for AI Hardware Exceeding 1,500 Amps',
-      link: '/news-&-insights/high-power-demand',
+      link: '/insights/high-power-demand',
     },
     {
       imgUrl: 'assets/news/news-insights/hero-3.png',
@@ -235,7 +235,7 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
       tags: ['Whitepaper', 'High Speed Connectivity'],
       title: 'Whizz Systems Guide to PCIe-6',
       description: 'A comprehensive 101 from our engineering team',
-      link: '/news-&-insights/whitepaper-pcle6',
+      link: '/insights/pcie-gen-6-design-guide',
     },
   ];
 

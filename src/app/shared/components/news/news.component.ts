@@ -30,7 +30,7 @@ export class NewsComponent implements AfterViewInit, OnDestroy {
   @Input() title: string = 'Latest News & Insights';
   @Input() subtitle: string = '';
   @Input() viewAllLabel: string = 'See more';
-  @Input() viewAllLink: string = '/news-&-insights';
+  @Input() viewAllLink: string = '/insights';
   @Input() buttonSize: 'small' | 'medium' | 'large' = 'medium';
   /** 'default' = title left + actions right; 'centered' = arrows flanking centered title; 'none' = no header */
   @Input() headerLayout: 'default' | 'centered' | 'none' = 'default';

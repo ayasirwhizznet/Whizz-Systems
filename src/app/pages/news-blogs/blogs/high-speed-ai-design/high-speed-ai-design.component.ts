@@ -24,7 +24,7 @@ import { getOtherBlogs } from '../blogList';
 export class HighSpeedAiDesignComponent implements OnInit, AfterViewInit, OnDestroy {
   tags = ['High-Speed AI Design', 'Signal Integrity', 'AI Hardware Design'];
 
-  blogs = getOtherBlogs('/news-&-insights/high-speed-ai-design-si-techniques');
+  blogs = getOtherBlogs('/insights/high-speed-ai-design-si-techniques');
 
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;

@@ -24,7 +24,7 @@ import { getOtherBlogs } from '../blogList';
 export class EnhancePerformanceComponent implements OnInit, AfterViewInit, OnDestroy {
   tags = ['Interconnect Architecture', 'OCP Compliance', 'High-Throughput System'];
 
-  blogs = getOtherBlogs('/news-&-insights/high-throughput-interconnect-topologies');
+  blogs = getOtherBlogs('/insights/high-throughput-interconnect-topologies');
 
   optimized = ['Minimize IR drops', 'Ensure consistent, stable power delivery across the board'];
   layout = ['Trace widths', 'Via placements', 'Power distribution planes'];

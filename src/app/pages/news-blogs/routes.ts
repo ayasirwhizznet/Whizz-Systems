@@ -24,8 +24,8 @@ export const routes: Routes = [
                 {
                   '@type': 'CollectionPage',
                   '@id':
-                    'https://www.whizzsystems.com/news-&-insights/#webpage',
-                  url: 'https://www.whizzsystems.com/news-&-insights',
+                    'https://www.whizzsystems.com/insights/#webpage',
+                  url: 'https://www.whizzsystems.com/insights',
                   name: 'Whizz Bytes: Hardware Design Insights, AI & Electronics Engineering News',
                   description:
                     'Explore expert views, industry insights, and breaking news on hardware design, high-speed AI engineering, PCB design, and advanced electronics manufacturing.',
@@ -47,7 +47,7 @@ export const routes: Routes = [
                 {
                   '@type': 'BreadcrumbList',
                   '@id':
-                    'https://www.whizzsystems.com/news-&-insights/#breadcrumb',
+                    'https://www.whizzsystems.com/insights/#breadcrumb',
                   itemListElement: [
                     {
                       '@type': 'ListItem',
@@ -59,14 +59,14 @@ export const routes: Routes = [
                       '@type': 'ListItem',
                       position: 2,
                       name: 'News & Insights',
-                      item: 'https://www.whizzsystems.com/news-&-insights',
+                      item: 'https://www.whizzsystems.com/insights',
                     },
                   ],
                 },
                 {
                   '@type': 'ItemList',
                   '@id':
-                    'https://www.whizzsystems.com/news-&-insights/#itemlist',
+                    'https://www.whizzsystems.com/insights/#itemlist',
                   name: 'Featured Blog Posts & News',
                   numberOfItems: 11,
                   itemListElement: [
@@ -252,7 +252,7 @@ export const routes: Routes = [
           ],
           og: {
             type: 'website',
-            url: 'https://www.whizzsystems.com/news-&-insights',
+            url: 'https://www.whizzsystems.com/insights',
             title:
               'Whizz Bytes: Hardware Design Insights, AI & Electronics Engineering News',
             description:
@@ -263,7 +263,7 @@ export const routes: Routes = [
           },
           twitter: {
             card: 'summary_large_image',
-            url: 'https://www.whizzsystems.com/news-&-insights',
+            url: 'https://www.whizzsystems.com/insights',
             title:
               'Whizz Bytes: Hardware Design Insights, AI & Electronics Engineering News',
             description:
@@ -292,8 +292,8 @@ export const routes: Routes = [
                 {
                   '@type': 'Blog',
                   '@id':
-                    'https://www.whizzsystems.com/news-&-insights/all-posts/#blog',
-                  url: 'https://www.whizzsystems.com/news-&-insights/all-posts',
+                    'https://www.whizzsystems.com/insights/all-posts/#blog',
+                  url: 'https://www.whizzsystems.com/insights/all-posts',
                   name: 'Whizz Systems - Complete Blog & Technical Insights Archive',
                   description:
                     'Complete archive of articles, case studies, whitepapers, and hardware news from Whizz Systems.',
@@ -448,7 +448,7 @@ export const routes: Routes = [
                 {
                   '@type': 'BreadcrumbList',
                   '@id':
-                    'https://www.whizzsystems.com/news-&-insights/all-posts/#breadcrumb',
+                    'https://www.whizzsystems.com/insights/all-posts/#breadcrumb',
                   itemListElement: [
                     {
                       '@type': 'ListItem',
@@ -460,13 +460,13 @@ export const routes: Routes = [
                       '@type': 'ListItem',
                       position: 2,
                       name: 'News & Insights',
-                      item: 'https://www.whizzsystems.com/news-&-insights',
+                      item: 'https://www.whizzsystems.com/insights',
                     },
                     {
                       '@type': 'ListItem',
                       position: 3,
                       name: 'All Posts',
-                      item: 'https://www.whizzsystems.com/news-&-insights/all-posts',
+                      item: 'https://www.whizzsystems.com/insights/all-posts',
                     },
                   ],
                 },
@@ -475,7 +475,7 @@ export const routes: Routes = [
           ],
           og: {
             type: 'website',
-            url: 'https://www.whizzsystems.com/news-&-insights/all-posts',
+            url: 'https://www.whizzsystems.com/insights/all-posts',
             title:
               'All Posts & Insights | Whizz Systems Hardware Engineering Blog',
             description:
@@ -485,7 +485,7 @@ export const routes: Routes = [
           },
           twitter: {
             card: 'summary_large_image',
-            url: 'https://www.whizzsystems.com/news-&-insights/all-posts',
+            url: 'https://www.whizzsystems.com/insights/all-posts',
             title:
               'All Posts & Insights | Whizz Systems Hardware Engineering Blog',
             description:
@@ -531,7 +531,7 @@ export const routes: Routes = [
                 },
               },
               mainEntityOfPage:
-                'https://www.whizzsystems.com/news-&-insights/amd-vpk180',
+                'https://www.whizzsystems.com/insights/amd-vpk180',
               datePublished: '2025-12-06',
               dateModified: '2025-12-06',
             },
@@ -549,13 +549,13 @@ export const routes: Routes = [
                   '@type': 'ListItem',
                   position: 2,
                   name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/news-&-insights/',
+                  item: 'https://www.whizzsystems.com/insights/',
                 },
                 {
                   '@type': 'ListItem',
                   position: 3,
                   name: 'AMD VPK180 Evaluation Board',
-                  item: 'https://www.whizzsystems.com/news-&-insights/amd-vpk180',
+                  item: 'https://www.whizzsystems.com/insights/amd-vpk180',
                 },
               ],
             },
@@ -596,7 +596,7 @@ export const routes: Routes = [
               'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
             description:
               'A versatile evaluation board engineered by Whizz Systems showcasing AMD Versal™ Premium capabilities for next-gen FPGA development.',
-            url: 'https://www.whizzsystems.com/news-&-insights/amd-vpk180',
+            url: 'https://www.whizzsystems.com/insights/amd-vpk180',
             site_name: 'Whizz Systems',
             image:
               'https://www.whizzsystems.com/assets/news/blogs/amd-vpk180/hero.png',
@@ -619,7 +619,7 @@ export const routes: Routes = [
         },
       },
       {
-        path: 'whitepaper-5g-oru',
+        path: '5g-oru-development',
         loadComponent: () =>
           import('./blogs/5G-ORU/5g-oru.component').then((m) => m.ORUComponent),
         title:
@@ -651,9 +651,9 @@ export const routes: Routes = [
                   url: 'https://www.whizzsystems.com/assets/images/logo.png',
                 },
               },
-              url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru',
+              url: 'https://www.whizzsystems.com/insights/5g-oru-development',
               mainEntityOfPage:
-                'https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru',
+                'https://www.whizzsystems.com/insights/5g-oru-development',
               datePublished: '2025-01-15',
               dateModified: '2025-01-15',
             },
@@ -671,13 +671,13 @@ export const routes: Routes = [
                   '@type': 'ListItem',
                   position: 2,
                   name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/news-&-insights/',
+                  item: 'https://www.whizzsystems.com/insights/',
                 },
                 {
                   '@type': 'ListItem',
                   position: 3,
                   name: '5G ORU Development Whitepaper',
-                  item: 'https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru',
+                  item: 'https://www.whizzsystems.com/insights/5g-oru-development',
                 },
               ],
             },
@@ -695,13 +695,13 @@ export const routes: Routes = [
                   '@type': 'ListItem',
                   position: 2,
                   name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/news-&-insights/',
+                  item: 'https://www.whizzsystems.com/insights/',
                 },
                 {
                   '@type': 'ListItem',
                   position: 3,
                   name: '5G ORU Development Whitepaper',
-                  item: 'https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru',
+                  item: 'https://www.whizzsystems.com/insights/5g-oru-development',
                 },
               ],
             },
@@ -750,7 +750,7 @@ export const routes: Routes = [
               'Building the Future of 5G Connectivity with Open Radio Unit Solutions | Whizz Systems',
             description:
               'Explore Whizz Systems’ 5G ORU design and manufacturing expertise — delivering advanced open radio unit white box solutions for next-gen 5G networks.',
-            url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-5g-oru',
+            url: 'https://www.whizzsystems.com/insights/5g-oru-development',
             site_name: 'Whizz Systems',
             image: 'https://www.whizzsystems.com/assets/news/hero.png',
             image_alt: '5G Open Radio Unit Solutions by Whizz Systems',
@@ -770,7 +770,7 @@ export const routes: Routes = [
         },
       },
       {
-        path: 'whitepaper-heatsink',
+        path: 'heatsink-design-guide',
         loadComponent: () =>
           import('./blogs/heatsink/heatsink.component').then(
             (m) => m.HeatsinkComponent,
@@ -804,9 +804,9 @@ export const routes: Routes = [
                   url: 'https://www.whizzsystems.com/assets/images/logo.png',
                 },
               },
-              url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink',
+              url: 'https://www.whizzsystems.com/insights/heatsink-design-guide',
               mainEntityOfPage:
-                'https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink',
+                'https://www.whizzsystems.com/insights/heatsink-design-guide',
               datePublished: '2025-01-20',
               dateModified: '2025-01-20',
             },
@@ -824,13 +824,13 @@ export const routes: Routes = [
                   '@type': 'ListItem',
                   position: 2,
                   name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/news-&-insights/',
+                  item: 'https://www.whizzsystems.com/insights/',
                 },
                 {
                   '@type': 'ListItem',
                   position: 3,
                   name: 'Heatsink Design Whitepaper',
-                  item: 'https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink',
+                  item: 'https://www.whizzsystems.com/insights/heatsink-design-guide',
                 },
               ],
             },
@@ -876,8 +876,8 @@ export const routes: Routes = [
               '@context': 'https://schema.org',
               '@type': 'FAQPage',
               '@id':
-                'https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink#faq',
-              url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink',
+                'https://www.whizzsystems.com/insights/heatsink-design-guide#faq',
+              url: 'https://www.whizzsystems.com/insights/heatsink-design-guide',
               mainEntity: [
                 {
                   '@type': 'Question',
@@ -944,7 +944,7 @@ export const routes: Routes = [
               'Heatsinks: Considerations, Guidance, and Best Practices | Whizz Systems',
             description:
               'A complete guide to heatsinks — learn about design principles, types, materials, and optimization for advanced electronics and PCB thermal management.',
-            url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-heatsink',
+            url: 'https://www.whizzsystems.com/insights/heatsink-design-guide',
             site_name: 'Whizz Systems',
             image:
               'https://www.whizzsystems.com/assets/news/blogs/heatsink/hero.png',
@@ -1004,13 +1004,13 @@ export const routes: Routes = [
                       '@type': 'ListItem',
                       position: 2,
                       name: 'News & Insights',
-                      item: 'https://www.whizzsystems.com/news-&-insights/',
+                      item: 'https://www.whizzsystems.com/insights/',
                     },
                     {
                       '@type': 'ListItem',
                       position: 3,
                       name: 'Whitepaper: Invensify',
-                      item: 'https://www.whizzsystems.com/news-&-insights/whitepaper-invensify',
+                      item: 'https://www.whizzsystems.com/insights/whitepaper-invensify',
                     },
                   ],
                 },
@@ -1036,7 +1036,7 @@ export const routes: Routes = [
                   },
                   datePublished: '2025-09-20',
                   mainEntityOfPage:
-                    'https://www.whizzsystems.com/news-&-insights/whitepaper-invensify',
+                    'https://www.whizzsystems.com/insights/whitepaper-invensify',
                   about: [
                     'Medical Device Development',
                     'Medical Device Hardware Design',
@@ -1054,7 +1054,7 @@ export const routes: Routes = [
               'Building the Future of Medical Logistics with Invensify | Whizz Systems Whitepaper',
             description:
               'Read how Whizz Systems collaborated with Invensify to design Insuridge — an advanced, energy-efficient medical refrigeration system featuring precision PCB design, thermal management, and component engineering.',
-            url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-invensify',
+            url: 'https://www.whizzsystems.com/insights/whitepaper-invensify',
             site_name: 'Whizz Systems',
             image:
               'https://www.whizzsystems.com/assets/images/whitepapers/invensify-insuridge-banner.jpg',
@@ -1078,7 +1078,7 @@ export const routes: Routes = [
         },
       },
       {
-        path: 'whitepaper-pcle6',
+        path: 'pcie-gen-6-design-guide',
         loadComponent: () =>
           import('./blogs/pcle-6/pcle-6.component').then(
             (m) => m.Pcle6Component,
@@ -1113,7 +1113,7 @@ export const routes: Routes = [
               mainEntityOfPage: {
                 '@type': 'WebPage',
                 '@id':
-                  'https://www.whizzsystems.com/news-&-insights/whitepaper-pcle6',
+                  'https://www.whizzsystems.com/insights/pcie-gen-6-design-guide',
               },
               datePublished: '2025-10-07',
               dateModified: '2025-10-07',
@@ -1132,13 +1132,13 @@ export const routes: Routes = [
                   '@type': 'ListItem',
                   position: 2,
                   name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/news-&-insights/',
+                  item: 'https://www.whizzsystems.com/insights/',
                 },
                 {
                   '@type': 'ListItem',
                   position: 3,
                   name: "Whizz Systems' Guide to PCIe Gen 6",
-                  item: 'https://www.whizzsystems.com/news-&-insights/whitepaper-pcle6',
+                  item: 'https://www.whizzsystems.com/insights/pcie-gen-6-design-guide',
                 },
               ],
             },
@@ -1192,8 +1192,8 @@ export const routes: Routes = [
               '@context': 'https://schema.org',
               '@type': 'FAQPage',
               '@id':
-                'https://www.whizzsystems.com/news-&-insights/whitepaper-pcle6#faq',
-              url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-pcle6',
+                'https://www.whizzsystems.com/insights/pcie-gen-6-design-guide#faq',
+              url: 'https://www.whizzsystems.com/insights/pcie-gen-6-design-guide',
               mainEntity: [
                 {
                   '@type': 'Question',
@@ -1259,7 +1259,7 @@ export const routes: Routes = [
             title: "Whizz Systems' Guide to PCIe Gen 6 Design & Implementation",
             description:
               "Deep dive into PCIe Gen 6 hardware design — covering signal integrity, power delivery, PCB layout, and thermal management challenges. Learn from Whizz Systems' engineering experts.",
-            url: 'https://www.whizzsystems.com/news-&-insights/whitepaper-pcle6',
+            url: 'https://www.whizzsystems.com/insights/pcie-gen-6-design-guide',
             site_name: 'Whizz Systems',
             image:
               'https://www.whizzsystems.com/assets/news/blogs/pcle6/hero.png',
@@ -1280,7 +1280,7 @@ export const routes: Routes = [
         },
       },
       {
-        path: 'hardware-design',
+        path: 'high-density-ai-hardware-design',
         loadComponent: () =>
           import('./blogs/hardware-design/hardware-design.component').then(
             (m) => m.HardwareDesignComponent,
@@ -1307,13 +1307,13 @@ export const routes: Routes = [
                   '@type': 'ListItem',
                   position: 2,
                   name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/news-&-insights/',
+                  item: 'https://www.whizzsystems.com/insights/',
                 },
                 {
                   '@type': 'ListItem',
                   position: 3,
                   name: 'NextGen Hardware Design for High-Density, High-Complexity AI Systems',
-                  item: 'https://www.whizzsystems.com/news-&-insights/hardware-design',
+                  item: 'https://www.whizzsystems.com/insights/high-density-ai-hardware-design',
                 },
               ],
             },
@@ -1323,7 +1323,7 @@ export const routes: Routes = [
               mainEntityOfPage: {
                 '@type': 'WebPage',
                 '@id':
-                  'https://www.whizzsystems.com/news-&-insights/hardware-design',
+                  'https://www.whizzsystems.com/insights/high-density-ai-hardware-design',
               },
               headline:
                 'NextGen Hardware Design for High-Density, High-Complexity AI Systems',
@@ -1391,7 +1391,7 @@ export const routes: Routes = [
               'NextGen Hardware Design for High-Density, High-Complexity AI Systems',
             description:
               'Discover how Whizz Systems engineers advanced AI hardware solutions with optimized PCB layouts, power distribution, and thermal management for complex systems.',
-            url: 'https://www.whizzsystems.com/news-&-insights/hardware-design',
+            url: 'https://www.whizzsystems.com/insights/high-density-ai-hardware-design',
             site_name: 'Whizz Systems',
             image:
               'https://www.whizzsystems.com/assets/images/og-hardware-design.jpg',
@@ -1431,7 +1431,7 @@ export const routes: Routes = [
               mainEntityOfPage: {
                 '@type': 'WebPage',
                 '@id':
-                  'https://www.whizzsystems.com/news-&-insights/high-power-demand',
+                  'https://www.whizzsystems.com/insights/high-power-demand',
               },
               headline:
                 'Managing High-Power Demands in Next-Generation Hardware',
@@ -1490,13 +1490,13 @@ export const routes: Routes = [
                   '@type': 'ListItem',
                   position: 2,
                   name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/news-&-insights',
+                  item: 'https://www.whizzsystems.com/insights',
                 },
                 {
                   '@type': 'ListItem',
                   position: 3,
                   name: 'Managing High-Power Demands in Next-Generation Hardware',
-                  item: 'https://www.whizzsystems.com/news-&-insights/high-power-demand',
+                  item: 'https://www.whizzsystems.com/insights/high-power-demand',
                 },
               ],
             },
@@ -1537,7 +1537,7 @@ export const routes: Routes = [
               'Managing High-Power Demands in Next-Generation Hardware | Whizz Systems',
             description:
               'Explore how Whizz Systems delivers advanced power delivery network (PDN) and thermal management solutions for next-gen AI hardware exceeding 1,500 amps.',
-            url: 'https://www.whizzsystems.com/news-&-insights/high-power-demand',
+            url: 'https://www.whizzsystems.com/insights/high-power-demand',
             site_name: 'Whizz Systems',
             image:
               'https://www.whizzsystems.com/assets/news/blogs/high-power/hero.png',
@@ -1549,7 +1549,7 @@ export const routes: Routes = [
         },
       },
       {
-        path: 'future-architecture-performance',
+        path: 'future-proof-ai-hardware-architecture',
         loadComponent: () =>
           import('./blogs/future-proof-architecture/future-proof-architecture.component').then(
             (m) => m.FutureProofArchitectureComponent,
@@ -1584,7 +1584,7 @@ export const routes: Routes = [
               datePublished: '2025-10-22',
               dateModified: '2025-10-22',
               mainEntityOfPage:
-                'https://www.whizzsystems.com/news-&-insights/future-architecture-performance',
+                'https://www.whizzsystems.com/insights/future-proof-ai-hardware-architecture',
               keywords:
                 'future-proof hardware architecture, scalable hardware design, modular system architecture, AI hardware design, reusable architecture, adaptable system design',
             },
@@ -1602,13 +1602,13 @@ export const routes: Routes = [
                   '@type': 'ListItem',
                   position: 2,
                   name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/news-&-insights/',
+                  item: 'https://www.whizzsystems.com/insights/',
                 },
                 {
                   '@type': 'ListItem',
                   position: 3,
                   name: 'Future-Proof Architecture and Performance in Next-Generation Systems',
-                  item: 'https://www.whizzsystems.com/news-&-insights/future-architecture-performance',
+                  item: 'https://www.whizzsystems.com/insights/future-proof-ai-hardware-architecture',
                 },
               ],
             },
@@ -1662,8 +1662,8 @@ export const routes: Routes = [
               '@context': 'https://schema.org',
               '@type': 'FAQPage',
               '@id':
-                'https://www.whizzsystems.com/news-&-insights/future-architecture-performance#faq',
-              url: 'https://www.whizzsystems.com/news-&-insights/future-architecture-performance',
+                'https://www.whizzsystems.com/insights/future-proof-ai-hardware-architecture#faq',
+              url: 'https://www.whizzsystems.com/insights/future-proof-ai-hardware-architecture',
               mainEntity: [
                 {
                   '@type': 'Question',
@@ -1722,7 +1722,7 @@ export const routes: Routes = [
               'Future-Proof Hardware Architecture for Next-Generation AI Systems | Whizz Systems',
             description:
               'Whizz Systems designs scalable and modular AI hardware architectures built to last — discover how future-ready design extends system performance and adaptability.',
-            url: 'https://www.whizzsystems.com/news-&-insights/future-architecture-performance',
+            url: 'https://www.whizzsystems.com/insights/future-proof-ai-hardware-architecture',
             site_name: 'Whizz Systems',
             image:
               'https://www.whizzsystems.com/assets/news/blogs/future-performance/hero.png',
@@ -1764,7 +1764,7 @@ export const routes: Routes = [
               'Advanced Interconnect Architecture for High-Throughput System Design',
             description:
               'Discover how optimized interconnect architecture drives AI, HPC, and next-generation system performance with low latency and high data throughput.',
-            url: 'https://www.whizzsystems.com/news-&-insights/high-throughput-interconnect-topologies',
+            url: 'https://www.whizzsystems.com/insights/high-throughput-interconnect-topologies',
             image:
               'https://www.whizzsystems.com/assets/news/blogs/performance/hero.png',
             site_name: 'Whizz Systems',
@@ -1800,7 +1800,7 @@ export const routes: Routes = [
                 },
               },
               mainEntityOfPage:
-                'https://www.whizzsystems.com/news-&-insights/high-throughput-interconnect-topologies',
+                'https://www.whizzsystems.com/insights/high-throughput-interconnect-topologies',
               datePublished: '2026-01-15',
               dateModified: '2026-01-15',
             },
@@ -1818,13 +1818,13 @@ export const routes: Routes = [
                   '@type': 'ListItem',
                   position: 2,
                   name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/news-&-insights/',
+                  item: 'https://www.whizzsystems.com/insights/',
                 },
                 {
                   '@type': 'ListItem',
                   position: 3,
                   name: 'Advanced Interconnect Architecture',
-                  item: 'https://www.whizzsystems.com/news-&-insights/high-throughput-interconnect-topologies',
+                  item: 'https://www.whizzsystems.com/insights/high-throughput-interconnect-topologies',
                 },
               ],
             },
@@ -1870,8 +1870,8 @@ export const routes: Routes = [
               '@context': 'https://schema.org',
               '@type': 'FAQPage',
               '@id':
-                'https://www.whizzsystems.com/news-&-insights/high-throughput-interconnect-topologies#faq',
-              url: 'https://www.whizzsystems.com/news-&-insights/high-throughput-interconnect-topologies',
+                'https://www.whizzsystems.com/insights/high-throughput-interconnect-topologies#faq',
+              url: 'https://www.whizzsystems.com/insights/high-throughput-interconnect-topologies',
               mainEntity: [
                 {
                   '@type': 'Question',
@@ -1989,7 +1989,7 @@ export const routes: Routes = [
                       '@type': 'ListItem',
                       position: 3,
                       name: 'AI Design Challenges',
-                      item: 'https://www.whizzsystems.com/news-&-insights/high-speed-ai-design-robust-si-techniques',
+                      item: 'https://www.whizzsystems.com/insights/high-speed-ai-design-robust-si-techniques',
                     },
                   ],
                 },
@@ -2065,7 +2065,7 @@ export const routes: Routes = [
                   mainEntityOfPage: {
                     '@type': 'WebPage',
                     '@id':
-                      'https://www.whizzsystems.com/news-&-insights/high-speed-ai-design-robust-si-techniques',
+                      'https://www.whizzsystems.com/insights/high-speed-ai-design-robust-si-techniques',
                   },
                 },
                 {
@@ -2089,8 +2089,8 @@ export const routes: Routes = [
               '@context': 'https://schema.org',
               '@type': 'FAQPage',
               '@id':
-                'https://www.whizzsystems.com/news-&-insights/high-speed-ai-design-si-techniques#faq',
-              url: 'https://www.whizzsystems.com/news-&-insights/high-speed-ai-design-si-techniques',
+                'https://www.whizzsystems.com/insights/high-speed-ai-design-si-techniques#faq',
+              url: 'https://www.whizzsystems.com/insights/high-speed-ai-design-si-techniques',
               mainEntity: [
                 {
                   '@type': 'Question',
@@ -2164,7 +2164,7 @@ export const routes: Routes = [
               'How Whizz Systems Delivers End-to-End Product Manufacturing Reliability',
             description:
               'A comprehensive look at the seven engineering pillars that ensure every product leaving Whizz Systems is built to perform, last, and comply.',
-            url: 'https://www.whizzsystems.com/news-&-insights/end-to-end-product-manufacturing-reliability',
+            url: 'https://www.whizzsystems.com/insights/end-to-end-product-manufacturing-reliability',
             image:
               'https://www.whizzsystems.com/assets/news/blogs/product-manufacturing/hero.png',
             site_name: 'Whizz Systems',
@@ -2196,7 +2196,7 @@ export const routes: Routes = [
               mainEntityOfPage: {
                 '@type': 'WebPage',
                 '@id':
-                  'https://www.whizzsystems.com/news-&-insights/end-to-end-product-manufacturing-reliability',
+                  'https://www.whizzsystems.com/insights/end-to-end-product-manufacturing-reliability',
               },
             },
             {
@@ -2213,13 +2213,13 @@ export const routes: Routes = [
                   '@type': 'ListItem',
                   position: 2,
                   name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/news-&-insights/',
+                  item: 'https://www.whizzsystems.com/insights/',
                 },
                 {
                   '@type': 'ListItem',
                   position: 3,
                   name: 'End-to-End Product Manufacturing Reliability',
-                  item: 'https://www.whizzsystems.com/news-&-insights/end-to-end-product-manufacturing-reliability',
+                  item: 'https://www.whizzsystems.com/insights/end-to-end-product-manufacturing-reliability',
                 },
               ],
             },

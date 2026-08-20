@@ -25,7 +25,7 @@ import { getOtherBlogs } from '../blogList';
 export class FutureProofArchitectureComponent implements OnInit, AfterViewInit, OnDestroy {
   tags = ['AI Hardware', 'Modular Systems', 'Obsolescence Management'];
 
-  blogs = getOtherBlogs('/news-&-insights/future-architecture-performance');
+  blogs = getOtherBlogs('/insights/future-proof-ai-hardware-architecture');
 
   designConsiderations: string[] = [
     'Ensure hardware architecture scalability to meet future demands, prioritizing designs that allow for incremental expansions (e.g., processing power, memory).',

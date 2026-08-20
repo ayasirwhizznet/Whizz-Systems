@@ -25,7 +25,7 @@ import { getOtherBlogs } from '../blogList';
 export class ProductManufacturingComponent implements OnInit, AfterViewInit, OnDestroy {
   tags = ['Manufacturing Quality', 'PCBA'];
 
-  blogs = getOtherBlogs('/news-&-insights/end-to-end-product-manufacturing-reliability');
+  blogs = getOtherBlogs('/insights/end-to-end-product-manufacturing-reliability');
   private fragmentSubscription!: Subscription;
   private navigationSubscription!: Subscription;
   currentFragment: string | null = null;

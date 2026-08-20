@@ -61,7 +61,7 @@ export class FeaturedProductsComponent {
         {
           name: 'Whizz Kintex 7 FPGA WH 705',
           imgUrl: 'assets/featured-products/eva-1.png', // ✅ Relative path works with Angular SSR
-          link: '/featured-products/whizz-kintex-7FPGA-WH705',
+          link: '/featured-products/whizz-kintex-7-fpga-wh705',
         },
         {
           name: 'Whizz Kintex 7 FPGA WS 707A',
@@ -118,14 +118,14 @@ export class FeaturedProductsComponent {
       name: 'Invensify Insuridge',
       imgUrl: 'assets/featured-products/mi-1.png',
       desc: '',
-      link: '/news-&-insights/whitepaper-invensify',
+      link: '/insights/whitepaper-invensify',
     },
     {
       title: 'Telecommunication',
       name: '5G ORU',
       imgUrl: 'assets/featured-products/mi-2.png',
       desc: '',
-      link: '/news-&-insights/whitepaper-5g-oru',
+      link: '/insights/5g-oru-development',
     },
   ];
 }
