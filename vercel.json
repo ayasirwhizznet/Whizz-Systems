@@ -18,6 +18,61 @@
       "permanent": true
     },
     {
+      "source": "/news-&-insights/whitepaper-invensify",
+      "destination": "/insights/whitepaper-invensify",
+      "permanent": true
+    },
+    {
+      "source": "/news-&-insights/whitepaper-pcle6",
+      "destination": "/insights/pcie-gen-6-design-guide",
+      "permanent": true
+    },
+    {
+      "source": "/news-&-insights/whitepaper-5g-oru",
+      "destination": "/insights/5g-oru-development",
+      "permanent": true
+    },
+    {
+      "source": "/news-&-insights/whitepaper-heatsink",
+      "destination": "/insights/heatsink-design-guide",
+      "permanent": true
+    },
+    {
+      "source": "/news-&-insights/future-architecture-performance",
+      "destination": "/insights/future-proof-ai-hardware-architecture",
+      "permanent": true
+    },
+    {
+      "source": "/news-&-insights/high-power-demand",
+      "destination": "/insights/high-power-demand",
+      "permanent": true
+    },
+    {
+      "source": "/news-&-insights/hardware-design",
+      "destination": "/insights/high-density-ai-hardware-design",
+      "permanent": true
+    },
+    {
+      "source": "/news-&-insights/high-speed-ai-design-si-techniques",
+      "destination": "/insights/high-speed-ai-design-si-techniques",
+      "permanent": true
+    },
+    {
+      "source": "/news-&-insights/end-to-end-product-manufacturing-reliability",
+      "destination": "/insights/end-to-end-product-manufacturing-reliability",
+      "permanent": true
+    },
+    {
+      "source": "/news-&-insights/high-throughput-interconnect-topologies",
+      "destination": "/insights/high-throughput-interconnect-topologies",
+      "permanent": true
+    },
+    {
+      "source": "/news-&-insights",
+      "destination": "/insights",
+      "permanent": true
+    },
+    {
       "source": "/electronic-manufacturing-assembly-services/",
       "destination": "/services/advanced-manufacturing",
       "permanent": true
