@@ -7,152 +7,157 @@ export const routes: Routes = [
     component: HomeComponent,
     title: 'Whizz Systems | EMS, Design, Engineering & Development Experts',
     data: {
-      description: `Whizz Systems provides EMS, advanced electronic design, engineering, and product development services with 25+ years of expertise in hi-tech industries.`,
+      description: `Silicon Valley EMS partner since 1999. Hardware design, PCB
+  layout, FPGA, NPI, advanced manufacturing and lab testing under one roof.`,
+      og: {
+        type: 'website',
+        site_name: 'Whizz Systems',
+        title: 'Electronics Design & Manufacturing Services | Whizz Systems',
+        description:
+          'Silicon Valley EMS partner since 1999. Hardware design, PCB layout, FPGA, NPI, advanced manufacturing and lab testing under one roof.',
+        url: 'https://www.whizzsystems.com/',
+        image: 'https://www.whizzsystems.com/assets/og/home-1200x630.jpg',
+        image_width: '1200',
+        image_height: '630',
+        image_alt:
+          'Whizz Systems engineering and manufacturing facility in Santa Clara, California',
+        locale: 'en_US',
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: 'Electronics Design & Manufacturing Services | Whizz Systems',
+        description:
+          'Silicon Valley EMS partner since 1999. Hardware design, PCB layout, FPGA, NPI, advanced manufacturing and lab testing under one roof.',
+        image: 'https://www.whizzsystems.com/assets/og/home-1200x630.jpg',
+        image_alt:
+          'Whizz Systems engineering and manufacturing facility in Santa Clara, California',
+      },
       schema: [
         {
           '@context': 'https://schema.org',
-          '@type': 'Organization',
-          name: 'Whizz Systems',
-          url: 'https://www.whizzsystems.com/',
-          logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-          description:
-            'Whizz Systems is a leading EMS and electronic product design company offering advanced design, engineering, development, and manufacturing services.',
-          foundingDate: '1999',
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: 'Santa Clara, CA',
-            addressLocality: 'Silicon Valley',
-            addressRegion: 'CA',
-            postalCode: '95054',
-            addressCountry: 'USA',
-          },
-          contactPoint: {
-            '@type': 'ContactPoint',
-            telephone: '+1-408-XXXXXXX',
-            contactType: 'sales',
-            areaServed: 'Worldwide',
-          },
-          sameAs: [
-            'https://www.linkedin.com/company/whizz-systems/',
-            'https://www.youtube.com/@WhizzSystemsCA',
+          '@graph': [
+            {
+              '@type': 'Organization',
+              '@id': 'https://www.whizzsystems.com/#organization',
+              name: 'Whizz Systems',
+              legalName: 'Whizz Systems, Inc.',
+              url: 'https://www.whizzsystems.com/',
+              logo: {
+                '@type': 'ImageObject',
+                '@id': 'https://www.whizzsystems.com/#logo',
+                url: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
+                width: 220,
+                height: 88,
+                caption: 'Whizz Systems',
+              },
+              image: { '@id': 'https://www.whizzsystems.com/#logo' },
+              description: `Whizz Systems is an end-to-end electronics design and manufacturing
+        partner providing hardware engineering, PCB design, NPI, advanced manufacturing, lab testing
+        and supply chain management.`,
+              foundingDate: '1999',
+              telephone: '+1-408-980-0400',
+              email: 'sales@whizzsystems.com',
+              address: [
+                {
+                  '@type': 'PostalAddress',
+                  streetAddress: '3240 Scott Blvd',
+                  addressLocality: 'Santa Clara',
+                  addressRegion: 'CA',
+                  postalCode: '95054',
+                  addressCountry: 'US',
+                },
+                {
+                  '@type': 'PostalAddress',
+                  streetAddress:
+                    'Lot 8, SMI Park Phase 2, Jalan Hi-Tech 4 Sambungan, Kulim Hi-Tech Park',
+                  addressLocality: 'Kulim',
+                  addressRegion: 'Kedah',
+                  postalCode: '09000',
+                  addressCountry: 'MY',
+                },
+              ],
+              contactPoint: [
+                {
+                  '@type': 'ContactPoint',
+                  contactType: 'sales',
+                  telephone: '+1-408-980-0400',
+                  email: 'sales@whizzsystems.com',
+                  areaServed: 'Worldwide',
+                  availableLanguage: ['English'],
+                },
+              ],
+              sameAs: [
+                'https://www.linkedin.com/company/whizz-systems/',
+                'https://www.youtube.com/@WhizzSystemsCA',
+              ],
+            },
+            {
+              '@type': 'WebSite',
+              '@id': 'https://www.whizzsystems.com/#website',
+              url: 'https://www.whizzsystems.com/',
+              name: 'Whizz Systems',
+              inLanguage: 'en-US',
+              publisher: {
+                '@id': 'https://www.whizzsystems.com/#organization',
+              },
+            },
           ],
         },
         {
           '@context': 'https://schema.org',
-          '@type': 'Service',
-          serviceType: 'EMS (Electronics Manufacturing Services)',
-          provider: {
-            '@type': 'Organization',
-            name: 'Whizz Systems',
-            url: 'https://www.whizzsystems.com/',
-          },
-          description:
-            'Full-service EMS provider delivering advanced electronics design, development, and manufacturing solutions.',
+          '@graph': [
+            {
+              '@type': 'WebPage',
+              '@id': 'https://www.whizzsystems.com/#webpage',
+              url: 'https://www.whizzsystems.com/',
+              name: 'Electronics Design & Manufacturing Services | Whizz Systems',
+              description: `Silicon Valley EMS partner since 1999. Hardware design, PCB layout,
+        FPGA, NPI, advanced manufacturing and lab testing under one roof.`,
+              inLanguage: 'en-US',
+              isPartOf: {
+                '@id': 'https://www.whizzsystems.com/#website',
+              },
+              publisher: {
+                '@id': 'https://www.whizzsystems.com/#organization',
+              },
+              primaryImageOfPage: {
+                '@type': 'ImageObject',
+                url: 'https://www.whizzsystems.com/assets/og/home-1200x630.jpg',
+              },
+            },
+            {
+              '@type': 'BreadcrumbList',
+              '@id': 'https://www.whizzsystems.com/#breadcrumb',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://www.whizzsystems.com/',
+                },
+              ],
+            },
+            {
+              '@type': 'Service',
+              '@id': 'https://www.whizzsystems.com/#service',
+              name: 'Electronics Design & Manufacturing Services for Advanced Hardware',
+              serviceType: 'Home',
+              description: `Silicon Valley EMS partner since 1999. Hardware design, PCB layout,
+        FPGA, NPI, advanced manufacturing and lab testing under one roof.`,
+              provider: {
+                '@id': 'https://www.whizzsystems.com/#organization',
+              },
+              areaServed: {
+                '@type': 'Place',
+                name: 'Worldwide',
+              },
+              audience: {
+                '@type': 'BusinessAudience',
+                audienceType: 'Hardware and electronics manufacturers',
+              },
+            },
+          ],
         },
-        {
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          serviceType: 'Electronic Product Design',
-          provider: {
-            '@type': 'Organization',
-            name: 'Whizz Systems',
-            url: 'https://www.whizzsystems.com/',
-          },
-          description:
-            'Innovative electronic product design and engineering services for hi-tech industries.',
-        },
-        {
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          serviceType: 'Electronic Product Development',
-          provider: {
-            '@type': 'Organization',
-            name: 'Whizz Systems',
-            url: 'https://www.whizzsystems.com/',
-          },
-          description:
-            'End-to-end electronic product development services from concept to market.',
-        },
-        {
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          serviceType: 'Electronic Manufacturing',
-          provider: {
-            '@type': 'Organization',
-            name: 'Whizz Systems',
-            url: 'https://www.whizzsystems.com/',
-          },
-          description:
-            'High-quality electronics manufacturing services with global supply chain support.',
-        },
-        {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://www.whizzsystems.com/#organization",
-      "name": "Whizz Systems",
-      "legalName": "Whizz Systems, Inc.",
-      "url": "https://www.whizzsystems.com/",
-      "logo": {
-        "@type": "ImageObject",
-        "@id": "https://www.whizzsystems.com/#logo",
-        "url": "https://www.whizzsystems.com/assets/header/teal-logo.png",
-        "width": 220,
-        "height": 88,
-        "caption": "Whizz Systems"
-      },
-      "image": { "@id": "https://www.whizzsystems.com/#logo" },
-      "description": `Whizz Systems is an end-to-end electronics design and manufacturing
-        partner providing hardware engineering, PCB design, NPI, advanced manufacturing, lab testing
-        and supply chain management.`,
-      "foundingDate": "1999",
-      "telephone": "+1-408-980-0400",
-      "email": "sales@whizzsystems.com",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "3240 Scott Blvd",
-          "addressLocality": "Santa Clara",
-          "addressRegion": "CA",
-          "postalCode": "95054",
-          "addressCountry": "US"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "Lot 8, SMI Park Phase 2, Jalan Hi-Tech 4 Sambungan, Kulim Hi-Tech Park",
-          "addressLocality": "Kulim",
-          "addressRegion": "Kedah",
-          "postalCode": "09000",
-          "addressCountry": "MY"
-        }
-      ],
-      "contactPoint": [
-        {
-          "@type": "ContactPoint",
-          "contactType": "sales",
-          "telephone": "+1-408-980-0400",
-          "email": "sales@whizzsystems.com",
-          "areaServed": "Worldwide",
-          "availableLanguage": ["English"]
-        }
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/company/whizz-systems/",
-        "https://www.youtube.com/@WhizzSystemsCA"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.whizzsystems.com/#website",
-      "url": "https://www.whizzsystems.com/",
-      "name": "Whizz Systems",
-      "inLanguage": "en-US",
-      "publisher": { "@id": "https://www.whizzsystems.com/#organization" }
-    }
-  ]
-},
-
       ],
     },
   },
@@ -160,144 +165,155 @@ export const routes: Routes = [
     path: 'about',
     loadComponent: () =>
       import('./pages/about/about.component').then((m) => m.AboutComponent),
-    title: 'Whizz Systems - End-to-End Electronics Design & Manufacturing Partner',
+    title: 'About Whizz Systems | Silicon Valley EMS Since 1999',
     data: {
       description:
-        'Whizz Systems is an end-to-end electronics design, development and manufacturing partner. 30+ years of experience in PCB design, NPI, advanced manufacturing, lab testing, sustainable engineering and global supply chain management.',
+        'End-to-end electronics design and manufacturing partner since 1999. In-house engineering, NPI, manufacturing and supply chain across two facilities.',
       keywords:
         'electronics design and manufacturing, end-to-end electronics partner, PCB design, new product introduction, NPI, advanced manufacturing, lab testing solutions, sustainable engineering, supply chain management, Whizz Systems, Silicon Valley electronics',
       og: {
-        title: "Whizz Systems — Your End-to-End Electronics Design & Manufacturing Partner",
+        type: 'website',
+        site_name: 'Whizz Systems',
+        title: 'About Whizz Systems | Silicon Valley EMS Since 1999',
         description:
-          "Delivering advanced electronics solutions & manufacturing since 1999. Expertise across aerospace, medical, automotive, AI, telecom and more.",
-        image: "/mnt/data/3916b31f-eb0f-43be-8914-bc587ff9d0de.png",
-        url: "https://www.whizzsystems.com/about",
-        type: "website"
+          'End-to-end electronics design and manufacturing partner since 1999. In-house engineering, NPI, manufacturing and supply chain across two facilities.',
+        url: 'https://www.whizzsystems.com/about',
+        image: 'https://www.whizzsystems.com/assets/og/about-1200x630.jpg',
+        image_width: '1200',
+        image_height: '630',
+        image_alt: 'Whizz Systems leadership and engineering team',
+        locale: 'en_US',
       },
       twitter: {
-        card: "summary_large_image",
-        title: "Whizz Systems — Your End-to-End Electronics Design & Manufacturing Partner",
+        card: 'summary_large_image',
+        title: 'About Whizz Systems | Silicon Valley EMS Since 1999',
         description:
-          "Innovative solutions. Global expertise. Proven excellence — Whizz Systems delivers design, prototyping, manufacturing and compliance under one roof.",
-        image: "/mnt/data/3916b31f-eb0f-43be-8914-bc587ff9d0de.png"
+          'End-to-end electronics design and manufacturing partner since 1999. In-house engineering, NPI, manufacturing and supply chain across two facilities.',
+        image: 'https://www.whizzsystems.com/assets/og/about-1200x630.jpg',
+        image_alt: 'Whizz Systems leadership and engineering team',
       },
       schema: [
         {
-          "@context": "https://schema.org",
-          "@graph": [
+          '@context': 'https://schema.org',
+          '@graph': [
             {
-              "@type": "Organization",
-              "@id": "https://www.whizzsystems.com/#organization",
-              "name": "Whizz Systems",
-              "url": "https://www.whizzsystems.com",
-              "logo": "https://www.whizzsystems.com/assets/header/teal-logo.png",
-              "sameAs": [
-                "https://www.linkedin.com/company/whizz-systems",
-                "https://twitter.com/whizzsystems",
-                "https://www.facebook.com/whizzsystems"
+              '@type': 'AboutPage',
+              '@id': 'https://www.whizzsystems.com/about#webpage',
+              url: 'https://www.whizzsystems.com/about',
+              name: 'About Whizz Systems | Silicon Valley EMS Since 1999',
+              description: `"End-to-end electronics design and manufacturing partner since 1999.
+        In-house engineering, NPI, manufacturing and supply chain across two facilities.`,
+              inLanguage: 'en-US',
+              isPartOf: {
+                '@id': 'https://www.whizzsystems.com/#website',
+              },
+              publisher: {
+                '@id': 'https://www.whizzsystems.com/#organization',
+              },
+              primaryImageOfPage: {
+                '@type': 'ImageObject',
+                url: 'https://www.whizzsystems.com/assets/og/about-1200x630.jpg',
+              },
+            },
+            {
+              '@type': 'BreadcrumbList',
+              '@id': 'https://www.whizzsystems.com/about#breadcrumb',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://www.whizzsystems.com/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: 'About',
+                  item: 'https://www.whizzsystems.com/about',
+                },
               ],
-              "contactPoint": [
+            },
+            {
+              '@type': 'Person',
+              '@id': 'https://www.whizzsystems.com/about#manny',
+              name: 'Manny Karim',
+              jobTitle: 'Chief Executive Officer',
+              worksFor: {
+                '@type': 'Organization',
+                '@id': 'https://www.whizzsystems.com/#organization',
+              },
+            },
+            {
+              '@type': 'Person',
+              '@id': 'https://www.whizzsystems.com/about#muhammad',
+              name: 'Muhammad Irfan',
+              jobTitle: 'President',
+              worksFor: {
+                '@type': 'Organization',
+                '@id': 'https://www.whizzsystems.com/#organization',
+              },
+            },
+            {
+              '@type': 'FAQPage',
+              '@id': 'https://www.whizzsystems.com/about#faq',
+              url: 'https://www.whizzsystems.com/about',
+              mainEntity: [
                 {
-                  "@type": "ContactPoint",
-                  "contactType": "sales",
-                  "telephone": "+1-408-988-1849",
-                  "areaServed": "Worldwide",
-                  "availableLanguage": "English"
+                  '@type': 'Question',
+                  name: 'What does Whizz Systems specialise in?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: `Whizz Systems specialises in end-to-end electronic product development,
+              combining engineering, manufacturing, validation and supply chain expertise. We support every
+              stage of the product lifecycle, from concept through production and long-term sustaining
+              engineering.`,
+                  },
                 },
                 {
-                  "@type": "ContactPoint",
-                  "contactType": "technical support",
-                  "telephone": "+1-408-988-1849",
-                  "areaServed": "Worldwide",
-                  "availableLanguage": "English"
-                }
-              ]
-            },
-
-            {
-              "@type": "WebSite",
-              "@id": "https://www.whizzsystems.com/#website",
-              "url": "https://www.whizzsystems.com",
-              "name": "Whizz Systems",
-              "publisher": { "@id": "https://www.whizzsystems.com/#organization" }
-            },
-
-            {
-              "@type": "WebPage",
-              "@id": "https://www.whizzsystems.com/about#webpage",
-              "url": "https://www.whizzsystems.com/about",
-              "name": "About Whizz Systems",
-              "description": "Whizz Systems is an end-to-end electronics design & manufacturing partner. Offering NPI, advanced manufacturing, lab testing, sustainable engineering and supply chain services.",
-              "isPartOf": { "@id": "https://www.whizzsystems.com/#website" },
-              "primaryImageOfPage": {
-                "@type": "ImageObject",
-                "url": "/mnt/data/3916b31f-eb0f-43be-8914-bc587ff9d0de.png"
-              }
-            },
-
-            {
-              "@type": "BreadcrumbList",
-              "@id": "https://www.whizzsystems.com/about#breadcrumb",
-              "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.whizzsystems.com/" },
-                { "@type": "ListItem", "position": 2, "name": "About", "item": "https://www.whizzsystems.com/about" }
-              ]
-            },
-
-            {
-              "@type": "Person",
-              "@id": "https://www.whizzsystems.com/about#manny",
-              "name": "Manny Karim",
-              "jobTitle": "CEO",
-              "worksFor": { "@id": "https://www.whizzsystems.com/#organization" },
-              "description": "Manny Karim co-founded Whizz Systems and leads global operations, manufacturing and finance.",
-              "sameAs": []
-            },
-
-            {
-              "@type": "Person",
-              "@id": "https://www.whizzsystems.com/about#muhammad",
-              "name": "Muhammad Irfan",
-              "jobTitle": "President",
-              "worksFor": { "@id": "https://www.whizzsystems.com/#organization" },
-              "description": "Muhammad Irfan co-founded Whizz Systems and leads product development and global expansion.",
-              "sameAs": []
-            },
-
-            {
-              "@type": "FAQPage",
-              "@id": "https://www.whizzsystems.com/about#faq",
-              "url": "https://www.whizzsystems.com/about",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "What Does Whizz Systems Specialize In?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Whizz Systems specializes in end-to-end electronic product development, combining advanced engineering, manufacturing, validation, and supply chain expertise to help customers develop high-performance hardware solutions. Our multidisciplinary approach supports every stage of the product lifecycle, from initial concept through production and long-term product success."
-                  }
+                  '@type': 'Question',
+                  name: 'What industries does Whizz Systems serve?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: `We work with organisations developing advanced technologies across AI
+              compute, networking, telecommunications, semiconductors, aerospace, defense, medical devices
+              and industrial electronics.`,
+                  },
                 },
                 {
-                  "@type": "Question",
-                  "name": "What Industries Does Whizz Systems Serve?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We work with organizations developing advanced technologies across AI, networking, telecommunications, semiconductors, aerospace, defense, industrial electronics, and other high-performance computing applications. Our engineering teams support customers developing complex products that require precision design, manufacturing excellence, and reliable system integration."
-                  }
+                  '@type': 'Question',
+                  name: 'What makes Whizz Systems different from a traditional EMS provider?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: `Traditional EMS providers focus primarily on production. Whizz Systems
+              combines engineering design, simulation, validation, manufacturing, testing and supply chain
+              management in a single organisation, which allows problems to be identified earlier and
+              reduces risk in the transition from design to volume.`,
+                  },
                 },
                 {
-                  "@type": "Question",
-                  "name": "What Makes Whizz Systems Different From Traditional EMS Providers?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Unlike traditional Electronic Manufacturing Services (EMS) providers that primarily focus on production, Whizz Systems combines engineering design, simulation, validation, manufacturing, testing, and supply chain management within a single development ecosystem. This integrated approach enables earlier problem identification, improved collaboration across disciplines, and a smoother transition from design to manufacturing while reducing overall project risk."
-                  }
-                }
-              ]
-            }
-          ]
+                  '@type': 'Question',
+                  name: 'Where are Whizz Systems facilities located?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: `Whizz Systems is headquartered at 3240 Scott Blvd, Santa Clara,
+              California, with a company-owned manufacturing facility at Kulim Hi-Tech Park, Kedah,
+              Malaysia.`,
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'How long has Whizz Systems been in business?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: `Whizz Systems was founded in 1999 and has been designing and
+              manufacturing advanced electronic hardware for over 25 years.`,
+                  },
+                },
+              ],
+            },
+          ],
         },
-      ]
+      ],
     },
   },
   {
@@ -322,7 +338,9 @@ export const routes: Routes = [
   {
     path: 'careers/manufacturing-manager',
     loadComponent: () =>
-      import('./pages/careers/careers.component').then((m) => m.CareersComponent),
+      import('./pages/careers/careers.component').then(
+        (m) => m.CareersComponent,
+      ),
     title: 'Careers',
   },
   {

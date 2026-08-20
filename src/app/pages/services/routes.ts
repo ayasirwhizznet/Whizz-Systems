@@ -8,115 +8,125 @@ export const routes: Routes = [
         path: '',
         loadComponent: () =>
           import('./services.component').then((m) => m.ServicesComponent),
-        title:
-          'End-to-End Hardware Design & Manufacturing Services | Whizz Systems',
+        title: 'Hardware Design &amp; Manufacturing Services | Whizz Systems',
         data: {
-          description:
-            'Whizz Systems delivers end-to-end hardware development and manufacturing services including ASIC, FPGA, high-speed PCB design, NPI, advanced manufacturing, lab testing, and supply chain management.',
+          description: `End-to-end hardware services: system architecture, ASIC and
+  FPGA design, high-speed PCB layout, NPI, advanced manufacturing and lab testing.`,
           schema: [
             {
               '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'Whizz Systems',
-              url: 'https://www.whizzsystems.com',
-              logo: 'https://www.whizzsystems.com/assets/images/logo.png',
-              contactPoint: {
-                '@type': 'ContactPoint',
-                telephone: '+1-408-980-0400',
-                contactType: 'Sales',
-                areaServed: 'Global',
-                availableLanguage: 'English',
-              },
-              address: [
+              '@graph': [
                 {
-                  '@type': 'PostalAddress',
-                  streetAddress: '3240 Scott Blvd.',
-                  addressLocality: 'Santa Clara',
-                  addressRegion: 'CA',
-                  postalCode: '95051',
-                  addressCountry: 'US',
-                },
-                {
-                  '@type': 'PostalAddress',
-                  streetAddress:
-                    'Lot 8, SMI Park Phase 2, Jalan Hi-Tech 4 Sambungan',
-                  addressLocality: 'Kulim',
-                  addressRegion: 'Kedah',
-                  postalCode: '09000',
-                  addressCountry: 'MY',
-                },
-              ],
-              sameAs: [
-                'https://www.linkedin.com/company/whizz-systems',
-                'https://www.youtube.com/',
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'Service',
-              name: 'End-to-End Hardware Development and Manufacturing',
-              serviceType: 'Hardware Design and Manufacturing',
-              provider: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-              },
-              areaServed: 'Global',
-              description:
-                'End-to-end hardware development including system architecture, ASIC design, FPGA development, high-speed PCB design, NPI, advanced manufacturing, lab testing, and supply chain management.',
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'Do you manufacture the hardware you design?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Yes. Whizz Systems provides in-house manufacturing in Santa Clara and high-volume production in Malaysia, ensuring seamless transition from design to production.',
+                  '@type': 'WebPage',
+                  '@id': 'https://www.whizzsystems.com/services#webpage',
+                  url: 'https://www.whizzsystems.com/services',
+                  name: 'Hardware Design & Manufacturing Services | Whizz Systems',
+                  description: `End-to-end hardware services: system architecture, ASIC and FPGA design,
+ high-speed PCB layout, NPI, advanced manufacturing and lab testing.`,
+                  inLanguage: 'en-US',
+                  isPartOf: {
+                    '@id': 'https://www.whizzsystems.com/#website',
+                  },
+                  publisher: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  primaryImageOfPage: {
+                    '@type': 'ImageObject',
+                    url: 'https://www.whizzsystems.com/assets/og/services-1200x630.jpg',
                   },
                 },
                 {
-                  '@type': 'Question',
-                  name: 'Where are your manufacturing facilities located?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'We operate facilities in Santa Clara, California and Kulim, Malaysia to support prototyping, NPI, and high-volume production.',
+                  '@type': 'BreadcrumbList',
+                  '@id': 'https://www.whizzsystems.com/services#breadcrumb',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Services hub',
+                      item: 'https://www.whizzsystems.com/services',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'Service',
+                  '@id': 'https://www.whizzsystems.com/services#service',
+                  name: 'End-to-End Hardware Development & Manufacturing',
+                  serviceType: 'Services hub',
+                  description: `End-to-end hardware services: system architecture, ASIC and FPGA design,
+        high-speed PCB layout, NPI, advanced manufacturing and lab testing.`,
+                  provider: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  areaServed: {
+                    '@type': 'Place',
+                    name: 'Worldwide',
+                  },
+                  audience: {
+                    '@type': 'BusinessAudience',
+                    audienceType: 'Hardware and electronics manufacturers',
                   },
                 },
                 {
-                  '@type': 'Question',
-                  name: 'Can you scale from prototype to volume production?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Yes. Our integrated design and manufacturing model supports scaling from prototype validation to global volume production.',
-                  },
+                  '@type': 'ItemList',
+                  '@id': 'https://www.whizzsystems.com/services#itemlist',
+                  name: 'Hardware Design & Manufacturing Services | Whizz Systems',
+                  itemListOrder: 'https://schema.org/ItemListOrderAscending',
+                  numberOfItems: '2',
+                  itemListElement:
+                    'GENERATED FROM ROUTE DATA - do not hardcode',
                 },
                 {
-                  '@type': 'Question',
-                  name: 'Why is in-house manufacturing important?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'In-house manufacturing reduces risk, improves feedback between engineering and production teams, and ensures optimized yield, cost, and scalability.',
-                  },
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                {
-                  '@type': 'ListItem',
-                  position: 1,
-                  name: 'Home',
-                  item: 'https://www.whizzsystems.com/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 2,
-                  name: 'Services',
-                  item: 'https://www.whizzsystems.com/services',
+                  '@type': 'FAQPage',
+                  '@id': 'https://www.whizzsystems.com/services#faq',
+                  url: 'https://www.whizzsystems.com/services',
+                  mainEntity: [
+                    {
+                      '@type': 'Question',
+                      name: 'What Engineering and Manufacturing Services Does Whizz Systems Offer?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Whizz Systems offers comprehensive services spanning the entire hardware development lifecycle, including engineering design, PCB layout, FPGA development, firmware and software engineering, signal integrity and power integrity simulation, thermal management, mechanical design, New Product Introduction (NPI), advanced manufacturing, lab testing, and supply chain management. These integrated capabilities enable customers to develop complex electronic products more efficiently and with greater confidence.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Can Whizz Systems Support the Entire Hardware Development Lifecycle?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. Whizz Systems provides end-to-end support from concept development and system architecture through engineering design, prototyping, product validation, manufacturing, testing, and production scaling. This integrated development model improves collaboration between engineering disciplines while helping reduce delays, redesigns, and manufacturing risks.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'How Does Whizz Systems Help Reduce Product Development Risk?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Reducing development risk begins with early engineering collaboration and continues throughout the product lifecycle. By combining design reviews, simulation, validation, manufacturing planning, testing, and supply chain coordination, Whizz Systems helps identify potential issues before production, improving first-pass success and reducing costly design iterations.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: "Which Industries Benefit From Whizz Systems' Services?",
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Our engineering and manufacturing services support organizations developing products for artificial intelligence, networking, telecommunications, semiconductors, aerospace, defense, industrial automation, and other technology-driven industries. These sectors require high-performance, reliable hardware that benefits from integrated engineering and manufacturing expertise.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'How Does Whizz Systems Ensure Product Quality From Design Through Manufacturing?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Product quality is built into every stage of the development process. By integrating engineering design, simulation, verification, testing, manufacturing readiness, and quality management, Whizz Systems helps ensure products are optimized for performance, manufacturability, and long-term reliability before entering production.',
+                      },
+                    },
+                  ],
                 },
               ],
             },
@@ -124,21 +134,26 @@ export const routes: Routes = [
           keywords: `end-to-end hardware development, hardware design and manufacturing services, ASIC development, FPGA design services, high-speed PCB design, advanced manufacturing services, NPI services, electronic manufacturing assembly`,
           og: {
             type: 'website',
-            title:
-              'End-to-End Hardware Development & Manufacturing | Whizz Systems',
-            description:
-              'Integrated hardware design and manufacturing services — from system architecture and ASIC/FPGA design to advanced manufacturing and global production.',
-            url: 'https://www.whizzsystems.com/services',
-            image: 'https://www.whizzsystems.com/assets/images/services-og.jpg',
             site_name: 'Whizz Systems',
+            title: 'Hardware Design & Manufacturing Services | Whizz Systems',
+            description:
+              'End-to-end hardware services: system architecture, ASIC and FPGA design, high-speed PCB layout, NPI, advanced manufacturing and lab testing.',
+            url: 'https://www.whizzsystems.com/services',
+            image:
+              'https://www.whizzsystems.com/assets/og/services-1200x630.jpg',
+            image_width: '1200',
+            image_height: '630',
+            image_alt: 'Whizz Systems engineering and manufacturing services',
+            locale: 'en_US',
           },
-
           twitter: {
             card: 'summary_large_image',
-            title: 'End-to-End Hardware Design & Manufacturing Services',
+            title: 'Hardware Design & Manufacturing Services | Whizz Systems',
             description:
-              'Whizz Systems provides ASIC, FPGA, PCB design, NPI, manufacturing, lab testing, and supply chain management under one integrated model.',
-            image: 'https://www.whizzsystems.com/assets/images/services-og.jpg',
+              'End-to-end hardware services: system architecture, ASIC and FPGA design, high-speed PCB layout, NPI, advanced manufacturing and lab testing.',
+            image:
+              'https://www.whizzsystems.com/assets/og/services-1200x630.jpg',
+            image_alt: 'Whizz Systems engineering and manufacturing services',
           },
         },
       },
@@ -151,130 +166,159 @@ export const routes: Routes = [
         path: 'npi',
         loadComponent: () =>
           import('./npi/npi.component').then((m) => m.NpiComponent),
-        title:
-          'NPI Services in Electronics | Prototyping, Testing & Manufacturing',
+        title: 'NPI Services for Electronics | Whizz Systems',
         data: {
-          description: `Whizz Systems offers NPI services in electronics, including prototyping, testing, design, compliance, and manufacturing solutions for complex hardware.`,
+          description: `New product introduction for complex electronics:
+  prototyping, DFM, compliance, pilot builds and transition to volume manufacturing.
+`,
           schema: [
             {
               '@context': 'https://schema.org',
-              '@type': 'Service',
-              serviceType: 'NPI Services in Electronics',
-              provider: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-                url: 'https://www.whizzsystems.com/',
-                logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                sameAs: [
-                  'https://www.linkedin.com/company/whizz-systems/',
-                  'https://www.youtube.com/@WhizzSystemsCA',
-                ],
-              },
-              url: 'https://www.whizzsystems.com/services/npi',
-              description:
-                'Whizz Systems provides NPI services in electronics including system-level architecture, prototyping, compliance, testing, and manufacturing solutions for next-generation hardware.',
-              areaServed: { '@type': 'Place', name: 'Worldwide' },
-              hasOfferCatalog: {
-                '@type': 'OfferCatalog',
-                name: 'NPI Services Catalog',
-                itemListElement: [
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'System Level Architecture NPI Services',
-                      description:
-                        'Building strong foundations for next-generation hardware with system-level architecture design.',
-                    },
+              '@graph': [
+                {
+                  '@type': 'WebPage',
+                  '@id': 'https://www.whizzsystems.com/services/npi#webpage',
+                  url: 'https://www.whizzsystems.com/services/npi',
+                  name: 'NPI Services for Electronics | Whizz Systems',
+                  description: `New product introduction for complex electronics: prototyping, DFM,
+        compliance, pilot builds and transition to volume manufacturing.`,
+                  inLanguage: 'en-US',
+                  isPartOf: {
+                    '@id': 'https://www.whizzsystems.com/#website',
                   },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'NPI Prototyping Solutions',
-                      description:
-                        'Rapid prototyping and refinement for electronic product development.',
-                    },
+                  publisher: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
                   },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'NPI Testing Services',
-                      description:
-                        'Comprehensive testing for quality, performance, and reliability.',
-                    },
+                  primaryImageOfPage: {
+                    '@type': 'ImageObject',
+                    url: 'https://www.whizzsystems.com/assets/og/npi-1200x630.jpg',
                   },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'NPI Compliance',
-                      description:
-                        'Ensuring adherence to industry standards and regulations for electronics manufacturing.',
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  '@id': 'https://www.whizzsystems.com/services/npi#breadcrumb',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
                     },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'NPI Manufacturing Service',
-                      description:
-                        'Advanced assembly and manufacturing solutions for scalable electronics production.',
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Services',
+                      item: 'https://www.whizzsystems.com/services',
                     },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'NPI',
+                      item: 'https://www.whizzsystems.com/services/npi',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'Service',
+                  '@id': 'https://www.whizzsystems.com/services/npi#service',
+                  name: 'New Product Introduction (NPI) Services for Complex Hardware',
+                  serviceType: 'NPI',
+                  description: `New product introduction for complex electronics: prototyping, DFM,
+        compliance, pilot builds and transition to volume manufacturing.`,
+                  provider: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
                   },
-                ],
-              },
+                  areaServed: {
+                    '@type': 'Place',
+                    name: 'Worldwide',
+                  },
+                  audience: {
+                    '@type': 'BusinessAudience',
+                    audienceType: 'Hardware and electronics manufacturers',
+                  },
+                },
+                {
+                  '@type': 'FAQPage',
+                  '@id': 'https://www.whizzsystems.com/services/npi#faq',
+                  url: 'https://www.whizzsystems.com/services/npi',
+                  mainEntity: [
+                    {
+                      '@type': 'Question',
+                      name: 'What is new product introduction (NPI)?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: `New product introduction is the structured process of turning a validated
+              design into a production-ready product. It brings together engineering, prototyping,
+              manufacturing, testing, supply chain planning and quality management so that a design is
+              proven manufacturable before volume production begins.`,
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'What are the stages of an NPI process?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: `A typical NPI programme runs through engineering validation test (EVT),
+              design validation test (DVT), production validation test (PVT) and mass production (MP). Each
+              gate proves a different thing: EVT proves the design works, DVT proves it works reliably, PVT
+              proves it can be built repeatedly at rate, and MP is sustained production.`,
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Why Is NPI Important for Electronic Product Development?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Electronic products become increasingly complex as they integrate high-speed interfaces, advanced components, and sophisticated manufacturing requirements. NPI helps engineering teams validate designs early, identify manufacturing challenges, coordinate supply chain readiness, and establish quality processes before production begins. This structured approach minimizes costly redesigns while improving product reliability and production efficiency.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'How does NPI reduce manufacturing risk?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: `NPI surfaces production issues before they affect volume manufacturing.
+              Early collaboration between engineering, manufacturing, test and supply chain teams validates
+              manufacturability, verifies component availability and establishes quality controls that
+              improve first-pass yield.`,
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'How Does Engineering Collaboration Improve NPI Success?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Successful NPI depends on collaboration across multiple engineering disciplines. Electrical, mechanical, firmware, manufacturing, testing, and supply chain teams work together throughout development to resolve issues early, optimize product performance, and ensure a seamless transition from design to manufacturing. This integrated approach shortens development cycles while improving overall product quality.',
+                      },
+                    },
+                  ],
+                },
+              ],
             },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              '@id': 'https://www.whizzsystems.com/services/npi#faq',
-              url: 'https://www.whizzsystems.com/services/npi',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What Is New Product Introduction (NPI)?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'New Product Introduction (NPI) is the structured process of transforming a product concept into a production-ready solution. It brings together engineering, prototyping, manufacturing, testing, supply chain planning, and quality management to validate designs before volume production. A well-executed NPI process helps reduce development risk, improve product quality, and accelerate time-to-market by ensuring products are ready for efficient manufacturing.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Why Is NPI Important for Electronic Product Development?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Electronic products become increasingly complex as they integrate high-speed interfaces, advanced components, and sophisticated manufacturing requirements. NPI helps engineering teams validate designs early, identify manufacturing challenges, coordinate supply chain readiness, and establish quality processes before production begins. This structured approach minimizes costly redesigns while improving product reliability and production efficiency.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What Are the Stages of a Successful NPI Process?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'A successful NPI process typically includes product planning, engineering design, prototype development, design verification, manufacturing readiness, process validation, pilot production, and full-scale manufacturing. Each stage builds confidence in the product while reducing technical and manufacturing risks before commercialization.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does NPI Reduce Manufacturing Risks?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'NPI reduces manufacturing risks by identifying potential production issues before they impact volume manufacturing. Early collaboration between engineering, manufacturing, testing, and supply chain teams allows organizations to validate manufacturability, optimize production processes, verify component availability, and establish quality controls that improve first-pass production success.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does Engineering Collaboration Improve NPI Success?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Successful NPI depends on collaboration across multiple engineering disciplines. Electrical, mechanical, firmware, manufacturing, testing, and supply chain teams work together throughout development to resolve issues early, optimize product performance, and ensure a seamless transition from design to manufacturing. This integrated approach shortens development cycles while improving overall product quality.'
-                  }
-                }
-              ]
-            }
           ],
+          og: {
+            type: 'website',
+            site_name: 'Whizz Systems',
+            title: 'NPI Services for Electronics | Whizz Systems',
+            description:
+              'New product introduction for complex electronics: prototyping, DFM, compliance, pilot builds and transition to volume manufacturing.',
+            url: 'https://www.whizzsystems.com/services/npi',
+            image: 'https://www.whizzsystems.com/assets/og/npi-1200x630.jpg',
+            image_width: '1200',
+            image_height: '630',
+            image_alt:
+              'Whizz Systems NPI prototyping and pilot production line',
+            locale: 'en_US',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'NPI Services for Electronics | Whizz Systems',
+            description:
+              'New product introduction for complex electronics: prototyping, DFM, compliance, pilot builds and transition to volume manufacturing.',
+            image: 'https://www.whizzsystems.com/assets/og/npi-1200x630.jpg',
+            image_alt:
+              'Whizz Systems NPI prototyping and pilot production line',
+          },
         },
       },
       {
@@ -615,7 +659,8 @@ export const routes: Routes = [
             {
               '@context': 'https://schema.org',
               '@type': 'FAQPage',
-              '@id': 'https://www.whizzsystems.com/services/supply-chain-management#faq',
+              '@id':
+                'https://www.whizzsystems.com/services/supply-chain-management#faq',
               url: 'https://www.whizzsystems.com/services/supply-chain-management',
               mainEntity: [
                 {
