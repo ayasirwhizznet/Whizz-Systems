@@ -63,7 +63,8 @@ export class AdvManufacturingComponent implements OnInit, OnDestroy {
     {
       title: 'Fast Turns and NPI Agility',
       address: 'USA Facility',
-      intro: 'Located in the heart of Silicon Valley, our facility is optimized for quick-turn NPI and pilot builds.',
+      intro: `Located in the heart of Silicon Valley, our facility is optimized for <a href="https://www.whizzsystems.com/services/npi" class="text-teal1"
+   title="quick-turn NPI and pilot builds">quick-turn NPI and pilot builds</a>`,
       desc: [
         '<b>High equipment availability by design:</b> Low utilization ensures capacity for urgent programs.',
         '<b>Built for responsiveness:</b> We run one shift with the option to expand to a second.',

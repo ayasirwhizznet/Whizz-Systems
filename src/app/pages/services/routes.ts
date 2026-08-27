@@ -8,7 +8,7 @@ export const routes: Routes = [
         path: '',
         loadComponent: () =>
           import('./services.component').then((m) => m.ServicesComponent),
-        title: 'Hardware Design &amp; Manufacturing Services | Whizz Systems',
+        title: 'Hardware Design & Manufacturing Services | Whizz Systems',
         data: {
           description: `End-to-end hardware services: system architecture, ASIC and
   FPGA design, high-speed PCB layout, NPI, advanced manufacturing and lab testing.`,
@@ -22,7 +22,7 @@ export const routes: Routes = [
                   url: 'https://www.whizzsystems.com/services',
                   name: 'Hardware Design & Manufacturing Services | Whizz Systems',
                   description: `End-to-end hardware services: system architecture, ASIC and FPGA design,
- high-speed PCB layout, NPI, advanced manufacturing and lab testing.`,
+        high-speed PCB layout, NPI, advanced manufacturing and lab testing.`,
                   inLanguage: 'en-US',
                   isPartOf: {
                     '@id': 'https://www.whizzsystems.com/#website',
@@ -32,7 +32,7 @@ export const routes: Routes = [
                   },
                   primaryImageOfPage: {
                     '@type': 'ImageObject',
-                    url: 'https://www.whizzsystems.com/assets/og/services-1200x630.jpg',
+                    url: 'https://www.whizzsystems.com/assets/services/hero.png',
                   },
                 },
                 {
@@ -107,7 +107,8 @@ export const routes: Routes = [
                       name: 'How Does Whizz Systems Help Reduce Product Development Risk?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'Reducing development risk begins with early engineering collaboration and continues throughout the product lifecycle. By combining design reviews, simulation, validation, manufacturing planning, testing, and supply chain coordination, Whizz Systems helps identify potential issues before production, improving first-pass success and reducing costly design iterations.',
+                        text: `Reducing development risk begins with early engineering collaboration and continues throughout the product lifecycle. By combining design reviews, simulation, validation, manufacturing
+planning, testing, and supply chain coordination, Whizz Systems helps identify potential issues before production, improving first-pass success and reducing costly design iterations.`,
                       },
                     },
                     {
@@ -139,11 +140,10 @@ export const routes: Routes = [
             description:
               'End-to-end hardware services: system architecture, ASIC and FPGA design, high-speed PCB layout, NPI, advanced manufacturing and lab testing.',
             url: 'https://www.whizzsystems.com/services',
-            image:
-              'https://www.whizzsystems.com/assets/og/services-1200x630.jpg',
-            image_width: '1200',
-            image_height: '630',
-            image_alt: 'Whizz Systems engineering and manufacturing services',
+            image: 'https://www.whizzsystems.com/assets/services/hero.png',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt': 'Whizz Systems engineering and manufacturing services',
             locale: 'en_US',
           },
           twitter: {
@@ -153,7 +153,7 @@ export const routes: Routes = [
               'End-to-end hardware services: system architecture, ASIC and FPGA design, high-speed PCB layout, NPI, advanced manufacturing and lab testing.',
             image:
               'https://www.whizzsystems.com/assets/og/services-1200x630.jpg',
-            image_alt: 'Whizz Systems engineering and manufacturing services',
+            'image:alt': 'Whizz Systems engineering and manufacturing services',
           },
         },
       },
@@ -191,7 +191,7 @@ export const routes: Routes = [
                   },
                   primaryImageOfPage: {
                     '@type': 'ImageObject',
-                    url: 'https://www.whizzsystems.com/assets/og/npi-1200x630.jpg',
+                    url: 'https://www.whizzsystems.com/assets/services/npi/hero.png',
                   },
                 },
                 {
@@ -303,10 +303,10 @@ export const routes: Routes = [
             description:
               'New product introduction for complex electronics: prototyping, DFM, compliance, pilot builds and transition to volume manufacturing.',
             url: 'https://www.whizzsystems.com/services/npi',
-            image: 'https://www.whizzsystems.com/assets/og/npi-1200x630.jpg',
-            image_width: '1200',
-            image_height: '630',
-            image_alt:
+            image: 'https://www.whizzsystems.com/assets/services/npi/hero.png',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt':
               'Whizz Systems NPI prototyping and pilot production line',
             locale: 'en_US',
           },
@@ -315,8 +315,8 @@ export const routes: Routes = [
             title: 'NPI Services for Electronics | Whizz Systems',
             description:
               'New product introduction for complex electronics: prototyping, DFM, compliance, pilot builds and transition to volume manufacturing.',
-            image: 'https://www.whizzsystems.com/assets/og/npi-1200x630.jpg',
-            image_alt:
+            image: 'https://www.whizzsystems.com/assets/services/npi/hero.png',
+            'image:alt':
               'Whizz Systems NPI prototyping and pilot production line',
           },
         },
@@ -327,26 +327,38 @@ export const routes: Routes = [
           import('./advanced-manufacturing/adv-manufacturing.component').then(
             (m) => m.AdvManufacturingComponent,
           ),
-        title:
-          'Advanced Electronic Manufacturing & Assembly Services | Whizz Systems',
+        title: 'Advanced Electronics Manufacturing & PCBA | Whizz Systems',
         data: {
-          description: `Whizz Systems provides advanced electronic manufacturing, assembly, and hardware design services. From NPI agility to scalable production, we deliver precision, quality, and speed for complex products.`,
+          description:
+            'PCB assembly, box build, cable assembly and system integration in Santa Clara and Malaysia. IPC Class 3 capable, ISO 9001 and ISO 13485 certified.',
           schema: [
             {
               '@context': 'https://schema.org',
               '@graph': [
                 {
-                  '@type': 'Organization',
-                  name: 'Whizz Systems',
-                  url: 'https://www.whizzsystems.com/',
-                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                  sameAs: [
-                    'https://www.linkedin.com/company/whizz-systems/',
-                    'https://www.youtube.com/@WhizzSystemsCA',
-                  ],
+                  '@type': 'WebPage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/advanced-manufacturing#webpage',
+                  url: 'https://www.whizzsystems.com/services/advanced-manufacturing',
+                  name: 'Advanced Electronics Manufacturing & PCBA | Whizz Systems',
+                  description: `PCB assembly, box build, cable assembly and system integration in Santa
+        Clara and Malaysia. IPC Class 3 capable, ISO 9001 and ISO 13485 certified.`,
+                  inLanguage: 'en-US',
+                  isPartOf: {
+                    '@id': 'https://www.whizzsystems.com/#website',
+                  },
+                  publisher: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  primaryImageOfPage: {
+                    '@type': 'ImageObject',
+                    url: 'https://www.whizzsystems.com/assets/services/advanced-manufacturing/adv/hero.pngg',
+                  },
                 },
                 {
                   '@type': 'BreadcrumbList',
+                  '@id':
+                    'https://www.whizzsystems.com/services/advanced-manufacturing#breadcrumb',
                   itemListElement: [
                     {
                       '@type': 'ListItem',
@@ -358,7 +370,7 @@ export const routes: Routes = [
                       '@type': 'ListItem',
                       position: 2,
                       name: 'Services',
-                      item: 'https://www.whizzsystems.com/services/',
+                      item: 'https://www.whizzsystems.com/services',
                     },
                     {
                       '@type': 'ListItem',
@@ -370,87 +382,107 @@ export const routes: Routes = [
                 },
                 {
                   '@type': 'Service',
-                  name: 'Advanced Electronic Manufacturing Services',
-                  url: 'https://www.whizzsystems.com/services/advanced-manufacturing',
-                  description:
-                    'Whizz Systems provides advanced electronic manufacturing, electronic assembly, and hardware design services, combining NPI agility with scalable production and rigorous testing.',
+                  '@id':
+                    'https://www.whizzsystems.com/services/advanced-manufacturing#service',
+                  name: 'Advanced Electronics Manufacturing Services',
+                  serviceType: 'Advanced Manufacturing',
+                  description: `PCB assembly, box build, cable assembly and system integration in Santa
+        Clara and Malaysia. IPC Class 3 capable, ISO 9001 and ISO 13485 certified.`,
                   provider: {
-                    '@type': 'Organization',
-                    name: 'Whizz Systems',
-                    url: 'https://www.whizzsystems.com/',
+                    '@id': 'https://www.whizzsystems.com/#organization',
                   },
-                  serviceType: [
-                    'Advanced Electronic Manufacturing',
-                    'Advanced Electronic Assembly',
-                    'Advanced EMS Engineering',
-                    'End-to-End Hardware Design',
-                    'Advanced Hardware Design',
-                  ],
                   areaServed: {
                     '@type': 'Place',
-                    name: 'Global',
+                    name: 'Worldwide',
                   },
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              '@id':
-                'https://www.whizzsystems.com/services/advanced-manufacturing#faq',
-              url: 'https://www.whizzsystems.com/services/advanced-manufacturing',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What Is Advanced Manufacturing for Electronic Hardware Products?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Advanced manufacturing combines engineering expertise, manufacturing processes, supply chain coordination, and quality management to transform a product design into a production-ready solution. By integrating these capabilities throughout the product lifecycle, organizations can improve manufacturability, accelerate time to market, and scale production while maintaining consistent quality and reliability.',
+                  audience: {
+                    '@type': 'BusinessAudience',
+                    audienceType: 'Hardware and electronics manufacturers',
                   },
                 },
                 {
-                  '@type': 'Question',
-                  name: 'What Are the Benefits of an End-to-End Hardware Manufacturing Partner?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Working with an end-to-end manufacturing partner streamlines the transition from design to production by bringing engineering, prototyping, manufacturing, testing, and supply chain management under a unified process. This integrated approach improves collaboration, reduces development risks, minimizes costly design iterations, and enables faster product commercialization while maintaining quality throughout the manufacturing lifecycle.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does Advanced Manufacturing Support New Product Introduction (NPI)?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Successful New Product Introduction (NPI) requires more than building prototypes. It involves validating manufacturability, refining production processes, establishing quality controls, coordinating supply chain readiness, and preparing products for scalable manufacturing. A structured NPI process helps identify potential issues early, reducing delays and ensuring a smoother transition into volume production.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Why Is Supply Chain and Component Management Important in Electronics Manufacturing?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Component availability, supplier reliability, and procurement planning play a critical role in manufacturing success. Effective supply chain management helps mitigate sourcing risks, improve production continuity, and ensure that critical components are available when needed. Integrating procurement with engineering and manufacturing planning also supports cost optimization and long-term product reliability.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Can Startups and Technology Companies Accelerate Hardware Product Commercialization?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Bringing an innovative hardware product to market requires close coordination between engineering, prototyping, manufacturing, testing, and production scaling. An integrated manufacturing approach helps startups and technology companies reduce development complexity, validate designs earlier, and transition more efficiently from concept to production, allowing them to focus on innovation while preparing for commercial success.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does Design for Manufacturing (DFM) Improve Production Efficiency?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Design for Manufacturing (DFM) evaluates a product during development to ensure it can be manufactured efficiently, consistently, and cost-effectively. By identifying potential production challenges early, DFM helps reduce manufacturing defects, improve production yields, shorten assembly time, and accelerate the transition from prototype to volume manufacturing.',
-                  },
+                  '@type': 'FAQPage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/advanced-manufacturing#faq',
+                  url: 'https://www.whizzsystems.com/services/advanced-manufacturing',
+                  mainEntity: [
+                    {
+                      '@type': 'Question',
+                      name: 'What IPC workmanship class does Whizz Systems build to?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: `We build to IPC-A-610 Class 2 and Class 3 depending on the application.
+              Class 3 applies to high-reliability hardware in medical, defense, aerospace and data-centre
+              applications where uninterrupted service is required.`,
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Do you offer box build and full system integration?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: `Yes. We assemble complete systems, including enclosure integration,
+              internal cabling, labelling, firmware loading, system-level test and packaging.`,
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Do you manufacture cable and wire harness assemblies in-house?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: `Yes. Cable and harness assembly is performed in-house, including discrete
+              wire, ribbon, coaxial and RF assemblies, with continuity and hipot testing.`,
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'What are your minimum order quantities?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: `We have no fixed minimum. Our Santa Clara facility is set up for
+              low-volume, high-mix and prototype work; Malaysia handles sustained volume production.`,
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Can you build to a design we already have?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: `Yes. We accept complete design packages and begin with a design for
+              manufacturability review before quoting, which typically identifies cost and yield
+              improvements before the first build.`,
+                      },
+                    },
+                  ],
                 },
               ],
             },
           ],
+          og: {
+            type: 'website',
+            site_name: 'Whizz Systems',
+            title: 'Advanced Electronics Manufacturing & PCBA | Whizz Systems',
+            description:
+              'PCB assembly, box build, cable assembly and system integration in Santa Clara and Malaysia. IPC Class 3 capable, ISO 9001 and ISO 13485 certified.',
+            url: 'https://www.whizzsystems.com/services/advanced-manufacturing',
+            image:
+              'https://www.whizzsystems.com/assets/services/advanced-manufacturing/adv/hero.png',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt':
+              'SMT line at the Whizz Systems Santa Clara manufacturing facility',
+            locale: 'en_US',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'Advanced Electronics Manufacturing & PCBA | Whizz Systems',
+            description:
+              'PCB assembly, box build, cable assembly and system integration in Santa Clara and Malaysia. IPC Class 3 capable, ISO 9001 and ISO 13485 certified.',
+            image:
+              'https://www.whizzsystems.com/assets/og/advanced-manufacturing-1200x630.jpg',
+            'image:alt':
+              'SMT line at the Whizz Systems Santa Clara manufacturing facility',
+          },
         },
       },
       {
@@ -459,158 +491,38 @@ export const routes: Routes = [
           import('./lab-testing-solutions/lab-testing-solutions.component').then(
             (m) => m.LabTestingSolutionsComponent,
           ),
-        title:
-          'Electronics Lab Testing Solutions | Component & Manufacturing Testing',
+        title: 'Board Bring-Up, Validation & Lab Testing | Whizz Systems',
         data: {
           description:
-            'Whizz Systems provides advanced electronics lab testing solutions for components and manufacturing. Our testing services ensure quality, reliability, and compliance for complex electronic systems.',
-          schema: [
-            {
-              '@context': 'https://schema.org',
-              '@type': 'Service',
-              serviceType: 'Electronics Lab Testing Solutions',
-              provider: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-                url: 'https://www.whizzsystems.com/',
-                logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                sameAs: [
-                  'https://www.linkedin.com/company/whizz-systems/',
-                  'https://www.youtube.com/@WhizzSystemsCA',
-                ],
-              },
-              url: 'https://www.whizzsystems.com/services/lab-testing-solutions',
-              description:
-                'Whizz Systems offers electronics lab testing services including electronic component testing, electronics manufacturing testing solutions, and compliance verification for high-reliability products.',
-              areaServed: {
-                '@type': 'Place',
-                name: 'Worldwide',
-              },
-              offers: {
-                '@type': 'Offer',
-                name: 'Electronics Lab Testing Solutions',
-                description:
-                  'Advanced electronics lab testing, component testing, and manufacturing validation services to ensure quality, compliance, and reliability.',
-                url: 'https://www.whizzsystems.com/services/lab-testing-solutions',
-              },
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                {
-                  '@type': 'ListItem',
-                  position: 1,
-                  name: 'Home',
-                  item: 'https://www.whizzsystems.com/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 2,
-                  name: 'Services',
-                  item: 'https://www.whizzsystems.com/services/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 3,
-                  name: 'Lab Testing Solutions',
-                  item: 'https://www.whizzsystems.com/services/lab-testing-solutions',
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              '@id':
-                'https://www.whizzsystems.com/services/lab-testing-solutions#faq',
-              url: 'https://www.whizzsystems.com/services/lab-testing-solutions',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What Are Lab Testing Solutions for Electronic Products?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Lab testing solutions validate that electronic products meet their functional, performance, reliability, and quality requirements before production or deployment. Through comprehensive testing and verification, engineering teams can identify design issues early, reduce product risk, and ensure systems perform as intended under real-world operating conditions.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Why Is Functional Testing Important in Electronic Product Development?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Functional testing verifies that a product performs according to its design specifications before it moves into production. By validating hardware functionality, identifying defects early, and confirming system performance, functional testing helps reduce costly redesigns, improve product quality, and increase confidence during manufacturing and deployment.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What Testing Services Should Be Completed Before Bringing an Electronic Product to Market?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Before commercialization, electronic products should undergo a structured verification and validation process that may include functional testing, system validation, reliability assessment, environmental testing, and failure analysis. Performing these evaluations before production helps identify potential issues early, supports regulatory and quality requirements, and improves long-term product reliability.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Do Lab Testing Solutions Improve Product Reliability and Manufacturing Readiness?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Lab testing provides valuable insight into how a product performs under expected operating conditions. By validating functionality, analyzing failures, and verifying design performance before manufacturing, organizations can improve product reliability, reduce production risks, and accelerate the transition from development to volume manufacturing.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Can Specialized Testing Support High-Performance Electronics and AI Hardware?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'High-performance computing, AI systems, and other advanced electronic platforms require rigorous testing to validate power delivery, thermal performance, signal integrity, and overall system reliability. A comprehensive testing strategy helps engineering teams identify potential performance limitations early, ensuring complex hardware platforms are ready for production and long-term operation.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What Is the Difference Between Verification and Validation in Hardware Testing?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Verification confirms that a product has been designed according to its specifications, while validation ensures it performs as intended in its real-world application. Together, these processes help identify defects early, improve product quality, and reduce the risk of failures after deployment. A comprehensive testing strategy incorporates both verification and validation to support reliable product development.',
-                  },
-                },
-              ],
-            },
-          ],
-        },
-      },
-      {
-        path: 'supply-chain-management',
-        loadComponent: () =>
-          import('./supply-chain-management/supply-chain-management.component').then(
-            (m) => m.SupplyChainManagementComponent,
-          ),
-        title: 'Electronics Supply Chain Management Solutions | Whizz Systems',
-        data: {
-          description: `Hi-tech supply chain management solutions for electronics, including early procurement, obsolescence management, inventory control, and global sourcing.`,
+            'Board bring-up, design validation, characterisation and compliance pre-scan for high-speed hardware. Full lab facilities in Santa Clara.',
           schema: [
             {
               '@context': 'https://schema.org',
               '@graph': [
                 {
-                  '@type': 'Organization',
-                  name: 'Whizz Systems',
-                  url: 'https://www.whizzsystems.com/',
-                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                  sameAs: [
-                    'https://www.linkedin.com/company/whizz-systems/',
-                    'https://www.youtube.com/@WhizzSystemsCA',
-                  ],
-                  address: {
-                    '@type': 'PostalAddress',
-                    streetAddress: '3240 Scott Blvd',
-                    addressLocality: 'Santa Clara',
-                    addressRegion: 'CA',
-                    postalCode: '95054',
-                    addressCountry: 'US',
+                  '@type': 'WebPage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/lab-testing-solutions#webpage',
+                  url: 'https://www.whizzsystems.com/services/lab-testing-solutions',
+                  name: 'Board Bring-Up, Validation & Lab Testing | Whizz Systems',
+                  description: `Board bring-up, design validation, characterisation and compliance
+        pre-scan for high-speed hardware. Full lab facilities in Santa Clara.`,
+                  inLanguage: 'en-US',
+                  isPartOf: {
+                    '@id': 'https://www.whizzsystems.com/#website',
+                  },
+                  publisher: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  primaryImageOfPage: {
+                    '@type': 'ImageObject',
+                    url: 'https://www.whizzsystems.com/assets/services/lab-testing/hero.png',
                   },
                 },
                 {
                   '@type': 'BreadcrumbList',
+                  '@id':
+                    'https://www.whizzsystems.com/services/lab-testing-solutions#breadcrumb',
                   itemListElement: [
                     {
                       '@type': 'ListItem',
@@ -622,98 +534,276 @@ export const routes: Routes = [
                       '@type': 'ListItem',
                       position: 2,
                       name: 'Services',
-                      item: 'https://www.whizzsystems.com/services/',
+                      item: 'https://www.whizzsystems.com/services',
                     },
                     {
                       '@type': 'ListItem',
                       position: 3,
-                      name: 'Supply Chain Management',
+                      name: 'Lab Testing',
+                      item: 'https://www.whizzsystems.com/services/lab-testing-solutions',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'Service',
+                  '@id':
+                    'https://www.whizzsystems.com/services/lab-testing-solutions#service',
+                  name: 'Lab Testing, Board Bring-Up & Design Validation',
+                  serviceType: 'Lab Testing',
+                  description: `Board bring-up, design validation, characterisation and compliance
+        pre-scan for high-speed hardware. Full lab facilities in Santa Clara.`,
+                  provider: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  areaServed: {
+                    '@type': 'Place',
+                    name: 'Worldwide',
+                  },
+                  audience: {
+                    '@type': 'BusinessAudience',
+                    audienceType: 'Hardware and electronics manufacturers',
+                  },
+                },
+                {
+                  '@type': 'FAQPage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/lab-testing-solutions#faq',
+                  url: 'https://www.whizzsystems.com/services/lab-testing-solutions',
+                  mainEntity: [
+                    {
+                      '@type': 'Question',
+                      name: 'What is board bring-up?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: `Board bring-up is the first structured power-on of a newly built board.
+              Engineers verify power rails and sequencing, confirm the processor boots, exercise each
+              interface in turn and isolate any faults before the board goes into broader validation.`,
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Can we engage Whizz Systems for testing only?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: `Yes. Customers regularly bring boards designed and built elsewhere to our
+              lab for bring-up, validation or signal integrity characterisation.`,
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'What test equipment do you have?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: `Our Santa Clara lab includes high-bandwidth real-time and sampling
+              oscilloscopes, vector network analysers, protocol analysers, bit error rate testers, thermal
+              imaging and programmable loads. Specific instrument availability can be confirmed for a given
+              programme.`,
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Do you provide compliance pre-scan before formal certification?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: `Yes. Pre-scan identifies emissions and susceptibility problems before a
+              formal certification attempt, which is significantly cheaper than failing at an accredited
+              lab.`,
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'What documentation do we receive?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: `A test report covering methodology, instrument configuration, measured
+              results against the specification, and any anomalies with recommended corrective action.`,
+                      },
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          og: {
+            type: 'website',
+            site_name: 'Whizz Systems',
+            title: 'Board Bring-Up, Validation & Lab Testing | Whizz Systems',
+            description:
+              'Board bring-up, design validation, characterisation and compliance pre-scan for high-speed hardware. Full lab facilities in Santa Clara.',
+            url: 'https://www.whizzsystems.com/services/lab-testing-solutions',
+            image:
+              'https://www.whizzsystems.com/assets/services/lab-testing/hero.png',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt':
+              'Whizz Systems validation lab with high-speed test equipment',
+            locale: 'en_US',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'Board Bring-Up, Validation & Lab Testing | Whizz Systems',
+            description:
+              'Board bring-up, design validation, characterisation and compliance pre-scan for high-speed hardware. Full lab facilities in Santa Clara.',
+            image:
+              'https://www.whizzsystems.com/assets/services/lab-testing/hero.png',
+            'image:alt':
+              'Whizz Systems validation lab with high-speed test equipment',
+          },
+        },
+      },
+      {
+        path: 'supply-chain-management',
+        loadComponent: () =>
+          import('./supply-chain-management/supply-chain-management.component').then(
+            (m) => m.SupplyChainManagementComponent,
+          ),
+        title: 'Electronics Supply Chain Management | Whizz Systems',
+        data: {
+          description:
+            'Component sourcing, second-source strategy, counterfeit prevention and dual-region supply across our US and Malaysia facilities.',
+          schema: [
+            {
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'WebPage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/supply-chain-management#webpage',
+                  url: 'https://www.whizzsystems.com/services/supply-chain-management',
+                  name: 'Electronics Supply Chain Management | Whizz Systems',
+                  description:
+                    'Component sourcing, second-source strategy, counterfeit prevention and dual-region supply across our US and Malaysia facilities.',
+                  inLanguage: 'en-US',
+                  isPartOf: {
+                    '@id': 'https://www.whizzsystems.com/#website',
+                  },
+                  publisher: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  primaryImageOfPage: {
+                    '@type': 'ImageObject',
+                    url: 'https://www.whizzsystems.com/assets/services/supply-chain/hero.png',
+                  },
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  '@id':
+                    'https://www.whizzsystems.com/services/supply-chain-management#breadcrumb',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Services',
+                      item: 'https://www.whizzsystems.com/services',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'Supply Chain',
                       item: 'https://www.whizzsystems.com/services/supply-chain-management',
                     },
                   ],
                 },
                 {
                   '@type': 'Service',
-                  name: 'Electronics Supply Chain Management Solutions',
-                  url: 'https://www.whizzsystems.com/services/supply-chain-management',
+                  '@id':
+                    'https://www.whizzsystems.com/services/supply-chain-management#service',
+                  name: 'Supply Chain Management for Electronics Manufacturing',
+                  serviceType: 'Supply Chain',
                   description:
-                    'Whizz Systems delivers hi-tech electronics supply chain management solutions including obsolescence management, global sourcing, inventory control, and lifecycle risk mitigation to accelerate builds and ensure reliability.',
+                    'Component sourcing, second-source strategy, counterfeit prevention and dual-region supply across our US and Malaysia facilities.',
                   provider: {
-                    '@type': 'Organization',
-                    name: 'Whizz Systems',
-                    url: 'https://www.whizzsystems.com/',
+                    '@id': 'https://www.whizzsystems.com/#organization',
                   },
-                  serviceType: [
-                    'Hi-Tech Supply Chain Solutions',
-                    'Electronic Supply Chain Solutions',
-                    'Obsolescence Supply Chain',
-                    'Electronics Supply Chain Management',
-                  ],
                   areaServed: {
                     '@type': 'Place',
-                    name: 'Global',
+                    name: 'Worldwide',
                   },
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              '@id':
-                'https://www.whizzsystems.com/services/supply-chain-management#faq',
-              url: 'https://www.whizzsystems.com/services/supply-chain-management',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What Does Supply Chain Management Include for Electronic Hardware Manufacturing?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Supply chain management encompasses the planning, sourcing, procurement, inventory coordination, supplier management, and logistics activities required to support electronic product development and manufacturing. An integrated supply chain strategy helps ensure component availability, reduce production delays, manage costs, and maintain consistent product quality throughout the manufacturing lifecycle.',
+                  audience: {
+                    '@type': 'BusinessAudience',
+                    audienceType: 'Hardware and electronics manufacturers',
                   },
                 },
                 {
-                  '@type': 'Question',
-                  name: 'How Does Strategic Sourcing Improve Supply Chain Performance?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Strategic sourcing goes beyond purchasing components by focusing on supplier relationships, component availability, cost optimization, and long-term supply continuity. By evaluating qualified suppliers and proactively managing sourcing risks, organizations can improve procurement efficiency, reduce lead-time challenges, and build a more resilient supply chain.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Why Is Inventory Planning Important for Electronics Manufacturing?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Effective inventory planning helps manufacturers balance component availability with production demand while minimizing excess inventory and supply shortages. Coordinating inventory with procurement and production schedules improves operational efficiency, reduces manufacturing interruptions, and supports on-time product delivery.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does Collaboration Between Engineering and Supply Chain Teams Improve Product Development?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Close collaboration between engineering and supply chain teams helps identify component availability, sourcing risks, lifecycle concerns, and alternative parts early in the design process. This integrated approach supports better design decisions, reduces redesigns caused by component shortages, and enables a smoother transition from product development to manufacturing.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does Effective Supply Chain Management Reduce Manufacturing Risk?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'A proactive supply chain strategy helps organizations mitigate risks associated with component shortages, supplier disruptions, extended lead times, and market fluctuations. Through supplier diversification, demand planning, procurement coordination, and ongoing supply chain monitoring, manufacturers can improve production continuity and maintain reliable delivery schedules.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Why Is Supply Chain Resilience Important for Electronics Manufacturing?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Electronics supply chains are increasingly affected by component shortages, changing market conditions, and global logistics challenges. Building a resilient supply chain through supplier diversification, proactive sourcing, inventory planning, and continuous supplier management helps organizations reduce disruptions, maintain production schedules, and deliver products more reliably.',
-                  },
+                  '@type': 'FAQPage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/supply-chain-management#faq',
+                  url: 'https://www.whizzsystems.com/services/supply-chain-management',
+                  mainEntity: [
+                    {
+                      '@type': 'Question',
+                      name: 'How do you protect against counterfeit components?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'We buy through franchised distribution wherever possible. Where a broker purchase is unavoidable we apply incoming inspection, documentation review and, where warranted, decapsulation or X-ray verification, following AS6081 principles.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Can you help us reduce dependence on a single region?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. Whizz Systems operates a company-owned facility in Kulim, Malaysia alongside our Santa Clara headquarters, which allows production to be split or transferred between regions without changing suppliers.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'What happens when a component goes end-of-life?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'We monitor lifecycle status continuously. When a part is flagged for obsolescence we evaluate last-time-buy quantities, qualify an alternate, or recommend a targeted redesign — whichever carries the lowest total cost and risk.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Do you offer turnkey and consignment models?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Both. Turnkey means we procure all components; consignment means you supply them. Many programmes run a hybrid, with long-lead or customer-specific parts consigned and the remainder turnkey.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'How do you handle allocation and long lead times?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'We forecast against your build plan, place scheduled orders early for constrained parts, and maintain qualified alternates so that a single allocation event does not stop a line.',
+                      },
+                    },
+                  ],
                 },
               ],
             },
           ],
+          og: {
+            type: 'website',
+            site_name: 'Whizz Systems',
+            title: 'Electronics Supply Chain Management | Whizz Systems',
+            description:
+              'Component sourcing, second-source strategy, counterfeit prevention and dual-region supply across our US and Malaysia facilities.',
+            url: 'https://www.whizzsystems.com/services/supply-chain-management',
+            image:
+              'https://www.whizzsystems.com/assets/services/supply-chain/hero.png',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt': 'Component stores at the Whizz Systems facility',
+            locale: 'en_US',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'Electronics Supply Chain Management | Whizz Systems',
+            description:
+              'Component sourcing, second-source strategy, counterfeit prevention and dual-region supply across our US and Malaysia facilities.',
+            image:
+              'https://www.whizzsystems.com/assets/services/supply-chain/hero.png',
+            'image:alt': 'Component stores at the Whizz Systems facility',
+          },
         },
       },
       {

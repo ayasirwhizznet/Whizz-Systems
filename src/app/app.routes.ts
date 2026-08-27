@@ -17,9 +17,9 @@ export const routes: Routes = [
           'Silicon Valley EMS partner since 1999. Hardware design, PCB layout, FPGA, NPI, advanced manufacturing and lab testing under one roof.',
         url: 'https://www.whizzsystems.com/',
         image: 'https://www.whizzsystems.com/assets/og/home-1200x630.jpg',
-        image_width: '1200',
-        image_height: '630',
-        image_alt:
+        'image:width': '1200',
+        'image:height': '630',
+        'image:alt':
           'Whizz Systems engineering and manufacturing facility in Santa Clara, California',
         locale: 'en_US',
       },
@@ -29,7 +29,7 @@ export const routes: Routes = [
         description:
           'Silicon Valley EMS partner since 1999. Hardware design, PCB layout, FPGA, NPI, advanced manufacturing and lab testing under one roof.',
         image: 'https://www.whizzsystems.com/assets/og/home-1200x630.jpg',
-        image_alt:
+        'image:alt':
           'Whizz Systems engineering and manufacturing facility in Santa Clara, California',
       },
       schema: [
@@ -178,10 +178,10 @@ export const routes: Routes = [
         description:
           'End-to-end electronics design and manufacturing partner since 1999. In-house engineering, NPI, manufacturing and supply chain across two facilities.',
         url: 'https://www.whizzsystems.com/about',
-        image: 'https://www.whizzsystems.com/assets/og/about-1200x630.jpg',
-        image_width: '1200',
-        image_height: '630',
-        image_alt: 'Whizz Systems leadership and engineering team',
+        image: 'https://www.whizzsystems.com/assets/about/legacy.png',
+        'image:width': '1200',
+        'image:height': '630',
+        'image:alt': 'Whizz Systems leadership and engineering team',
         locale: 'en_US',
       },
       twitter: {
@@ -189,8 +189,8 @@ export const routes: Routes = [
         title: 'About Whizz Systems | Silicon Valley EMS Since 1999',
         description:
           'End-to-end electronics design and manufacturing partner since 1999. In-house engineering, NPI, manufacturing and supply chain across two facilities.',
-        image: 'https://www.whizzsystems.com/assets/og/about-1200x630.jpg',
-        image_alt: 'Whizz Systems leadership and engineering team',
+        image: 'https://www.whizzsystems.com/assets/about/legacy.png',
+        'image:alt': 'Whizz Systems leadership and engineering team',
       },
       schema: [
         {
@@ -201,7 +201,7 @@ export const routes: Routes = [
               '@id': 'https://www.whizzsystems.com/about#webpage',
               url: 'https://www.whizzsystems.com/about',
               name: 'About Whizz Systems | Silicon Valley EMS Since 1999',
-              description: `"End-to-end electronics design and manufacturing partner since 1999.
+              description: `End-to-end electronics design and manufacturing partner since 1999.
         In-house engineering, NPI, manufacturing and supply chain across two facilities.`,
               inLanguage: 'en-US',
               isPartOf: {
@@ -212,7 +212,7 @@ export const routes: Routes = [
               },
               primaryImageOfPage: {
                 '@type': 'ImageObject',
-                url: 'https://www.whizzsystems.com/assets/og/about-1200x630.jpg',
+                url: 'https://www.whizzsystems.com/assets/about/legacy.png',
               },
             },
             {

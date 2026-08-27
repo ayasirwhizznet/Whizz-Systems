@@ -84,7 +84,7 @@
     At Whizz Systems, we offer a truly global manufacturing model designed to
     support your product from early prototyping to full-scale production. Our
     manufacturing footprint includes a high-mix, low-volume
-    <strong><a href='https://www.whizzsystems.com/services/npi'>NPI facility</a> in Silicon Valley</strong> and a high-speed,
+    <strong>NPI facility in Silicon Valley</strong> and a high-speed,
     cost-efficient <strong>production plant in Malaysia.</strong>
   </p>
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 3xl:gap-8">
@@ -98,8 +98,7 @@
           {{ facility.address }}
         </h4>
       </div>
-      <p class="max-w-sm text-dark-gray2 text-sm 3xl:text-base font-light mb-6 3xl:mb-8">
-        {{ facility.intro }}
+      <p class="max-w-sm text-dark-gray2 text-sm 3xl:text-base font-light mb-6 3xl:mb-8" [innerHTML]="facility.intro">
       </p>
       <div *ngFor="let item of facility.desc">
         <hr class="border border-light-gray1 opacity-60" />
