@@ -1842,6 +1842,11 @@
       "permanent": true
     },
     {
+      "source": "/services/c3VwcGx5LW",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
       "source": "/",
       "has": [
         {
