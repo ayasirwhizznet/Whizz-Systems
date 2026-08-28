@@ -1038,7 +1038,7 @@ export const routes: Routes = [
         title: 'Whizz Virtex-7 FPGA WS7203A Characterization Kit',
         data: {
           description:
-            'Customizable Virtex-7 XC7VX690T evaluation kit derived from the AMD VC707. Dual FMC-HPC, PCIe Gen2x8 with Gen3 layout. Request a quote.',
+            'Customizable Virtex-7 characterization kit based on the AMD VC7203, featuring 28 GTX transceivers at 12.5 Gbps and nine BullsEye pads. Request a quote today.',
           keywords:
             'Xilinx virtex 7 fpga ws 7203 price, customizable Xilinx virtex 7 FPGA WS7203A, customizable Virtex 7 FPGA VC7203, customizable AMD Virtex 7 FPGA VC7203 Characterization Kit, customizable Xilinx virtex 7 fpga ws 7203 evaluation kit, customizebale virtex 7 fpga ws 7203',
           og: {
@@ -1046,7 +1046,7 @@ export const routes: Routes = [
             site_name: 'Whizz Systems',
             title: 'Whizz Virtex-7 FPGA WS7203A Characterization Kit',
             description:
-              'Customizable Virtex-7 XC7VX690T evaluation kit derived from the AMD VC707. Dual FMC-HPC, PCIe Gen2x8 with Gen3 layout. Request a quote.',
+              'Customizable Virtex-7 characterization kit based on the AMD VC7203, featuring 28 GTX transceivers at 12.5 Gbps and nine BullsEye pads. Request a quote today.',
             url: 'https://www.whizzsystems.com/featured-products/xilinx-virtex-7-fpga-ws7203-a',
             image:
               'https://www.whizzsystems.com/assets/featured-products/products/WS7203A/hero.png',
