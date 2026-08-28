@@ -812,35 +812,61 @@ planning, testing, and supply chain coordination, Whizz Systems helps identify p
           import('./sustainable-engineering/sustainable-engineering.component').then(
             (m) => m.SustainableEngineeringComponent,
           ),
-        title:
-          'Sustaining Engineering & Obsolescence Management | Whizz Systems',
+        title: 'Sustaining Engineering & Obsolescence Management',
         data: {
           description:
-            'Sustaining engineering services, obsolescence management, and EOL product lifecycle support. From BoM management to risk mitigation, we keep your electronics reliable and future-ready.',
+            'Keep products in production: end-of-life component management, last-time-buy strategy, redesign and manufacturing transfer-in.',
+          og: {
+            type: 'website',
+            site_name: 'Whizz Systems',
+            title: 'Sustaining Engineering & Obsolescence Management',
+            description:
+              'Keep products in production: end-of-life component management, last-time-buy strategy, redesign and manufacturing transfer-in.',
+            url: 'https://www.whizzsystems.com/services/sustainable-engineering',
+            image:
+              'https://www.whizzsystems.com/assets/services/sustaining-egineering/hero.png',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt':
+              'Engineer reviewing a legacy board for component obsolescence',
+            locale: 'en_US',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'Sustaining Engineering & Obsolescence Management',
+            description:
+              'Keep products in production: end-of-life component management, last-time-buy strategy, redesign and manufacturing transfer-in.',
+            image:
+              'https://www.whizzsystems.com/assets/services/sustaining-egineering/hero.png',
+            'image:alt':
+              'Engineer reviewing a legacy board for component obsolescence',
+          },
           schema: [
             {
               '@context': 'https://schema.org',
               '@graph': [
                 {
-                  '@type': 'Organization',
-                  name: 'Whizz Systems',
-                  url: 'https://www.whizzsystems.com/',
-                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                  sameAs: [
-                    'https://www.linkedin.com/company/whizz-systems/',
-                    'https://www.youtube.com/@WhizzSystemsCA',
-                  ],
-                  address: {
-                    '@type': 'PostalAddress',
-                    streetAddress: '3240 Scott Blvd',
-                    addressLocality: 'Santa Clara',
-                    addressRegion: 'CA',
-                    postalCode: '95054',
-                    addressCountry: 'US',
+                  '@type': 'WebPage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/sustainable-engineering#webpage',
+                  url: 'https://www.whizzsystems.com/services/sustainable-engineering',
+                  name: 'Sustaining Engineering & Obsolescence Management',
+                  description:
+                    'Keep products in production: end-of-life component management, last-time-buy strategy, redesign and manufacturing transfer-in.',
+                  inLanguage: 'en-US',
+                  isPartOf: { '@id': 'https://www.whizzsystems.com/#website' },
+                  publisher: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  primaryImageOfPage: {
+                    '@type': 'ImageObject',
+                    url: 'https://www.whizzsystems.com/assets/services/sustaining-egineering/hero.png',
                   },
                 },
                 {
                   '@type': 'BreadcrumbList',
+                  '@id':
+                    'https://www.whizzsystems.com/services/sustainable-engineering#breadcrumb',
                   itemListElement: [
                     {
                       '@type': 'ListItem',
@@ -852,41 +878,83 @@ planning, testing, and supply chain coordination, Whizz Systems helps identify p
                       '@type': 'ListItem',
                       position: 2,
                       name: 'Services',
-                      item: 'https://www.whizzsystems.com/services/',
+                      item: 'https://www.whizzsystems.com/services',
                     },
                     {
                       '@type': 'ListItem',
                       position: 3,
-                      name: 'Sustaining Engineering & Obsolescence Management',
+                      name: 'Sustaining Engineering',
                       item: 'https://www.whizzsystems.com/services/sustainable-engineering',
                     },
                   ],
                 },
                 {
                   '@type': 'Service',
+                  '@id':
+                    'https://www.whizzsystems.com/services/sustainable-engineering#service',
                   name: 'Sustaining Engineering & Obsolescence Management',
-                  url: 'https://www.whizzsystems.com/services/sustainable-engineering',
+                  serviceType: 'Sustaining Engineering',
                   description:
-                    'Whizz Systems offers sustaining engineering solutions, electronic component obsolescence management, and EOL lifecycle support. Services include BoM management, AVL management, second sourcing, and proactive risk mitigation.',
+                    'Keep products in production: end-of-life component management, last-time-buy strategy, redesign and manufacturing transfer-in.',
                   provider: {
-                    '@type': 'Organization',
-                    name: 'Whizz Systems',
-                    url: 'https://www.whizzsystems.com/',
+                    '@id': 'https://www.whizzsystems.com/#organization',
                   },
-                  serviceType: [
-                    'Sustaining Engineering Services',
-                    'Electronic Parts Obsolescence Management',
-                    'Electronic Component Obsolescence Management',
-                    'EOL Product Management',
-                    'Obsolescence Management Services',
-                  ],
-                  areaServed: {
-                    '@type': 'Place',
-                    name: 'Global',
+                  areaServed: { '@type': 'Place', name: 'Worldwide' },
+                  audience: {
+                    '@type': 'BusinessAudience',
+                    audienceType: 'Hardware and electronics manufacturers',
                   },
                 },
+                {
+                  '@type': 'FAQPage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/sustainable-engineering#faq',
+                  url: 'https://www.whizzsystems.com/services/sustainable-engineering',
+                  mainEntity: [
+                    {
+                      '@type': 'Question',
+                      name: 'What is sustaining engineering?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Sustaining engineering is the work required to keep a product in production after launch: managing component obsolescence, making targeted design changes, re-qualifying alternates and reducing cost, without redesigning the product from scratch.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'A component on our board has gone end-of-life. What are our options?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'There are three: a last-time-buy of enough stock to cover remaining demand, qualification of a drop-in alternate, or a targeted redesign of the affected circuit. We model the cost and risk of each before recommending one.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Can you take over manufacturing of a product built elsewhere?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. Manufacturing transfer-in is a routine engagement. We need the full design package, current BOM with approved vendor list, test procedures and any process documentation, and we run a pilot build before switching production over.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'How long does a manufacturing transfer take?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'For a well-documented product, typically eight to sixteen weeks from receipt of the design package to qualified production. Poorly documented products take longer because the documentation gap has to be closed first.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Can you reduce the cost of a product already in production?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. Cost-reduction engineering typically targets component consolidation, alternate sourcing, panel utilisation, test time and assembly process changes. We quantify the saving before recommending any change that affects form, fit or function.',
+                      },
+                    },
+                  ],
+                },
               ],
-            },
+            }
           ],
         },
       },

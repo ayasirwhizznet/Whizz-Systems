@@ -219,96 +219,153 @@ export const routes: Routes = [
           import('./pcb-layout/pcb-layout.component').then(
             (m) => m.PcbLayoutComponent,
           ),
-        title: 'PCB Layout & Design Services | High-Density & HDI PCB Experts',
+        title: 'High-Speed PCB Design & Layout Services | Whizz Systems',
         data: {
-          description: `Whizz Systems provides PCB layout and design services including high-density PCB layouts, HDI design, DfX PCB development, and advanced electronic product engineering.`,
+          description:
+            'HDI, high-layer-count and controlled-impedance PCB layout for AI, networking and high-speed digital hardware. Design through to build.',
+          og: {
+            type: 'website',
+            site_name: 'Whizz Systems',
+            title: 'High-Speed PCB Design & Layout Services | Whizz Systems',
+            description:
+              'HDI, high-layer-count and controlled-impedance PCB layout for AI, networking and high-speed digital hardware. Design through to build.',
+            url: 'https://www.whizzsystems.com/services/engineering-design/pcb-layout',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/pcb/hero.png',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt': 'High-density interconnect PCB layout in progress',
+            locale: 'en_US',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'High-Speed PCB Design & Layout Services | Whizz Systems',
+            description:
+              'HDI, high-layer-count and controlled-impedance PCB layout for AI, networking and high-speed digital hardware. Design through to build.',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/pcb/hero.png',
+            'image:alt': 'High-density interconnect PCB layout in progress',
+          },
           schema: [
             {
               '@context': 'https://schema.org',
-              '@type': 'Service',
-              serviceType: 'PCB Layout and Design Services',
-              provider: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-                url: 'https://www.whizzsystems.com/',
-                logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                sameAs: [
-                  'https://www.linkedin.com/company/whizz-systems/',
-                  'https://www.youtube.com/@WhizzSystemsCA',
-                ],
-              },
-              url: 'https://www.whizzsystems.com/services/engineering-design/pcb-layout-services',
-              description:
-                'Whizz Systems offers professional PCB layout and design services, including high-density PCB layouts, HDI PCB design, DfX optimization, and advanced PCB development solutions.',
-              areaServed: {
-                '@type': 'Place',
-                name: 'Worldwide',
-              },
-              offers: {
-                '@type': 'Offer',
-                name: 'PCB Layout Services',
-                description:
-                  'High-density, HDI, and DfX-focused PCB layout and design services for complex electronic systems.',
-                url: 'https://www.whizzsystems.com/services/engineering-design/pcb-layout-services',
-              },
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              '@id':
-                'https://www.whizzsystems.com/services/engineering-design/pcb-layout#faq',
-              url: 'https://www.whizzsystems.com/services/engineering-design/pcb-layout',
-              mainEntity: [
+              '@graph': [
                 {
-                  '@type': 'Question',
-                  name: 'What Is PCB Layout Design?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'PCB layout design is the process of translating an electrical schematic into a manufacturable printed circuit board by determining component placement, routing signal and power traces, defining layer stack-ups, and optimizing the design for performance and reliability. For high-speed and high-density systems, PCB layout goes beyond routing—it requires careful consideration of signal integrity, power integrity, thermal performance, EMI mitigation, and manufacturability to ensure the final product performs as intended.',
+                  '@type': 'WebPage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/pcb-layout#webpage',
+                  url: 'https://www.whizzsystems.com/services/engineering-design/pcb-layout',
+                  name: 'High-Speed PCB Design & Layout Services | Whizz Systems',
+                  description:
+                    'HDI, high-layer-count and controlled-impedance PCB layout for AI, networking and high-speed digital hardware. Design through to build.',
+                  inLanguage: 'en-US',
+                  isPartOf: { '@id': 'https://www.whizzsystems.com/#website' },
+                  publisher: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  primaryImageOfPage: {
+                    '@type': 'ImageObject',
+                    url: 'https://www.whizzsystems.com/assets/services/engg&design/pcb/hero.png',
                   },
                 },
                 {
-                  '@type': 'Question',
-                  name: 'Why Is PCB Layout Critical for High-Speed and High-Density Electronic Systems?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'As data rates, component densities, and power requirements continue to increase, PCB layout has become a key factor in overall system performance. A well-engineered layout minimizes signal degradation, reduces electromagnetic interference (EMI), supports effective thermal management, and improves manufacturability. Addressing these challenges early in the layout process helps reduce design iterations and enables reliable performance in AI, networking, semiconductor, and other advanced electronic applications.',
+                  '@type': 'BreadcrumbList',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/pcb-layout#breadcrumb',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Services',
+                      item: 'https://www.whizzsystems.com/services',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'Engineering & Design',
+                      item: 'https://www.whizzsystems.com/services/engineering-design',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 4,
+                      name: 'PCB Layout',
+                      item: 'https://www.whizzsystems.com/services/engineering-design/pcb-layout',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'Service',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/pcb-layout#service',
+                  name: 'High-Speed PCB Design & Layout Services',
+                  serviceType: 'PCB Layout',
+                  description:
+                    'HDI, high-layer-count and controlled-impedance PCB layout for AI, networking and high-speed digital hardware. Design through to build.',
+                  provider: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  areaServed: { '@type': 'Place', name: 'Worldwide' },
+                  audience: {
+                    '@type': 'BusinessAudience',
+                    audienceType: 'Hardware and electronics manufacturers',
                   },
                 },
                 {
-                  '@type': 'Question',
-                  name: 'What Should You Look for in a PCB Layout Engineering Partner?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: "For complex hardware projects, it's important to choose a partner with expertise in high-speed PCB design, signal and power integrity, DFM/DFX practices, and cross-disciplinary engineering. An experienced engineering team should work closely with hardware, mechanical, manufacturing, and supply chain specialists to identify potential issues early, optimize the layout for production, and accelerate time to market.",
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Do Design for Manufacturability (DFM) and Design for Excellence (DFX) Improve PCB Layouts?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'DFM and DFX ensure that a PCB layout is not only electrically functional but also optimized for manufacturing, assembly, testing, cost, and long-term reliability. By considering fabrication capabilities, assembly constraints, component availability, and testing requirements during the layout phase, engineers can reduce production risks, improve yields, and shorten product development cycles.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does Early Engineering Collaboration Improve PCB Layout Success?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Successful PCB layouts result from collaboration across multiple engineering disciplines. Integrating hardware design, mechanical engineering, signal integrity analysis, thermal design, manufacturing, and supply chain expertise early in the development process helps identify risks before fabrication. This collaborative approach minimizes redesigns, improves product quality, and enables a smoother transition from concept to production.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does PCB Stack-Up Design Impact High-Speed PCB Performance?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'PCB stack-up design directly influences signal integrity, power integrity, electromagnetic interference (EMI), and overall board reliability. Selecting the appropriate layer configuration, dielectric materials, and reference planes helps control impedance, minimize signal loss, and support reliable high-speed communication. A well-planned stack-up also improves manufacturability and reduces design iterations during product development.',
-                  },
+                  '@type': 'FAQPage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/pcb-layout#faq',
+                  url: 'https://www.whizzsystems.com/services/engineering-design/pcb-layout',
+                  mainEntity: [
+                    {
+                      '@type': 'Question',
+                      name: 'What layer counts and technologies do you support?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'We routinely design boards from four layers to more than thirty, including HDI with stacked and staggered microvias, via-in-pad, back-drilling, rigid-flex and mixed-dielectric stackups.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Do you design to a specific impedance tolerance?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Standard controlled impedance work is to plus or minus ten percent. Tighter tolerances are achievable where the fabricator and stackup support it, and we confirm the target with the fabricator before layout begins.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Which EDA tools do you use?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: "Cadence Allegro and Altium Designer for layout, with Cadence Sigrity and Ansys for signal and power integrity analysis. We can work in the customer's tool where required.",
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Do you also build the boards you lay out?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. Assembly is performed in our own facilities, which means DFM feedback comes from the team that will actually build the board rather than from a separate supplier.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Can you take over a layout that has already started?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. We begin with a review of the existing constraint set, stackup and routing before recommending whether to continue or restart the critical nets.',
+                      },
+                    },
+                  ],
                 },
               ],
-            },
+            }
           ],
         },
       },

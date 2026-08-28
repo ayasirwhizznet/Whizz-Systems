@@ -30,7 +30,8 @@ export class PcbLayoutComponent {
     },
     {
       imgUrl: 'assets/services/engg&design/pcb/constraint.png',
-      name: 'Signal Integrity & Constraint Management',
+      name: `<a href='https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services'
+   title='Signal Integrity & Constraint Management'>Signal Integrity & Constraint Management</a>`,
       desc: 'Optimization of SI and DFx rules to ensure manufacturability and performance.',
     },
     {
@@ -53,7 +54,9 @@ export class PcbLayoutComponent {
       imgUrl: 'assets/services/engg&design/pcb/routing.png',
       name: 'Advanced Signal Routing',
       description: [
-        '100% hand routing of high-speed signals using techniques like ARC, snake, tabbed, and fiber wave routing.',
+        `<a href="https://www.whizzsystems.com/insights/pcie-gen-6-design-guide"
+   title="100% hand routing of high-speed signals" class="text-teal1">100% hand routing of high-speed signals</a>
+ using techniques like ARC, snake, tabbed, and fiber wave routing.`,
         'Enhanced signal integrity and transmission reliability in complex PCB designs',
       ],
     },
@@ -94,7 +97,9 @@ export class PcbLayoutComponent {
     {
       imgUrl: 'assets/icons/leaf.svg',
       name: 'Power Distribution Mastery',
-      desc: 'Efficient power plane planning for improved performance and thermal management.',
+      desc: `Efficient <a href="https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation"
+   title="Power Plane Planning" class="text-teal1">Power Plane Planning</a>
+ for improved performance and thermal management.`,
     },
     {
       imgUrl: 'assets/icons/file.svg',
@@ -103,7 +108,8 @@ export class PcbLayoutComponent {
     },
     {
       imgUrl: 'assets/icons/handshake.svg',
-      name: 'Close Collaboration with Manufacturing Teams',
+      name: `<a href="https://www.whizzsystems.com/services/advanced-manufacturing"
+   title="Close Collaboration with Manufacturing Teams">Close Collaboration with Manufacturing Teams</a>`,
       desc: 'Ensuring your design intent translates seamlessly into production.',
     },
   ];
