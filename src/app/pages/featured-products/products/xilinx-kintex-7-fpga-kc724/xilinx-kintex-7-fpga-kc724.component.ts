@@ -51,34 +51,71 @@ tags: string[] = [
 
 customizations: any[] = [
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/Union.svg',
     name: 'Custom Transceiver Testing Configurations',
     desc: 'Modify signal routing for specific test environments.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/target.svg',
     name: 'Integration with High-Speed Optical or Backplane Systems',
     desc: 'Adapt BullsEye connectors to suit proprietary test setups.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/enhance.svg',
     name: 'Enhanced Clocking Solutions',
     desc: ' Implement programmable oscillators for specialized applications.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/firmware.svg',
     name: 'Firmware & Software Customization',
     desc: 'Develop specialized firmware and IBERT enhancements for improved testing.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/excellence.svg',
     name: 'Additional Expansion & I/O Adjustments',
     desc: 'Modify FMC-HPC connections and integrate additional peripherals.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/cooling.svg',
     name: 'Power & Thermal Optimization',
     desc: ' Implement enhanced power monitoring and cooling strategies.',
   },
 ];
+
+faqs = [
+  {
+    question: 'What FPGA does the KC724 characterization kit use?',
+    answer:
+      'The KC724 is built around the Kintex-7 XC7K410T and exposes 16 GTX transceivers rated at 12.5Gbps.',
+    isOpen: false,
+  },
+  {
+    question: 'How does the KC724 differ from the Virtex-7 characterization kits?',
+    answer:
+      'The KC724 exposes 16 transceivers across four BullsEye pads on a Kintex-7 device; the Virtex-7 WS7203 kits expose 28 transceivers across nine pads. Choose based on the number of channels you need to characterize simultaneously.',
+    isOpen: false,
+  },
+  {
+    question: 'What is IBERT used for on this kit?',
+    answer:
+      'IBERT is used to run bit error rate tests across the transceiver channels, sweep equalisation settings and capture eye scans, which is how the achievable channel reach is established.',
+    isOpen: false,
+  },
+  {
+    question: 'Can the KC724 be customized?',
+    answer:
+      'Yes. Transceiver test configurations, clocking, expansion and I/O, firmware, and power and thermal design can all be modified, and the design can be productized.',
+    isOpen: false,
+  },
+  {
+    question: 'How do we get pricing for the KC724?',
+    answer:
+      'Pricing is provided on application. Request a quote with your required configuration and volume.',
+    isOpen: false,
+  },
+];
+
+toggleFaq(index: number): void {
+  this.faqs[index].isOpen = !this.faqs[index].isOpen;
+}
 }

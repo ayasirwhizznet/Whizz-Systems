@@ -128,4 +128,41 @@ export class FeaturedProductsComponent {
       link: '/insights/5g-oru-development',
     },
   ];
+
+  faqs = [
+    {
+      question: 'What types of FPGA boards does Whizz Systems offer?',
+      answer:
+        'Three categories. Evaluation kits for general development on Kintex-7, Virtex-7, and Zynq-7000 devices; a connectivity kit configured for high-bandwidth data movement; and characterization kits for measuring high-speed transceiver performance.',
+      isOpen: false,
+    },
+    {
+      question: 'How do these differ from the standard AMD evaluation kits?',
+      answer:
+        'Each board is a customizable derivative of an AMD reference platform. A standard evaluation kit cannot be modified or taken to volume production. These can be modified: FPGA selection, memory, connectors, firmware, power, and thermal design can all be changed, and the resulting design can be productized and manufactured.',
+      isOpen: false,
+    },
+    {
+      question: 'Which board should we choose?',
+      answer:
+        'Choose based on the constraint that matters most. Logic capacity points to the WS707 with the XC7V2000T. Transceiver count and high-speed I/O point to the WH707A or the WS709—embedded processing alongside programmable logic points to the WZ706 with the Zynq-7000. Transceiver characterization points to the WS7203 or KC724 kits.',
+      isOpen: false,
+    },
+    {
+      question: 'Can these boards be productized for volume manufacture?',
+      answer:
+        'Yes. That is the primary reason customers choose them over a standard evaluation kit. Whizz Systems designs the modifications and manufactures the resulting product in its own facilities.',
+      isOpen: false,
+    },
+    {
+      question: 'How do we get pricing?',
+      answer:
+        'Pricing is provided on application. Request a quote with the board, the configuration you need, and your expected volume.',
+      isOpen: false,
+    },
+  ];
+
+  toggleFaq(index: number): void {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }

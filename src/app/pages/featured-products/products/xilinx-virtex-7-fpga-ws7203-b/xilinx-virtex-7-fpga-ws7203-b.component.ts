@@ -51,34 +51,71 @@ tags: string[] = [
 
 customizations: any[] = [
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/Union.svg',
     name: 'Custom Transceiver Testing Configurations',
     desc: 'Modify signal routing for specific test environments.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/target.svg',
     name: 'Integration with High-Speed Optical or Backplane Systems',
     desc: 'Adapt BullsEye connectors to suit proprietary test setups.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/enhance.svg',
     name: 'Enhanced Clocking Solutions',
     desc: ' Implement programmable oscillators for specialized applications.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/firmware.svg',
     name: 'Firmware & Software Customization',
     desc: 'Develop specialized firmware and IBERT enhancements for improved testing.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/excellence.svg',
     name: 'Additional Expansion & I/O Adjustments',
     desc: 'Modify FMC-HPC connections and integrate additional peripherals.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/cooling.svg',
     name: 'Power & Thermal Optimization',
     desc: ' Implement enhanced power monitoring and cooling strategies.',
   },
 ];
+
+faqs = [
+  {
+    question: 'What is the difference between the WS7203B and the WS7203A?',
+    answer:
+      'REPLACE THIS ANSWER. The two pages currently publish identical specifications, so this question cannot be answered from the site as it stands. Whizz engineering needs to state the real difference — channel configuration, supplied accessories, or intended test setup — or the two products should be consolidated onto one page.',
+    isOpen: false,
+  },
+  {
+    question: 'How many transceivers does the WS7203B expose?',
+    answer:
+      '28 GTX transceivers rated at 12.5Gbps, brought out to nine Samtec BullsEye connector pads.',
+    isOpen: false,
+  },
+  {
+    question: 'What is included for clocking?',
+    answer:
+      'A 200MHz fixed LVDS oscillator, a SuperClock-2 module and differential SMA clock inputs, so an external reference clock can be substituted for jitter tolerance testing.',
+    isOpen: false,
+  },
+  {
+    question: 'Can the WS7203B be customized?',
+    answer:
+      'Yes. Transceiver test configurations, optical or backplane integration, clocking, expansion and I/O, firmware and thermal design can all be modified.',
+    isOpen: false,
+  },
+  {
+    question: 'How do we get pricing for the WS7203B?',
+    answer:
+      'Pricing is provided on application. Request a quote with your required configuration and volume.',
+    isOpen: false,
+  },
+];
+
+toggleFaq(index: number): void {
+  this.faqs[index].isOpen = !this.faqs[index].isOpen;
+}
 }

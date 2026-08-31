@@ -51,39 +51,76 @@ export class VHK158Component {
 
   customizations: any[] = [
     {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      imgUrl: 'assets/icons/code.svg',
       name: 'Productizing Development Kits',
       desc: 'Convert the WH705 into a ready-to-deploy product with tailored hardware and software.',
     },
     {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      imgUrl: 'assets/icons/tool.svg',
       name: 'Complete System Development',
       desc: 'Design enclosures, firmware, and thermal solutions around the WH705.',
     },
     {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      imgUrl: 'assets/icons/pcb.svg',
       name: 'FPGA Modifications',
       desc: 'Upgrade or modify the FPGA for application-specific needs.',
     },
     {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      imgUrl: 'assets/icons/stick.svg',
       name: 'Memory Enhancements',
       desc: 'Expand DDR3/DDR4 configurations as per performance requirements.',
     },
     {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      imgUrl: 'assets/icons/signal.svg',
       name: 'Custom Connectivity',
       desc: 'Modify PCIe lanes, add extra SFP/SFP+ ports, or customize I/O.',
     },
     {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      imgUrl: 'assets/icons/magic.svg',
       name: 'Software & Firmware Customization',
       desc: 'Develop specialized drivers, GUI, or firmware.',
     },
     {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      imgUrl: 'assets/icons/thermal.svg',
       name: '<a href="https://www.whizzsystems.com/insights/heatsink-design-guide" title="Power & Thermal Optimization">Power & Thermal Optimization</a>',
       desc: 'Enhance power delivery and cooling mechanisms.',
     },
   ];
+
+  faqs = [
+    {
+      question: 'What FPGA does the Whizz WH705 use?',
+      answer:
+        'The WH705 is built around the Kintex-7 XC7K410T. The FPGA can be changed as part of a customization engagement if a different device in the family better suits the application.',
+      isOpen: false,
+    },
+    {
+      question: 'How does the WH705 differ from the AMD KC705?',
+      answer:
+        'The WH705 is a customizable derivative of the KC705 evaluation kit. The reference design is retained where it is useful, but the board can be modified — FPGA selection, memory configuration, connector complement, power and thermal design — and then productized for volume manufacture, which a standard evaluation kit cannot be.',
+      isOpen: false,
+    },
+    {
+      question: 'Can the WH705 be customized for our application?',
+      answer:
+        'Yes. Common changes include FPGA substitution, memory expansion, custom I/O and connector configurations, firmware and software development, and power or thermal optimization for a target enclosure.',
+      isOpen: false,
+    },
+    {
+      question: 'What expansion interfaces does the WH705 provide?',
+      answer:
+        'The board provides FMC-HPC and FMC-LPC connectors, an SFP/SFP+ cage, a GTX port with SMA access, and SMA I/O pairs.',
+      isOpen: false,
+    },
+    {
+      question: 'How do we get pricing for the WH705?',
+      answer:
+        'Pricing is provided on application. Request a quote with your required configuration and volume, and we will respond with pricing and lead time.',
+      isOpen: false,
+    },
+  ];
+
+  toggleFaq(index: number): void {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }

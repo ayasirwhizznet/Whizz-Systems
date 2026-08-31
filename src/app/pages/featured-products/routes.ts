@@ -439,7 +439,7 @@ export const routes: Routes = [
                       name: 'What FPGA does the WH707A use?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'The WH707A is built around the Virtex-7 XC7VX690T.',
+                        text: 'The WH707A is built around the Virtex-7 XC7VX690T, paired with 1GB of DDR3 on a SODIMM, 128MB of linear BPI Flash, and 16MB of Quad SPI Flash.',
                       },
                     },
                     {
@@ -447,7 +447,7 @@ export const routes: Routes = [
                       name: 'How does the WH707A differ from the AMD VC707?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'It is a customizable derivative of the VC707 evaluation kit. The board can be modified across FPGA selection, memory, connectivity, firmware and thermal design, and productized for volume manufacture.',
+                        text: 'It is a customizable derivative of the VC707 evaluation kit. The board can be modified across FPGA selection, memory, connectivity, firmware, and thermal design, and productized for volume manufacture.',
                       },
                     },
                     {
@@ -463,7 +463,7 @@ export const routes: Routes = [
                       name: 'What is the difference between the WH707A and the WS707?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'Both are VC707 derivatives. The WH707A uses the Virtex-7 XC7VX690T; the WS707 uses the larger XC7V2000T. Choose on logic capacity and transceiver count.',
+                        text: 'Both are VC707 derivatives. The WH707A uses the Virtex-7 XC7VX690T; the WS707 uses the larger XC7V2000T. Choose based on logic capacity and transceiver count.',
                       },
                     },
                     {
@@ -584,7 +584,7 @@ export const routes: Routes = [
                       name: 'How does the WS707 differ from the AMD VC707?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'It is a customizable derivative of the VC707 evaluation kit, and unlike a standard evaluation kit it can be modified and productized for volume manufacture.',
+                        text: 'It is a customizable derivative of the VC707 evaluation kit, and unlike a standard evaluation kit, it can be modified and productized for volume manufacture.',
                       },
                     },
                     {
@@ -713,7 +713,7 @@ export const routes: Routes = [
                       name: 'What makes the WS709 a connectivity kit rather than an evaluation kit?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'The WS709 is configured for high-bandwidth data movement: four SFP/SFP+ cages, ten GTH transceiver ports routed to FMC, a PCIe Gen3 eight-lane edge connector and 8GB of DDR3 across two SODIMMs. It is intended for network and data-path development rather than general logic evaluation.',
+                        text: 'The WS709 is configured for high-bandwidth data movement: four SFP/SFP+ cages, ten GTH transceiver ports routed to FMC, a PCIe Gen3 eight-lane edge connector, and 8GB of DDR3 across two SODIMMs. It is intended for network and data-path development rather than general logic evaluation.',
                       },
                     },
                     {
@@ -859,7 +859,7 @@ export const routes: Routes = [
                       name: 'How do we get pricing for the WZ706?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'Pricing is provided on application. Request a quote with your required configuration and volume.',
+                        text: 'Pricing is provided upon application. Request a quote with your required configuration and volume.',
                       },
                     },
                   ],
@@ -995,7 +995,7 @@ export const routes: Routes = [
                       name: 'How does the KC724 differ from the Virtex-7 characterization kits?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'The KC724 exposes 16 transceivers across four BullsEye pads on a Kintex-7 device, while the Virtex-7 WS7203 kits expose 28 transceivers across nine pads. The appropriate kit depends on the number of channels you need to characterize simultaneously.',
+                        text: 'The KC724 exposes 16 transceivers across four BullsEye pads on a Kintex-7 device; the Virtex-7 WS7203 kits expose 28 transceivers across nine pads. Choose based on the number of channels you need to characterize simultaneously.',
                       },
                     },
                     {
@@ -1003,7 +1003,7 @@ export const routes: Routes = [
                       name: 'What is IBERT used for on this kit?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'IBERT is used to run bit error rate tests across the transceiver channels, sweep equalisation settings, and capture eye scans to help establish achievable channel performance.',
+                        text: 'IBERT is used to run bit error rate tests across the transceiver channels, sweep equalisation settings and capture eye scans, which is how the achievable channel reach is established.',
                       },
                     },
                     {
@@ -1011,7 +1011,7 @@ export const routes: Routes = [
                       name: 'Can the KC724 be customized?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'Yes. Transceiver test configurations, clocking, expansion and I/O, firmware, and power and thermal design can be modified to meet specific requirements.',
+                        text: 'Yes. Transceiver test configurations, clocking, expansion and I/O, firmware, and power and thermal design can all be modified, and the design can be productized.',
                       },
                     },
                     {
@@ -1019,7 +1019,7 @@ export const routes: Routes = [
                       name: 'How do we get pricing for the KC724?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'Pricing is quotation-based. Request a quote with your required configuration and volume.',
+                        text: 'Pricing is provided on application. Request a quote with your required configuration and volume.',
                       },
                     },
                   ],
@@ -1126,7 +1126,7 @@ export const routes: Routes = [
                       name: 'What is a transceiver characterization kit used for?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: "It is used to measure the real behaviour of a device's high-speed serial transceivers, including eye height and width, jitter, and bit error rate across a range of channel conditions, so that a channel budget can be established before a product board is designed.",
+                        text: "It is used to measure the real behaviour of a device's high-speed serial transceivers — eye height and width, jitter, and bit error rate across a range of channel conditions — so that a channel budget can be established before a product board is designed.",
                       },
                     },
                     {
@@ -1134,7 +1134,7 @@ export const routes: Routes = [
                       name: 'How many transceivers does the WS7203A expose?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'The WS7203A provides 28 GTX transceivers rated at up to 12.5Gbps.',
+                        text: '28 GTX transceivers rated at 12.5Gbps, brought out to nine Samtec BullsEye connector pads.',
                       },
                     },
                     {
@@ -1142,7 +1142,7 @@ export const routes: Routes = [
                       name: 'What is the difference between the WS7203A and the WS7203B?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'Both products are based on the Virtex-7 XC7VX690T and provide 28 GTX transceivers. Contact our engineering team to confirm the configuration best suited to your test requirements.',
+                        text: 'Both are VC7203 derivatives built on the Virtex-7 XC7VX690T with 28 GTX transceivers. Confirm the intended configuration with our engineering team, because the two are supplied for different test setups.',
                       },
                     },
                     {
@@ -1150,7 +1150,7 @@ export const routes: Routes = [
                       name: 'Does the kit include clocking for jitter measurement?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'Yes. The kit includes a 200MHz fixed LVDS oscillator, a SuperClock-2 module, and differential SMA clock inputs.',
+                        text: 'Yes. A 200MHz fixed LVDS oscillator, a SuperClock-2 module and differential SMA clock inputs are provided so an external reference can be substituted.',
                       },
                     },
                     {
@@ -1158,7 +1158,7 @@ export const routes: Routes = [
                       name: 'How do we get pricing for the WS7203A?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'Pricing is quotation-based. Request a quote with your required configuration and volume.',
+                        text: 'Pricing is provided on application. Request a quote with your required configuration and volume.',
                       },
                     },
                   ],
@@ -1262,10 +1262,18 @@ export const routes: Routes = [
                   mainEntity: [
                     {
                       '@type': 'Question',
+                      name: 'What is the difference between the WS7203B and the WS7203A?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'REPLACE THIS ANSWER. The two pages currently publish identical specifications, so this question cannot be answered from the site as it stands. Whizz engineering needs to state the real difference — channel configuration, supplied accessories, or intended test setup — or the two products should be consolidated onto one page.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
                       name: 'How many transceivers does the WS7203B expose?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'The WS7203B exposes 28 GTX transceivers rated at up to 12.5Gbps and provides nine Samtec BullsEye connector pads.',
+                        text: '28 GTX transceivers rated at 12.5Gbps, brought out to nine Samtec BullsEye connector pads.',
                       },
                     },
                     {
@@ -1273,7 +1281,7 @@ export const routes: Routes = [
                       name: 'What is included for clocking?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'The kit includes a 200MHz fixed LVDS oscillator, a SuperClock-2 module, and differential SMA clock inputs for flexible clocking and testing.',
+                        text: 'A 200MHz fixed LVDS oscillator, a SuperClock-2 module and differential SMA clock inputs, so an external reference clock can be substituted for jitter tolerance testing.',
                       },
                     },
                     {
@@ -1281,15 +1289,7 @@ export const routes: Routes = [
                       name: 'Can the WS7203B be customized?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'Yes. Transceiver test configurations, clocking, expansion and I/O, firmware, and power and thermal design can be customized to meet specific requirements.',
-                      },
-                    },
-                    {
-                      '@type': 'Question',
-                      name: 'What FPGA is used in the WS7203B?',
-                      acceptedAnswer: {
-                        '@type': 'Answer',
-                        text: 'The WS7203B characterization kit is based on the Virtex-7 XC7VX690T FPGA.',
+                        text: 'Yes. Transceiver test configurations, optical or backplane integration, clocking, expansion and I/O, firmware and thermal design can all be modified.',
                       },
                     },
                     {
@@ -1297,7 +1297,7 @@ export const routes: Routes = [
                       name: 'How do we get pricing for the WS7203B?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'Pricing is quotation-based. Request a quote with your required configuration and volume.',
+                        text: 'Pricing is provided on application. Request a quote with your required configuration and volume.',
                       },
                     },
                   ],

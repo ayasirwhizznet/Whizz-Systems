@@ -51,39 +51,76 @@ export class WhizzVirtex7FPGAWH707AComponent {
 
   customizations: any[] = [
     {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      imgUrl: 'assets/icons/code.svg',
       name: 'Productizing Development Kits',
       desc: 'Convert the WS707A into a ready-to-deploy product with tailored hardware and software.',
     },
     {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      imgUrl: 'assets/icons/tool.svg',
       name: 'Complete System Development',
       desc: 'Design enclosures, firmware, and thermal solutions around the WS707A.',
     },
     {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      imgUrl: 'assets/icons/pcb.svg',
       name: 'FPGA Modifications',
       desc: 'Upgrade or modify the FPGA for application-specific needs.',
     },
     {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      imgUrl: 'assets/icons/stick.svg',
       name: 'Memory Enhancements',
       desc: 'Expand DDR3/DDR4 configurations as per performance requirements.',
     },
     {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      imgUrl: 'assets/icons/signal.svg',
       name: 'Custom Connectivity',
       desc: 'Modify PCIe lanes, add extra SFP/SFP+ ports, or customize I/O.',
     },
     {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      imgUrl: 'assets/icons/magic.svg',
       name: 'Software & Firmware Customization',
       desc: 'Develop specialized drivers, GUI, or firmware.',
     },
     {
-      imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+      imgUrl: 'assets/icons/thermal.svg',
       name: 'Power & Thermal Optimization',
       desc: 'Enhance power delivery and cooling mechanisms.',
     },
   ];
+
+  faqs = [
+    {
+      question: 'What FPGA does the WH707A use?',
+      answer:
+        'The WH707A is built around the Virtex-7 XC7VX690T, paired with 1GB of DDR3 on a SODIMM, 128MB of linear BPI Flash, and 16MB of Quad SPI Flash.',
+      isOpen: false,
+    },
+    {
+      question: 'How does the WH707A differ from the AMD VC707?',
+      answer:
+        'It is a customizable derivative of the VC707 evaluation kit. The board can be modified across FPGA selection, memory, connectivity, firmware, and thermal design, and productized for volume manufacture.',
+      isOpen: false,
+    },
+    {
+      question: 'Does the WH707A support PCIe Gen3?',
+      answer:
+        'The board is fitted for PCIe Gen2x8, and the layout supports Gen3. Confirm the intended operating generation with our engineering team before ordering, because the achievable rate depends on the channel and the endpoint.',
+      isOpen: false,
+    },
+    {
+      question: 'What is the difference between the WH707A and the WS707?',
+      answer:
+        'Both are VC707 derivatives. The WH707A uses the Virtex-7 XC7VX690T; the WS707 uses the larger XC7V2000T. Choose based on logic capacity and transceiver count.',
+      isOpen: false,
+    },
+    {
+      question: 'How do we get pricing for the WH707A?',
+      answer:
+        'Pricing is provided on application. Request a quote with your required configuration and volume.',
+      isOpen: false,
+    },
+  ];
+
+  toggleFaq(index: number): void {
+    this.faqs[index].isOpen = !this.faqs[index].isOpen;
+  }
 }

@@ -51,39 +51,76 @@ tags: string[] = [
 
 customizations: any[] = [
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/code.svg',
     name: 'Productizing Development Kits',
     desc: 'Convert the WZ706 into a ready-to-deploy product with tailored hardware and software.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/tool.svg',
     name: '<a href="https://www.whizzsystems.com/services/engineering-design/system-schematic-services" title="Complete System Development">Complete System Development</a>',
     desc: 'Design enclosures, firmware, and thermal solutions around the WZ706.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/pcb.svg',
     name: 'FPGA Modifications',
     desc: 'Upgrade or modify the FPGA for application-specific needs.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/stick.svg',
     name: 'Memory Enhancements',
     desc: 'Expand DDR3/DDR4 configurations as per performance requirements.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/stick.svg',
     name: 'Custom Connectivity',
     desc: 'Modify PCIe lanes, add extra SFP/SFP+ ports, or customize I/O.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/magic.svg',
     name: 'Software & Firmware Customization',
     desc: 'Develop specialized drivers, GUI, or firmware.',
   },
   {
-    imgUrl: 'assets/featured-products/products/vhk158/customization.png',
+    imgUrl: 'assets/icons/tool.svg',
     name: 'Power & Thermal Optimization',
     desc: 'Enhance power delivery and cooling mechanisms.',
   },
 ];
+
+faqs = [
+  {
+    question: 'What device does the Whizz WZ706 use?',
+    answer:
+      'The WZ706 is built around the Zynq-7000 XC7Z100, which combines a dual-core Arm processing system with programmable logic on a single device.',
+    isOpen: false,
+  },
+  {
+    question: 'How does the WZ706 differ from the AMD ZC706?',
+    answer:
+      'The WZ706 is a customizable derivative of the ZC706 evaluation kit. It can be modified across FPGA selection, memory, connectivity, firmware and thermal design, and then productized for volume manufacture.',
+    isOpen: false,
+  },
+  {
+    question: 'What memory does the WZ706 provide?',
+    answer:
+      '1GB of DDR3 attached to the processing system, a separate 1GB DDR3 SODIMM on the programmable logic side, two 16MB Quad SPI Flash devices and a 1KB IIC EEPROM.',
+    isOpen: false,
+  },
+  {
+    question: 'Does the WZ706 support Pmod expansion?',
+    answer:
+      'Yes. The board provides both dual and single Pmod headers alongside FMC-LPC and FMC-HPC connectors.',
+    isOpen: false,
+  },
+  {
+    question: 'How do we get pricing for the WZ706?',
+    answer:
+      'Pricing is provided upon application. Request a quote with your required configuration and volume.',
+    isOpen: false,
+  },
+];
+
+toggleFaq(index: number): void {
+  this.faqs[index].isOpen = !this.faqs[index].isOpen;
+}
 }
