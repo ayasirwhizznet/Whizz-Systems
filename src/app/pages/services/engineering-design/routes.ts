@@ -513,118 +513,149 @@ export const routes: Routes = [
           import('./signal-integrity/signal-integrity.component').then(
             (m) => m.SignalIntegrityComponent,
           ),
-        title:
-          'Signal Integrity Simulation & Analysis Services | Whizz Systems',
+        title: 'Signal Integrity Simulation Services | Whizz Systems',
         data: {
-          description: `Whizz Systems provides advanced signal integrity analysis, simulation, and testing services. Our expert consultants ensure extreme performance, compliance, and reliability for high-speed electronic designs.`,
+          description:
+            'Pre- and post-layout SI simulation for high-speed serial links: channel modelling, eye and jitter analysis, crosstalk and loss budgeting.',
+          og: {
+            type: 'website',
+            site_name: 'Whizz Systems',
+            title: 'Signal Integrity Simulation Services | Whizz Systems',
+            description:
+              'Pre- and post-layout SI simulation for high-speed serial links: channel modelling, eye and jitter analysis, crosstalk and loss budgeting.',
+            url: 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/signal-integrity/hero.png',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt': 'Eye diagram from a signal integrity simulation',
+            locale: 'en_US',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'Signal Integrity Simulation Services | Whizz Systems',
+            description:
+              'Pre- and post-layout SI simulation for high-speed serial links: channel modelling, eye and jitter analysis, crosstalk and loss budgeting.',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/signal-integrity/hero.png',
+            'image:alt': 'Eye diagram from a signal integrity simulation',
+          },
           schema: [
             {
               '@context': 'https://schema.org',
-              '@type': 'Service',
-              serviceType: 'Signal Integrity Simulation and Analysis Services',
-              provider: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-                url: 'https://www.whizzsystems.com/',
-                logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                sameAs: [
-                  'https://www.linkedin.com/company/whizz-systems/',
-                  'https://www.youtube.com/@WhizzSystemsCA',
-                ],
-              },
-              url: 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services',
-              description:
-                'Whizz Systems delivers professional signal integrity analysis, simulation, verification, and testing services to ensure extreme performance and reliability in high-speed electronic systems.',
-              areaServed: {
-                '@type': 'Place',
-                name: 'Worldwide',
-              },
-              offers: {
-                '@type': 'Offer',
-                name: 'Signal Integrity Simulation Services',
-                description:
-                  'Comprehensive signal integrity analysis, consulting, testing, and verification services for advanced hardware design.',
-                url: 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services',
-              },
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
+              '@graph': [
                 {
-                  '@type': 'ListItem',
-                  position: 1,
-                  name: 'Home',
-                  item: 'https://www.whizzsystems.com/',
+                  '@type': 'WebPage',
+                  '@id': 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services#webpage',
+                  url: 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services',
+                  name: 'Signal Integrity Simulation Services | Whizz Systems',
+                  description:
+                    'Pre- and post-layout SI simulation for high-speed serial links: channel modelling, eye and jitter analysis, crosstalk and loss budgeting.',
+                  inLanguage: 'en-US',
+                  isPartOf: { '@id': 'https://www.whizzsystems.com/#website' },
+                  publisher: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  primaryImageOfPage: {
+                    '@type': 'ImageObject',
+                    url: 'https://www.whizzsystems.com/assets/services/engg&design/signal-integrity/hero.png',
+                  },
                 },
                 {
-                  '@type': 'ListItem',
-                  position: 2,
-                  name: 'Services',
-                  item: 'https://www.whizzsystems.com/services/',
+                  '@type': 'BreadcrumbList',
+                  '@id': 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services#breadcrumb',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Services',
+                      item: 'https://www.whizzsystems.com/services',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'Engineering & Design',
+                      item: 'https://www.whizzsystems.com/services/engineering-design',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 4,
+                      name: 'Signal Integrity',
+                      item: 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services',
+                    },
+                  ],
                 },
                 {
-                  '@type': 'ListItem',
-                  position: 3,
-                  name: 'Engineering & Design',
-                  item: 'https://www.whizzsystems.com/services/engineering-design/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 4,
+                  '@type': 'Service',
+                  '@id': 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services#service',
                   name: 'Signal Integrity Simulation Services',
-                  item: 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services',
+                  serviceType: 'Signal Integrity',
+                  description:
+                    'Pre- and post-layout SI simulation for high-speed serial links: channel modelling, eye and jitter analysis, crosstalk and loss budgeting.',
+                  provider: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  areaServed: { '@type': 'Place', name: 'Worldwide' },
+                  audience: {
+                    '@type': 'BusinessAudience',
+                    audienceType: 'Hardware and electronics manufacturers',
+                  },
+                },
+                {
+                  '@type': 'FAQPage',
+                  '@id': 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services#faq',
+                  url: 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services',
+                  mainEntity: [
+                    {
+                      '@type': 'Question',
+                      name: 'What is signal integrity simulation?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Signal integrity simulation predicts how a high-speed signal will behave on a real board before the board is built. It models the channel end to end, identifies where the signal degrades, and shows what to change in the stackup or routing to recover margin.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Can we hire Whizz Systems for simulation only?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. Signal integrity simulation is frequently engaged as a standalone service on a design produced elsewhere. We deliver the analysis and recommendations; you decide whether to implement them in house.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Which tools do you use for SI analysis?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Cadence Sigrity, Ansys HFSS and SIwave, and Keysight ADS, selected according to the interface and whether the analysis is pre- or post-layout.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'How long does a signal integrity analysis take?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'A focused pre-layout topology study is typically one to two weeks. Full post-layout verification of a complex board with multiple high-speed interfaces is generally three to five weeks.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Do you correlate simulation against measured results?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes, where the hardware exists. Correlating simulated and measured eye diagrams is the only way to establish confidence in the channel model, and our lab performs the measurement.',
+                      },
+                    },
+                  ],
                 },
               ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              '@id': 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services#faq',
-              url: 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What Is Signal Integrity Simulation?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Signal integrity simulation evaluates how high-speed electrical signals behave throughout a PCB and electronic system before hardware is manufactured. By analyzing impedance, reflections, crosstalk, insertion loss, and timing characteristics, engineers can identify potential performance issues early and optimize designs for reliable high-speed operation.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Why Is Signal Integrity Analysis Important For High-Speed PCB Designs?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'As interface speeds continue to increase, maintaining signal integrity becomes essential for reliable communication between devices. Signal integrity analysis helps engineers verify routing strategies, optimize PCB stack-ups, control impedance, and reduce signal degradation, ensuring that complex electronic systems perform as intended under demanding operating conditions.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What Causes Signal Integrity Issues In Electronic Systems?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Signal integrity problems commonly result from impedance discontinuities, excessive trace lengths, poor PCB stack-up design, crosstalk, reflections, inadequate grounding, and improper component placement. Addressing these factors during design and simulation helps minimize performance issues before fabrication and reduces the need for costly hardware revisions.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'When Should Signal Integrity Simulations Be Performed?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Signal integrity simulations should be incorporated early in the hardware development process—before PCB fabrication begins. Performing simulation during schematic review, stack-up definition, and PCB layout allows engineers to validate design decisions, identify risks early, and optimize performance before manufacturing.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does Simulation Reduce PCB Redesigns?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Simulation allows engineers to evaluate critical electrical performance before physical prototypes are built. By identifying signal quality issues early, teams can make informed design improvements, reduce prototype iterations, shorten development cycles, and improve first-pass success during manufacturing.',
-                  },
-                },
-              ],
-            },
+            }
           ],
         },
       },
@@ -635,34 +666,57 @@ export const routes: Routes = [
           import('./power-delivery/power-delivery.component').then(
             (m) => m.PowerDeliveryComponent,
           ),
-        title:
-          'Power Delivery Network Simulation (PDN) Services | Whizz Systems',
+        title: 'Power Delivery Network (PDN) Simulation Services',
         data: {
-          description: `Advanced Power Delivery Network (PDN) simulations for reliable PCB performance. Ensure efficient, first-time-right designs with DC/AC power analysis and layout optimization.`,
+          description:
+            'DC IR drop, AC impedance and decoupling analysis for high-current AI and networking hardware, correlated against bench measurement.',
+          og: {
+            type: 'website',
+            site_name: 'Whizz Systems',
+            title: 'Power Delivery Network (PDN) Simulation Services',
+            description:
+              'DC IR drop, AC impedance and decoupling analysis for high-current AI and networking hardware, correlated against bench measurement.',
+            url: 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/power-delivery-network-simulation/hero.png',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt': 'Power delivery network impedance plot',
+            locale: 'en_US',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'Power Delivery Network (PDN) Simulation Services',
+            description:
+              'DC IR drop, AC impedance and decoupling analysis for high-current AI and networking hardware, correlated against bench measurement.',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/power-delivery-network-simulation/hero.png',
+            'image:alt': 'Power delivery network impedance plot',
+          },
           schema: [
             {
               '@context': 'https://schema.org',
               '@graph': [
                 {
-                  '@type': 'Organization',
-                  name: 'Whizz Systems',
-                  url: 'https://www.whizzsystems.com/',
-                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                  sameAs: [
-                    'https://www.linkedin.com/company/whizz-systems/',
-                    'https://www.youtube.com/@WhizzSystemsCA',
-                  ],
-                  address: {
-                    '@type': 'PostalAddress',
-                    streetAddress: '3240 Scott Blvd',
-                    addressLocality: 'Santa Clara',
-                    addressRegion: 'CA',
-                    postalCode: '95054',
-                    addressCountry: 'US',
+                  '@type': 'WebPage',
+                  '@id': 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation#webpage',
+                  url: 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation',
+                  name: 'Power Delivery Network (PDN) Simulation Services',
+                  description:
+                    'DC IR drop, AC impedance and decoupling analysis for high-current AI and networking hardware, correlated against bench measurement.',
+                  inLanguage: 'en-US',
+                  isPartOf: { '@id': 'https://www.whizzsystems.com/#website' },
+                  publisher: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  primaryImageOfPage: {
+                    '@type': 'ImageObject',
+                    url: 'https://www.whizzsystems.com/assets/services/engg&design/power-delivery-network-simulation/hero.png',
                   },
                 },
                 {
                   '@type': 'BreadcrumbList',
+                  '@id': 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation#breadcrumb',
                   itemListElement: [
                     {
                       '@type': 'ListItem',
@@ -674,96 +728,87 @@ export const routes: Routes = [
                       '@type': 'ListItem',
                       position: 2,
                       name: 'Services',
-                      item: 'https://www.whizzsystems.com/services/',
+                      item: 'https://www.whizzsystems.com/services',
                     },
                     {
                       '@type': 'ListItem',
                       position: 3,
                       name: 'Engineering & Design',
-                      item: 'https://www.whizzsystems.com/services/engineering-design/',
+                      item: 'https://www.whizzsystems.com/services/engineering-design',
                     },
                     {
                       '@type': 'ListItem',
                       position: 4,
-                      name: 'Power Delivery Network Simulation',
+                      name: 'PDN Simulation',
                       item: 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation',
                     },
                   ],
                 },
                 {
                   '@type': 'Service',
-                  name: 'Power Delivery Network Simulation (PDN) Services',
-                  url: 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation',
+                  '@id': 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation#service',
+                  name: 'Power Delivery Network (PDN) Simulation Services',
+                  serviceType: 'PDN Simulation',
                   description:
-                    'Whizz Systems provides advanced Power Delivery Network (PDN) simulations and power integrity analysis to ensure reliable PCB performance, covering DC/AC analysis and layout optimization.',
+                    'DC IR drop, AC impedance and decoupling analysis for high-current AI and networking hardware, correlated against bench measurement.',
                   provider: {
-                    '@type': 'Organization',
-                    name: 'Whizz Systems',
-                    url: 'https://www.whizzsystems.com/',
+                    '@id': 'https://www.whizzsystems.com/#organization',
                   },
-                  serviceType: [
-                    'Power Delivery Network Simulation',
-                    'PDN Simulation Services',
-                    'PCB Power Integrity Analysis',
-                    'DC Power Analysis',
-                    'AC Power Analysis',
-                    'End-to-End Layout Optimization',
+                  areaServed: { '@type': 'Place', name: 'Worldwide' },
+                  audience: {
+                    '@type': 'BusinessAudience',
+                    audienceType: 'Hardware and electronics manufacturers',
+                  },
+                },
+                {
+                  '@type': 'FAQPage',
+                  '@id': 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation#faq',
+                  url: 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation',
+                  mainEntity: [
+                    {
+                      '@type': 'Question',
+                      name: 'What is power delivery network simulation?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'PDN simulation analyses how power reaches every load on a board. DC analysis checks that voltage arrives within tolerance and that no copper is over-stressed; AC analysis checks that the impedance seen by each load stays below target across frequency so that switching currents do not cause voltage collapse.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'What target impedance should we design to?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Target impedance is derived from the maximum transient current and the allowable ripple: dividing allowable voltage ripple by transient current gives the ceiling. For modern AI accelerators drawing hundreds of amps with tight tolerances, this frequently lands in the low single-digit milliohms.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'How many decoupling capacitors do we actually need?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Fewer than most designs use, placed better. Simulation usually shows that a smaller number of correctly chosen values, positioned close to the load with low-inductance mounting, outperforms a larger scattered population — which also reduces BOM cost and assembly time.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Can you analyse a board designed elsewhere?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. We work from the layout database and stackup. PDN analysis on an existing design is a common engagement, particularly after a board has shown instability under load.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Do you verify the simulation against hardware?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. We measure PDN impedance on the physical board and correlate it against the model. Without correlation a PDN simulation is an estimate rather than a verification.',
+                      },
+                    },
                   ],
-                  areaServed: {
-                    '@type': 'Place',
-                    name: 'Global',
-                  },
                 },
               ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              '@id': 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation#faq',
-              url: 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What Is A Power Delivery Network (PDN) Simulation?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Power Delivery Network (PDN) simulation analyzes how electrical power is distributed throughout a PCB to ensure components receive stable, reliable voltage under all operating conditions. Evaluating the power network during design helps engineers optimize power integrity, minimize voltage fluctuations, and support consistent system performance.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Why Is Power Integrity Critical For Modern Electronics?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Today\'s high-performance electronic systems require clean and stable power to operate reliably. Insufficient power integrity can lead to voltage ripple, excessive noise, timing instability, and degraded system performance. Careful power delivery planning helps ensure processors, FPGAs, memory, and other high-speed devices receive the power they need to perform consistently.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does PDN Simulation Improve System Reliability?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'PDN simulation identifies potential power distribution issues before manufacturing by evaluating current flow, voltage stability, decoupling effectiveness, and power plane performance. Addressing these issues early reduces hardware failures, improves electrical stability, and supports reliable operation throughout the product lifecycle.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What Causes Voltage Drop And Power Integrity Issues?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Voltage drop and power integrity problems may result from insufficient power plane design, excessive current demand, inadequate decoupling, poor PCB layout, or inefficient component placement. Evaluating these factors through simulation enables engineers to optimize power distribution and improve overall system performance.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'When Should Engineers Perform PDN Analysis?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'PDN analysis should begin during the PCB design process before manufacturing. Evaluating power distribution early enables engineering teams to optimize board architecture, verify power delivery strategies, and minimize costly design changes later in development.',
-                  },
-                },
-              ],
-            },
+            }
           ],
         },
       },
@@ -773,33 +818,59 @@ export const routes: Routes = [
           import('./thermal-management/thermal-management.component').then(
             (m) => m.ThermalManagementComponent,
           ),
-        title: 'Heatsink and Thermal Management Solutions | Whizz Systems',
+        title: 'Thermal Simulation & CFD Analysis Services | Whizz Systems',
         data: {
-          description: `Thermal management solutions including heatsink design, CFD analysis, and cooling systems for reliable electronics performance. Optimal regulation with thermal design and manufacturing services.`,
+          description:
+            'Thermal modelling and CFD analysis for high-power electronics: heatsink design, airflow, cold plates and liquid cooling for AI hardware.',
+          og: {
+            type: 'website',
+            site_name: 'Whizz Systems',
+            title: 'Thermal Simulation & CFD Analysis Services | Whizz Systems',
+            description:
+              'Thermal modelling and CFD analysis for high-power electronics: heatsink design, airflow, cold plates and liquid cooling for AI hardware.',
+            url: 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/thermal-management-solutions/hero.png',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt':
+              'CFD thermal simulation of a high-power circuit board',
+            locale: 'en_US',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'Thermal Simulation & CFD Analysis Services | Whizz Systems',
+            description:
+              'Thermal modelling and CFD analysis for high-power electronics: heatsink design, airflow, cold plates and liquid cooling for AI hardware.',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/thermal-management-solutions/hero.png',
+            'image:alt':
+              'CFD thermal simulation of a high-power circuit board',
+          },
           schema: [
             {
               '@context': 'https://schema.org',
               '@graph': [
                 {
-                  '@type': 'Organization',
-                  name: 'Whizz Systems',
-                  url: 'https://www.whizzsystems.com/',
-                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                  sameAs: [
-                    'https://www.linkedin.com/company/whizz-systems/',
-                    'https://www.youtube.com/@WhizzSystemsCA',
-                  ],
-                  address: {
-                    '@type': 'PostalAddress',
-                    streetAddress: '3240 Scott Blvd',
-                    addressLocality: 'Santa Clara',
-                    addressRegion: 'CA',
-                    postalCode: '95054',
-                    addressCountry: 'US',
+                  '@type': 'WebPage',
+                  '@id': 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions#webpage',
+                  url: 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions',
+                  name: 'Thermal Simulation & CFD Analysis Services | Whizz Systems',
+                  description:
+                    'Thermal modelling and CFD analysis for high-power electronics: heatsink design, airflow, cold plates and liquid cooling for AI hardware.',
+                  inLanguage: 'en-US',
+                  isPartOf: { '@id': 'https://www.whizzsystems.com/#website' },
+                  publisher: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  primaryImageOfPage: {
+                    '@type': 'ImageObject',
+                    url: 'https://www.whizzsystems.com/assets/services/engg&design/thermal-management-solutions/hero.png',
                   },
                 },
                 {
                   '@type': 'BreadcrumbList',
+                  '@id': 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions#breadcrumb',
                   itemListElement: [
                     {
                       '@type': 'ListItem',
@@ -811,96 +882,87 @@ export const routes: Routes = [
                       '@type': 'ListItem',
                       position: 2,
                       name: 'Services',
-                      item: 'https://www.whizzsystems.com/services/',
+                      item: 'https://www.whizzsystems.com/services',
                     },
                     {
                       '@type': 'ListItem',
                       position: 3,
                       name: 'Engineering & Design',
-                      item: 'https://www.whizzsystems.com/services/engineering-design/',
+                      item: 'https://www.whizzsystems.com/services/engineering-design',
                     },
                     {
                       '@type': 'ListItem',
                       position: 4,
-                      name: 'Thermal Management Solutions',
+                      name: 'Thermal Management',
                       item: 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions',
                     },
                   ],
                 },
                 {
                   '@type': 'Service',
-                  name: 'Thermal Management Solutions for Electronics',
-                  url: 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions',
+                  '@id': 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions#service',
+                  name: 'Thermal Management & CFD Simulation Services',
+                  serviceType: 'Thermal Management',
                   description:
-                    'Whizz Systems provides advanced thermal management solutions including heatsink design, thermal CFD analysis, cooling systems, and thermal design manufacturing to ensure optimal electronic equipment performance.',
+                    'Thermal modelling and CFD analysis for high-power electronics: heatsink design, airflow, cold plates and liquid cooling for AI hardware.',
                   provider: {
-                    '@type': 'Organization',
-                    name: 'Whizz Systems',
-                    url: 'https://www.whizzsystems.com/',
+                    '@id': 'https://www.whizzsystems.com/#organization',
                   },
-                  serviceType: [
-                    'Thermal Management Solutions',
-                    'Thermal Design Services',
-                    'Heatsink Thermal Management',
-                    'CFD Thermal Analysis',
-                    'Custom Thermal Design',
-                    'Electronics Cooling Systems',
+                  areaServed: { '@type': 'Place', name: 'Worldwide' },
+                  audience: {
+                    '@type': 'BusinessAudience',
+                    audienceType: 'Hardware and electronics manufacturers',
+                  },
+                },
+                {
+                  '@type': 'FAQPage',
+                  '@id': 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions#faq',
+                  url: 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions',
+                  mainEntity: [
+                    {
+                      '@type': 'Question',
+                      name: 'What is CFD analysis in electronics design?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Computational fluid dynamics analysis simulates how air or liquid moves through a system and how heat transfers into it. It predicts component temperatures under real operating conditions before any hardware is built.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Which thermal simulation tools do you use?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Ansys Icepak and Siemens Simcenter Flotherm for system and board-level CFD, with Ansys Mechanical for conduction-dominated and structural-thermal problems.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'At what point does a design need liquid cooling?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'The practical crossover for forced air in a standard rack is generally in the region of five hundred to seven hundred watts per rack unit, depending on inlet temperature and acoustic limits. Above that, cold plates or immersion become the realistic option. Simulation establishes the crossover for a specific design rather than a rule of thumb.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Can you design the heatsink as well as simulate it?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. We design the thermal solution, simulate it, and produce the mechanical drawings for manufacture.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Do you validate the thermal model against hardware?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. We instrument the board with thermocouples and thermal imaging and correlate measured temperatures against the model.',
+                      },
+                    },
                   ],
-                  areaServed: {
-                    '@type': 'Place',
-                    name: 'Global',
-                  },
                 },
               ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              '@id': 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions#faq',
-              url: 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'Why Is Thermal Management Important In Electronic Product Design?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Effective thermal management helps electronic systems maintain safe operating temperatures while delivering consistent performance. As computing power and component densities continue to increase, managing heat becomes essential for protecting sensitive components, extending product lifespan, and ensuring reliable operation in demanding environments.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Is Thermal Analysis Performed During Hardware Development?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Thermal analysis uses simulation and engineering evaluation to assess heat generation, airflow, component temperatures, and cooling performance before hardware enters production. These insights help engineers optimize component placement, cooling strategies, and mechanical design to improve overall system reliability.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What Causes Overheating In High-Performance Electronics?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Overheating can result from increasing power densities, inadequate cooling, restricted airflow, inefficient enclosure design, or poor thermal interfaces between components and cooling solutions. Identifying these factors early allows engineering teams to implement effective thermal management strategies before manufacturing.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Do Thermal Simulations Improve Product Reliability?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Thermal simulations predict how heat moves throughout an electronic system under various operating conditions. This enables engineers to identify thermal hotspots, optimize cooling solutions, validate design decisions, and reduce the risk of overheating, helping products achieve greater reliability and long-term performance.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'When Should Thermal Considerations Be Addressed In Product Development?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Thermal management should be considered from the earliest stages of product development. Integrating thermal analysis alongside electrical and mechanical design allows engineering teams to optimize system performance, reduce design revisions, and ensure products remain reliable throughout manufacturing and deployment.',
-                  },
-                },
-              ],
-            },
+            }
           ],
         },
       },
