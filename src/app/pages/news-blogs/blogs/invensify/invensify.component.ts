@@ -23,7 +23,7 @@ import { getOtherBlogs } from '../blogList';
   templateUrl: './invensify.component.html'
 })
 export class InvensifyComponent implements OnInit, OnDestroy {
-  blogs = getOtherBlogs('/insights/whitepaper-invensify');
+  blogs = getOtherBlogs('/insights/invensify-medical-device');
 
   tags = ['Medical Devices', 'PCB Layout', 'Hardware Design'];
 

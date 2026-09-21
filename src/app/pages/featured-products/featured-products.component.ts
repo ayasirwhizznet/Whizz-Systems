@@ -118,7 +118,7 @@ export class FeaturedProductsComponent {
       name: 'Invensify Insuridge',
       imgUrl: 'assets/featured-products/mi-1.png',
       desc: '',
-      link: '/insights/whitepaper-invensify',
+      link: '/insights/invensify-medical-device',
     },
     {
       title: 'Telecommunication',

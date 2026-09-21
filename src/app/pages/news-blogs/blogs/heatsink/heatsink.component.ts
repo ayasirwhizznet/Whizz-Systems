@@ -97,7 +97,7 @@ export class HeatsinkComponent implements OnInit, AfterViewInit, OnDestroy {
     },
     {
       imageUrl: 'assets/news/blogs/blog-bottom/invensify.png',
-      link: '/insights/whitepaper-invensify',
+      link: '/insights/invensify-medical-device',
       tags: ['Case Study', 'Medical Devices'],
       date: 'December 12, 2024',
       title: 'Developing Smart Medical Devices: The Invensify Case Study',

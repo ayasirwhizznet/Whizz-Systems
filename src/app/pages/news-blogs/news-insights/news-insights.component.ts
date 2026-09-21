@@ -91,7 +91,7 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
       tags: ['Case Study', 'Medical Devices'],
       title:
         'Whizz Systems & Invensify: Engineering a Smart, Reliable, and Efficient Medical Refrigeration System',
-      link: '/insights/whitepaper-invensify',
+      link: '/insights/invensify-medical-device',
     },
     {
       imgUrl: 'assets/news/news-insights/case-3.png',
@@ -206,7 +206,7 @@ export class NewsInsightsComponent implements OnInit, OnDestroy {
         date: 'December 12, 2024',
         tags: ['Case Study', 'Medical Devices'],
         title: 'Engineering Smart Medical Devices: The Invensify Case Study',
-        link: '/insights/whitepaper-invensify',
+        link: '/insights/invensify-medical-device',
     },
 ];
   slides: CarouselSlide[] = [

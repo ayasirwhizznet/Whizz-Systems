@@ -10,266 +10,89 @@ export const routes: Routes = [
           import('./news-insights/news-insights.component').then(
             (m) => m.NewsInsightsComponent,
           ),
-        title:
-          'Whizz Bytes: Hardware Design Insights, AI & Electronics Engineering News',
+        title: 'Hardware Design & Electronics Engineering Insights',
         data: {
           description:
-            'Explore expert views, industry insights, and breaking news on hardware design, high-speed AI engineering, PCB design, and advanced electronics manufacturing from Whizz Systems.',
+            'Technical guides on high-speed design, signal integrity, thermal management, PCIe and AI hardware from the Whizz Systems engineering team.',
           keywords:
             'hardware design insights, electronics engineering news, AI hardware blogs, PCB design articles, power delivery and thermal management, 5G hardware trends, Whizz Systems news',
           schema: [
-            {
-              '@context': 'https://schema.org',
-              '@graph': [
-                {
-                  '@type': 'CollectionPage',
-                  '@id':
-                    'https://www.whizzsystems.com/insights/#webpage',
-                  url: 'https://www.whizzsystems.com/insights',
-                  name: 'Whizz Bytes: Hardware Design Insights, AI & Electronics Engineering News',
-                  description:
-                    'Explore expert views, industry insights, and breaking news on hardware design, high-speed AI engineering, PCB design, and advanced electronics manufacturing.',
-                  publisher: {
-                    '@type': 'Organization',
-                    '@id': 'https://www.whizzsystems.com/#organization',
-                    name: 'Whizz Systems',
-                    url: 'https://www.whizzsystems.com',
-                    logo: {
-                      '@type': 'ImageObject',
-                      url: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                    },
-                    sameAs: [
-                      'https://www.linkedin.com/company/whizz-systems',
-                      'https://www.youtube.com/@whizzsystems',
-                    ],
-                  },
-                },
-                {
-                  '@type': 'BreadcrumbList',
-                  '@id':
-                    'https://www.whizzsystems.com/insights/#breadcrumb',
-                  itemListElement: [
-                    {
-                      '@type': 'ListItem',
-                      position: 1,
-                      name: 'Home',
-                      item: 'https://www.whizzsystems.com',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 2,
-                      name: 'News & Insights',
-                      item: 'https://www.whizzsystems.com/insights',
-                    },
-                  ],
-                },
-                {
-                  '@type': 'ItemList',
-                  '@id':
-                    'https://www.whizzsystems.com/insights/#itemlist',
-                  name: 'Featured Blog Posts & News',
-                  numberOfItems: 11,
-                  itemListElement: [
-                    {
-                      '@type': 'ListItem',
-                      position: 1,
-                      item: {
-                        '@type': 'BlogPosting',
-                        headline:
-                          'How Whizz Systems Delivers: End-to-End Product Manufacturing Reliability',
-                        datePublished: '2026-05-22',
-                        articleSection: 'PCBA',
-                        publisher: {
-                          '@id': 'https://www.whizzsystems.com/#organization',
-                        },
-                        mainEntityOfPage:
-                          'https://www.whizzsystems.com/how-whizz-systems-delivers-end-to-end-product-manufacturing-reliability',
-                      },
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 2,
-                      item: {
-                        '@type': 'BlogPosting',
-                        headline:
-                          'High-Speed AI Design Challenges & Robust SI Techniques',
-                        datePublished: '2026-03-13',
-                        articleSection: 'High-Speed AI Design',
-                        publisher: {
-                          '@id': 'https://www.whizzsystems.com/#organization',
-                        },
-                        mainEntityOfPage:
-                          'https://www.whizzsystems.com/high-speed-ai-design-challenges-robust-si-techniques',
-                      },
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 3,
-                      item: {
-                        '@type': 'BlogPosting',
-                        headline:
-                          'Enhancing Performance with Innovative Interconnect Topologies and Custom Solutions',
-                        datePublished: '2026-03-02',
-                        articleSection: 'Interconnect Architecture',
-                        publisher: {
-                          '@id': 'https://www.whizzsystems.com/#organization',
-                        },
-                        mainEntityOfPage:
-                          'https://www.whizzsystems.com/enhancing-performance-innovative-interconnect-topologies',
-                      },
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 4,
-                      item: {
-                        '@type': 'BlogPosting',
-                        headline:
-                          'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
-                        datePublished: '2025-12-06',
-                        articleSection: 'Case Study',
-                        publisher: {
-                          '@id': 'https://www.whizzsystems.com/#organization',
-                        },
-                        mainEntityOfPage:
-                          'https://www.whizzsystems.com/amd-vpk180-evaluation-board',
-                      },
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 5,
-                      item: {
-                        '@type': 'BlogPosting',
-                        headline:
-                          'Future-Proof Architecture and Performance in Next-Generation Systems',
-                        datePublished: '2025-07-22',
-                        articleSection: 'AI Hardware',
-                        publisher: {
-                          '@id': 'https://www.whizzsystems.com/#organization',
-                        },
-                        mainEntityOfPage:
-                          'https://www.whizzsystems.com/future-proof-architecture-performance-next-gen-systems',
-                      },
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 6,
-                      item: {
-                        '@type': 'BlogPosting',
-                        headline:
-                          'Managing High-Power Demands in Next-Generation Hardware',
-                        datePublished: '2025-06-10',
-                        articleSection: 'AI Hardware',
-                        publisher: {
-                          '@id': 'https://www.whizzsystems.com/#organization',
-                        },
-                        mainEntityOfPage:
-                          'https://www.whizzsystems.com/managing-high-power-demands-next-gen-hardware',
-                      },
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 7,
-                      item: {
-                        '@type': 'BlogPosting',
-                        headline:
-                          'NextGen Hardware Design for High-Density, High-Complexity Systems',
-                        datePublished: '2025-05-14',
-                        articleSection: 'AI Hardware Design',
-                        publisher: {
-                          '@id': 'https://www.whizzsystems.com/#organization',
-                        },
-                        mainEntityOfPage:
-                          'https://www.whizzsystems.com/nextgen-hardware-design-high-density-systems',
-                      },
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 8,
-                      item: {
-                        '@type': 'BlogPosting',
-                        headline: 'PCIe-6: Everything You Need to Know',
-                        datePublished: '2024-05-29',
-                        articleSection: 'High Speed Connectivity',
-                        publisher: {
-                          '@id': 'https://www.whizzsystems.com/#organization',
-                        },
-                        mainEntityOfPage:
-                          'https://www.whizzsystems.com/pcie-6-everything-you-need-to-know',
-                      },
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 9,
-                      item: {
-                        '@type': 'BlogPosting',
-                        headline:
-                          'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
-                        datePublished: '2024-07-09',
-                        articleSection: 'Hardware Design',
-                        publisher: {
-                          '@id': 'https://www.whizzsystems.com/#organization',
-                        },
-                        mainEntityOfPage:
-                          'https://www.whizzsystems.com/building-future-5g-connectivity-open-radio-unit',
-                      },
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 10,
-                      item: {
-                        '@type': 'BlogPosting',
-                        headline:
-                          'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
-                        datePublished: '2024-07-09',
-                        articleSection: 'Thermal Management',
-                        publisher: {
-                          '@id': 'https://www.whizzsystems.com/#organization',
-                        },
-                        mainEntityOfPage:
-                          'https://www.whizzsystems.com/heatsinks-uncovered-thermal-management',
-                      },
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 11,
-                      item: {
-                        '@type': 'BlogPosting',
-                        headline:
-                          'Engineering Smart Medical Devices: The Invensify Case Study',
-                        datePublished: '2024-12-12',
-                        articleSection: 'Medical Devices',
-                        publisher: {
-                          '@id': 'https://www.whizzsystems.com/#organization',
-                        },
-                        mainEntityOfPage:
-                          'https://www.whizzsystems.com/engineering-smart-medical-devices-invensify',
-                      },
-                    },
-                  ],
-                },
-              ],
-            },
+           {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.whizzsystems.com/insights#webpage",
+      "url": "https://www.whizzsystems.com/insights",
+      "name": "Hardware Design & Electronics Engineering Insights",
+      "description": "Technical guides on high-speed design, signal integrity, thermal management, PCIe and AI hardware from the Whizz Systems engineering team.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://www.whizzsystems.com/#website"
+      },
+      "publisher": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.whizzsystems.com/assets/news/hero.mp4"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.whizzsystems.com/insights#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.whizzsystems.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Insights hub",
+          "item": "https://www.whizzsystems.com/insights"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://www.whizzsystems.com/insights#itemlist",
+      "name": "Hardware Design & Electronics Engineering Insights",
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "numberOfItems": "GENERATED - see note",
+      "itemListElement": "GENERATED FROM ROUTE DATA - do not hardcode"
+    }
+  ]
+}
+
+
           ],
           og: {
             type: 'website',
-            url: 'https://www.whizzsystems.com/insights',
-            title:
-              'Whizz Bytes: Hardware Design Insights, AI & Electronics Engineering News',
-            description:
-              'Explore expert views, industry insights, and breaking news on hardware design, high-speed AI engineering, PCB design, and advanced electronics manufacturing.',
-            image:
-              'https://www.whizzsystems.com/assets/news/news-insights/hero-2.png',
             site_name: 'Whizz Systems',
+            title: 'Hardware Design & Electronics Engineering Insights',
+            description:
+              'Technical guides on high-speed design, signal integrity, thermal management, PCIe and AI hardware from the Whizz Systems engineering team.',
+            url: 'https://www.whizzsystems.com/insights',
+            image: 'https://www.whizzsystems.com/assets/news/hero.mp4',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt':
+              'Whizz Systems engineering insights and technical whitepapers',
+            locale: 'en_US',
           },
           twitter: {
             card: 'summary_large_image',
             url: 'https://www.whizzsystems.com/insights',
-            title:
-              'Whizz Bytes: Hardware Design Insights, AI & Electronics Engineering News',
+            title: 'Hardware Design & Electronics Engineering Insights',
             description:
-              'Explore expert views, industry insights, and breaking news on hardware design, high-speed AI engineering, PCB design, and advanced electronics manufacturing.',
+              'Technical guides on high-speed design, signal integrity, thermal management, PCIe and AI hardware from the Whizz Systems engineering team.',
             image:
-              'https://www.whizzsystems.com/assets/news/news-insights/hero-2.png',
+              'https://www.whizzsystems.com/assets/og/insights-1200x630.jpg',
+            'image:alt':
+              'Whizz Systems engineering insights and technical whitepapers',
           },
         },
       },
@@ -279,218 +102,82 @@ export const routes: Routes = [
           import('./featured-blogs/blogs.component').then(
             (m) => m.BlogsComponent,
           ),
-        title: 'All Posts & Insights | Whizz Systems Hardware Engineering Blog',
+        title: 'All Articles & Whitepapers | Whizz Systems Insights',
         data: {
           description:
-            'Browse the complete archive of articles, case studies, whitepapers, and news updates from Whizz Systems covering AI hardware, high-speed PCB design, and medical electronics.',
+            'Complete archive of Whizz Systems technical articles, whitepapers and case studies on hardware design and electronics manufacturing.',
           keywords:
             'hardware design insights, electronics engineering news, AI hardware blogs, PCB design articles, power delivery and thermal management, 5G hardware trends, Whizz Systems news',
           schema: [
             {
-              '@context': 'https://schema.org',
-              '@graph': [
-                {
-                  '@type': 'Blog',
-                  '@id':
-                    'https://www.whizzsystems.com/insights/all-posts/#blog',
-                  url: 'https://www.whizzsystems.com/insights/all-posts',
-                  name: 'Whizz Systems - Complete Blog & Technical Insights Archive',
-                  description:
-                    'Complete archive of articles, case studies, whitepapers, and hardware news from Whizz Systems.',
-                  publisher: {
-                    '@type': 'Organization',
-                    '@id': 'https://www.whizzsystems.com/#organization',
-                    name: 'Whizz Systems',
-                    url: 'https://www.whizzsystems.com',
-                    logo: {
-                      '@type': 'ImageObject',
-                      url: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                    },
-                    sameAs: [
-                      'https://www.linkedin.com/company/whizz-systems',
-                      'https://www.youtube.com/@whizzsystems',
-                    ],
-                  },
-                  blogPost: [
-                    {
-                      '@type': 'BlogPosting',
-                      headline:
-                        'How Whizz Systems Delivers: End-to-End Product Manufacturing Reliability',
-                      datePublished: '2026-05-22',
-                      articleSection: 'PCBA',
-                      publisher: {
-                        '@id': 'https://www.whizzsystems.com/#organization',
-                      },
-                      mainEntityOfPage:
-                        'https://www.whizzsystems.com/how-whizz-systems-delivers-end-to-end-product-manufacturing-reliability',
-                    },
-                    {
-                      '@type': 'BlogPosting',
-                      headline:
-                        'High-Speed AI Design Challenges & Robust SI Techniques',
-                      datePublished: '2026-03-13',
-                      articleSection: 'High-Speed AI Design',
-                      publisher: {
-                        '@id': 'https://www.whizzsystems.com/#organization',
-                      },
-                      mainEntityOfPage:
-                        'https://www.whizzsystems.com/high-speed-ai-design-challenges-robust-si-techniques',
-                    },
-                    {
-                      '@type': 'BlogPosting',
-                      headline:
-                        'Enhancing Performance with Innovative Interconnect Topologies and Custom Solutions',
-                      datePublished: '2026-03-02',
-                      articleSection: 'Interconnect Architecture',
-                      publisher: {
-                        '@id': 'https://www.whizzsystems.com/#organization',
-                      },
-                      mainEntityOfPage:
-                        'https://www.whizzsystems.com/enhancing-performance-innovative-interconnect-topologies',
-                    },
-                    {
-                      '@type': 'BlogPosting',
-                      headline:
-                        'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
-                      datePublished: '2025-12-06',
-                      articleSection: 'Case Study',
-                      publisher: {
-                        '@id': 'https://www.whizzsystems.com/#organization',
-                      },
-                      mainEntityOfPage:
-                        'https://www.whizzsystems.com/amd-vpk180-evaluation-board',
-                    },
-                    {
-                      '@type': 'BlogPosting',
-                      headline:
-                        'Future-Proof Architecture and Performance in Next-Generation Systems',
-                      datePublished: '2025-07-22',
-                      articleSection: 'AI Hardware',
-                      publisher: {
-                        '@id': 'https://www.whizzsystems.com/#organization',
-                      },
-                      mainEntityOfPage:
-                        'https://www.whizzsystems.com/future-proof-architecture-performance-next-gen-systems',
-                    },
-                    {
-                      '@type': 'BlogPosting',
-                      headline:
-                        'Managing High-Power Demands in Next-Generation Hardware',
-                      datePublished: '2025-06-10',
-                      articleSection: 'AI Hardware',
-                      publisher: {
-                        '@id': 'https://www.whizzsystems.com/#organization',
-                      },
-                      mainEntityOfPage:
-                        'https://www.whizzsystems.com/managing-high-power-demands-next-gen-hardware',
-                    },
-                    {
-                      '@type': 'BlogPosting',
-                      headline:
-                        'NextGen Hardware Design for High-Density, High-Complexity Systems',
-                      datePublished: '2025-05-14',
-                      articleSection: 'AI Hardware Design',
-                      publisher: {
-                        '@id': 'https://www.whizzsystems.com/#organization',
-                      },
-                      mainEntityOfPage:
-                        'https://www.whizzsystems.com/nextgen-hardware-design-high-density-systems',
-                    },
-                    {
-                      '@type': 'BlogPosting',
-                      headline: 'PCIe-6: Everything You Need to Know',
-                      datePublished: '2024-05-29',
-                      articleSection: 'High Speed Connectivity',
-                      publisher: {
-                        '@id': 'https://www.whizzsystems.com/#organization',
-                      },
-                      mainEntityOfPage:
-                        'https://www.whizzsystems.com/pcie-6-everything-you-need-to-know',
-                    },
-                    {
-                      '@type': 'BlogPosting',
-                      headline:
-                        'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
-                      datePublished: '2024-07-09',
-                      articleSection: 'Hardware Design',
-                      publisher: {
-                        '@id': 'https://www.whizzsystems.com/#organization',
-                      },
-                      mainEntityOfPage:
-                        'https://www.whizzsystems.com/building-future-5g-connectivity-open-radio-unit',
-                    },
-                    {
-                      '@type': 'BlogPosting',
-                      headline:
-                        'Heatsinks Uncovered: Best Practices for Optimized Thermal Management',
-                      datePublished: '2024-07-09',
-                      articleSection: 'Thermal Management',
-                      publisher: {
-                        '@id': 'https://www.whizzsystems.com/#organization',
-                      },
-                      mainEntityOfPage:
-                        'https://www.whizzsystems.com/heatsinks-uncovered-thermal-management',
-                    },
-                    {
-                      '@type': 'BlogPosting',
-                      headline:
-                        'Engineering Smart Medical Devices: The Invensify Case Study',
-                      datePublished: '2024-12-12',
-                      articleSection: 'Medical Devices',
-                      publisher: {
-                        '@id': 'https://www.whizzsystems.com/#organization',
-                      },
-                      mainEntityOfPage:
-                        'https://www.whizzsystems.com/engineering-smart-medical-devices-invensify',
-                    },
-                  ],
-                },
-                {
-                  '@type': 'BreadcrumbList',
-                  '@id':
-                    'https://www.whizzsystems.com/insights/all-posts/#breadcrumb',
-                  itemListElement: [
-                    {
-                      '@type': 'ListItem',
-                      position: 1,
-                      name: 'Home',
-                      item: 'https://www.whizzsystems.com',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 2,
-                      name: 'News & Insights',
-                      item: 'https://www.whizzsystems.com/insights',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 3,
-                      name: 'All Posts',
-                      item: 'https://www.whizzsystems.com/insights/all-posts',
-                    },
-                  ],
-                },
-              ],
-            },
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.whizzsystems.com/insights/all-posts#webpage",
+      "url": "https://www.whizzsystems.com/insights/all-posts",
+      "name": "All Articles & Whitepapers | Whizz Systems Insights",
+      "description": "Complete archive of Whizz Systems technical articles, whitepapers and case studies on hardware design and electronics manufacturing.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://www.whizzsystems.com/#website"
+      },
+      "publisher": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.whizzsystems.com/assets/news/hero.mp4"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.whizzsystems.com/insights/all-posts#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.whizzsystems.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Insights",
+          "item": "https://www.whizzsystems.com/insights"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Article archive",
+          "item": "https://www.whizzsystems.com/insights/all-posts"
+        }
+      ]
+    }
+  ]
+}
           ],
           og: {
             type: 'website',
-            url: 'https://www.whizzsystems.com/insights/all-posts',
-            title:
-              'All Posts & Insights | Whizz Systems Hardware Engineering Blog',
-            description:
-              'Browse the complete archive of articles, case studies, whitepapers, and news updates from Whizz Systems.',
-            image: 'https://www.whizzsystems.com/assets/news/hero.mp4',
             site_name: 'Whizz Systems',
+            title: 'All Articles & Whitepapers | Whizz Systems Insights',
+            description:
+              'Complete archive of Whizz Systems technical articles, whitepapers and case studies on hardware design and electronics manufacturing.',
+            url: 'https://www.whizzsystems.com/insights/all-posts',
+            image: 'https://www.whizzsystems.com/assets/news/hero.mp4',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt': 'Whizz Systems article archive',
+            locale: 'en_US',
           },
           twitter: {
             card: 'summary_large_image',
             url: 'https://www.whizzsystems.com/insights/all-posts',
-            title:
-              'All Posts & Insights | Whizz Systems Hardware Engineering Blog',
+            title: 'All Articles & Whitepapers | Whizz Systems Insights',
             description:
-              'Browse the complete archive of articles, case studies, whitepapers, and news updates from Whizz Systems.',
+              'Complete archive of Whizz Systems technical articles, whitepapers and case studies on hardware design and electronics manufacturing.',
             image: 'https://www.whizzsystems.com/assets/news/hero.mp4',
+            'image:alt': 'Whizz Systems article archive',
           },
         },
       },
@@ -509,86 +196,173 @@ export const routes: Routes = [
             'AMD VPK180, Versal Premium, Adaptive SoC, FPGA Evaluation Board, Whizz Systems, VP1802, High-Speed Design, SerDes, GTY Transceivers',
           schema: [
             {
-              '@context': 'https://schema.org',
-              '@type': 'Article',
-              headline:
-                'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
-              description:
-                'A single, versatile evaluation board engineered by Whizz Systems to demonstrate AMD Versal™ Premium capabilities across optical communications, data center acceleration, aerospace, and testing/measurement.',
-              image:
-                'https://www.whizzsystems.com/assets/news/blogs/amd-vpk180/hero.png',
-              author: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-                url: 'https://www.whizzsystems.com/',
-              },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-                logo: {
-                  '@type': 'ImageObject',
-                  url: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                },
-              },
-              mainEntityOfPage:
-                'https://www.whizzsystems.com/insights/amd-vpk180',
-              datePublished: '2025-12-06',
-              dateModified: '2025-12-06',
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                {
-                  '@type': 'ListItem',
-                  position: 1,
-                  name: 'Home',
-                  item: 'https://www.whizzsystems.com/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 2,
-                  name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/insights/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 3,
-                  name: 'AMD VPK180 Evaluation Board',
-                  item: 'https://www.whizzsystems.com/insights/amd-vpk180',
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What is the AMD VPK180 Evaluation Board?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'The AMD VPK180 is a comprehensive evaluation board featuring the Versal Premium VP1802 Adaptive SoC, designed for high-performance applications in data centers, optical communications, aerospace, and test equipment.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Who designed the VPK180 evaluation board?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'The VPK180 evaluation board was designed and manufactured by Whizz Systems in collaboration with AMD, leveraging over 25 years of expertise in high-complexity FPGA design.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What high-speed interfaces does VPK180 support?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'The VPK180 supports GTY transceivers with 112G PAM4 and 56G NRZ SerDes, DDR4 and LPDDR4 memory interfaces, QSFP-DD and QSFP28 optical modules, and FMC+ expansion connectivity.',
-                  },
-                },
-              ],
-            },
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "@id": "https://www.whizzsystems.com/case-studies/amd-vpk180#article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.whizzsystems.com/case-studies/amd-vpk180"
+      },
+      "url": "https://www.whizzsystems.com/case-studies/amd-vpk180",
+      "headline": "AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform",
+      "alternativeHeadline": "A single, versatile evaluation board engineered by Whizz Systems to demonstrate AMD Versal Premium capabilities",
+      "description": "Explore the AMD VPK180 evaluation board designed by Whizz Systems, featuring the Versal Premium VP1802 Adaptive SoC for high-performance FPGA applications.",
+      "abstract": "Whizz Systems designed and validated a production-ready evaluation board built around the AMD XCVP1802 Versal Premium Adaptive SoC, with 112G PAM4 transceivers, 12GB LPDDR4, and SFP-DD, QSFP-DD, QSFP and FMC+ connectivity, for optical communications, data center acceleration, aerospace, and test and measurement.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.whizzsystems.com/assets/news/blogs/amd-vpk180/hero.png",
+        "caption": "AMD VPK180 Evaluation Board by Whizz Systems"
+      },
+      "datePublished": "2025-12-06",
+      "dateModified": "2025-12-06",
+      "inLanguage": "en",
+      "articleSection": "FPGA Development",
+      "genre": "Case Study",
+      "keywords": "AMD VPK180, Versal Premium, Adaptive SoC, FPGA Evaluation Board, VP1802, High-Speed Design, SerDes, GTY Transceivers, Hardware Design",
+      "author": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "about": [
+        {
+          "@type": "Organization",
+          "name": "AMD",
+          "url": "https://www.amd.com/",
+          "description": "Semiconductor company whose Versal Premium Adaptive SoC is the basis of the VPK180 evaluation board."
+        }
+      ],
+      "mentions": [
+        { "@type": "Thing", "name": "AMD Versal Premium Adaptive SoC" },
+        { "@type": "Thing", "name": "AMD XCVP1802" },
+        { "@type": "Thing", "name": "FPGA" },
+        { "@type": "Thing", "name": "112G PAM4 transceivers" },
+        { "@type": "Thing", "name": "LPDDR4" },
+        { "@type": "Thing", "name": "QSFP-DD" },
+        { "@type": "Thing", "name": "FMC+" },
+        { "@type": "Thing", "name": "eCPRI" },
+        { "@type": "Thing", "name": "Signal integrity" }
+      ],
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://www.whizzsystems.com/insights",
+        "name": "Whizz Systems Insights",
+        "url": "https://www.whizzsystems.com/insights"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.whizzsystems.com/#organization",
+      "name": "Whizz Systems",
+      "url": "https://www.whizzsystems.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.whizzsystems.com/assets/header/teal-logo.png"
+      },
+      "email": "sales@whizzsystems.com",
+      "telephone": "+1-408-980-0400",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3240 Scott Blvd.",
+        "addressLocality": "Santa Clara",
+        "addressRegion": "CA",
+        "postalCode": "95054",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/whizz-systems/",
+        "https://www.youtube.com/@WhizzSystemsCA",
+        "https://twitter.com/WhizzSystems"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.whizzsystems.com/case-studies/amd-vpk180#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.whizzsystems.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Insights",
+          "item": "https://www.whizzsystems.com/insights"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform",
+          "item": "https://www.whizzsystems.com/case-studies/amd-vpk180"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.whizzsystems.com/case-studies/amd-vpk180#faq",
+      "url": "https://www.whizzsystems.com/case-studies/amd-vpk180",
+      "isPartOf": {
+        "@id": "https://www.whizzsystems.com/case-studies/amd-vpk180#article"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the AMD VPK180 evaluation board?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The VPK180 is a versatile evaluation board engineered by Whizz Systems around the AMD XCVP1802 Versal Premium Adaptive SoC. It lets developers and OEM partners evaluate Versal Premium capabilities on a single platform across optical communications, data center acceleration, aerospace, and test and measurement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What interfaces and memory does the VPK180 support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The board provides 112G PAM4 transceivers, 12GB of LPDDR4 memory, 1 Gbps RGMII management Ethernet, and SFP-DD, QSFP-DD, QSFP and FMC+ connectivity. It supports 100GAUI, 400GAUI and 800GAUI profiles and is eCPRI compliant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which markets and applications is the VPK180 designed for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The board targets fiber optic networking and communications, data center acceleration, aerospace, and test and measurement, so one evaluation platform can serve telecom, datacenter, aerospace and lab measurement use cases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What did Whizz Systems contribute to the VPK180?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Whizz Systems designed and validated a production-ready board, including integration and bring-up of the XCVP1802 SoC, routing of the 112G PAM4 transceivers for optimal signal integrity, and cross-discipline validation covering electrical, signal integrity, thermal and manufacturability checks to meet AMD's standards. It also produced manufacturing-ready documentation and test plans to support volume rollout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the VPK180 reduce development time and risk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A single evaluation platform for multiple markets shortens customers' time-to-evaluation. The production-ready layout helps accelerate adoption and reduce development risk, and the scalable architecture allows migration to future link rates and protocols."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Whizz Systems offer custom board development and NPI support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Whizz Systems offers custom board development, evaluation units and new product introduction (NPI) support, and has a long-term strategic partnership with AMD for high-precision design and production execution."
+          }
+        }
+      ]
+    }
+  ]
+}
+
           ],
           og: {
             type: 'article',
@@ -622,150 +396,126 @@ export const routes: Routes = [
         path: '5g-oru-development',
         loadComponent: () =>
           import('./blogs/5G-ORU/5g-oru.component').then((m) => m.ORUComponent),
-        title:
-          '5G ORU Development | Open Radio Unit Design & Manufacturing | Whizz Systems',
+        title: '5G Open Radio Unit (O-RAN) Hardware Development',
         data: {
           description:
-            '5G ORU development — from open radio unit white box design to thermal, mechanical, and power optimization. Accelerate your next-gen 5G connectivity with our end-to-end engineering and manufacturing services.',
+            'Designing and manufacturing 5G Open RAN radio units: RF front end, timing, thermal design and compliance for O-RAN deployments.',
           keywords:
             '5g oru, 5G Open Radio Unit, open radio unit white box, 5g oru white box solution, 5G ORU Development, 5g radio design manufacturing services, Next-Gen 5G ORU, 5G ORU Design Engineering',
           schema: [
             {
-              '@context': 'https://schema.org',
-              '@type': 'Article',
-              headline:
-                'Building the Future of 5G Connectivity with Open Radio Unit Solutions',
-              description:
-                'Explore Whizz Systems’ 5G ORU design and manufacturing expertise — delivering advanced open radio unit white box solutions for next-gen 5G networks.',
-              image:
-                'https://www.whizzsystems.com/assets/images/5g-oru-whitepaper.jpg',
-              author: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-              },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-                logo: {
-                  '@type': 'ImageObject',
-                  url: 'https://www.whizzsystems.com/assets/images/logo.png',
-                },
-              },
-              url: 'https://www.whizzsystems.com/insights/5g-oru-development',
-              mainEntityOfPage:
-                'https://www.whizzsystems.com/insights/5g-oru-development',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                {
-                  '@type': 'ListItem',
-                  position: 1,
-                  name: 'Home',
-                  item: 'https://www.whizzsystems.com/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 2,
-                  name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/insights/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 3,
-                  name: '5G ORU Development Whitepaper',
-                  item: 'https://www.whizzsystems.com/insights/5g-oru-development',
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                {
-                  '@type': 'ListItem',
-                  position: 1,
-                  name: 'Home',
-                  item: 'https://www.whizzsystems.com/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 2,
-                  name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/insights/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 3,
-                  name: '5G ORU Development Whitepaper',
-                  item: 'https://www.whizzsystems.com/insights/5g-oru-development',
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What is a 5G Open Radio Unit (ORU)?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'A 5G Open Radio Unit (ORU) is a modular component of the Open RAN architecture that handles the radio frequency (RF) functions in a 5G network, enabling flexible and cost-efficient deployment of 5G infrastructure.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What are the main challenges in 5G ORU design and manufacturing?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Key challenges include maintaining signal integrity at high frequencies, managing thermal dissipation, ensuring precise mechanical design, and sourcing reliable components across a global supply chain.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Does Whizz Systems provide 5G ORU design and manufacturing services?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Yes, Whizz Systems offers full 5G ORU development — including electrical, mechanical, and thermal design — as well as manufacturing and validation services for next-gen connectivity products.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What are the benefits of Whizz Systems’ 5G ORU white box solutions?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Whizz Systems’ open radio unit white box designs provide flexibility, scalability, and reduced cost of deployment for telecom OEMs and network operators adopting open RAN architectures.',
-                  },
-                },
-              ],
-            },
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "@id": "https://www.whizzsystems.com/insights/5g-oru-development#article",
+      "headline": "Building the Future of 5G Connectivity with Open Radio Unit Solutions",
+      "description": "Designing and manufacturing 5G Open RAN radio units: RF front end, timing, thermal design and compliance for O-RAN deployments.",
+      "image": [
+        "https://www.whizzsystems.com/assets/news/hero.png"
+      ],
+      "datePublished": "2024-07-09T00:00:00-08:00",
+      "dateModified": "2026-08-17T00:00:00-07:00",
+      "author": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "inLanguage": "en-US",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.whizzsystems.com/insights/5g-oru-development"
+      },
+      "isPartOf": {
+        "@id": "https://www.whizzsystems.com/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.whizzsystems.com/insights/5g-oru-development#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.whizzsystems.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Insights",
+          "item": "https://www.whizzsystems.com/insights"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "5G ORU whitepaper",
+          "item": "https://www.whizzsystems.com/insights/5g-oru-development"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.whizzsystems.com/insights/5g-oru-development#faq",
+      "url": "https://www.whizzsystems.com/insights/5g-oru-development",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an Open RAN radio unit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An O-RU is the radio unit in a disaggregated Open RAN architecture. It handles the RF front end and lower physical layer processing and connects to a distributed unit over a standardised fronthaul interface, which allows operators to combine equipment from multiple vendors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes O-RU hardware design difficult?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Three things: RF performance has to be held across temperature in an outdoor enclosure, fronthaul timing accuracy is tight, and the thermal design has to work by passive convection in a sealed housing exposed to direct sun."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Whizz Systems build 5G radio hardware?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Whizz Systems has designed and manufactured Open Radio Unit hardware, covering board design, RF integration, thermal and mechanical design, compliance support and volume manufacturing."
+          }
+        }
+      ]
+    }
+  ]
+}
+
           ],
           og: {
             type: 'article',
-            title:
-              'Building the Future of 5G Connectivity with Open Radio Unit Solutions | Whizz Systems',
-            description:
-              'Explore Whizz Systems’ 5G ORU design and manufacturing expertise — delivering advanced open radio unit white box solutions for next-gen 5G networks.',
-            url: 'https://www.whizzsystems.com/insights/5g-oru-development',
             site_name: 'Whizz Systems',
+            title: '5G Open Radio Unit (O-RAN) Hardware Development',
+            description:
+              'Designing and manufacturing 5G Open RAN radio units: RF front end, timing, thermal design and compliance for O-RAN deployments.',
+            url: 'https://www.whizzsystems.com/insights/5g-oru-development',
             image: 'https://www.whizzsystems.com/assets/news/hero.png',
-            image_alt: '5G Open Radio Unit Solutions by Whizz Systems',
-            publisher: 'https://www.linkedin.com/company/whizz-systems/',
-            section: '5G ORU Development',
-            tag: '5G, ORU, Open Radio Unit, White Box Solutions, Connectivity',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt':
+              '5G Open Radio Unit hardware developed by Whizz Systems',
+            locale: 'en_US',
+          },
+          article: {
+            published_time: '2024-07-09',
+            modified_time: '2026-08-17',
           },
           twitter: {
             card: 'summary_large_image',
-            title: 'Next-Gen 5G ORU Development | Whizz Systems',
+            title: '5G Open Radio Unit (O-RAN) Hardware Development',
             description:
-              'Whizz Systems leads in 5G ORU design, engineering, and manufacturing for open radio unit white box solutions.',
+              'Designing and manufacturing 5G Open RAN radio units: RF front end, timing, thermal design and compliance for O-RAN deployments.',
             image: 'https://www.whizzsystems.com/assets/news/hero.png',
-            image_alt: 'Whizz Systems 5G ORU Development',
-            site: '@WhizzSystems',
+            'image:alt':
+              '5G Open Radio Unit hardware developed by Whizz Systems',
           },
         },
       },
@@ -775,199 +525,149 @@ export const routes: Routes = [
           import('./blogs/heatsink/heatsink.component').then(
             (m) => m.HeatsinkComponent,
           ),
-        title:
-          'Heatsinks Guide | Heat Sink Design for PCB & Electronic Systems',
+        title: 'Heatsink Design Guide for PCB & Electronic Systems',
         data: {
           description:
-            'Comprehensive guide to heatsink design — covering active and passive heatsinks, types, materials, and optimization methods for reliable PCB thermal performance.',
+            'Heatsink selection and design: active versus passive, materials, fin geometry, thermal interface materials and optimisation for high-power boards.',
           keywords:
             'heatsinks guide, heat sink design for PCB, active and passive heatsink, types of heatsinks, heatsink design book, heatsink design optimization, heatsink materials',
           schema: [
             {
-              '@context': 'https://schema.org',
-              '@type': 'Article',
-              headline:
-                'Heatsinks: Considerations, Guidance, and Best Practices for PCB & Electronic Systems',
-              description:
-                'Explore Whizz Systems’ comprehensive guide to heatsink design — covering types, materials, active vs. passive designs, and optimization techniques for advanced PCB systems.',
-              image:
-                'https://www.whizzsystems.com/assets/news/blogs/heatsink/hero.png',
-              author: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-              },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-                logo: {
-                  '@type': 'ImageObject',
-                  url: 'https://www.whizzsystems.com/assets/images/logo.png',
-                },
-              },
-              url: 'https://www.whizzsystems.com/insights/heatsink-design-guide',
-              mainEntityOfPage:
-                'https://www.whizzsystems.com/insights/heatsink-design-guide',
-              datePublished: '2025-01-20',
-              dateModified: '2025-01-20',
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                {
-                  '@type': 'ListItem',
-                  position: 1,
-                  name: 'Home',
-                  item: 'https://www.whizzsystems.com/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 2,
-                  name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/insights/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 3,
-                  name: 'Heatsink Design Whitepaper',
-                  item: 'https://www.whizzsystems.com/insights/heatsink-design-guide',
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'Why do we need a heatsink in electronic systems?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Heatsinks help dissipate excess heat from components such as CPUs, GPUs, and power devices, ensuring reliability, preventing thermal damage, and extending product lifespan.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What are the types of heatsinks used in PCBs?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Common heatsink types include active heatsinks with fans, passive heatsinks that rely on natural convection, and hybrid types combining both. They can also vary by manufacturing—extruded, bonded-fin, skived, and cast heatsinks.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What materials are best for heatsink design?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Aluminum and copper are the most common materials for heatsinks due to their excellent thermal conductivity, machinability, and cost-effectiveness.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How do I select the right heatsink for my design?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Selecting a heatsink depends on power dissipation, available space, airflow, cost, and manufacturing constraints. Simulation and thermal analysis tools can help optimize selection.',
-                  },
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              '@id':
-                'https://www.whizzsystems.com/insights/heatsink-design-guide#faq',
-              url: 'https://www.whizzsystems.com/insights/heatsink-design-guide',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What Is a Heatsink and Why Is It Critical to System Reliability?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'A heatsink is a thermal management device that transfers heat away from sensitive electronic components. In high-performance computing, AI hardware, networking equipment, and power-dense systems, effective thermal management is essential for maintaining performance, preventing premature component degradation, and ensuring long-term reliability. As power densities continue to increase, heatsinks have become a critical element of overall system design rather than a standalone cooling component.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Do Heatsinks Support High-Performance Electronic Systems?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Heatsinks help maintain safe operating temperatures by efficiently conducting and dissipating heat generated by processors, power devices, and other critical components. By controlling thermal conditions, they enable stable system operation, reduce the risk of thermal throttling, and support consistent performance under demanding workloads.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Why Are Thermal Design Considerations Important in Modern Hardware Development?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'As systems become more compact and computationally demanding, thermal management challenges become increasingly complex. Engineers must consider airflow, power density, material selection, mechanical constraints, and environmental conditions early in the design process. Effective thermal planning helps avoid performance limitations and costly redesigns later in development.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does Heat Transfer Influence Heatsink Performance?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'The effectiveness of a heatsink depends on its ability to transfer heat away from critical components and dissipate it efficiently into the surrounding environment. Material properties, surface area, airflow conditions, and mechanical design all influence thermal performance. Optimizing these factors helps maximize cooling efficiency and improve overall system reliability.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What Factors Should Engineers Consider When Designing a Heatsink?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Successful heatsink design requires balancing thermal performance, manufacturability, size, weight, and cost. Engineers must evaluate power dissipation requirements, mechanical integration, airflow characteristics, and long-term reliability goals to ensure the thermal solution aligns with overall system objectives.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What Is the Difference Between a Heatsink and a Heatsink Fan?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: "A heatsink is a passive thermal management component that dissipates heat through conduction and convection. A heatsink fan combines passive cooling with forced airflow to improve heat removal. The appropriate solution depends on the application's thermal load, available space, performance requirements, and environmental conditions.",
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does Effective Thermal Management Improve Hardware Reliability?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Excessive heat can reduce system performance, shorten component lifespan, and increase the likelihood of hardware failures. Effective thermal management helps maintain stable operating temperatures, supports consistent performance under demanding workloads, and improves the long-term reliability of electronic systems through optimized cooling strategies.',
-                  },
-                },
-              ],
-            },
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "@id": "https://www.whizzsystems.com/insights/heatsink-design-guide#article",
+      "headline": "Heatsinks: Considerations, Guidance and Best Practices",
+      "description": "Heatsink selection and design: active versus passive, materials, fin geometry, thermal interface materials and optimisation for high-power boards.",
+      "image": [
+        "https://www.whizzsystems.com/assets/news/blogs/heatsink/hero.png"
+      ],
+      "datePublished": "2025-01-20T00:00:00-08:00",
+      "dateModified": "2026-08-17T00:00:00-07:00",
+      "author": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "inLanguage": "en-US",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.whizzsystems.com/insights/heatsink-design-guide"
+      },
+      "isPartOf": {
+        "@id": "https://www.whizzsystems.com/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.whizzsystems.com/insights/heatsink-design-guide#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.whizzsystems.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Insights",
+          "item": "https://www.whizzsystems.com/insights"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Heatsink design guide",
+          "item": "https://www.whizzsystems.com/insights/heatsink-design-guide"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.whizzsystems.com/insights/heatsink-design-guide#faq",
+      "url": "https://www.whizzsystems.com/insights/heatsink-design-guide",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why does an electronic system need a heatsink?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A heatsink increases the surface area available to move heat away from a component into the surrounding air or coolant. Without it, junction temperature rises until the device throttles, degrades or fails. In dense AI and networking hardware, thermal design frequently sets the performance ceiling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What types of heatsink are used on PCBs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Passive heatsinks rely on natural convection; active heatsinks add a fan. By manufacturing method the common types are extruded, bonded fin, skived and cast, each with a different achievable fin density and cost point."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which materials are best for heatsinks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aluminium and copper dominate. Aluminium is lighter and cheaper and suits most applications; copper has roughly twice the thermal conductivity and is used where heat flux is high enough to justify the weight and cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I select the right heatsink for my design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start from power dissipation, maximum allowable junction temperature and ambient conditions to derive the required thermal resistance. Then constrain by available volume, airflow, mounting method and cost. Simulation resolves the trade-offs that a datasheet curve cannot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much difference does the thermal interface material make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "More than most designs assume. A poorly chosen or unevenly applied interface material can contribute a substantial share of the total thermal resistance between junction and ambient, which is why interface selection and mounting pressure are part of the thermal design rather than an assembly detail."
+          }
+        }
+      ]
+    }
+  ]
+}
+
           ],
           og: {
             type: 'article',
-            title:
-              'Heatsinks: Considerations, Guidance, and Best Practices | Whizz Systems',
-            description:
-              'A complete guide to heatsinks — learn about design principles, types, materials, and optimization for advanced electronics and PCB thermal management.',
-            url: 'https://www.whizzsystems.com/insights/heatsink-design-guide',
             site_name: 'Whizz Systems',
+            title: 'Heatsink Design Guide for PCB & Electronic Systems',
+            description:
+              'Heatsink selection and design: active versus passive, materials, fin geometry, thermal interface materials and optimisation for high-power boards.',
+            url: 'https://www.whizzsystems.com/insights/heatsink-design-guide',
             image:
               'https://www.whizzsystems.com/assets/news/blogs/heatsink/hero.png',
-            image_alt:
-              'Heatsink Design and Thermal Optimization Guide by Whizz Systems',
-            publisher: 'https://www.linkedin.com/company/whizz-systems/',
-            section: 'Thermal Management & PCB Design',
-            tag: 'Heatsink, Thermal Design, PCB Cooling, Electronics, Thermal Management',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt':
+              'Heatsink and cold plate assembly on a high-power circuit board',
+            locale: 'en_US',
+          },
+          article: {
+            published_time: '2025-01-20',
+            modified_time: '2026-08-17',
           },
           twitter: {
             card: 'summary_large_image',
-            title: 'Heatsink Design & Optimization Guide | Whizz Systems',
+            title: 'Heatsink Design Guide for PCB & Electronic Systems',
             description:
-              'Learn heatsink design best practices for PCBs, CPUs, and high-performance electronics. Active vs. passive heatsinks, materials, and optimization insights.',
+              'Heatsink selection and design: active versus passive, materials, fin geometry, thermal interface materials and optimisation for high-power boards.',
             image:
               'https://www.whizzsystems.com/assets/news/blogs/heatsink/hero.png',
-            image_alt: 'Heatsink Design and Optimization by Whizz Systems',
-            site: '@WhizzSystems',
+            'image:alt':
+              'Heatsink and cold plate assembly on a high-power circuit board',
           },
         },
       },
       {
-        path: 'whitepaper-invensify',
+        path: 'invensify-medical-device',
         loadComponent: () =>
           import('./blogs/invensify/invensify.component').then(
             (m) => m.InvensifyComponent,
@@ -979,74 +679,164 @@ export const routes: Routes = [
             'Whizz Systems partnered with Invensify to develop Insuridge — a next-gen medical device featuring advanced PCB design, liquid cooling, and thermal management for medical logistics.',
           schema: [
             {
-              '@context': 'https://schema.org',
-              '@graph': [
-                {
-                  '@type': 'Organization',
-                  name: 'Whizz Systems',
-                  url: 'https://www.whizzsystems.com/',
-                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                  sameAs: [
-                    'https://www.linkedin.com/company/whizz-systems/',
-                    'https://www.youtube.com/@WhizzSystemsCA',
-                  ],
-                },
-                {
-                  '@type': 'BreadcrumbList',
-                  itemListElement: [
-                    {
-                      '@type': 'ListItem',
-                      position: 1,
-                      name: 'Home',
-                      item: 'https://www.whizzsystems.com/',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 2,
-                      name: 'News & Insights',
-                      item: 'https://www.whizzsystems.com/insights/',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 3,
-                      name: 'Whitepaper: Invensify',
-                      item: 'https://www.whizzsystems.com/insights/whitepaper-invensify',
-                    },
-                  ],
-                },
-                {
-                  '@type': 'TechArticle',
-                  headline:
-                    'Building the Future of Medical Logistics with Invensify',
-                  alternativeHeadline:
-                    'Next-Generation Medical Device Development by Whizz Systems and Invensify',
-                  description:
-                    "A whitepaper on Whizz Systems' collaboration with Invensify to develop Insuridge — a smart cold chain medical refrigeration system for biopharma logistics, featuring advanced PCB design, thermal management, and component engineering.",
-                  author: {
-                    '@type': 'Organization',
-                    name: 'Whizz Systems',
-                  },
-                  publisher: {
-                    '@type': 'Organization',
-                    name: 'Whizz Systems',
-                    logo: {
-                      '@type': 'ImageObject',
-                      url: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                    },
-                  },
-                  datePublished: '2025-09-20',
-                  mainEntityOfPage:
-                    'https://www.whizzsystems.com/insights/whitepaper-invensify',
-                  about: [
-                    'Medical Device Development',
-                    'Medical Device Hardware Design',
-                    'Medical Device Thermal Management',
-                    'Medical Device Supply Chain Management',
-                    'Smart Medical Refrigeration',
-                  ],
-                },
-              ],
-            },
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "@id": "https://www.whizzsystems.com/insights/whitepaper-invensify#article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.whizzsystems.com/insights/whitepaper-invensify"
+      },
+      "url": "https://www.whizzsystems.com/insights/whitepaper-invensify",
+      "headline": "Building the Future of Medical Logistics with Invensify",
+      "alternativeHeadline": "How Whizz Systems Designed, Engineered, and Manufactured Invensify's Next-Gen Cold Chain Solution",
+      "description": "Whizz Systems partnered with Invensify to develop Insuridge, a next-gen medical device featuring advanced PCB design, liquid cooling, and thermal management for medical logistics.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.whizzsystems.com/assets/images/whitepapers/invensify-insuridge-banner.jpg",
+        "caption": "Insuridge Smart Medical Device by Whizz Systems and Invensify"
+      },
+      "datePublished": "2024-05-29",
+      "dateModified": "2024-05-29",
+      "inLanguage": "en",
+      "articleSection": "Medical Device Development",
+      "keywords": "Medical Device, PCB Design, Thermal Management, Supply Chain, Cold Chain, Liquid Cooling, Insuridge",
+      "author": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "about": [
+        {
+          "@type": "Organization",
+          "name": "Invensify Inc.",
+          "description": "Santa Clara, California startup building energy-efficient, environmentally friendly transport solutions for temperature-sensitive medical products.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santa Clara",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+          }
+        }
+      ],
+      "mentions": [
+        { "@type": "Thing", "name": "Printed circuit board design" },
+        { "@type": "Thing", "name": "Liquid cooling" },
+        { "@type": "Thing", "name": "Phase change material" },
+        { "@type": "Thing", "name": "Finite element analysis" },
+        { "@type": "Thing", "name": "Supply chain management" }
+      ],
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://www.whizzsystems.com/insights",
+        "name": "Whizz Systems Insights",
+        "url": "https://www.whizzsystems.com/insights"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.whizzsystems.com/#organization",
+      "name": "Whizz Systems",
+      "url": "https://www.whizzsystems.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.whizzsystems.com/assets/header/teal-logo.png"
+      },
+      "email": "sales@whizzsystems.com",
+      "telephone": "+1-408-980-0400",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3240 Scott Blvd.",
+        "addressLocality": "Santa Clara",
+        "addressRegion": "CA",
+        "postalCode": "95054",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/whizz-systems/",
+        "https://www.youtube.com/@WhizzSystemsCA",
+        "https://twitter.com/WhizzSystems"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.whizzsystems.com/insights/whitepaper-invensify#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.whizzsystems.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Insights",
+          "item": "https://www.whizzsystems.com/insights"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Building the Future of Medical Logistics with Invensify",
+          "item": "https://www.whizzsystems.com/insights/whitepaper-invensify"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.whizzsystems.com/insights/whitepaper-invensify#faq",
+      "url": "https://www.whizzsystems.com/insights/whitepaper-invensify",
+      "isPartOf": {
+        "@id": "https://www.whizzsystems.com/insights/whitepaper-invensify#article"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What Engineering Challenges Does This Solution Address?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Insuridge 12L had to hold a strict 2°C to 8°C range for up to 100 hours in a compact, energy-efficient unit. That required a high-density PCB combining analog, digital, power and RF circuits, shielding to prevent interference between the GPS, LTE and Bluetooth modules, a way to fit the PCBs, cooling chamber, radiator, fans and piping into a limited form factor, and a plastic enclosure strong enough to withstand shock and vibration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How Does System Integration Improve Product Performance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Designing the charging circuit, sensor-based cooling control, connectivity, PCB, enclosure and liquid cooling system together let the team resolve conflicts between subsystems early. 3D tools were used to check interferences and clearances, and flow and thermal simulations balanced cooling performance against pressure drop, so all elements fit the product without compromising functionality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why Is End-to-End Engineering Important for Complex Hardware?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complex hardware depends on many disciplines working together. Whizz Systems covered hardware design, PCB layout, mechanical design, structural analysis, thermal management, component engineering and supply chain management, so decisions in one area accounted for the others and quality and continuity were maintained across all phases of development."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How Does Design Optimization Improve Manufacturability?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Iterative collaboration between Whizz Systems and Invensify produced a design that integrated all elements while ensuring manufacturability and ease of assembly. Checking clearances in 3D CAD, adding reinforcement ribs identified through finite element analysis, and qualifying suppliers through an Approved Vendor List with secondary sources for critical components all reduced downstream risk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Best Practices Help Accelerate Hardware Development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Practices used on this project include validating designs with lab tests backed by thermal and flow simulations, checking mechanical interferences early with 3D tools, using finite element analysis to reinforce enclosures, building an Approved Vendor List with secondary sources, and working iteratively with the client from concept through manufacturing."
+          }
+        }
+      ]
+    }
+  ]
+}
+
           ],
           og: {
             type: 'article',
@@ -1054,7 +844,7 @@ export const routes: Routes = [
               'Building the Future of Medical Logistics with Invensify | Whizz Systems Whitepaper',
             description:
               'Read how Whizz Systems collaborated with Invensify to design Insuridge — an advanced, energy-efficient medical refrigeration system featuring precision PCB design, thermal management, and component engineering.',
-            url: 'https://www.whizzsystems.com/insights/whitepaper-invensify',
+            url: 'https://www.whizzsystems.com/insights/invensify-medical-device',
             site_name: 'Whizz Systems',
             image:
               'https://www.whizzsystems.com/assets/images/whitepapers/invensify-insuridge-banner.jpg',
@@ -1083,199 +873,142 @@ export const routes: Routes = [
           import('./blogs/pcle-6/pcle-6.component').then(
             (m) => m.Pcle6Component,
           ),
-        title:
-          'PCIe Gen 6 Design Guide | Insights on Signal Integrity, Power & Layout',
+        title: 'PCIe Gen 6 Design Guide: SI, Power & Layout',
         data: {
           description:
-            'Expert insights on PCIe Gen 6 design — from signal integrity, power stability, and PCB layout to thermal management and component selection.',
+            'PCIe Gen 6 hardware design: PAM4 signal integrity, loss budgeting, via structures, length matching, power delivery and thermal considerations.',
           schema: [
             {
-              '@context': 'https://schema.org',
-              '@type': 'NewsArticle',
-              headline:
-                "Whizz Systems' Guide to PCIe Gen 6 Design & Implementation",
-              description:
-                'Explore PCIe Gen 6 design insights from Whizz Systems — covering signal integrity, power management, PCB layout, and manufacturing best practices for next-gen hardware.',
-              image:
-                'https://www.whizzsystems.com/assets/news/blogs/pcle6/hero.png',
-              author: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-              },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-                logo: {
-                  '@type': 'ImageObject',
-                  url: 'https://www.whizzsystems.com/images/logo.png',
-                },
-              },
-              mainEntityOfPage: {
-                '@type': 'WebPage',
-                '@id':
-                  'https://www.whizzsystems.com/insights/pcie-gen-6-design-guide',
-              },
-              datePublished: '2025-10-07',
-              dateModified: '2025-10-07',
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                {
-                  '@type': 'ListItem',
-                  position: 1,
-                  name: 'Home',
-                  item: 'https://www.whizzsystems.com/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 2,
-                  name: 'News & Insights',
-                  item: 'https://www.whizzsystems.com/insights/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 3,
-                  name: "Whizz Systems' Guide to PCIe Gen 6",
-                  item: 'https://www.whizzsystems.com/insights/pcie-gen-6-design-guide',
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What are the main design challenges of PCIe Gen 6?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'The primary PCIe Gen 6 design challenges include maintaining signal integrity at 64 GT/s, minimizing jitter and loss, managing power delivery for high-speed components, and selecting dielectric materials with low Dk and Df for optimal performance.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How does PCIe Gen 6 differ from PCIe Gen 5?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'PCIe Gen 6 doubles the data rate from 32 GT/s (Gen 5) to 64 GT/s using PAM4 signaling instead of NRZ, which increases bandwidth but introduces new design constraints for signal integrity and PCB layout precision.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What PCB layout practices are critical for PCIe Gen 6?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'For PCIe Gen 6, designers must control trace impedance, minimize via stubs, apply tight length-matching rules, and use GSSG via structures to maintain signal quality. HVLP copper and low-loss materials are recommended.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How can thermal management impact PCIe Gen 6 reliability?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Effective thermal management prevents overheating of high-speed components. Whizz Systems uses advanced heat-sink integration, CFD analysis, and optimized airflow to ensure stable performance under heavy workloads.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Does Whizz Systems offer PCIe Gen 6 design and validation services?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Yes. Whizz Systems provides full PCIe Gen 6 hardware design, layout, validation, and manufacturing services — including signal integrity analysis, power delivery optimization, and system-level testing for high-speed designs.',
-                  },
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              '@id':
-                'https://www.whizzsystems.com/insights/pcie-gen-6-design-guide#faq',
-              url: 'https://www.whizzsystems.com/insights/pcie-gen-6-design-guide',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What Is PCIe 6.0 and Why Is It Important for Next-Generation Systems?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'PCIe 6.0 represents a significant advancement in high-speed connectivity, enabling substantially higher bandwidth to support AI infrastructure, data centers, networking platforms, and high-performance computing systems. As workloads continue to demand faster data movement among processors, accelerators, memory, and storage, PCIe 6.0 provides the performance foundation required for future computing architectures.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What Design Challenges Are Associated with PCIe 6.0 Implementation?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'As signaling speeds increase, engineers face tighter margins for signal integrity, channel loss, crosstalk, and power efficiency. PCIe 6.0 implementations require careful attention to PCB design, interconnect selection, validation methodologies, and compliance requirements to ensure reliable high-speed communication.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Why Is Signal Integrity Critical for PCIe 6.0 Designs?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'At next-generation data rates, even minor signal quality issues can significantly impact system performance and reliability. Successful PCIe 6.0 implementations depend on controlled impedance, optimized routing, loss management, and comprehensive signal integrity analysis throughout the design process.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Are PCIe 6.0 Platforms Validated and Tested?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Validation involves a combination of simulation, compliance testing, protocol analysis, and signal integrity verification. Engineers evaluate channel performance, interoperability, and overall system behavior to ensure designs meet performance objectives and industry standards before deployment.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Do Engineers Determine Which PCIe Generation Is Appropriate for a New Design?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'The choice depends on application bandwidth requirements, scalability objectives, power constraints, and long-term product strategy. While previous PCIe generations remain suitable for many applications, PCIe 6.0 provides the headroom needed for emerging AI, networking, and data-intensive workloads.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Is PCIe Used in AI, Networking, and Embedded Systems?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'PCIe serves as a high-bandwidth communication backbone connecting processors, accelerators, memory subsystems, storage devices, and networking hardware. Its scalability and performance make it a critical technology for modern embedded systems, cloud infrastructure, AI platforms, and telecommunications equipment.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Why Is PCIe 6.0 Important for AI and High-Performance Computing?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'AI training, inference, and high-performance computing workloads depend on moving large volumes of data with minimal latency. PCIe 6.0 delivers significantly higher bandwidth and improved data transfer efficiency, enabling faster communication between processors, accelerators, memory, and storage. This increased performance helps support the growing demands of next-generation computing platforms.',
-                  },
-                },
-              ],
-            },
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "@id": "https://www.whizzsystems.com/insights/pcie-gen-6-design-guide#article",
+      "headline": "PCIe Gen 6 Design Guide",
+      "description": "PCIe Gen 6 hardware design: PAM4 signal integrity, loss budgeting, via structures, length matching, power delivery and thermal considerations.",
+      "image": [
+        "https://www.whizzsystems.com/assets/news/blogs/pcle6/hero.png"
+      ],
+      "datePublished": "2025-10-07T00:00:00-08:00",
+      "dateModified": "2026-08-17T00:00:00-07:00",
+      "author": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "inLanguage": "en-US",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.whizzsystems.com/insights/pcie-gen-6-design-guide"
+      },
+      "isPartOf": {
+        "@id": "https://www.whizzsystems.com/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.whizzsystems.com/insights/pcie-gen-6-design-guide#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.whizzsystems.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Insights",
+          "item": "https://www.whizzsystems.com/insights"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "PCIe Gen 6 guide",
+          "item": "https://www.whizzsystems.com/insights/pcie-gen-6-design-guide"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.whizzsystems.com/insights/pcie-gen-6-design-guide#faq",
+      "url": "https://www.whizzsystems.com/insights/pcie-gen-6-design-guide",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the main design challenges of PCIe Gen 6?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PCIe Gen 6 runs at 64 GT/s using PAM4 signalling, which reduces the vertical eye opening to roughly a third of the equivalent NRZ eye. The consequences are a much tighter loss budget, greater sensitivity to reflections from via stubs and impedance discontinuities, and a requirement for low-loss dielectric materials and smoother copper."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does PCIe Gen 6 differ from PCIe Gen 5?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gen 6 doubles the data rate from 32 GT/s to 64 GT/s while keeping the same Nyquist frequency, by moving from two-level NRZ signalling to four-level PAM4. It also introduces forward error correction, which recovers link reliability at the cost of added latency."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What PCB layout practices are critical for PCIe Gen 6?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Control trace impedance tightly, minimise or back-drill via stubs, use GSSG via structures on differential pairs, apply strict intra-pair and inter-pair length matching, and route on layers with the most consistent dielectric. Material selection matters as much as routing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does dielectric material choice matter more at Gen 6?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Insertion loss rises with frequency, and at PAM4 the reduced eye height leaves far less margin to absorb it. Low Dk and low Df laminates combined with very-low-profile copper reduce both dielectric and conductor loss, which is often what makes the channel reach achievable at all."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Whizz Systems offer PCIe Gen 6 design and validation services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We provide PCIe Gen 6 architecture, high-speed layout, signal and power integrity simulation, and lab validation including eye diagram and bit error rate measurement, and we manufacture the resulting hardware in house."
+          }
+        }
+      ]
+    }
+  ]
+}
+
           ],
           og: {
             type: 'article',
-            title: "Whizz Systems' Guide to PCIe Gen 6 Design & Implementation",
-            description:
-              "Deep dive into PCIe Gen 6 hardware design — covering signal integrity, power delivery, PCB layout, and thermal management challenges. Learn from Whizz Systems' engineering experts.",
-            url: 'https://www.whizzsystems.com/insights/pcie-gen-6-design-guide',
             site_name: 'Whizz Systems',
+            title: 'PCIe Gen 6 Design Guide: SI, Power & Layout',
+            description:
+              'PCIe Gen 6 hardware design: PAM4 signal integrity, loss budgeting, via structures, length matching, power delivery and thermal considerations.',
+            url: 'https://www.whizzsystems.com/insights/pcie-gen-6-design-guide',
             image:
               'https://www.whizzsystems.com/assets/news/blogs/pcle6/hero.png',
-            image_alt: 'PCIe Gen 6 Hardware Design Guide by Whizz Systems',
-            section: 'High-Speed Design',
-            tag: 'PCIe Gen 6, Signal Integrity, PCB Design, Hardware Engineering',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt':
+              'PCIe Gen 6 channel test setup on a Whizz Systems evaluation board',
+            locale: 'en_US',
+          },
+          article: {
+            published_time: '2025-10-07',
+            modified_time: '2026-08-17',
           },
           twitter: {
             card: 'summary_large_image',
-            title: "Whizz Systems' PCIe Gen 6 Design Guide",
+            title: 'PCIe Gen 6 Design Guide: SI, Power & Layout',
             description:
-              'Explore signal integrity, PCB design, and performance insights for PCIe Gen 6 from Whizz Systems experts.',
+              'PCIe Gen 6 hardware design: PAM4 signal integrity, loss budgeting, via structures, length matching, power delivery and thermal considerations.',
             image:
               'https://www.whizzsystems.com/assets/news/blogs/pcle6/hero.png',
-            image_alt: 'Whizz Systems PCIe Gen 6 Engineering Guide',
-            site: '@WhizzSystems',
+            'image:alt':
+              'PCIe Gen 6 channel test setup on a Whizz Systems evaluation board',
           },
         },
       },

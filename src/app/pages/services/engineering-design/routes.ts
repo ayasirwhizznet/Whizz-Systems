@@ -10,115 +10,155 @@ export const routes: Routes = [
           import('./system-design-schematics/system-design.component').then(
             (m) => m.SystemDesignComponent,
           ),
-        title:
-          'Schematic Design & Hardware Development Solutions | Whizz Systems',
+        title: 'System Architecture & Schematic Design Services',
         data: {
-          description: `Whizz Systems provides professional hardware schematic design, PCB schematic design, and electrical schematic services. From concept to schematic design phase, we deliver reliable and scalable solutions.`,
+          description:
+            'System architecture, block-level design, component selection and schematic capture for complex electronic hardware programmes.',
+          og: {
+            type: 'website',
+            site_name: 'Whizz Systems',
+            title: 'System Architecture & Schematic Design Services',
+            description:
+              'System architecture, block-level design, component selection and schematic capture for complex electronic hardware programmes.',
+            url: 'https://www.whizzsystems.com/services/engineering-design/system-schematic-services',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/system-design/hero.png',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt': 'System architecture block diagram under review',
+            locale: 'en_US',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'System Architecture & Schematic Design Services',
+            description:
+              'System architecture, block-level design, component selection and schematic capture for complex electronic hardware programmes.',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/system-design/hero.png',
+            'image:alt': 'System architecture block diagram under review',
+          },
           schema: [
             {
               '@context': 'https://schema.org',
-              '@type': 'Service',
-              serviceType: 'Schematic Design Services',
-              provider: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-                url: 'https://www.whizzsystems.com/',
-                logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                sameAs: [
-                  'https://www.linkedin.com/company/whizz-systems/',
-                  'https://www.youtube.com/@WhizzSystemsCA',
-                ],
-              },
-              url: 'https://www.whizzsystems.com/services/engineering-design/system-schematic-services',
-              description:
-                'Whizz Systems offers schematic design services including hardware schematic design, PCB schematic design, electrical schematics, and schematic design phase services for complex electronic systems.',
-              areaServed: {
-                '@type': 'Place',
-                name: 'Worldwide',
-              },
-              offers: {
-                '@type': 'Offer',
-                name: 'System Schematic Design Services',
-                description:
-                  'Professional hardware, electrical, and PCB schematic design services to ensure reliable, scalable, and efficient electronic product development.',
-                url: 'https://www.whizzsystems.com/services/engineering-design/system-schematic-services',
-              },
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
+              '@graph': [
                 {
-                  '@type': 'ListItem',
-                  position: 1,
-                  name: 'Home',
-                  item: 'https://www.whizzsystems.com/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 2,
-                  name: 'Services',
-                  item: 'https://www.whizzsystems.com/services/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 3,
-                  name: 'Engineering & Design',
-                  item: 'https://www.whizzsystems.com/services/engineering-design/',
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 4,
-                  name: 'System Schematic Services',
-                  item: 'https://www.whizzsystems.com/services/engineering-design/system-schematic-services',
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              '@id': 'https://www.whizzsystems.com/services/engineering-design/system-schematic-services#faq',
-              url: 'https://www.whizzsystems.com/services/engineering-design/system-schematic-services',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What is a System Schematic in Electronic Product Development?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'A system schematic is the foundation of an electronic product, defining how components, interfaces, power distribution, and signal paths work together before PCB layout begins. A well-developed schematic establishes a clear design intent, enables cross-functional collaboration, and helps ensure that downstream activities—including PCB layout, simulation, manufacturing, and testing—are built on a reliable engineering foundation.',
+                  '@type': 'WebPage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/system-schematic-services#webpage',
+                  url: 'https://www.whizzsystems.com/services/engineering-design/system-schematic-services',
+                  name: 'System Architecture & Schematic Design Services',
+                  description:
+                    'System architecture, block-level design, component selection and schematic capture for complex electronic hardware programmes.',
+                  inLanguage: 'en-US',
+                  isPartOf: {
+                    '@id': 'https://www.whizzsystems.com/#website',
+                  },
+                  publisher: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  primaryImageOfPage: {
+                    '@type': 'ImageObject',
+                    url: 'https://www.whizzsystems.com/assets/services/engg&design/system-design/hero.png',
                   },
                 },
                 {
-                  '@type': 'Question',
-                  name: 'Why is Schematic Design Important before PCB Layout?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'PCB layout depends on the accuracy and completeness of the system schematic. Decisions made during schematic development influence signal integrity, power delivery, manufacturability, and overall system performance. Investing time in a robust schematic reduces design revisions, minimizes engineering risks, and creates a smoother transition into layout and manufacturing.',
+                  '@type': 'BreadcrumbList',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/system-schematic-services#breadcrumb',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.whizzsystems.com/',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Services',
+                      item: 'https://www.whizzsystems.com/services',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'Engineering & Design',
+                      item: 'https://www.whizzsystems.com/services/engineering-design',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 4,
+                      name: 'System Design & Schematics',
+                      item: 'https://www.whizzsystems.com/services/engineering-design/system-schematic-services',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'Service',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/system-schematic-services#service',
+                  name: 'System Architecture & Schematic Design Services',
+                  serviceType: 'System Design & Schematics',
+                  description:
+                    'System architecture, block-level design, component selection and schematic capture for complex electronic hardware programmes.',
+                  provider: {
+                    '@id': 'https://www.whizzsystems.com/#organization',
+                  },
+                  areaServed: {
+                    '@type': 'Place',
+                    name: 'Worldwide',
+                  },
+                  audience: {
+                    '@type': 'BusinessAudience',
+                    audienceType: 'Hardware and electronics manufacturers',
                   },
                 },
                 {
-                  '@type': 'Question',
-                  name: 'How Does Schematic Review Reduce Hardware Design Risks?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Schematic reviews allow engineering teams to identify potential issues before physical design begins. Reviewing component selection, interface connectivity, power architecture, and design requirements early helps prevent costly PCB redesigns, improves first-pass success, and reduces project timelines by resolving problems before fabrication.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What Should Be Included In A High-Quality Electronic Schematic?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'A high-quality schematic clearly defines functional blocks, component relationships, power distribution, signal connectivity, design constraints, and interface requirements. It should also support downstream engineering activities such as PCB layout, simulation, firmware development, testing, and manufacturing, ensuring every stakeholder works from a consistent design reference.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does Schematic Design Improve Product Manufacturability?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Good schematic design considers manufacturing requirements from the earliest stages of development. Selecting appropriate components, planning for testability, and coordinating with PCB layout and manufacturing teams help reduce production challenges, improve assembly efficiency, and accelerate the path from concept to production.',
-                  },
+                  '@type': 'FAQPage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/system-schematic-services#faq',
+                  url: 'https://www.whizzsystems.com/services/engineering-design/system-schematic-services',
+                  mainEntity: [
+                    {
+                      '@type': 'Question',
+                      name: 'What happens in a system architecture engagement?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'We work from your requirements to a block-level architecture: what processing is needed, how blocks interconnect, which interfaces and standards apply, and what the power and thermal budgets are. The output is an architecture document and a trade study explaining why each major decision was made.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Do you consider component availability during design?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes, from the start. Lifecycle status, lead time and second-source availability are assessed at selection rather than discovered at procurement, which is where most schedule risk originates.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Which schematic tools do you use?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: "Cadence Allegro and Altium Designer, matching the customer's environment where required so the design package remains usable in house.",
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Can you review an architecture we have already defined?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. An independent architecture review before layout begins is one of the cheapest risk reductions available on a hardware programme.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'How is the design package handed over?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'You receive the schematic source, a released BOM with approved vendor list, the architecture document and the design review record. The package is yours.',
+                      },
+                    },
+                  ],
                 },
               ],
             },
@@ -131,85 +171,153 @@ export const routes: Routes = [
           import('./fpga/fpga.component').then((m) => m.FpgaComponent),
         title: 'FPGA Design & Development Services | Whizz Systems',
         data: {
-          description: `Whizz Systems offers FPGA design and development services including architecture, RTL coding, verification, system integration, and support for major FPGA families.`,
+          description:
+            'FPGA architecture, RTL design, verification and board integration for AMD Versal, Xilinx and Intel devices — designed and built in house.',
+          og: {
+            type: 'website',
+            site_name: 'Whizz Systems',
+            title: 'FPGA Design & Development Services | Whizz Systems',
+            description:
+              'FPGA architecture, RTL design, verification and board integration for AMD Versal, Xilinx and Intel devices — designed and built in house.',
+            url: 'https://www.whizzsystems.com/services/engineering-design/fpga-design-services',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/fpga-design-services/hero.png',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt':
+              'AMD Versal FPGA on a Whizz Systems evaluation board',
+            locale: 'en_US',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'FPGA Design & Development Services | Whizz Systems',
+            description:
+              'FPGA architecture, RTL design, verification and board integration for AMD Versal, Xilinx and Intel devices — designed and built in house.',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/fpga-design-services/hero.png',
+            'image:alt':
+              'AMD Versal FPGA on a Whizz Systems evaluation board',
+          },
           schema: [
             {
-              '@context': 'https://schema.org',
-              '@type': 'Service',
-              serviceType: 'FPGA Design and Development Services',
-              provider: {
-                '@type': 'Organization',
-                name: 'Whizz Systems',
-                url: 'https://www.whizzsystems.com/',
-                logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                sameAs: [
-                  'https://www.linkedin.com/company/whizz-systems/',
-                  'https://www.youtube.com/@WhizzSystemsCA',
-                ],
-              },
-              url: 'https://www.whizzsystems.com/services/engineering-design/fpga-design-services',
-              description:
-                'Whizz Systems provides FPGA design and development services including architecture design, RTL coding, verification, system integration, IP connectivity, and support for major FPGA families.',
-              areaServed: {
-                '@type': 'Place',
-                name: 'Worldwide',
-              },
-              offers: {
-                '@type': 'Offer',
-                name: 'FPGA Engineering Services',
-                description:
-                  'Comprehensive FPGA engineering services covering design, development, testing, and production.',
-                url: 'https://www.whizzsystems.com/services/engineering-design/fpga-design-services',
-              },
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              '@id': 'https://www.whizzsystems.com/services/engineering-design/fpga-design-services#faq',
-              url: 'https://www.whizzsystems.com/services/engineering-design/fpga-design-services',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What Is FPGA Design And When Should It Be Used?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'FPGA design involves developing programmable hardware that can be customized to meet complex processing, connectivity, and control requirements. FPGAs are ideal for applications requiring high performance, parallel processing, rapid development, or evolving functionality, making them well suited for AI, networking, telecommunications, aerospace, defense, and embedded computing applications.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does FPGA Development Accelerate Hardware Innovation?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Unlike fixed-function hardware, FPGAs allow engineers to rapidly prototype, validate, and refine hardware designs without manufacturing custom silicon. This flexibility shortens development cycles, enables faster iteration, and allows software and hardware development to progress in parallel, accelerating overall product innovation.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'When Should Engineers Choose an FPGA Instead of an ASIC?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'FPGAs are often the preferred choice when flexibility, faster time-to-market, lower development costs, or design updates are important. They allow engineers to validate system architectures and adapt functionality throughout development, while ASICs are generally better suited for high-volume production where maximum performance and unit cost optimization are the primary objectives.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What Industries Benefit Most From FPGA-Based Solutions?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'FPGA technology supports a wide range of industries, including AI compute, semiconductor testing, telecommunications, 5G infrastructure, medical devices, aerospace, defense, cloud computing, and industrial automation. These applications benefit from the high-speed processing, adaptability, and performance that programmable logic provides.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does FPGA Prototyping Reduce Development Risk?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'FPGA prototyping enables engineering teams to verify functionality, validate interfaces, optimize performance, and identify design issues before committing to production hardware. Early validation reduces redesign costs, improves product quality, and provides greater confidence before transitioning into manufacturing.'
-                  }
-                }
-              ]
-            }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.whizzsystems.com/services/engineering-design/fpga-design-services#webpage",
+      "url": "https://www.whizzsystems.com/services/engineering-design/fpga-design-services",
+      "name": "FPGA Design & Development Services | Whizz Systems",
+      "description": "FPGA architecture, RTL design, verification and board integration for AMD Versal, Xilinx and Intel devices — designed and built in house.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://www.whizzsystems.com/#website"
+      },
+      "publisher": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.whizzsystems.com/assets/services/engg&design/fpga-design-services/hero.png"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.whizzsystems.com/services/engineering-design/fpga-design-services#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.whizzsystems.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.whizzsystems.com/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Engineering & Design",
+          "item": "https://www.whizzsystems.com/services/engineering-design"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "FPGA Design",
+          "item": "https://www.whizzsystems.com/services/engineering-design/fpga-design-services"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.whizzsystems.com/services/engineering-design/fpga-design-services#service",
+      "name": "FPGA Design & Development Services",
+      "serviceType": "FPGA Design",
+      "description": "FPGA architecture, RTL design, verification and board integration for AMD Versal, Xilinx and Intel devices — designed and built in house.",
+      "provider": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Worldwide"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Hardware and electronics manufacturers"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.whizzsystems.com/services/engineering-design/fpga-design-services#faq",
+      "url": "https://www.whizzsystems.com/services/engineering-design/fpga-design-services",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you design the FPGA logic, the board, or both?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both. Whizz Systems designs the FPGA implementation and the hardware it runs on, and manufactures the board in house. That combination is unusual and it removes the interface between two suppliers where most integration problems occur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which FPGA families do you work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Primarily AMD devices including Versal Premium and Prime, Virtex, Kintex and Zynq, and Intel Agilex and Stratix families."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you build a custom FPGA development board?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We design and manufacture custom FPGA platforms, and we also offer a range of existing development and characterisation boards that can be modified rather than designed from scratch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the hardest part of a high-density FPGA board design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Power delivery and transceiver channel design. A large device can draw hundreds of amps across many rails with tight sequencing, and the transceiver channels have almost no loss budget to spare. Both need simulation before layout, not after."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide verification as a separate service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Verification, timing closure and hardware bring-up are each available as standalone engagements on a design produced elsewhere."
+          }
+        }
+      ]
+    }
+  ]
+}
+
           ],
         },
       },
@@ -365,7 +473,7 @@ export const routes: Routes = [
                   ],
                 },
               ],
-            }
+            },
           ],
         },
       },
@@ -375,135 +483,153 @@ export const routes: Routes = [
           import('./modeling/modeling.component').then(
             (m) => m.ModelingComponent,
           ),
-        title: 'Mechanical 3D Modeling & Design Services | Whizz Systems',
+        title: 'Mechanical Design & 3D Modelling Services',
         data: {
-          description: `Mechanical 3D modeling and design services, including 3D parts modeling, FEA, and 2D assembly drawings. Optimize performance, manufacturability, and reliability with end-to-end support.`,
+          description:
+            'Enclosure design, thermal-mechanical integration, tolerance analysis and manufacturing drawings for electronic products.',
+          og: {
+            type: 'website',
+            site_name: 'Whizz Systems',
+            title: 'Mechanical Design & 3D Modelling Services',
+            description:
+              'Enclosure design, thermal-mechanical integration, tolerance analysis and manufacturing drawings for electronic products.',
+            url: 'https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/3d-modeling-mechanical-design/hero.png',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt': '3D model of an electronics enclosure assembly',
+            locale: 'en_US',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'Mechanical Design & 3D Modelling Services',
+            description:
+              'Enclosure design, thermal-mechanical integration, tolerance analysis and manufacturing drawings for electronic products.',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/3d-modeling-mechanical-design/hero.png',
+            'image:alt': '3D model of an electronics enclosure assembly',
+          },
           schema: [
             {
-              '@context': 'https://schema.org',
-              '@graph': [
-                {
-                  '@type': 'Organization',
-                  name: 'Whizz Systems',
-                  url: 'https://www.whizzsystems.com/',
-                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                  sameAs: [
-                    'https://www.linkedin.com/company/whizz-systems/',
-                    'https://www.youtube.com/@WhizzSystemsCA',
-                  ],
-                  address: {
-                    '@type': 'PostalAddress',
-                    streetAddress: '3240 Scott Blvd',
-                    addressLocality: 'Santa Clara',
-                    addressRegion: 'CA',
-                    postalCode: '95054',
-                    addressCountry: 'US',
-                  },
-                },
-                {
-                  '@type': 'BreadcrumbList',
-                  itemListElement: [
-                    {
-                      '@type': 'ListItem',
-                      position: 1,
-                      name: 'Home',
-                      item: 'https://www.whizzsystems.com/',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 2,
-                      name: 'Services',
-                      item: 'https://www.whizzsystems.com/services/',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 3,
-                      name: 'Engineering & Design',
-                      item: 'https://www.whizzsystems.com/services/engineering-design/',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 4,
-                      name: '3D Modeling & Mechanical Design',
-                      item: 'https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design',
-                    },
-                  ],
-                },
-                {
-                  '@type': 'Service',
-                  name: 'Mechanical 3D Modeling & Mechanical Design Services',
-                  url: 'https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design',
-                  description:
-                    'Whizz Systems provides 3D mechanical modeling and design services, including electronics packaging, finite element analysis (FEA), and 2D assembly drawings for optimized performance and manufacturability.',
-                  provider: {
-                    '@type': 'Organization',
-                    name: 'Whizz Systems',
-                    url: 'https://www.whizzsystems.com/',
-                  },
-                  serviceType: [
-                    'Mechanical 3D Modeling Services',
-                    'Mechanical 3D Parts Modeling Services',
-                    '3D Mechanical Modeling Services',
-                    'Mechanical 3D Design Services',
-                    'Electronics Packaging Mechanical Design',
-                    'Hardware 3D Modeling',
-                    '2D Assembly Drawings',
-                  ],
-                  areaServed: {
-                    '@type': 'Place',
-                    name: 'Global',
-                  },
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              '@id': 'https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design#faq',
-              url: 'https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'Why Is Mechanical Design Important For Electronic Products?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Mechanical design ensures that electronic systems are structurally sound, manufacturable, and optimized for their intended operating environment. It considers enclosure design, component placement, thermal requirements, manufacturability, and system integration to create products that not only perform reliably but can also be efficiently assembled and deployed. Integrating mechanical engineering early in the design process helps reduce costly redesigns and improves overall product quality.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does 3d Modeling Improve Hardware Development?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: '3D modeling enables engineering teams to visualize product assemblies, verify mechanical fit, evaluate clearances, and identify potential integration issues before prototypes are built. By validating designs digitally, organizations can reduce development time, improve collaboration across engineering disciplines, and accelerate the transition from concept to manufacturing.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What Factors Influence Enclosure Design For Electronics?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Electronic enclosure design must balance structural integrity, thermal management, manufacturability, accessibility, and environmental protection. Factors such as component dimensions, airflow, connector placement, serviceability, regulatory requirements, and mechanical constraints all influence enclosure design. Considering these requirements early helps ensure the final product meets both performance and manufacturing objectives.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does Mechanical Engineering Support Manufacturability?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Mechanical engineering improves manufacturability by designing products that can be assembled efficiently, manufactured consistently, and maintained throughout their lifecycle. Optimizing part geometry, material selection, assembly methods, and production tolerances helps reduce manufacturing complexity, lower production costs, and improve product reliability.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Why Should Electrical And Mechanical Teams Collaborate Early?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Successful hardware development depends on close collaboration between electrical and mechanical engineering teams. Coordinating enclosure design, PCB placement, connector locations, thermal requirements, and manufacturing constraints early in development helps prevent integration issues, reduce redesigns, and accelerate product delivery while ensuring optimal system performance.'
-                  }
-                }
-              ]
-            }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design#webpage",
+      "url": "https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design",
+      "name": "Mechanical Design & 3D Modelling Services",
+      "description": "Enclosure design, thermal-mechanical integration, tolerance analysis and manufacturing drawings for electronic products.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://www.whizzsystems.com/#website"
+      },
+      "publisher": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.whizzsystems.com/assets/services/engg&design/3d-modeling-mechanical-design/hero.png"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.whizzsystems.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.whizzsystems.com/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Engineering & Design",
+          "item": "https://www.whizzsystems.com/services/engineering-design"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Mechanical Design",
+          "item": "https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design#service",
+      "name": "Mechanical Design & 3D Modelling Services",
+      "serviceType": "Mechanical Design",
+      "description": "Enclosure design, thermal-mechanical integration, tolerance analysis and manufacturing drawings for electronic products.",
+      "provider": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Worldwide"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Hardware and electronics manufacturers"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design#faq",
+      "url": "https://www.whizzsystems.com/services/engineering-design/3d-modeling-mechanical-design",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you design enclosures as well as the electronics inside them?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Enclosure design, thermal-mechanical integration and the manufacturing drawing package are all handled in house, alongside the board design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What CAD tools do you use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SolidWorks for mechanical design, with direct exchange of board outlines and component heights between the mechanical and PCB environments so that clashes are found in CAD rather than at first assembly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you perform tolerance stack-up analysis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Tolerance stack-up is checked before drawings are released, particularly on connector alignment, thermal interface compression and any press-fit or board-to-board interface."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you design for a specific manufacturing process?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Designs are developed for the intended process — sheet metal, CNC machining, die casting or injection moulding — because the process constrains geometry far more than most requirements documents acknowledge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you produce the manufacturing drawing package?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You receive fully dimensioned drawings with GD&T, material and finish specifications, and an assembly drawing suitable for quoting and production."
+          }
+        }
+      ]
+    }
+  ]
+}
+
           ],
         },
       },
@@ -546,7 +672,8 @@ export const routes: Routes = [
               '@graph': [
                 {
                   '@type': 'WebPage',
-                  '@id': 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services#webpage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services#webpage',
                   url: 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services',
                   name: 'Signal Integrity Simulation Services | Whizz Systems',
                   description:
@@ -563,7 +690,8 @@ export const routes: Routes = [
                 },
                 {
                   '@type': 'BreadcrumbList',
-                  '@id': 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services#breadcrumb',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services#breadcrumb',
                   itemListElement: [
                     {
                       '@type': 'ListItem',
@@ -593,7 +721,8 @@ export const routes: Routes = [
                 },
                 {
                   '@type': 'Service',
-                  '@id': 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services#service',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services#service',
                   name: 'Signal Integrity Simulation Services',
                   serviceType: 'Signal Integrity',
                   description:
@@ -609,7 +738,8 @@ export const routes: Routes = [
                 },
                 {
                   '@type': 'FAQPage',
-                  '@id': 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services#faq',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services#faq',
                   url: 'https://www.whizzsystems.com/services/engineering-design/signal-integrity-simulation-services',
                   mainEntity: [
                     {
@@ -655,7 +785,7 @@ export const routes: Routes = [
                   ],
                 },
               ],
-            }
+            },
           ],
         },
       },
@@ -699,7 +829,8 @@ export const routes: Routes = [
               '@graph': [
                 {
                   '@type': 'WebPage',
-                  '@id': 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation#webpage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation#webpage',
                   url: 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation',
                   name: 'Power Delivery Network (PDN) Simulation Services',
                   description:
@@ -716,7 +847,8 @@ export const routes: Routes = [
                 },
                 {
                   '@type': 'BreadcrumbList',
-                  '@id': 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation#breadcrumb',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation#breadcrumb',
                   itemListElement: [
                     {
                       '@type': 'ListItem',
@@ -746,7 +878,8 @@ export const routes: Routes = [
                 },
                 {
                   '@type': 'Service',
-                  '@id': 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation#service',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation#service',
                   name: 'Power Delivery Network (PDN) Simulation Services',
                   serviceType: 'PDN Simulation',
                   description:
@@ -762,7 +895,8 @@ export const routes: Routes = [
                 },
                 {
                   '@type': 'FAQPage',
-                  '@id': 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation#faq',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation#faq',
                   url: 'https://www.whizzsystems.com/services/engineering-design/power-delivery-network-simulation',
                   mainEntity: [
                     {
@@ -808,7 +942,7 @@ export const routes: Routes = [
                   ],
                 },
               ],
-            }
+            },
           ],
         },
       },
@@ -833,8 +967,7 @@ export const routes: Routes = [
               'https://www.whizzsystems.com/assets/services/engg&design/thermal-management-solutions/hero.png',
             'image:width': '1200',
             'image:height': '630',
-            'image:alt':
-              'CFD thermal simulation of a high-power circuit board',
+            'image:alt': 'CFD thermal simulation of a high-power circuit board',
             locale: 'en_US',
           },
           twitter: {
@@ -844,8 +977,7 @@ export const routes: Routes = [
               'Thermal modelling and CFD analysis for high-power electronics: heatsink design, airflow, cold plates and liquid cooling for AI hardware.',
             image:
               'https://www.whizzsystems.com/assets/services/engg&design/thermal-management-solutions/hero.png',
-            'image:alt':
-              'CFD thermal simulation of a high-power circuit board',
+            'image:alt': 'CFD thermal simulation of a high-power circuit board',
           },
           schema: [
             {
@@ -853,7 +985,8 @@ export const routes: Routes = [
               '@graph': [
                 {
                   '@type': 'WebPage',
-                  '@id': 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions#webpage',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions#webpage',
                   url: 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions',
                   name: 'Thermal Simulation & CFD Analysis Services | Whizz Systems',
                   description:
@@ -870,7 +1003,8 @@ export const routes: Routes = [
                 },
                 {
                   '@type': 'BreadcrumbList',
-                  '@id': 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions#breadcrumb',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions#breadcrumb',
                   itemListElement: [
                     {
                       '@type': 'ListItem',
@@ -900,7 +1034,8 @@ export const routes: Routes = [
                 },
                 {
                   '@type': 'Service',
-                  '@id': 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions#service',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions#service',
                   name: 'Thermal Management & CFD Simulation Services',
                   serviceType: 'Thermal Management',
                   description:
@@ -916,7 +1051,8 @@ export const routes: Routes = [
                 },
                 {
                   '@type': 'FAQPage',
-                  '@id': 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions#faq',
+                  '@id':
+                    'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions#faq',
                   url: 'https://www.whizzsystems.com/services/engineering-design/thermal-management-solutions',
                   mainEntity: [
                     {
@@ -962,7 +1098,7 @@ export const routes: Routes = [
                   ],
                 },
               ],
-            }
+            },
           ],
         },
       },
@@ -972,136 +1108,155 @@ export const routes: Routes = [
           import('./firmware-software-development/firmware-software-development.component').then(
             (m) => m.FirmwareSoftwareDevelopmentComponent,
           ),
-        title: 'Firmware & Software Development Services | Whizz Systems',
+        title: 'Embedded Firmware & Board Bring-Up Software',
         data: {
-          description: `Whizz Systems provides firmware and software development services, including bare-metal firmware, embedded systems, device drivers, IoT connectivity, and software-firmware integration. Trusted partner for end-to-end product development.`,
+          description:
+            'Board support packages, device drivers, bootloaders, diagnostics and production test firmware for hardware we design and build.',
+          og: {
+            type: 'website',
+            site_name: 'Whizz Systems',
+            title: 'Embedded Firmware & Board Bring-Up Software',
+            description:
+              'Board support packages, device drivers, bootloaders, diagnostics and production test firmware for hardware we design and build.',
+            url: 'https://www.whizzsystems.com/services/engineering-design/firmware-software-development',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/firmware-software/hero.png',
+            'image:width': '1200',
+            'image:height': '630',
+            'image:alt':
+              'Engineer debugging bootloader firmware on a development board',
+            locale: 'en_US',
+          },
+          twitter: {
+            card: 'summary_large_image',
+            title: 'Embedded Firmware & Board Bring-Up Software',
+            description:
+              'Board support packages, device drivers, bootloaders, diagnostics and production test firmware for hardware we design and build.',
+            image:
+              'https://www.whizzsystems.com/assets/services/engg&design/firmware-software/hero.png',
+            'image:alt':
+              'Engineer debugging bootloader firmware on a development board',
+          },
           schema: [
             {
-              '@context': 'https://schema.org',
-              '@graph': [
-                {
-                  '@type': 'Organization',
-                  name: 'Whizz Systems',
-                  url: 'https://www.whizzsystems.com/',
-                  logo: 'https://www.whizzsystems.com/assets/header/teal-logo.png',
-                  sameAs: [
-                    'https://www.linkedin.com/company/whizz-systems/',
-                    'https://www.youtube.com/@WhizzSystemsCA',
-                  ],
-                  address: {
-                    '@type': 'PostalAddress',
-                    streetAddress: '3240 Scott Blvd',
-                    addressLocality: 'Santa Clara',
-                    addressRegion: 'CA',
-                    postalCode: '95054',
-                    addressCountry: 'US',
-                  },
-                },
-                {
-                  '@type': 'BreadcrumbList',
-                  itemListElement: [
-                    {
-                      '@type': 'ListItem',
-                      position: 1,
-                      name: 'Home',
-                      item: 'https://www.whizzsystems.com/',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 2,
-                      name: 'Services',
-                      item: 'https://www.whizzsystems.com/services/',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 3,
-                      name: 'Engineering & Design',
-                      item: 'https://www.whizzsystems.com/services/engineering-design/',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 4,
-                      name: 'Firmware & Software Development',
-                      item: 'https://www.whizzsystems.com/services/engineering-design/firmware-software-development',
-                    },
-                  ],
-                },
-                {
-                  '@type': 'Service',
-                  name: 'Firmware & Embedded Software Development Services',
-                  url: 'https://www.whizzsystems.com/services/engineering-design/firmware-software-development',
-                  description:
-                    'Whizz Systems provides firmware and software development services, including embedded systems, bare-metal firmware, kernel and driver development, IoT connectivity, UI applications, and system integration.',
-                  provider: {
-                    '@type': 'Organization',
-                    name: 'Whizz Systems',
-                    url: 'https://www.whizzsystems.com/',
-                  },
-                  serviceType: [
-                    'Firmware Design Service',
-                    'Firmware Testing Services',
-                    'Firmware Consultancy',
-                    'Embedded Firmware Design Services',
-                    'Embedded Systems Development',
-                    'Bare-Metal Firmware Development',
-                    'Firmware & Embedded Software Development',
-                    'Firmware and Software Solutions',
-                  ],
-                  areaServed: {
-                    '@type': 'Place',
-                    name: 'Global',
-                  },
-                },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              '@id': 'https://www.whizzsystems.com/services/engineering-design/firmware-software-development#faq',
-              url: 'https://www.whizzsystems.com/services/engineering-design/firmware-software-development',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'What Is Embedded Firmware Development?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Embedded firmware development creates the low-level software that controls and manages electronic hardware. Firmware enables processors, microcontrollers, FPGAs, and peripheral devices to communicate, initialize system resources, and execute application-specific functions that allow hardware to operate reliably.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does Firmware Interact With Hardware Components?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Firmware acts as the bridge between hardware and higher-level software by controlling processors, memory, communication interfaces, sensors, and peripheral devices. Close integration between firmware and hardware ensures reliable system operation, efficient resource utilization, and optimal overall performance throughout the product lifecycle.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Why Is Firmware Critical For Embedded Electronic Systems?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Modern electronic products rely on firmware to manage device initialization, communication protocols, hardware control, diagnostics, and system monitoring. Well-designed firmware improves product stability, enables new functionality, simplifies updates, and supports long-term reliability in complex embedded systems.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What Should Be Considered During Firmware Architecture Design?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Firmware architecture should be designed with scalability, maintainability, security, performance, and hardware compatibility in mind. Early collaboration between firmware and hardware engineering teams helps ensure efficient system integration, reduces development challenges, and supports future product enhancements.'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How Does Firmware Validation Improve Product Reliability?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Firmware validation verifies that software performs correctly under expected operating conditions while interacting reliably with hardware. Comprehensive testing helps identify functional issues, improve system stability, reduce deployment risks, and ensure products perform consistently throughout their operational lifecycle.'
-                  }
-                }
-              ]
-            }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.whizzsystems.com/services/engineering-design/firmware-software-development#webpage",
+      "url": "https://www.whizzsystems.com/services/engineering-design/firmware-software-development",
+      "name": "Embedded Firmware & Board Bring-Up Software",
+      "description": "Board support packages, device drivers, bootloaders, diagnostics and production test firmware for hardware we design and build.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://www.whizzsystems.com/#website"
+      },
+      "publisher": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.whizzsystems.com/assets/services/engg&design/firmware-software/hero.png"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.whizzsystems.com/services/engineering-design/firmware-software-development#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.whizzsystems.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.whizzsystems.com/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Engineering & Design",
+          "item": "https://www.whizzsystems.com/services/engineering-design"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Firmware & Software",
+          "item": "https://www.whizzsystems.com/services/engineering-design/firmware-software-development"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.whizzsystems.com/services/engineering-design/firmware-software-development#service",
+      "name": "Embedded Firmware & Low-Level Software Development",
+      "serviceType": "Firmware & Software",
+      "description": "Board support packages, device drivers, bootloaders, diagnostics and production test firmware for hardware we design and build.",
+      "provider": {
+        "@id": "https://www.whizzsystems.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Worldwide"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Hardware and electronics manufacturers"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.whizzsystems.com/services/engineering-design/firmware-software-development#faq",
+      "url": "https://www.whizzsystems.com/services/engineering-design/firmware-software-development",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of firmware does Whizz Systems write?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Low-level, hardware-adjacent firmware: board support packages, bootloaders, device drivers, power sequencing, diagnostics and production test software. We do not build application software."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does firmware belong with the hardware team?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bring-up problems are rarely purely hardware or purely software. When the same team owns the schematic, the layout and the boot code, a failure that looks like a driver bug and is actually a power sequencing error gets found in hours rather than weeks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you develop production test firmware?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Production test firmware exercises each interface, records results against limits, and handles programming, calibration and serialisation on the line. It is developed alongside the hardware, not after it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which operating systems and environments do you support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Embedded Linux including Yocto-based builds, common real-time operating systems, and bare-metal implementations where determinism or footprint requires it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you take over firmware for an existing product?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, provided the source and toolchain are available. We start with a build and boot reproduction before making any changes."
+          }
+        }
+      ]
+    }
+  ]
+}
+
           ],
         },
       },

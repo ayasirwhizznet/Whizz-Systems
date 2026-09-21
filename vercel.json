@@ -18,8 +18,8 @@
       "permanent": true
     },
     {
-      "source": "/news-&-insights/whitepaper-invensify",
-      "destination": "/insights/whitepaper-invensify",
+      "source": "/news-&-insights/invensify-medical-device",
+      "destination": "/insights/invensify-medical-device",
       "permanent": true
     },
     {
@@ -1148,7 +1148,7 @@
     },
     {
       "source": "/5g-design/",
-      "destination": "/insights/whitepaper-invensify",
+      "destination": "/insights/invensify-medical-device",
       "permanent": true
     },
     {

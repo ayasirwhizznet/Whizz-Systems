@@ -75,7 +75,7 @@ export const blogList: BlogItem[] = [
         date: 'December 12, 2024',
         tags: ['Case Study', 'Medical Devices'],
         title: 'Engineering Smart Medical Devices: The Invensify Case Study',
-        link: '/insights/whitepaper-invensify',
+        link: '/insights/invensify-medical-device',
     },
     {
         imgUrl: 'assets/news/blogs/product-manufacturing/hero.png',

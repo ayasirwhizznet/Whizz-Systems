@@ -84,6 +84,7 @@ export class AppComponent implements OnInit {
     const keywords = deepest.snapshot.data['keywords'];
     const schema = deepest.snapshot.data['schema'];
     const og = deepest.snapshot.data['og'];
+    const article = deepest.snapshot.data['article'];
     const twitter = deepest.snapshot.data['twitter'];
 
     if (title) {
@@ -102,6 +103,15 @@ export class AppComponent implements OnInit {
       Object.entries(og).forEach(([key, value]) => {
         this.metaService.updateTag({
           property: `og:${key}`,
+          content: value as string,
+        });
+      });
+    }
+
+    if (article) {
+      Object.entries(article).forEach(([key, value]) => {
+        this.metaService.updateTag({
+          property: `article:${key}`,
           content: value as string,
         });
       });

@@ -15,11 +15,10 @@ export const routes: Routes = [
                     import('../case-studies/amd-vpk180/amd-vpk180.component').then(
                         (m) => m.AmdVpk180Component
                     ),
-                title:
-                    'AMD VPK180 Evaluation Board | Versal Premium Adaptive SoC | Whizz Systems',
+                title: 'AMD VPK180 Versal Premium Evaluation Board',
                 data: {
                     description:
-                        'Explore the AMD VPK180 evaluation board designed by Whizz Systems, featuring the Versal Premium VP1802 Adaptive SoC for high-performance FPGA applications.',
+                        'How Whizz Systems designed and built the AMD VPK180 evaluation platform for Versal Premium, supporting 112G PAM4, DDR4 and QSFP-DD.',
                     keywords:
                         'AMD VPK180, Versal Premium, Adaptive SoC, FPGA Evaluation Board, Whizz Systems, VP1802, High-Speed Design, SerDes, GTY Transceivers',
                     schema: [
@@ -46,9 +45,9 @@ export const routes: Routes = [
                                 },
                             },
                             mainEntityOfPage:
-                                'https://www.whizzsystems.com/insights/amd-vpk180',
+                                'https://www.whizzsystems.com/case-studies/amd-vpk180',
                             datePublished: '2025-12-06',
-                            dateModified: '2025-12-06',
+                            dateModified: '2026-08-17',
                         },
                         {
                             '@context': 'https://schema.org',
@@ -63,14 +62,14 @@ export const routes: Routes = [
                                 {
                                     '@type': 'ListItem',
                                     position: 2,
-                                    name: 'News & Insights',
-                                    item: 'https://www.whizzsystems.com/insights/',
+                                    name: 'Case Studies',
+                                    item: 'https://www.whizzsystems.com/case-studies',
                                 },
                                 {
                                     '@type': 'ListItem',
                                     position: 3,
                                     name: 'AMD VPK180 Evaluation Board',
-                                    item: 'https://www.whizzsystems.com/insights/amd-vpk180',
+                                    item: 'https://www.whizzsystems.com/case-studies/amd-vpk180',
                                 },
                             ],
                         },
@@ -107,29 +106,73 @@ export const routes: Routes = [
                     ],
                     og: {
                         type: 'article',
-                        title:
-                            'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
-                        description:
-                            'A versatile evaluation board engineered by Whizz Systems showcasing AMD Versal™ Premium capabilities for next-gen FPGA development.',
-                        url: 'https://www.whizzsystems.com/insights/amd-vpk180',
                         site_name: 'Whizz Systems',
+                        title: 'AMD VPK180 Versal Premium Evaluation Board',
+                        description:
+                            'How Whizz Systems designed and built the AMD VPK180 evaluation platform for Versal Premium, supporting 112G PAM4, DDR4 and QSFP-DD.',
+                        url: 'https://www.whizzsystems.com/case-studies/amd-vpk180',
                         image:
                             'https://www.whizzsystems.com/assets/news/blogs/amd-vpk180/hero.png',
-                        image_alt: 'AMD VPK180 Evaluation Board by Whizz Systems',
-                        publisher: 'https://www.linkedin.com/company/whizz-systems/',
-                        section: 'FPGA Development',
-                        tag: 'AMD, Versal Premium, FPGA, Evaluation Board, Hardware Design',
+                        'image:width': '1200',
+                        'image:height': '630',
+                        'image:alt':
+                            'AMD VPK180 Versal Premium evaluation board designed by Whizz Systems',
+                        locale: 'en_US',
+                    },
+                    article: {
+                        published_time: '2025-12-06',
+                        modified_time: '2026-08-17',
                     },
                     twitter: {
                         card: 'summary_large_image',
-                        title:
-                            'AMD VPK180 Evaluation Board — Versal Premium Adaptive SoC Platform',
+                        title: 'AMD VPK180 Versal Premium Evaluation Board',
                         description:
-                            'Whizz Systems delivers a powerful evaluation board for AMD Versal™ Premium FPGA development.',
+                            'How Whizz Systems designed and built the AMD VPK180 evaluation platform for Versal Premium, supporting 112G PAM4, DDR4 and QSFP-DD.',
                         image:
                             'https://www.whizzsystems.com/assets/news/blogs/amd-vpk180/hero.png',
-                        image_alt: 'AMD VPK180 Evaluation Board by Whizz Systems',
-                        site: '@WhizzSystems',
+                        'image:alt':
+                            'AMD VPK180 Versal Premium evaluation board designed by Whizz Systems',
+                    },
+                },
+            },
+            {
+                path: 'invensify-medical-device',
+                loadComponent: () =>
+                    import('../news-blogs/blogs/invensify/invensify.component').then(
+                        (m) => m.InvensifyComponent
+                    ),
+                title: 'Medical Device Case Study: Invensify | Whizz Systems',
+                data: {
+                    description:
+                        'How Whizz Systems designed and manufactured a smart, reliable medical refrigeration system for Invensify, from concept to production.',
+                    og: {
+                        type: 'article',
+                        site_name: 'Whizz Systems',
+                        title: 'Medical Device Case Study: Invensify | Whizz Systems',
+                        description:
+                            'How Whizz Systems designed and manufactured a smart, reliable medical refrigeration system for Invensify, from concept to production.',
+                        url: 'https://www.whizzsystems.com/case-studies/invensify-medical-device',
+                        image:
+                            'https://www.whizzsystems.com/assets/news/blogs/invensify/hero.png',
+                        'image:width': '1200',
+                        'image:height': '630',
+                        'image:alt':
+                            'Invensify smart medical refrigeration system',
+                        locale: 'en_US',
+                    },
+                    article: {
+                        published_time: '2024-12-12',
+                        modified_time: '2026-08-17',
+                    },
+                    twitter: {
+                        card: 'summary_large_image',
+                        title: 'Medical Device Case Study: Invensify | Whizz Systems',
+                        description:
+                            'How Whizz Systems designed and manufactured a smart, reliable medical refrigeration system for Invensify, from concept to production.',
+                        image:
+                            'https://www.whizzsystems.com/assets/news/blogs/invensify/hero.png',
+                        'image:alt':
+                            'Invensify smart medical refrigeration system',
                     },
                 },
             },

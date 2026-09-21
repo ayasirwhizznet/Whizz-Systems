@@ -14,7 +14,7 @@
 
 Technical documentation, design optimizations, and engineering assets for users and engineers.
 
-- [Whitepaper: Invensify Optimization](https://www.whizzsystems.com/insights/whitepaper-invensify)
+- [Whitepaper: Invensify Optimization](https://www.whizzsystems.com/insights/invensify-medical-device)
 - [Whitepaper: 5G ORU Systems](https://www.whizzsystems.com/insights/5g-oru-development)
 - [Whitepaper: Heatsink & Thermal Design](https://www.whizzsystems.com/insights/heatsink-design-guide)
 - [Whitepaper: PCIe Gen 6 Architecture](https://www.whizzsystems.com/insights/pcie-gen-6-design-guide)
